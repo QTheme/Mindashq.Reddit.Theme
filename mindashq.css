@@ -131,14 +131,15 @@ a.option {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #sr-header-area {
-    font: 500 10px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    font-weight: 500;
+    font-size: 11px;
     height: 20px;
     line-height: 20px;
     margin-left: 0px !important;
     margin-top: -21px;
     padding: 0 0 0 5px;
     text-transform: none;
-    background: none transparent;
+    background: #fff;
     border-bottom: 1px solid #fff;
 }
 
@@ -210,6 +211,10 @@ a.option {
         background: none transparent;
         background-color: transparent;
     }
+
+#header #RESSettingsButton {
+    vertical-align: middle;
+}
 
 #sr-more-link {
     background: none transparent;
@@ -374,8 +379,9 @@ body.res-nightmode .pagename a {
     text-indent: 0;
     font-size: 12px;
     font-weight: bold;
-    line-height: 32px;
+    line-height: 42px;
     width: auto;
+    vertical-align: middle;
 }
 
 #header-img-a {
