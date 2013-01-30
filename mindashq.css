@@ -46,6 +46,14 @@ h3 {
     color: #282828;
     margin-bottom: 3px;
 }
+
+.rounded {
+    border-radius: 4px;
+}
+
+    .rounded .morelink {
+        border-top-right-radius: 3px;
+    }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2. A Links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -250,23 +258,17 @@ a.option {
 ---------------------------------------------------*/
 
 span.user {
-    font: normal 10px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
 }
 
 a.pref-lang {
-    font: normal 10px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
 }
 
 .logout {
-    font: normal 10px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    font-weight: bold;
 }
 
 #header-bottom-right {
-    font-size: 12px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    /*font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;*/
+    font-size: 10px;
     word-spacing: -1px;
     top: 35px!important;
     height: 18px !important;
@@ -485,6 +487,7 @@ div.usertext-edit {
     .link .thumbnail {
         margin: 2px 2px 2px 5px;
         max-height: 55px;
+        width: auto;
     }
 
     .link.compressed .thumbnail {
@@ -522,12 +525,13 @@ div.usertext-edit {
     }
 
 body div.content {
-    margin: 0px 350px 0px 10px !important;
+    margin: 0px 350px 10px 10px !important;
     padding: 0px 0px 0px 0px !important;
     border: 3px solid #ffffff;
     -webkit-box-shadow: 0px 1px 4px #bbbbbb;
     -moz-box-shadow: 0px 1px 4px #bbbbbb;
     box-shadow: 0px 1px 4px #bbbbbb;
+    overflow: hidden;
 }
 
 
@@ -728,7 +732,7 @@ body div.content > form > div .commentarea .even {
 .commentarea {
     position: relative;
     top: 0px;
-    margin: 0px !important;
+    margin: 0px;
     padding: 7px 0px 7px 0px !important;
     border: 0px solid;
 }
@@ -844,12 +848,15 @@ div.drop-choices.lightdrop.inuse {
 
 .side {
     margin: 0 20px;
-    margin-left: auto;
     width: 300px;
-    padding: 0px !important;
+    padding: 0px;
     z-index: 0;
-    background: transparent;
+    background-color: transparent;
 }
+
+    .side .spacer {
+        margin: 5px 0 5px 0;
+    }
 
 iframe#ad-frame {
     background: transparent !important;
@@ -860,7 +867,7 @@ iframe#ad-frame {
 }
 
 .titlebox {
-    padding: 0 10px;
+    padding: 0px;
 }
 
     .titlebox .bottom {
@@ -868,8 +875,10 @@ iframe#ad-frame {
     }
 
 .side .titlebox > h1 {
-    font-size: 34px;
+    font-size: 26px;
     text-transform: capitalize;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
 }
 
 .linkinfo {
@@ -1107,41 +1116,9 @@ li.first {
         border: 0px !important;
     }
 
-    .usertext-body p a {
-        text-decoration: none;
-        color: #08C;
-    }
-
-        .usertext-body p a:hover {
-            text-decoration: underline !important;
-            color: #08C;
-        }
-
-    .usertext-body .md ul li a {
-        text-decoration: none;
-        color: #08C;
-    }
-
-        .usertext-body .md ul li a:hover {
-            text-decoration: underline !important;
-            color: #08C;
-        }
-
 .commentarea .usertext {
     margin-bottom: 0px !important;
 }
-
-.md a {
-    color: #08C !important;
-}
-
-    .md a:hover {
-        color: #08C !important;
-    }
-
-    .md a:visited {
-        color: #08C !important;
-    }
 
 .flat-vert a {
     color: #08C !important;
@@ -1261,10 +1238,6 @@ a:visited#search_showmore {
     width: 300px;
 }
 
-shinebar + body .sidebox.submit {
-    top: 125px;
-}
-
 body.res-nightmode .sidebox {
     padding-left: 0 !important;
 }
@@ -1352,9 +1325,7 @@ body.res-nightmode .sidebox, body.res-nightmode .subredditbox, body.res-nightmod
 /* this scroll was everything below the submit a link button*/
 .sidecontentbox {
     line-height: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding: 10px 10px 5px 10px;
     padding-bottom: 5px !important;
     background-color: transparent !important;
 }
@@ -1448,19 +1419,6 @@ body.moderator.loggedin div.content, body.submit-page div.content {
         margin-left: 20px;
         margin-top: 20px;
     }
-    /*---------------image list in the mod css form*/
-    body.moderator.loggedin div.content ul#image-preview-list {
-        display: inline-block;
-        float: none;
-        margin: 0px;
-        position: relative;
-    }
-
-        body.moderator.loggedin div.content ul#image-preview-list li {
-            float: left;
-            position: relative;
-            margin: 0px 13px 20px;
-        }
 
 /*---------------moving side bar up again as no submit button on submit page*/
 body.submit-page .side #search {
@@ -1597,17 +1555,27 @@ div.userbarHide {
 .morecomments {
     margin-left: 15px;
 }
-/*Page marker for RES mode*/
-div.NERPageMarker {
+/*Progress Indicator and Page marker for RES mode*/
+p#progressIndicator.neverEndingReddit, div.NERPageMarker {
+    width: auto;
     font-weight: bold;
     padding: 10px 0px;
     font-size: 20px;
     letter-spacing: -1px;
-    border: 1px solid #AEAEAE;
-    background: #fbfbf9;
+    border: 1px solid #d2d2d2;
+    background-color: #fbfbf9;
     border-width: 1px 0px;
-    margin: 5px -3px 10px -13px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin: 5px -3px 10px -10px;
 }
+
+    p#progressIndicator.neverEndingReddit img {
+    }
+
+    p#progressIndicator.neverEndingReddit a {
+    }
 
 #RESNotifications {
     z-index: 9999999;
@@ -1764,6 +1732,7 @@ body.res-nightmode .side hr {
 
 .side h6 + blockquote p, .side h5 + blockquote p, .side h4 + blockquote p {
     color: #000;
+    margin: 0px 10px;
 }
 
 .side h6 + blockquote a, .side h5 + blockquote a, .side h4 + blockquote a {
@@ -1775,7 +1744,7 @@ body.res-nightmode .side hr {
 }
 
 .side blockquote + p, .side p + blockquote, .side p + h4, .side p + h5, .side p + h6 {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .side .md p {
