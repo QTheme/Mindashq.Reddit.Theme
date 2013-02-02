@@ -59,32 +59,21 @@ h3 {
 2. A Links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 a {
-    color: #333;
+    color: #006ef4;
 }
 
-    a.bylink {
-        color: #888;
+    a:visited {
+        color: #846090; /* #930ea5 #a90dbe #551a8b #609  #846090;*/
     }
 
-        a.bylink:hover {
-            color: #08C;
-        }
+    a:hover {
+        color: #00F;
+    }
 
-        a.bylink:visited {
-            color: #888;
-        }
+    a:active {
+        color: #861010;
+    }
 
-.remove-button a {
-    color: #888 !important;
-}
-
-.remove-button:hover a {
-    color: #08C !important;
-}
-
-.remove-button:visited a {
-    color: #888 !important;
-}
 
 .buttons li a {
     color: #888 !important;
@@ -98,34 +87,11 @@ a {
         color: #888 !important;
     }
 
-a.option {
-    color: #888;
-}
-
-    a.option:hover {
-        color: #08C;
-        background-color: transparent !important;
+    .buttons li a:active {
+        color: #861010;
     }
 
-    a.option:visited {
-        color: #888 !important;
-    }
 
-.thing .title.loggedin {
-    color: #006ef4; /*#12c or #197ee6;*/
-}
-
-    .thing .title.loggedin:hover, .thing .title.loggedin:focus {
-        color: #333;
-    }
-
-    .thing .title.loggedin:visited, .thing .title.click, .thing .title:visited, .thing .title.loggedin.click, .thing .title.loggedin.click:visited {
-        color: #609; /*#846090;*/
-    }
-
-        .thing .title:visited:hover, .thing .title:visited:focus, .thing .title.loggedin.click:hover, .thing .title.loggedin.click:focus {
-            color: #333!important;
-        }
 
 .entry > .flat-list > li {
     /*visibility: hidden;*/
@@ -154,8 +120,12 @@ a.option {
     -ms-filter: Alpha(Opacity=100);
     filter: Alpha(opacity=100);
 }
+
+.comment .md p > a:visited {
+    color: #930ea5;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-3. Sr-Bar
+3. Top Sr-Bar
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #sr-header-area {
@@ -249,17 +219,19 @@ a.option {
 }
 
 #sr-more-link {
-    background: none transparent;
-    background-color: transparent;
-    color: #efefef;
-    line-height: 20px;
-    margin-top: -21px;
+    background-color: #fbfbf9;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 5px 0 15px;
+    position: absolute;
+    right: 0;
     top: 0;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*---------------------------------------------------
 3.1 Dropdown Subreddits Bar
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+--------------------------------------------------- */
 
 #sr-header-area .drop-choices {
     font-size: 12px;
@@ -427,11 +399,10 @@ body.res-nightmode .pagename a {
 }
 
     #header-img-a img {
-        margin: 0px 5px;
+        margin: 0px;
         width: auto!important;
         height: auto!important;
-        max-width: 120px;
-        max-height: 40px;
+        max-height: 56px;
         vertical-align: middle;
     }
 
@@ -481,46 +452,84 @@ body.res-nightmode .pagename a {
 5. Content Pane and Link Listings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-body div.content {
+div.content {
     margin: 0px 350px 10px 10px !important;
-    padding: 0px !important;
+    padding: 10px 20px;
     border: 3px solid #ffffff;
-    -moz-box-shadow: 0px 1px 4px #bbbbbb;
-    -webkit-box-shadow: 0px 1px 4px #bbbbbb;
-    box-shadow: 0px 1px 4px #bbbbbb;
+    background-color: #fdfdfe;
+    -moz-box-shadow: 0px 1px 4px 1px #cccccc;
+    -webkit-box-shadow: 0px 1px 4px 1px #cccccc;
+    box-shadow: 0px 1px 4px 1px #cccccc;
     overflow: hidden;
 }
 
-.linklisting {
-    bottom: 0px;
-    margin: 0px;
-    padding: 0px;
-    background: none transparent;
+body.listing-page > div.content, body.single-page > div.content, body.messages-page > div.content {
+    border: 0px;
+    padding: 0px 2px 2px;
+    border: 0px none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
-    .linklisting .even {
-        padding: 2px 0px 2px;
-        background: #fbfbfb;
-        background: -moz-linear-gradient(left,#fefefe,#fbfbfb);
-        background: -webkit-linear-gradient(left, #fefefe, #fbfbfb);
-        border-top: 1px solid #f1f1f1;
+    body.listing-page > div.content, body.messages-page > div.content, body.single-page > div.content > .linklisting {
+        border: 3px solid #ffffff;
+        -moz-box-shadow: 0px 1px 4px 1px #cccccc;
+        -webkit-box-shadow: 0px 1px 4px 1px #cccccc;
+        box-shadow: 0px 1px 4px 1px #cccccc;
+        margin: 0px 2px 15px;
     }
 
-    .linklisting .odd {
-        padding: 2px 0px 2px;
-        background: #fefefe;
-        background: -moz-linear-gradient(left,#fdfdfd,#fefefe);
-        background: -webkit-linear-gradient(left, #fdfdfd, #fefefe);
-        border-top: 1px solid #f1f1f1;
+    body.single-page > div.content > .commentarea {
+        position: relative;
+        margin: 0px 2px 1px;
+        padding: 0px;
+        padding: 0px 0px 0px 0px !important;
+        border: 3px solid #ffffff;
+        -moz-box-shadow: 0px 1px 4px 1px #cccccc;
+        -webkit-box-shadow: 0px 1px 4px 1px #cccccc;
+        box-shadow: 0px 1px 4px 1px #cccccc;
     }
 
-    .linklisting .even:first-child {
-        border-top: 0px !important;
+    body.single-page > div.content > .linklisting .link {
+        list-style-type: none;
+        background: #e9f0f7;
+        background: -moz-linear-gradient(top, #e9f0f7,#fbfbfb, #fbfbfb,#fbfbfb,#fbfbfb);
+        background: -webkit-linear-gradient(top, #e9f0f7,#fbfbfb, #fbfbfb,#fbfbfb,#fbfbfb);
+        border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        -webkit-border-radius: 0px !important;
     }
 
-    .linklisting .odd:first-child {
-        border-top: 0px !important;
-    }
+        body.single-page > div.content > .linklisting .link .title {
+            font-weight: normal;
+        }
+
+.linklisting .even {
+    padding: 2px 0px 2px;
+    margin: 0px;
+    background: #fbfbfb;
+    background: -moz-linear-gradient(left,#fefefe,#fbfbfb);
+    background: -webkit-linear-gradient(left, #fefefe, #fbfbfb);
+    border-top: 1px solid #f1f1f1;
+}
+
+.linklisting .odd {
+    padding: 2px 0px 2px;
+    margin: 0px;
+    background: #fefefe;
+    background: -moz-linear-gradient(left,#fdfdfd,#fefefe);
+    background: -webkit-linear-gradient(left, #fdfdfd, #fefefe);
+    border-top: 1px solid #f1f1f1;
+}
+
+.linklisting .even:first-child {
+    border-top: 0px !important;
+}
+
+.linklisting .odd:first-child {
+    border-top: 0px !important;
+}
 
 /* Better spacing for the usertext-edit textarea */
 form.usertext.cloneable {
@@ -546,8 +555,8 @@ div.usertext-edit {
         background-color: transparent;
         border-radius: 25px;
         display: inline-block;
-        padding: 5px;
-        margin: 15px 0px 0px 2px;
+        padding: 5px 0px 5px 0px;
+        margin: 15px 0px 0px 10px;
         /*box-shadow: inset -6px 0px 9px -1px #dadac8;
         -moz-box-shadow: inset -6px 0px 9px -1px #dadac8;
         -webkit-box-shadow: inset -6px 0px 9px -1px #dadac8;*/
@@ -574,7 +583,6 @@ div.usertext-edit {
     }
 
     .link .title {
-        color: #1d1c1c;
         /*font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;*/
         /*font-size: 13px;*/
         font-style: normal;
@@ -603,16 +611,10 @@ div.usertext-edit {
 }
 
     .panestack-title .title {
-        float: left;
-        font-size: 11px;
+        font-size: larger;
         color: #888;
         margin: 0;
     }
-
-.commentarea .menuarea {
-    font-size: 11px;
-    margin: 0;
-}
 
 .entry .buttons li a {
     font-family: verdana, arial, sans-serif;
@@ -624,21 +626,18 @@ div.usertext-edit {
 }
 
 .usertext-edit {
-    width: auto;
 }
 
     .usertext-edit textarea {
-        width: 430px;
-        padding: 10px;
+        padding: 5px;
     }
 
 .usertext .bottom-area {
-    width: 450px;
+    padding: 0px 5px;
 }
 
 .usertext button {
     margin: 5px 5px 10px 0;
-    border: none;
     min-width: 70px;
 }
 
@@ -655,7 +654,7 @@ body.res-nightmode .usertext .help-toggle {
 
 
 
-.usertext .help-toggle, .btn.right {
+.usertext span[class*='toggle'], .btn.right {
     background-color: transparent;
     border: none;
     padding: 6px 10px;
@@ -663,23 +662,24 @@ body.res-nightmode .usertext .help-toggle {
     font-size: 13px;
 }
 
-    .usertext .help-toggle a, .btn.right a {
+    .usertext span[class*='toggle'] a, .btn.right a {
         text-decoration: underline;
         color: #888;
-        text-shadow: 1px 1px 2px #fff;
+        text-shadow: 1px 1px 2px #eee;
     }
+
+        .usertext span[class*='toggle'] a:hover, .btn.right a:hover {
+            color: #449EF8;
+            text-shadow: 1px 1px 2px #ddd;
+        }
 
 .usertext table.markhelp {
     width: 450px;
 }
 
 .content h1 {
+    /*??*/
     margin: 10px 0px 20px 20px !important;
-}
-
-
-.btn button {
-    margin: 0px 0px 0px 20px !important;
 }
 
 /*------------- the link submission form */
@@ -751,6 +751,12 @@ a.text-button {
     padding: 5px 10px;
     font-weight: bold;
 }
+
+.nextprev {
+    margin: 0px;
+    padding: 10px;
+    border-top: 1px dotted #d2d2d2;
+}
 /*---------------------------------------------------
 5.1 Custom Upvote/Downvote Arrows
 
@@ -790,89 +796,49 @@ a.text-button {
 5.2 Comment Formatting
 ---------------------------------------------------*/
 
-body.comments-page div.content {
-    border: 0px;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-body.comments-page .linklisting {
-    border: 3px solid #ffffff;
-    -moz-box-shadow: 0px 1px 4px #bbbbbb;
-    -webkit-box-shadow: 0px 1px 4px #bbbbbb;
-    box-shadow: 0px 1px 4px #bbbbbb;
-    margin: 0px 2px 15px;
-}
-
-    body.comments-page .linklisting, body.comments-page .linklisting .odd, body.comments-page .linklisting .even {
-        list-style-type: none;
-        background: #e9f0f7;
-        background: -moz-linear-gradient(top, #e9f0f7,#fbfbfb, #fbfbfb,#fbfbfb,#fbfbfb);
-        background: -webkit-linear-gradient(top, #e9f0f7,#fbfbfb, #fbfbfb,#fbfbfb,#fbfbfb);
-        border-radius: 0px !important;
-        -moz-border-radius: 0px !important;
-        -webkit-border-radius: 0px !important;
-    }
-
-body.comments-page .link .title {
-    font-weight: normal;
-}
-
 body div.content > form > div .commentarea .even {
     padding: 10px 0px 10px 10px !important;
     background: transparent;
     border-top: 1px solid #eee;
 }
 
-.commentarea {
-    position: relative;
-    margin: 0px 2px 1px;
-    padding: 0px;
-    padding: 0px 0px 0px 0px !important;
-    border: 3px solid #ffffff;
-    -moz-box-shadow: 0px 1px 4px #bbbbbb;
-    -webkit-box-shadow: 0px 1px 4px #bbbbbb;
-    box-shadow: 0px 1px 4px #bbbbbb;
+.commentarea .menuarea {
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: transparent;
 }
 
-    .commentarea .menuarea {
-        font-size: 11px;
-        margin: 0px;
-        padding: 0px 10px;
-        background-color: transparent;
-    }
+.commentarea p {
+    line-height: 1.4em;
+}
 
-    .commentarea p {
-        line-height: 1.4em;
-    }
-
-    .commentarea .nestedlisting {
-        background-color: white;
-        overflow: hidden;
-    }
+.commentarea .nestedlisting {
+    background-color: white;
+    overflow: hidden;
+}
 
 
-    .commentarea .comment {
-        padding: 5px 0px 0px 10px!important;
-        margin: 5px 0px -1px 5px !important;
-        border: 1px solid #eee!important;
-        border: #eee #eee #d2d2d2 #d2d2d2 !important;
-        border-right: 0px !important;
-        border-radius: 0px !important;
-        -moz-border-radius: 0px !important;
-        -webkit-border-radius: 0px !important;
-    }
+.commentarea .comment {
+    padding: 5px 0px 0px 10px!important;
+    margin: 5px 0px -1px 5px !important;
+    border: 1px solid #eee!important;
+    border-color: #eeeeee #eeeeee #d2d2d2 #eeeeee !important;
+    border-right: 0px !important;
+    border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+}
 
-    .commentarea .sitetable.nestedlisting > .comment:first-child {
-        margin-top: 4px!important;
-    }
+.commentarea .sitetable.nestedlisting > .comment:first-child {
+    margin-top: 4px!important;
+}
 
-    .commentarea .sitetable.nestedlisting > .comment {
-        margin: 5px 0px 0px!important;
-        border: 1px solid #eee!important;
-        border-color: #e0e0e0 #d2d2d2 #d2d2d2 #e0e0e0!important;
-    }
+.commentarea .sitetable.nestedlisting > .comment {
+    margin: 5px 0px 0px!important;
+    border: 1px solid #eee!important;
+    border-color: #e0e0e0 #d2d2d2 #d2d2d2 #e0e0e0!important;
+}
 
 .even.comment {
     background-color: #fbfbfb;
@@ -1377,24 +1343,12 @@ div#adlink {
 6.13 Other areas in Reddit - [WIP]
 ---------------------------------------------------*/
 .menuarea {
-    border-bottom: 1px dotted #f1f1f1;
+    border-bottom: 1px dotted #d2d2d2;
     padding: 10px;
-    margin: 0px;
+    margin: 0px -2px;
     overflow: hidden;
-    font-size: larger;
-    background-color: #fff;
+    background-color: #fdfdfe;
 }
-
-body.moderator.loggedin div.content, body.submit-page div.content {
-    /*best be identical to .linklisting*/
-    padding: 5px 0px 0px 10px;
-}
-
-    body.moderator.loggedin div.content > form + div .pretty-form,
-    body.moderator.loggedin div.content > form + div div#images {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
 
 #image-upload {
     font-size: 12px;
@@ -1443,11 +1397,24 @@ form#newlink {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 7. Footer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.footer {
-    background: #FFF;
-    background: -webkit-linear-gradient(top,#FBFBFB,#f5f5f5);
-    background: -moz-linear-gradient(top,#FBFBFB,#f5f5f5);
+.footer-parent {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    clear: both;
+    background: #fdfdfe;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -1px;
+    box-shadow: 0px 1px 4px 1px #ddd;
 }
+
+.footer {
+    background: transparent;
+    border: 0px none;
+}
+
+
+
 
 /*---------------------------------------------------
 7.1 Reddit Copyright Text
@@ -1459,21 +1426,12 @@ form#newlink {
     .bottommenu a {
         color: #231307;
     }
-/*---------------------------------------------------
-7.2 Footer
----------------------------------------------------*/
 
-.footer-parent {
-    padding-top: 5px;
-    padding-bottom: 15px;
-    clear: both;
-    background: #fbfbf9;
-    text-align: center;
-    width: 100%;
-    margin-bottom: -1px;
+.debuginfo:hover .content {
+    display: inline;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
-
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 8. RES Optimisation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -1529,7 +1487,7 @@ p#progressIndicator.neverEndingReddit, div.NERPageMarker {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
-    margin: 5px -3px 10px -10px;
+    margin: 0px -5px;
 }
 
     p#progressIndicator.neverEndingReddit img {
@@ -1610,7 +1568,6 @@ body:not(.res-nightmode) .md table tbody {
 }
 
 .md ol {
-    list-style: none;
 }
 
     .md ul li, .md ol li {
@@ -1631,16 +1588,6 @@ body.res-nightmode .md ul li:nth-child(odd), body.res-nightmode .md ol li:nth-ch
     background-color: #222;
 }
 
-.md ol {
-    counter-reset: inc 0;
-}
-
-    .md ol li:before {
-        counter-increment: inc 1;
-        content: counter(inc, decimal) '. ';
-        margin-right: 4px;
-        color: #999;
-    }
 
 /* boxes */
 
@@ -1877,15 +1824,20 @@ body.res-nightmode .md h6 + ul, body.res-nightmode .md h6 + ol {
     }
 
 /* buttons */
-.btn, button, .side a[href*='/#btn'] {
+.btn button, .btn .button {
+    margin: 0px 0px 0px 20px;
+}
+
+.btn, button, .button, .side a[href*='/#btn'] {
     background-color: #449EF8;
     border: none;
-    color: #FFF;
+    color: #fff;
     padding: 6px 10px;
     margin: 5px 5px 5px 0;
     cursor: pointer;
     font-size: 13px;
     font-family: arial,helvetica,sans-serif;
+    min-width: 70px;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -1912,16 +1864,24 @@ body.res-nightmode .side a[href*='/#btn'] {
 }
 
 .btn a {
-    color: #FFF;
+    color: #fff;
 }
 
 body.res-nightmode .btn a {
     color: #444 !important;
 }
 
-.btn:hover, button:hover, .side a[href*='/#btn']:hover {
+.btn:hover, button:hover, .button:hover, .side a[href*='/#btn']:hover {
     background-color: #56a6f7;
     border-color: #56a6f7;
+    color: #fff;
+}
+
+
+.btn.right:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #56a6f7;
 }
 
 body.res-nightmode .btn:hover, body.res-nightmode button:hover,
