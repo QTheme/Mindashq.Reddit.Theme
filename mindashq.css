@@ -7,13 +7,16 @@
     ------------------------------------------------
     +  Initial Theme
     +  Distinct header
-    +  Compact comments, to utimize space better, esp the bottom area for deeply nested comments
+    +  Compact comments to utimize space better, esp the bottom area for deeply nested comments
     +  Redability improvements
+    +  100% text only theme, no images required
+    +  All areas (moderator, and user pages, submit link pages etc) treated well for use with stylish
+    +  RES compatible (Night mode coming up)
+    +  Works with Reddit Companion
 	------------------------------------------------
-    Uses "Submit button on Top" and the colored boxes with sprites from r/edurne/ by https://github.com/rolmos/
+    Uses "Submit button on Top" and the colored boxes from r/edurne/ by https://github.com/rolmos/
 
-    This version is work in progress. Will be cleaned up and commented subsequently.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1686,89 +1689,113 @@ body.res-nightmode .side h4 + blockquote, body.res-nightmode .side h5 + blockquo
 
 /* colors */
 .md h4 + table {
-    border-color: #9EF886;
+    border-color: #9ef886;
 }
 
     .md h4 + table td, .md h4 + table th {
-        border-right-color: #9EF886;
+        border-right-color: #9ef886;
     }
 
     .md h4 + table tr:nth-child(even), .md h4 + table thead {
-        background-color: #E9FFE6;
+        background-color: #e9ffe6;
+    }
+
+    .md h4 + table .side a[href*='#icon-']::before {
+        color: #9ef886;
     }
 
 .md h5 + table {
-    border-color: #F4F225;
+    border-color: #f4f225;
 }
 
     .md h5 + table td, .md h5 + table th {
-        border-right-color: #F4F225;
+        border-right-color: #f4f225;
     }
 
     .md h5 + table tr:nth-child(even), .md h5 + table thead {
-        background-color: #FFFFE6;
+        background-color: #ffffe6;
+    }
+
+    .md h5 + table .side a[href*='#icon-']::before {
+        color: #f4f225;
     }
 
 .md h6 + table {
-    border-color: #FF9185;
+    border-color: #ff9185;
 }
 
     .md h6 + table td, .md h6 + table th {
-        border-right-color: #FF9185;
+        border-right-color: #ff9185;
     }
 
     .md h6 + table tr:nth-child(even), .md h6 + table thead {
-        background-color: #FEF0F0;
+        background-color: #fef0f0;
+    }
+
+    .md h6 + table .side a[href*='#icon-']::before {
+        color: #ff9185;
     }
 
 .md h4 + ul, .md h4 + ol {
-    border-left-color: #9EF886;
+    border-left-color: #9ef886;
 }
 
     .md h4 + ul li:nth-child(odd), .md h4 + ol li:nth-child(odd) {
-        background-color: #E9FFE6;
+        background-color: #e9ffe6;
+    }
+
+    .md h4 + ul .side a[href*='#icon-']::before, .md h4 + ol .side a[href*='#icon-']::before {
+        color: #9ef886;
     }
 
 .md h5 + ul, .md h5 + ol {
-    border-left-color: #F4F225;
+    border-left-color: #f4f225;
 }
 
     .md h5 + ul li:nth-child(odd), .md h5 + ol li:nth-child(odd) {
         background-color: #FFFFE6;
     }
 
+    .md h5 + ul .side a[href*='#icon-']::before, .md h5 + ol .side a[href*='#icon-']::before {
+        color: #f4f225;
+    }
+
 .md h6 + ul, .md h6 + ol {
-    border-left-color: #FF9185;
+    border-left-color: #ff9185;
 }
 
     .md h6 + ul li:nth-child(odd), .md h6 + ol li:nth-child(odd) {
-        background-color: #FEF0F0;
+        background-color: #fef0f0;
+    }
+
+    .md h6 + ul .side a[href*='#icon-']::before, .md h6 + ol .side a[href*='#icon-']::before {
+        color: #ff9185;
     }
 
 .side h6 + blockquote {
     display: block;
-    background-color: #FEF0F0;
-    border: 1px solid #FF9185;
+    background-color: #fef0f0;
+    border: 1px solid #ff9185;
 }
 
 .side h5 + blockquote {
     display: block;
-    background-color: #FFFFE6;
-    border: 1px solid #F4F225;
+    background-color: #ffffe6;
+    border: 1px solid #f4f225;
 }
 
 .side h4 + blockquote {
     display: block;
-    background-color: #E9FFE6;
-    border: 1px solid #9EF886;
+    background-color: #e9ffe6;
+    border: 1px solid #9ef886;
 }
 
 body.res-nightmode .md h4 + table {
-    border-color: #9EF886;
+    border-color: #9ef886;
 }
 
     body.res-nightmode .md h4 + table td, body.res-nightmode .md h4 + table th {
-        border-right-color: #9EF886;
+        border-right-color: #9ef886;
     }
 
     body.res-nightmode .md h4 + table tr:nth-child(even), body.res-nightmode .md h4 + table thead {
@@ -1776,11 +1803,11 @@ body.res-nightmode .md h4 + table {
     }
 
 body.res-nightmode .md h5 + table {
-    border-color: #F4F225;
+    border-color: #f4f225;
 }
 
     body.res-nightmode .md h5 + table td, body.res-nightmode .md h5 + table th {
-        border-right-color: #F4F225;
+        border-right-color: #f4f225;
     }
 
     body.res-nightmode .md h5 + table tr:nth-child(even), body.res-nightmode .md h5 + table thead {
@@ -1788,11 +1815,11 @@ body.res-nightmode .md h5 + table {
     }
 
 body.res-nightmode .md h6 + table {
-    border-color: #FF9185;
+    border-color: #ff9185;
 }
 
     body.res-nightmode .md h6 + table td, body.res-nightmode .md h6 + table th {
-        border-right-color: #FF9185;
+        border-right-color: #ff9185;
     }
 
     body.res-nightmode .md h6 + table tr:nth-child(even), body.res-nightmode .md h6 + table thead {
@@ -1800,7 +1827,7 @@ body.res-nightmode .md h6 + table {
     }
 
 body.res-nightmode .md h4 + ul, body.res-nightmode .md h4 + ol {
-    border-left-color: #9EF886;
+    border-left-color: #9ef886;
 }
 
     body.res-nightmode .md h4 + ul li:nth-child(odd), body.res-nightmode .md h4 + ol li:nth-child(odd) {
@@ -1808,7 +1835,7 @@ body.res-nightmode .md h4 + ul, body.res-nightmode .md h4 + ol {
     }
 
 body.res-nightmode .md h5 + ul, body.res-nightmode .md h5 + ol {
-    border-left-color: #F4F225;
+    border-left-color: #f4f225;
 }
 
     body.res-nightmode .md h5 + ul li:nth-child(odd), body.res-nightmode .md h5 + ol li:nth-child(odd) {
@@ -1816,7 +1843,7 @@ body.res-nightmode .md h5 + ul, body.res-nightmode .md h5 + ol {
     }
 
 body.res-nightmode .md h6 + ul, body.res-nightmode .md h6 + ol {
-    border-left-color: #FF9185;
+    border-left-color: #ff9185;
 }
 
     body.res-nightmode .md h6 + ul li:nth-child(odd), body.res-nightmode .md h6 + ol li:nth-child(odd) {
@@ -1829,7 +1856,7 @@ body.res-nightmode .md h6 + ul, body.res-nightmode .md h6 + ol {
 }
 
 .btn, button, .button, .side a[href*='/#btn'] {
-    background-color: #449EF8;
+    background-color: #449ef8;
     border: none;
     color: #fff;
     padding: 6px 10px;
@@ -1860,7 +1887,7 @@ body.res-nightmode .md h6 + ul, body.res-nightmode .md h6 + ol {
 body.res-nightmode .btn, body.res-nightmode button,
 body.res-nightmode .side a[href*='/#btn'] {
     color: #444 !important;
-    background-color: #CCC !important;
+    background-color: #ccc !important;
 }
 
 .btn a {
@@ -1886,8 +1913,8 @@ body.res-nightmode .btn a {
 
 body.res-nightmode .btn:hover, body.res-nightmode button:hover,
 body.res-nightmode .side a[href*='/#btn']:hover {
-    background-color: #DDD !important;
-    border-color: #DDD;
+    background-color: #ddd !important;
+    border-color: #ddd;
 }
 
 /* code styling */
@@ -1959,73 +1986,74 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
         display: inline-block;
         height: 16px;
         width: 16px;
-        content: '';
-        margin: 0 5px -1px 0;
-        background: url(%%sprites-05%%) 30px 30px no-repeat transparent;
+        margin: 0 5px -1px -5px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
     }
 
 .side a[href='#icon-exclamation']::before {
-    background-position: -16px -32px;
+    content: '♔';
 }
 
 .side a[href='#icon-information']::before {
-    background-position: -54px -51px;
+    content: 'ⓘ';
 }
 
 .side a[href='#icon-lightbulb']::before {
-    background-position: -16px -51px;
+    content: '☼';
 }
 
 .side a[href='#icon-comments']::before {
-    background-position: -35px -89px;
+    content: '❝';
 }
 
 .side a[href='#icon-unhappy']::before {
-    background-position: -73px -89px;
+    content: '☹';
 }
 
 .side a[href='#icon-check']::before {
-    background-position: -73px -51px;
+    content: '✓';
 }
 
 .side a[href='#icon-clock']::before {
-    background-position: -35px -51px;
+    content: '◔';
 }
 
 .side a[href='#icon-cross']::before {
-    background-position: -35px -70px;
+    content: '⊘';
 }
 
 .side a[href='#icon-smile']::before {
-    background-position: -54px -89px;
+    content: '☺';
 }
 
 .side a[href='#icon-error']::before {
-    background-position: -54px -32px;
+    content: '☢';
 }
 
 .side a[href='#icon-note']::before {
-    background-position: -54px -70px;
+    content: '✎';
 }
 
 .side a[href='#icon-star']::before {
-    background-position: -73px -32px;
+    content: '✰';
 }
 
 .side a[href='#icon-help']::before {
-    background-position: -16px -70px;
+    content: '✍';
 }
 
 .side a[href='#icon-time']::before {
-    background-position: -73px -70px;
+    content: '⌚';
 }
 
 .side a[href='#icon-bell']::before {
-    background-position: -35px -32px;
+    content: '❂';
 }
 
 .side a[href='#icon-eye']::before {
-    background-position: -16px -89px;
+    content: '✿';
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
