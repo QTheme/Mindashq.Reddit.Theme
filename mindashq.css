@@ -681,11 +681,6 @@ body.res-nightmode .usertext .help-toggle {
     width: 450px;
 }
 
-.content h1 {
-    /*??*/
-    margin: 10px 0px 20px 20px !important;
-}
-
 /*------------- the link submission form */
 .formtabs-content {
 }
@@ -1336,13 +1331,6 @@ div#adlink {
         margin: 20px 0px 0px 0px;
     }
 
-.odd {
-    padding-bottom: 15px;
-}
-
-.even {
-    padding-bottom: 15px;
-}
 /*---------------------------------------------------
 6.13 Other areas in Reddit - [WIP]
 ---------------------------------------------------*/
@@ -1509,7 +1497,10 @@ p#progressIndicator.neverEndingReddit, div.NERPageMarker {
 9. Misc Styling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* tables */
+/*---------------------------------------------------
+9.1 Tables 
+--------------------------------------------------- */
+
 .md table {
     border: 1px solid #ccc;
     font-family: Arial, Helvetica, Sans-serif;
@@ -1557,12 +1548,14 @@ body:not(.res-nightmode) .md table tbody {
     color: #444;
 }
 
-/* lists */
+/*---------------------------------------------------
+9.2 Lists 
+--------------------------------------------------- */
 .md > ul, .md > ol {
 }
 
 .md ul, .md ol {
-    margin: 5px 0px 5px 15px;
+    margin: 5px 0px 5px 20px;
     padding: 0px 0px 0px 10px;
     background-color: transparent;
 }
@@ -1575,11 +1568,11 @@ body:not(.res-nightmode) .md table tbody {
 }
 
     .md ul li, .md ol li {
-        padding: 2px 3px;
+        padding: 2px 0px;
     }
 
         .md ul li ul, .md ol li ol {
-            margin: 8px 4px;
+            margin: 5px 0px 5px 10px;
         }
 
 
@@ -1593,7 +1586,9 @@ body.res-nightmode .md ul li:nth-child(odd), body.res-nightmode .md ol li:nth-ch
 }
 
 
-/* boxes */
+/*---------------------------------------------------
+9.3 Boxes 
+--------------------------------------------------- */
 
 .side blockquote + hr {
     border-width: 0;
@@ -1613,6 +1608,7 @@ body.res-nightmode .side hr {
     margin: 0px 0px 10px;
     border: 1px solid #ccc;
     background-color: #f5f5f5;
+    position: relative;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -1627,28 +1623,16 @@ body.res-nightmode .side hr {
 }
 
 .side blockquote h1 {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 .side blockquote pre, .side blockquote code {
     color: #222 !important;
 }
 
-.side blockquote ul, .side blockquote ol {
-    background-color: transparent;
-}
-
-    .side blockquote ul li, .side blockquote ol li, .side blockquote ul li:nth-child(odd), .side blockquote ol li:nth-child(odd) {
-        background-color: transparent;
-    }
-
 .side h6 + blockquote p, .side h5 + blockquote p, .side h4 + blockquote p {
     color: #000;
     margin: 0px 10px;
-}
-
-.side h6 + blockquote a, .side h5 + blockquote a, .side h4 + blockquote a {
-    color: #369;
 }
 
 .side .spacer .md h1, .side .spacer .md h2, .side .spacer .md h3 {
@@ -1681,177 +1665,17 @@ body.res-nightmode .side hr {
 }
 
 body.res-nightmode .side blockquote h1, body.res-nightmode .side blockquote h1 a {
-    color: #EEE !important;
+    color: #eee;
 }
 
 body.res-nightmode .side h4 + blockquote, body.res-nightmode .side h5 + blockquote, body.res-nightmode .side h6 + blockquote {
     background-color: #111;
 }
 
-/* colors */
-.md h4 + table {
-    border-color: #9ef886;
-}
+/*---------------------------------------------------
+9.4 Button Style 
+--------------------------------------------------- */
 
-    .md h4 + table td, .md h4 + table th {
-        border-right-color: #9ef886;
-    }
-
-    .md h4 + table tr:nth-child(even), .md h4 + table thead {
-        background-color: #e9ffe6;
-    }
-
-    .md h4 + table .side a[href*='#icon-']::before {
-        color: #9ef886;
-    }
-
-.md h5 + table {
-    border-color: #f4f225;
-}
-
-    .md h5 + table td, .md h5 + table th {
-        border-right-color: #f4f225;
-    }
-
-    .md h5 + table tr:nth-child(even), .md h5 + table thead {
-        background-color: #ffffe6;
-    }
-
-    .md h5 + table .side a[href*='#icon-']::before {
-        color: #f4f225;
-    }
-
-.md h6 + table {
-    border-color: #ff9185;
-}
-
-    .md h6 + table td, .md h6 + table th {
-        border-right-color: #ff9185;
-    }
-
-    .md h6 + table tr:nth-child(even), .md h6 + table thead {
-        background-color: #fef0f0;
-    }
-
-    .md h6 + table .side a[href*='#icon-']::before {
-        color: #ff9185;
-    }
-
-.md h4 + ul, .md h4 + ol {
-    border-left-color: #9ef886;
-}
-
-    .md h4 + ul li:nth-child(odd), .md h4 + ol li:nth-child(odd) {
-        background-color: #e9ffe6;
-    }
-
-    .md h4 + ul .side a[href*='#icon-']::before, .md h4 + ol .side a[href*='#icon-']::before {
-        color: #9ef886;
-    }
-
-.md h5 + ul, .md h5 + ol {
-    border-left-color: #f4f225;
-}
-
-    .md h5 + ul li:nth-child(odd), .md h5 + ol li:nth-child(odd) {
-        background-color: #FFFFE6;
-    }
-
-    .md h5 + ul .side a[href*='#icon-']::before, .md h5 + ol .side a[href*='#icon-']::before {
-        color: #f4f225;
-    }
-
-.md h6 + ul, .md h6 + ol {
-    border-left-color: #ff9185;
-}
-
-    .md h6 + ul li:nth-child(odd), .md h6 + ol li:nth-child(odd) {
-        background-color: #fef0f0;
-    }
-
-    .md h6 + ul .side a[href*='#icon-']::before, .md h6 + ol .side a[href*='#icon-']::before {
-        color: #ff9185;
-    }
-
-.side h6 + blockquote {
-    display: block;
-    background-color: #fef0f0;
-    border: 1px solid #ff9185;
-}
-
-.side h5 + blockquote {
-    display: block;
-    background-color: #ffffe6;
-    border: 1px solid #f4f225;
-}
-
-.side h4 + blockquote {
-    display: block;
-    background-color: #e9ffe6;
-    border: 1px solid #9ef886;
-}
-
-body.res-nightmode .md h4 + table {
-    border-color: #9ef886;
-}
-
-    body.res-nightmode .md h4 + table td, body.res-nightmode .md h4 + table th {
-        border-right-color: #9ef886;
-    }
-
-    body.res-nightmode .md h4 + table tr:nth-child(even), body.res-nightmode .md h4 + table thead {
-        background-color: #207807;
-    }
-
-body.res-nightmode .md h5 + table {
-    border-color: #f4f225;
-}
-
-    body.res-nightmode .md h5 + table td, body.res-nightmode .md h5 + table th {
-        border-right-color: #f4f225;
-    }
-
-    body.res-nightmode .md h5 + table tr:nth-child(even), body.res-nightmode .md h5 + table thead {
-        background-color: #626105;
-    }
-
-body.res-nightmode .md h6 + table {
-    border-color: #ff9185;
-}
-
-    body.res-nightmode .md h6 + table td, body.res-nightmode .md h6 + table th {
-        border-right-color: #ff9185;
-    }
-
-    body.res-nightmode .md h6 + table tr:nth-child(even), body.res-nightmode .md h6 + table thead {
-        background-color: #670808;
-    }
-
-body.res-nightmode .md h4 + ul, body.res-nightmode .md h4 + ol {
-    border-left-color: #9ef886;
-}
-
-    body.res-nightmode .md h4 + ul li:nth-child(odd), body.res-nightmode .md h4 + ol li:nth-child(odd) {
-        background-color: #207807;
-    }
-
-body.res-nightmode .md h5 + ul, body.res-nightmode .md h5 + ol {
-    border-left-color: #f4f225;
-}
-
-    body.res-nightmode .md h5 + ul li:nth-child(odd), body.res-nightmode .md h5 + ol li:nth-child(odd) {
-        background-color: #626105;
-    }
-
-body.res-nightmode .md h6 + ul, body.res-nightmode .md h6 + ol {
-    border-left-color: #ff9185;
-}
-
-    body.res-nightmode .md h6 + ul li:nth-child(odd), body.res-nightmode .md h6 + ol li:nth-child(odd) {
-        background-color: #670808;
-    }
-
-/* buttons */
 .btn button, .btn .button {
     margin: 0px 0px 0px 20px;
 }
@@ -1918,7 +1742,10 @@ body.res-nightmode .side a[href*='/#btn']:hover {
     border-color: #ddd;
 }
 
-/* code styling */
+/*---------------------------------------------------
+9.5 Code Style 
+--------------------------------------------------- */
+
 .usertext-body pre {
     margin: 10px 0;
     padding: 10px;
@@ -1967,16 +1794,143 @@ a[href='#s']:hover::after, a[href='#s']:active::after {
 }
 
 body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:active::after {
-    color: #DDD;
+    color: #ddd;
     background: transparent;
     text-decoration: none;
     font-size: small;
 }
 
-/* sidebar icons */
+/*---------------------------------------------------
+9.6 Colored Boxes 
+--------------------------------------------------- */
+.side blockquote a[href*='#icon-']::before {
+    color: #eee;
+    background-color: #5c5c5c;
+    background-image: -moz-linear-gradient(top, #666666, #4d4d4d);
+    background-image: -webkit-linear-gradient(top, #666666, #4d4d4d);
+    background-image: -o-linear-gradient(top, #666666, #4d4d4d);
+    background-image: linear-gradient(to bottom, #666666, #4d4d4d);
+}
+/*Green*/
+.side h4 + blockquote {
+    display: block;
+    background-color: #e9ffe6;
+    border: 1px solid #9ef886;
+}
+
+    .side h4 + blockquote a[href*='#icon-']::before {
+        /*background-color: #9ef886;*/
+        color: #e9ffe6;
+        background-color: #5dd15d;
+        background-image: -moz-linear-gradient(top, #6de46d, #39c739);
+        background-image: -webkit-linear-gradient(top, #6de46d, #39c739);
+        background-image: -o-linear-gradient(top, #62c462, #51a351);
+        background-image: linear-gradient(to bottom, #6de46d, #39c739);
+    }
+
+/*Yellow*/
+.side h5 + blockquote {
+    display: block;
+    background-color: #ffffe6;
+    border: 1px solid #f4f225;
+}
+
+    .side h5 + blockquote a[href*='#icon-']::before {
+        /*background-color: #f4f225;*/
+        color: #ffffe6;
+        background-color: #ffce36;
+        background-image: -moz-linear-gradient(top, #fff185, #ffe40e);
+        background-image: -webkit-linear-gradient(top, #fff185, #ffe40e);
+        background-image: -o-linear-gradient(top, #fff185, #ffe40e);
+        background-image: linear-gradient(to bottom, #fff185, #ffe40e);
+    }
+
+/*Red*/
+.side h6 + blockquote {
+    display: block;
+    background-color: #fef0f0;
+    border: 1px solid #ff9185;
+}
+
+    .side h6 + blockquote a[href*='#icon-']::before {
+        /*background-color: #ff9185;*/
+        color: #fef0f0;
+        background-color: #e86537;
+        background-image: -moz-linear-gradient(top, #ef784e, #dd4814);
+        background-image: -webkit-linear-gradient(top, #ef784e, #dd4814);
+        background-image: -o-linear-gradient(top, #ef784e, #dd4814);
+        background-image: linear-gradient(to bottom, #ef784e, #dd4814);
+    }
+
+body.res-nightmode .md h4 + table {
+    border-color: #9ef886;
+}
+
+    body.res-nightmode .md h4 + table td, body.res-nightmode .md h4 + table th {
+        border-right-color: #9ef886;
+    }
+
+    body.res-nightmode .md h4 + table tr:nth-child(even), body.res-nightmode .md h4 + table thead {
+        background-color: #207807;
+    }
+
+body.res-nightmode .md h5 + table {
+    border-color: #f4f225;
+}
+
+    body.res-nightmode .md h5 + table td, body.res-nightmode .md h5 + table th {
+        border-right-color: #f4f225;
+    }
+
+    body.res-nightmode .md h5 + table tr:nth-child(even), body.res-nightmode .md h5 + table thead {
+        background-color: #626105;
+    }
+
+body.res-nightmode .md h6 + table {
+    border-color: #ff9185;
+}
+
+    body.res-nightmode .md h6 + table td, body.res-nightmode .md h6 + table th {
+        border-right-color: #ff9185;
+    }
+
+    body.res-nightmode .md h6 + table tr:nth-child(even), body.res-nightmode .md h6 + table thead {
+        background-color: #670808;
+    }
+
+body.res-nightmode .md h4 + ul, body.res-nightmode .md h4 + ol {
+    border-left-color: #9ef886;
+}
+
+    body.res-nightmode .md h4 + ul li:nth-child(odd), body.res-nightmode .md h4 + ol li:nth-child(odd) {
+        background-color: #207807;
+    }
+
+body.res-nightmode .md h5 + ul, body.res-nightmode .md h5 + ol {
+    border-left-color: #f4f225;
+}
+
+    body.res-nightmode .md h5 + ul li:nth-child(odd), body.res-nightmode .md h5 + ol li:nth-child(odd) {
+        background-color: #626105;
+    }
+
+body.res-nightmode .md h6 + ul, body.res-nightmode .md h6 + ol {
+    border-left-color: #ff9185;
+}
+
+    body.res-nightmode .md h6 + ul li:nth-child(odd), body.res-nightmode .md h6 + ol li:nth-child(odd) {
+        background-color: #670808;
+    }
+
+
+/*---------------------------------------------------
+9.7 Sidebar Icons
+--------------------------------------------------- */
+
 .side a[href*='#icon-'] {
-    color: #000 !important;
+    color: #333;
     cursor: default;
+    margin: 10px;
 }
 
     .side a[href*='#icon-']:hover {
@@ -1985,12 +1939,15 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
 
     .side a[href*='#icon-']::before {
         display: inline-block;
-        height: 16px;
-        width: 16px;
-        margin: 0 5px -1px -5px;
-        font-size: 20px;
-        line-height: 20px;
+        height: 52px;
+        width: 30px;
+        margin: -15px 5px 0px 0px;
+        font-size: 25px;
+        line-height: 60px;
         font-weight: bold;
+        padding: 5px 5px 0px;
+        text-align: center;
+        background-position: 0px 0px;
     }
 
 .side a[href='#icon-exclamation']::before {
@@ -2034,7 +1991,7 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
 }
 
 .side a[href='#icon-note']::before {
-    content: '✎';
+    content: '✑';
 }
 
 .side a[href='#icon-star']::before {
