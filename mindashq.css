@@ -560,6 +560,7 @@ div.usertext-edit {
         display: inline-block;
         padding: 5px 0px 5px 0px;
         margin: 15px 0px 0px 10px;
+        text-align: left;
         /*box-shadow: inset -6px 0px 9px -1px #dadac8;
         -moz-box-shadow: inset -6px 0px 9px -1px #dadac8;
         -webkit-box-shadow: inset -6px 0px 9px -1px #dadac8;*/
