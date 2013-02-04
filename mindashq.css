@@ -1819,7 +1819,7 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
 .side h4 + blockquote {
     display: block;
     background-color: #e9ffe6;
-    border: 1px solid #9ef886;
+    border: 1px solid #45e745;
 }
 
     .side h4 + blockquote a[href*='#icon-']::before {
