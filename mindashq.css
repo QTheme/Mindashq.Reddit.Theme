@@ -369,9 +369,6 @@ a.pref-lang {
             background: linear-gradient(to bottom, #eeeeee,#cccccc);
         }
 
-body.res-nightmode .pagename a {
-    font-size: 18px !important;
-}
 /*---------------------------------------------------
 4.4 Reddit Image and Text
 ---------------------------------------------------*/
@@ -644,19 +641,6 @@ div.usertext-edit {
     margin: 5px 5px 10px 0;
     min-width: 70px;
 }
-
-body.res-nightmode .usertext .help-toggle {
-    background-color: #DDD;
-}
-
-
-
-    body.res-nightmode .usertext .help-toggle a {
-        color: #444 !important;
-    }
-
-
-
 
 .usertext span[class*='toggle'], .btn.right {
     background-color: transparent;
@@ -941,11 +925,6 @@ iframe#ad-frame {
     text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
 }
 
-
-body.res-nightmode .side .redditname a {
-    color: #DDD !important;
-}
-
 .sidebox.submit .spacer, .sidebox.create {
     display: none;
 }
@@ -1130,29 +1109,6 @@ div#moresearchinfo {
     padding: 10px 0px 0px;
 }
 
-body.res-nightmode .login-form-side {
-    background-color: #111 !important;
-    color: #DDD !important;
-    border: 1px solid #DDD !important;
-}
-
-    body.res-nightmode .login-form-side #remember-me label {
-        color: #DDD !important;
-    }
-
-    body.res-nightmode .login-form-side #remember-me input {
-        width: auto !important;
-        margin-left: 6px;
-    }
-
-body.res-nightmode .side .login-form-side .submit {
-    padding: 4px;
-    background-color: transparent;
-}
-
-    body.res-nightmode .side .login-form-side .submit .btn {
-        margin: auto;
-    }
 /*---------------------------------------------------
 6.5 Flair Setting area
 ---------------------------------------------------*/
@@ -1176,39 +1132,6 @@ body.res-nightmode .side .login-form-side .submit {
     top: 95px;
     width: 300px;
 }
-
-body.res-nightmode .sidebox {
-    padding-left: 0 !important;
-}
-
-    body.res-nightmode .sidebox.submit {
-        background-image: none !important;
-    }
-
-        body.res-nightmode .sidebox.submit .nub {
-            background: #222;
-            border-left: 24px solid #393939;
-        }
-
-body.res-nightmode .sidebox, body.res-nightmode .subredditbox, body.res-nightmode .subreddit-info, body.res-nightmode .raisedbox, body.res-nightmode .login-form-side {
-    border: 0 !important;
-    border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-}
-
-    body.res-nightmode .sidebox.submit .morelink a {
-        color: #DDD !important;
-    }
-
-    body.res-nightmode .sidebox.submit:hover {
-        background-color: #444 !important;
-    }
-
-        body.res-nightmode .sidebox.submit:hover .nub {
-            border-left-color: #444;
-        }
-
 
 .morelink, .morelink:hover {
     font-weight: normal;
@@ -1511,20 +1434,12 @@ p#progressIndicator.neverEndingReddit, div.NERPageMarker {
     margin: 10px 0px;
 }
 
-body.res-nightmode .md table {
-    border-color: #666;
-}
-
 .side .md table {
     width: 100%;
 }
 
 .md table * {
     border: 0;
-}
-
-body.res-nightmode .md table * {
-    color: #ddd;
 }
 
 .md table th {
@@ -1535,21 +1450,9 @@ body.res-nightmode .md table * {
     background-color: #f6f6f6;
 }
 
-body.res-nightmode .md table tr:nth-child(even), body.res-nightmode .md table thead {
-    background-color: #444;
-}
-
 .md table td, .md table th {
     border-right: 1px solid #ccc;
     padding: 4px 8px;
-}
-
-body.res-nightmode .md table td, body.res-nightmode .md table th {
-    border-color: #666;
-}
-
-body:not(.res-nightmode) .md table tbody {
-    color: #444;
 }
 
 /*---------------------------------------------------
@@ -1585,11 +1488,6 @@ body:not(.res-nightmode) .md table tbody {
             margin: 2px;
         }
 
-body.res-nightmode .md ul li:nth-child(odd), body.res-nightmode .md ol li:nth-child(odd) {
-    background-color: #222;
-}
-
-
 /*---------------------------------------------------
 9.3 Boxes 
 --------------------------------------------------- */
@@ -1599,11 +1497,6 @@ body.res-nightmode .md ul li:nth-child(odd), body.res-nightmode .md ol li:nth-ch
     width: 0;
     background-color: transparent;
     margin: 20px 0 0;
-}
-
-body.res-nightmode .side hr {
-    border: 0 !important;
-    border-bottom: 1px solid #000 !important;
 }
 
 .side blockquote {
@@ -1668,14 +1561,6 @@ body.res-nightmode .side hr {
     background-color: transparent;
 }
 
-body.res-nightmode .side blockquote h1, body.res-nightmode .side blockquote h1 a {
-    color: #eee;
-}
-
-body.res-nightmode .side h4 + blockquote, body.res-nightmode .side h5 + blockquote, body.res-nightmode .side h6 + blockquote {
-    background-color: #111;
-}
-
 /*---------------------------------------------------
 9.4 Button Style 
 --------------------------------------------------- */
@@ -1713,18 +1598,8 @@ body.res-nightmode .side h4 + blockquote, body.res-nightmode .side h5 + blockquo
     margin: 10px 0px;
 }
 
-body.res-nightmode .btn, body.res-nightmode button,
-body.res-nightmode .side a[href*='/#btn'] {
-    color: #444 !important;
-    background-color: #ccc !important;
-}
-
 .btn a {
     color: #fff;
-}
-
-body.res-nightmode .btn a {
-    color: #444 !important;
 }
 
 .btn:hover, button:hover, .button:hover, .side a[href*='/#btn']:hover {
@@ -1733,17 +1608,10 @@ body.res-nightmode .btn a {
     color: #fff;
 }
 
-
 .btn.right:hover {
     background-color: transparent;
     border-color: transparent;
     color: #56a6f7;
-}
-
-body.res-nightmode .btn:hover, body.res-nightmode button:hover,
-body.res-nightmode .side a[href*='/#btn']:hover {
-    background-color: #ddd !important;
-    border-color: #ddd;
 }
 
 /*---------------------------------------------------
@@ -1781,24 +1649,8 @@ body.res-nightmode .side a[href*='/#btn']:hover {
     color: #222 !important;
 }
 
-
-body.res-nightmode a[href='#s']::after {
-    content: attr(title);
-    background: #666;
-    color: #666;
-    font-size: small;
-    visibility: visible;
-}
-
 a[href='#s']:hover::after, a[href='#s']:active::after {
     color: #000;
-    background: transparent;
-    text-decoration: none;
-    font-size: small;
-}
-
-body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:active::after {
-    color: #ddd;
     background: transparent;
     text-decoration: none;
     font-size: small;
@@ -1864,66 +1716,6 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
         background-image: -webkit-linear-gradient(top, #ef784e, #dd4814);
         background-image: -o-linear-gradient(top, #ef784e, #dd4814);
         background-image: linear-gradient(to bottom, #ef784e, #dd4814);
-    }
-
-body.res-nightmode .md h4 + table {
-    border-color: #9ef886;
-}
-
-    body.res-nightmode .md h4 + table td, body.res-nightmode .md h4 + table th {
-        border-right-color: #9ef886;
-    }
-
-    body.res-nightmode .md h4 + table tr:nth-child(even), body.res-nightmode .md h4 + table thead {
-        background-color: #207807;
-    }
-
-body.res-nightmode .md h5 + table {
-    border-color: #f4f225;
-}
-
-    body.res-nightmode .md h5 + table td, body.res-nightmode .md h5 + table th {
-        border-right-color: #f4f225;
-    }
-
-    body.res-nightmode .md h5 + table tr:nth-child(even), body.res-nightmode .md h5 + table thead {
-        background-color: #626105;
-    }
-
-body.res-nightmode .md h6 + table {
-    border-color: #ff9185;
-}
-
-    body.res-nightmode .md h6 + table td, body.res-nightmode .md h6 + table th {
-        border-right-color: #ff9185;
-    }
-
-    body.res-nightmode .md h6 + table tr:nth-child(even), body.res-nightmode .md h6 + table thead {
-        background-color: #670808;
-    }
-
-body.res-nightmode .md h4 + ul, body.res-nightmode .md h4 + ol {
-    border-left-color: #9ef886;
-}
-
-    body.res-nightmode .md h4 + ul li:nth-child(odd), body.res-nightmode .md h4 + ol li:nth-child(odd) {
-        background-color: #207807;
-    }
-
-body.res-nightmode .md h5 + ul, body.res-nightmode .md h5 + ol {
-    border-left-color: #f4f225;
-}
-
-    body.res-nightmode .md h5 + ul li:nth-child(odd), body.res-nightmode .md h5 + ol li:nth-child(odd) {
-        background-color: #626105;
-    }
-
-body.res-nightmode .md h6 + ul, body.res-nightmode .md h6 + ol {
-    border-left-color: #ff9185;
-}
-
-    body.res-nightmode .md h6 + ul li:nth-child(odd), body.res-nightmode .md h6 + ol li:nth-child(odd) {
-        background-color: #670808;
     }
 
 
