@@ -1466,6 +1466,10 @@ div.userbarHide {
 .morecomments {
     margin-left: 15px;
 }
+
+    .morecomments a, .morecomments a .gray {
+        color: #eee;
+    }
 /*Progress Indicator and Page marker for RES mode*/
 p#progressIndicator.neverEndingReddit, div.NERPageMarker {
     width: auto;
@@ -1831,18 +1835,18 @@ body.res-nightmode a[href='#s']:hover::after, body.res-nightmode a[href='#s']:ac
 /*Yellow*/
 .side h5 + blockquote {
     display: block;
-    background-color: #ffffe6;
-    border: 1px solid #f4f225;
+    background-color: #fffde6;
+    border: 1px solid #fae296;
 }
 
     .side h5 + blockquote a[href*='#icon-']::before {
         /*background-color: #f4f225;*/
         color: #ffffe6;
         background-color: #ffce36;
-        background-image: -moz-linear-gradient(top, #fff185, #ffe40e);
-        background-image: -webkit-linear-gradient(top, #fff185, #ffe40e);
+        background-image: -moz-linear-gradient(top, #fde000, #fcca2e);
+        background-image: -webkit-linear-gradient(top, #fde000, #fcca2e);
         background-image: -o-linear-gradient(top, #fff185, #ffe40e);
-        background-image: linear-gradient(to bottom, #fff185, #ffe40e);
+        background-image: linear-gradient(to bottom, #fde000, #fcca2e);
     }
 
 /*Red*/
