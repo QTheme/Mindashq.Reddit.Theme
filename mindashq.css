@@ -50,6 +50,12 @@ h3 {
 	.rounded .morelink {
 		border-radius: 3px;
 	}
+
+hr {
+	height: 1px;
+	width: 100%;
+	margin: 12px 0px 10px 0px;
+}
 /* --  1.1 Selective dimming of link buttons
 --------------------------------------------------- */
 .entry > .flat-list > li {
@@ -1047,18 +1053,18 @@ div#adlink {
 	#image-upload * {
 		font-size: 12px;
 	}
+
+body.wiki-page .wiki-page-content {
+	margin: 0px 15px 15px;
+}
+
+body.wiki-page .pageactions {
+	float: right;
+	border: 0px none;
+}
 /*---------------moving side bar up again as no submit button on submit page*/
 body.submit-page .side #search {
 	margin-top: 0px;
-}
-/*---------------Submit Page*/
-body.submit-page div.content {
-	/*best be identical to .linklisting*/
-	bottom: 0px;
-	margin-bottom: 0px !important;
-	margin-left: 10px!important;
-	margin-right: auto;
-	padding: 0px;
 }
 
 form#newlink {
@@ -1307,12 +1313,6 @@ a[href='#s']:active::after {
 	margin: 0px;
 }
 
-.side .usertext-body .md hr {
-	height: 1px;
-	width: 100%;
-	margin: 12px 0px 10px 0px;
-}
-
 .side .icon-menu a {
 }
 
@@ -1490,6 +1490,11 @@ a {
 		color: #861010;
 	}
 
+hr {
+	border: none;
+	background-color: #d2d2d2;
+	color: #c8c8c8;
+}
 
 .comment .md p > a:visited {
 	color: #930ea5;
@@ -2306,32 +2311,24 @@ div#adlink {
 	#image-upload * {
 		font-size: 12px;
 	}
-/*---------------moving side bar up again as no submit button on submit page*/
-body.submit-page .side #search {
-	margin-top: 0px;
-}
-/*---------------Submit Page*/
-body.submit-page div.content {
-	/*best be identical to .linklisting*/
-	background: none transparent;
-	border: 3px solid #ffffff;
-	-webkit-box-shadow: 0px 2px 6px #BBBBBB;
-	-moz-box-shadow: 0px 2px 6px #BBBBBB;
-	box-shadow: 0px 2px 6px #BBBBBB;
-	-webkit-border-bottom-right-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+
+body.wiki-page h1.wikititle {
+	color: #5ca2e8;
+	font-size: 3em;
 }
 
+body.wiki-page .pageactions {
+	border: 0px none;
+}
+
+body.wiki-page .wiki-page-content {
+	border-top: 1px dotted #d2d2d2;
+}
+
+	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
+		background-color: #fbfbf9;
+		border-color: #eee;
+	}
 /* __  8. RES Optimisation ________ */
 
 .lcTagged {
@@ -2537,12 +2534,6 @@ a[href='#s']:active::after {
 
 .side .md li p,
 .side .md ol p {
-}
-
-.side .usertext-body .md hr {
-	border: none;
-	background-color: #d2d2d2;
-	color: #c8c8c8;
 }
 
 .side .icon-menu a {
