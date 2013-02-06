@@ -51,7 +51,8 @@ h3 {
 		border-radius: 3px;
 	}
 
-hr {
+hr,
+.side .md hr {
 	height: 1px;
 	width: 100%;
 	margin: 12px 0px 10px 0px;
@@ -1255,12 +1256,6 @@ a[href='#s']:active::after {
 /* --  9.5 Boxes 
 --------------------------------------------------- */
 
-.side blockquote + hr {
-	border-width: 0;
-	width: 0;
-	margin: 20px 0 0;
-}
-
 .side blockquote {
 	border: 0 none;
 	padding: 10px;
@@ -1490,7 +1485,8 @@ a {
 		color: #861010;
 	}
 
-hr {
+hr,
+.side .md hr {
 	border: none;
 	background-color: #d2d2d2;
 	color: #c8c8c8;
@@ -2483,10 +2479,6 @@ a[href='#s']:active::after {
 
 /* ``    9.5 Boxes   ```````` */
 
-.side blockquote + hr {
-	background-color: transparent;
-}
-
 .side blockquote {
 	border: 0 none;
 	border: 1px solid #ccc;
@@ -3331,10 +3323,6 @@ body.res-nightmode {
 		color: #fff;
 		background: transparent;
 		font-size: small;
-	}
-
-	body.res-nightmode .side blockquote + hr {
-		background-color: transparent;
 	}
 
 	body.res-nightmode .side blockquote {
