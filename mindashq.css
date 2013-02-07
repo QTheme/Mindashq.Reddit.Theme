@@ -4,16 +4,15 @@
 	------------------------------------------------
     https://github.com/ashishtiwari/Mindashq.Reddit.Theme
 	------------------------------------------------
-    +  Initial Theme
     +  Distinct header
-    +  Compact comments to utimize space better, esp the bottom area for deeply nested comments
-    +  Redability improvements
+    +  Compact comments to utilize space better, esp the bottom area for deeply nested comments
+    +  Readability improvements
     +  100% text only theme, no images required
-    +  All areas (moderator, and user pages, submit link pages etc) treated well for use with stylish
-    +  RES compatible (Night mode coming up)
+    +  All areas (moderator, and user pages, wiki-pages, submit link pages etc) treated well. suitable for use with stylish.
+    +  RES compatible (top bar, never ending reddit, night-mode, notifications et al).
     +  Works with Reddit Companion
 	------------------------------------------------
-    Uses "Submit button on Top" and the colored boxes from r/edurne/ by https://github.com/rolmos/
+    Uses the colored boxes from r/edurne/ by https://github.com/rolmos/
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -99,6 +98,8 @@ hr,
 	margin-left: 0px !important;
 	margin-top: -21px;
 	padding: 0 0 0 5px;
+	border: 1px solid;
+	border-width: 0px 0px 1px;
 	text-transform: none;
 }
 
@@ -187,6 +188,7 @@ hr,
 	word-spacing: -1px;
 	margin: 0px;
 	padding: 0px;
+	border: none !important;
 	z-index: 400;
 }
 
@@ -199,6 +201,14 @@ hr,
 
 /* ~~  3. Header
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#header {
+	height: 35px;
+	padding: 0;
+	margin: 20px 0 30px;
+	border: 1px solid;
+	border-width: 0px 0px 30px;
+}
 
 /* --  3.1 User Controls
 ---------------------------------------------------*/
@@ -219,6 +229,10 @@ a.pref-lang {
 	top: 35px!important;
 	height: 18px !important;
 	padding: 6px 10px 4px !important;
+	border: 1px solid;
+	border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
 	z-index: 102;
 }
 
@@ -238,11 +252,6 @@ a.pref-lang {
 	padding: 0px;
 }
 
-#header {
-	height: 35px;
-	padding: 0;
-	margin: 20px 0 30px;
-}
 /* --  3.3 The Reddit Name, applies to all pages
 ---------------------------------------------------*/
 .pagename {
@@ -267,6 +276,7 @@ a.pref-lang {
 		margin-left: -3px;
 		padding: 10px 20px;
 		display: inline-block;
+		font-size: 18px!important;
 		height: 37px;
 		line-height: 37px;
 		text-transform: capitalize;
@@ -323,12 +333,12 @@ a.pref-lang {
 
 	#header ul.tabmenu li a,
 	#header ul.tabmenu li.selected a {
-		padding: 5px 10px;
+		padding: 5px 10px!important;
 		display: inline-block;
 	}
 
 	#header ul.tabmenu li.selected a {
-		padding: 10px 15px;
+		padding: 10px 15px!important;
 	}
 
 		#header ul.tabmenu li a:hover,
@@ -774,13 +784,9 @@ iframe#ad-frame {
 
 /* --  5.1 Search
 ---------------------------------------------------*/
-.side #search {
-	margin-top: 61px;
-}
-
 .side .spacer #search {
 	padding: 0px;
-	margin: 61px 0px 15px 0px;
+	margin: 0px 0px 15px 0px;
 }
 
 #search input[type="text"] {
@@ -919,8 +925,6 @@ div#moresearchinfo {
 /* --  5.6 Submit Button
 ---------------------------------------------------*/
 .sidebox.submit {
-	position: absolute;
-	top: 95px;
 	width: 300px;
 }
 
@@ -1062,10 +1066,6 @@ body.wiki-page .wiki-page-content {
 body.wiki-page .pageactions {
 	float: right;
 	border: 0px none;
-}
-/*---------------moving side bar up again as no submit button on submit page*/
-body.submit-page .side #search {
-	margin-top: 0px;
 }
 
 form#newlink {
@@ -1500,7 +1500,7 @@ hr,
 
 #sr-header-area {
 	background: #fff;
-	border-bottom: 1px solid #fff;
+	border-bottom-color: #fff;
 	box-shadow: 0px 2px 8px 2px #fff;
 	-moz-box-shadow: 0px 2px 8px 2px #fff;
 	-webkit-box-shadow: 0px 2px 8px 2px #fff;
@@ -1541,7 +1541,6 @@ hr,
 #sr-header-area .drop-choices {
 	/*font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;*/
 	background-color: #ffffff !important;
-	border: none !important;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
@@ -1556,6 +1555,13 @@ hr,
 
 /* __  3. Header ________ */
 
+#header {
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+	background-color: #fff;
+	/*background: #cee3f8;*/
+	border-bottom-color: #cee3f8;
+}
+
 /* ``    3.1 User Controls  ```````` */
 
 span.user {
@@ -1569,10 +1575,7 @@ a.pref-lang {
 
 #header-bottom-right {
 	background-color: #fff;
-	border: 1px solid #cee3f8;
-	border-radius: 0px !important;
-	-moz-border-radius: 0px !important;
-	-webkit-border-radius: 0px !important;
+	border-color: #cee3f8;
 }
 
 	#header-bottom-right a {
@@ -1584,14 +1587,6 @@ a.pref-lang {
 /* ``    3.2 Banner Image  ```````` */
 #header-bottom-left {
 	background-color: transparent;
-}
-
-#header {
-	font-family: Helvetica,Arial,Verdana,sans-serif;
-	background-color: #fff;
-	/*background: #cee3f8;*/
-	border: 0px none;
-	border-bottom: 30px solid #cee3f8;
 }
 /* ``    3.3 The Reddit Name, applies to all pages  ```````` */
 .pagename {
@@ -1650,22 +1645,26 @@ a.pref-lang {
 	}
 
 	#header ul.tabmenu li a,
+	#header ul.tabmenu li a:visited,
 	#header ul.tabmenu li.selected a {
 		background-color: #cee3f8;
+		color: #0000ff;
 	}
 
-	#header ul.tabmenu li.selected a {
-		background: #fbfbf9;
-		border: 1px solid #5ca2e8;
-		box-shadow: 0px 13px 0px -9px #5ca2e8;
-		-moz-box-shadow: 0px 13px 0px -9px #5ca2e8;
-		-webkit-box-shadow: 0px 7px -4px 1px #5ca2e8;
-	}
-
-		#header ul.tabmenu li a:hover,
-		#header ul.tabmenu li.selected a:hover {
-			color: #1f96ca;
+		#header ul.tabmenu li.selected a,
+		#header ul.tabmenu li.selected a:visited {
+			background: #fbfbf9;
+			color: #ff4500;
+			border: 1px solid #5ca2e8;
+			box-shadow: 0px 13px 0px -9px #5ca2e8;
+			-moz-box-shadow: 0px 13px 0px -9px #5ca2e8;
+			-webkit-box-shadow: 0px 7px -4px 1px #5ca2e8;
 		}
+
+			#header ul.tabmenu li a:hover,
+			#header ul.tabmenu li.selected a:hover {
+				color: #1f96ca;
+			}
 
 /* ``    3.6 Menu-buttons   - [TBD ] stepped top navigation  ```````` */
 
@@ -2604,15 +2603,16 @@ body.res-nightmode {
 }
 
 	body.res-nightmode h1 {
-		color: #d7d7d7;
+		color: #d7d7d7!important;
+		border: 0px none!important;
 	}
 
 	body.res-nightmode h2 {
-		color: #d7d7d7;
+		color: #d7d7d7!important;
 	}
 
 	body.res-nightmode h3 {
-		color: #d7d7d7;
+		color: #d7d7d7!important;
 	}
 
 	body.res-nightmode a {
@@ -2704,6 +2704,12 @@ body.res-nightmode {
 				background-color: #000000;
 			}
 
+	body.res-nightmode #header {
+		font-family: Helvetica,Arial,Verdana,sans-serif;
+		background-color: #000!important;
+		border-bottom-color: #414141;
+	}
+
 	body.res-nightmode #header-bottom-right {
 		background-color: #1b1b1b !important;
 		border: 1px solid #414141;
@@ -2716,25 +2722,20 @@ body.res-nightmode {
 		background-color: transparent !important;
 	}
 
-	body.res-nightmode #header {
-		font-family: Helvetica,Arial,Verdana,sans-serif;
-		background-color: #000!important;
-		border: 0px none;
-		border-bottom: 30px solid #414141;
-	}
-
 	body.res-nightmode .pagename a {
-		color: #231405;
+		color: #eee;
+		font-size: 18px!important;
 		background-color: #4f4f52;
-		text-shadow: 0 1px 0 #ccc;
+		text-shadow: 0 1px 0 #231405;
 		border-width: 0px 0px 1px 0px;
-		box-shadow: 0px 4px 6px #444;
-		-moz-box-shadow: 0px 4px 6px #444;
-		-webkit-box-shadow: 0px 4px 6px #444;
+		box-shadow: 0px 4px 6px #000;
+		-moz-box-shadow: 0px 4px 6px #000;
+		-webkit-box-shadow: 0px 4px 6px #000;
 	}
 
 		body.res-nightmode .pagename a:hover {
 			color: #a35d17;
+			font-size: 18px!important;
 			text-shadow: 0 1px 0 #111;
 			background: #4f4f52;
 			background: -moz-linear-gradient(top,#4f4f52,#333333);
@@ -2754,68 +2755,84 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode #header ul.tabmenu li a,
+	body.res-nightmode #header ul.tabmenu li a:visited,
 	body.res-nightmode #header ul.tabmenu li.selected a {
 		background-color: #414141;
+		color: #ff910b;
 	}
 
-	body.res-nightmode #header ul.tabmenu li.selected a {
-		background: #040406;
-		border: 1px solid #a35d17;
-		box-shadow: 0px 13px 0px -9px #a35d17;
-		-moz-box-shadow: 0px 13px 0px -9px #a35d17;
-		-webkit-box-shadow: 0px 7px -4px 1px #a35d17;
-	}
-
-		body.res-nightmode #header ul.tabmenu li a:hover,
-		body.res-nightmode #header ul.tabmenu li.selected a:hover {
-			color: #e06935;
+		body.res-nightmode #header ul.tabmenu li.selected a,
+		body.res-nightmode #header ul.tabmenu li.selected a:visited {
+			background: #040406;
+			border: 1px solid #a35d17;
+			box-shadow: 0px 13px 0px -9px #a35d17;
+			-moz-box-shadow: 0px 13px 0px -9px #a35d17;
+			-webkit-box-shadow: 0px 7px -4px 1px #a35d17;
 		}
 
+			body.res-nightmode #header ul.tabmenu li a:hover,
+			body.res-nightmode #header ul.tabmenu li.selected a:hover {
+				color: #e06935;
+			}
+
 	body.res-nightmode div.content {
-		border: 3px solid #000000;
+		border: 3px solid #202020;
 		background-color: #1b1b1b !important; /*020201;*/
-		-moz-box-shadow: 0px 1px 4px 1px #333333;
-		-webkit-box-shadow: 0px 1px 4px 1px #333333;
-		box-shadow: 0px 1px 4px 1px #333333;
+		-moz-box-shadow: 0px 1px 4px 3px #000;
+		-webkit-box-shadow: 0px 1px 4px 3px #000;
+		box-shadow: 0px 1px 4px 3px #000;
 	}
 
 	body.res-nightmode.listing-page > div.content,
-	body.res-nightmode.messages-page > div.content,
-	body.res-nightmode.single-page > div.content > .linklisting {
-		border: 3px solid #000000;
-		-moz-box-shadow: 0px 1px 4px 1px #333333;
-		-webkit-box-shadow: 0px 1px 4px 1px #333333;
-		box-shadow: 0px 1px 4px 1px #333333;
+	body.res-nightmode.single-page > div.content,
+	body.res-nightmode.messages-page > div.content {
+		border: 0px;
+		padding: 0px 2px 2px;
+		border: 0px none;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
 	}
 
-	body.res-nightmode.single-page > div.content > .commentarea {
-		border: 3px solid #000000;
-		-moz-box-shadow: 0px 1px 4px 1px #333333;
-		-webkit-box-shadow: 0px 1px 4px 1px #333333;
-		box-shadow: 0px 1px 4px 1px #333333;
-	}
+		body.res-nightmode.listing-page > div.content,
+		body.res-nightmode.messages-page > div.content,
+		body.res-nightmode.single-page > div.content > .linklisting {
+			border: 3px solid #202020;
+			-moz-box-shadow: 0px 1px 4px 3px #000;
+			-webkit-box-shadow: 0px 1px 4px 3px #000;
+			box-shadow: 0px 1px 4px 3px #000;
+		}
 
-	body.res-nightmode.single-page > div.content > .linklisting .link {
-		background: #160f08;
-		background: -moz-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
-		background: -webkit-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
-		border-radius: 0px;
-		-moz-border-radius: 0px;
-		-webkit-border-radius: 0px;
-	}
+		body.res-nightmode.single-page > div.content > .commentarea {
+			border: 3px solid #202020;
+			-moz-box-shadow: 0px 1px 4px 3px #000;
+			-webkit-box-shadow: 0px 1px 4px 3px #000;
+			box-shadow: 0px 1px 4px 3px #000;
+		}
+
+		body.res-nightmode.single-page > div.content > .linklisting .link {
+			background: #160f08;
+			background: -moz-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
+			background: -webkit-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
+			border-radius: 0px;
+			-moz-border-radius: 0px;
+			-webkit-border-radius: 0px;
+		}
 
 	body.res-nightmode .linklisting .even {
-		background: #040404;
-		background: -moz-linear-gradient(left,#010101,#040404);
-		background: -webkit-linear-gradient(left,#010101,#040404);
+		background: #262626;
+		background: -moz-linear-gradient(left,#222,#262626);
+		background: -webkit-linear-gradient(left,#222,#262626);
 		border-top: 1px solid #0e0e0e;
+		border: 0px!important;
 	}
 
 	body.res-nightmode .linklisting .odd {
-		background: #010101;
-		background: -moz-linear-gradient(left,#020202,#010101);
-		background: -webkit-linear-gradient(left,#020202,#010101);
+		background: #1e1e1e;
+		background: -moz-linear-gradient(left,#222,#1e1e1e);
+		background: -webkit-linear-gradient(left,#222,#1e1e1e);
 		border-top: 1px solid #0e0e0e;
+		border: 0px!important;
 	}
 
 	body.res-nightmode .linklisting .even:first-child {
@@ -2899,7 +2916,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .commentarea .nestedlisting {
-		background-color: white;
+		background-color: #202020;
 	}
 
 	body.res-nightmode .commentarea .comment {
@@ -2917,11 +2934,11 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .even.comment {
-		background-color: #040404;
+		background-color: #131313!important;
 	}
 
 	body.res-nightmode .odd.comment {
-		background-color: #080808;
+		background-color: #1b1b1b!important;
 	}
 
 	body.res-nightmode .child {
@@ -2929,11 +2946,11 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .nestedlisting > .comment .comment {
-		background-color: #040405!important;
+		background-color: #131313!important;
 	}
 
 		body.res-nightmode .nestedlisting > .comment .comment .comment {
-			background-color: #020202!important;
+			background-color: #1b1b1b!important;
 		}
 
 	body.res-nightmode .comment a.expand {
@@ -2998,7 +3015,7 @@ body.res-nightmode {
 	body.res-nightmode .linkinfo {
 		color: #ccc;
 		text-shadow: none;
-		background: transparent;
+		background: transparent!important;
 		border: 1px solid #2d2d2d;
 		border-width: 1px 0px;
 		border-radius: 0px!important;
@@ -3054,9 +3071,9 @@ body.res-nightmode {
 
 	body.res-nightmode .morelink,
 	body.res-nightmode .morelink:hover {
-		background: #bb6107;
+		background: #bb6107!important;
 		border-color: #bb6107;
-		text-shadow: 1px 1px 2px #f0f0f0;
+		text-shadow: 1px 1px 2px #000000;
 		border-radius: 0px;
 		-moz-border-radius: 0px;
 		-webkit-border-radius: 0px;
@@ -3064,7 +3081,7 @@ body.res-nightmode {
 
 		body.res-nightmode .morelink a,
 		body.res-nightmode .morelink a:hover {
-			color: #000;
+			color: #fff;
 		}
 
 		body.res-nightmode .morelink .nub,
@@ -3167,29 +3184,14 @@ body.res-nightmode {
 			font-size: 12px;
 		}
 
-	body.res-nightmode.submit-page .side #search {
-		margin-top: 0px;
+	body.res-nightmode.wiki-page .wiki-page-content {
+		border-top: 1px dotted #414141;
 	}
 
-	body.res-nightmode.submit-page div.content {
-		background: none transparent;
-		border: 3px solid #000000;
-		-webkit-box-shadow: 0px 2px 6px #444444;
-		-moz-box-shadow: 0px 2px 6px #444444;
-		box-shadow: 0px 2px 6px #444444;
-		-webkit-border-bottom-right-radius: 5px;
-		-webkit-border-bottom-left-radius: 5px;
-		-webkit-border-top-left-radius: 5px;
-		-webkit-border-top-right-radius: 5px;
-		-moz-border-radius-topleft: 5px;
-		-moz-border-radius-topright: 5px;
-		-moz-border-radius-bottomright: 5px;
-		-moz-border-radius-bottomleft: 5px;
-		border-bottom-right-radius: 5px;
-		border-bottom-left-radius: 5px;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki > .toc > ul {
+			background-color: #040406;
+			border-color: #111;
+		}
 
 	body.res-nightmode .lcTagged {
 		background-color: transparent!important;
@@ -3199,10 +3201,20 @@ body.res-nightmode {
 
 	body.res-nightmode .keyHighlight {
 		background: none transparent!important;
-		outline: 1px dotted #001f5a!important;
+		outline: 1px dotted #e46700!important;
 		border: 0px!important;
-		border-right: 2px solid #001f5a!important;
+		border-right: 2px solid #e46700!important;
 	}
+
+		body.res-nightmode .keyHighlight,
+		body.res-nightmode .keyHighlight .usertext-body,
+		body.res-nightmode .keyHighlight .usertext-body .md,
+		body.res-nightmode .keyHighlight .usertext-body .md p,
+		body.res-nightmode .keyHighlight .noncollapsed,
+		body.res-nightmode .keyHighlight .noncollapsed .md,
+		body.res-nightmode .keyHighlight .noncollapsed .md p {
+			background-color: transparent!important;
+		}
 
 	body.res-nightmode .keyNavAnnotation {
 		color: #777;
@@ -3250,6 +3262,10 @@ body.res-nightmode {
 		background-color: transparent;
 	}
 
+	body.res-nightmode .sidebox {
+		padding: 0px!important;
+	}
+
 	body.res-nightmode .btn,
 	body.res-nightmode button,
 	body.res-nightmode .button,
@@ -3265,7 +3281,7 @@ body.res-nightmode {
 		-o-border-radius: 2px;
 		-ms-border-radius: 2px;
 		-khtml-border-radius: 2px;
-		text-shadow: 1px 1px 2px #f0f0f0;
+		text-shadow: 1px 1px 2px #000;
 	}
 
 	body.res-nightmode .side a[href*="/#btn"] {
@@ -3355,9 +3371,10 @@ body.res-nightmode {
 		background: transparent!important;
 	}
 
+	body.res-nightmode hr,
 	body.res-nightmode .side .usertext-body .md hr {
 		border: none;
-		background-color: #2d2d2d;
+		background-color: #414141;
 		color: #373737;
 	}
 
@@ -3367,53 +3384,33 @@ body.res-nightmode {
 
 	body.res-nightmode .side blockquote a[href*="#icon-"]::before {
 		color: #111;
-		background-color: #a3a3a3;
-		background-image: -moz-linear-gradient(top,#999999,#b2b2b2);
-		background-image: -webkit-linear-gradient(top,#999999,#b2b2b2);
-		background-image: -o-linear-gradient(top,#999999,#b2b2b2);
-		background-image: linear-gradient(tobottom,#999999,#b2b2b2);
 	}
 
 	body.res-nightmode .side h4 + blockquote {
-		background-color: #160019;
-		border: 1px solid #ba18ba;
+		background-color: #031401;
+		border: 1px solid #046f04;
 	}
 
 		body.res-nightmode .side h4 + blockquote a[href*="#icon-"]::before {
 			color: #160019;
-			background-color: #a22ea2;
-			background-image: -moz-linear-gradient(top,#921b92,#c638c6);
-			background-image: -webkit-linear-gradient(top,#921b92,#c638c6);
-			background-image: -o-linear-gradient(top,#9d3b9d,#ae5cae);
-			background-image: linear-gradient(tobottom,#921b92,#c638c6);
 		}
 
 	body.res-nightmode .side h5 + blockquote {
-		background-color: #000219;
-		border: 1px solid #051d69;
+		background-color: #120e01;
+		border: 1px solid #e9cf7b;
 	}
 
 		body.res-nightmode .side h5 + blockquote a[href*="#icon-"]::before {
 			color: #000019;
-			background-color: #0031c9;
-			background-image: -moz-linear-gradient(top,#021fff,#0335d1);
-			background-image: -webkit-linear-gradient(top,#021fff,#0335d1);
-			background-image: -o-linear-gradient(top,#000e7a,#001bf1);
-			background-image: linear-gradient(tobottom,#021fff,#0335d1);
 		}
 
 	body.res-nightmode .side h6 + blockquote {
-		background-color: #010f0f;
-		border: 1px solid #006e7a;
+		background-color: #100000;
+		border: 1px solid #b91b0a;
 	}
 
 		body.res-nightmode .side h6 + blockquote a[href*="#icon-"]::before {
 			color: #010f0f;
-			background-color: #179ac8;
-			background-image: -moz-linear-gradient(top,#1087b1,#22b7eb);
-			background-image: -webkit-linear-gradient(top,#1087b1,#22b7eb);
-			background-image: -o-linear-gradient(top,#1087b1,#22b7eb);
-			background-image: linear-gradient(tobottom,#1087b1,#22b7eb);
 		}
 
 	body.res-nightmode .side a[href*="#icon-"] {
