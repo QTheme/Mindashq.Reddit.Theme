@@ -12,7 +12,8 @@
     +  RES compatible (top bar, never ending reddit, night-mode, notifications et al).
     +  Works with Reddit Companion
 	------------------------------------------------
-    Uses the colored boxes from r/edurne/ by https://github.com/rolmos/
+    Extends the colored boxes from r/edurne/ by https://github.com/rolmos/
+    +  Just add "-green" or "-yellow" or "-red" to a heading in a blockquote on sidebar. e.g, [Title](#icon-exclamation-red)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
