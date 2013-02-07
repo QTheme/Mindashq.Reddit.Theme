@@ -1315,29 +1315,18 @@ a[href='#s']:active::after {
 --------------------------------------------------- */
 .side blockquote a[href*='#icon-']::before {
 }
-/*Green*/
-.side h4 + blockquote {
-	display: block;
-}
-
-	.side h4 + blockquote a[href*='#icon-']::before {
-	}
-
-/*Yellow*/
-.side h5 + blockquote {
-	display: block;
-}
-
-	.side h5 + blockquote a[href*='#icon-']::before {
-	}
-
-/*Red*/
+/*h4 Green, h5 yellow, h6 red*/
+.side h4 + blockquote,
+.side h5 + blockquote,
 .side h6 + blockquote {
 	display: block;
 }
 
+	.side h4 + blockquote a[href*='#icon-']::before,
+	.side h5 + blockquote a[href*='#icon-']::before,
 	.side h6 + blockquote a[href*='#icon-']::before {
 	}
+
 
 
 /* --  9.7 Sidebar Icons
@@ -1366,67 +1355,67 @@ a[href='#s']:active::after {
 		background-position: 0px 0px;
 	}
 
-.side a[href='#icon-exclamation']::before {
+.side a[href^='#icon-exclamation']::before {
 	content: '♔';
 }
 
-.side a[href='#icon-information']::before {
+.side a[href^='#icon-information']::before {
 	content: 'ⓘ';
 }
 
-.side a[href='#icon-lightbulb']::before {
+.side a[href^='#icon-lightbulb']::before {
 	content: '☼';
 }
 
-.side a[href='#icon-comments']::before {
+.side a[href^='#icon-comments']::before {
 	content: '❝';
 }
 
-.side a[href='#icon-unhappy']::before {
+.side a[href^='#icon-unhappy']::before {
 	content: '☹';
 }
 
-.side a[href='#icon-check']::before {
+.side a[href^='#icon-check']::before {
 	content: '✓';
 }
 
-.side a[href='#icon-clock']::before {
+.side a[href^='#icon-clock']::before {
 	content: '◔';
 }
 
-.side a[href='#icon-cross']::before {
+.side a[href^='#icon-cross']::before {
 	content: '⊘';
 }
 
-.side a[href='#icon-smile']::before {
+.side a[href^='#icon-smile']::before {
 	content: '☺';
 }
 
-.side a[href='#icon-error']::before {
+.side a[href^='#icon-error']::before {
 	content: '☢';
 }
 
-.side a[href='#icon-note']::before {
+.side a[href^='#icon-note']::before {
 	content: '✑';
 }
 
-.side a[href='#icon-star']::before {
+.side a[href^='#icon-star']::before {
 	content: '✰';
 }
 
-.side a[href='#icon-help']::before {
+.side a[href^='#icon-help']::before {
 	content: '✍';
 }
 
-.side a[href='#icon-time']::before {
+.side a[href^='#icon-time']::before {
 	content: '⌚';
 }
 
-.side a[href='#icon-bell']::before {
+.side a[href^='#icon-bell']::before {
 	content: '❂';
 }
 
-.side a[href='#icon-eye']::before {
+.side a[href^='#icon-eye']::before {
 	content: '✿';
 }
 
@@ -2547,7 +2536,8 @@ a[href='#s']:active::after {
 	border: 1px solid #45e745;
 }
 
-	.side h4 + blockquote a[href*='#icon-']::before {
+	.side h4 + blockquote a[href^='#icon-']::before,
+	.side blockquote a[href$='green']::before {
 		color: #e9ffe6;
 		background-color: #5dd15d;
 		background-image: -moz-linear-gradient(top, #6de46d, #39c739);
@@ -2562,7 +2552,8 @@ a[href='#s']:active::after {
 	border: 1px solid #fae296;
 }
 
-	.side h5 + blockquote a[href*='#icon-']::before {
+	.side h5 + blockquote a[href^='#icon-']::before,
+	.side blockquote a[href$='yellow']::before {
 		color: #ffffe6;
 		background-color: #ffce36;
 		background-image: -moz-linear-gradient(top, #fde000, #fcca2e);
@@ -2577,7 +2568,8 @@ a[href='#s']:active::after {
 	border: 1px solid #ff9185;
 }
 
-	.side h6 + blockquote a[href*='#icon-']::before {
+	.side h6 + blockquote a[href^='#icon-']::before,
+	.side blockquote a[href$='red']::before {
 		color: #fef0f0;
 		background-color: #e86537;
 		background-image: -moz-linear-gradient(top, #ef784e, #dd4814);
@@ -2873,7 +2865,7 @@ body.res-nightmode {
 
 	body.res-nightmode .usertext span[class*="toggle"],
 	body.res-nightmode .btn.right {
-		background-color: transparent;
+		background-color: transparent!important;
 		border: 0px none;
 	}
 
@@ -3056,9 +3048,14 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .login-form-side {
-		border: 1px solid #111;
-		border-width: 1px 0px;
+		border: 1px solid #111!important;
+		border-width: 1px 0px!important;
+		background-color: transparent!important;
 	}
+
+		body.res-nightmode .login-form-side label {
+			color: #fff!important;
+		}
 
 	body.res-nightmode .titlebox form.toggle {
 		background-color: transparent;
@@ -3270,9 +3267,9 @@ body.res-nightmode {
 	body.res-nightmode button,
 	body.res-nightmode .button,
 	body.res-nightmode .side a[href*="/#btn"] {
-		background-color: #bb6107;
+		background-color: #bb6107!important;
 		border: none;
-		color: #000;
+		color: #eee!important;
 		font-size: 13px;
 		font-family: arial,helvetica,sans-serif;
 		border-radius: 2px;
@@ -3296,15 +3293,15 @@ body.res-nightmode {
 	body.res-nightmode button:hover,
 	body.res-nightmode .button:hover,
 	body.res-nightmode .side a[href*="/#btn"]:hover {
-		background-color: #a95908;
-		border-color: #a95908;
-		color: #000;
+		background-color: #a95908!important;
+		border-color: #a95908!important;
+		color: #ddd!important;
 	}
 
 	body.res-nightmode .btn.right:hover {
-		background-color: transparent;
-		border-color: transparent;
-		color: #a95908;
+		background-color: transparent!important;
+		border-color: transparent!important;
+		color: #a95908!important;
 	}
 
 	body.res-nightmode .usertext-body pre {
