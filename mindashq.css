@@ -52,11 +52,18 @@ h3 {
 	}
 
 hr,
-.side .md hr {
+.side .md hr,
+.side .md > hr + hr {
 	height: 1px;
 	width: 100%;
-	margin: 12px 0px 10px 0px;
+	margin: 0px;
 }
+
+.side .md > hr {
+	width: 0px;
+	margin: 0px 0px 12px 0px;
+}
+
 /* --  1.1 Selective dimming of link buttons
 --------------------------------------------------- */
 .entry > .flat-list > li {
@@ -346,8 +353,6 @@ a.pref-lang {
 		#header ul.tabmenu li.selected a:hover {
 		}
 
-/* --  3.6 Menu-buttons   - [TBD ] stepped top navigation
----------------------------------------------------*/
 
 /* ~~  4. Content Pane and Link Listings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -1447,7 +1452,7 @@ a {
 }
 
 	a:visited {
-		color: #846090; /* #930ea5 #a90dbe #551a8b #609  #846090;*/
+		color: #810ba8; /* #846090 #930ea5 #a90dbe #551a8b #609  #846090;*/
 	}
 
 	a:hover {
@@ -1497,7 +1502,11 @@ hr,
 }
 
 	#sr-header-area .separator {
-		color: #2d2d2d;
+		color: #a7a2a2;
+	}
+
+	#sr-header-area a {
+		color: #a7a2a2;
 	}
 
 #header #srLeftContainer,
@@ -1656,7 +1665,6 @@ a.pref-lang {
 				color: #1f96ca;
 			}
 
-/* ``    3.6 Menu-buttons   - [TBD ] stepped top navigation  ```````` */
 
 /* ``    4.1 Content Box  ```````` */
 div.content {
@@ -3417,5 +3425,5 @@ body.res-nightmode {
 
 
 /* ~~  
-12. SUBREDDIT-SPECIFIC STYLES - add you own styles below without modifying the code above.
+12. Modules for specific Customization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

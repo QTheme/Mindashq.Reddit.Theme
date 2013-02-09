@@ -1,0 +1,97 @@
+/* --  12.a Navigator
+			Stepped navigation for header
+			Applies to LAST blockquote element in sidebar
+			Supports uto two levels of drill down
+			Appears at bottom of sidebar when CSS is removed or overridden
+			
+	Add only when corresponding markup is added in sidebar
+---------------------------------------------------*/
+.side .md > blockquote:last-child {
+	display: none;
+}
+
+body.listing-page .side .md > blockquote:last-child,
+body.messages-page .side .md > blockquote:last-child,
+body.single-page .side .md > blockquote:last-child {
+	position: absolute;
+	left: 262px;
+	top: 35px;
+	display: block;
+	background-color: transparent;
+	border: 0px none;
+	padding: 3px 5px 0px;
+	margin: 0px;
+	z-index: 99;
+}
+	/*----------- last child only*/
+	body.listing-page .side .md > blockquote:last-child > h1,
+	body.single-page .side .md > blockquote:last-child > h1 {
+		overflow: hidden;
+		font-size: 1.6em;
+		line-height: 1.6em;
+		color: #1f96ca;
+		background-color: #cee3f8;
+	}
+
+		body.listing-page .side .md > blockquote:last-child > h1 a,
+		body.single-page .side .md > blockquote:last-child > h1 a {
+			color: #1f96ca;
+			background-color: #cee3f8;
+		}
+
+		body.listing-page .side .md > blockquote:last-child > h1 em,
+		body.single-page .side .md > blockquote:last-child > h1 em {
+			display: none;
+		}
+
+	body.listing-page .side .md > blockquote:last-child ul,
+	body.single-page .side .md > blockquote:last-child ul {
+		display: none;
+		vertical-align: top;
+		list-style-image: none;
+		list-style: none outside;
+		vertical-align: top;
+		white-space: normal;
+		margin: 0px;
+		padding: 0px;
+		overflow: visible;
+	}
+
+	body.listing-page .side .md > blockquote:last-child:hover > ul,
+	body.single-page .side .md > blockquote:last-child:hover > ul {
+		display: block;
+		padding: 0px 250px 10px 0px;
+	}
+
+	body.listing-page .side .md > blockquote:last-child li,
+	body.single-page .side .md > blockquote:last-child li {
+		height: 30px;
+		width: 150px;
+		line-height: 30px;
+		padding: 5px 15px 0px;
+		border-width: 0px 1px 1px 1px;
+		border-style: solid;
+		border-color: #ccc;
+		background-color: #f5f5f5;
+	}
+
+		body.listing-page .side .md > blockquote:last-child li:first-child,
+		body.single-page .side .md > blockquote:last-child li:first-child {
+			border-width: 1px;
+		}
+
+	body.listing-page .side .md > blockquote:last-child > ul > li:hover > ul,
+	body.single-page .side .md > blockquote:last-child > ul > li:hover > ul {
+		display: inline-block;
+		margin-left: 167px;
+		margin-top: -36px;
+		overflow: hidden;
+		height: auto;
+	}
+
+	body.listing-page .side .md > blockquote:last-child li > ul > li,
+	body.single-page .side .md > blockquote:last-child li > ul > li {
+		background-color: #ddd;
+	}
+
+/*---------------------------------------------------*/
