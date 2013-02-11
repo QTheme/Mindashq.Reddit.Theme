@@ -1,10 +1,7 @@
 /* --  C.1 Navigator
-			Stepped navigation for header
-			Applies to LAST blockquote element in sidebar
-			Supports uto two levels of drill down
-			Appears at bottom of sidebar when CSS is removed or overridden
-			
-	Add only when corresponding markup is added in sidebar
+		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
+		+ Add only when corresponding markup is added in sidebar +
+		Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
 .side .md > blockquote:last-child {
 	display: none;
