@@ -14,12 +14,12 @@ body.listing-page .side .md > blockquote:last-child,
 body.messages-page .side .md > blockquote:last-child,
 body.single-page .side .md > blockquote:last-child {
 	position: absolute;
-	left: 262px;
-	top: 35px;
+	left: 275px; /* set for stage; 262px; mindashq*/
+	top: 60px;
 	display: block;
 	background-color: transparent;
 	border: 0px none;
-	padding: 3px 5px 0px;
+	padding: 0px;
 	margin: 0px;
 	z-index: 99;
 }
@@ -27,14 +27,20 @@ body.single-page .side .md > blockquote:last-child {
 	body.listing-page .side .md > blockquote:last-child > h1,
 	body.single-page .side .md > blockquote:last-child > h1 {
 		overflow: hidden;
-		font-size: 1.6em;
-		line-height: 1.6em;
+		margin-top: -24px;
+		padding: 4px 2px 0px;
+		font-size: 14px;
+		width: 25px;
+		text-align: center;
 		color: #1f96ca;
 		background-color: #cee3f8;
 	}
 
 		body.listing-page .side .md > blockquote:last-child > h1 a,
 		body.single-page .side .md > blockquote:last-child > h1 a {
+			font-size: 1.3em;
+			line-height: 1.3em;
+			font-weight: bold;
 			color: #1f96ca;
 			background-color: #cee3f8;
 		}
@@ -57,10 +63,25 @@ body.single-page .side .md > blockquote:last-child {
 		overflow: visible;
 	}
 
+	body.listing-page .side .md > blockquote:last-child:hover > h1,
+	body.single-page .side .md > blockquote:last-child:hover > h1 {
+		padding-bottom: 15px;
+		margin-bottom: -15px;
+		color: #dcebfa;
+		background-color: #5ca2e8;
+	}
+
+		body.listing-page .side .md > blockquote:last-child:hover > h1 a,
+		body.single-page .side .md > blockquote:last-child:hover > h1 a {
+			color: #1f96ca;
+			background-color: transparent;
+		}
+
 	body.listing-page .side .md > blockquote:last-child:hover > ul,
 	body.single-page .side .md > blockquote:last-child:hover > ul {
 		display: block;
-		padding: 0px 250px 10px 0px;
+		padding: 0px 50px 50px;
+		margin: -3px 0px 0px -50px;
 	}
 
 	body.listing-page .side .md > blockquote:last-child li,
@@ -70,9 +91,14 @@ body.single-page .side .md > blockquote:last-child {
 		line-height: 30px;
 		padding: 5px 15px 0px;
 		border-width: 0px 1px 1px 1px;
+		white-space: normal;
 		border-style: solid;
 		border-color: #ccc;
 		background-color: #f5f5f5;
+		text-shadow: 0 1px 0 #ddd;
+		box-shadow: 0px 1px 6px 0px #bbb;
+		-moz-box-shadow: 0px 1px 6px 0px #bbb;
+		-webkit-box-shadow: 0px 1px 6px 0px #bbb;
 	}
 
 		body.listing-page .side .md > blockquote:last-child li:first-child,
@@ -80,18 +106,41 @@ body.single-page .side .md > blockquote:last-child {
 			border-width: 1px;
 		}
 
+		body.listing-page .side .md > blockquote:last-child li a,
+		body.single-page .side .md > blockquote:last-child li a {
+			color: #0026ff;
+		}
+
+	body.listing-page .side .md > blockquote:last-child ul > li:hover,
+	body.single-page .side .md > blockquote:last-child ul > li:hover,
+	body.listing-page .side .md > blockquote:last-child ul > li:hover > a,
+	body.single-page .side .md > blockquote:last-child ul > li:hover > a {
+		color: #dcebfa;
+		background-color: #5ca2e8;
+		text-shadow: 0 1px 0 #333;
+	}
+
 	body.listing-page .side .md > blockquote:last-child > ul > li:hover > ul,
-	body.single-page .side .md > blockquote:last-child > ul > li:hover > ul {
+	body.single-page .side .md > blockquote:last-child > ul > li:hover > ul,
+	body.listing-page .side .md > blockquote:last-child > ul > li > ul:hover,
+	body.single-page .side .md > blockquote:last-child > ul > li > ul:hover {
 		display: inline-block;
-		margin-left: 167px;
+		margin-left: 163px;
 		margin-top: -36px;
+		padding: 0px 50px 50px 3px;
 		overflow: hidden;
 		height: auto;
 	}
 
 	body.listing-page .side .md > blockquote:last-child li > ul > li,
 	body.single-page .side .md > blockquote:last-child li > ul > li {
+		width: auto;
+		min-width: 150px;
+		white-space: nowrap;
 		background-color: #ddd;
+		box-shadow: 0px 2px 6px 0px #bebebe;
+		-moz-box-shadow: 0px 2px 6px 0px #bebebe;
+		-webkit-box-shadow: 0px 2px 6px 0px #bebebe;
 	}
 
 /*---------------------------------------------------*/
