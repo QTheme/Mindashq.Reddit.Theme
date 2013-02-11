@@ -1,4 +1,4 @@
-﻿/* ~~ Mindashq.Reddit.Theme
+/* ~~ Mindashq.Reddit.Theme
     v1.0
     Reddit Enhancement for better user experience
 	------------------------------------------------
@@ -752,10 +752,11 @@ iframe#ad-frame {
 		display: none;
 	}
 
-.side .titlebox > h1 {
+.side .titlebox h1.redditname {
 	font-size: 26px;
 	text-transform: capitalize;
 	letter-spacing: -1px;
+	margin: 1em 0px .2em 0px;
 }
 
 .sidebox.submit .spacer,
@@ -2030,7 +2031,7 @@ iframe#ad-frame {
 	.titlebox .bottom {
 	}
 
-.side .titlebox > h1 {
+.side .titlebox h1.redditname {
 	text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
 }
 
@@ -2508,7 +2509,7 @@ a[href='#s']:active::after {
 .side .spacer .md h1,
 .side .spacer .md h2,
 .side .spacer .md h3 {
-	background: transparent !important;
+	background: none transparent;
 }
 
 .side blockquote + p,
