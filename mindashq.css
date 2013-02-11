@@ -15,11 +15,10 @@
     Extends the colored boxes from r/edurne/ by https://github.com/rolmos/
     +  Just add "-green" or "-yellow" or "-red" to a heading in a blockquote on sidebar. e.g, [Title](#icon-exclamation-red)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
-/* ~~  1. Common Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* [ A ].Masonary and Template................ */
+/* ~~  1. Common Tags ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body {
 	font-size: 10px;
@@ -64,8 +63,7 @@ hr,
 	margin: 0px 0px 12px 0px;
 }
 
-/* --  1.1 Selective dimming of link buttons
---------------------------------------------------- */
+/* --  1.1 Selective dimming of link buttons -------------------------*/
 .entry > .flat-list > li {
 	/*visibility: hidden;*/
 	opacity: 0.40;
@@ -95,8 +93,7 @@ hr,
 	filter: Alpha(opacity=100);
 }
 
-/* ~~  2. Top Sr-Bar
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  2. Top Sr-Bar ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #sr-header-area {
 	font-weight: 500;
@@ -185,8 +182,7 @@ hr,
 	top: 0;
 }
 
-/* --  2.1 Dropdown Subreddits Bar
---------------------------------------------------- */
+/* --  2.1 Dropdown Subreddits Bar -------------------------*/
 
 #sr-header-area .drop-choices {
 	font-size: 12px;
@@ -207,8 +203,7 @@ hr,
 		}
 
 
-/* ~~  3. Header
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  3. Header ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #header {
 	height: 35px;
@@ -218,8 +213,7 @@ hr,
 	border-width: 0px 0px 30px;
 }
 
-/* --  3.1 User Controls
----------------------------------------------------*/
+/* --  3.1 User Controls -------------------------*/
 
 span.user {
 }
@@ -251,8 +245,7 @@ a.pref-lang {
 		top: 35px!important;
 	}
 
-/* --  3.2 Banner Image
----------------------------------------------------*/
+/* --  3.2 Banner Image -------------------------*/
 #header-bottom-left {
 	font-size: larger;
 	display: inline-block;
@@ -260,8 +253,7 @@ a.pref-lang {
 	padding: 0px;
 }
 
-/* --  3.3 The Reddit Name, applies to all pages
----------------------------------------------------*/
+/* --  3.3 The Reddit Name, applies to all pages -------------------------*/
 .pagename {
 	margin-right: 30px;
 	font-weight: bold;
@@ -294,8 +286,7 @@ a.pref-lang {
 			text-decoration: none;
 		}
 
-/* --  3.4 Reddit Image and Text
----------------------------------------------------*/
+/* --  3.4 Reddit Image and Text -------------------------*/
 #header-img.default-header {
 	background-position: -10000px -2058px;
 	text-indent: 0;
@@ -324,8 +315,7 @@ a.pref-lang {
 
 #header-img.default-header {
 }
-/* --  3.5 Header Nav
----------------------------------------------------*/
+/* --  3.5 Header Nav -------------------------*/
 #header ul.tabmenu {
 	vertical-align: bottom;
 	margin-bottom: 10px;
@@ -354,11 +344,9 @@ a.pref-lang {
 		}
 
 
-/* ~~  4. Content Pane and Link Listings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  4. Content Pane and Link Listings ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* --  4.1 Content Box
----------------------------------------------------*/
+/* --  4.1 Content Box -------------------------*/
 div.content {
 	margin: 0px 350px 10px 10px !important;
 	padding: 10px 20px;
@@ -396,8 +384,7 @@ body.messages-page > div.content {
 		body.single-page > div.content > .linklisting .link .title {
 			font-weight: normal;
 		}
-/* --  4.2 Zebra links
----------------------------------------------------*/
+/* --  4.2 Zebra links -------------------------*/
 .linklisting .even {
 	padding: 2px 0px 2px;
 	margin: 0px;
@@ -416,8 +403,7 @@ body.messages-page > div.content {
 	border-top: 0px !important;
 }
 
-/* --  4.3 Links sub-parts
----------------------------------------------------*/
+/* --  4.3 Links sub-parts -------------------------*/
 
 .link {
 	margin: 0px;
@@ -630,12 +616,10 @@ a.text-button {
     .arrow.downmod, 
 .arrow.down:hover {
     background-position: -22px -22px;
-    }
----------------------------------------------------*/
+    } -------------------------*/
 
 
-/* --  4.5 Comment Formatting
----------------------------------------------------*/
+/* --  4.5 Comment Formatting -------------------------*/
 
 body div.content > form > div .commentarea .even {
 	padding: 10px 0px 10px 10px !important;
@@ -714,14 +698,12 @@ body div.content > form > div .commentarea .even {
 .comment .child,
 .comment .showreplies {
 }
-/* --  4.6 Sort By Dropdown
----------------------------------------------------*/
+/* --  4.6 Sort By Dropdown -------------------------*/
 
 div.drop-choices.lightdrop.inuse {
 }
 
-/* ~~  5. Sidebar
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  5. Sidebar ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .side {
 	margin: 0 20px;
@@ -789,8 +771,7 @@ iframe#ad-frame {
 	font-size: 12px;
 }
 
-/* --  5.1 Search
----------------------------------------------------*/
+/* --  5.1 Search -------------------------*/
 .side .spacer #search {
 	padding: 0px;
 	margin: 0px 0px 15px 0px;
@@ -804,8 +785,7 @@ iframe#ad-frame {
 
 /* --  5.2 Infobar, 
 
-MoreInfo and MoreSearch Divs
----------------------------------------------------*/
+MoreInfo and MoreSearch Divs -------------------------*/
 
 .infobar {
 }
@@ -892,8 +872,7 @@ div#moresearchinfo {
 		margin-top: 7px !important;
 	}
 
-/* --  5.3 Contributor and Moderator Buttons
----------------------------------------------------*/
+/* --  5.3 Contributor and Moderator Buttons -------------------------*/
 .titlebox form.toggle,
 .leavemoderator {
 	background-repeat: no-repeat;
@@ -909,8 +888,7 @@ div#moresearchinfo {
 	display: none;
 }
 
-/* --  5.4 Login Form
----------------------------------------------------*/
+/* --  5.4 Login Form -------------------------*/
 
 
 .login-form-side {
@@ -918,8 +896,7 @@ div#moresearchinfo {
 	padding: 10px 0px 0px;
 }
 
-/* --  5.5 Flair Setting area
----------------------------------------------------*/
+/* --  5.5 Flair Setting area -------------------------*/
 .titlebox form.toggle {
 }
 
@@ -929,8 +906,7 @@ div#moresearchinfo {
 }
 
 
-/* --  5.6 Submit Button
----------------------------------------------------*/
+/* --  5.6 Submit Button -------------------------*/
 .sidebox.submit {
 	width: 300px;
 }
@@ -968,8 +944,7 @@ div#moresearchinfo {
 	.disabled .morelink:hover .nub {
 	}
 
-/* --  5.7 Moderators Area
----------------------------------------------------*/
+/* --  5.7 Moderators Area -------------------------*/
 .sidecontentbox {
 	line-height: 1.3;
 	padding: 5px 0px 5px;
@@ -990,11 +965,9 @@ div#moresearchinfo {
 	margin-top: 5px !important;
 	padding: 10px;
 }
-/* --  5.8 Recently Viewed Area
----------------------------------------------------*/
+/* --  5.8 Recently Viewed Area -------------------------*/
 
-/* --  5.9 Create Community Links
----------------------------------------------------*/
+/* --  5.9 Create Community Links -------------------------*/
 .create {
 	display: none;
 }
@@ -1003,15 +976,13 @@ div#moresearchinfo {
 	display: none;
 }
 
-/* --  5.10 Ad - do not change this
----------------------------------------------------*/
+/* --  5.10 Ad - do not change this -------------------------*/
 div#ad {
 }
 
 div#adlink {
 }
-/* --  5.11 Account Activity area at Bottom of Sidebar
----------------------------------------------------*/
+/* --  5.11 Account Activity area at Bottom of Sidebar -------------------------*/
 .account-activity-box {
 	height: 60px;
 	padding: 0px 0px 0px 0px;
@@ -1022,8 +993,7 @@ div#adlink {
 		margin: 20px 0px 0px 0px;
 	}
 
-/* ~~  6. Footer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  6. Footer ~~~~~~~~~~~~~~~~~~~~~~~~ */
 .footer-parent {
 	padding-top: 5px;
 	padding-bottom: 15px;
@@ -1036,8 +1006,7 @@ div#adlink {
 .footer {
 }
 
-/* --  6.1 Reddit Copyright Text
----------------------------------------------------*/
+/* --  6.1 Reddit Copyright Text -------------------------*/
 .bottommenu {
 }
 
@@ -1050,8 +1019,7 @@ div#adlink {
 	word-spacing: 1px;
 }
 
-/* ~~  7. Other areas in Reddit - [WIP]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~~~~~~~~~~~~ */
 .menuarea {
 	padding: 10px;
 	margin: 0px -2px;
@@ -1079,8 +1047,7 @@ form#newlink {
 	margin-left: 20px;
 }
 
-/* ~~  8. RES Optimisation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  8. RES Optimisation ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .lcTagged {
 }
@@ -1134,11 +1101,9 @@ div.NERPageMarker {
 }
 
 
-/* ~~  9. Misc Styling
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  9. Misc Styling ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* --  9.1 Tables 
---------------------------------------------------- */
+/* --  9.1 Tables  -------------------------*/
 
 .md table {
 	margin: 10px 0px;
@@ -1165,8 +1130,7 @@ div.NERPageMarker {
 	padding: 4px 8px;
 }
 
-/* --  9.2 Lists 
---------------------------------------------------- */
+/* --  9.2 Lists  -------------------------*/
 .md ul,
 .md ol {
 	margin: 5px 0px 5px 20px;
@@ -1195,8 +1159,7 @@ div.NERPageMarker {
 			margin: 2px;
 		}
 
-/* --  9.3 Button Style 
---------------------------------------------------- */
+/* --  9.3 Button Style  -------------------------*/
 
 .btn button,
 .btn .button {
@@ -1234,8 +1197,7 @@ button:hover,
 .btn.right:hover {
 }
 
-/* --  9.4 Code Style 
---------------------------------------------------- */
+/* --  9.4 Code Style  -------------------------*/
 
 .usertext-body pre {
 	margin: 10px 0;
@@ -1260,8 +1222,7 @@ a[href='#s']:active::after {
 	text-decoration: none;
 }
 
-/* --  9.5 Boxes 
---------------------------------------------------- */
+/* --  9.5 Boxes  -------------------------*/
 
 .side blockquote {
 	border: 0 none;
@@ -1318,8 +1279,7 @@ a[href='#s']:active::after {
 .side .icon-menu a {
 }
 
-/* --  9.6 Colored Boxes 
---------------------------------------------------- */
+/* --  9.6 Colored Boxes  -------------------------*/
 .side blockquote a[href*='#icon-']::before {
 }
 /*h4 Green, h5 yellow, h6 red*/
@@ -1336,8 +1296,7 @@ a[href='#s']:active::after {
 
 
 
-/* --  9.7 Sidebar Icons
---------------------------------------------------- */
+/* --  9.7 Sidebar Icons -------------------------*/
 
 .side a[href*='#icon-'] {
 	color: #333;
@@ -1426,8 +1385,7 @@ a[href='#s']:active::after {
 	content: '✿';
 }
 
-/* ~~  10. Presentation : Colors, fonts and borders
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* [ B ].Presentation : Colors, fonts and borders................ */
 /* __  1. Common Tags ________ */
 body {
 	color: #333;
@@ -1486,10 +1444,6 @@ hr,
 	border: none;
 	background-color: #d2d2d2;
 	color: #c8c8c8;
-}
-
-.comment .md p > a:visited {
-	color: #930ea5;
 }
 
 /* __  2. Top Sr-Bar ________ */
@@ -2595,8 +2549,7 @@ a[href='#s']:active::after {
 	color: #333;
 }
 
-/* ~~  11. Night Mode for RES
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* __  10. Night Mode for RES ________ */
 
 body.res-nightmode {
 	color: #ccc;
@@ -3424,7 +3377,4 @@ body.res-nightmode {
 		color: #ccc;
 	}
 
-
-/* ~~  
-12. Modules for specific Customization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* [ C ].Modules for specific Customization................ */
