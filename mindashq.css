@@ -549,9 +549,6 @@ ul.formtab a.text-button {
 ul.formtab a.link-button {
 }
 
-#header ul.tabmenu.formtab {
-}
-
 a.link-button {
 	margin: 0px 0px 0px 10px;
 	font-size: 12px !important;
@@ -1808,9 +1805,6 @@ ul.formtab a.text-button {
 ul.formtab a.link-button {
 }
 
-#header ul.tabmenu.formtab {
-}
-
 a.link-button {
 }
 
@@ -2245,6 +2239,11 @@ div#adlink {
 	#image-upload * {
 		font-size: 12px;
 	}
+
+ul#image-preview-list {
+	margin: 20px 0px 20px 20px;
+	font-size: larger;
+}
 
 body.wiki-page h1.wikititle {
 	color: #5ca2e8;
@@ -3139,6 +3138,19 @@ body.res-nightmode {
 			border-color: #111;
 		}
 
+	body.res-nightmode.wiki-page .pageactions .wikiaction-current:hover {
+		background-color: #ff910b;
+	}
+
+	body.res-nightmode.wiki-page .pageactions .wikiaction:hover {
+		background-color: #cee3f8;
+	}
+
+	body.res-nightmode.wiki-page .pageactions .wikiaction-current {
+		color: white;
+		background-color: #686868;
+	}
+
 	body.res-nightmode .lcTagged {
 		background-color: transparent!important;
 		outline: 0px!important;
@@ -3215,7 +3227,8 @@ body.res-nightmode {
 	body.res-nightmode .btn,
 	body.res-nightmode button,
 	body.res-nightmode .button,
-	body.res-nightmode .side a[href*="/#btn"] {
+	body.res-nightmode .side a[href*="/#btn"],
+	body.res-nightmode form#newlink.submit button.btn {
 		background-color: #bb6107!important;
 		border: none;
 		color: #eee!important;
