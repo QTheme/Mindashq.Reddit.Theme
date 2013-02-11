@@ -1,23 +1,9 @@
 /* ~~ Mindashq.Reddit.Theme
     v1.0
-    Reddit Enhancement for better user experience
-	------------------------------------------------
-    https://github.com/ashishtiwari/Mindashq.Reddit.Theme
-	------------------------------------------------
-    +  Distinct header
-    +  Compact comments to utilize space better, esp the bottom area for deeply nested comments
-    +  Readability improvements
-    +  100% text only theme, no images required
-    +  All areas (moderator, and user pages, wiki-pages, submit link pages etc) treated well. suitable for use with stylish.
-    +  RES compatible (top bar, never ending reddit, night-mode, notifications et al).
-    +  Works with Reddit Companion
-	------------------------------------------------
-    Extends the colored boxes from r/edurne/ by https://github.com/rolmos/
-    +  Just add "-green" or "-yellow" or "-red" to a heading in a blockquote on sidebar. e.g, [Title](#icon-exclamation-red)
-
+    http://www.reddit.com/r/mindashq/wiki 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* [ A ].Masonary and Template................ */
+/* [ A ]. Masonry and Template................ */
 /* ~~  1. Common Tags ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body {
@@ -1385,7 +1371,7 @@ a[href='#s']:active::after {
 	content: '✿';
 }
 
-/* [ B ].Presentation : Colors, fonts and borders................ */
+/* [ B ]. Presentation : Colors, fonts and borders................ */
 /* __  1. Common Tags ________ */
 body {
 	color: #333;
@@ -3377,4 +3363,4 @@ body.res-nightmode {
 		color: #ccc;
 	}
 
-/* [ C ].Modules for specific Customization................ */
+/* [ C ]. Modules for specific Customization................ */
