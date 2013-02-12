@@ -49,6 +49,9 @@ hr,
 	margin: 0px 0px 12px 0px;
 }
 
+	.side .md > hr + hr {
+		margin: -12px 0px 12px 0px;
+	}
 /* --  A.1.1. Selective dimming of link buttons -------------------------*/
 .entry > .flat-list > li {
 	/*visibility: hidden;*/
@@ -1064,7 +1067,8 @@ div.userbarHide {
 	.morecomments a,
 	.morecomments a .gray {
 	}
-/* --  A.8.1. Progress Indicator and Page marker for RES mode -------------------------*/ */ p#progressIndicator.neverEndingReddit,
+/* --  A.8.1. Progress Indicator and Page marker for RES mode -------------------------*/
+p#progressIndicator.neverEndingReddit,
 div.NERPageMarker {
 	width: auto;
 	font-weight: bold;
@@ -1074,11 +1078,11 @@ div.NERPageMarker {
 	margin: 0px -5px;
 }
 
-p#progressIndicator.neverEndingReddit img {
-}
+	p#progressIndicator.neverEndingReddit img {
+	}
 
-p#progressIndicator.neverEndingReddit a {
-}
+	p#progressIndicator.neverEndingReddit a {
+	}
 
 #RESNotifications {
 	z-index: 9999999;
