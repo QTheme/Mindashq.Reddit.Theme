@@ -41,7 +41,7 @@ hr,
 .side .md > hr + hr {
 	height: 1px;
 	width: 100%;
-	margin: 0px;
+	margin: 0px 5px;
 }
 
 .side .md > hr {
@@ -1212,12 +1212,16 @@ a[href='#s']:active::after {
 
 /* --  A.9.5. Boxes  -------------------------*/
 
-.side blockquote {
+.side .md blockquote {
 	border: 0 none;
-	padding: 10px;
-	margin: 0px 0px 10px;
+	padding: 0px 10px 10px 0px;
+	margin: 5px 0px 10px;
 	position: relative;
 }
+
+	.side .md blockquote blockquote {
+		margin-left: 10px;
+	}
 
 .side h4,
 .side h5,
@@ -1287,9 +1291,8 @@ a[href='#s']:active::after {
 /* --  A.9.7. Sidebar Icons -------------------------*/
 
 .side a[href*='#icon-'] {
-	color: #333;
 	cursor: default;
-	margin: 10px;
+	margin: 0px 10px;
 }
 
 	.side a[href*='#icon-']:hover {
@@ -1300,7 +1303,7 @@ a[href='#s']:active::after {
 		display: inline-block;
 		height: 52px;
 		width: 30px;
-		margin: -15px 5px 0px 0px;
+		margin: -6px 5px 0px 0px;
 		font-size: 25px;
 		line-height: 60px;
 		font-weight: bold;
@@ -2420,8 +2423,7 @@ a[href='#s']:active::after {
 
 /* `` B.9.5 Boxes   ```````` */
 
-.side blockquote {
-	border: 0 none;
+.side .md blockquote {
 	border: 1px solid #ccc;
 	background-color: #f5f5f5;
 	border-radius: 2px;
@@ -3345,7 +3347,7 @@ body.res-nightmode {
 		background-color: transparent;
 	}
 
-	body.res-nightmode .side blockquote a[href*="#icon-"]::before {
+	body.res-nightmode .side blockquote a[href*='#icon-']::before {
 		color: #111;
 	}
 
@@ -3354,7 +3356,7 @@ body.res-nightmode {
 		border: 1px solid #046f04;
 	}
 
-		body.res-nightmode .side h4 + blockquote a[href*="#icon-"]::before {
+		body.res-nightmode .side h4 + blockquote a[href*='#icon-']::before {
 			color: #160019;
 		}
 
@@ -3363,7 +3365,7 @@ body.res-nightmode {
 		border: 1px solid #e9cf7b;
 	}
 
-		body.res-nightmode .side h5 + blockquote a[href*="#icon-"]::before {
+		body.res-nightmode .side h5 + blockquote a[href*='#icon-']::before {
 			color: #000019;
 		}
 
@@ -3372,14 +3374,14 @@ body.res-nightmode {
 		border: 1px solid #b91b0a;
 	}
 
-		body.res-nightmode .side h6 + blockquote a[href*="#icon-"]::before {
+		body.res-nightmode .side h6 + blockquote a[href*='#icon-']::before {
 			color: #010f0f;
 		}
 
-	body.res-nightmode .side a[href*="#icon-"] {
+	body.res-nightmode .side a[href*='#icon-'] {
 		color: #ccc;
 	}
 
 /* [ C ]. Modules for specific Customization................ */
-/*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use modules with examples */
+/*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use code, samples and compatible modules  */
 

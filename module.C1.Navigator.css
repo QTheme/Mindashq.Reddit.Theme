@@ -123,10 +123,12 @@ body.single-page .side .md > blockquote:last-child {
 	body.single-page .side .md > blockquote:last-child > ul > li > ul:hover {
 		display: inline-block;
 		margin-left: 163px;
-		margin-top: -36px;
+		/*margin-top: -36px;*/
+		top: -36px;
 		padding: 0px 50px 50px 3px;
 		overflow: hidden;
 		height: auto;
+		position: relative;
 	}
 
 	body.listing-page .side .md > blockquote:last-child li > ul > li,
