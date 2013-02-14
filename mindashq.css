@@ -40,19 +40,101 @@ hr,
 .side .md hr,
 .side .md > hr + hr {
 	height: 1px;
-	width: 100%;
-	margin: 0px 5px;
+	width: auto;
 }
 
 .side .md > hr {
 	width: 0px;
-	margin: 0px 0px 12px 0px;
+	background-color: transparent;
 }
 
 	.side .md > hr + hr {
-		margin: -12px 0px 12px 0px;
+		margin: 5px 0px 15px;
 	}
-/* --  A.1.1. Selective dimming of link buttons -------------------------*/
+/* --  A.1.1. Tables  -------------------------*/
+
+.md table {
+	border: 1px solid;
+	margin: 10px 0px;
+}
+
+	.md table * {
+		border: 0;
+	}
+
+	.md table th {
+		text-align: center;
+	}
+
+	.md table thead {
+	}
+
+	.md table tr:nth-child(even) {
+	}
+
+	.md table tr:nth-child(odd) {
+	}
+
+	.md table td,
+	.md table th {
+		padding: 4px 8px;
+	}
+
+/* --  A.1.2. Lists  -------------------------*/
+.md ul,
+.md ol {
+	margin: 5px 0px 5px 20px;
+	padding: 0px 0px 0px 10px;
+}
+
+.md ul {
+	list-style: disc outside;
+}
+
+.md ol {
+}
+
+	.md ul li,
+	.md ol li {
+		padding: 2px 0px;
+		margin: 1px 10px 0px 0px;
+	}
+
+		.md ul li ul,
+		.md ol li ol {
+			margin: 5px 0px 5px 10px;
+		}
+
+		.md ul li p,
+		.md ol li p {
+			margin: 2px;
+		}
+/* --  A.1.3. Code Style  -------------------------*/
+
+.usertext-body pre {
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.usertext-body pre,
+.usertext-body p > code {
+	overflow: auto;
+}
+
+.usertext-body code {
+	line-height: 1.5em;
+}
+
+.usertext-body p > code {
+	padding: 0 3px;
+}
+
+a[href='#s']:hover::after,
+a[href='#s']:active::after {
+	text-decoration: none;
+}
+/* --  A.1.4. Selective dimming of link buttons -------------------------*/
+/* --  A.1.4. Only in A, not in B -------------------------*/
 .entry > .flat-list > li {
 	/*visibility: hidden;*/
 	opacity: 0.40;
@@ -61,12 +143,11 @@ hr,
 }
 
 	.entry > .flat-list > li.first {
-		/*visibility: visible;*/
 	}
 
 .entry:hover > .flat-list > li,
 .keyHighlight .flat-list > li {
-	opacity: 1; /*visibility: visible;*/
+	opacity: 1;
 }
 
 .noncollapsed > .flat-list > li {
@@ -373,7 +454,11 @@ body.messages-page > div.content {
 		body.single-page > div.content > .linklisting .link .title {
 			font-weight: normal;
 		}
-/* --  A.4.2. Zebra links -------------------------*/
+
+/* --  A.4.2. Links (Post) -------------------------*/
+.link.promotedlink.promoted {
+}
+
 .linklisting .even {
 	padding: 2px 0px 2px;
 	margin: 0px;
@@ -734,11 +819,6 @@ iframe#ad-frame {
 	margin: 0 0 5px;
 }
 
-.side h1,
-.side h2,
-.side h3 {
-}
-
 .side h1 {
 	font-size: 19px;
 }
@@ -1091,61 +1171,7 @@ div.NERPageMarker {
 
 /* ~~  A.9. Misc Styling ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* --  A.9.1. Tables  -------------------------*/
 
-.md table {
-	margin: 10px 0px;
-}
-
-.side .md table {
-	width: 100%;
-}
-
-.md table * {
-	border: 0;
-}
-
-.md table th {
-	text-align: center;
-}
-
-.md table tr:nth-child(even),
-.md table thead {
-}
-
-.md table td,
-.md table th {
-	padding: 4px 8px;
-}
-
-/* --  A.9.2. Lists  -------------------------*/
-.md ul,
-.md ol {
-	margin: 5px 0px 5px 20px;
-	padding: 0px 0px 0px 10px;
-}
-
-.md ul {
-	list-style: disc outside;
-}
-
-.md ol {
-}
-
-	.md ul li,
-	.md ol li {
-		padding: 2px 0px;
-	}
-
-		.md ul li ul,
-		.md ol li ol {
-			margin: 5px 0px 5px 10px;
-		}
-
-		.md ul li p,
-		.md ol li p {
-			margin: 2px;
-		}
 
 /* --  A.9.3. Button Style  -------------------------*/
 
@@ -1185,59 +1211,38 @@ button:hover,
 .btn.right:hover {
 }
 
-/* --  A.9.4. Code Style  -------------------------*/
-
-.usertext-body pre {
-	margin: 10px 0;
-	padding: 10px;
-}
-
-.usertext-body pre,
-.usertext-body p > code {
-	overflow: auto;
-}
-
-.usertext-body code {
-	line-height: 1.5em;
-}
-
-.usertext-body p > code {
-	padding: 0 3px;
-}
-
-a[href='#s']:hover::after,
-a[href='#s']:active::after {
-	text-decoration: none;
-}
-
 /* --  A.9.5. Boxes  -------------------------*/
 
-.side .md blockquote {
-	border: 0 none;
-	padding: 0px 10px 10px 0px;
+.side blockquote {
+	border: 1px solid;
+	padding: 5px 10px 10px 5px;
 	margin: 5px 0px 10px;
 	position: relative;
 }
 
-	.side .md blockquote blockquote {
+	.side blockquote blockquote {
 		margin-left: 10px;
 	}
 
-.side h4,
-.side h5,
-.side h6 {
-	height: 0;
+	.side blockquote table {
+		margin: 5px -11px 5px -6px;
+	}
+
+		.side blockquote table:last-child {
+			margin-bottom: -11px;
+		}
+
+.side .md blockquote + hr,
+.side .md blockquote + h4,
+.side .md blockquote + h5,
+.side .md blockquote + h6 {
+	margin: 0px 0px 5px 0px;
+	width: 0px;
+	height: 1px;
 }
 
 .side blockquote h1 ~ p {
 	margin-left: 10px;
-}
-
-.side blockquote h1 {
-}
-
-.side blockquote pre,
-.side blockquote code {
 }
 
 .side h4 + blockquote p,
@@ -1246,9 +1251,10 @@ a[href='#s']:active::after {
 	margin: 0px 10px;
 }
 
-.side .spacer .md h1,
-.side .spacer .md h2,
-.side .spacer .md h3 {
+.side .md h1,
+.side .md h2,
+.side .md h3 {
+	margin: 5px;
 }
 
 .side blockquote + p,
@@ -1272,8 +1278,6 @@ a[href='#s']:active::after {
 }
 
 /* --  A.9.6. Colored Boxes  -------------------------*/
-.side blockquote a[href*='#icon-']::before {
-}
 /*tip : h4 Green, h5 yellow, h6 red*/
 .side h4 + blockquote,
 .side h5 + blockquote,
@@ -1303,7 +1307,7 @@ a[href='#s']:active::after {
 		display: inline-block;
 		height: 52px;
 		width: 30px;
-		margin: -6px 5px 0px 0px;
+		margin: -16px 5px 0px -10px;
 		font-size: 25px;
 		line-height: 60px;
 		font-weight: bold;
@@ -1436,7 +1440,71 @@ hr,
 	background-color: #d2d2d2;
 	color: #c8c8c8;
 }
+/* ``  B.1.1. Tables   ```````` */
 
+.md table {
+	border-color: #ccc;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
+	.md table thead {
+		background-color: #f3f3f3;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.md table tbody tr:nth-child(even) {
+		background-color: #f6f6f6;
+	}
+
+	.md table tbody tr:nth-child(odd) {
+		background-color: #fbfbf9;
+	}
+
+	.md table td,
+	.md table th {
+		border-right: 1px solid #ccc;
+	}
+
+/* ``  B.1.2. Lists   ```````` */
+.md ul,
+.md ol {
+	background-color: transparent;
+}
+/* `` B.1.3. Code Style   ```````` */
+
+.usertext-body pre {
+	color: #222 !important;
+}
+
+.usertext-body pre,
+.usertext-body p > code {
+	background: #f7f7f7;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	color: #222 !important;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.usertext-body code {
+	color: #222 !important;
+	font-family: Consolas, Monaco, monospace;
+}
+
+.usertext-body p > code {
+	color: #222 !important;
+}
+
+a[href='#s']:hover::after,
+a[href='#s']:active::after {
+	color: #000;
+	background: transparent;
+	font-size: small;
+}
 /* __  B.2. Top Sr-Bar ________ */
 
 #sr-header-area {
@@ -1654,7 +1722,11 @@ body.messages-page > div.content {
 		body.single-page > div.content > .linklisting .link .title {
 		}
 
-/* ``  B.4.2. Zebra links  ```````` */
+/* ``  B.4.2. Links (Post)  ```````` */
+.link.promotedlink.promoted {
+	border-color: #d2d2d2;
+}
+
 .linklisting .even {
 	background: #fbfbfb;
 	background: -moz-linear-gradient(left,#fefefe,#fbfbfb);
@@ -2315,30 +2387,7 @@ div.NERPageMarker {
 
 /* __  B.9. Misc Styling ________ */
 
-/* ``  B.9.1. Tables   ```````` */
-
-.md table {
-	border: 1px solid #ccc;
-	font-family: Arial, Helvetica, Sans-serif;
-}
-
-	.md table tr:nth-child(even),
-	.md table thead {
-		background-color: #f6f6f6;
-	}
-
-	.md table td,
-	.md table th {
-		border-right: 1px solid #ccc;
-	}
-
-/* ``  B.9.2. Lists   ```````` */
-.md ul,
-.md ol {
-	background-color: transparent;
-}
-
-/* `` B.9.3. Button Style   ```````` */
+/* `` B.9.1. Button Style   ```````` */
 
 .btn button,
 .btn .button {
@@ -2385,45 +2434,9 @@ button:hover,
 	color: #56a6f7;
 }
 
-/* `` B.9.4. Code Style   ```````` */
-
-.usertext-body pre {
-	color: #222 !important;
-}
-
-.usertext-body pre,
-.usertext-body p > code {
-	background: #f7f7f7;
-	border: 1px solid #ccc;
-	font-size: 11px;
-	color: #222 !important;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-o-border-radius: 2px;
-	-ms-border-radius: 2px;
-	-khtml-border-radius: 2px;
-	border-radius: 2px;
-}
-
-.usertext-body code {
-	color: #222 !important;
-	font-family: Consolas, Monaco, monospace;
-}
-
-.usertext-body p > code {
-	color: #222 !important;
-}
-
-a[href='#s']:hover::after,
-a[href='#s']:active::after {
-	color: #000;
-	background: transparent;
-	font-size: small;
-}
-
 /* `` B.9.5 Boxes   ```````` */
 
-.side .md blockquote {
+.side blockquote {
 	border: 1px solid #ccc;
 	background-color: #f5f5f5;
 	border-radius: 2px;
@@ -2431,19 +2444,9 @@ a[href='#s']:active::after {
 	-webkit-border-radius: 2px;
 }
 
-.side h4,
-.side h5,
-.side h6 {
-}
-
-.side blockquote h1 {
-	background-color: transparent;
-}
-
-.side blockquote pre,
-.side blockquote code {
-	color: #222 !important;
-}
+	.side blockquote h1 {
+		background-color: transparent;
+	}
 
 .side h6 + blockquote p,
 .side h5 + blockquote p,
