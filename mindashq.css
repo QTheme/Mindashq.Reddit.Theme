@@ -1087,6 +1087,23 @@ div#adlink {
 		font-size: 12px;
 	}
 
+#image-upload {
+	font-size: 12px;
+}
+
+	#image-upload * {
+		font-size: 12px;
+	}
+
+ul#image-preview-list {
+	margin: 20px 0px 20px 20px;
+	font-size: larger;
+}
+
+body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
+	padding: 5px 0px 5px 15px!important;
+}
+
 body.wiki-page .wiki-page-content {
 	margin: 0px 15px 15px;
 }
@@ -2313,19 +2330,6 @@ div#adlink {
 .menuarea {
 	border-bottom: 1px dotted #d2d2d2;
 	background-color: #fdfdfe;
-}
-
-#image-upload {
-	font-size: 12px;
-}
-
-	#image-upload * {
-		font-size: 12px;
-	}
-
-ul#image-preview-list {
-	margin: 20px 0px 20px 20px;
-	font-size: larger;
 }
 
 body.wiki-page h1.wikititle {
