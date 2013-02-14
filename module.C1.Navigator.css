@@ -11,7 +11,7 @@ body.listing-page .side .md > blockquote:last-child,
 body.messages-page .side .md > blockquote:last-child,
 body.single-page .side .md > blockquote:last-child {
 	position: absolute;
-	left: 276px; /* set for stage; 262px; mindashq*/
+	left: 271px; /* set for stage; 262px; mindashq*/
 	top: 60px;
 	display: block;
 	background-color: transparent;
