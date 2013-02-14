@@ -36,21 +36,10 @@ h3 {
 		border-radius: 3px;
 	}
 
-hr,
-.side .md hr,
-.side .md > hr + hr {
+hr {
 	height: 1px;
 	width: auto;
 }
-
-.side .md > hr {
-	width: 0px;
-	background-color: transparent;
-}
-
-	.side .md > hr + hr {
-		margin: 5px 0px 15px;
-	}
 /* --  A.1.1. Tables  -------------------------*/
 
 .md table {
@@ -1221,7 +1210,7 @@ button:hover,
 }
 
 	.side blockquote blockquote {
-		margin-left: 10px;
+		margin: 5px 0px 0px 5px;
 	}
 
 	.side blockquote table {
@@ -1273,6 +1262,21 @@ button:hover,
 .side .md ol p {
 	margin: 0px;
 }
+
+.side .md hr,
+.side .md > hr + hr {
+	height: 1px;
+	width: auto;
+}
+
+.side .md > hr {
+	width: 0px;
+	background-color: transparent;
+}
+
+	.side .md > hr + hr {
+		margin: 5px 0px 15px;
+	}
 
 .side .icon-menu a {
 }
