@@ -11,7 +11,7 @@ body.listing-page .side .md > blockquote:last-child,
 body.messages-page .side .md > blockquote:last-child,
 body.single-page .side .md > blockquote:last-child {
 	position: absolute;
-	left: 271px; /* set for stage; 262px; mindashq*/
+	left: 262px; /* set for stage; modify per reddit */
 	top: 60px;
 	display: block;
 	background-color: transparent;
@@ -24,9 +24,12 @@ body.single-page .side .md > blockquote:last-child {
 	body.listing-page .side .md > blockquote:last-child > h1,
 	body.single-page .side .md > blockquote:last-child > h1 {
 		overflow: hidden;
-		margin-top: -24px;
-		padding: 4px 2px 0px;
-		font-size: 14px;
+		margin: -24px 0px 0px;
+		padding: 2px;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 28px;
+		vertical-align: middle;
 		width: 25px;
 		text-align: center;
 		color: #1f96ca;
@@ -35,9 +38,6 @@ body.single-page .side .md > blockquote:last-child {
 
 		body.listing-page .side .md > blockquote:last-child > h1 a,
 		body.single-page .side .md > blockquote:last-child > h1 a {
-			font-size: 1.3em;
-			line-height: 1.3em;
-			font-weight: bold;
 			color: #1f96ca;
 			background-color: #cee3f8;
 		}
@@ -86,6 +86,7 @@ body.single-page .side .md > blockquote:last-child {
 		height: 30px;
 		width: 150px;
 		line-height: 30px;
+		margin: 0px;
 		padding: 5px 15px 0px;
 		border-width: 0px 1px 1px 1px;
 		white-space: normal;
