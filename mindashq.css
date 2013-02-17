@@ -306,12 +306,23 @@ button:hover,
 /* ~~  A.3. Header ~~~~~~~~~~~~~~~~~~~~~ */
 
 #header {
-	height: 35px;
+	height: auto;
+	min-height: 59px;
 	padding: 0;
 	margin: 20px 0 30px;
 	border: 1px solid;
-	border-width: 0px 0px 30px;
+	border-width: 0px 0px 1px;
 }
+
+	#header:after {
+		content: " ";
+		width: 100%;
+		height: 29px;
+		position: relative;
+		display: block;
+		margin-top: -33px;
+		z-index: -1;
+	}
 
 /* --  A.3.1. User Controls -------------- */
 
@@ -328,7 +339,8 @@ a.pref-lang {
 #header-bottom-right {
 	font-size: 10px;
 	word-spacing: -1px;
-	top: 35px!important;
+	top: auto!important;
+	bottom: 0px!important;
 	height: 18px !important;
 	padding: 6px 10px 4px !important;
 	border: 1px solid;
@@ -340,7 +352,7 @@ a.pref-lang {
 	}
 
 	#header-bottom-right.res-navTop {
-		top: 35px!important;
+		bottom: -1px!important;
 	}
 
 /* --  A.3.2. Banner Image -------------- */
@@ -355,30 +367,28 @@ a.pref-lang {
 /* --  A.3.3. The Reddit Name, applies to all pages -------------- */
 
 .pagename {
-	margin-right: 30px;
+	margin: 10px 0px -11px 0px;
 	font-weight: bold;
 	font-variant: normal;
 	font-size: 18px;
-	vertical-align: middle;
+	vertical-align: bottom;
 	display: inline-block;
-	height: 37px;
-	line-height: 37px;
-	padding: 10px 20px;
+	height: 55px;
 }
 
 	.pagename.redditname,
 	.pagename.redditname.hover {
-		height: auto;
 		padding: 0px;
 	}
 
-	.pagename a {
-		margin-left: -3px;
+	.pagename a,
+	.pagename.selected {
+		margin: 0px 0px -15px 0px;
 		padding: 10px 20px;
 		display: inline-block;
 		font-size: 18px!important;
-		height: 37px;
-		line-height: 37px;
+		height: 35px;
+		line-height: 35px;
 		text-transform: capitalize;
 	}
 
@@ -391,38 +401,53 @@ a.pref-lang {
 #header-img.default-header {
 	background-position: -10000px -2058px;
 	text-indent: 0;
+	margin: 5px 0px -10px;
 	font-size: 12px;
 	font-weight: bold;
-	line-height: 42px;
+	height: 55px;
+	line-height: 4.5;
 	width: auto;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 #header-img-a {
 	padding: 0px;
+	margin: 5px 0px -10px;
 	display: inline-block;
 	height: 55px;
-	line-height: 55px;
-	border: 1px solid;
 	vertical-align: middle;
 }
 
 	#header-img-a img {
-		margin: 0px;
+		margin: 2px -3px -14px 0px;
+		padding: 0px;
 		width: auto!important;
 		height: auto!important;
-		max-height: 56px;
+		max-height: 55px;
 		vertical-align: middle;
 	}
 
-#header-img.default-header {
-}
 
+	#header-img.default-header::before,
+	#header-img-a::before {
+		content: " ";
+		margin: 0px 0px 0px -10px;
+		width: 100%;
+		height: 29px;
+		position: absolute;
+		display: block;
+		top: 42px;
+		z-index: -1;
+	}
+
+	#header-img-a::before {
+		/*margin-top: 12px;*/
+	}
 /* --  A.3.5. Header Nav -------------- */
 
 #header ul.tabmenu {
-	vertical-align: bottom;
-	margin: 0px 0px 10px 2px;
+	vertical-align: middle;
+	margin: 15px 265px 0px 35px;
 	border: 0px none;
 }
 
@@ -1687,9 +1712,12 @@ button:hover,
 #header {
 	font-family: Helvetica,Arial,Verdana,sans-serif;
 	background-color: #fff;
-	/*background: #cee3f8;*/
 	border-bottom-color: #cee3f8;
 }
+
+	#header:after {
+		background-color: #cee3f8;
+	}
 
 /* ``  B.3.1. User Controls  ```````` */
 
@@ -1727,7 +1755,8 @@ a.pref-lang {
 	.pagename.redditname.hover {
 	}
 
-	.pagename a {
+	.pagename a,
+	.pagename.selected {
 		color: #dcebfa;
 		background-color: #5ca2e8;
 		text-shadow: 0 1px 0 #333;
@@ -1752,17 +1781,17 @@ a.pref-lang {
 }
 
 #header-img-a {
-	background-color: #cee3f8;
-	box-shadow: 0px 4px 6px #bbb;
-	border-color: #e3e3e3;
-	border-width: 1px 0px 1px 1px;
 }
 
 	#header-img-a img {
+		background-color: #cee3f8;
+		box-shadow: 0px 4px 6px #bbb;
 	}
 
-#header-img.default-header {
-}
+	#header-img.default-header::before,
+	#header-img-a::before {
+		background-color: #cee3f8;
+	}
 
 /* ``  B.3.5. Header Nav  ```````` */
 

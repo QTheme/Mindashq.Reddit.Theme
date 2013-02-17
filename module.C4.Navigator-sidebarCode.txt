@@ -1,5 +1,4 @@
-﻿#v1.0
-> # [About Mindashq](#icon-star)
+﻿> # [About Mindashq](#icon-star)
 > This is a CSS theme to style subreddits. 
 > The general idea for this theme was to add a **min**imum **dash** of **q**uality to the standard Reddit appearance.
 
@@ -15,14 +14,23 @@
 
 > This theme (re)uses most of the default font sizes, colors, sprites and the features of Reddit - and adds flavor via opt-in modules.
 
+
 ##### [](#h5-yellow)
 > ##[Reusing the Theme](#icon-check-yellow)
 > The CSS can be copied from [/r/Mindashq/about/stylesheet](/r/mindashq/about/stylesheet) and used in any subreddit.
 > Feel free to comment on the [feedback thread](/17dfy5) for help, or clarifications.
 > See [Reusing Mindashq](/r/mindashq/wiki/usage) on the [wiki](/r/mindashq/wiki/) for detailed steps.
 
+---
+> ##[About Text](#icon-check-green)
+> This is just a sample text placeholder for the Sidebar text. 
+
+> The text and the links can be replaced for any kind of customization. 
+
+> Smaller set of characters used for formatting so that there is more characters possible for actual content. 
+
 ###### [](#h6-red)
-> #[Rules](#icon-exclamation-green)
+> #[Rules](#icon-exclamation)
 > A sample of the standard Rules announcement box.
 
 > * Read the [Reddiquettes](http://www.reddit.com/help/reddiquette)

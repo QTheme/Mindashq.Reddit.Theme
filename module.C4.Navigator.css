@@ -1,4 +1,4 @@
-/* --  C.1 Navigator
+/* --  C.4 Navigator
 		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
 		+ Add only when corresponding markup is added in sidebar +
 		Update the main CSS header comment block when this module is used
@@ -12,7 +12,7 @@ body.messages-page .side .md > blockquote:last-child,
 body.single-page .side .md > blockquote:last-child {
 	position: absolute;
 	left: 262px; /* set for stage; modify per reddit */
-	top: 60px;
+	top: 65px;
 	display: block;
 	background-color: transparent;
 	border: 0px none;
@@ -95,8 +95,6 @@ body.single-page .side .md > blockquote:last-child {
 		background-color: #f5f5f5;
 		text-shadow: 0 1px 0 #ddd;
 		box-shadow: 0px 1px 6px 0px #bbb;
-		-moz-box-shadow: 0px 1px 6px 0px #bbb;
-		-webkit-box-shadow: 0px 1px 6px 0px #bbb;
 	}
 
 		body.listing-page .side .md > blockquote:last-child li:first-child,
@@ -139,8 +137,6 @@ body.single-page .side .md > blockquote:last-child {
 		white-space: nowrap;
 		background-color: #ddd;
 		box-shadow: 0px 2px 6px 0px #bebebe;
-		-moz-box-shadow: 0px 2px 6px 0px #bebebe;
-		-webkit-box-shadow: 0px 2px 6px 0px #bebebe;
 	}
 
-/*---------------------------------------------------*/
+/* --  C.4.end Navigator -------------- */
