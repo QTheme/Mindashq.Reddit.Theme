@@ -1,5 +1,5 @@
-/* --  C.2 Sidebar Image
-		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
+/* --  C.6 Sidebar Image
+		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarImages for details		
 		+ Add only when corresponding image is loaded in community settings > stylesheet +
 		Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
@@ -10,4 +10,4 @@
 	overflow: hidden;
 	text-align: center;
 }
-/*---------------------------------------------------*/
+/* --  C.6.end Sidebar Image -------------- */

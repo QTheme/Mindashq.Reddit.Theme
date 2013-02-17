@@ -1,0 +1,99 @@
+/* --  C.2 Sidebar Buttons
+		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons for details		
+		Update the main CSS header comment block when this module is used
+---------------------------------------------------*/
+.sidebox.submit-link {
+	display: block;
+}
+
+.sidebox.submit-text {
+	display: block;
+}
+/*  In case only one button is needed;
+	Put display none on either of above that is not required
+	and delete the code below.
+	Or,
+	Maintain the whole code for both buttons on side by side
+*/
+
+.sidebox.submit {
+	width: 147px;
+	word-spacing: 1px;
+	letter-spacing: -1px;
+}
+
+.sidebox.submit-link {
+	margin-left: 0px;
+	position: relative;
+	display: block;
+	text-indent: 0px;
+}
+
+	.sidebox.submit-link .morelink a {
+		font-size: 0px;
+		content: '';
+	}
+
+		.sidebox.submit-link .morelink a:before {
+			content: 'Sumbit a Link';
+			font-size: 16px;
+		}
+
+	.sidebox.submit-link .morelink .nub:before {
+		content: 'OR';
+		font-size: 12px;
+		position: relative;
+		margin-left: 11px;
+		background-color: #fbfbf9!important;
+		padding: 5px;
+		color: #449ef8;
+		border-radius: 20px;
+		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
+		z-index: 1;
+		border: 1px solid #fbfbf9;
+		height: auto;
+		top: 6px;
+	}
+
+.sidebox.submit-text {
+	text-align: right;
+	float: right;
+	top: -48px;
+	position: relative;
+}
+
+	.sidebox.submit-text .morelink a {
+		font-size: 0px;
+		content: '';
+	}
+
+		.sidebox.submit-text .morelink a:before {
+			content: 'Post a Note';
+			font-size: 16px;
+		}
+
+body.listing-page.subscriber .sidecontentbox a.helplink,
+body.single-page.subscriber .sidecontentbox a.helplink {
+	position: absolute;
+	top: 205px;
+	font-size: 12px;
+}
+
+body.single-page.subscriber .sidecontentbox a.helplink {
+	top: 322px;
+}
+
+	body.listing-page.subscriber .sidecontentbox a.helplink:before,
+	body.single-page.subscriber .sidecontentbox a.helplink:before {
+		content: 'Or';
+		color: #808080;
+		margin: 0px .3em 0px 3.5em;
+	}
+
+	body.listing-page.subscriber .sidecontentbox a.helplink:after,
+	body.single-page.subscriber .sidecontentbox a.helplink:after {
+		content: 'with the questions';
+		color: #808080;
+		margin: 0px 0px 0px .3em;
+	}
+/* --  C.2.end Sidebar Buttons -------------- */

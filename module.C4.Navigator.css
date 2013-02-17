@@ -12,7 +12,7 @@ body.messages-page .side .md > blockquote:last-child,
 body.single-page .side .md > blockquote:last-child {
 	position: absolute;
 	left: 262px; /* set for stage; modify per reddit */
-	top: 65px;
+	top: 69px; /*adjust this, if header module is used */
 	display: block;
 	background-color: transparent;
 	border: 0px none;

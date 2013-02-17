@@ -318,9 +318,9 @@ button:hover,
 		content: " ";
 		width: 100%;
 		height: 29px;
-		position: relative;
+		position: absolute;
+		bottom: 0px;
 		display: block;
-		margin-top: -33px;
 		z-index: -1;
 	}
 
@@ -405,7 +405,7 @@ a.pref-lang {
 	font-size: 12px;
 	font-weight: bold;
 	height: 55px;
-	line-height: 4.5;
+	line-height: 5.5;
 	width: auto;
 	vertical-align: bottom;
 }
@@ -436,7 +436,7 @@ a.pref-lang {
 		height: 29px;
 		position: absolute;
 		display: block;
-		top: 42px;
+		top: 46px;
 		z-index: -1;
 	}
 
@@ -447,7 +447,7 @@ a.pref-lang {
 
 #header ul.tabmenu {
 	vertical-align: middle;
-	margin: 15px 265px 0px 35px;
+	margin: 15px 265px -5px 35px;
 	border: 0px none;
 }
 
@@ -877,6 +877,7 @@ iframe#ad-frame {
 
 .titlebox {
 	padding: 0px;
+	clear: both;
 }
 
 	.titlebox .bottom {
@@ -887,7 +888,7 @@ iframe#ad-frame {
 	font-size: 26px;
 	text-transform: capitalize;
 	letter-spacing: -1px;
-	margin: 1em 0px .2em 0px;
+	margin: 1.7em 0px .2em 0px;
 }
 
 .sidebox.submit .spacer,
@@ -1093,6 +1094,7 @@ div#moresearchinfo {
 
 .disabled .morelink,
 .disabled .morelink:hover {
+	background-image: none;
 }
 
 	.disabled .morelink .nub,
@@ -1123,25 +1125,14 @@ div#moresearchinfo {
 	border: 1px solid;
 }
 
-/* --  A.5.8. Recently Viewed Area -------------- */
-
-/* --  A.5.9. Create Community Links -------------- */
-.create {
-	display: none;
-}
-
-.subtitle {
-	display: none;
-}
-
-/* --  A.5.10. Ad - do not change this -------------- */
+/* --  A.5.8. Ad - do not change this -------------- */
 
 div#ad {
 }
 
 div#adlink {
 }
-/* --  A.5.11. Account Activity area at Bottom of Sidebar -------------- */
+/* --  A.5.9. Account Activity area at Bottom of Sidebar -------------- */
 
 .account-activity-box {
 	height: 60px;
@@ -1653,7 +1644,7 @@ button:hover,
 #sr-header-area {
 	background-color: #fff;
 	border-bottom-color: #fff;
-	box-shadow: 0px 2px 8px 2px #fff;
+	box-shadow: -5px 1px 17px -1px #fff;
 }
 
 	#sr-header-area .separator {
@@ -2381,16 +2372,7 @@ div#moresearchinfo {
 	background-color: #fafafa;
 }
 
-/* ``  B.5.8. Recently Viewed Area  ```````` */
-
-/* ``  B.5.9. Create Community Links  ```````` */
-.create {
-}
-
-.subtitle {
-}
-
-/* ``  B.5.10. Ad - do not change this  ```````` */
+/* ``  B.5.8. Ad - do not change this  ```````` */
 
 div#ad {
 	background-color: transparent !important;
@@ -2400,7 +2382,7 @@ div#adlink {
 	background-color: transparent !important;
 }
 
-/* ``  B.5.11. Account Activity area at Bottom of Sidebar  ```````` */
+/* ``  B.5.9. Account Activity area at Bottom of Sidebar  ```````` */
 .account-activity-box {
 	background-color: transparent;
 	background-position: center bottom;
