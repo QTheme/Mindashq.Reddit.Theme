@@ -1,4 +1,6 @@
-﻿> # [About Mindashq](#icon-star)
+﻿# Staging area for Mindashq Theme
+## Some things may seem wonky at times.
+> # [About Mindashq](#icon-star)
 > This is a CSS theme to style subreddits. 
 > The general idea for this theme was to add a **min**imum **dash** of **q**uality to the standard Reddit appearance.
 
@@ -40,6 +42,8 @@
 
 #### [](#h4-green)
 > ##[Modules on Stage!](#icon-note)
+> * [Header Images](/r/mindashq/wiki/modules/headerimages).
+> * [Sidebar Buttons](/r/mindashq/wiki/modules/sidebarbuttons) - on Top.
 > * [Navigator](/r/mindashq/wiki/modules/navigator).
 
 --- 

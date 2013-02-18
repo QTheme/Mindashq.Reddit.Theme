@@ -1,7 +1,14 @@
-/* --  C.2 Sidebar Buttons
-		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons for details		
-		Update the main CSS header comment block when this module is used
+/* --  C.2 Sidebar Buttons - in situ
+		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons for details
+	 + 	This css adds visible text to reddit, check for translations	
+	 + 	Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
+
+/*Always hide the community button, change this if you'd display community button on subreddit*/
+.sidebox.create {
+	display: none;
+}
+/*-- The link and the text post buttons -------------------*/
 .sidebox.submit-link {
 	display: block;
 }
@@ -10,12 +17,12 @@
 	display: block;
 }
 /*  In case only one button is needed;
-	Put display none on either of above that is not required
+	Put display:none for the one that is not required
 	and delete the code below.
 	Or,
-	Maintain the whole code for both buttons on side by side
+	Maintain the whole code for both buttons appearing side by side
 */
-
+/*-- Dual buttons -------------------*/
 .sidebox.submit {
 	width: 147px;
 	word-spacing: 1px;
@@ -42,11 +49,12 @@
 	.sidebox.submit-link .morelink .nub:before {
 		content: 'OR';
 		font-size: 12px;
+		font-weight: bold;
 		position: relative;
-		margin-left: 11px;
+		margin-left: 12px;
 		background-color: #fbfbf9!important;
 		padding: 5px;
-		color: #449ef8;
+		color: #2977c6;
 		border-radius: 20px;
 		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
 		z-index: 1;
@@ -71,4 +79,6 @@
 			content: 'Post a Note';
 			font-size: 16px;
 		}
+/*-- end dual buttons -------------------*/
+
 /* --  C.2.end Sidebar Buttons -------------- */

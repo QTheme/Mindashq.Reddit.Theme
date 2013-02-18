@@ -4,26 +4,30 @@
 		+ Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
 #header {
-	background-image: url('http://interfacelift.com/wallpaper/D47cd523/03191_unforgettablesafari_1920x1080.jpg'); /*url of image */
+	background-image: url('%%header-falls%%'); /*url of image */
 	background-repeat: repeat; /*this will repeat the image to entire header*/
 	background-position: 0px 80%; /* adjust for best view */
 	background-color: #fff; /*add a matching color when image is not spanning entire header*/
 	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
-	background-size: 100% auto; /*optional, stretch to available space*/
 	background-attachment: scroll;
 }
+
+	#header::after {
+		background-color: #cee3f8;
+		opacity: 0.7;
+	}
 
 #header-bottom-left {
 	/*this adjusts the top navigation bar, leave as default, or tweak for creative usages*/
 	position: absolute;
 	top: auto;
-	bottom: -5px;
+	bottom: 0px;
 }
 
 #header-img.default-header::before, #header-img-a::before {
 	background-color: #cee3f8; /*tweak to match the image color*/
-	top: 20px; /*tweak to match the min-height of #header*/
-	opacity: .8;
+	top: 26px; /*tweak to match the min-height of #header*/
+	opacity: .1;
 	/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 }
 
@@ -31,14 +35,5 @@
 	background-color: transparent; /*tweak to match the image color, or use the default #cee3f8;*/
 	/*do not use opacity here*/
 	/*be creative with usage of background color, and additional background images here*/
-}
-
-body.listing-page.subscriber .sidecontentbox a.helplink,
-body.single-page.subscriber .sidecontentbox a.helplink {
-	top: 205px; /*add value of min height ofe header to 205*/
-}
-
-body.single-page.subscriber .sidecontentbox a.helplink {
-	top: 322px; /*add value of min height ofe header to 205*/
 }
 /* --  C.1.end Header Image -------------- */

@@ -1,0 +1,107 @@
+/* --  C.2 Sidebar Buttons - On Top
+		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons for details		
+	 + 	This css adds visible text to reddit, check for translations	
+	 + 	Update the main CSS header comment block when this module is used
+---------------------------------------------------*/
+
+/*Always hide the community button, change this if you'd display community button on subreddit*/
+.sidebox.create {
+	display: none;
+}
+/*-- Moving the Buttons and Message to Moderators below the buttons -------------------*/
+.sidebox.submit {
+	position: absolute;
+	top: 105px; /*adjust for header height changes in module C1*/
+}
+
+.sidecontentbox a.helplink {
+	position: absolute;
+	top: 146px; /*adjust for header height changes in module C1*/
+	font-size: 12px;
+}
+
+	.sidecontentbox a.helplink:before {
+		content: 'Or';
+		color: #808080;
+		margin: 0px .3em 0px 1.5em;
+	}
+
+	.sidecontentbox a.helplink:after {
+		content: 'with the questions';
+		color: #808080;
+		margin: 0px 0px 0px .3em;
+	}
+
+.side .spacer #search {
+	margin-top: 70px;
+}
+/*-- The link and the text post buttons -------------------*/
+.sidebox.submit-link {
+	display: block;
+}
+
+.sidebox.submit-text {
+	display: block;
+}
+/*  In case only one button is needed;
+	Put display:none for the one that is not required
+	and delete the code below.
+	Or,
+	Maintain the whole code for both buttons appearing side by side
+*/
+/*-- Dual buttons -------------------*/
+.sidebox.submit {
+	width: 147px;
+	word-spacing: 1px;
+	letter-spacing: -1px;
+}
+
+.sidebox.submit-link {
+	margin-left: 0px;
+	display: block;
+}
+
+	.sidebox.submit-link .morelink a {
+		font-size: 0px;
+		content: '';
+	}
+
+		.sidebox.submit-link .morelink a:before {
+			content: 'Sumbit a Link';
+			font-size: 16px;
+		}
+
+	.sidebox.submit-link .morelink .nub:before {
+		content: 'OR';
+		font-size: 12px;
+		font-weight: bold;
+		position: relative;
+		margin-left: 12px;
+		background-color: #fbfbf9!important;
+		padding: 5px;
+		color: #2977c6;
+		border-radius: 20px;
+		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
+		z-index: 1;
+		border: 1px solid #fbfbf9;
+		height: auto;
+		top: 6px;
+	}
+
+.sidebox.submit-text {
+	text-align: right;
+	margin-left: 152px;
+}
+
+	.sidebox.submit-text .morelink a {
+		font-size: 0px;
+		content: '';
+	}
+
+		.sidebox.submit-text .morelink a:before {
+			content: 'Post a Note';
+			font-size: 16px;
+		}
+/*-- end dual buttons -------------------*/
+
+/* --  C.2.end Sidebar Buttons -------------- */
