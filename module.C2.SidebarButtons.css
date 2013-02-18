@@ -71,29 +71,4 @@
 			content: 'Post a Note';
 			font-size: 16px;
 		}
-
-body.listing-page.subscriber .sidecontentbox a.helplink,
-body.single-page.subscriber .sidecontentbox a.helplink {
-	position: absolute;
-	top: 205px;
-	font-size: 12px;
-}
-
-body.single-page.subscriber .sidecontentbox a.helplink {
-	top: 322px;
-}
-
-	body.listing-page.subscriber .sidecontentbox a.helplink:before,
-	body.single-page.subscriber .sidecontentbox a.helplink:before {
-		content: 'Or';
-		color: #808080;
-		margin: 0px .3em 0px 3.5em;
-	}
-
-	body.listing-page.subscriber .sidecontentbox a.helplink:after,
-	body.single-page.subscriber .sidecontentbox a.helplink:after {
-		content: 'with the questions';
-		color: #808080;
-		margin: 0px 0px 0px .3em;
-	}
 /* --  C.2.end Sidebar Buttons -------------- */
