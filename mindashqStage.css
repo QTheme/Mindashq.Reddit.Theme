@@ -3397,40 +3397,6 @@ body.res-nightmode {
 	background-attachment: scroll;
 }
 
-#header-bottom-left {
-	/*this adjusts the top navigation bar, leave as default, or tweak for creative usages*/
-	position: absolute;
-	top: auto;
-	bottom: 0px;
-}
-
-#header-img.default-header::before, #header-img-a::before {
-	background-color: #cee3f8; /*tweak to match the image color*/
-	top: 26px; /*tweak to match the min-height of #header*/
-	opacity: .8;
-	/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
-}
-
-#header ul.tabmenu li a {
-	background-color: transparent; /*tweak to match the image color, or use the default #cee3f8;*/
-	/*do not use opacity here*/
-	/*be creative with usage of background color, and additional background images here*/
-}
-/* --  C.1.end Header Image -------------- */
-/* --  C.1 Header Image
-		see http://www.reddit.com/r/mindashq/wiki/modules/HeaderImages for details		
-		+ Add only when corresponding image is loaded in community settings > stylesheet 
-		+ Update the main CSS header comment block when this module is used
----------------------------------------------------*/
-#header {
-	background-image: url('%%header-falls%%'); /*url of image */
-	background-repeat: repeat; /*this will repeat the image to entire header*/
-	background-position: 0px 80%; /* adjust for best view */
-	background-color: #fff; /*add a matching color when image is not spanning entire header*/
-	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
-	background-attachment: scroll;
-}
-
 	#header::after {
 		background-color: #cee3f8;
 		opacity: 0.7;
@@ -3455,8 +3421,11 @@ body.res-nightmode {
 	/*do not use opacity here*/
 	/*be creative with usage of background color, and additional background images here*/
 }
-/* --  C.1.end Header Image -------------- */
 
+#header ul.tabmenu {
+	margin-right: 50px;
+}
+/* --  C.1.end Header Image -------------- */
 
 /* --  C.2 Sidebar Buttons - On Top
 		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons for details		

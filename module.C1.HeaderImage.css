@@ -36,4 +36,8 @@
 	/*do not use opacity here*/
 	/*be creative with usage of background color, and additional background images here*/
 }
+
+#header ul.tabmenu {
+	margin-right: 50px;
+}
 /* --  C.1.end Header Image -------------- */
