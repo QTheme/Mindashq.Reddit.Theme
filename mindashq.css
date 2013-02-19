@@ -1265,7 +1265,8 @@ div.userbarHide {
 /* --  A.8.1. Progress Indicator and Page marker for RES mode -------------- */
 
 p#progressIndicator.neverEndingReddit,
-div.NERPageMarker {
+div.NERPageMarker,
+#NERFail {
 	width: auto;
 	font-weight: bold;
 	font-size: 20px;
@@ -2470,7 +2471,8 @@ div#userbarToggle {
 /* ``  B.8.1 Progress Indicator and Page marker for RES mode   ```````` */
 
 p#progressIndicator.neverEndingReddit,
-div.NERPageMarker {
+div.NERPageMarker,
+#NERFail {
 	font-size: 20px;
 	background-color: #fbfbf9;
 	border-color: #d2d2d2;
@@ -2478,6 +2480,10 @@ div.NERPageMarker {
 	border-radius: 0px;
 }
 
+#NERFail {
+	font-size: 14px;
+	color: #b90a0a;
+}
 /* __  B.9. Misc Styling ________ */
 /* `` B.9.1 Boxes   ```````` */
 
