@@ -46,7 +46,9 @@
 > ##[Modules on Stage!](#icon-note)
 > * [Header Images](/r/mindashq/wiki/modules/headerimages).
 > * [Sidebar Buttons](/r/mindashq/wiki/modules/sidebarbuttons) - on Top.
+> * [Pinned Notification](/r/mindashq/wiki/modules/piNote).
 > * [Navigator](/r/mindashq/wiki/modules/navigator).
+> * [Sidebar Collapsible Boxes](/r/mindashq/wiki/modules/collapsibleboxes).
 > * [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - Clickable.
 > * [Rage Faces](/r/fffffffuuuuuuuuuuuu/wiki/faces) from F7U12
 

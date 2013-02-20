@@ -1,0 +1,35 @@
+﻿/* --  C.5 Sidebar Collapsible Boxes
+		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
+		+ Add only when corresponding markup is added in sidebar +
+		Update the main CSS header comment block when this module is used
+---------------------------------------------------*/
+/*  Selective blockquotes collapsed/uncollapsed  */
+.side .md > blockquote:nth-of-type(5) > * {
+	display: block;
+}
+
+/* All blockquotes collapsed/uncollapsed  */
+
+.side .md > blockquote > * {
+	display: none;
+}
+
+/* generic*/
+.side .md > blockquote > h1,
+.side .md > blockquote > h2,
+.side .md > blockquote > h3,
+.side .md > blockquote > h4,
+.side .md > blockquote > h5,
+.side .md > blockquote > h6 {
+	display: block;
+	cursor: pointer;
+}
+
+.side .md > blockquote a {
+	cursor: pointer;
+}
+
+.side .md > blockquote:hover > * {
+	display: block;
+}
+/* --  C.5.end Sidebar Collapsible Boxes -------------- */
