@@ -40,7 +40,7 @@
 > * Use [Github Repository](https://github.com/ashishtiwari/Mindashq.Reddit.Theme/) for development work, and see [Mindashq Wiki](/r/mindashq/wiki/) for more details.
 > * Don't be good, be awesome.
 
-[](http://d.thumbs.redditmedia.com/pE_aUUK8Tl8aTNAE.png#view)
+[Preview Image](http://d.thumbs.redditmedia.com/pE_aUUK8Tl8aTNAE.png)
 
 #### [](#h4-green)
 > ##[Modules on Stage!](#icon-note)
@@ -48,6 +48,8 @@
 > * [Sidebar Buttons](/r/mindashq/wiki/modules/sidebarbuttons) - on Top.
 > * [Navigator](/r/mindashq/wiki/modules/navigator).
 > * [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - Clickable.
+> * [Rage Faces](/r/fffffffuuuuuuuuuuuu/wiki/faces) from F7U12
+
 
 
 --- 
@@ -86,4 +88,4 @@
  * [Multi](/r/multi)
  * [Multi Subs](/r/multisubs)
  * [Some Random Reddit](/r/somerandomreddit)
- * [Available rage faces](/r/metarage/comments/iy2ib/current_list_of_comment_face_codes/)
+ * [Rage Faces Test](/r/stage_mindashq/comments/18atj6/sample_album_post/c8ifo2p)
