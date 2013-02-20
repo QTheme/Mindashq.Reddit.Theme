@@ -2369,8 +2369,9 @@ div#moresearchinfo {
 		}
 
 .spacer .sidecontentbox .content {
-	border-color: #eaeaea;
-	background-color: #fafafa;
+	border-color: #ccc;
+	background-color: #f5f5f5;
+	border-radius: 2px;
 }
 
 /* ``  B.5.8. Ad - do not change this  ```````` */

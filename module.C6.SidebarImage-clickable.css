@@ -1,9 +1,13 @@
-/* --  C.6 Sidebar Image -clickable
+/* --  C.6 Sidebar Image - clickable
 		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarImages for details		
 		+ Add only when corresponding image is loaded in community settings > stylesheet 
 		+ Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
-.side a[href$='#view'] {
+.side .usertext a[href$='png'],
+.side .usertext a[href$='jpg'],
+.side .usertext a[href$='jpeg'],
+.side .usertext a[href$='gif'],
+.side .usertext a[href$='#view'] {
 	background: transparent url('%%SidebarImage%%') no-repeat 0 0;
 	height: 100px; /*adjust to desired image height*/
 	display: block;
@@ -16,7 +20,11 @@
 	margin: 0px -10px 0px -15px;
 }
 
-	.side a[href$='#view']:hover:after {
+	.side .usertext a[href$='png']:hover:after,
+	.side .usertext a[href$='jpg']:hover:after,
+	.side .usertext a[href$='jpeg']:hover:after,
+	.side .usertext a[href$='gif']:hover:after,
+	.side .usertext a[href$='#view']:hover:after {
 		content: "Click to see original size"; /*Short hover text*/
 		background: #f5f5f9;
 		border-radius: 2px;
