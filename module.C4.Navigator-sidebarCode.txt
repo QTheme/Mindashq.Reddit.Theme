@@ -24,7 +24,7 @@
 > See [Reusing Mindashq](/r/mindashq/wiki/usage) on the [wiki](/r/mindashq/wiki/) for detailed steps.
 
 ---
-> ##[About Text](#icon-check-green)
+> ##[About Text](#icon-eye-green)
 > This is just a sample text placeholder for the Sidebar text. 
 
 > The text and the links can be replaced for any kind of customization. 

@@ -1200,14 +1200,20 @@ body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
 	padding: 5px 0px 5px 15px!important;
 }
 
-body.wiki-page .wiki-page-content {
-	margin: 0px 15px 15px;
-	border-top: 1px dotted;
+body.wiki-page h1.wikititle {
+	margin: 10px 15px 5px;
+	display: inline-block;
 }
 
 body.wiki-page .pageactions {
 	float: right;
 	border: 0px none;
+}
+
+body.wiki-page .wiki-page-content {
+	margin: 0px 15px 15px;
+	border-top: 1px dotted;
+	clear: both;
 }
 
 form#newlink {
@@ -1248,11 +1254,14 @@ div.userbarHide {
 
 
 .morecomments {
-	margin-left: 15px;
+	display: inline-block;
+	margin: 4px 0px -7px;
 }
 
-	.morecomments a,
+	.morecomments a.button,
 	.morecomments a .gray {
+		margin: 0px;
+		display: inline-block;
 	}
 
 /* --  A.8.1. Progress Indicator and Page marker for RES mode -------------- */
@@ -2068,7 +2077,7 @@ body div.content > form > div .commentarea .even {
 
 
 .commentarea .comment {
-	border-color: #eeeeee #eeeeee #d2d2d2 #eeeeee !important;
+	border-color: #eeeeee #eeeeee #e0e0e0 #eeeeee !important;
 	border-right: 0px !important;
 	border-radius: 0px !important;
 }
@@ -2077,7 +2086,7 @@ body div.content > form > div .commentarea .even {
 }
 
 .commentarea .sitetable.nestedlisting > .comment {
-	border-color: #e0e0e0 #d2d2d2 #d2d2d2 #e0e0e0!important;
+	border-color: #e0e0e0 #e0e0e0 #e0e0e0 #e0e0e0!important;
 }
 
 .even.comment {
@@ -2119,7 +2128,7 @@ body div.content > form > div .commentarea .even {
 	}
 
 .commentarea .author {
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .commentarea .collapsed .author {
@@ -2415,7 +2424,7 @@ div#adlink {
 
 body.wiki-page h1.wikititle {
 	color: #5ca2e8;
-	font-size: 3em;
+	font-size: 1em;
 }
 
 body.wiki-page .pageactions {
@@ -2455,11 +2464,15 @@ div#userbarToggle {
 }
 
 .morecomments {
+	border: 1px solid #e0e0e0;
+	border-width: 1px 1px 0px;
 }
 
-	.morecomments a,
+	.morecomments a.button,
 	.morecomments a .gray {
-		color: #eee;
+		background-color: #ececec;
+		color: #777;
+		text-shadow: 1px 1px 2px #eee;
 	}
 
 /* ``  B.8.1 Progress Indicator and Page marker for RES mode   ```````` */
@@ -3202,8 +3215,8 @@ body.res-nightmode {
 		border: 0px!important;
 	}
 
-	body.res-nightmode .morecomments a,
-	.morecomments a .gray {
+	body.res-nightmode .morecomments a.button,
+	body.res-nightmode .morecomments a .gray {
 		color: #111;
 	}
 
