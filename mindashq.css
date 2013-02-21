@@ -43,7 +43,7 @@ hr {
 /* --  A.1.1. Tables  -------------- */
 
 .md table {
-	border: 1px solid;
+	border: 1px solid transparent;
 	margin: 10px 0px;
 }
 
@@ -109,7 +109,7 @@ hr {
 .usertext-body pre,
 .usertext-body p > code {
 	overflow: auto;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 .usertext-body code {
@@ -203,7 +203,7 @@ button:hover,
 	margin-left: 0px !important;
 	margin-top: -21px;
 	padding: 0 0 0 5px;
-	border: 1px solid;
+	border: 1px solid transparent;
 	border-width: 0px 0px 1px;
 	text-transform: none;
 }
@@ -310,7 +310,7 @@ button:hover,
 	min-height: 59px;
 	padding: 0;
 	margin: 20px 0 30px;
-	border: 1px solid;
+	border: 1px solid transparent;
 	border-width: 0px 0px 1px;
 }
 
@@ -343,7 +343,7 @@ a.pref-lang {
 	bottom: 0px!important;
 	height: 18px !important;
 	padding: 6px 10px 4px !important;
-	border: 1px solid;
+	border: 1px solid transparent;
 	border-radius: 0px !important;
 	z-index: 102;
 }
@@ -468,7 +468,7 @@ a.pref-lang {
 		#header ul.tabmenu li.selected a,
 		#header ul.tabmenu li.selected a:visited {
 			padding: 10px 15px!important;
-			border: 1px solid;
+			border: 1px solid transparent;
 		}
 
 			#header ul.tabmenu li a:hover,
@@ -479,7 +479,7 @@ a.pref-lang {
 /* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~~~~~~~~~ */
 /* --  A.4.1. Content Box -------------- */
 div.content {
-	border: 3px solid;
+	border: 3px solid transparent;
 	margin: 0px 350px 10px 10px !important;
 	padding: 10px 20px;
 	overflow: hidden;
@@ -497,12 +497,12 @@ body.messages-page > div.content {
 	body.listing-page > div.content,
 	body.messages-page > div.content,
 	body.single-page > div.content > .linklisting {
-		border: 3px solid;
+		border: 3px solid transparent;
 		margin: 0px 2px 15px;
 	}
 
 	body.single-page > div.content > .commentarea {
-		border: 3px solid;
+		border: 3px solid transparent;
 		position: relative;
 		margin: 0px 2px 1px;
 		padding: 0px;
@@ -525,13 +525,13 @@ body.messages-page > div.content {
 .linklisting .even {
 	padding: 2px 0px 2px;
 	margin: 0px;
-	border-top: 1px solid;
+	border-top: 1px solid transparent;
 }
 
 .linklisting .odd {
 	padding: 2px 0px 2px;
 	margin: 0px;
-	border-top: 1px solid;
+	border-top: 1px solid transparent;
 }
 
 .linklisting .even:first-child {
@@ -767,7 +767,7 @@ a.text-button {
 
 body div.content > form > div .commentarea .even {
 	padding: 10px 0px 10px 10px !important;
-	border-top: 1px solid;
+	border-top: 1px solid transparent;
 }
 
 .commentarea .menuarea {
@@ -787,8 +787,8 @@ body div.content > form > div .commentarea .even {
 
 .commentarea .comment {
 	padding: 5px 0px 0px 10px!important;
-	margin: 5px 0px -1px 5px !important;
-	border: 1px solid !important;
+	margin: 2px 0px -1px 5px!important;
+	border: 1px solid transparent!important;
 }
 
 .commentarea .sitetable.nestedlisting > .comment:first-child {
@@ -796,8 +796,8 @@ body div.content > form > div .commentarea .even {
 }
 
 .commentarea .sitetable.nestedlisting > .comment {
-	margin: 5px 0px 0px!important;
-	border: 1px solid !important;
+	margin: 1px 0px 0px!important;
+	border: 1px solid transparent!important;
 }
 
 .even.comment {
@@ -927,7 +927,7 @@ iframe#ad-frame {
 	font-size: 12px;
 	padding: 10px;
 	width: 278px;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 /* --  5.2 Infobar, 
@@ -974,7 +974,7 @@ div#moresearchinfo {
 	font-weight: normal;
 	margin: 0px 0px 10px;
 	padding: 10px 10px 0px 10px;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 	.linkinfo .date {
@@ -1044,7 +1044,7 @@ div#moresearchinfo {
 .login-form-side {
 	margin: 0px 0px 10px;
 	padding: 10px 0px 0px;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 /* --  A.5.5. Flair Setting area -------------- */
@@ -1055,7 +1055,7 @@ div#moresearchinfo {
 .titlebox .tagline {
 	margin: 10px 0px 25px 0px;
 	padding: 10px;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 
@@ -1122,7 +1122,7 @@ div#moresearchinfo {
 	margin: 0px !important;
 	margin-top: 5px !important;
 	padding: 10px;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 /* --  A.5.8. Ad - do not change this -------------- */
@@ -1232,7 +1232,7 @@ form#newlink {
 .keyHighlight {
 	outline: 1px dotted!important;
 	border: 0px !important;
-	border-right: 2px solid!important;
+	border-right: 2px solid transparent !important;
 }
 
 .keyNavAnnotation {
@@ -1275,7 +1275,7 @@ div.NERPageMarker,
 	letter-spacing: -1px;
 	margin: 0px -5px;
 	padding: 10px 0px;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 	p#progressIndicator.neverEndingReddit img {
@@ -1294,7 +1294,7 @@ div.NERPageMarker,
 /* --  A.9.1. Boxes  -------------- */
 
 .side blockquote {
-	border: 1px solid;
+	border: 1px solid transparent;
 	padding: 5px 10px 10px 5px;
 	margin: 5px 0px 10px;
 	position: relative;
@@ -1379,7 +1379,7 @@ div.NERPageMarker,
 .side h5 + blockquote,
 .side h6 + blockquote {
 	display: block;
-	border: 1px solid;
+	border: 1px solid transparent;
 }
 
 	.side h4 + blockquote a[href*='#icon-']::before,
@@ -2086,7 +2086,7 @@ body div.content > form > div .commentarea .even {
 }
 
 .commentarea .sitetable.nestedlisting > .comment {
-	border-color: #e0e0e0 #e0e0e0 #e0e0e0 #e0e0e0!important;
+	border-color: #eeeeee #e0e0e0 #e0e0e0 #e0e0e0!important;
 }
 
 .even.comment {
@@ -3393,5 +3393,5 @@ body.res-nightmode {
 		color: #ccc;
 	}
 
-/* [ C ]. Modules for specific Customization................ */
+/* [ C ]. Modules for specific customization................ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use code, samples and compatible modules  */
