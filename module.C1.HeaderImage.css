@@ -1,7 +1,7 @@
 /* --  C.1. Header Image
 		see http://www.reddit.com/r/mindashq/wiki/modules/HeaderImages for details		
-		+ Add only when corresponding image is loaded in community settings > stylesheet 
-		+ Update the main CSS header comment block when this module is used
+	 + 	Add only when corresponding image is loaded in community settings > stylesheet 
+	 + 	Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
 #header {
 	background-image: url('%%header-falls%%'); /*url of image */

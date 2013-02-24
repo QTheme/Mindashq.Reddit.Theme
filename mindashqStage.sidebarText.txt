@@ -1,5 +1,10 @@
 ﻿# Staging area for Mindashq Theme
 ## Some things may seem wonky at times.
+
+> # [Click Here to know more](/17dfy5#icon-lightbulb-yellow "Click here to know more")
+
+---
+
 > # [About Mindashq](#icon-star)
 > This is a CSS theme to style subreddits. 
 > The general idea for this theme was to add a **min**imum **dash** of **q**uality to the standard Reddit appearance.
