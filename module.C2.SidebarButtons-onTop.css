@@ -32,9 +32,11 @@
 		margin: 0px 0px 0px .3em;
 	}
 
-.side .spacer #search {
+.side .spacer #search,
+body.search-page .side .titlebox {
 	margin-top: 70px;
 }
+
 /*-- The link and the text post buttons -------------------*/
 .sidebox.submit-link {
 	display: block;

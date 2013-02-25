@@ -490,13 +490,6 @@ div.content {
 	overflow: hidden;
 }
 
-body.hot-page > div.content,
-body.new-page > div.content,
-body.rising-page > div.content,
-body.top-page > div.content,
-body.controversial-page > div.content,
-body.related-page > div.content,
-body.other-discussions-page > div.content,
 body.listing-page > div.content,
 body.single-page > div.content,
 body.messages-page > div.content {
@@ -506,13 +499,6 @@ body.messages-page > div.content {
 	box-shadow: none;
 }
 
-	body.hot-page > div.content,
-	body.new-page > div.content,
-	body.rising-page > div.content,
-	body.top-page > div.content,
-	body.controversial-page > div.content,
-	body.related-page > div.content,
-	body.other-discussions-page > div.content,
 	body.listing-page > div.content,
 	body.messages-page > div.content,
 	body.single-page > div.content > .linklisting {
@@ -536,6 +522,14 @@ body.messages-page > div.content {
 			font-weight: normal;
 		}
 
+body.hot-page > div.content,
+body.new-page > div.content,
+body.rising-page > div.content,
+body.top-page > div.content,
+body.controversial-page > div.content,
+body.related-page > div.content,
+body.other-discussions-page > div.content {
+}
 /* --  A.4.2. Links (Post) -------------- */
 
 .link.promotedlink.promoted {
@@ -1846,25 +1840,11 @@ div.content {
 	box-shadow: 0px 1px 4px 1px #cccccc;
 }
 
-body.hot-page > div.content,
-body.new-page > div.content,
-body.rising-page > div.content,
-body.top-page > div.content,
-body.controversial-page > div.content,
-body.related-page > div.content,
-body.other-discussions-page > div.content,
 body.listing-page > div.content,
 body.single-page > div.content,
 body.messages-page > div.content {
 }
 
-	body.hot-page > div.content,
-	body.new-page > div.content,
-	body.rising-page > div.content,
-	body.top-page > div.content,
-	body.controversial-page > div.content,
-	body.related-page > div.content,
-	body.other-discussions-page > div.content,
 	body.listing-page > div.content,
 	body.messages-page > div.content,
 	body.single-page > div.content > .linklisting {
@@ -1887,6 +1867,14 @@ body.messages-page > div.content {
 		body.single-page > div.content > .linklisting .link .title {
 		}
 
+body.hot-page > div.content,
+body.new-page > div.content,
+body.rising-page > div.content,
+body.top-page > div.content,
+body.controversial-page > div.content,
+body.related-page > div.content,
+body.other-discussions-page > div.content {
+}
 /* --  B.4.2. Links (Post) -------------- */
 
 .link.promotedlink.promoted {
@@ -2817,13 +2805,6 @@ body.res-nightmode {
 		box-shadow: 0px 1px 4px 3px #000;
 	}
 
-	body.res-nightmode.hot-page > div.content,
-	body.res-nightmode.new-page > div.content,
-	body.res-nightmode.rising-page > div.content,
-	body.res-nightmode.top-page > div.content,
-	body.res-nightmode.controversial-page > div.content,
-	body.res-nightmode.related-page > div.content,
-	body.res-nightmode.other-discussions-page > div.content,
 	body.res-nightmode.listing-page > div.content,
 	body.res-nightmode.single-page > div.content,
 	body.res-nightmode.messages-page > div.content {
@@ -2833,13 +2814,6 @@ body.res-nightmode {
 		box-shadow: none;
 	}
 
-		body.res-nightmode.hot-page > div.content,
-		body.res-nightmode.new-page > div.content,
-		body.res-nightmode.rising-page > div.content,
-		body.res-nightmode.top-page > div.content,
-		body.res-nightmode.controversial-page > div.content,
-		body.res-nightmode.related-page > div.content,
-		body.res-nightmode.other-discussions-page > div.content,
 		body.res-nightmode.listing-page > div.content,
 		body.res-nightmode.messages-page > div.content,
 		body.res-nightmode.single-page > div.content > .linklisting {
