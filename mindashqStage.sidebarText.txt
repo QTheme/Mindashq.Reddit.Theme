@@ -1,7 +1,7 @@
 ﻿# Staging area for Mindashq Theme
 ## Some things may seem wonky at times.
 
-> # [Click Here to know more](/17dfy5#icon-lightbulb-yellow "Click here to know more")
+> # [Click Here to know more](/17dfy5#icon-lightbulb-blue "Click here to know more")
 
 ---
 
@@ -28,8 +28,8 @@
 > Feel free to comment on the [feedback thread](/17dfy5) for help, or clarifications.
 > See [Reusing Mindashq](/r/mindashq/wiki/usage) on the [wiki](/r/mindashq/wiki/) for detailed steps.
 
----
-> ##[About Text](#icon-eye-green)
+#### [](#h4-green)
+> ##[About Text](#icon-eye-blue)
 > This is just a sample text placeholder for the Sidebar text. 
 
 > The text and the links can be replaced for any kind of customization. 
@@ -47,15 +47,20 @@
 
 [Preview Image](http://d.thumbs.redditmedia.com/pE_aUUK8Tl8aTNAE.png)
 
-#### [](#h4-green)
-> ##[Modules on Stage!](#icon-note)
-> * [Header Images](/r/mindashq/wiki/modules/headerimages).
-> * [Sidebar Buttons](/r/mindashq/wiki/modules/sidebarbuttons) - on Top.
-> * [Pinned Notification](/r/mindashq/wiki/modules/piNote).
-> * [Navigator](/r/mindashq/wiki/modules/navigator).
-> * [Sidebar Collapsible Boxes](/r/mindashq/wiki/modules/collapsibleboxes).
-> * [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - Clickable.
-> * [Rage Faces](/r/fffffffuuuuuuuuuuuu/wiki/faces) from F7U12
+> ##[Modules in Mindashq!](#icon-note)
+> \# | Module | Status on Stage | Type
+> :-: | :- | :-: | :-
+> C1 | [Header Images](/r/mindashq/wiki/modules/headerimages) | Active | Opt-in
+> C2 | [Sidebar Buttons](/r/mindashq/wiki/modules/sidebarbuttons) - in situ | Inactive | Opt-in
+> C2 | [Sidebar Buttons](/r/mindashq/wiki/modules/sidebarbuttons) - on Top | Active | Opt-in
+> C3 | [Pinned Notification](/r/mindashq/wiki/modules/piNote) | Active | Opt-in
+> C4 | [Navigator](/r/mindashq/wiki/modules/navigator) | Active | Opt-in
+> C5 | [Sidebar Collapsible Boxes](/r/mindashq/wiki/modules/collapsibleboxes) | Active | Opt-in
+> C6 | [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - Clickable | Active | Opt-in
+> C6 | [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - View Only | Inactive | Opt-in
+> C7 | [Rage Faces](/r/fffffffuuuuuuuuuuuu/wiki/faces) from F7U12 | Active | Opt-in
+> S1 | Coming up | Inactive | Swap
+> S2 | RESiprocator | Inactive | Independent
 
 
 

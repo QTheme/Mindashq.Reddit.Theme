@@ -1309,6 +1309,8 @@ div.NERPageMarker,
 
 	.side blockquote table {
 		margin: 5px -11px 5px -6px;
+		min-width: 299px;
+		max-width: 300px;
 	}
 
 		.side blockquote table:last-child {
@@ -1376,8 +1378,9 @@ div.NERPageMarker,
 }
 
 /* --  A.9.2. Colored Boxes  -------------- */
-/*tip : h4 Green, h5 yellow, h6 red*/
+/*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
 
+.side h3 + blockquote,
 .side h4 + blockquote,
 .side h5 + blockquote,
 .side h6 + blockquote {
@@ -1385,6 +1388,7 @@ div.NERPageMarker,
 	border: 1px solid #fafafa;
 }
 
+	.side h3 + blockquote a[href*='#icon-']:before,
 	.side h4 + blockquote a[href*='#icon-']:before,
 	.side h5 + blockquote a[href*='#icon-']:before,
 	.side h6 + blockquote a[href*='#icon-']:before {
@@ -2537,6 +2541,23 @@ div.NERPageMarker,
 	background-image: -o-linear-gradient(top, #666666, #4d4d4d);
 	background-image: linear-gradient(to bottom, #666666, #4d4d4d);
 }
+/*Blue*/
+.side h3 + blockquote {
+	background-color: #d9f0f7;
+	border-color: #a2e5f9;
+}
+
+	.side h3 + blockquote a[href*='#icon-']:before,
+	.side blockquote a[href$='blue']:before {
+		color: #e9f4f7;
+		background-color: #a2e5f9;
+		background-image: -moz-linear-gradient(top, #a2e5f9, #5ca2e8);
+		background-image: -webkit-linear-gradient(top, #a2e5f9,#5ca2e8);
+		background-image: -o-linear-gradient(top, #a2e5f9,#5ca2e8);
+		background-image: -ms-linear-gradient(top, #a2e5f9,#5ca2e8);
+		background-image: linear-gradient(to bottom, #a2e5f9,#5ca2e8);
+	}
+
 /*Green*/
 .side h4 + blockquote {
 	background-color: #e9ffe6;
