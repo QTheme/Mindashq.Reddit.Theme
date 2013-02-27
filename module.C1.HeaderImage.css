@@ -4,7 +4,7 @@
 	 + 	Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
 #header {
-	background-image: url('%%header-falls%%'); /*url of image */
+	background-image: url('%%headerImage%%'); /*url of image */
 	background-repeat: repeat; /*this will repeat the image to entire header*/
 	background-position: 0px 80%; /* adjust for best view */
 	background-color: #fff; /*add a matching color when image is not spanning entire header*/
@@ -12,7 +12,7 @@
 	background-attachment: scroll;
 }
 
-	#header::after {
+	#header:after {
 		background-color: #cee3f8;
 		opacity: 0.7;
 	}
@@ -24,7 +24,7 @@
 	bottom: 0px;
 }
 
-#header-img.default-header::before, #header-img-a::before {
+#header-img.default-header:before, #header-img-a:before {
 	background-color: #cee3f8; /*tweak to match the image color*/
 	top: 26px; /*tweak to match the min-height of #header*/
 	opacity: .1;

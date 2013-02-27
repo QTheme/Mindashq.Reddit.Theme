@@ -27,7 +27,7 @@
 	}
 
 	.sidecontentbox a.helplink:after {
-		content: 'with the questions';
+		content: 'with your questions';
 		color: #808080;
 		margin: 0px 0px 0px .3em;
 	}
@@ -104,6 +104,13 @@ body.search-page .side .titlebox {
 			content: 'Post a Note';
 			font-size: 16px;
 		}
+
+body.res-nightmode .sidebox.submit-link .morelink .nub:before {
+	background-color: #222222!important;
+	text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
+	border: 1px solid #222222;
+	color: #bb6107;
+}
 /*-- end dual buttons -------------------*/
 
 /* --  C.2.end Sidebar Buttons -------------- */
