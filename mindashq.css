@@ -242,7 +242,6 @@ input[type='submit']:hover,
 	position: relative;
 }
 
-
 #header #sr-header-area a {
 }
 
@@ -306,7 +305,6 @@ input[type='submit']:hover,
 
 		#sr-header-area .drop-choices a.choice:hover {
 		}
-
 
 /* ~~  A.3. Header ~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -432,7 +430,6 @@ a.pref-lang {
 		vertical-align: middle;
 	}
 
-
 	#header-img.default-header:before,
 	#header-img-a:before {
 		content: " ";
@@ -480,8 +477,6 @@ a.pref-lang {
 			#header ul.tabmenu li a:hover,
 			#header ul.tabmenu li.selected a:hover {
 			}
-
-
 /* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~~~~~~~~~ */
 /* --  A.4.1. Content Box -------------- */
 
@@ -710,14 +705,11 @@ ul.tabmenu.formtab {
 				padding: 9px 15px;
 			}
 
-
-
 ul.formtab li.selected .link-button {
 }
 
 ul.formtab li.selected .text-button {
 }
-
 
 ul.formtab a.text-button {
 }
@@ -737,7 +729,6 @@ a.text-button {
 .link.last-clicked {
 	border-width: 1px 0px 0px;
 }
-
 
 #noresults {
 	margin-right: 310px;
@@ -783,7 +774,6 @@ a.text-button {
 		background-position: -22px -22px;
 	}*/
 
-
 /* --  A.4.7. Comment Formatting -------------- */
 
 body div.content > form > div .commentarea .even {
@@ -798,13 +788,11 @@ body div.content > form > div .commentarea .even {
 }
 
 .commentarea p {
-	line-height: 1.4em;
 }
 
 .commentarea .nestedlisting {
 	overflow: hidden;
 }
-
 
 .commentarea .comment {
 	padding: 5px 0px 0px 10px!important;
@@ -963,6 +951,7 @@ iframe#ad-frame {
 #search input[type='submit'] {
 	padding: 10px 15px;
 }
+
 /* --  5.2 Infobar, MoreInfo and MoreSearch Divs -------------- */
 
 .infobar {
@@ -1069,12 +1058,15 @@ div#moresearchinfo {
 
 /* --  A.5.4. Login Form -------------- */
 
-
 .login-form-side {
 	margin: 0px 0px 10px;
 	padding: 10px 0px 0px;
 	border: 1px solid #fafafa;
 }
+
+	.login-form-side input[type=text],
+	.login-form-side input[type=password] {
+	}
 
 /* --  A.5.5. Flair Setting area -------------- */
 
@@ -1092,6 +1084,7 @@ div#moresearchinfo {
 .RESDashboardToggle {
 	padding: 3px 7px!important;
 }
+
 /* --  A.5.6. Submit Button -------------- */
 
 .sidebox.submit {
@@ -1321,7 +1314,7 @@ div.NERPageMarker,
 	z-index: 9999999;
 }
 
-/* ~~  A.9. Misc Styling ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  A.9. Sidebar Boxes ~~~~~~~~~~~~~~~~~~~~~ */
 /* --  A.9.1. Boxes  -------------- */
 
 .side blockquote {
@@ -1546,7 +1539,6 @@ a {
 	a:active {
 		color: #861010;
 	}
-
 
 .buttons li a {
 	color: #888 !important;
@@ -1899,6 +1891,7 @@ body.controversial-page > div.content,
 body.related-page > div.content,
 body.other-discussions-page > div.content {
 }
+
 /* --  B.4.2. Links (Post) -------------- */
 
 .link.promotedlink.promoted {
@@ -2204,6 +2197,7 @@ iframe#ad-frame {
 }
 
 .sidebox.submit .spacer,
+.sidebox .spacer,
 .sidebox.create {
 	background-color: transparent;
 }
@@ -2256,6 +2250,7 @@ body.search-page .menuarea {
 	background-color: transparent;
 	border-color: transparent;
 }
+
 /* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs -------------- */
 
 .infobar {
@@ -2346,6 +2341,10 @@ div#moresearchinfo {
 	border-width: 1px 0px;
 }
 
+	.login-form-side input[type=text],
+	.login-form-side input[type=password] {
+		border-color: #d2d2d2;
+	}
 /* --  B.5.5. Flair Setting area -------------- */
 
 .titlebox form.toggle {
@@ -2362,6 +2361,7 @@ div#moresearchinfo {
 .RESDashboardToggle {
 	border-color: #e3e3e3!important;
 }
+
 /* --  B.5.6. Submit Button -------------- */
 
 .sidebox.submit {
@@ -2545,7 +2545,8 @@ div.NERPageMarker,
 	font-size: 14px;
 	color: #b90a0a;
 }
-/* ~~  B.9. Misc Styling ~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~  B.9. Sidebar Boxes ~~~~~~~~~~~~~~~~~~~~~ */
 /* --  B.9.1 Boxes -------------- */
 
 .side blockquote {
@@ -2587,7 +2588,6 @@ div.NERPageMarker,
 .side .icon-menu a {
 	background-color: transparent;
 }
-
 
 /* --  B.9.2 Colored Boxes -------------- */
 
@@ -2663,7 +2663,6 @@ div.NERPageMarker,
 		background-image: -o-linear-gradient(top, #ef784e, #dd4814);
 		background-image: linear-gradient(to bottom, #ef784e, #dd4814);
 	}
-
 
 /* --  B.9.3  Sidebar Icons -------------- */
 
