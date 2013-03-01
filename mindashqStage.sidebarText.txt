@@ -58,7 +58,7 @@
 > C5 | [Sidebar Collapsible Boxes](/r/mindashq/wiki/modules/collapsibleboxes) | Active | Opt-in
 > C6 | [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - Clickable | Active | Opt-in
 > C6 | [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - View Only | Inactive | Opt-in
-> C7 | [Rage Faces](/r/fffffffuuuuuuuuuuuu/wiki/faces) from F7U12 | Active | Opt-in
+> C7 | [Rage Faces](/r/mindashq/wiki/modules/ragefaces) from F7U12 | Active | Opt-in
 > S1 | Coming up | Inactive | Swap
 > S2 | RESiprocator | Inactive | Independent
 
