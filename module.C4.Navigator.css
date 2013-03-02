@@ -139,4 +139,47 @@ body.single-page .side .md > blockquote:last-child {
 		box-shadow: 0px 2px 6px 0px #bebebe;
 	}
 
+body.res-nightmode.listing-page .side .md > blockquote:last-child > h1,
+body.res-nightmode.single-page .side .md > blockquote:last-child > h1,
+body.res-nightmode.listing-page .side .md > blockquote:last-child > h1 a,
+body.res-nightmode.single-page .side .md > blockquote:last-child > h1 a {
+	color: #ff910b!important;
+	background-color: #414141!important;
+}
+
+body.res-nightmode.listing-page .side .md > blockquote:last-child:hover > h1,
+body.res-nightmode.single-page .side .md > blockquote:last-child:hover > h1,
+body.res-nightmode.listing-page .side .md > blockquote:last-child:hover > h1 a,
+body.res-nightmode.single-page .side .md > blockquote:last-child:hover > h1 a {
+	background-color: #ff910b!important;
+	color: #414141!important;
+}
+
+body.res-nightmode.listing-page .side .md > blockquote:last-child li,
+body.res-nightmode.single-page .side .md > blockquote:last-child li {
+	border-color: #6a6a6a;
+	background-color: #444444;
+	text-shadow: 0 1px 0 #888;
+	box-shadow: 0px 1px 6px 0px #000;
+}
+
+	body.res-nightmode.listing-page .side .md > blockquote:last-child li a,
+	body.res-nightmode.single-page .side .md > blockquote:last-child li a {
+		color: #bbb;
+	}
+
+body.res-nightmode.listing-page .side .md > blockquote:last-child ul > li:hover,
+body.res-nightmode.single-page .side .md > blockquote:last-child ul > li:hover,
+body.res-nightmode.listing-page .side .md > blockquote:last-child ul > li:hover > a,
+body.res-nightmode.single-page .side .md > blockquote:last-child ul > li:hover > a {
+	color: #dcebfa!important;
+	background-color: #ff910b;
+	text-shadow: 0 1px 0 #333;
+}
+
+body.res-nightmode.listing-page .side .md > blockquote:last-child li > ul > li,
+body.res-nightmode.single-page .side .md > blockquote:last-child li > ul > li {
+	background-color: #4a4a4a;
+	box-shadow: 0px 1px 6px 0px #000;
+}
 /* --  C.4.end Navigator -------------- */

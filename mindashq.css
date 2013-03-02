@@ -920,9 +920,12 @@ iframe#ad-frame {
 	margin: 1.2em 0px .2em 0px;
 }
 
-.sidebox.submit .spacer,
-.sidebox.create {
-	display: none;
+div.sidebox.create {
+	position: absolute;
+	bottom: 105px;
+	display: block;
+	background: none transparent!important;
+	border: 0px solid #fafafa!important;
 }
 
 .icon-menu li {
@@ -1115,7 +1118,7 @@ div#moresearchinfo {
 .morelink:hover {
 	font-weight: normal;
 	letter-spacing: 0;
-	padding: 6px 0px;
+	padding: 6px 10px;
 	background: none transparent;
 }
 
@@ -1601,7 +1604,7 @@ a {
 }
 
 	.buttons li a:hover {
-		color: #08C !important;
+		color: #08c !important;
 	}
 
 	.buttons li a:visited {
@@ -1724,7 +1727,7 @@ button:hover,
 input[type='submit']:hover,
 .side a[href*='/#btn']:hover {
 	background-color: #56a6f7;
-	border-color: #08C;
+	border-color: #08c;
 	color: #fff;
 }
 
@@ -2289,10 +2292,8 @@ iframe#ad-frame {
 	text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
 }
 
-.sidebox.submit .spacer,
-.sidebox .spacer,
-.sidebox.create {
-	background-color: transparent;
+div.sidebox .spacer {
+	background-color: transparent!important;
 }
 
 .icon-menu li {
@@ -2375,11 +2376,11 @@ div#moresearchinfo {
 }
 
 	.commentarea .infobar a {
-		color: #08C !important;
+		color: #08c !important;
 	}
 
 		.commentarea .infobar a:hover {
-			color: #08C !important;
+			color: #08c !important;
 		}
 
 .linkinfo {
@@ -2506,15 +2507,15 @@ div#moresearchinfo {
 }
 
 	.sidecontentbox a {
-		color: #08C !important;
+		color: #08c !important;
 	}
 
 		.sidecontentbox a:hover {
-			color: #08C !important;
+			color: #08c !important;
 		}
 
 		.sidecontentbox a:visited {
-			color: #08C !important;
+			color: #08c !important;
 		}
 
 	.sidecontentbox .title h1 {
@@ -2602,7 +2603,7 @@ body.wiki-page .wiki-page-content {
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
 	body.wiki-page .wiki-page-content .md.wiki h6 {
-		color: #08C;
+		color: #08c;
 	}
 
 /* ~~  B.8. RES Optimisation ~~~~~~~~~~~~~~~~~~~~~ */
@@ -2850,6 +2851,14 @@ body.res-nightmode {
 			color: #d2d2d2;
 		}
 
+		body.res-nightmode #sr-header-area a {
+			color: #d2d2d2;
+		}
+
+		body.res-nightmode #sr-header-area:hover a {
+			color: #fff;
+		}
+
 	body.res-nightmode #header #srLeftContainer,
 	body.res-nightmode #header #RESStaticShortcuts,
 	body.res-nightmode #header #RESShortcuts,
@@ -2948,7 +2957,7 @@ body.res-nightmode {
 		body.res-nightmode #header ul.tabmenu li.selected a,
 		body.res-nightmode #header ul.tabmenu li.selected a:visited {
 			background-color: #040406;
-			border-color: #a35d17;
+			border: 1px solid #a35d17!important;
 			box-shadow: 0px 13px 0px -9px #a35d17;
 		}
 
@@ -3225,7 +3234,7 @@ body.res-nightmode {
 		body.res-nightmode .linkinfo .shortlink input {
 			color: #f5f5f5!important;
 			border: 0px!important;
-			background-color: transparent;
+			background-color: transparent!important;
 		}
 
 	body.res-nightmode .titlebox form.toggle,
@@ -3326,9 +3335,13 @@ body.res-nightmode {
 			color: #d2d2d2;
 		}
 
+		body.res-nightmode .sidecontentbox .thing {
+			border: 0px none #222!important;
+		}
+
 	body.res-nightmode .spacer .sidecontentbox .content {
-		border: 1px solid #151515;
-		background-color: #050505;
+		border: 1px solid #6a6a6a;
+		background-color: #222;
 	}
 
 	body.res-nightmode div#ad {
@@ -3382,6 +3395,18 @@ body.res-nightmode {
 		body.res-nightmode.wiki-page .wiki-page-content .md.wiki > .toc > ul {
 			background-color: #040406;
 			border-color: #111;
+		}
+
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h1,
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h2,
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h3,
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h4 {
+			text-shadow: 0px 0px 2px #fff,1px 1px 3px #0a0a0a;
+		}
+
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h5,
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h6 {
+			color: #fff!important;
 		}
 
 	body.res-nightmode.wiki-page .pageactions .wikiaction-current:hover {
@@ -3445,7 +3470,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .md table {
-		border: 1px solid #333;
+		border-color: #6a6a6a;
 		font-family: Arial,Helvetica,Sans-serif;
 	}
 
@@ -3464,7 +3489,7 @@ body.res-nightmode {
 
 		body.res-nightmode .md table td,
 		body.res-nightmode .md table th {
-			border-right: 1px solid #333;
+			border-right: 1px solid #6a6a6a;
 		}
 
 	body.res-nightmode .md ul,
@@ -3554,7 +3579,6 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .side blockquote {
-		border: 0 none;
 		border: 1px solid #6a6a6a;
 		background-color: #0a0a0a;
 		border-radius: 2px;
