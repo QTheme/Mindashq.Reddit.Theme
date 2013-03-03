@@ -4,10 +4,10 @@
 	 + 	Update the main CSS header comment block when this module is used
 ---------------------------------------------------*/
 
-/*Always hide the community button, change this if you'd display community button on subreddit*/
+/*change this if your reddit wants to prevent creating of newer communities
 .sidebox.create {
 	display: none;
-}
+}*/
 /*-- The link and the text post buttons -------------------*/
 .sidebox.submit-link {
 	display: block;
@@ -66,7 +66,7 @@
 .sidebox.submit-text {
 	text-align: right;
 	float: right;
-	top: -48px;
+	margin-top: -48px;
 	position: relative;
 }
 

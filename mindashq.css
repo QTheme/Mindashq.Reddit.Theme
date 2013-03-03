@@ -1,6 +1,6 @@
 /* ~~ Mindashq.Reddit.Theme
-    v1.0
-    http://www.reddit.com/r/mindashq/wiki 
+	v1.0
+	http://www.reddit.com/r/mindashq/wiki 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* [ A ]. Masonry and Template................ */
@@ -37,7 +37,7 @@ hr {
 }
 
 .md {
-	max-width: 95%;
+	max-width: 70em;
 }
 	/* --  A.1.1. Tables  -------------- */
 
@@ -425,14 +425,14 @@ a.pref-lang {
 
 #header-img-a {
 	padding: 0;
-	margin: 5px 0 -10px;
+	margin: 5px -3px -11px 0;
 	display: inline-block;
 	height: 55px;
 	vertical-align: middle;
 }
 
 	#header-img-a img {
-		margin: 2px -3px -14px 0;
+		margin: 0px 3px -14px 3px;
 		padding: 0;
 		width: auto!important;
 		height: auto!important;
@@ -923,6 +923,7 @@ iframe#ad-frame {
 div.sidebox.create {
 	position: absolute;
 	bottom: 105px;
+	right: 30px;
 	display: block;
 	background: none transparent!important;
 	border: 0 solid #fafafa!important;
@@ -1215,20 +1216,17 @@ div#adlink {
 
 .footer {
 	border: 0 none;
+	margin: 5px;
 }
 
 /* --  A.6.1. Reddit Copyright Text -------------- */
 
-.bottommenu {
+.bottommenu,
+.bottommenu a {
+	font-size: x-small;
 }
 
-	.bottommenu a {
-	}
-
 .debuginfo:hover .content {
-	display: inline;
-	letter-spacing: 1px;
-	word-spacing: 1px;
 }
 
 /* ~~  A.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~~~~~~~~~ */
@@ -1873,11 +1871,11 @@ a.pref-lang {
 }
 
 #header-img-a {
+	background-color: #cee3f8;
+	box-shadow: 0 4px 6px #bbb;
 }
 
 	#header-img-a img {
-		background-color: #cee3f8;
-		box-shadow: 0 4px 6px #bbb;
 	}
 
 	#header-img.default-header:before,
@@ -2369,10 +2367,6 @@ div#moresearchinfo {
 }
 
 .commentarea .infobar {
-	color: #333;
-	text-shadow: none;
-	background-image: none;
-	background-color: transparent;
 }
 
 	.commentarea .infobar a {
@@ -3195,10 +3189,6 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .commentarea .infobar {
-		color: #ccc;
-		text-shadow: none;
-		background-image: none;
-		background-color: transparent;
 	}
 
 		body.res-nightmode .commentarea .infobar a {

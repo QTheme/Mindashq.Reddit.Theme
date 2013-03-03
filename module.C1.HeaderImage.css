@@ -21,7 +21,7 @@
 	/*this adjusts the top navigation bar, leave as default, or tweak for creative usages*/
 	position: absolute;
 	top: auto;
-	bottom: 0px;
+	bottom: 0;
 }
 
 #header-img.default-header:before, #header-img-a:before {
