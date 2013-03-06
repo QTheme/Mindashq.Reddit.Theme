@@ -2,19 +2,17 @@
 		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons for details
 	 + 	This css adds visible text to reddit, check for translations	
 	 + 	Update the main CSS header comment block when this module is used
----------------------------------------------------*/
+---- */
 
 /*change this if your reddit wants to prevent creating of newer communities
 .sidebox.create {
 	display: none;
 }*/
-/*-- The link and the text post buttons -------------------*/
+/*-- The link and the text post buttons appearance ---- */
 .sidebox.submit-link {
-	display: block;
 }
 
 .sidebox.submit-text {
-	display: block;
 }
 /*  In case only one button is needed;
 	Put display:none for the one that is not required
@@ -22,7 +20,7 @@
 	Or,
 	Maintain the whole code for both buttons appearing side by side
 */
-/*-- Dual buttons -------------------*/
+/*-- Dual buttons ---- */
 .sidebox.submit {
 	width: 147px;
 	word-spacing: 1px;
@@ -86,6 +84,6 @@ body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 	border: 1px solid #222222;
 	color: #bb6107;
 }
-/*-- end dual buttons -------------------*/
+/*-- end Dual buttons ---- */
 
-/* --  C.2.end Sidebar Buttons -------------- */
+/* --  C.2.end Sidebar Buttons ---- */

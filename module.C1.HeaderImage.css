@@ -2,7 +2,7 @@
 		see http://www.reddit.com/r/mindashq/wiki/modules/HeaderImages for details		
 	 + 	Add only when corresponding image is loaded in community settings > stylesheet 
 	 + 	Update the main CSS header comment block when this module is used
----------------------------------------------------*/
+---- */
 #header {
 	background-image: url('%%headerImage%%'); /*url of image */
 	background-repeat: repeat; /*this will repeat the image to entire header*/
@@ -40,4 +40,4 @@
 #header ul.tabmenu {
 	margin-right: 50px;
 }
-/* --  C.1.end Header Image -------------- */
+/* --  C.1.end Header Image ---- */

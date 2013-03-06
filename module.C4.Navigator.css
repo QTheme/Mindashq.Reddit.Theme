@@ -2,7 +2,7 @@
 		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
 	 + 	Add only when corresponding markup is added in sidebar
 	 + 	Update the main CSS header comment block when this module is used
----------------------------------------------------*/
+---- */
 .side .md > blockquote:last-child {
 	display: none;
 }
@@ -20,7 +20,7 @@ body.single-page .side .md > blockquote:last-child {
 	margin: 0px;
 	z-index: 99;
 }
-	/*----------- last child only*/
+
 	body.listing-page .side .md > blockquote:last-child > h1,
 	body.single-page .side .md > blockquote:last-child > h1 {
 		overflow: hidden;
@@ -182,4 +182,4 @@ body.res-nightmode.single-page .side .md > blockquote:last-child li > ul > li {
 	background-color: #4a4a4a;
 	box-shadow: 0px 1px 6px 0px #000;
 }
-/* --  C.4.end Navigator -------------- */
+/* --  C.4.end Navigator ---- */

@@ -1,10 +1,10 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.2
+	v1.1
 	http://www.reddit.com/r/mindashq/wiki
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* [ A ]. Masonry and Template................ */
-/* ~~  A.1. Common Tags ~~~~~~~~~~~~~~~~~~~~~ */
+/* [ A ]. Masonry and Template ............ */
+/* ~~  A.1. Common Tags ~~~~~~~~~~~~~ */
 
 body {
 	font-size: 10px;
@@ -39,7 +39,7 @@ hr {
 .md {
 	max-width: 70em;
 }
-	/* --  A.1.1. Tables  -------------- */
+	/* --  A.1.1. Tables  ---------- */
 
 	.md table {
 		border: 1px solid #fafafa;
@@ -68,7 +68,7 @@ hr {
 			padding: 4px 8px;
 		}
 
-	/* --  A.1.2. Lists  -------------- */
+	/* --  A.1.2. Lists  ---------- */
 
 	.md ul,
 	.md ol {
@@ -99,7 +99,7 @@ hr {
 				margin: 2px;
 			}
 
-	/* --  A.1.3. Code Style  -------------- */
+	/* --  A.1.3. Code Style  ---------- */
 
 	.usertext-body pre,
 	.md.wiki pre {
@@ -134,7 +134,7 @@ a[href='#s']:active:after {
 	text-decoration: none;
 }
 
-/* --  A.1.4. Common Button Style  -------------- */
+/* --  A.1.4. Common Button Style  ---------- */
 
 .btn button,
 .btn .button {
@@ -174,8 +174,8 @@ input[type='submit']:hover,
 .btn.right:hover {
 }
 
-/* --  A.1.5. Selective dimming of link buttons -------------- */
-/* --  This is only in A, not in B -------------- */
+/* --  A.1.5. Selective dimming of link buttons ---------- */
+/* --  This is only in A, not in B ---------- */
 
 .entry > .flat-list > li {
 	/*visibility: hidden;*/
@@ -205,7 +205,7 @@ input[type='submit']:hover,
 	filter: Alpha(opacity=100);
 }
 
-/* ~~  A.2. Top Sr-Bar ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  A.2. Top Sr-Bar ~~~~~~~~~~~~~ */
 
 #sr-header-area {
 	font-weight: 500;
@@ -296,7 +296,7 @@ input[type='submit']:hover,
 	top: 0;
 }
 
-/* --  A.2.1. Dropdown Subreddits Bar -------------- */
+/* --  A.2.1. Dropdown Subreddits Bar ---------- */
 
 #sr-header-area .drop-choices {
 	font-size: 12px;
@@ -316,7 +316,7 @@ input[type='submit']:hover,
 		#sr-header-area .drop-choices a.choice:hover {
 		}
 
-/* ~~  A.3. Header ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  A.3. Header ~~~~~~~~~~~~~ */
 
 #header {
 	height: auto;
@@ -337,7 +337,7 @@ input[type='submit']:hover,
 		z-index: -1;
 	}
 
-/* --  A.3.1. User Controls -------------- */
+/* --  A.3.1. User Controls ---------- */
 
 span.user {
 }
@@ -368,7 +368,7 @@ a.pref-lang {
 		bottom: -1px!important;
 	}
 
-/* --  A.3.2. Banner Image -------------- */
+/* --  A.3.2. Banner Image ---------- */
 
 #header-bottom-left {
 	font-size: larger;
@@ -377,7 +377,7 @@ a.pref-lang {
 	padding: 0;
 }
 
-/* --  A.3.3. The Reddit Name, applies to all pages -------------- */
+/* --  A.3.3. The Reddit Name, applies to all pages ---------- */
 
 .pagename {
 	margin: 10px 0 -11px 0;
@@ -409,7 +409,7 @@ a.pref-lang {
 			text-decoration: none;
 		}
 
-/* --  A.3.4. Reddit Image and Text -------------- */
+/* --  A.3.4. Reddit Image and Text ---------- */
 
 #header-img.default-header {
 	background-position: -10000px -2058px;
@@ -456,7 +456,7 @@ a.pref-lang {
 		/*margin-top: 12px;*/
 	}
 
-/* --  A.3.5. Header Nav -------------- */
+/* --  A.3.5. Header Nav ---------- */
 
 #header ul.tabmenu {
 	vertical-align: middle;
@@ -487,8 +487,8 @@ a.pref-lang {
 			#header ul.tabmenu li a:hover,
 			#header ul.tabmenu li.selected a:hover {
 			}
-/* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~~~~~~~~~ */
-/* --  A.4.1. Content Box -------------- */
+/* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
+/* --  A.4.1. Content Box ---------- */
 
 div.content {
 	border: 3px solid #fafafa;
@@ -538,7 +538,7 @@ body.controversial-page > div.content,
 body.related-page > div.content,
 body.other-discussions-page > div.content {
 }
-/* --  A.4.2. Links (Post) -------------- */
+/* --  A.4.2. Links (Post) ---------- */
 
 .link.promotedlink.promoted {
 }
@@ -563,7 +563,7 @@ body.other-discussions-page > div.content {
 	border-top: 0 !important;
 }
 
-/* --  A.4.3. Links sub-parts -------------- */
+/* --  A.4.3. Links sub-parts ---------- */
 
 .link {
 	margin: 0;
@@ -631,7 +631,12 @@ body.other-discussions-page > div.content {
 		margin: 0;
 	}
 
-/* --  A.4.4. Usertext-edit textarea -------------- */
+.author.submitter,
+.author.moderator {
+	font-family: Verdana,Arial,'Nimbus Sans L',sans-serif;
+}
+
+/* --  A.4.4. Usertext-edit textarea ---------- */
 
 form.usertext.cloneable {
 	margin: -3px;
@@ -686,7 +691,7 @@ div.usertext-edit {
 		width: 450px;
 	}
 
-/* --  A.4.5. Link submission form -------------- */
+/* --  A.4.5. Link submission form ---------- */
 
 .formtabs-content {
 }
@@ -751,7 +756,7 @@ a.text-button {
 	border-top: 1px dotted;
 }
 
-/* --  A.4.6. Custom Upvote/Downvote Arrows-------------- */
+/* --  A.4.6. Custom Upvote/Downvote Arrows---------- */
 /*.arrow {
 	padding-right: 0;
 	padding-left: 0;
@@ -783,7 +788,7 @@ a.text-button {
 		background-position: -22px -22px;
 	}*/
 
-/* --  A.4.7. Comment Formatting -------------- */
+/* --  A.4.7. Comment Formatting ---------- */
 
 body div.content > form > div .commentarea .even {
 	padding: 10px 0 10px 10px !important;
@@ -874,12 +879,12 @@ body div.content > form > div .commentarea .even {
 	border: 0 none;
 }
 
-/* --  A.4.8. Sort By Dropdown -------------- */
+/* --  A.4.8. Sort By Dropdown ---------- */
 
 div.drop-choices.lightdrop.inuse {
 }
 
-/* ~~  A.5. Sidebar ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  A.5. Sidebar ~~~~~~~~~~~~~ */
 
 .side {
 	margin: 0 20px;
@@ -948,7 +953,7 @@ div.sidebox.create {
 	font-size: 12px;
 }
 
-/* --  A.5.1. Search -------------- */
+/* --  A.5.1. Search ---------- */
 
 .side .spacer #search {
 	padding: 0;
@@ -975,7 +980,7 @@ div.sidebox.create {
 	padding: 10px 15px;
 }
 
-/* --  5.2 Infobar, MoreInfo and MoreSearch Divs -------------- */
+/* --  5.2 Infobar, MoreInfo and MoreSearch Divs ---------- */
 
 .infobar {
 }
@@ -1062,7 +1067,7 @@ div#moresearchinfo {
 		border: 0 !important;
 	}
 
-/* --  A.5.3. Contributor and Moderator Buttons -------------- */
+/* --  A.5.3. Contributor and Moderator Buttons ---------- */
 
 .titlebox form.toggle,
 .leavemoderator {
@@ -1079,7 +1084,7 @@ div#moresearchinfo {
 	display: none;
 }
 
-/* --  A.5.4. Login Form -------------- */
+/* --  A.5.4. Login Form ---------- */
 
 .login-form-side {
 	margin: 0 0 10px;
@@ -1091,7 +1096,7 @@ div#moresearchinfo {
 	.login-form-side input[type=password] {
 	}
 
-/* --  A.5.5. Flair Setting area -------------- */
+/* --  A.5.5. Flair Setting area ---------- */
 
 .titlebox form.toggle {
 }
@@ -1108,7 +1113,7 @@ div#moresearchinfo {
 	padding: 3px 7px!important;
 }
 
-/* --  A.5.6. Submit Button -------------- */
+/* --  A.5.6. Submit Button ---------- */
 
 .sidebox.submit {
 	width: 300px;
@@ -1150,7 +1155,7 @@ div#moresearchinfo {
 	.disabled .morelink:hover .nub {
 	}
 
-/* --  A.5.7. Moderators Area -------------- */
+/* --  A.5.7. Moderators Area ---------- */
 
 .sidecontentbox {
 	line-height: 1.3;
@@ -1182,7 +1187,7 @@ div#moresearchinfo {
 	border: 1px solid #fafafa;
 }
 
-/* --  A.5.8. Ad - do not change this -------------- */
+/* --  A.5.8. Ad - do not change this ---------- */
 
 div#ad {
 }
@@ -1190,7 +1195,7 @@ div#ad {
 div#adlink {
 }
 
-/* --  A.5.9. Account Activity area at Bottom of Sidebar -------------- */
+/* --  A.5.9. Account Activity area at Bottom of Sidebar ---------- */
 
 .account-activity-box {
 	height: 60px;
@@ -1202,7 +1207,7 @@ div#adlink {
 		margin: 20px 0 0 0;
 	}
 
-/* ~~  A.6. Footer ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  A.6. Footer ~~~~~~~~~~~~~ */
 
 .footer-parent {
 	padding-top: 5px;
@@ -1218,7 +1223,7 @@ div#adlink {
 	margin: 5px;
 }
 
-/* --  A.6.1. Reddit Copyright Text -------------- */
+/* --  A.6.1. Reddit Copyright Text ---------- */
 
 .bottommenu,
 .bottommenu a {
@@ -1228,7 +1233,7 @@ div#adlink {
 .debuginfo:hover .content {
 }
 
-/* ~~  A.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  A.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~ */
 
 .menuarea {
 	padding: 10px;
@@ -1300,7 +1305,7 @@ form#newlink {
 	margin: 10px;
 }
 
-/* ~~  A.8. RES Optimisation ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  A.8. RES Optimisation ~~~~~~~~~~~~~ */
 
 .lcTagged {
 }
@@ -1339,7 +1344,7 @@ div.userbarHide {
 		display: inline-block;
 	}
 
-/* --  A.8.1. Progress Indicator and Page marker for RES mode -------------- */
+/* --  A.8.1. Progress Indicator and Page marker for RES mode ---------- */
 
 p#progressIndicator.neverEndingReddit,
 div.NERPageMarker,
@@ -1363,8 +1368,8 @@ div.NERPageMarker,
 	z-index: 9999999;
 }
 
-/* ~~  A.9. Sidebar Boxes ~~~~~~~~~~~~~~~~~~~~~ */
-/* --  A.9.1. Boxes  -------------- */
+/* ~~  A.9. Sidebar Boxes ~~~~~~~~~~~~~ */
+/* --  A.9.1. Boxes  ---------- */
 
 .side blockquote {
 	border: 1px solid #fafafa;
@@ -1447,7 +1452,7 @@ div.NERPageMarker,
 .side .icon-menu a {
 }
 
-/* --  A.9.2. Colored Boxes  -------------- */
+/* --  A.9.2. Colored Boxes  ---------- */
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
 
 .side h3 + blockquote,
@@ -1478,7 +1483,7 @@ div.NERPageMarker,
 	.side h6 + blockquote > h3 {
 		font-size: 19px;
 	}
-/* --  A.9.3. Sidebar Icons -------------- */
+/* --  A.9.3. Sidebar Icons ---------- */
 .side a[href*='#icon-'] {
 	cursor: default;
 	margin: 0 10px;
@@ -1565,8 +1570,8 @@ div.NERPageMarker,
 	content: '✿';
 }
 
-/* [ B ]. Presentation : Colors, fonts and borders................ */
-/* ~~  B.1. Common Tags ~~~~~~~~~~~~~~~~~~~~~ */
+/* [ B ]. Presentation : Colors, fonts and borders ............ */
+/* ~~  B.1. Common Tags ~~~~~~~~~~~~~ */
 body {
 	color: #333;
 	/*font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;*/
@@ -1618,7 +1623,7 @@ hr,
 	color: #c8c8c8;
 }
 
-/* --  B.1.1. Tables -------------- */
+/* --  B.1.1. Tables ---------- */
 
 .md table {
 	border-color: #ccc;
@@ -1642,14 +1647,14 @@ hr,
 		border-right: 1px solid #ccc;
 	}
 
-/* --  B.1.2. Lists -------------- */
+/* --  B.1.2. Lists ---------- */
 
 .md ul,
 .md ol {
 	background-color: transparent;
 }
 
-/* --  B.1.3. Code Style -------------- */
+/* --  B.1.3. Code Style ---------- */
 
 .usertext-body pre,
 .md.wiki pre {
@@ -1689,7 +1694,7 @@ a[href='#s']:active:after {
 	font-size: small;
 }
 
-/* --  B.1.4. Common Button Style -------------- */
+/* --  B.1.4. Common Button Style ---------- */
 
 .btn button,
 .btn .button {
@@ -1733,7 +1738,7 @@ input[type='submit']:hover,
 	color: #56a6f7;
 }
 
-/* ~~  B.2. Top Sr-Bar ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  B.2. Top Sr-Bar ~~~~~~~~~~~~~ */
 
 #sr-header-area {
 	background-color: #fff;
@@ -1779,7 +1784,7 @@ input[type='submit']:hover,
 	color: black;
 }
 
-/* --  B.2.1. Dropdown Subreddits Bar -------------- */
+/* --  B.2.1. Dropdown Subreddits Bar ---------- */
 
 #sr-header-area .drop-choices {
 	background-color: #ffffff !important;
@@ -1795,7 +1800,7 @@ input[type='submit']:hover,
 			background-color: #ffffff;
 		}
 
-/* ~~  B.3. Header ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  B.3. Header ~~~~~~~~~~~~~ */
 
 #header {
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
@@ -1807,7 +1812,7 @@ input[type='submit']:hover,
 		background-color: #cee3f8;
 	}
 
-/* --  B.3.1. User Controls -------------- */
+/* --  B.3.1. User Controls ---------- */
 
 span.user {
 }
@@ -1829,13 +1834,13 @@ a.pref-lang {
 	#header-bottom-right.res-navTop {
 	}
 
-/* --  B.3.2. Banner Image -------------- */
+/* --  B.3.2. Banner Image ---------- */
 
 #header-bottom-left {
 	background-color: transparent;
 }
 
-/* --  B.3.3. The Reddit Name, applies to all pages -------------- */
+/* --  B.3.3. The Reddit Name, applies to all pages ---------- */
 .pagename {
 }
 
@@ -1863,7 +1868,7 @@ a.pref-lang {
 			background-image: linear-gradient(to bottom, #eeeeee,#cccccc);
 		}
 
-/* --  B.3.4. Reddit Image and Text -------------- */
+/* --  B.3.4. Reddit Image and Text ---------- */
 
 #header-img.default-header {
 }
@@ -1881,7 +1886,7 @@ a.pref-lang {
 		background-color: #cee3f8;
 	}
 
-/* --  B.3.5. Header Nav -------------- */
+/* --  B.3.5. Header Nav ---------- */
 
 #header ul.tabmenu {
 }
@@ -1912,8 +1917,8 @@ a.pref-lang {
 				color: #1f96ca;
 			}
 
-/* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~~~~~~~~~~~~~ */
-/* --  B.4.1. Content Box -------------- */
+/* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
+/* --  B.4.1. Content Box ---------- */
 
 div.content {
 	border-color: #fdfdfd;
@@ -1960,7 +1965,7 @@ body.related-page > div.content,
 body.other-discussions-page > div.content {
 }
 
-/* --  B.4.2. Links (Post) -------------- */
+/* --  B.4.2. Links (Post) ---------- */
 
 .link.promotedlink.promoted {
 	border-color: #d2d2d2;
@@ -1986,7 +1991,7 @@ body.other-discussions-page > div.content {
 .linklisting .odd:first-child {
 }
 
-/* --  B.4.3. Links sub-parts -------------- */
+/* --  B.4.3. Links sub-parts ---------- */
 
 .link {
 }
@@ -2032,7 +2037,7 @@ body.other-discussions-page > div.content {
 		color: #888;
 	}
 
-/* --  B.4.4. usertext-edit textarea -------------- */
+/* --  B.4.4. usertext-edit textarea ---------- */
 
 form.usertext.cloneable {
 	/*border: 1px solid #d2d2d2;
@@ -2078,7 +2083,7 @@ div.usertext-edit {
 	.usertext table.markhelp {
 	}
 
-/* --  B.4.5. Link submission form -------------- */
+/* --  B.4.5. Link submission form ---------- */
 
 .formtabs-content {
 }
@@ -2134,7 +2139,7 @@ a.text-button {
 	border-top-color: #d2d2d2;
 }
 
-/* --  B.4.6. Custom Upvote/Downvote Arrows -------------- */
+/* --  B.4.6. Custom Upvote/Downvote Arrows ---------- */
 /*	Entire comment block in masonary template
 	.arrow {
 	}
@@ -2153,7 +2158,7 @@ a.text-button {
 	.arrow.down:hover {
 	}
 ```````` */
-/* --  B.4.7. Comment Formatting -------------- */
+/* --  B.4.7. Comment Formatting ---------- */
 
 body div.content > form > div .commentarea .even {
 	background-color: transparent;
@@ -2257,12 +2262,12 @@ body div.content > form > div .commentarea .even {
 .comment .showreplies {
 }
 
-/* --  B.4.8. Sort By Dropdown -------------- */
+/* --  B.4.8. Sort By Dropdown ---------- */
 
 div.drop-choices.lightdrop.inuse {
 }
 
-/* ~~  B.5. Sidebar ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  B.5. Sidebar ~~~~~~~~~~~~~ */
 
 .side {
 	background-color: transparent;
@@ -2309,7 +2314,7 @@ iframe#ad-frame {
 .side li {
 }
 
-/* --  B.5.1. Search -------------- */
+/* --  B.5.1. Search ---------- */
 
 .side #search {
 }
@@ -2337,7 +2342,7 @@ body.search-page .menuarea {
 	border-color: transparent;
 }
 
-/* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs -------------- */
+/* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs ---------- */
 
 .infobar {
 }
@@ -2401,7 +2406,7 @@ div#moresearchinfo {
 		background-color: transparent;
 	}
 
-/* --  B.5.3. Contributor and Moderator Buttons -------------- */
+/* --  B.5.3. Contributor and Moderator Buttons ---------- */
 
 .titlebox form.toggle,
 .leavemoderator {
@@ -2416,7 +2421,7 @@ div#moresearchinfo {
 	background-color: transparent !important;
 }
 
-/* --  B.5.4. Login Form -------------- */
+/* --  B.5.4. Login Form ---------- */
 
 .login-form-side {
 	border-color: #eee;
@@ -2427,7 +2432,7 @@ div#moresearchinfo {
 	.login-form-side input[type=password] {
 		border-color: #d2d2d2;
 	}
-/* --  B.5.5. Flair Setting area -------------- */
+/* --  B.5.5. Flair Setting area ---------- */
 
 .titlebox form.toggle {
 	background-color: transparent;
@@ -2444,7 +2449,7 @@ div#moresearchinfo {
 	border-color: #e3e3e3!important;
 }
 
-/* --  B.5.6. Submit Button -------------- */
+/* --  B.5.6. Submit Button ---------- */
 
 .sidebox.submit {
 }
@@ -2488,7 +2493,7 @@ div#moresearchinfo {
 		background: none transparent!important;
 	}
 
-/* --  B.5.7. Moderators Area -------------- */
+/* --  B.5.7. Moderators Area ---------- */
 
 .sidecontentbox {
 	background-color: transparent !important;
@@ -2517,7 +2522,7 @@ div#moresearchinfo {
 }
 
 
-/* --  B.5.8. Ad - do not change this -------------- */
+/* --  B.5.8. Ad - do not change this ---------- */
 
 div#ad {
 	background-color: transparent !important;
@@ -2527,7 +2532,7 @@ div#adlink {
 	background-color: transparent !important;
 }
 
-/* --  B.5.9. Account Activity area at Bottom of Sidebar -------------- */
+/* --  B.5.9. Account Activity area at Bottom of Sidebar ---------- */
 
 .account-activity-box {
 	background-color: transparent;
@@ -2535,7 +2540,7 @@ div#adlink {
 	border-radius: 2px !important;
 }
 
-/* ~~  B.6. Footer ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  B.6. Footer ~~~~~~~~~~~~~ */
 
 .footer-parent {
 	background-color: #fdfdfe;
@@ -2546,7 +2551,7 @@ div#adlink {
 	background-color: transparent;
 }
 
-/* --  B.6.1. Reddit Copyright Text -------------- */
+/* --  B.6.1. Reddit Copyright Text ---------- */
 
 .bottommenu {
 	color: #05374e;
@@ -2556,7 +2561,7 @@ div#adlink {
 		color: #231307;
 	}
 
-/* ~~  B.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  B.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~ */
 
 .menuarea {
 	border-bottom-color: #d2d2d2;
@@ -2594,7 +2599,7 @@ body.wiki-page .wiki-page-content {
 		color: #08c;
 	}
 
-/* ~~  B.8. RES Optimisation ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  B.8. RES Optimisation ~~~~~~~~~~~~~ */
 
 .lcTagged {
 	background-color: transparent !important;
@@ -2629,7 +2634,7 @@ div#userbarToggle {
 		text-shadow: 1px 1px 2px #eee;
 	}
 
-/* --  B.8.1. Progress Indicator and Page marker for RES mode -------------- */
+/* --  B.8.1. Progress Indicator and Page marker for RES mode ---------- */
 
 p#progressIndicator.neverEndingReddit,
 div.NERPageMarker,
@@ -2646,8 +2651,8 @@ div.NERPageMarker,
 	color: #b90a0a;
 }
 
-/* ~~  B.9. Sidebar Boxes ~~~~~~~~~~~~~~~~~~~~~ */
-/* --  B.9.1 Boxes -------------- */
+/* ~~  B.9. Sidebar Boxes ~~~~~~~~~~~~~ */
+/* --  B.9.1 Boxes ---------- */
 
 .side blockquote {
 	border-color: #ccc;
@@ -2690,7 +2695,7 @@ div.NERPageMarker,
 	background-color: transparent;
 }
 
-/* --  B.9.2 Colored Boxes -------------- */
+/* --  B.9.2 Colored Boxes ---------- */
 
 .side blockquote a[href*='#icon-']:before {
 	color: #eee;
@@ -2766,13 +2771,13 @@ div.NERPageMarker,
 		background-image: linear-gradient(to bottom, #ef784e, #dd4814);
 	}
 
-/* --  B.9.3  Sidebar Icons -------------- */
+/* --  B.9.3  Sidebar Icons ---------- */
 
 .side a[href*='#icon-'] {
 	color: #333;
 }
 
-/* ~~  B.10. Night Mode for RES ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~  B.10. Night Mode for RES ~~~~~~~~~~~~~ */
 
 body.res-nightmode {
 	color: #ccc;
@@ -3637,5 +3642,5 @@ body.res-nightmode {
 		color: #ccc;
 	}
 
-/* [ C ]. Modules for specific customization................ */
+/* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use code, samples and compatible modules  */

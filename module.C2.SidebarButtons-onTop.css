@@ -2,13 +2,13 @@
 		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons for details		
 	 + 	This css adds visible text to reddit, check for translations	
 	 + 	Update the main CSS header comment block when this module is used
----------------------------------------------------*/
+---- */
 
 /*change this if your reddit wants to prevent creating of newer communities
 .sidebox.create {
 	display: none;
 }*/
-/*-- Moving the Buttons and Message to Moderators below the buttons -------------------*/
+/*-- Moving the Buttons and Message to Moderators below the buttons ---- */
 .sidebox.submit {
 	position: absolute;
 	top: 105px; /*adjust for header height changes in module C1*/
@@ -37,11 +37,8 @@ body.search-page .side .titlebox {
 	margin-top: 70px;
 }
 
-/*-- The link and the text post buttons -------------------*/
-.sidebox.submit-link {
-	display: block;
-}
-
+/*-- The link and the text post buttons appearance ---- */
+.sidebox.submit-link,
 .sidebox.submit-text {
 	display: block;
 }
@@ -51,7 +48,7 @@ body.search-page .side .titlebox {
 	Or,
 	Maintain the whole code for both buttons appearing side by side
 */
-/*-- Dual buttons -------------------*/
+/*-- Dual buttons ---- */
 .sidebox.submit {
 	width: 147px;
 	word-spacing: 1px;
@@ -111,6 +108,6 @@ body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 	border: 1px solid #222222;
 	color: #bb6107;
 }
-/*-- end dual buttons -------------------*/
+/*-- end Dual buttons ---- */
 
-/* --  C.2.end Sidebar Buttons -------------- */
+/* --  C.2.end Sidebar Buttons ---- */

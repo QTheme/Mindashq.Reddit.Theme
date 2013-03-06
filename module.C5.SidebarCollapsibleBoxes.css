@@ -2,7 +2,7 @@
 		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
 	 + 	Add only when corresponding markup is added in sidebar
 	 + 	Update the main CSS header comment block when this module is used
----------------------------------------------------*/
+---- */
 /*  Selective blockquotes collapsed/uncollapsed  */
 .side .md > blockquote:nth-of-type(5) > * {
 	display: block;
@@ -32,4 +32,4 @@
 .side .md > blockquote:hover > * {
 	display: block;
 }
-/* --  C.5.end Sidebar Collapsible Boxes -------------- */
+/* --  C.5.end Sidebar Collapsible Boxes ---- */
