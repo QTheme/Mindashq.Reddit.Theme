@@ -19,6 +19,7 @@
 	min-width: 300px;
 	max-width: 310px;
 	margin: 0px -10px 15px -15px;
+	font-size: 0px;
 }
 
 	.side .usertext a[href$='png']:hover:after,
@@ -35,6 +36,7 @@
 		margin: 0px -105px;
 		opacity: .8;
 		font-weight: bold;
+		font-size: 12px;
 		top: auto;
 		bottom: -20px;
 		left: 50%;

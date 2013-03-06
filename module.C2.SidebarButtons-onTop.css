@@ -38,9 +38,10 @@ body.search-page .side .titlebox {
 }
 
 /*-- The link and the text post buttons appearance ---- */
-.sidebox.submit-link,
+.sidebox.submit-link {
+}
+
 .sidebox.submit-text {
-	display: block;
 }
 /*  In case only one button is needed;
 	Put display:none for the one that is not required
