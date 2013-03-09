@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.1
+	v1.2
 	http://www.reddit.com/r/mindashq/wiki
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -150,6 +150,7 @@ input[type='submit'],
 	margin: 5px 5px 5px 0;
 	cursor: pointer;
 	min-width: 70px;
+	border: 1px solid #fafafa;
 }
 
 .side a[href*='/#btn'] {
@@ -171,8 +172,11 @@ input[type='submit']:hover,
 .side a[href*='/#btn']:hover {
 }
 
-.btn.right:hover {
+.btn.right {
 }
+
+	.btn.right:hover {
+	}
 
 /* --  A.1.5. Selective dimming of link buttons ---------- */
 /* --  This is only in A, not in B ---------- */
@@ -375,18 +379,41 @@ a.pref-lang {
 	display: inline-block;
 	margin: 0 10px;
 	padding: 0;
+	position: relative;
+	bottom: 0px;
 }
+
+	#header-bottom-left:before {
+		content: " ";
+		width: 100%;
+		height: 26px;
+		position: absolute;
+		top: 28px;
+		left: -10px;
+		display: block;
+		padding: 0px 10px;
+		z-index: -1;
+	}
+
+	#header-bottom-left:after {
+		content: '';
+		width: 1px;
+		display: inline-block;
+		height: 30px;
+		margin: 15px 0px 0px 310px;
+		position: relative;
+	}
 
 /* --  A.3.3. The Reddit Name, applies to all pages ---------- */
 
 .pagename {
-	margin: 10px 0 -11px 0;
+	margin: 0px 0 -10px 0;
 	font-weight: bold;
 	font-variant: normal;
 	font-size: 18px;
 	vertical-align: bottom;
 	display: inline-block;
-	height: 55px;
+	height: 50px;
 }
 
 	.pagename.redditname,
@@ -396,12 +423,11 @@ a.pref-lang {
 
 	.pagename a,
 	.pagename.selected {
-		margin: 0 0 -15px 0;
+		margin: 0 0 -12px 0;
 		padding: 10px 20px;
 		display: inline-block;
 		font-size: 18px!important;
-		height: 35px;
-		line-height: 35px;
+		line-height: 30px;
 		text-transform: capitalize;
 	}
 
@@ -414,21 +440,20 @@ a.pref-lang {
 #header-img.default-header {
 	background-position: -10000px -2058px;
 	text-indent: 0;
-	margin: 5px 0 -10px;
+	margin: 15px 0px 0px;
 	font-size: 12px;
 	font-weight: bold;
-	height: 55px;
-	line-height: 5.5;
+	line-height: 50px;
 	width: auto;
 	vertical-align: bottom;
 }
 
 #header-img-a {
 	padding: 0;
-	margin: 5px -3px -11px 0;
+	margin: 15px -3px -10px 0;
 	display: inline-block;
-	height: 55px;
-	vertical-align: middle;
+	height: 50px;
+	vertical-align: bottom;
 }
 
 	#header-img-a img {
@@ -436,36 +461,20 @@ a.pref-lang {
 		padding: 0;
 		width: auto!important;
 		height: auto!important;
-		max-height: 55px;
-		vertical-align: middle;
-	}
-
-	#header-img.default-header:before,
-	#header-img-a:before {
-		content: " ";
-		margin: 0 0 0 -10px;
-		width: 100%;
-		height: 29px;
-		position: absolute;
-		display: block;
-		top: 46px;
-		z-index: -1;
-	}
-
-	#header-img-a:before {
-		/*margin-top: 12px;*/
+		max-height: 50px;
+		vertical-align: bottom;
 	}
 
 /* --  A.3.5. Header Nav ---------- */
 
 #header ul.tabmenu {
-	vertical-align: middle;
-	margin: 15px 265px -5px 35px;
+	margin: 15px 10px -17px 35px;
 	border: 0 none;
+	height: 50px;
 }
 
 	#header ul.tabmenu li {
-		margin: 0;
+		margin: auto;
 	}
 
 	#header ul.tabmenu:after {
@@ -474,19 +483,25 @@ a.pref-lang {
 	#header ul.tabmenu li a,
 	#header ul.tabmenu li a:visited,
 	#header ul.tabmenu li.selected a {
-		padding: 5px 10px!important;
+		padding: 5px 8px;
 		display: inline-block;
 	}
 
 		#header ul.tabmenu li.selected a,
 		#header ul.tabmenu li.selected a:visited {
-			padding: 10px 15px!important;
+			padding: 10px 15px;
 			border: 1px solid #fafafa;
 		}
 
 			#header ul.tabmenu li a:hover,
 			#header ul.tabmenu li.selected a:hover {
 			}
+
+	#header ul.tabmenu.viewimages a {
+		padding: 10px 12px;
+		background-color: transparent;
+	}
+
 /* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
 /* --  A.4.1. Content Box ---------- */
 
@@ -1705,8 +1720,11 @@ button,
 .button,
 input[type='submit'],
 .side a[href*='/#btn'] {
-	background-color: #449ef8;
-	border: none;
+	background-color: #63b7f8;
+	background-image: -webkit-linear-gradient(top,#63b7f8,#4b8adb);
+	background-image: -moz-linear-gradient(top,#63b7f8,#4b8adb);
+	background-image: linear-gradient(top,#63b7f8,#4b8adb);
+	border-color: #3079ed;
 	color: #fff;
 	font-size: 13px;
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
@@ -1727,16 +1745,23 @@ button:hover,
 .button:hover,
 input[type='submit']:hover,
 .side a[href*='/#btn']:hover {
-	background-color: #56a6f7;
+	background-color: #357ae8;
+	background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+	background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+	background-image: linear-gradient(top,#4d90fe,#4787ed);
 	border-color: #08c;
 	color: #fff;
 }
 
-.btn.right:hover {
-	background-color: transparent;
-	border-color: transparent;
-	color: #56a6f7;
+.btn.right {
+	background: none transparent;
 }
+
+	.btn.right:hover {
+		background-color: transparent;
+		border-color: transparent;
+		color: #56a6f7;
+	}
 
 /* ~~  B.2. Top Sr-Bar ~~~~~~~~~~~~~ */
 
@@ -1808,7 +1833,8 @@ input[type='submit']:hover,
 	border-bottom-color: #cee3f8;
 }
 
-	#header:after {
+	#header:after,
+	#header-bottom-left:before {
 		background-color: #cee3f8;
 	}
 
@@ -1879,11 +1905,6 @@ a.pref-lang {
 }
 
 	#header-img-a img {
-	}
-
-	#header-img.default-header:before,
-	#header-img-a:before {
-		background-color: #cee3f8;
 	}
 
 /* --  B.3.5. Header Nav ---------- */
@@ -2456,11 +2477,22 @@ div#moresearchinfo {
 
 .morelink,
 .morelink:hover {
-	background-color: #449ef8;
-	border-color: #449ef8;
+	background-color: #5ba2fd;
+	background-image: -webkit-linear-gradient(top,#5ba2fd,#4b8adb);
+	background-image: -moz-linear-gradient(top,#5ba2fd,#4b8adb);
+	background-image: linear-gradient(top,#5ba2fd,#4b8adb);
+	border-color: #3079ed;
 	text-shadow: 1px 1px 2px #0f0f0f;
-	border-radius: 0;
+	border-radius: 3px;
 }
+
+	.morelink:hover {
+		background-color: #357ae8;
+		background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+		background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+		background-image: linear-gradient(top,#4d90fe,#4787ed);
+		border-color: #08c;
+	}
 
 	.morelink a,
 	.morelink a:hover {
@@ -2897,7 +2929,8 @@ body.res-nightmode {
 		border-bottom-color: #414141;
 	}
 
-		body.res-nightmode #header:after {
+		body.res-nightmode #header:after,
+		body.res-nightmode #header-bottom-left:before {
 			background-color: #414141;
 		}
 
@@ -2951,6 +2984,7 @@ body.res-nightmode {
 			background-color: #040406;
 			border: 1px solid #a35d17!important;
 			box-shadow: 0 13px 0 -9px #a35d17;
+			padding-bottom: 10px!important;
 		}
 
 			body.res-nightmode #header ul.tabmenu li a:hover,

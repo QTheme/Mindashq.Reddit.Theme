@@ -14,22 +14,19 @@
 
 	#header:after {
 		background-color: #cee3f8;
-		opacity: 0.7;
+		opacity: 0.3;
 	}
 
 #header-bottom-left {
-	/*this adjusts the top navigation bar, leave as default, or tweak for creative usages*/
+	/*this adjusts the top navigation bar, leave as default*/
 	position: absolute;
-	top: auto;
-	bottom: 0;
 }
 
-#header-img.default-header:before, #header-img-a:before {
-	background-color: #cee3f8; /*tweak to match the image color*/
-	top: 26px; /*tweak to match the min-height of #header*/
-	opacity: .1;
-	/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
-}
+	#header-bottom-left:before {
+		background-color: #cee3f8; /*tweak to match the image color*/
+		opacity: .7;
+		/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
+	}
 
 #header ul.tabmenu li a {
 	background-color: transparent; /*tweak to match the image color, or use the default #cee3f8;*/
@@ -37,7 +34,4 @@
 	/*be creative with usage of background color, and additional background images here*/
 }
 
-#header ul.tabmenu {
-	margin-right: 50px;
-}
 /* --  C.1.end Header Image ---- */
