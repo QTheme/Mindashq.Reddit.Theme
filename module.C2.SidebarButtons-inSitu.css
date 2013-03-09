@@ -84,6 +84,11 @@ body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 	border: 1px solid #222222;
 	color: #bb6107;
 }
+
+body.res-nightmode .sidebox.submit-text {
+	top: -2px;
+}
+
 /*-- end Dual buttons ---- */
 
 /* --  C.2.end Sidebar Buttons ---- */

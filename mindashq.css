@@ -125,6 +125,28 @@ hr {
 		padding: 0 3px;
 	}
 
+a[href='#s'],
+a[href='/s'] {
+	cursor: default;
+	display: inline-block;
+	padding: 0px 4px;
+}
+
+	a[href='#s']:after,
+	a[href='/s']:after {
+		content: attr(title);
+		visibility: visible;
+		margin-left: 5px;
+		padding: 2px 3px;
+	}
+
+	a[href='#s']:hover:after,
+	a[href='#s']:active:after,
+	a[href='/s']:hover:after,
+	a[href='/s']:active:after {
+		text-decoration: none;
+	}
+
 /* --  A.1.4. Common Button Style  ---------- */
 
 .btn button,
@@ -1144,18 +1166,15 @@ div#moresearchinfo {
 		background: none transparent!important;
 	}
 
-.disabled .morelink a,
-.disabled .morelink a:hover {
-	cursor: default;
-}
-
-.morelink:hover {
-}
-
 .disabled .morelink,
 .disabled .morelink:hover {
 	background-image: none;
 }
+
+	.disabled .morelink a,
+	.disabled .morelink a:hover {
+		cursor: default;
+	}
 
 	.disabled .morelink .nub,
 	.disabled .morelink:hover .nub {
@@ -1693,12 +1712,26 @@ hr,
 	color: #222 !important;
 }
 
-a[href='#s']:hover:after,
-a[href='#s']:active:after {
-	color: #000;
-	background-color: transparent;
-	font-size: small;
+a[href='#s'],
+a[href='/s'] {
+	background-color: #cee3f8;
+	color: #00F;
 }
+
+	a[href='#s']:after,
+	a[href='/s']:after {
+		background-color: #5ba2fd;
+		color: #5ba2fd;
+		font-size: small;
+	}
+
+	a[href='#s']:hover:after,
+	a[href='#s']:active:after,
+	a[href='/s']:hover:after,
+	a[href='/s']:active:after {
+		color: #fff;
+		font-size: small;
+	}
 
 /* --  B.1.4. Common Button Style ---------- */
 
@@ -1723,36 +1756,32 @@ input[type='submit'],
 	text-shadow: 1px 1px 2px #0f0f0f;
 }
 
-.side a[href*='/#btn'] {
-	font-weight: normal;
-}
-
-.btn a {
-	color: #fff;
-}
-
-.btn:hover,
-button:hover,
-.button:hover,
-input[type='submit']:hover,
-.side a[href*='/#btn']:hover {
-	background-color: #357ae8;
-	background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
-	background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
-	background-image: linear-gradient(top,#4d90fe,#4787ed);
-	border-color: #08c;
-	color: #fff;
-}
-
-.btn.right {
-	background: none transparent;
-}
-
-	.btn.right:hover {
-		background-color: transparent;
-		border-color: transparent;
-		color: #56a6f7;
+	.btn a {
+		color: #fff;
 	}
+
+	.btn:hover,
+	button:hover,
+	.button:hover,
+	input[type='submit']:hover,
+	.side a[href*='/#btn']:hover {
+		background-color: #357ae8;
+		background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+		background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+		background-image: linear-gradient(top,#4d90fe,#4787ed);
+		border-color: #08c;
+		color: #fff;
+	}
+
+	.btn.right {
+		background: none transparent;
+	}
+
+		.btn.right:hover {
+			background: none transparent;
+			border-color: transparent;
+			color: #56a6f7;
+		}
 
 /* ~~  B.2. Top Sr-Bar ~~~~~~~~~~~~~ */
 
@@ -2491,22 +2520,17 @@ div#moresearchinfo {
 	.morelink:hover .nub {
 	}
 
-.disabled .morelink a,
-.disabled .morelink a:hover {
-	color: #aaa;
-	text-shadow: none;
-}
-
-.morelink:hover {
-	background-color: #56a6f7;
-	border-color: #5ca2e8;
-}
-
 .disabled .morelink,
 .disabled .morelink:hover {
 	background-color: #f5f5f5;
 	border-color: #f5f5f5;
 }
+
+	.disabled .morelink a,
+	.disabled .morelink a:hover {
+		color: #aaa;
+		text-shadow: none;
+	}
 
 	.disabled .morelink .nub,
 	.disabled .morelink:hover .nub {
@@ -3288,6 +3312,10 @@ body.res-nightmode {
 		border-color: #010101!important;
 	}
 
+	body.res-nightmode .sidebox.submit {
+		background: none transparent;
+	}
+
 	body.res-nightmode .morelink,
 	body.res-nightmode .morelink:hover {
 		background-color: #bb6107!important;
@@ -3295,6 +3323,13 @@ body.res-nightmode {
 		text-shadow: 1px 1px 2px #000000;
 		border-radius: 0;
 	}
+
+		body.res-nightmode .morelink:hover {
+			background-color: #a95908!important;
+			background-image: none;
+			border-color: #a95908!important;
+			color: #ddd!important;
+		}
 
 		body.res-nightmode .morelink a,
 		body.res-nightmode .morelink a:hover {
@@ -3519,6 +3554,7 @@ body.res-nightmode {
 	body.res-nightmode .side a[href*="/#btn"],
 	body.res-nightmode form#newlink.submit button.btn {
 		background-color: #bb6107!important;
+		background-image: none;
 		border: none;
 		color: #eee!important;
 		font-size: 13px;
@@ -3527,29 +3563,27 @@ body.res-nightmode {
 		text-shadow: 1px 1px 2px #000;
 	}
 
-	body.res-nightmode .side a[href*="/#btn"] {
-		font-weight: normal;
-	}
+		body.res-nightmode .btn a {
+			color: #000;
+		}
 
-	body.res-nightmode .btn a {
-		color: #000;
-	}
+		body.res-nightmode .btn:hover,
+		body.res-nightmode button:hover,
+		body.res-nightmode .button:hover,
+		body.res-nightmode input[type="submit"]:hover,
+		body.res-nightmode .side a[href*="/#btn"]:hover {
+			background-color: #a95908!important;
+			background-image: none;
+			border-color: #a95908!important;
+			color: #ddd!important;
+		}
 
-	body.res-nightmode .btn:hover,
-	body.res-nightmode button:hover,
-	body.res-nightmode .button:hover,
-	body.res-nightmode input[type="submit"]:hover,
-	body.res-nightmode .side a[href*="/#btn"]:hover {
-		background-color: #a95908!important;
-		border-color: #a95908!important;
-		color: #ddd!important;
-	}
-
-	body.res-nightmode .btn.right:hover {
-		background-color: transparent!important;
-		border-color: transparent!important;
-		color: #a95908!important;
-	}
+		body.res-nightmode .btn.right,
+		body.res-nightmode .btn.right:hover {
+			background: none transparent!important;
+			border-color: transparent!important;
+			color: #a95908!important;
+		}
 
 	body.res-nightmode .usertext-body pre,
 	body.res-nightmode .md.wiki pre {
@@ -3582,12 +3616,25 @@ body.res-nightmode {
 		color: #ddd!important;
 	}
 
-	body.res-nightmode a[href="#s"]:hover:after,
-	body.res-nightmode a[href="#s"]:active:after {
-		color: #fff;
-		background-color: transparent;
-		font-size: small;
+	body.res-nightmode a[href='#s'],
+	body.res-nightmode a[href='/s'] {
+		background-color: #3d3d3d;
+		color: #f7f7f7;
 	}
+
+		body.res-nightmode a[href='#s']:after,
+		body.res-nightmode a[href='/s']:after {
+			background-color: #666;
+			color: #666;
+		}
+
+		body.res-nightmode a[href='#s']:hover:after,
+		body.res-nightmode a[href='#s']:active:after,
+		body.res-nightmode a[href='/s']:hover:after,
+		body.res-nightmode a[href='/s']:active:after {
+			color: #fff;
+			font-size: small;
+		}
 
 	body.res-nightmode .side blockquote {
 		border: 1px solid #6a6a6a;
