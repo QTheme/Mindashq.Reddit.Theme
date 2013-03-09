@@ -15,9 +15,7 @@ body {
 	position: relative;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
 	margin-bottom: 3px;
 	letter-spacing: -1px;
 }
@@ -39,6 +37,7 @@ hr {
 .md {
 	max-width: 70em;
 }
+
 	/* --  A.1.1. Tables  ---------- */
 
 	.md table {
@@ -78,9 +77,6 @@ hr {
 
 	.md ul {
 		list-style: disc outside;
-	}
-
-	.md ol {
 	}
 
 		.md ul li,
@@ -128,11 +124,6 @@ hr {
 	.md.wiki li > code {
 		padding: 0 3px;
 	}
-
-a[href='#s']:hover:after,
-a[href='#s']:active:after {
-	text-decoration: none;
-}
 
 /* --  A.1.4. Common Button Style  ---------- */
 
@@ -1915,28 +1906,25 @@ a.pref-lang {
 	#header ul.tabmenu li {
 	}
 
-	#header ul.tabmenu:after {
-	}
-
-	#header ul.tabmenu li a,
-	#header ul.tabmenu li a:visited,
-	#header ul.tabmenu li.selected a {
-		background-color: #cee3f8;
-		color: #0000ff;
-	}
-
-		#header ul.tabmenu li.selected a,
-		#header ul.tabmenu li.selected a:visited {
-			background-color: #fbfbf9;
-			color: #ff4500;
-			border-color: #5ca2e8;
-			box-shadow: 0 7px 0 -4px #5ca2e8;
+		#header ul.tabmenu li a,
+		#header ul.tabmenu li a:visited,
+		#header ul.tabmenu li.selected a {
+			background-color: #cee3f8;
+			color: #0000ff;
 		}
 
-			#header ul.tabmenu li a:hover,
-			#header ul.tabmenu li.selected a:hover {
-				color: #1f96ca;
+			#header ul.tabmenu li.selected a,
+			#header ul.tabmenu li.selected a:visited {
+				background-color: #fbfbf9;
+				color: #ff4500;
+				border-color: #5ca2e8;
+				box-shadow: 0 7px 0 -4px #5ca2e8;
 			}
+
+				#header ul.tabmenu li a:hover,
+				#header ul.tabmenu li.selected a:hover {
+					color: #1f96ca;
+				}
 
 /* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
 /* --  B.4.1. Content Box ---------- */
@@ -2655,15 +2643,14 @@ div#userbarToggle {
 }
 
 .morecomments {
-	border: 1px solid #e0e0e0;
-	border-width: 1px 1px 0;
 }
 
-	.morecomments a.button,
-	.morecomments a .gray {
+	.morecomments a.button {
 		background-color: #ececec;
+		background-image: none;
 		color: #777;
 		text-shadow: 1px 1px 2px #eee;
+		border-color: #e0e0e0;
 	}
 
 /* --  B.8.1. Progress Indicator and Page marker for RES mode ---------- */
@@ -3481,8 +3468,7 @@ body.res-nightmode {
 		border: 0px!important;
 	}
 
-	body.res-nightmode .morecomments a.button,
-	body.res-nightmode .morecomments a .gray {
+	body.res-nightmode .morecomments a.button {
 		color: #111;
 	}
 
