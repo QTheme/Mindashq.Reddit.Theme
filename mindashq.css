@@ -25,7 +25,7 @@ h1, h2, h3 {
 }
 
 	.rounded .morelink {
-		border-radius: 3px;
+		border-radius: 2px;
 	}
 
 hr {
@@ -129,7 +129,7 @@ a[href='#s'],
 a[href='/s'] {
 	cursor: default;
 	display: inline-block;
-	padding: 0px 4px;
+	padding: 0 4px;
 }
 
 	a[href='#s']:after,
@@ -340,16 +340,16 @@ input[type='submit']:hover,
 	min-height: 59px;
 	padding: 0;
 	margin: 20px 0 30px;
-	border: 1px solid #fafafa;
-	border-width: 0 0 1px;
 }
 
 	#header:after {
 		content: " ";
 		width: 100%;
-		height: 29px;
+		height: 30px;
+		border: 1px solid #fafafa;
+		border-width: 1px 0;
 		position: absolute;
-		bottom: 0;
+		bottom: -1px;
 		display: block;
 		z-index: -1;
 	}
@@ -370,10 +370,9 @@ a.pref-lang {
 	font-size: 10px;
 	word-spacing: -1px;
 	top: auto!important;
-	bottom: 0px!important;
-	height: 18px !important;
+	bottom: 0 !important;
+	height: 20px !important;
 	padding: 6px 10px 4px !important;
-	border: 1px solid #fafafa;
 	border-radius: 0 !important;
 	z-index: 102;
 }
@@ -382,7 +381,6 @@ a.pref-lang {
 	}
 
 	#header-bottom-right.res-navTop {
-		bottom: -1px!important;
 	}
 
 /* --  A.3.2. Banner Image ---------- */
@@ -393,7 +391,7 @@ a.pref-lang {
 	margin: 0 10px;
 	padding: 0;
 	position: relative;
-	bottom: 0px;
+	bottom: 0;
 }
 
 	#header-bottom-left:before {
@@ -404,7 +402,7 @@ a.pref-lang {
 		top: 28px;
 		left: -10px;
 		display: block;
-		padding: 0px 10px;
+		padding: 0 10px;
 		z-index: -1;
 	}
 
@@ -413,14 +411,14 @@ a.pref-lang {
 		width: 1px;
 		display: inline-block;
 		height: 30px;
-		margin: 15px 0px 0px 310px;
+		margin: 15px 0 0 310px;
 		position: relative;
 	}
 
 /* --  A.3.3. The Reddit Name, applies to all pages ---------- */
 
 .pagename {
-	margin: 0px 0 -10px 0;
+	margin: 0 0 -10px 0;
 	font-weight: bold;
 	font-variant: normal;
 	font-size: 18px;
@@ -453,7 +451,7 @@ a.pref-lang {
 #header-img.default-header {
 	background-position: -10000px -2058px;
 	text-indent: 0;
-	margin: 15px 0px 0px;
+	margin: 15px 10px 0 5px;
 	font-size: 12px;
 	font-weight: bold;
 	line-height: 50px;
@@ -470,7 +468,7 @@ a.pref-lang {
 }
 
 	#header-img-a img {
-		margin: 0px 3px -14px 3px;
+		margin: 0 3px -14px 3px;
 		padding: 0;
 		width: auto!important;
 		height: auto!important;
@@ -498,12 +496,14 @@ a.pref-lang {
 	#header ul.tabmenu li.selected a {
 		padding: 5px 8px;
 		display: inline-block;
+		margin-top: 5px;
 	}
 
 		#header ul.tabmenu li.selected a,
 		#header ul.tabmenu li.selected a:visited {
 			padding: 10px 15px;
 			border: 1px solid #fafafa;
+			margin-top: -5px;
 		}
 
 			#header ul.tabmenu li a:hover,
@@ -856,7 +856,7 @@ body div.content > form > div .commentarea .even {
 }
 
 .commentarea .sitetable.nestedlisting > .comment {
-	margin: 1px 0 0px!important;
+	margin: 1px 0 0 !important;
 	border: 1px solid #fafafa!important;
 }
 
@@ -871,11 +871,11 @@ body div.content > form > div .commentarea .even {
 }
 
 .nestedlisting > .comment .comment {
-	margin-right: 0px!important;
+	margin-right: 0 !important;
 }
 
 	.nestedlisting > .comment .comment .comment {
-		margin-right: 0px!important;
+		margin-right: 0 !important;
 	}
 
 .comment .collapsed {
@@ -954,7 +954,7 @@ iframe#ad-frame {
 
 div.sidebox.create {
 	position: absolute;
-	bottom: 105px;
+	bottom: 110px;
 	right: 30px;
 	display: block;
 	background: none transparent!important;
@@ -989,7 +989,6 @@ div.sidebox.create {
 }
 
 #search input[type="text"] {
-	font-size: 12px;
 	padding: 10px;
 	width: 278px;
 	border: 1px solid #fafafa;
@@ -1151,7 +1150,7 @@ div#moresearchinfo {
 .morelink:hover {
 	font-weight: normal;
 	letter-spacing: 0;
-	padding: 6px 10px;
+	padding: 4px 10px;
 	background: none transparent;
 }
 
@@ -1235,18 +1234,36 @@ div#adlink {
 /* ~~  A.6. Footer ~~~~~~~~~~~~~ */
 
 .footer-parent {
-	padding-top: 5px;
-	padding-bottom: 15px;
+	padding: 5px 0 15px 30px;
 	clear: both;
-	text-align: center;
+	text-align: left;
 	width: 100%;
-	margin-bottom: -1px;
+	margin: 40px 0 0;
+	position: relative;
+	z-index: -2;
 }
+
+	.footer-parent:after {
+		content: " ";
+		width: 100%;
+		height: 30px;
+		border: 1px solid #fafafa;
+		border-width: 1px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		z-index: -1;
+	}
 
 .footer {
 	border: 0 none;
-	margin: 5px;
+	margin: -15px 5px 5px;
 }
+
+	.footer .col {
+		border: 0px none;
+	}
 
 /* --  A.6.1. Reddit Copyright Text ---------- */
 
@@ -1345,7 +1362,7 @@ form#newlink {
 }
 
 div#userbarToggle {
-	left: 0px!important;
+	left: 0 !important;
 	width: 16px !important;
 	height: 19px !important;
 	margin: 0 !important;
@@ -1714,7 +1731,7 @@ hr,
 
 a[href='#s'],
 a[href='/s'] {
-	background-color: #cee3f8;
+	background-color: #c2dcfe;
 	color: #00F;
 }
 
@@ -1850,12 +1867,19 @@ input[type='submit'],
 #header {
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
 	background-color: #fff;
-	border-bottom-color: #cee3f8;
+	box-shadow: 0 -3px 9px 5px #ddd;
 }
 
 	#header:after,
-	#header-bottom-left:before {
-		background-color: #cee3f8;
+	.footer-parent:after {
+		border-top-color: #aacefc;
+		border-bottom-color: #94c3ff;
+	}
+
+	#header:after,
+	#header-bottom-left:before,
+	.footer-parent:after {
+		background-color: #c2dcfe;
 	}
 
 /* --  B.3.1. User Controls ---------- */
@@ -1871,7 +1895,6 @@ a.pref-lang {
 
 #header-bottom-right {
 	background-color: #fff;
-	border-color: #cee3f8;
 }
 
 	#header-bottom-right a {
@@ -1897,21 +1920,22 @@ a.pref-lang {
 	.pagename a,
 	.pagename.selected {
 		color: #dcebfa;
-		background-color: #5ca2e8;
+		background-color: #5ba2fd;
+		background-image: -webkit-linear-gradient(top,#5ba2fd,#4b8adb);
+		background-image: -moz-linear-gradient(top,#5ba2fd,#4b8adb);
+		background-image: linear-gradient(top,#5ba2fd,#4b8adb);
+		border-color: #3079ed;
 		text-shadow: 0 1px 0 #333;
-		border-width: 0 0 1px 0;
+		border-radius: 2px;
 		box-shadow: 0 4px 6px #bbb;
 	}
 
 		.pagename a:hover {
-			color: #5ca2e8;
-			text-shadow: 0 1px 0 #eee;
-			background-color: #eeeeee;
-			background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-			background-image: -webkit-linear-gradient(top, #eeeeee,#cccccc);
-			background-image: -o-linear-gradient(top, #eeeeee,#cccccc);
-			background-image: -ms-linear-gradient(top, #eeeeee,#cccccc);
-			background-image: linear-gradient(to bottom, #eeeeee,#cccccc);
+			background-color: #357ae8;
+			background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+			background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+			background-image: linear-gradient(top,#4d90fe,#4787ed);
+			border-color: #08c;
 		}
 
 /* --  B.3.4. Reddit Image and Text ---------- */
@@ -1920,7 +1944,7 @@ a.pref-lang {
 }
 
 #header-img-a {
-	background-color: #cee3f8;
+	background-color: #c2dcfe;
 	box-shadow: 0 4px 6px #bbb;
 }
 
@@ -1938,7 +1962,7 @@ a.pref-lang {
 		#header ul.tabmenu li a,
 		#header ul.tabmenu li a:visited,
 		#header ul.tabmenu li.selected a {
-			background-color: #cee3f8;
+			background-color: #c2dcfe;
 			color: #0000ff;
 		}
 
@@ -1948,6 +1972,7 @@ a.pref-lang {
 				color: #ff4500;
 				border-color: #5ca2e8;
 				box-shadow: 0 7px 0 -4px #5ca2e8;
+				border-radius: 2px;
 			}
 
 				#header ul.tabmenu li a:hover,
@@ -2362,11 +2387,13 @@ iframe#ad-frame {
 
 #search input[type="text"] {
 	border-color: #e3e3e3;
+	font-size: 14px;
 }
 
 .searchpane {
 	background-color: #f5f5f5;
 	border-color: #d2d2d2;
+	font-size: 12px;
 }
 
 .searchfacets {
@@ -2500,7 +2527,7 @@ div#moresearchinfo {
 	background-image: linear-gradient(top,#5ba2fd,#4b8adb);
 	border-color: #3079ed;
 	text-shadow: 1px 1px 2px #0f0f0f;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 	.morelink:hover {
@@ -2587,8 +2614,8 @@ div#adlink {
 /* ~~  B.6. Footer ~~~~~~~~~~~~~ */
 
 .footer-parent {
-	background-color: #fdfdfe;
-	box-shadow: 0 1px 4px 1px #ddd;
+	background-color: #fff;
+	box-shadow: 0 -3px 9px -2px #ddd;
 }
 
 .footer {
@@ -2598,6 +2625,7 @@ div#adlink {
 /* --  B.6.1. Reddit Copyright Text ---------- */
 
 .bottommenu {
+	background-color: #fff;
 	color: #05374e;
 }
 
@@ -2748,6 +2776,7 @@ div.NERPageMarker,
 	background-image: -o-linear-gradient(top, #666666, #4d4d4d);
 	background-image: linear-gradient(to bottom, #666666, #4d4d4d);
 	text-shadow: none;
+	border-radius: 3px;
 }
 /*Blue*/
 .side h3 + blockquote {
@@ -2947,8 +2976,7 @@ body.res-nightmode {
 
 	body.res-nightmode #header-bottom-right {
 		background-color: #1b1b1b !important;
-		border-color: #414141;
-		border-radius: 0px!important;
+		border-radius: 0 !important;
 	}
 
 	body.res-nightmode #header-bottom-left {
@@ -2965,9 +2993,7 @@ body.res-nightmode {
 	}
 
 		body.res-nightmode .pagename a:hover {
-			color: #a35d17;
 			font-size: 18px!important;
-			text-shadow: 0 1px 0 #111;
 			background-color: #4f4f52;
 			background-image: -moz-linear-gradient(top,#4f4f52,#333333);
 			background-image: -webkit-linear-gradient(top,#4f4f52,#333333);
@@ -3043,7 +3069,7 @@ body.res-nightmode {
 		background-image: -moz-linear-gradient(left,#222,#262626);
 		background-image: -webkit-linear-gradient(left,#222,#262626);
 		border-top: 1px solid #0e0e0e;
-		border: 0px!important;
+		border: 0 !important;
 	}
 
 	body.res-nightmode .linklisting .odd {
@@ -3051,15 +3077,15 @@ body.res-nightmode {
 		background-image: -moz-linear-gradient(left,#222,#1e1e1e);
 		background-image: -webkit-linear-gradient(left,#222,#1e1e1e);
 		border-top: 1px solid #0e0e0e;
-		border: 0px!important;
+		border: 0 !important;
 	}
 
 	body.res-nightmode .linklisting .even:first-child {
-		border-top: 0px!important;
+		border-top: 0 !important;
 	}
 
 	body.res-nightmode .linklisting .odd:first-child {
-		border-top: 0px!important;
+		border-top: 0 !important;
 	}
 
 	body.res-nightmode .link .rank {
@@ -3140,8 +3166,8 @@ body.res-nightmode {
 	body.res-nightmode .commentarea .comment {
 		border: 1px solid #111!important;
 		border-color: #4f4f52 #4f4f52 #2d2d2d #4f4f52!important;
-		border-right: 0px!important;
-		border-radius: 0px!important;
+		border-right: 0 !important;
+		border-radius: 0 !important;
 	}
 
 	body.res-nightmode .commentarea .sitetable.nestedlisting > .comment {
@@ -3221,7 +3247,7 @@ body.res-nightmode {
 		background-color: #393939;
 		border-color: #151515;
 		box-shadow: none;
-		border-radius: 0px!important;
+		border-radius: 0 !important;
 	}
 
 	body.res-nightmode .searchfacets {
@@ -3252,7 +3278,7 @@ body.res-nightmode {
 		background-color: transparent!important;
 		border: 1px solid #2d2d2d;
 		border-width: 1px 0;
-		border-radius: 0px!important;
+		border-radius: 0 !important;
 	}
 
 		body.res-nightmode .linkinfo .score {
@@ -3270,7 +3296,7 @@ body.res-nightmode {
 
 		body.res-nightmode .linkinfo .shortlink input {
 			color: #f5f5f5!important;
-			border: 0px!important;
+			border: 0 !important;
 			background-color: transparent!important;
 		}
 
@@ -3289,7 +3315,7 @@ body.res-nightmode {
 
 	body.res-nightmode .login-form-side {
 		border: 1px solid #111!important;
-		border-width: 1px 0px!important;
+		border-width: 1px 0 !important;
 		background-color: transparent!important;
 	}
 
@@ -3321,7 +3347,6 @@ body.res-nightmode {
 		background-color: #bb6107!important;
 		border-color: #bb6107;
 		text-shadow: 1px 1px 2px #000000;
-		border-radius: 0;
 	}
 
 		body.res-nightmode .morelink:hover {
@@ -3406,8 +3431,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .footer-parent {
-		background-color: #020201;
-		box-shadow: 0 1px 4px 1px #222;
+		box-shadow: 0 -3px 9px -2px #222;
 	}
 
 	body.res-nightmode .footer {
@@ -3462,7 +3486,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode.wiki-page .pageactions .wikiaction:hover {
-		background-color: #cee3f8;
+		background-color: #c2dcfe;
 	}
 
 	body.res-nightmode.wiki-page .pageactions .wikiaction-current {
@@ -3472,14 +3496,14 @@ body.res-nightmode {
 
 	body.res-nightmode .lcTagged {
 		background-color: transparent!important;
-		outline: 0px!important;
-		border: 0px!important;
+		outline: 0 !important;
+		border: 0 !important;
 	}
 
 	body.res-nightmode .keyHighlight {
 		background: none transparent!important;
 		outline: 1px dotted #e46700!important;
-		border: 0px!important;
+		border: 0 !important;
 		border-right: 2px solid #e46700!important;
 	}
 
@@ -3500,7 +3524,7 @@ body.res-nightmode {
 	body.res-nightmode div#userbarToggle {
 		color: #777;
 		background-color: transparent!important;
-		border: 0px!important;
+		border: 0 !important;
 	}
 
 	body.res-nightmode .morecomments a.button {
@@ -3544,7 +3568,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .sidebox {
-		padding: 0px!important;
+		padding: 0 !important;
 	}
 
 	body.res-nightmode .btn,
