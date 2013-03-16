@@ -199,9 +199,8 @@ button.cancel {
 /* --  A.1.5. Selective dimming of link buttons ---------- */
 /* --  This is only in A, not in B ---------- */
 
-.entry > .flat-list > li,
+/*.entry > .flat-list > li,*/
 .noncollapsed > .flat-list > li {
-	/*visibility: hidden;*/
 	opacity: 0.10;
 	-ms-filter: Alpha(Opacity=10);
 	filter: Alpha(opacity=10);
