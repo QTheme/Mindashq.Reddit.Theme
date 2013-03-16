@@ -1,6 +1,7 @@
 /* ~~ Mindashq.Reddit.Theme
 	v1.3
 	http://www.reddit.com/r/mindashq/wiki
+	For reuse : Always copy latest from Github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* [ A ]. Masonry and Template ............ */
@@ -461,17 +462,23 @@ a.pref-lang {
 	-moz-border-radius-bottomleft: 2px;
 	-webkit-border-top-left-radius: 2px;
 	-webkit-border-bottom-left-radius: 2px;
-	border-radius-topleft: 2px;
-	border-radius-bottomleft: 2px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 	#header-img-a img {
-		margin: 0 3px -15px 3px;
+		margin: 0 0 -15px 0;
 		padding: 0;
 		width: auto!important;
 		height: auto!important;
 		max-height: 50px;
 		vertical-align: bottom;
+		-moz-border-radius-topleft: 2px;
+		-moz-border-radius-bottomleft: 2px;
+		-webkit-border-top-left-radius: 2px;
+		-webkit-border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px;
+		border-bottom-left-radius: 2px;
 	}
 
 	#header-img-a + .pagename a,
@@ -480,42 +487,42 @@ a.pref-lang {
 		-moz-border-radius-bottomleft: 0px;
 		-webkit-border-top-left-radius: 0px;
 		-webkit-border-bottom-left-radius: 0px;
-		border-radius-topleft: 0px;
-		border-radius-bottomleft: 0px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
 	}
 
 /* --  A.3.5. Header Nav ---------- */
 
-#header ul.tabmenu {
+ul.tabmenu {
 	margin: 15px 10px -17px 35px;
 	border: 0 none;
 	height: 50px;
 }
 
-	#header ul.tabmenu li {
+	ul.tabmenu li {
 		margin: auto;
 	}
 
-	#header ul.tabmenu:after {
+	ul.tabmenu:after {
 	}
 
-	#header ul.tabmenu li a,
-	#header ul.tabmenu li a:visited,
-	#header ul.tabmenu li.selected a {
+	ul.tabmenu li a,
+	ul.tabmenu li a:visited,
+	ul.tabmenu li.selected a {
 		padding: 5px 8px;
 		display: inline-block;
 		margin-top: 5px;
 	}
 
-		#header ul.tabmenu li.selected a,
-		#header ul.tabmenu li.selected a:visited {
+		ul.tabmenu li.selected a,
+		ul.tabmenu li.selected a:visited {
 			padding: 10px 15px;
 			border: 1px solid #fafafa;
 			margin-top: -5px;
 		}
 
-			#header ul.tabmenu li a:hover,
-			#header ul.tabmenu li.selected a:hover {
+			ul.tabmenu li a:hover,
+			ul.tabmenu li.selected a:hover {
 			}
 
 /* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
@@ -749,44 +756,29 @@ div.usertext-edit {
 	}
 
 ul.tabmenu.formtab {
+	margin: 15px 0px -19px 0px;
+	padding: 0px;
 }
 
 	ul.tabmenu.formtab li {
-		display: inline-block;
 	}
 
 		ul.tabmenu.formtab li a {
-			padding: 6px 15px;
-			display: inline-block;
+			padding: 5px 15px;
+			border-width: 0px;
 		}
 
 		ul.tabmenu.formtab li.selected {
 		}
 
 			ul.tabmenu.formtab li.selected a {
-				padding: 9px 15px;
+				-moz-border-radius-bottomleft: 0px;
+				-moz-border-radius-bottomright: 0px;
+				-webkit-border-bottom-left-radius: 0px;
+				-webkit-border-bottom-right-radius: 0px;
+				border-bottom-left-radius: 0px;
+				border-bottom-right-radius: 0px;
 			}
-
-ul.formtab li.selected .link-button {
-}
-
-ul.formtab li.selected .text-button {
-}
-
-ul.formtab a.text-button {
-}
-
-ul.formtab a.link-button {
-}
-
-a.link-button {
-	margin: 0 0 0 10px;
-	font-size: 12px !important;
-}
-
-a.text-button {
-	font-size: 12px !important;
-}
 
 .link.last-clicked {
 	border-width: 1px 0 0;
@@ -1046,9 +1038,6 @@ div#moresearchinfo {
 
 		div#moresearchinfo a:hover {
 		}
-
-#ELSE .formtabs-content .infobar {
-}
 
 .commentarea .infobar {
 }
@@ -1368,10 +1357,7 @@ form#newlink {
 
 /* ~~  A.8. RES Optimisation ~~~~~~~~~~~~~ */
 
-.lcTagged {
-}
-
-.keyHighlight {
+.keyHighlight, .lcTagged {
 	outline: 1px dotted!important;
 	border: 0 !important;
 	border-right: 2px solid #fafafa !important;
@@ -1454,6 +1440,7 @@ div.NERPageMarker,
 		}
 
 .side .md blockquote + hr,
+.side .md blockquote + h3,
 .side .md blockquote + h4,
 .side .md blockquote + h5,
 .side .md blockquote + h6 {
@@ -1981,15 +1968,15 @@ a.pref-lang {
 
 /* --  B.3.5. Header Nav ---------- */
 
-#header ul.tabmenu {
+ul.tabmenu {
 }
 
-	#header ul.tabmenu li {
+	ul.tabmenu li {
 	}
 
-		#header ul.tabmenu li a,
-		#header ul.tabmenu li a:visited,
-		#header ul.tabmenu li.selected a {
+		ul.tabmenu li a,
+		ul.tabmenu li a:visited,
+		ul.tabmenu li.selected a {
 			background-color: #acd9fc;
 			background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
 			background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);
@@ -1997,14 +1984,14 @@ a.pref-lang {
 			color: #2154a3;
 		}
 
-			#header ul.tabmenu li a:hover,
-			#header ul.tabmenu li.selected a:hover {
+			ul.tabmenu li a:hover,
+			ul.tabmenu li.selected a:hover {
 				color: #fff;
 			}
 
-			#header ul.tabmenu li.selected a,
-			#header ul.tabmenu li.selected a:hover,
-			#header ul.tabmenu li.selected a:visited {
+			ul.tabmenu li.selected a,
+			ul.tabmenu li.selected a:hover,
+			ul.tabmenu li.selected a:visited {
 				background-color: #fbfbf9;
 				background-image: none;
 				color: #ff4500;
@@ -2194,6 +2181,7 @@ div.usertext-edit {
 /* --  B.4.5. Link submission form ---------- */
 
 .formtabs-content {
+	border-color: #5ca2e8;
 }
 
 	.formtabs-content .infobar {
@@ -2208,31 +2196,15 @@ ul.tabmenu.formtab {
 	}
 
 		ul.tabmenu.formtab li a {
+			border-color: #5ca2e8;
 		}
 
 		ul.tabmenu.formtab li.selected {
 		}
 
 			ul.tabmenu.formtab li.selected a {
+				background-color: #5ca2e8;
 			}
-
-ul.formtab li.selected .link-button {
-}
-
-ul.formtab li.selected .text-button {
-}
-
-ul.formtab a.text-button {
-}
-
-ul.formtab a.link-button {
-}
-
-a.link-button {
-}
-
-a.text-button {
-}
 
 .link.last-clicked {
 	background-color: #f5f5f5;
@@ -2471,9 +2443,6 @@ div#moresearchinfo {
 
 		div#moresearchinfo a:hover {
 		}
-
-#ELSE .formtabs-content .infobar {
-}
 
 .commentarea .infobar {
 }
@@ -2849,19 +2818,19 @@ div.NERPageMarker,
 }
 /*Blue*/
 .side h3 + blockquote {
-	background-color: #d9f0f7;
-	border-color: #a2e5f9;
+	background-color: #d4ecfe;
+	border-color: #aacdf1;
 }
 
 	.side h3 + blockquote a[href*='#icon-']:before,
 	.side blockquote a[href$='blue']:before {
 		color: #e9f4f7;
 		background-color: #a2e5f9;
-		background-image: -moz-linear-gradient(top, #a2e5f9, #5ca2e8);
-		background-image: -webkit-linear-gradient(top, #a2e5f9,#5ca2e8);
-		background-image: -o-linear-gradient(top, #a2e5f9,#5ca2e8);
-		background-image: -ms-linear-gradient(top, #a2e5f9,#5ca2e8);
-		background-image: linear-gradient(to bottom, #a2e5f9,#5ca2e8);
+		background-image: -moz-linear-gradient(top,#50a3fd,#1c89d1);
+		background-image: -webkit-linear-gradient(top,#50a3fd,#1c89d1);
+		background-image: -o-linear-gradient(top,#50a3fd,#1c89d1);
+		background-image: -ms-linear-gradient(top,#50a3fd,#1c89d1);
+		background-image: linear-gradient(to bottom,#50a3fd,#1c89d1);
 	}
 
 /*Green*/

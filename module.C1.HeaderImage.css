@@ -13,8 +13,8 @@
 }
 
 	#header:after {
-		background-color: #cee3f8;
-		opacity: 0.3;
+		background-color: #acd9fc;
+		opacity: 0.7;
 	}
 
 #header-bottom-left {
@@ -23,15 +23,24 @@
 }
 
 	#header-bottom-left:before {
-		background-color: #cee3f8; /*tweak to match the image color*/
-		opacity: .7;
+		background-color: #acd9fc; /*tweak to match the image color*/
+		opacity: .1;
 		/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
-#header ul.tabmenu li a {
-	background-color: transparent; /*tweak to match the image color, or use the default #cee3f8;*/
+ul.tabmenu li a,
+ul.tabmenu li a:visited {
+	background-color: transparent; /*tweak to match the background image color, or use the default #acd9fc;*/
+	background-image: none;
 	/*do not use opacity here*/
 	/*be creative with usage of background color, and additional background images here*/
+}
+
+ul.tabmenu li.selected a {
+	background-color: #acd9fc; /*tweak to match the background image color*/
+	background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
+	background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);
+	background-image: linear-gradient(top,#acd9fc,#8ccbfc);
 }
 
 /* --  C.1.end Header Image ---- */

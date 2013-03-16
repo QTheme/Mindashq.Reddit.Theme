@@ -11,7 +11,7 @@ body.listing-page .side .md > blockquote:last-child,
 body.messages-page .side .md > blockquote:last-child,
 body.single-page .side .md > blockquote:last-child {
 	position: absolute;
-	left: 262px; /* set for stage; modify per reddit */
+	left: 0px; /* set for stage; modify per reddit */
 	top: 69px; /*adjust this, if header module is used */
 	display: block;
 	background-color: transparent;
@@ -33,13 +33,13 @@ body.single-page .side .md > blockquote:last-child {
 		width: 25px;
 		text-align: center;
 		color: #1f96ca;
-		background-color: #cee3f8;
+		background-color: #acd9fc;
 	}
 
 		body.listing-page .side .md > blockquote:last-child > h1 a,
 		body.single-page .side .md > blockquote:last-child > h1 a {
 			color: #1f96ca;
-			background-color: #cee3f8;
+			background-color: #acd9fc;
 		}
 
 		body.listing-page .side .md > blockquote:last-child > h1 em,
@@ -122,7 +122,6 @@ body.single-page .side .md > blockquote:last-child {
 	body.single-page .side .md > blockquote:last-child > ul > li > ul:hover {
 		display: inline-block;
 		margin-left: 163px;
-		/*margin-top: -36px;*/
 		top: -36px;
 		padding: 0px 50px 50px 3px;
 		overflow: hidden;
@@ -138,6 +137,11 @@ body.single-page .side .md > blockquote:last-child {
 		background-color: #ddd;
 		box-shadow: 0px 2px 6px 0px #bebebe;
 	}
+
+#header-bottom-left {
+	/*same selector includes via headerImages module as well, with different values*/
+	margin-left: 33px;
+}
 
 body.res-nightmode.listing-page .side .md > blockquote:last-child > h1,
 body.res-nightmode.single-page .side .md > blockquote:last-child > h1,
