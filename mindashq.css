@@ -474,7 +474,8 @@ a.pref-lang {
 		vertical-align: bottom;
 	}
 
-	#header-img-a + .pagename a, #header-img-a + .pagename.selected {
+	#header-img-a + .pagename a,
+	#header-img-a + .pagename.selected {
 		-moz-border-radius-topleft: 0px;
 		-moz-border-radius-bottomleft: 0px;
 		-webkit-border-top-left-radius: 0px;
@@ -2011,8 +2012,6 @@ a.pref-lang {
 				box-shadow: 0 7px 0 -4px #5ca2e8;
 				border-radius: 2px;
 			}
-
-
 
 /* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
 /* --  B.4.1. Content Box ---------- */
