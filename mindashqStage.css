@@ -213,12 +213,10 @@ body.res-nightmode a[name='content'] {
 	display: none;
 }
 
-body.listing-page .side .md > blockquote:last-child,
-body.messages-page .side .md > blockquote:last-child,
-body.single-page .side .md > blockquote:last-child {
+.side .md > blockquote:last-child {
 	position: absolute;
-	left: 0px;
-	top: 144px;
+	left: 0px; /* set for stage; modify per reddit */
+	top: 144px; /*adjust this, if header module is used */
 	display: block;
 	background-color: transparent;
 	border: 0px none;
@@ -227,8 +225,7 @@ body.single-page .side .md > blockquote:last-child {
 	z-index: 99;
 }
 
-	body.listing-page .side .md > blockquote:last-child > h1,
-	body.single-page .side .md > blockquote:last-child > h1 {
+	.side .md > blockquote:last-child > h1 {
 		overflow: hidden;
 		margin: -24px 0px 0px;
 		padding: 2px;
@@ -242,19 +239,16 @@ body.single-page .side .md > blockquote:last-child {
 		background-color: transparent;
 	}
 
-		body.listing-page .side .md > blockquote:last-child > h1 a,
-		body.single-page .side .md > blockquote:last-child > h1 a {
+		.side .md > blockquote:last-child > h1 a {
 			color: #acd9fc;
 			background-color: transparent;
 		}
 
-		body.listing-page .side .md > blockquote:last-child > h1 em,
-		body.single-page .side .md > blockquote:last-child > h1 em {
+		.side .md > blockquote:last-child > h1 em {
 			display: none;
 		}
 
-	body.listing-page .side .md > blockquote:last-child ul,
-	body.single-page .side .md > blockquote:last-child ul {
+	.side .md > blockquote:last-child ul {
 		display: none;
 		vertical-align: top;
 		list-style-image: none;
@@ -266,29 +260,28 @@ body.single-page .side .md > blockquote:last-child {
 		overflow: visible;
 	}
 
-	body.listing-page .side .md > blockquote:last-child:hover > h1,
-	body.single-page .side .md > blockquote:last-child:hover > h1 {
+	.side .md > blockquote:last-child:hover > h1,
+	.side .md > blockquote:last-child:active > h1 {
 		padding-bottom: 15px;
 		margin-bottom: -15px;
 		color: #dcebfa;
 		background-color: #5ca2e8;
 	}
 
-		body.listing-page .side .md > blockquote:last-child:hover > h1 a,
-		body.single-page .side .md > blockquote:last-child:hover > h1 a {
+		.side .md > blockquote:last-child:hover > h1 a,
+		.side .md > blockquote:last-child:active > h1 a {
 			color: #dcebfa;
 			background-color: transparent;
 		}
 
-	body.listing-page .side .md > blockquote:last-child:hover > ul,
-	body.single-page .side .md > blockquote:last-child:hover > ul {
+	.side .md > blockquote:last-child:hover > ul,
+	.side .md > blockquote:last-child:active > ul {
 		display: block;
 		padding: 0px 50px 50px;
 		margin: -3px 0px 0px -50px;
 	}
 
-	body.listing-page .side .md > blockquote:last-child li,
-	body.single-page .side .md > blockquote:last-child li {
+	.side .md > blockquote:last-child li {
 		height: 30px;
 		width: 150px;
 		line-height: 30px;
@@ -303,29 +296,27 @@ body.single-page .side .md > blockquote:last-child {
 		box-shadow: 0px 1px 6px 0px #bbb;
 	}
 
-		body.listing-page .side .md > blockquote:last-child li:first-child,
-		body.single-page .side .md > blockquote:last-child li:first-child {
+		.side .md > blockquote:last-child li:first-child {
 			border-width: 1px;
 		}
 
-		body.listing-page .side .md > blockquote:last-child li a,
-		body.single-page .side .md > blockquote:last-child li a {
+		.side .md > blockquote:last-child li a {
 			color: #0026ff;
 		}
 
-	body.listing-page .side .md > blockquote:last-child ul > li:hover,
-	body.single-page .side .md > blockquote:last-child ul > li:hover,
-	body.listing-page .side .md > blockquote:last-child ul > li:hover > a,
-	body.single-page .side .md > blockquote:last-child ul > li:hover > a {
+	.side .md > blockquote:last-child ul > li:hover,
+	.side .md > blockquote:last-child ul > li:active,
+	.side .md > blockquote:last-child ul > li:hover > a,
+	.side .md > blockquote:last-child ul > li:active > a {
 		color: #dcebfa;
 		background-color: #5ca2e8;
 		text-shadow: 0 1px 0 #333;
 	}
 
-	body.listing-page .side .md > blockquote:last-child > ul > li:hover > ul,
-	body.single-page .side .md > blockquote:last-child > ul > li:hover > ul,
-	body.listing-page .side .md > blockquote:last-child > ul > li > ul:hover,
-	body.single-page .side .md > blockquote:last-child > ul > li > ul:hover {
+	.side .md > blockquote:last-child > ul > li:hover > ul,
+	.side .md > blockquote:last-child > ul > li:active > ul,
+	.side .md > blockquote:last-child > ul > li > ul:hover,
+	.side .md > blockquote:last-child > ul > li > ul:active {
 		display: inline-block;
 		margin-left: 163px;
 		top: -36px;
@@ -335,8 +326,8 @@ body.single-page .side .md > blockquote:last-child {
 		position: relative;
 	}
 
-	body.listing-page .side .md > blockquote:last-child li > ul > li,
-	body.single-page .side .md > blockquote:last-child li > ul > li {
+	.side .md > blockquote:last-child li > ul > li,
+	.side .md > blockquote:last-child li > ul > li {
 		width: auto;
 		min-width: 150px;
 		white-space: nowrap;
@@ -344,46 +335,46 @@ body.single-page .side .md > blockquote:last-child {
 		box-shadow: 0px 2px 6px 0px #bebebe;
 	}
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child > h1,
-body.res-nightmode.single-page .side .md > blockquote:last-child > h1,
-body.res-nightmode.listing-page .side .md > blockquote:last-child > h1 a,
-body.res-nightmode.single-page .side .md > blockquote:last-child > h1 a {
+#header-bottom-left {
+	/*same selector includes via headerImages module as well, with different values*/
+	margin-left: 33px;
+}
+
+body.res-nightmode .side .md > blockquote:last-child > h1,
+body.res-nightmode .side .md > blockquote:last-child > h1 a {
 	color: #ff910b!important;
 	background-color: #414141!important;
 }
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child:hover > h1,
-body.res-nightmode.single-page .side .md > blockquote:last-child:hover > h1,
-body.res-nightmode.listing-page .side .md > blockquote:last-child:hover > h1 a,
-body.res-nightmode.single-page .side .md > blockquote:last-child:hover > h1 a {
+body.res-nightmode .side .md > blockquote:last-child:hover > h1,
+body.res-nightmode .side .md > blockquote:last-child:active > h1,
+body.res-nightmode .side .md > blockquote:last-child:hover > h1 a,
+body.res-nightmode .side .md > blockquote:last-child:active > h1 a {
 	background-color: #ff910b!important;
 	color: #414141!important;
 }
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child li,
-body.res-nightmode.single-page .side .md > blockquote:last-child li {
+body.res-nightmode .side .md > blockquote:last-child li {
 	border-color: #6a6a6a;
 	background-color: #444444;
 	text-shadow: 0 1px 0 #888;
 	box-shadow: 0px 1px 6px 0px #000;
 }
 
-	body.res-nightmode.listing-page .side .md > blockquote:last-child li a,
-	body.res-nightmode.single-page .side .md > blockquote:last-child li a {
+	body.res-nightmode .side .md > blockquote:last-child li a {
 		color: #bbb;
 	}
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child ul > li:hover,
-body.res-nightmode.single-page .side .md > blockquote:last-child ul > li:hover,
-body.res-nightmode.listing-page .side .md > blockquote:last-child ul > li:hover > a,
-body.res-nightmode.single-page .side .md > blockquote:last-child ul > li:hover > a {
+body.res-nightmode .side .md > blockquote:last-child ul > li:hover,
+body.res-nightmode .side .md > blockquote:last-child ul > li:active,
+body.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
+body.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
 	color: #dcebfa!important;
 	background-color: #ff910b;
 	text-shadow: 0 1px 0 #333;
 }
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child li > ul > li,
-body.res-nightmode.single-page .side .md > blockquote:last-child li > ul > li {
+body.res-nightmode .side .md > blockquote:last-child li > ul > li {
 	background-color: #4a4a4a;
 	box-shadow: 0px 1px 6px 0px #000;
 }
@@ -460,14 +451,14 @@ body.res-nightmode.single-page .side .md > blockquote:last-child li > ul > li {
 		max-width: 200px;
 	}
 /* --  C.6.end Sidebar Image ---- */
- 
+
 /* --  C.7. Rage Faces ---- */
 
 a[href="/fy1"]:nth-of-type(n):after, a[href="/milk"]:nth-of-type(n):after, a[href="/pickletime"]:nth-of-type(n):after, a[href="/fuckthatshit"]:nth-of-type(n):after, a[href="/teethrage"]:nth-of-type(n):after, a[href="/foreveralone"]:nth-of-type(n):after, a[href="/bzz"]:nth-of-type(n):after, a[href="/creepy"]:nth-of-type(n):after, a[href="/itstime"]:nth-of-type(n):after, a[href="/gtroll"]:nth-of-type(n):after, a[href="/fap"]:nth-of-type(n):after, a[href="/pfttxt"]:nth-of-type(n):after, a[href="/biggusta"]:nth-of-type(n):after, a[href="/notsureifgusta"]:nth-of-type(n):after, a[href="/hahahahaha"]:nth-of-type(n):after, a[href="/2229"]:nth-of-type(n):after, a[href="/smokeweedeveryday"]:nth-of-type(n):after, a[href="/drunk1"]:nth-of-type(n):after, a[href="/truestory"]:nth-of-type(n):after, a[href="/didthere"]:nth-of-type(n):after, a[href="/tobey"]:nth-of-type(n):after, a[href="/hatersgonnahate"]:nth-of-type(n):after, a[href="/dinostare"]:nth-of-type(n):after, a[href="/puke"]:nth-of-type(n):after, a[href="/awthanks"]:nth-of-type(n):after, a[href="/knowthatfeel"]:nth-of-type(n):after, a[href="/no"]:nth-of-type(n):after, a[href="/jackieeeee!"]:nth-of-type(n):after, a[href="/happyjackie"]:nth-of-type(n):after, a[href="/ohgodwhy"]:nth-of-type(n):after, a[href="/ohgodyes"]:nth-of-type(n):after, a[href="/jetpack"]:nth-of-type(n):after, a[href="/badass"]:nth-of-type(n):after, a[href="/soclose"]:nth-of-type(n):after, a[href="/allthethings"]:nth-of-type(n):after, a[href="/youdontsay"]:nth-of-type(n):after, a[href="/dinofuckyeah"]:nth-of-type(n):after, a[href="/dinofuckyeah2"]:nth-of-type(n):after, a[href="/excitedtroll"]:nth-of-type(n):after, a[href="/feelsbadman"]:nth-of-type(n):after, a[href="/jizzsplosion"]:nth-of-type(n):after, a[href="/21424"]:nth-of-type(n):after, a[href="/ohmy"]:nth-of-type(n):after, a[href="/likeasir"]:nth-of-type(n):after, a[href="/likealady"]:nth-of-type(n):after, a[href="/ifeelsyabreh"]:nth-of-type(n):after, a[href="/trollmom"]:nth-of-type(n):after, a[href="/femyao"]:nth-of-type(n):after, a[href="/ilovethebeefytaco"]:nth-of-type(n):after, a[href="/gyey"]:nth-of-type(n):after, a[href="/gwat"]:nth-of-type(n):after, a[href="/gsmile"]:nth-of-type(n):after, a[href="/gtongue"]:nth-of-type(n):after, a[href="/gohno"]:nth-of-type(n):after, a[href="/gwah"]:nth-of-type(n):after, a[href="/ghappy"]:nth-of-type(n):after, a[href="/gbeh"]:nth-of-type(n):after, a[href="/gfu"]:nth-of-type(n):after, a[href="/guhm"]:nth-of-type(n):after, a[href="/fu"]:nth-of-type(n):after, a[href="/beh"]:nth-of-type(n):after, a[href="/gah"]:nth-of-type(n):after, a[href="/perfect"]:nth-of-type(n):after, a[href="/happy"]:nth-of-type(n):after, a[href="/uhm"]:nth-of-type(n):after, a[href="/wat"]:nth-of-type(n):after, a[href="/yey"]:nth-of-type(n):after, a[href="/fuckyeah"]:nth-of-type(n):after, a[href="/ewbte"]:nth-of-type(n):after, a[href="/son"]:nth-of-type(n):after, a[href="/high"]:nth-of-type(n):after, a[href="/poker"]:nth-of-type(n):after, a[href="/rightmilk"]:nth-of-type(n):after, a[href="/megusta"]:nth-of-type(n):after, a[href="/troll"]:nth-of-type(n):after, a[href="/rtroll"]:nth-of-type(n):after, a[href="/leftmilk"]:nth-of-type(n):after, a[href="/futext"]:nth-of-type(n):after, a[href="/pft"]:nth-of-type(n):after, a[href="/sadtroll"]:nth-of-type(n):after, a[href="/wetodddog"]:nth-of-type(n):after, a[href="/harpdarp"]:nth-of-type(n):after, a[href="/dude"]:nth-of-type(n):after, a[href="/eyes"]:nth-of-type(n):after, a[href="/awman"]:nth-of-type(n):after, a[href="/bepsausage"]:nth-of-type(n):after, a[href="/lol"]:nth-of-type(n):after, a[href="/omg"]:nth-of-type(n):after, a[href="/pissed"]:nth-of-type(n):after, a[href="/hmm"]:nth-of-type(n):after, a[href="/whoa"]:nth-of-type(n):after, a[href="/sad"]:nth-of-type(n):after, a[href="/thumbsup"]:nth-of-type(n):after, a[href="/blackhair"]:nth-of-type(n):after, a[href="/hehheh"]:nth-of-type(n):after, a[href="/straight"]:nth-of-type(n):after, a[href="/bepinthemorning"]:nth-of-type(n):after, a[href="/red"]:nth-of-type(n):after, a[href="/bepislaughingatyourmum"]:nth-of-type(n):after, a[href="/nomegusta"]:nth-of-type(n):after, a[href="/wtf"]:nth-of-type(n):after, a[href="/trolldad"]:nth-of-type(n):after, a[href="/wayevil"]:nth-of-type(n):after, a[href="/challengeaccepted"]:nth-of-type(n):after, a[href="/melvin"]:nth-of-type(n):after, a[href="/welp"]:nth-of-type(n):after, a[href="/bepistrollingyoubetter"]:nth-of-type(n):after, a[href="/djlovestaco"]:nth-of-type(n):after, a[href="/why"]:nth-of-type(n):after, a[href="/surprised"]:nth-of-type(n):after, a[href="/suprised"]:nth-of-type(n):after, a[href="/longneck"]:nth-of-type(n):after, a[href="/sweetjesus"]:nth-of-type(n):after, a[href="/notokay"]:nth-of-type(n):after, a[href="/yuno"]:nth-of-type(n):after, a[href="/awyeah"]:nth-of-type(n):after, a[href="/awyea"]:nth-of-type(n):after, a[href="/ohisthatacarrot"]:nth-of-type(n):after, a[href="/carrt"]:nth-of-type(n):after, a[href="/iamawaffle"]:nth-of-type(n):after, a[href="/jackieeeee"]:nth-of-type(n):after, a[href="/aintthatsomeshit"]:nth-of-type(n):after, a[href="/igotthis"]:nth-of-type(n):after, a[href="/teeth"]:nth-of-type(n):after, a[href="/foreveralonewithyourmum"]:nth-of-type(n):after, a[href="/megustaperfect"]:nth-of-type(n):after, a[href="/fapfap"]:nth-of-type(n):after, a[href="/schlick"]:nth-of-type(n):after, a[href="/hug"]:nth-of-type(n):after, a[href="/gtfo"]:nth-of-type(n):after, a[href="/stare"]:nth-of-type(n):after, a[href="/fumanchu"]:nth-of-type(n):after, a[href="/vuvu"]:nth-of-type(n):after, a[href="/pfttext"]:nth-of-type(n):after, a[href="/indeed"]:nth-of-type(n):after, a[href="/ifeelyoubrah"]:nth-of-type(n):after, a[href="/steve"]:nth-of-type(n):after, a[href="/serious"]:nth-of-type(n):after, a[href="/gserious"]:nth-of-type(n):after, a[href="/gaytroll"]:nth-of-type(n):after, a[href="/deviltroll"]:nth-of-type(n):after, a[href="/freddie"]:nth-of-type(n):after, a[href="/thestonedmod"]:nth-of-type(n):after, a[href="/notbad"]:nth-of-type(n):after, a[href="/trollmum"]:nth-of-type(n):after, a[href="/gwtf"]:nth-of-type(n):after, a[href="/okay"]:nth-of-type(n):after, a[href="/splashy"]:nth-of-type(n):after, a[href="/toomuchweed"]:nth-of-type(n):after, a[href="/chrisbrpwnd"]:nth-of-type(n):after, a[href="/dinokay"]:nth-of-type(n):after, a[href="/dino"]:nth-of-type(n):after, a[href="/table"]:nth-of-type(n):after, a[href="/nowkiss"]:nth-of-type(n):after, a[href="/everybodywalkthedinosaur"]:nth-of-type(n):after, a[href="/angryharpdarp"]:nth-of-type(n):after, a[href="/cerealspit"]:nth-of-type(n):after, a[href="/biebs"]:nth-of-type(n):after, a[href="/cereal"]:nth-of-type(n):after, a[href="/foreveralonelaugh"]:nth-of-type(n):after, a[href="/ohcrap"]:nth-of-type(n):after, a[href="/jasonqualman"]:nth-of-type(n):after, a[href="/jonzibar"]:nth-of-type(n):after, a[href="/fyl"]:nth-of-type(n):after, a[href="/rmilk"]:nth-of-type(n):after, a[href="/ewbtetext"]:nth-of-type(n):after, a[href="/trap"]:nth-of-type(n):after, a[href="/hdad"]:nth-of-type(n):after {
   width: 25px;
   height: 25px;
   content: " ";
-  background-image: url(%%hypermegafinal3%%);
+  background-image: url(%%hypermegafinal3%%);/*Ensure image of this name is loaded from sidebar*/
   display: inline-block;
 }
  a[href="/fy1"]:nth-of-type(n):after {   background-position: -240px -30px;   width: 25px;   height: 25px; }
@@ -634,4 +625,5 @@ a[href="/fy1"]:nth-of-type(n):after, a[href="/milk"]:nth-of-type(n):after, a[hre
  a[href="/ewbtetext"]:nth-of-type(n):after {   background-position: -120px -541px;   width: 14px;   height: 10px; }  
  a[href="/trap"]:nth-of-type(n):after {   background-position: -480px -90px;   width: 41px;   height: 40px; }  
  a[href="/hdad"]:nth-of-type(n):after {   background-position: -1px -540px;   width: 41px;   height: 60px; } 
+
 /* --  C.7.end Rage Faces ---- */

@@ -7,9 +7,7 @@
 	display: none;
 }
 
-body.listing-page .side .md > blockquote:last-child,
-body.messages-page .side .md > blockquote:last-child,
-body.single-page .side .md > blockquote:last-child {
+.side .md > blockquote:last-child {
 	position: absolute;
 	left: 0px; /* set for stage; modify per reddit */
 	top: 69px; /*adjust this, if header module is used */
@@ -21,8 +19,7 @@ body.single-page .side .md > blockquote:last-child {
 	z-index: 99;
 }
 
-	body.listing-page .side .md > blockquote:last-child > h1,
-	body.single-page .side .md > blockquote:last-child > h1 {
+	.side .md > blockquote:last-child > h1 {
 		overflow: hidden;
 		margin: -24px 0px 0px;
 		padding: 2px;
@@ -36,19 +33,16 @@ body.single-page .side .md > blockquote:last-child {
 		background-color: #acd9fc;
 	}
 
-		body.listing-page .side .md > blockquote:last-child > h1 a,
-		body.single-page .side .md > blockquote:last-child > h1 a {
+		.side .md > blockquote:last-child > h1 a {
 			color: #1f96ca;
 			background-color: #acd9fc;
 		}
 
-		body.listing-page .side .md > blockquote:last-child > h1 em,
-		body.single-page .side .md > blockquote:last-child > h1 em {
+		.side .md > blockquote:last-child > h1 em {
 			display: none;
 		}
 
-	body.listing-page .side .md > blockquote:last-child ul,
-	body.single-page .side .md > blockquote:last-child ul {
+	.side .md > blockquote:last-child ul {
 		display: none;
 		vertical-align: top;
 		list-style-image: none;
@@ -60,29 +54,28 @@ body.single-page .side .md > blockquote:last-child {
 		overflow: visible;
 	}
 
-	body.listing-page .side .md > blockquote:last-child:hover > h1,
-	body.single-page .side .md > blockquote:last-child:hover > h1 {
+	.side .md > blockquote:last-child:hover > h1,
+	.side .md > blockquote:last-child:active > h1 {
 		padding-bottom: 15px;
 		margin-bottom: -15px;
 		color: #dcebfa;
 		background-color: #5ca2e8;
 	}
 
-		body.listing-page .side .md > blockquote:last-child:hover > h1 a,
-		body.single-page .side .md > blockquote:last-child:hover > h1 a {
+		.side .md > blockquote:last-child:hover > h1 a,
+		.side .md > blockquote:last-child:active > h1 a {
 			color: #dcebfa;
 			background-color: transparent;
 		}
 
-	body.listing-page .side .md > blockquote:last-child:hover > ul,
-	body.single-page .side .md > blockquote:last-child:hover > ul {
+	.side .md > blockquote:last-child:hover > ul,
+	.side .md > blockquote:last-child:active > ul {
 		display: block;
 		padding: 0px 50px 50px;
 		margin: -3px 0px 0px -50px;
 	}
 
-	body.listing-page .side .md > blockquote:last-child li,
-	body.single-page .side .md > blockquote:last-child li {
+	.side .md > blockquote:last-child li {
 		height: 30px;
 		width: 150px;
 		line-height: 30px;
@@ -97,29 +90,27 @@ body.single-page .side .md > blockquote:last-child {
 		box-shadow: 0px 1px 6px 0px #bbb;
 	}
 
-		body.listing-page .side .md > blockquote:last-child li:first-child,
-		body.single-page .side .md > blockquote:last-child li:first-child {
+		.side .md > blockquote:last-child li:first-child {
 			border-width: 1px;
 		}
 
-		body.listing-page .side .md > blockquote:last-child li a,
-		body.single-page .side .md > blockquote:last-child li a {
+		.side .md > blockquote:last-child li a {
 			color: #0026ff;
 		}
 
-	body.listing-page .side .md > blockquote:last-child ul > li:hover,
-	body.single-page .side .md > blockquote:last-child ul > li:hover,
-	body.listing-page .side .md > blockquote:last-child ul > li:hover > a,
-	body.single-page .side .md > blockquote:last-child ul > li:hover > a {
+	.side .md > blockquote:last-child ul > li:hover,
+	.side .md > blockquote:last-child ul > li:active,
+	.side .md > blockquote:last-child ul > li:hover > a,
+	.side .md > blockquote:last-child ul > li:active > a {
 		color: #dcebfa;
 		background-color: #5ca2e8;
 		text-shadow: 0 1px 0 #333;
 	}
 
-	body.listing-page .side .md > blockquote:last-child > ul > li:hover > ul,
-	body.single-page .side .md > blockquote:last-child > ul > li:hover > ul,
-	body.listing-page .side .md > blockquote:last-child > ul > li > ul:hover,
-	body.single-page .side .md > blockquote:last-child > ul > li > ul:hover {
+	.side .md > blockquote:last-child > ul > li:hover > ul,
+	.side .md > blockquote:last-child > ul > li:active > ul,
+	.side .md > blockquote:last-child > ul > li > ul:hover,
+	.side .md > blockquote:last-child > ul > li > ul:active {
 		display: inline-block;
 		margin-left: 163px;
 		top: -36px;
@@ -129,8 +120,8 @@ body.single-page .side .md > blockquote:last-child {
 		position: relative;
 	}
 
-	body.listing-page .side .md > blockquote:last-child li > ul > li,
-	body.single-page .side .md > blockquote:last-child li > ul > li {
+	.side .md > blockquote:last-child li > ul > li,
+	.side .md > blockquote:last-child li > ul > li {
 		width: auto;
 		min-width: 150px;
 		white-space: nowrap;
@@ -143,46 +134,41 @@ body.single-page .side .md > blockquote:last-child {
 	margin-left: 33px;
 }
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child > h1,
-body.res-nightmode.single-page .side .md > blockquote:last-child > h1,
-body.res-nightmode.listing-page .side .md > blockquote:last-child > h1 a,
-body.res-nightmode.single-page .side .md > blockquote:last-child > h1 a {
+body.res-nightmode .side .md > blockquote:last-child > h1,
+body.res-nightmode .side .md > blockquote:last-child > h1 a {
 	color: #ff910b!important;
 	background-color: #414141!important;
 }
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child:hover > h1,
-body.res-nightmode.single-page .side .md > blockquote:last-child:hover > h1,
-body.res-nightmode.listing-page .side .md > blockquote:last-child:hover > h1 a,
-body.res-nightmode.single-page .side .md > blockquote:last-child:hover > h1 a {
+body.res-nightmode .side .md > blockquote:last-child:hover > h1,
+body.res-nightmode .side .md > blockquote:last-child:active > h1,
+body.res-nightmode .side .md > blockquote:last-child:hover > h1 a,
+body.res-nightmode .side .md > blockquote:last-child:active > h1 a {
 	background-color: #ff910b!important;
 	color: #414141!important;
 }
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child li,
-body.res-nightmode.single-page .side .md > blockquote:last-child li {
+body.res-nightmode .side .md > blockquote:last-child li {
 	border-color: #6a6a6a;
 	background-color: #444444;
 	text-shadow: 0 1px 0 #888;
 	box-shadow: 0px 1px 6px 0px #000;
 }
 
-	body.res-nightmode.listing-page .side .md > blockquote:last-child li a,
-	body.res-nightmode.single-page .side .md > blockquote:last-child li a {
+	body.res-nightmode .side .md > blockquote:last-child li a {
 		color: #bbb;
 	}
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child ul > li:hover,
-body.res-nightmode.single-page .side .md > blockquote:last-child ul > li:hover,
-body.res-nightmode.listing-page .side .md > blockquote:last-child ul > li:hover > a,
-body.res-nightmode.single-page .side .md > blockquote:last-child ul > li:hover > a {
+body.res-nightmode .side .md > blockquote:last-child ul > li:hover,
+body.res-nightmode .side .md > blockquote:last-child ul > li:active,
+body.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
+body.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
 	color: #dcebfa!important;
 	background-color: #ff910b;
 	text-shadow: 0 1px 0 #333;
 }
 
-body.res-nightmode.listing-page .side .md > blockquote:last-child li > ul > li,
-body.res-nightmode.single-page .side .md > blockquote:last-child li > ul > li {
+body.res-nightmode .side .md > blockquote:last-child li > ul > li {
 	background-color: #4a4a4a;
 	box-shadow: 0px 1px 6px 0px #000;
 }

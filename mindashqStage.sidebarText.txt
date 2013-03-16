@@ -1,5 +1,6 @@
 ﻿# Staging area for Mindashq Theme
-## Some things may seem wonky at times.
+## Running v1.3
+### Some things may seem wonky at times.
 
 > # [Click Here to know more](/17dfy5#icon-lightbulb-blue "Click here to know more")
 
@@ -67,14 +68,14 @@
 --- 
 > # [☰ *Related Reddits*](#navigator "Hover me to see Menu")
 
->* CSS
+>* [CSS](/r)
  * [CSS](/r/css)
  * [CSS Help](/r/csshelp)
  * [CSS News](/r/CSSNews)
  * [CSS Tutorials](/r/CSStutorials)
  * [Project CSS](/r/ProjectCSS)
  * [Reddit Hax](/r/reddithax)
-* All Web Design
+* [All Web Design](/r)
  * [Web_Design](/r/web_design/)
  * [WebDesign](/r/webdesign)
  * [Javascript](/r/javascript)
@@ -83,7 +84,7 @@
  * [Browsers](/r/browsers)
  * [Tales from Designers](/r/talesfromdesigners)
  * [Crappy Design](/r/CrappyDesign)
-* Moderators
+* [Moderators](/r)
  * [Mod Club](/r/ModClub)
  * [Mod News](/r/ModNews)
  * [Mod Help](/r/ModHelp)
@@ -93,7 +94,7 @@
  * [Bill Gates](/18bhme)
  * [Google Chrome](/gdyun)
  * [Mozilla](/120oif)
-* Lists 
+* [Lists](/r)
  * [Reddit Lists](/r/redditlists)
  * [Multi Reddit](/r/multireddit)
  * [Goggles](/r/goggles)
