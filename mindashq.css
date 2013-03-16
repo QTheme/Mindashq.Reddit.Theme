@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.2
+	v1.3
 	http://www.reddit.com/r/mindashq/wiki
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -158,7 +158,8 @@ a[href='/s'] {
 button,
 .button,
 input[type='submit'],
-.side a[href*='/#btn'] {
+.side a[href*='/#btn'],
+.entry .buttons a[onclick*='reply'] {
 	padding: 6px 10px;
 	margin: 5px 5px 5px 0;
 	cursor: pointer;
@@ -182,41 +183,32 @@ input[type='submit'],
 button:hover,
 .button:hover,
 input[type='submit']:hover,
-.side a[href*='/#btn']:hover {
+.side a[href*='/#btn']:hover,
+.entry .buttons a[onclick*='reply']:hover {
 }
 
-.btn.right {
+.btn.right,
+button.cancel {
 }
 
-	.btn.right:hover {
+	.btn.right:hover,
+	button.cancel {
 	}
 
 /* --  A.1.5. Selective dimming of link buttons ---------- */
 /* --  This is only in A, not in B ---------- */
 
-.entry > .flat-list > li {
+.entry > .flat-list > li,
+.noncollapsed > .flat-list > li {
 	/*visibility: hidden;*/
-	opacity: 0.40;
-	-ms-filter: Alpha(Opacity=40);
-	filter: Alpha(opacity=40);
+	opacity: 0.10;
+	-ms-filter: Alpha(Opacity=10);
+	filter: Alpha(opacity=10);
 }
-
-	.entry > .flat-list > li.first {
-	}
 
 .entry:hover > .flat-list > li,
-.keyHighlight .flat-list > li {
-	opacity: 1;
-}
-
-.noncollapsed > .flat-list > li {
-	opacity: 0.40;
-	-ms-filter: Alpha(Opacity=40);
-	filter: Alpha(opacity=40);
-}
-
-.noncollapsed:hover > .flat-list > li,
-.keyHighlight .flat-list > li {
+.keyHighlight .flat-list > li,
+.noncollapsed:hover > .flat-list > li {
 	opacity: 1;
 	-ms-filter: Alpha(Opacity=100);
 	filter: Alpha(opacity=100);
@@ -465,15 +457,30 @@ a.pref-lang {
 	display: inline-block;
 	height: 50px;
 	vertical-align: bottom;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-radius-topleft: 2px;
+	border-radius-bottomleft: 2px;
 }
 
 	#header-img-a img {
-		margin: 0 3px -14px 3px;
+		margin: 0 3px -15px 3px;
 		padding: 0;
 		width: auto!important;
 		height: auto!important;
 		max-height: 50px;
 		vertical-align: bottom;
+	}
+
+	#header-img-a + .pagename a, #header-img-a + .pagename.selected {
+		-moz-border-radius-topleft: 0px;
+		-moz-border-radius-bottomleft: 0px;
+		-webkit-border-top-left-radius: 0px;
+		-webkit-border-bottom-left-radius: 0px;
+		border-radius-topleft: 0px;
+		border-radius-bottomleft: 0px;
 	}
 
 /* --  A.3.5. Header Nav ---------- */
@@ -510,11 +517,6 @@ a.pref-lang {
 			#header ul.tabmenu li.selected a:hover {
 			}
 
-	#header ul.tabmenu.viewimages a {
-		padding: 10px 12px;
-		background-color: transparent;
-	}
-
 /* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
 /* --  A.4.1. Content Box ---------- */
 
@@ -529,7 +531,6 @@ body.listing-page > div.content,
 body.single-page > div.content,
 body.search-page > div.content,
 body.messages-page > div.content {
-	border: 0;
 	padding: 0;
 	border: 0 none;
 	box-shadow: none;
@@ -540,7 +541,7 @@ body.messages-page > div.content {
 	body.search-page > div.content > .linklisting,
 	body.single-page > div.content > .linklisting {
 		border: 3px solid #fafafa;
-		margin: 0 3px 15px;
+		margin: 3px 3px 15px;
 	}
 
 	body.single-page > div.content > .commentarea {
@@ -592,6 +593,9 @@ body.other-discussions-page > div.content {
 }
 
 /* --  A.4.3. Links sub-parts ---------- */
+.entry {
+	position: relative;
+}
 
 .link {
 	margin: 0;
@@ -628,10 +632,8 @@ body.other-discussions-page > div.content {
 		line-height: 1.3 !important;
 		margin-top: 2px !important;
 		margin-bottom: 2px !important;
-		/*font-size: 13px;*/
 		font-style: normal;
 		font-variant: normal;
-		/*font-weight: bold;*/
 		word-spacing: -1px;
 	}
 
@@ -644,7 +646,24 @@ body.other-discussions-page > div.content {
 		border: 0 none;
 	}
 
-.entry .buttons li a {
+.entry .buttons {
+	margin: 5px 0 0 0;
+	display: inline-block;
+}
+
+	.entry .buttons li a {
+	}
+
+	.entry .buttons a[onclick*='reply'] {
+		padding: 3px 10px;
+		min-width: 30px;
+		position: absolute;
+		left: 0;
+		margin: -5px 5px 5px 0;
+	}
+
+.commentarea .entry .buttons {
+	margin: 5px 0 0 61px;
 }
 
 .panestack-title {
@@ -1237,7 +1256,6 @@ div#adlink {
 	padding: 5px 0 15px 30px;
 	clear: both;
 	text-align: left;
-	width: 100%;
 	margin: 40px 0 0;
 	position: relative;
 	z-index: -2;
@@ -1262,7 +1280,7 @@ div#adlink {
 }
 
 	.footer .col {
-		border: 0px none;
+		border: 0 none;
 	}
 
 /* --  A.6.1. Reddit Copyright Text ---------- */
@@ -1621,25 +1639,28 @@ body {
 	background-color: #fbfbf9;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
 	color: #223f4f;
 }
 
-a {
+a,
+.thing .title.loggedin {
 	color: #006ef4;
 }
 
-	a:visited {
-		color: #810ba8; /* #846090 #930ea5 #a90dbe #551a8b #609  #846090;*/
+	a:visited,
+	.thing .title.loggedin:visited,
+	.comment .md p > a:visited {
+		color: #810ba8;
 	}
 
-	a:hover {
+	a:hover,
+	.thing .title.loggedin:hover {
 		color: #00F;
 	}
 
-	a:active {
+	a:active,
+	.thing .title.loggedin:active {
 		color: #861010;
 	}
 
@@ -1760,13 +1781,14 @@ a[href='/s'] {
 button,
 .button,
 input[type='submit'],
-.side a[href*='/#btn'] {
+.side a[href*='/#btn'],
+.entry .buttons a[onclick*='reply'] {
 	background-color: #63b7f8;
 	background-image: -webkit-linear-gradient(top,#63b7f8,#4b8adb);
 	background-image: -moz-linear-gradient(top,#63b7f8,#4b8adb);
 	background-image: linear-gradient(top,#63b7f8,#4b8adb);
 	border-color: #3079ed;
-	color: #fff;
+	color: #fff!important;
 	font-size: 13px;
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
 	border-radius: 2px;
@@ -1781,7 +1803,7 @@ input[type='submit'],
 	button:hover,
 	.button:hover,
 	input[type='submit']:hover,
-	.side a[href*='/#btn']:hover {
+	.side a[href*='/#btn']:hover .entry .buttons a[onclick*='reply'] {
 		background-color: #357ae8;
 		background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
 		background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
@@ -1790,11 +1812,13 @@ input[type='submit'],
 		color: #fff;
 	}
 
-	.btn.right {
+	.btn.right,
+	button.cancel {
 		background: none transparent;
 	}
 
-		.btn.right:hover {
+		.btn.right:hover,
+		button.cancel:hover {
 			background: none transparent;
 			border-color: transparent;
 			color: #56a6f7;
@@ -1879,7 +1903,10 @@ input[type='submit'],
 	#header:after,
 	#header-bottom-left:before,
 	.footer-parent:after {
-		background-color: #c2dcfe;
+		background-color: #acd9fc;
+		background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
+		background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);
+		background-image: linear-gradient(top,#acd9fc,#8ccbfc);
 	}
 
 /* --  B.3.1. User Controls ---------- */
@@ -1962,23 +1989,30 @@ a.pref-lang {
 		#header ul.tabmenu li a,
 		#header ul.tabmenu li a:visited,
 		#header ul.tabmenu li.selected a {
-			background-color: #c2dcfe;
-			color: #0000ff;
+			background-color: #acd9fc;
+			background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
+			background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);
+			background-image: linear-gradient(top,#acd9fc,#8ccbfc);
+			color: #2154a3;
 		}
 
+			#header ul.tabmenu li a:hover,
+			#header ul.tabmenu li.selected a:hover {
+				color: #fff;
+			}
+
 			#header ul.tabmenu li.selected a,
+			#header ul.tabmenu li.selected a:hover,
 			#header ul.tabmenu li.selected a:visited {
 				background-color: #fbfbf9;
+				background-image: none;
 				color: #ff4500;
 				border-color: #5ca2e8;
 				box-shadow: 0 7px 0 -4px #5ca2e8;
 				border-radius: 2px;
 			}
 
-				#header ul.tabmenu li a:hover,
-				#header ul.tabmenu li.selected a:hover {
-					color: #1f96ca;
-				}
+
 
 /* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
 /* --  B.4.1. Content Box ---------- */
@@ -2010,14 +2044,15 @@ body.messages-page > div.content {
 	}
 
 	body.single-page > div.content > .linklisting .link {
-		background-color: #e9f0f7;
-		background-image: -moz-linear-gradient(top, #e9f0f7,#fbfbfb, #fbfbfb,#fbfbfb,#fbfbfb);
-		background-image: -webkit-linear-gradient(top, #e9f0f7,#fbfbfb, #fbfbfb,#fbfbfb,#fbfbfb);
-		border-radius: 0;
+		background-color: #fdfdfd;
+		background-image: -moz-linear-gradient(top, #f7fafd,#f0f6fc);
+		background-image: -webkit-linear-gradient(top, #f7fafd,#f0f6fc);
+		background-image: none;
 	}
 
 		body.single-page > div.content > .linklisting .link .title {
 		}
+
 
 body.hot-page > div.content,
 body.new-page > div.content,
@@ -2079,6 +2114,7 @@ body.other-discussions-page > div.content {
 	}
 
 	.link .title {
+		color: #2482fa;
 	}
 
 	.link.self .usertext-body .md p,
@@ -2089,8 +2125,15 @@ body.other-discussions-page > div.content {
 		background-color: transparent;
 	}
 
-.entry .buttons li a {
+.entry .buttons {
 }
+
+	.entry .buttons li a {
+	}
+
+	.entry .buttons a[onclick*='reply'] {
+		font-size: 11px;
+	}
 
 .panestack-title {
 	border-bottom-color: gray;
@@ -2131,15 +2174,18 @@ div.usertext-edit {
 	}
 
 		.usertext span[class*='toggle'] a,
-		.btn.right a {
+		.btn.right a,
+		button.cancel {
 			text-decoration: underline;
-			color: #888;
+			color: #888!important;
+			border: 0;
 			text-shadow: 1px 1px 2px #eee;
 		}
 
 			.usertext span[class*='toggle'] a:hover,
-			.btn.right a:hover {
-				color: #449EF8;
+			.btn.right a:hover,
+			button.cancel:hover {
+				color: #449ef8;
 				text-shadow: 1px 1px 2px #ddd;
 			}
 
@@ -2519,6 +2565,22 @@ div#moresearchinfo {
 .sidebox.submit {
 }
 
+body:not(.listing-page) .morelink,
+body:not(.listing-page) .morelink:hover {
+	background-color: #c6e4fc;
+	background-image: -webkit-linear-gradient(top,#c6e4fc,#addafd);
+	background-image: -moz-linear-gradient(top,#c6e4fc,#addafd);
+	background-image: linear-gradient(top,#c6e4fc,#addafd);
+	border-color: #5ba2fd;
+	text-shadow: 1px 1px 2px #eee;
+	border-radius: 2px;
+	color: #2154a3;
+}
+
+	body:not(.listing-page) .morelink a {
+		color: #2154a3;
+	}
+
 .morelink,
 .morelink:hover {
 	background-color: #5ba2fd;
@@ -2528,20 +2590,28 @@ div#moresearchinfo {
 	border-color: #3079ed;
 	text-shadow: 1px 1px 2px #0f0f0f;
 	border-radius: 2px;
+	color: #fff;
 }
 
-	.morelink:hover {
+	.morelink:hover,
+	body:not(.listing-page) .morelink:hover {
 		background-color: #357ae8;
 		background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
 		background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
 		background-image: linear-gradient(top,#4d90fe,#4787ed);
 		border-color: #08c;
-	}
-
-	.morelink a,
-	.morelink a:hover {
 		color: #fff;
 	}
+
+	.morelink a {
+		color: #fff;
+	}
+
+		.morelink a:hover,
+		body:not(.listing-page) .morelink a:hover {
+			color: #fff;
+			text-shadow: 1px 1px 2px #0f0f0f;
+		}
 
 	.morelink .nub,
 	.morelink:hover .nub {
@@ -2856,17 +2926,11 @@ body.res-nightmode {
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
 }
 
-	body.res-nightmode h1 {
-		color: #d7d7d7!important;
-		border: 0 none!important;
-	}
-
-	body.res-nightmode h2 {
-		color: #d7d7d7!important;
-	}
-
+	body.res-nightmode h1,
+	body.res-nightmode h2,
 	body.res-nightmode h3 {
 		color: #d7d7d7!important;
+		border: 0 none!important;
 	}
 
 	body.res-nightmode a {
