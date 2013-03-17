@@ -9,16 +9,16 @@
 .side .usertext a[href$='jpeg'],
 .side .usertext a[href$='gif'],
 .side .usertext a[href$='#view'] {
-	background: transparent url('%%SidebarImage%%') no-repeat 0 0;
-	height: 100px; /*adjust to desired image height*/
-	display: block;
 	position: static;
-	width: auto;
-	min-height: 70px;
-	max-height: 300px;
-	min-width: 300px;
-	max-width: 310px;
+	display: block;
 	margin: 0px -10px 15px -15px;
+	min-width: 300px;
+	min-height: 70px;
+	max-width: 310px;
+	max-height: 300px;
+	width: auto;
+	height: 100px; /*adjust to desired image height*/
+	background: transparent url('%%SidebarImage%%') no-repeat 0 0;
 	font-size: 0px;
 }
 
@@ -28,20 +28,20 @@
 	.side .usertext a[href$='gif']:hover:after,
 	.side .usertext a[href$='#view']:hover:after {
 		content: "Click to see original size"; /*Short hover text*/
-		background: #f5f5f9;
-		border-radius: 2px;
-		border: 1px solid #d2d2d2;
-		padding: 10px 5px;
 		position: relative;
-		margin: 0px -105px;
-		opacity: .8;
-		font-weight: bold;
-		font-size: 12px;
 		top: auto;
 		bottom: -20px;
 		left: 50%;
 		display: block;
-		text-align: center;
+		margin: 0px -105px;
+		padding: 10px 5px;
 		max-width: 200px;
+		border: 1px solid #d2d2d2;
+		border-radius: 2px;
+		background: #f5f5f9;
+		font-weight: bold;
+		font-size: 12px;
+		text-align: center;
+		opacity: .8;
 	}
 /* --  C.6.end Sidebar Image ---- */

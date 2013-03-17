@@ -3,19 +3,20 @@
 	 + 	Add only when corresponding markup is added in sidebar
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
+
 .side .md > blockquote:last-child {
 	display: none;
 }
 
 .side .md > blockquote:last-child {
 	position: absolute;
-	left: 0px; /* set for stage; modify per reddit */
 	top: 69px; /*adjust this, if header module is used */
+	left: 0px; /* set for stage; modify per reddit */
 	display: block;
-	background-color: transparent;
-	border: 0px none;
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+	background-color: transparent;
 	z-index: 99;
 }
 
@@ -23,19 +24,19 @@
 		overflow: hidden;
 		margin: -24px 0px 0px;
 		padding: 2px;
-		font-size: 20px;
+		width: 25px;
+		background-color: #acd9fc;
+		color: #1f96ca;
 		font-weight: bold;
+		font-size: 20px;
 		line-height: 28px;
 		vertical-align: middle;
-		width: 25px;
 		text-align: center;
-		color: #1f96ca;
-		background-color: #acd9fc;
 	}
 
 		.side .md > blockquote:last-child > h1 a {
-			color: #1f96ca;
 			background-color: #acd9fc;
+			color: #1f96ca;
 		}
 
 		.side .md > blockquote:last-child > h1 em {
@@ -44,50 +45,49 @@
 
 	.side .md > blockquote:last-child ul {
 		display: none;
-		vertical-align: top;
-		list-style-image: none;
-		list-style: none outside;
-		vertical-align: top;
-		white-space: normal;
+		overflow: visible;
 		margin: 0px;
 		padding: 0px;
-		overflow: visible;
+		white-space: normal;
+		vertical-align: top;
+		list-style: none outside;
+		list-style-image: none;
 	}
 
 	.side .md > blockquote:last-child:hover > h1,
 	.side .md > blockquote:last-child:active > h1 {
-		padding-bottom: 15px;
 		margin-bottom: -15px;
-		color: #dcebfa;
+		padding-bottom: 15px;
 		background-color: #5ca2e8;
+		color: #dcebfa;
 	}
 
 		.side .md > blockquote:last-child:hover > h1 a,
 		.side .md > blockquote:last-child:active > h1 a {
-			color: #dcebfa;
 			background-color: transparent;
+			color: #dcebfa;
 		}
 
 	.side .md > blockquote:last-child:hover > ul,
 	.side .md > blockquote:last-child:active > ul {
 		display: block;
-		padding: 0px 50px 50px;
 		margin: -3px 0px 0px -50px;
+		padding: 0px 50px 50px;
 	}
 
 	.side .md > blockquote:last-child li {
-		height: 30px;
-		width: 150px;
-		line-height: 30px;
 		margin: 0px;
 		padding: 5px 15px 0px;
+		width: 150px;
+		height: 30px;
 		border-width: 0px 1px 1px 1px;
-		white-space: normal;
 		border-style: solid;
 		border-color: #ccc;
 		background-color: #f5f5f5;
-		text-shadow: 0 1px 0 #ddd;
 		box-shadow: 0px 1px 6px 0px #bbb;
+		line-height: 30px;
+		white-space: normal;
+		text-shadow: 0 1px 0 #ddd;
 	}
 
 		.side .md > blockquote:last-child li:first-child {
@@ -102,8 +102,8 @@
 	.side .md > blockquote:last-child ul > li:active,
 	.side .md > blockquote:last-child ul > li:hover > a,
 	.side .md > blockquote:last-child ul > li:active > a {
-		color: #dcebfa;
 		background-color: #5ca2e8;
+		color: #dcebfa;
 		text-shadow: 0 1px 0 #333;
 	}
 
@@ -111,22 +111,22 @@
 	.side .md > blockquote:last-child > ul > li:active > ul,
 	.side .md > blockquote:last-child > ul > li > ul:hover,
 	.side .md > blockquote:last-child > ul > li > ul:active {
-		display: inline-block;
-		margin-left: 163px;
-		top: -36px;
-		padding: 0px 50px 50px 3px;
-		overflow: hidden;
-		height: auto;
 		position: relative;
+		top: -36px;
+		display: inline-block;
+		overflow: hidden;
+		margin-left: 163px;
+		padding: 0px 50px 50px 3px;
+		height: auto;
 	}
 
 	.side .md > blockquote:last-child li > ul > li,
 	.side .md > blockquote:last-child li > ul > li {
-		width: auto;
 		min-width: 150px;
-		white-space: nowrap;
+		width: auto;
 		background-color: #ddd;
 		box-shadow: 0px 2px 6px 0px #bebebe;
+		white-space: nowrap;
 	}
 
 #header-bottom-left {
@@ -136,8 +136,8 @@
 
 body.res-nightmode .side .md > blockquote:last-child > h1,
 body.res-nightmode .side .md > blockquote:last-child > h1 a {
-	color: #ff910b!important;
 	background-color: #414141!important;
+	color: #ff910b!important;
 }
 
 body.res-nightmode .side .md > blockquote:last-child:hover > h1,
@@ -151,8 +151,8 @@ body.res-nightmode .side .md > blockquote:last-child:active > h1 a {
 body.res-nightmode .side .md > blockquote:last-child li {
 	border-color: #6a6a6a;
 	background-color: #444444;
-	text-shadow: 0 1px 0 #888;
 	box-shadow: 0px 1px 6px 0px #000;
+	text-shadow: 0 1px 0 #888;
 }
 
 	body.res-nightmode .side .md > blockquote:last-child li a {
@@ -163,8 +163,8 @@ body.res-nightmode .side .md > blockquote:last-child ul > li:hover,
 body.res-nightmode .side .md > blockquote:last-child ul > li:active,
 body.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
 body.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
-	color: #dcebfa!important;
 	background-color: #ff910b;
+	color: #dcebfa!important;
 	text-shadow: 0 1px 0 #333;
 }
 

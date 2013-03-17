@@ -3,13 +3,14 @@
 	 + 	Add only when corresponding image is loaded in community settings > stylesheet 
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
+
 #header {
+	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
+	background-color: #fff; /*add a matching color when image is not spanning entire header*/
 	background-image: url('%%headerImage%%'); /*url of image */
 	background-repeat: repeat; /*this will repeat the image to entire header*/
-	background-position: 0px 80%; /* adjust for best view */
-	background-color: #fff; /*add a matching color when image is not spanning entire header*/
-	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
 	background-attachment: scroll;
+	background-position: 0px 80%; /* adjust for best view */
 }
 
 	#header:after {

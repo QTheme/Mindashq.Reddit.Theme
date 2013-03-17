@@ -6,9 +6,9 @@
 
 .side .usertext-body:before {
 	content: url('%%SidebarImage%%');
-	margin: 10px 0px;
 	display: block;
 	overflow: hidden;
+	margin: 10px 0px;
 	text-align: center;
 }
 /* --  C.6.end Sidebar Image ---- */

@@ -8,6 +8,7 @@
 .sidebox.create {
 	display: none;
 }*/
+
 /*-- Moving the Buttons and Message to Moderators below the buttons ---- */
 .sidebox.submit {
 	position: absolute;
@@ -22,14 +23,14 @@
 
 	.sidecontentbox a.helplink:before {
 		content: 'Or';
-		color: #808080;
 		margin: 0px .3em 0px 1.5em;
+		color: #808080;
 	}
 
 	.sidecontentbox a.helplink:after {
 		content: 'with your questions';
-		color: #808080;
 		margin: 0px 0px 0px .3em;
+		color: #808080;
 	}
 
 .side .spacer #search,
@@ -57,13 +58,13 @@ body.search-page .side .titlebox {
 }
 
 .sidebox.submit-link {
-	margin-left: 0px;
 	display: block;
+	margin-left: 0px;
 }
 
 	.sidebox.submit-link .morelink a {
-		font-size: 0px;
 		content: '';
+		font-size: 0px;
 	}
 
 		.sidebox.submit-link .morelink a:before {
@@ -73,29 +74,29 @@ body.search-page .side .titlebox {
 
 	.sidebox.submit-link .morelink .nub:before {
 		content: 'OR';
-		font-size: 12px;
-		font-weight: bold;
 		position: relative;
+		top: 4px;
 		margin-left: 12px;
-		background-color: #fbfbf9!important;
 		padding: 5px;
-		color: #2977c6;
+		height: auto;
+		border: 1px solid #fbfbf9;
 		border-radius: 20px;
+		background-color: #fbfbf9!important;
+		color: #2977c6;
+		font-weight: bold;
+		font-size: 12px;
 		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
 		z-index: 1;
-		border: 1px solid #fbfbf9;
-		height: auto;
-		top: 4px;
 	}
 
 .sidebox.submit-text {
-	text-align: right;
 	margin-left: 152px;
+	text-align: right;
 }
 
 	.sidebox.submit-text .morelink a {
-		font-size: 0px;
 		content: '';
+		font-size: 0px;
 	}
 
 		.sidebox.submit-text .morelink a:before {
@@ -104,10 +105,10 @@ body.search-page .side .titlebox {
 		}
 
 body.res-nightmode .sidebox.submit-link .morelink .nub:before {
-	background-color: #222222!important;
-	text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
 	border: 1px solid #222222;
+	background-color: #222222!important;
 	color: #bb6107;
+	text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
 }
 /*-- end Dual buttons ---- */
 

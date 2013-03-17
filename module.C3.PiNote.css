@@ -6,10 +6,10 @@
 ---- */
 
 .side .md > blockquote:nth-of-type(1) {
-	top: 175px; /*adjust according to the header module*/
 	position: absolute;
-	left: 10px;
+	top: 175px; /*adjust according to the header module*/
 	right: 360px;
+	left: 10px;
 	border-bottom: 0px;
 }
 
@@ -17,14 +17,14 @@
 	}
 
 		.side .md > blockquote:nth-of-type(1) > h1 > a {
-			text-align: right;
 			float: right;
-			font-size: 14px;
-			padding: 10px 5px;
 			margin: -5px -5px -5px 0px;
-			text-decoration: underline;
+			padding: 10px 5px;
 			max-width: 120px;
+			font-size: 14px;
+			text-align: right;
 			text-align: center;
+			text-decoration: underline;
 		}
 
 			.side .md > blockquote:nth-of-type(1) > h1 > a[href*="#icon-"]:before {
@@ -35,29 +35,29 @@
 			}
 
 a[name='content'] {
-	border: 1px solid #ccc;
-	background-color: #f5f5f5;
-	border-radius: 2px;
-	margin: 0px 360px 25px 10px;
 	display: block;
+	margin: 0px 360px 25px 10px;
 	min-height: 65px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: #f5f5f5;
 }
 
 
 	a[name='content']:before {
 		content: 'This is staging area for /r/mindashq with preview of opt-in modules. To know more, and for feedback, discussions and enhancments : click the link.';
-		margin: 15px 150px 15px 60px;
-		font-size: 16px;
-		font-weight: bold;
-		color: #222;
 		position: relative;
 		display: block;
+		margin: 15px 150px 15px 60px;
+		color: #222;
+		font-weight: bold;
+		font-size: 16px;
 		letter-spacing: -.06em;
 	}
 
 body.res-nightmode a[name='content'] {
-	background-color: #0a0a0a;
 	border-color: #6a6a6a;
+	background-color: #0a0a0a;
 }
 
 	body.res-nightmode a[name='content']:before {

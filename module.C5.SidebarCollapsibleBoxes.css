@@ -3,6 +3,7 @@
 	 + 	Add only when corresponding markup is added in sidebar
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
+
 /*  Selective blockquotes collapsed/uncollapsed  */
 .side .md > blockquote:nth-of-type(5) > * {
 	display: block;
