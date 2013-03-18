@@ -956,11 +956,11 @@ div.drop-choices.lightdrop.inuse {
 		}
 
 div.sidebox.create {
-	position  : absolute;
-	right     : 30px;
-	bottom    : 110px;
-	display   : block;
-	border    : 0 solid #fafafa!important;
+	position: absolute;
+	right: 30px;
+	bottom: 110px;
+	display: block;
+	border: 0 solid #fafafa!important;
 	background: none transparent!important;
 }
 
