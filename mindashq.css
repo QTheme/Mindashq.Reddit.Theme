@@ -640,7 +640,6 @@ body.other-discussions-page > div.content {
 		word-spacing: -1px;
 		font-style: normal;
 		font-variant: normal;
-		line-height: 1.3 !important;
 	}
 
 	.link.self .usertext-body .md p,
@@ -957,11 +956,11 @@ div.drop-choices.lightdrop.inuse {
 		}
 
 div.sidebox.create {
-	position: absolute;
-	right: 30px;
-	bottom: 110px;
-	display: block;
-	border: 0 solid #fafafa!important;
+	position  : absolute;
+	right     : 30px;
+	bottom    : 110px;
+	display   : block;
+	border    : 0 solid #fafafa!important;
 	background: none transparent!important;
 }
 
