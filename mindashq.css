@@ -199,7 +199,12 @@ button.cancel {
 /* --  A.1.5. Selective dimming of link buttons ---------- */
 /* --  This is only in A, not in B ---------- */
 
-/*.entry > .flat-list > li,*/
+.entry > .flat-list > li {
+	opacity: 0.40;
+	-ms-filter: Alpha(Opacity=40);
+	filter: Alpha(opacity=40);
+}
+
 .noncollapsed > .flat-list > li {
 	opacity: 0.10;
 	-ms-filter: Alpha(Opacity=10);
@@ -590,18 +595,20 @@ body.other-discussions-page > div.content {
 	border-top: 1px solid #fafafa;
 }
 
-.linklisting .even:first-child {
+.linklisting .link:first-child {
 	border-top: 0 !important;
 }
 
-.linklisting .odd:first-child {
-	border-top: 0 !important;
+.linklisting .link:last-of-type .flairselector.drop-choices.active {
+	top: auto!important;
+	bottom: 0px!important;
 }
 
+.link.last-clicked {
+	border-width: 1px 0 0;
+}
 /* --  A.4.3. Links sub-parts ---------- */
 .entry {
-	position: relative;
-	overflow: visible;
 }
 
 .link {
@@ -659,17 +666,21 @@ body.other-discussions-page > div.content {
 	.entry .buttons li a {
 	}
 
-.commentarea .entry .buttons {
-	margin: 5px 0 0 61px;
+.commentarea .entry {
+	position: relative;
 }
 
-	.commentarea .entry .buttons a[onclick*='reply'] {
-		position: absolute;
-		left: 0;
-		margin: -5px 5px 5px 0;
-		padding: 3px 10px;
-		min-width: 30px;
+	.commentarea .entry .buttons {
+		margin: 5px 0 0 61px;
 	}
+
+		.commentarea .entry .buttons a[onclick*='reply'] {
+			position: absolute;
+			left: 0;
+			margin: -5px 5px 5px 0;
+			padding: 3px 10px;
+			min-width: 30px;
+		}
 
 .panestack-title {
 	margin: 10px 0 0 0;
@@ -777,11 +788,6 @@ ul.tabmenu.formtab {
 				border-bottom-left-radius: 0;
 			}
 
-.link.last-clicked {
-	border-width: 1px 0 0;
-	overflow: visible;
-}
-
 #noresults {
 	margin-right: 310px;
 	padding: 5px 10px;
@@ -795,35 +801,36 @@ ul.tabmenu.formtab {
 }
 
 /* --  A.4.6. Custom Upvote/Downvote Arrows---------- */
-/* .arrow {
-    padding-right: 0; */
-/* padding-left: 0; */
-/* width: 22px; */
-/* height: 22px; */
-/* }
+/*.arrow {
+	padding-right: 0;
+	padding-left: 0;
+	width: 22px;
+	height: 22px;
+}
 
-    .arrow.up {
-        background-position: 0 0; */
-/* opacity: 0.5; */
-/* filter: alpha(opacity=05); */
-/* -khtml-opacity: 0.5; */
-/* }
+	.arrow.up {
+		background-position: 0 0;
+		opacity: 0.5;
+		filter: alpha(opacity=05);
+		-khtml-opacity: 0.5;
+	}
 
-    .arrow.down {
-        background-position: 0 -22px; */
-/* opacity: 0.5; */
-/* filter: alpha(opacity=05); */
-/* -khtml-opacity: 0.5; */
-/* }
+	.arrow.down {
+		background-position: 0 -22px;
+		opacity: 0.5;
+		filter: alpha(opacity=05);
+		-khtml-opacity: 0.5;
+	}
 
-    .arrow.upmod,
-    .arrow.up:hover {
-        background-position: -22px 0; */
-/* }
+	.arrow.upmod,
+	.arrow.up:hover {
+		background-position: -22px 0;
+	}
 
-    .arrow.downmod,
-    .arrow.down:hover {
-        background-position: -22px -22px; */
+	.arrow.downmod,
+	.arrow.down:hover {
+		background-position: -22px -22px;
+	}*/
 
 /* --  A.4.7. Comment Formatting ---------- */
 
@@ -2045,12 +2052,14 @@ body.other-discussions-page > div.content {
 	background-image: -webkit-linear-gradient(left, #fdfdfd, #fefefe);
 }
 
-.linklisting .even:first-child {
+.linklisting .link:first-child {
 }
 
-.linklisting .odd:first-child {
+.link.last-clicked {
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top,#fbfbfb,#f5f5f5);
+	background-image: -webkit-linear-gradient(top,#fbfbfb,#f5f5f5);
 }
-
 /* --  B.4.3. Links sub-parts ---------- */
 
 .link {
@@ -2182,12 +2191,6 @@ ul.tabmenu.formtab {
 				background-color: #5ca2e8;
 			}
 
-.link.last-clicked {
-	background-color: #f5f5f5;
-	background-image: -moz-linear-gradient(top,#fbfbfb,#f5f5f5);
-	background-image: -webkit-linear-gradient(top,#fbfbfb,#f5f5f5);
-}
-
 #noresults {
 }
 
@@ -2198,22 +2201,22 @@ ul.tabmenu.formtab {
 /* --  B.4.6. Custom Upvote/Downvote Arrows ---------- */
 
 /*  Entire comment block in masonry template
-    .arrow {
-    }
+.arrow {
+}
 
-    .arrow.up {
-    }
+.arrow.up {
+}
 
-    .arrow.down {
-    }
+.arrow.down {
+}
 
-    .arrow.upmod,
-    .arrow.up:hover {
-    }
+.arrow.upmod,
+.arrow.up:hover {
+}
 
-    .arrow.downmod,
-    .arrow.down:hover {
-    }
+.arrow.downmod,
+.arrow.down:hover {
+}
  */
 /* --  B.4.7. Comment Formatting ---------- */
 
