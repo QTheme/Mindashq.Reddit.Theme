@@ -1,7 +1,7 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.3
-	http://www.reddit.com/r/mindashq/wiki
-	For reuse : Always copy latest from Github
+    v1.3
+    http://www.reddit.com/r/mindashq/wiki
+    For reuse : Always copy latest from Github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* [ A ]. Masonry and Template ............ */
@@ -601,6 +601,7 @@ body.other-discussions-page > div.content {
 /* --  A.4.3. Links sub-parts ---------- */
 .entry {
 	position: relative;
+	overflow: visible;
 }
 
 .link {
@@ -778,6 +779,7 @@ ul.tabmenu.formtab {
 
 .link.last-clicked {
 	border-width: 1px 0 0;
+	overflow: visible;
 }
 
 #noresults {
@@ -794,34 +796,34 @@ ul.tabmenu.formtab {
 
 /* --  A.4.6. Custom Upvote/Downvote Arrows---------- */
 /* .arrow {
-	padding-right: 0; */
+    padding-right: 0; */
 /* padding-left: 0; */
 /* width: 22px; */
 /* height: 22px; */
 /* }
 
-	.arrow.up {
-		background-position: 0 0; */
+    .arrow.up {
+        background-position: 0 0; */
 /* opacity: 0.5; */
 /* filter: alpha(opacity=05); */
 /* -khtml-opacity: 0.5; */
 /* }
 
-	.arrow.down {
-		background-position: 0 -22px; */
+    .arrow.down {
+        background-position: 0 -22px; */
 /* opacity: 0.5; */
 /* filter: alpha(opacity=05); */
 /* -khtml-opacity: 0.5; */
 /* }
 
-	.arrow.upmod,
-	.arrow.up:hover {
-		background-position: -22px 0; */
+    .arrow.upmod,
+    .arrow.up:hover {
+        background-position: -22px 0; */
 /* }
 
-	.arrow.downmod,
-	.arrow.down:hover {
-		background-position: -22px -22px; */
+    .arrow.downmod,
+    .arrow.down:hover {
+        background-position: -22px -22px; */
 
 /* --  A.4.7. Comment Formatting ---------- */
 
@@ -2195,23 +2197,23 @@ ul.tabmenu.formtab {
 
 /* --  B.4.6. Custom Upvote/Downvote Arrows ---------- */
 
-/*	Entire comment block in masonry template
-	.arrow {
-	}
+/*  Entire comment block in masonry template
+    .arrow {
+    }
 
-	.arrow.up {
-	}
+    .arrow.up {
+    }
 
-	.arrow.down {
-	}
+    .arrow.down {
+    }
 
-	.arrow.upmod,
-	.arrow.up:hover {
-	}
+    .arrow.upmod,
+    .arrow.up:hover {
+    }
 
-	.arrow.downmod,
-	.arrow.down:hover {
-	}
+    .arrow.downmod,
+    .arrow.down:hover {
+    }
  */
 /* --  B.4.7. Comment Formatting ---------- */
 
