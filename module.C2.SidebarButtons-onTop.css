@@ -12,12 +12,12 @@
 /*-- Moving the Buttons and Message to Moderators below the buttons ---- */
 .sidebox.submit {
 	position: absolute;
-	top: 105px; /*adjust for header height changes in module C1*/
+	top: 105px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
 }
 
 .sidecontentbox a.helplink {
 	position: absolute;
-	top: 146px; /*adjust for header height changes in module C1*/
+	top: 146px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
 	font-size: 12px;
 }
 
