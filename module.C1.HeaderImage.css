@@ -15,6 +15,7 @@
 
 	#header:after {
 		background-color: #acd9fc;
+		background-image: none;
 		opacity: 0.7;
 	}
 
@@ -29,15 +30,15 @@
 		/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
-ul.tabmenu li a,
-ul.tabmenu li a:visited {
+#header ul.tabmenu li a,
+#header ul.tabmenu li a:visited {
 	background-color: transparent; /*tweak to match the background image color, or use the default #acd9fc;*/
 	background-image: none;
 	/*do not use opacity here*/
 	/*be creative with usage of background color, and additional background images here*/
 }
 
-ul.tabmenu li.selected a {
+#header ul.tabmenu li.selected a {
 	background-color: #acd9fc; /*tweak to match the background image color*/
 	background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
 	background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);

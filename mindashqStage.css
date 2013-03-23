@@ -22,12 +22,12 @@ body{background-color:#fbfbf9;color:#333;font-family:Helvetica,Arial,"Nimbus San
 
 /* --  C.1. Header Image ---- */
 #header {
-	min-height: 150px;
-	background-color: #fff;
-	background-image: url('%%header-falls%%');
-	background-repeat: repeat;
+	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
+	background-color: #fff; /*add a matching color when image is not spanning entire header*/
+	background-image: url('%%header-falls%%'); /*url of image */
+	background-repeat: repeat; /*this will repeat the image to entire header*/
 	background-attachment: scroll;
-	background-position: 0px 80%;
+	background-position: 0px 80%; /* adjust for best view */
 }
 
 	#header:after {
@@ -37,12 +37,12 @@ body{background-color:#fbfbf9;color:#333;font-family:Helvetica,Arial,"Nimbus San
 	}
 
 #header-bottom-left {
+	/*this adjusts the top navigation bar, leave as default*/
 	position: absolute;
-	margin-left: 33px;
 }
 
 	#header-bottom-left:before {
-		background-color: #acd9fc;
+		background-color: #acd9fc; /*tweak to match the image color*/
 		opacity: .1;
 	}
 
@@ -50,13 +50,15 @@ body{background-color:#fbfbf9;color:#333;font-family:Helvetica,Arial,"Nimbus San
 #header ul.tabmenu li a:visited,
 #header .pagename.redditname,
 #header .pagename.redditname.hover {
-	background-color: transparent;
+	background-color: transparent; /*tweak to match the background image color, or use the default #acd9fc;*/
 	background-image: none;
 	color: #acd9fc;
 }
 
 #header ul.tabmenu li.selected a {
-	background-color: #acd9fc;
+	background-color: #fff; /*tweak to match the background image color*/
+	background-image: none;
+	color: #0b0c0e;
 }
 
 /* --  C.1.end Header Image ---- */
