@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-    v1.3
+    v1.3.5
     http://www.reddit.com/r/mindashq/wiki
     For reuse : Always copy latest from Github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -16,9 +16,13 @@ body {
 	line-height: 1.4;
 }
 
-h1, h2, h3 {
-	margin-bottom: 3px;
+h1, h2 {
+	margin-bottom: 6px;
 	letter-spacing: -1px;
+}
+
+h3, h4 {
+	margin-bottom: 3px;
 }
 
 .rounded {
@@ -415,11 +419,11 @@ a.pref-lang {
 
 .pagename {
 	display: inline-block;
-	margin: 0 0 -10px 0;
-	height: 50px;
+	margin: 0px;
 	font-weight: bold;
 	font-variant: normal;
 	font-size: 18px;
+	line-height: 30px;
 	vertical-align: bottom;
 }
 
@@ -431,7 +435,7 @@ a.pref-lang {
 	.pagename a,
 	.pagename.selected {
 		display: inline-block;
-		margin: 0 0 -12px 0;
+		margin: 0 0 -10px 0;
 		padding: 10px 20px;
 		font-size: 18px!important;
 		line-height: 30px;
@@ -645,9 +649,9 @@ body.other-discussions-page > div.content {
 	.link .title {
 		margin-top: 2px !important;
 		margin-bottom: 2px !important;
-		word-spacing: -1px;
 		font-style: normal;
 		font-variant: normal;
+		word-spacing: -1px;
 	}
 
 	.link.self .usertext-body .md p,
@@ -782,9 +786,9 @@ ul.tabmenu.formtab {
 			ul.tabmenu.formtab li.selected a {
 				-webkit-border-bottom-right-radius: 0;
 				-moz-border-radius-bottomright: 0;
-				border-bottom-right-radius: 0;
 				-webkit-border-bottom-left-radius: 0;
 				-moz-border-radius-bottomleft: 0;
+				border-bottom-right-radius: 0;
 				border-bottom-left-radius: 0;
 			}
 
@@ -852,9 +856,9 @@ body div.content > form > div .commentarea .even {
 .commentarea h2,
 .commentarea h3,
 .commentarea h4 {
-	letter-spacing: 0;
 	font-weight: bold;
 	font-size: 1.1em;
+	letter-spacing: 0;
 }
 
 .commentarea .nestedlisting {
@@ -931,11 +935,11 @@ div.drop-choices.lightdrop.inuse {
 /* ~~  A.5. Sidebar ~~~~~~~~~~~~~ */
 
 .side {
-	z-index: 0;
 	margin: 0 20px;
 	padding: 0 10px;
 	width: 300px;
 	line-height: 1.3;
+	z-index: 0;
 }
 
 	.side .spacer {
@@ -959,9 +963,9 @@ div.drop-choices.lightdrop.inuse {
 
 		.side .titlebox h1.redditname {
 			margin: 1.2em 0 .2em 0;
-			text-transform: capitalize;
-			letter-spacing: -1px;
 			font-size: 26px;
+			letter-spacing: -1px;
+			text-transform: capitalize;
 		}
 
 div.sidebox.create {
@@ -1107,9 +1111,9 @@ div#moresearchinfo {
 
 .titlebox form.toggle,
 .leavemoderator {
+	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center left;
-	background-repeat: no-repeat;
 }
 
 .leavemoderator-button {
@@ -1159,8 +1163,8 @@ body .morelink,
 body .morelink:hover {
 	padding: 4px 10px;
 	background: none transparent;
-	letter-spacing: 0;
 	font-weight: normal;
+	letter-spacing: 0;
 }
 
 	body .morelink a,
@@ -1227,24 +1231,24 @@ body .disabled .morelink a:hover {
 
 .footer-parent {
 	position: relative;
-	z-index: -2;
 	clear: both;
 	margin: 40px 0 0;
 	padding: 5px 0 15px 30px;
 	text-align: left;
+	z-index: -2;
 }
 
 	.footer-parent:after {
+		content: " ";
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: -1;
 		display: block;
 		width: 100%;
 		height: 30px;
 		border: 1px solid #fafafa;
 		border-width: 1px 0;
-		content: " ";
+		z-index: -1;
 	}
 
 .footer {
@@ -1292,6 +1296,13 @@ ul#image-preview-list {
 body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
 	padding: 5px 0 5px 15px!important;
 }
+
+.tabpane-content {
+	margin-top: -4px;
+	padding: 15px 10px;
+}
+/* --  A.7.1. Wiki Page ---------- */
+
 
 body.wiki-page h1.wikititle {
 	display: inline-block;
@@ -1383,9 +1394,9 @@ div.NERPageMarker,
 	padding: 10px 0;
 	width: auto;
 	border: 1px solid #fafafa;
-	letter-spacing: -1px;
 	font-weight: bold;
 	font-size: 20px;
+	letter-spacing: -1px;
 }
 
 	#progressIndicator.neverEndingReddit img {
@@ -1531,10 +1542,10 @@ div.NERPageMarker,
 		width: 30px;
 		height: 52px;
 		background-position: 0 0;
-		text-align: center;
 		font-weight: bold;
 		font-size: 25px;
 		line-height: 60px;
+		text-align: center;
 	}
 
 .side a[href*='#icon-exclamation']:before {
@@ -1656,6 +1667,28 @@ hr,
 	background-color: #d2d2d2;
 	color: #c8c8c8;
 }
+
+.roundfield,
+.linefield,
+.content.submit .roundfield.info-notice {
+	border-color: #fff;
+	border-radius: 2px;
+	background-color: #eee;
+	box-shadow: 0 0 1px 1px #d7e2eb;
+}
+
+	.roundfield textarea,
+	.roundfield input[type=text],
+	.roundfield input[type=url],
+	.roundfield input[type=password],
+	.roundfield input[type=number],
+	.linefield textarea,
+	.linefield input[type=text],
+	.linefield input[type=password] {
+		border-color: #c8c8c8;
+		border-radius: 2px;
+		box-shadow: 0 1px 4px 1px #d1d5c6;
+	}
 
 /* --  B.1.1. Tables ---------- */
 
@@ -1909,6 +1942,7 @@ a.pref-lang {
 
 /* --  B.3.3. The Reddit Name, applies to all pages ---------- */
 .pagename {
+	color: #2154a3;
 }
 
 	.pagename.redditname,
@@ -2626,7 +2660,7 @@ body .disabled .morelink:hover {
 /* --  B.6.1. Reddit Copyright Text ---------- */
 
 .bottommenu {
-	background-color: #fff;
+	background-color: transparent;
 	color: #05374e;
 }
 
@@ -2640,6 +2674,8 @@ body .disabled .morelink:hover {
 	border-bottom-color: #d2d2d2;
 	background-color: #fdfdfe;
 }
+
+/* --  B.7.1. Wiki Page ---------- */
 
 body.wiki-page h1.wikititle {
 	color: #5ca2e8;
@@ -2664,7 +2700,7 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
 		color: #323638;
-		text-shadow: 0 0 1px #585858, 1px 1px 2px #fdfdfe;
+		text-shadow: 0px 0px 0px #fdfdfe,0px 0px 1px #585858;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
@@ -2959,14 +2995,24 @@ body.res-nightmode {
 			}
 
 	body.res-nightmode #header {
-		border-bottom-color: #414141;
 		background-color: #000!important;
+		box-shadow: 0 -3px 9px 5px #000;
 		font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
 	}
 
 		body.res-nightmode #header:after,
-		body.res-nightmode #header-bottom-left:before {
+		body.res-nightmode .footer-parent:after {
+			border-top-color: #494848;
+			border-bottom-color: #494848;
+		}
+
+		body.res-nightmode #header:after,
+		body.res-nightmode #header-bottom-left:before,
+		body.res-nightmode .footer-parent:after {
 			background-color: #414141;
+			background-image: -webkit-linear-gradient(top,#696969,#414141);
+			background-image: -moz-linear-gradient(top,#696969,#414141);
+			background-image: linear-gradient(top,#696969,#414141);
 		}
 
 	body.res-nightmode #header-bottom-right {
@@ -2978,21 +3024,23 @@ body.res-nightmode {
 		background-color: transparent !important;
 	}
 
-	body.res-nightmode .pagename a {
+	body.res-nightmode .pagename a,
+	body.res-nightmode .pagename.selected {
 		border-width: 0 0 1px 0;
-		background-color: #4f4f52;
-		box-shadow: 0 4px 6px #000;
+		background-color: #083e5c;
+		background-image: -webkit-linear-gradient(top,#546477,#083e5c);
+		background-image: -moz-linear-gradient(top,#546477,#083e5c);
+		background-image: linear-gradient(top,#546477,#083e5c);
+		box-shadow: 0 4px 6px #010611;
 		color: #eee;
 		font-size: 18px!important;
 		text-shadow: 0 1px 0 #231405;
 	}
 
 		body.res-nightmode .pagename a:hover {
-			background-color: #4f4f52;
+			background-color: #333;
 			background-image: -moz-linear-gradient(top,#4f4f52,#333333);
 			background-image: -webkit-linear-gradient(top,#4f4f52,#333333);
-			background-image: -o-linear-gradient(top,#4f4f52,#333333);
-			background-image: -ms-linear-gradient(top,#4f4f52,#333333);
 			background-image: linear-gradient(tobottom,#4f4f52,#333333);
 			font-size: 18px!important;
 		}
@@ -3008,6 +3056,9 @@ body.res-nightmode {
 	body.res-nightmode #header ul.tabmenu li a:visited,
 	body.res-nightmode #header ul.tabmenu li.selected a {
 		background-color: #414141;
+		background-image: -webkit-linear-gradient(top,#696969,#414141);
+		background-image: -moz-linear-gradient(top,#696969,#414141);
+		background-image: linear-gradient(top,#696969,#414141);
 		color: #ff910b;
 	}
 
@@ -3016,6 +3067,7 @@ body.res-nightmode {
 			padding-bottom: 10px!important;
 			border: 1px solid #a35d17!important;
 			background-color: #040406;
+			background-image: none;
 			box-shadow: 0 13px 0 -9px #a35d17;
 		}
 
@@ -3341,14 +3393,19 @@ body.res-nightmode {
 	body.res-nightmode .morelink,
 	body.res-nightmode .morelink:hover {
 		border-color: #bb6107;
-		background-color: #bb6107!important;
-		text-shadow: 1px 1px 2px #000000;
+		background-color: #083e5c!important;
+		background-image: -webkit-linear-gradient(top,#546477,#083e5c)!important;
+		background-image: -moz-linear-gradient(top,#546477,#083e5c)!important;
+		background-image: linear-gradient(top,#546477,#083e5c)!important;
+		text-shadow: 1px 1px 2px #010611;
 	}
 
 		body.res-nightmode .morelink:hover {
 			border-color: #a95908!important;
-			background-color: #a95908!important;
-			background-image: none;
+			background-color: #333!important;
+			background-image: -moz-linear-gradient(top,#4f4f52,#333333)!important;
+			background-image: -webkit-linear-gradient(top,#4f4f52,#333333)!important;
+			background-image: linear-gradient(tobottom,#4f4f52,#333333)!important;
 			color: #ddd!important;
 		}
 
@@ -3420,6 +3477,7 @@ body.res-nightmode {
 
 	body.res-nightmode .footer-parent {
 		box-shadow: 0 -3px 9px -2px #222;
+		background-color: #393939;
 	}
 
 	body.res-nightmode .footer {
@@ -3458,9 +3516,7 @@ body.res-nightmode {
 		}
 
 		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h1,
-		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h2,
-		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h3,
-		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h4 {
+		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h2 {
 			text-shadow: 0 0 2px #fff,1px 1px 3px #0a0a0a;
 		}
 
@@ -3567,8 +3623,11 @@ body.res-nightmode {
 	body.res-nightmode form#newlink.submit button.btn {
 		border: none;
 		border-radius: 2px;
-		background-color: #bb6107!important;
-		background-image: none;
+		background-color: #083e5c!important;
+		background-image: -webkit-linear-gradient(top,#546477,#083e5c);
+		background-image: -moz-linear-gradient(top,#546477,#083e5c);
+		background-image: linear-gradient(top,#546477,#083e5c);
+		box-shadow: 0 4px 6px #010611;
 		color: #eee!important;
 		font-size: 13px;
 		font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
@@ -3585,8 +3644,12 @@ body.res-nightmode {
 		body.res-nightmode input[type="submit"]:hover,
 		body.res-nightmode .side a[href*="/#btn"]:hover {
 			border-color: #a95908!important;
-			background-color: #a95908!important;
-			background-image: none;
+			background-color: #333!important;
+			background-image: -moz-linear-gradient(top,#4f4f52,#333333);
+			background-image: -webkit-linear-gradient(top,#4f4f52,#333333);
+			background-image: -o-linear-gradient(top,#4f4f52,#333333);
+			background-image: -ms-linear-gradient(top,#4f4f52,#333333);
+			background-image: linear-gradient(tobottom,#4f4f52,#333333);
 			color: #ddd!important;
 		}
 
