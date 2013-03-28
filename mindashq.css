@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-    v1.3.5
+    v1.3.6
     http://www.reddit.com/r/mindashq/wiki
     For reuse : Always copy latest from Github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -971,7 +971,7 @@ div.drop-choices.lightdrop.inuse {
 div.sidebox.create {
 	position: absolute;
 	right: 30px;
-	bottom: 110px;
+	bottom: 121px;
 	display: block;
 	border: 0 solid #fafafa!important;
 	background: none transparent!important;
@@ -1252,8 +1252,10 @@ body .disabled .morelink a:hover {
 	}
 
 .footer {
-	margin: -15px 5px 5px;
+	margin: 0px 5px 5px;
 	border: 0 none;
+	top: -15px;
+	position: relative;
 }
 
 	.footer .col {
@@ -1385,6 +1387,12 @@ div.userbarHide {
 		margin: 0;
 	}
 
+shinebar + body > #RESMainGearOverlay,
+shinebar + body > #RESAccountSwitcherIconOverlay,
+shinebar + body > #RESAccountSwitcherDropdown,
+shinebar + body > #RESPrefsDropdown {
+	margin-top: -30px;
+}
 /* --  A.8.1. Progress Indicator and Page marker for RES mode ---------- */
 
 #progressIndicator.neverEndingReddit,
@@ -2651,6 +2659,7 @@ body .disabled .morelink:hover {
 .footer-parent {
 	background-color: #fff;
 	box-shadow: 0 -3px 9px -2px #ddd;
+	font-size: 12px;
 }
 
 .footer {
