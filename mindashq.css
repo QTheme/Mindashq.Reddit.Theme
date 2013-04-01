@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-    v1.3.6
+    v1.3.7
     http://www.reddit.com/r/mindashq/wiki
     For reuse : Always copy latest from Github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -675,14 +675,15 @@ body.other-discussions-page > div.content {
 }
 
 	.commentarea .entry .buttons {
-		margin: 5px 0 0 61px;
+		margin: 5px 0 1px 61px;
+		padding: 1px 0px;
 	}
 
 		.commentarea .entry .buttons a[onclick*='reply'] {
 			position: absolute;
 			left: 0;
 			margin: -5px 5px 5px 0;
-			padding: 3px 10px;
+			padding: 2px 10px 3px;
 			min-width: 30px;
 		}
 
@@ -1023,7 +1024,7 @@ div.sidebox.create {
 	padding: 10px 15px;
 }
 
-/* --  5.2 Infobar, MoreInfo and MoreSearch Divs ---------- */
+/* --  A.5.2 Infobar, MoreInfo and MoreSearch Divs ---------- */
 
 .infobar {
 }
