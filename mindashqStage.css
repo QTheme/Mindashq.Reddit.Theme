@@ -63,35 +63,21 @@ body{background-color:#fbfbf9;color:#333;font-family:Helvetica,Arial,"Nimbus San
 
 /* --  C.1.end Header Image ---- */
 
-/* --  C.2. Sidebar Buttons - On Top --- */
+/* --  C.2. Sidebar Buttons - On Top ---- */
 
-.sidebox.submit {
-	position: absolute;
-	top: 180px;
+/*-- C.2.1 Button Appearance --*/
+/* Delete C.2.1 from code if buttons are not to be hidden via CSS*/
+
+.sidebox.submit-text {
+	/*display: none; uncomment to hide submit text button */
 }
 
-.sidecontentbox a.helplink {
-	position: absolute;
-	top: 221px;
-	font-size: 12px;
+.sidebox.create {
+	/*display: none; uncomment to hide create subreddit button */
 }
+/*-- end Button Appearance  --*/
 
-	.sidecontentbox a.helplink:before {
-		content: 'Or';
-		margin: 0px .3em 0px 1.5em;
-		color: #808080;
-	}
-
-	.sidecontentbox a.helplink:after {
-		content: 'with your questions';
-		margin: 0px 0px 0px .3em;
-		color: #808080;
-	}
-
-.side .spacer #search,
-body.search-page .side .titlebox {
-	margin-top: 70px;
-}
+/*-- C.2.2 Dual buttons ---- */
 
 .sidebox.submit {
 	width: 147px;
@@ -103,17 +89,6 @@ body.search-page .side .titlebox {
 	display: block;
 	margin-left: 0px;
 }
-
-	.sidebox.submit-link .morelink a,
-	.sidebox.submit-text .morelink a {
-		content: '';
-		font-size: 0px;
-	}
-
-		.sidebox.submit-link .morelink a:before {
-			content: 'Sumbit a Link';
-			font-size: 16px;
-		}
 
 	.sidebox.submit-link .morelink .nub:before {
 		content: 'OR';
@@ -137,11 +112,6 @@ body.search-page .side .titlebox {
 	text-align: right;
 }
 
-	.sidebox.submit-text .morelink a:before {
-		content: 'Post a Note';
-		font-size: 16px;
-	}
-
 body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 	border: 1px solid #222222;
 	background-color: #222222!important;
@@ -149,7 +119,60 @@ body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 	text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
 }
 
-/* --  C.2.end Sidebar Buttons ---- */
+/*-- C.2.2.end Dual buttons ---- */
+
+/*-- C.2.3 Custom button text --*/
+
+.sidebox.submit-link .morelink a,
+.sidebox.submit-text .morelink a {
+	content: '';
+	font-size: 0px;
+}
+
+	.sidebox.submit-link .morelink a:before {
+		content: 'Sumbit a Link'; /*Type your custom text here*/
+		font-size: 16px;
+	}
+
+	.sidebox.submit-text .morelink a:before {
+		content: 'Post a Note'; /*Type your custom text here*/
+		font-size: 16px;
+	}
+
+/*-- C.2.3.end Custom button text --*/
+
+/*-- C.2.4. Top Positioning with message to moderator text --*/
+.sidebox.submit {
+	position: absolute;
+	top: 180px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
+}
+
+.sidecontentbox a.helplink {
+	position: absolute;
+	top: 221px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
+	font-size: 12px;
+}
+
+	.sidecontentbox a.helplink:before {
+		content: 'Or';
+		margin: 0px .3em 0px 1.5em;
+		color: #808080;
+	}
+
+	.sidecontentbox a.helplink:after {
+		content: 'with your questions';
+		margin: 0px 0px 0px .3em;
+		color: #808080;
+	}
+
+.side .spacer #search,
+body.search-page .side .titlebox {
+	margin-top: 70px;
+}
+/*-- C.2.4.end Top Positioning with message to moderator text --*/
+
+/* --  C.2.end Sidebar Buttons on Top---- */
+
 
 /* --  C.3. Pinote --- */
 

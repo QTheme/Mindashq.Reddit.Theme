@@ -4,23 +4,21 @@
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
 
-/* change this if your reddit wants to prevent creating of newer communities
-.sidebox.create {
-	display: none; */
-
-/*-- The link and the text post buttons appearance ---- */
-.sidebox.submit-link {
-}
+/*-- C.2.1 Button Appearance --*/
+/* Delete C.2.1 from code if buttons are not to be hidden via CSS*/
 
 .sidebox.submit-text {
+	/*display: none; uncomment to hide submit text button */
 }
-/*  In case only one button is needed;
-	Put display:none for the one that is not required
-	and delete the code below.
-	Or,
-	Maintain the whole code for both buttons appearing side by side
-*/
-/*-- Dual buttons ---- */
+
+.sidebox.create {
+	/*display: none; uncomment to hide create subreddit button */
+}
+/*-- end Button Appearance  --*/
+
+/*-- C.2.2 Dual buttons ---- */
+/* Delete C.2.2 from code if side-by-side buttons not desired */
+
 .sidebox.submit {
 	width: 147px;
 	word-spacing: 1px;
@@ -33,16 +31,6 @@
 	margin-left: 0px;
 	text-indent: 0px;
 }
-
-	.sidebox.submit-link .morelink a {
-		content: '';
-		font-size: 0px;
-	}
-
-		.sidebox.submit-link .morelink a:before {
-			content: 'Sumbit a Link';
-			font-size: 16px;
-		}
 
 	.sidebox.submit-link .morelink .nub:before {
 		content: 'OR';
@@ -68,16 +56,6 @@
 	text-align: right;
 }
 
-	.sidebox.submit-text .morelink a {
-		content: '';
-		font-size: 0px;
-	}
-
-		.sidebox.submit-text .morelink a:before {
-			content: 'Post a Note';
-			font-size: 16px;
-		}
-
 body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 	border: 1px solid #222222;
 	background-color: #222222!important;
@@ -89,6 +67,26 @@ body.res-nightmode .sidebox.submit-text {
 	top: -2px;
 }
 
-/*-- end Dual buttons ---- */
+/*-- C.2.2.end Dual buttons ---- */
 
-/* --  C.2.end Sidebar Buttons ---- */
+/*-- C.2.3 Custom button text --*/
+
+.sidebox.submit-link .morelink a,
+.sidebox.submit-text .morelink a {
+	content: '';
+	font-size: 0px;
+}
+
+	.sidebox.submit-link .morelink a:before {
+		content: 'Sumbit a Link'; /*Type your custom text here*/
+		font-size: 16px;
+	}
+
+	.sidebox.submit-text .morelink a:before {
+		content: 'Post a Note'; /*Type your custom text here*/
+		font-size: 16px;
+	}
+
+/*-- C.2.3.end Custom button text --*/
+
+/* --  C.2.end Sidebar Buttons in situ ---- */
