@@ -69,7 +69,7 @@ body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 }
 
 	.sidebox.submit-link .morelink a:before {
-		content: 'Sumbit a Link'; /*Type your custom text here*/
+		content: 'Submit a Link'; /*Type your custom text here*/
 		font-size: 16px;
 	}
 
