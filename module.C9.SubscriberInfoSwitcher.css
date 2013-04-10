@@ -1,0 +1,19 @@
+/* --  C.9. Subscriber Info Switcher
+		see http://www.reddit.com/r/mindashq/wiki/modules/TextSwitchers for details
+	 + 	This css adds visible text to reddit, check for translations	
+---- */
+
+div.titlebox .subscribers span.word,
+div.titlebox .users-online span.word {
+	display: none;
+}
+
+div.titlebox .subscribers span.number:after {
+	content: " Watchers"; /* this is replacement for readers */
+}
+
+div.titlebox .users-online span.number:after {
+	content: " Themers here now"; /*this is replacement for users online*/
+}
+
+/* --  C.9.end Subscriber Info Switcher ---- */

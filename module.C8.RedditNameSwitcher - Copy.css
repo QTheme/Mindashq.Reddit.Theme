@@ -1,0 +1,24 @@
+/* --  C.8. Reddit Name Switcher
+		see http://www.reddit.com/r/mindashq/wiki/modules/TextSwitchers for details
+	 + 	This css adds visible text to reddit, check for translations	
+---- */
+
+.pagename a:after,
+.titlebox .redditname a:after {
+	content: "Stage Mindashq"; /* type the custom name here */
+}
+
+.pagename a, .titlebox .redditname a {
+	font-size: 0!important;
+}
+
+	.pagename a:after {
+		font-size: 18px;
+		vertical-align: bottom;
+	}
+
+
+	.titlebox .redditname a:after {
+		font-size: 26px;
+	}
+/* --  C.8.end Reddit Name Switcher ---- */
