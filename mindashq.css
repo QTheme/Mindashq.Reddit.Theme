@@ -1,7 +1,7 @@
 /* ~~ Mindashq.Reddit.Theme
-    v1.3.7
-    http://www.reddit.com/r/mindashq/wiki
-    For reuse : Always copy latest from Github
+	v1.3.8 [In progress, do not copy]
+	http://www.reddit.com/r/mindashq/wiki
+	For reuse : Always copy latest from Github
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* [ A ]. Masonry and Template ............ */
@@ -43,6 +43,13 @@ hr {
 	max-width: 70em;
 }
 
+	.md blockquote,
+	.help blockquote {
+		max-width: 60em;
+		border: 1px dotted #fafafa;
+		border-left: 2px solid;
+		padding: 4px 4px 4px 15px;
+	}
 	/* --  A.1.1. Tables  ---------- */
 
 	.md table {
@@ -78,6 +85,7 @@ hr {
 	.md ol {
 		margin: 5px 0 5px 20px;
 		padding: 0 0 0 10px;
+		max-width: 60em;
 	}
 
 	.md ul {
@@ -159,12 +167,21 @@ a[href='/s'] {
 	margin: 0 0 0 20px;
 }
 
+.entry .flat-list.buttons a[onclick*='reply'] {
+	margin: -5px 5px 0 0;
+	padding: 2px 10px 3px;
+	min-width: 30px;
+	display: inline-block;
+	border: 1px solid #fafafa;
+	cursor: pointer;
+}
+
 .btn,
 button,
 .button,
+button.blueButton,
 input[type='submit'],
-.side a[href*='/#btn'],
-.entry .buttons a[onclick*='reply'] {
+.side a[href*='/#btn'] {
 	margin: 5px 5px 5px 0;
 	padding: 6px 10px;
 	min-width: 70px;
@@ -187,41 +204,23 @@ input[type='submit'],
 .btn:hover,
 button:hover,
 .button:hover,
+button.blueButton:hover,
 input[type='submit']:hover,
 .side a[href*='/#btn']:hover,
-.entry .buttons a[onclick*='reply']:hover {
+.entry .flat-list.buttons a[onclick*='reply']:hover {
 }
 
 .btn.right,
-button.cancel {
+button.cancel,
+.usertext span[class*='toggle'],
+button.RESBigEditorPop {
 }
 
-	.btn.right:hover,
-	button.cancel {
+	.btn.right a,
+	button.cancel,
+	.usertext span[class*='toggle'] a,
+	button.RESBigEditorPop {
 	}
-
-/* --  A.1.5. Selective dimming of link buttons ---------- */
-/* --  This is only in A, not in B ---------- */
-
-.entry > .flat-list > li {
-	opacity: 0.40;
-	-ms-filter: Alpha(Opacity=40);
-	filter: Alpha(opacity=40);
-}
-
-.noncollapsed > .flat-list > li {
-	opacity: 0.10;
-	-ms-filter: Alpha(Opacity=10);
-	filter: Alpha(opacity=10);
-}
-
-.entry:hover > .flat-list > li,
-.keyHighlight .flat-list > li,
-.noncollapsed:hover > .flat-list > li {
-	opacity: 1;
-	-ms-filter: Alpha(Opacity=100);
-	filter: Alpha(opacity=100);
-}
 
 /* ~~  A.2. Top Sr-Bar ~~~~~~~~~~~~~ */
 
@@ -230,8 +229,7 @@ button.cancel {
 	margin-left: 0 !important;
 	padding: 0 0 0 5px;
 	height: 20px;
-	border: 1px solid #fafafa;
-	border-width: 0 0 1px;
+	border-width: 0;
 	font-weight: 500;
 	font-size: 11px;
 	line-height: 20px;
@@ -327,12 +325,6 @@ button.cancel {
 	z-index: 400;
 }
 
-	#sr-header-area .drop-choices a.choice {
-	}
-
-		#sr-header-area .drop-choices a.choice:hover {
-		}
-
 /* ~~  A.3. Header ~~~~~~~~~~~~~ */
 
 #header {
@@ -356,16 +348,6 @@ button.cancel {
 
 /* --  A.3.1. User Controls ---------- */
 
-span.user {
-}
-
-a.pref-lang {
-}
-
-.logout {
-	font-weight: bold;
-}
-
 #header-bottom-right {
 	top: auto!important;
 	bottom: 0 !important;
@@ -381,6 +363,11 @@ a.pref-lang {
 	}
 
 	#header-bottom-right.res-navTop {
+	}
+
+	#header-bottom-right .user,
+	#header-bottom-right .logout {
+		font-weight: bold;
 	}
 
 /* --  A.3.2. Banner Image ---------- */
@@ -419,7 +406,7 @@ a.pref-lang {
 
 .pagename {
 	display: inline-block;
-	margin: 0px;
+	margin: 0;
 	font-weight: bold;
 	font-variant: normal;
 	font-size: 18px;
@@ -536,11 +523,15 @@ ul.tabmenu {
 /* --  A.4.1. Content Box ---------- */
 
 div.content {
-	overflow: hidden;
-	margin: 0 350px 10px 10px !important;
+	margin: 0 360px 10px 10px !important;
 	padding: 10px 20px;
-	border: 3px solid #fafafa;
+	border: 1px solid #fafafa;
 }
+
+	div.content .linklisting,
+	div.content > .commentarea > .linklisting {
+		border: 1px solid #fafafa;
+	}
 
 body.listing-page > div.content,
 body.single-page > div.content,
@@ -551,28 +542,19 @@ body.messages-page > div.content {
 	box-shadow: none;
 }
 
-	body.listing-page > div.content,
-	body.messages-page > div.content,
 	body.search-page > div.content > .linklisting,
 	body.single-page > div.content > .linklisting {
-		margin: 3px 3px 15px;
-		border: 3px solid #fafafa;
+		margin: 0 0 15px;
 	}
 
-	body.single-page > div.content > .commentarea {
-		position: relative;
-		margin: 0 3px 1px;
-		padding: 0;
-		border: 3px solid #fafafa;
-	}
-
-	body.single-page > div.content > .linklisting .link {
-		list-style-type: none;
-	}
-
-		body.single-page > div.content > .linklisting .link .title {
-			font-weight: normal;
+		body.single-page > div.content > .linklisting .link {
+			list-style-type: none;
+			padding-left: 5px;
 		}
+
+			body.single-page > div.content > .linklisting .link .title {
+				font-weight: normal;
+			}
 
 body.hot-page > div.content,
 body.new-page > div.content,
@@ -584,19 +566,21 @@ body.other-discussions-page > div.content {
 }
 /* --  A.4.2. Links (Post) ---------- */
 
-.link.promotedlink.promoted {
+.thing.link.promotedlink.promoted {
+	border-width: 0!important;
+}
+
+.linklisting .thing.link {
 }
 
 .linklisting .even {
 	margin: 0;
 	padding: 2px 0 2px;
-	border-top: 1px solid #fafafa;
 }
 
 .linklisting .odd {
 	margin: 0;
 	padding: 2px 0 2px;
-	border-top: 1px solid #fafafa;
 }
 
 .linklisting .link:first-child {
@@ -605,48 +589,48 @@ body.other-discussions-page > div.content {
 
 .linklisting .link:last-of-type .flairselector.drop-choices.active {
 	top: auto!important;
-	bottom: 0px!important;
+	bottom: 0!important;
 }
 
 .link.last-clicked {
+	overflow: visible;
 	border-width: 1px 0 0;
 }
 /* --  A.4.3. Links sub-parts ---------- */
-.entry {
+.sitetable {
 }
 
-.link {
-	margin: 0;
-	padding: 5px;
-}
-
-	.link .rank {
-		display: inline-block;
-		margin: 15px 0 0 10px;
-		padding: 5px 0 5px 0;
+	.sitetable .link {
+		margin: 0;
+		padding: 2px 0 2px;
 	}
 
-	.link .midcol {
+	.sitetable .rank {
+		margin: 15px 0 0 5px;
+		padding: 5px 10px 5px 0;
+		text-align: right;
+	}
+
+	.sitetable .midcol {
 		margin: 4px 4px 0 2px;
-		padding: 0 5px !important;
 	}
 
-	.link .thumbnail {
+	.sitetable .thumbnail {
 		margin: 2px 2px 2px 5px;
-		max-height: 55px;
+		max-height: 60px;
 		width: auto;
 	}
 
-	.link.compressed .thumbnail {
-		max-height: 35px;
+		.sitetable .thumbnail.self {
+			margin: 2px 0px;
+		}
+
+	.sitetable .entry {
+		margin: 1px 3px 1px 0;
+		padding-left: 5px;
 	}
 
-	.link .entry {
-		margin: 3px 0 3px 3px;
-		padding-left: 3px;
-	}
-
-	.link .title {
+	.sitetable .title {
 		margin-top: 2px !important;
 		margin-bottom: 2px !important;
 		font-style: normal;
@@ -654,38 +638,22 @@ body.other-discussions-page > div.content {
 		word-spacing: -1px;
 	}
 
-	.link.self .usertext-body .md p,
-	.comment .usertext-body .md p {
-	}
+.link.self .usertext-body .md p,
+.comment .usertext-body .md p {
+}
 
-	.link .usertext .md {
-		padding: 5px 10px;
-		border: 0 none;
-	}
+.link .usertext .md {
+	padding: 5px 10px;
+	border: 0 none;
+}
 
-.entry .buttons {
+.flat-list.buttons {
+	margin: 5px 0 0 0;
 	display: inline-block;
 }
 
-	.entry .buttons li a {
+	.flat-list.buttons li a {
 	}
-
-.commentarea .entry {
-	position: relative;
-}
-
-	.commentarea .entry .buttons {
-		margin: 5px 0 1px 61px;
-		padding: 1px 0px;
-	}
-
-		.commentarea .entry .buttons a[onclick*='reply'] {
-			position: absolute;
-			left: 0;
-			margin: -5px 5px 5px 0;
-			padding: 2px 10px 3px;
-			min-width: 30px;
-		}
 
 .panestack-title {
 	margin: 10px 0 0 0;
@@ -707,7 +675,6 @@ body.other-discussions-page > div.content {
 /* --  A.4.4. Usertext-edit textarea ---------- */
 
 form.usertext.cloneable {
-	margin: -3px;
 	padding: 0 20px;
 	border-width: 1px 0;
 	border-radius: 0;
@@ -721,11 +688,6 @@ div.usertext-edit {
 	div.usertext-edit textarea {
 		padding: 5px;
 	}
-
-.commentarea > .usertext {
-	clear: left;
-	margin: 0;
-}
 
 .usertext {
 }
@@ -769,7 +731,7 @@ div.usertext-edit {
 	}
 
 ul.tabmenu.formtab {
-	margin: 15px 0px -19px 0;
+	margin: 15px 0 -19px 0;
 	padding: 0;
 }
 
@@ -841,16 +803,14 @@ ul.tabmenu.formtab {
 
 body div.content > form > div .commentarea .even {
 	padding: 10px 0 10px 10px !important;
-	border-top: 1px solid #fafafa;
 }
 
 .commentarea .menuarea {
-	margin: 0;
 	padding: 0 10px;
-	font-size: 11px;
 }
 
-.commentarea p {
+.commentarea p.tagline {
+	margin: 2px 0px 0px;
 }
 
 .commentarea h1,
@@ -862,22 +822,21 @@ body div.content > form > div .commentarea .even {
 	letter-spacing: 0;
 }
 
-.commentarea .nestedlisting {
-	overflow: hidden;
+.sitetable > .comment {
+	border-width: 1px 0!important;
+	border-radius: 0!important;
+	padding: 5px 10px !important;
+	margin: 1px 0!important;
 }
 
 .commentarea .comment {
-	margin: 2px 0 -1px 5px!important;
-	padding: 5px 0 0 10px!important;
+	margin: 3px 0 -2px 5px!important;
+	padding: 1px 0 1px 5px!important;
 	border: 1px solid #fafafa!important;
 }
 
-.commentarea .sitetable.nestedlisting > .comment:first-child {
-	margin-top: 4px!important;
-}
-
 .commentarea .sitetable.nestedlisting > .comment {
-	margin: 1px 0 0 !important;
+	margin: 4px 0 0 !important;
 	border: 1px solid #fafafa!important;
 }
 
@@ -898,9 +857,6 @@ body div.content > form > div .commentarea .even {
 	.nestedlisting > .comment .comment .comment {
 		margin-right: 0 !important;
 	}
-
-.comment .collapsed {
-}
 
 .comment .noncollapsed {
 	padding-bottom: 5px;
@@ -923,11 +879,44 @@ body div.content > form > div .commentarea .even {
 	font-style: normal;
 }
 
+.commentarea .flat-list.buttons {
+	display: block;
+	position: relative;
+}
+
+	.commentarea .flat-list.buttons .toggleChildren {
+		position: absolute;
+		right: 0px;
+	}
+
 .comment .child,
 .comment .showreplies {
 	border: 0 none;
 }
 
+.morecomments {
+	display: inline-block;
+	margin: 4px 0 -7px;
+}
+
+	.morecomments a.button,
+	.morecomments a .gray {
+		display: inline-block;
+		margin: 0;
+	}
+
+.comment .morechildren {
+	margin-bottom: -2px;
+}
+
+.commentarea > .sitetable > .entry {
+	padding-left: 0px;
+}
+
+.commentarea > .sitetable > .morechildren .morecomments {
+	margin: 4px 0 0;
+	padding-left: 0px;
+}
 /* --  A.4.8. Sort By Dropdown ---------- */
 
 div.drop-choices.lightdrop.inuse {
@@ -972,7 +961,7 @@ div.drop-choices.lightdrop.inuse {
 div.sidebox.create {
 	position: absolute;
 	right: 30px;
-	bottom: 121px;
+	bottom: 110px;
 	display: block;
 	border: 0 solid #fafafa!important;
 	background: none transparent!important;
@@ -1027,6 +1016,7 @@ div.sidebox.create {
 /* --  A.5.2 Infobar, MoreInfo and MoreSearch Divs ---------- */
 
 .infobar {
+	margin: 5px 0;
 }
 
 	.infobar .md {
@@ -1253,15 +1243,14 @@ body .disabled .morelink a:hover {
 	}
 
 .footer {
-	margin: 0px 5px 5px;
+	margin: -15px 5px 5px;
 	border: 0 none;
-	top: -15px;
-	position: relative;
 }
 
 	.footer .col {
 		border: 0 none;
 	}
+
 
 /* --  A.6.1. Reddit Copyright Text ---------- */
 
@@ -1276,10 +1265,10 @@ body .disabled .morelink a:hover {
 /* ~~  A.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~ */
 
 .menuarea {
-	overflow: hidden;
-	margin: 0 -2px;
+	margin: 0!important;
 	padding: 10px;
 	border-bottom: 1px dotted;
+	font-size: 11px;
 }
 
 #image-upload {
@@ -1292,6 +1281,7 @@ body .disabled .morelink a:hover {
 	}
 
 ul#image-preview-list {
+	overflow: hidden;
 	margin: 20px 0 20px 20px;
 	font-size: larger;
 }
@@ -1319,7 +1309,6 @@ body.wiki-page .pageactions {
 }
 
 body.wiki-page .wiki-page-content {
-	clear: both;
 	margin: 0 15px 15px;
 	border-top: 1px dotted;
 }
@@ -1354,11 +1343,18 @@ form#newlink {
 
 /* ~~  A.8. RES Optimisation ~~~~~~~~~~~~~ */
 
-.keyHighlight, .lcTagged {
+.keyHighlight,
+.entry.RES-keyNav-activeElement {
 	outline: 1px dotted!important;
 	border: 0 !important;
-	border-right: 2px solid #fafafa !important;
 }
+
+	.entry.RES-keyNav-activeElement div.md,
+	.commentarea .entry.RES-keyNav-activeElement div.noncollapsed,
+	.entry.RES-keyNav-activeElement .usertext-body {
+		outline: none!important;
+		border: 0 !important;
+	}
 
 .keyNavAnnotation {
 }
@@ -1377,32 +1373,18 @@ div.userbarHide {
 	content: "|||";
 }
 
-.morecomments {
-	display: inline-block;
-	margin: 4px 0 -7px;
-}
-
-	.morecomments a.button,
-	.morecomments a .gray {
-		display: inline-block;
-		margin: 0;
-	}
-
-shinebar + body > #RESMainGearOverlay,
-shinebar + body > #RESAccountSwitcherIconOverlay,
-shinebar + body > #RESAccountSwitcherDropdown,
-shinebar + body > #RESPrefsDropdown {
-	margin-top: -30px;
+button.RESBigEditorPop.blueButton {
+	margin: 7px 0 0 12px;
+	padding: 5px;
 }
 /* --  A.8.1. Progress Indicator and Page marker for RES mode ---------- */
 
 #progressIndicator.neverEndingReddit,
 div.NERPageMarker,
 #NERFail {
-	margin: 0 -5px;
+	margin: 0;
 	padding: 10px 0;
 	width: auto;
-	border: 1px solid #fafafa;
 	font-weight: bold;
 	font-size: 20px;
 	letter-spacing: -1px;
@@ -1421,40 +1403,40 @@ div.NERPageMarker,
 /* ~~  A.9. Sidebar Boxes ~~~~~~~~~~~~~ */
 /* --  A.9.1. Boxes  ---------- */
 
-.side blockquote {
+.side .md blockquote {
 	position: relative;
 	margin: 5px 0 10px;
 	padding: 5px 10px 10px 5px;
 	border: 1px solid #fafafa;
 }
 
-	.side blockquote blockquote {
+	.side .md blockquote blockquote {
 		margin: 5px 0 0 5px;
 	}
 
-	.side blockquote table {
+	.side .md blockquote table {
 		margin: 5px -11px 5px -6px;
-		min-width: 299px;
+		min-width: 300px;
 		max-width: 300px;
 	}
 
-		.side blockquote table:last-child {
+		.side .md blockquote table:last-child {
 			margin-bottom: -11px;
 		}
 
-.side .md blockquote + hr,
-.side .md blockquote + h3,
-.side .md blockquote + h4,
-.side .md blockquote + h5,
-.side .md blockquote + h6 {
-	margin: 0 0 5px 0;
-	width: 0;
-	height: 1px;
-}
+	.side .md blockquote + hr,
+	.side .md blockquote + h3,
+	.side .md blockquote + h4,
+	.side .md blockquote + h5,
+	.side .md blockquote + h6 {
+		margin: 0 0 5px 0;
+		width: 0;
+		height: 1px;
+	}
 
-.side blockquote h1 ~ p {
-	margin-left: 10px;
-}
+	.side .md blockquote h1 ~ p {
+		margin-left: 10px;
+	}
 
 .side h4 + blockquote p,
 .side h5 + blockquote p,
@@ -1468,7 +1450,7 @@ div.NERPageMarker,
 	margin: 5px;
 }
 
-.side blockquote + p,
+.side .md blockquote + p,
 .side p + blockquote,
 .side p + h4,
 .side p + h5,
@@ -1635,39 +1617,32 @@ h1, h2, h3 {
 }
 
 a,
+.thing .title,
 .thing .title.loggedin {
 	color: #006ef4;
 }
 
 	a:visited,
-	.thing .title.loggedin:visited,
 	.comment .md p > a:visited {
 		color: #810ba8;
 	}
 
+	.thing .title:visited,
+	.thing .title.loggedin:visited,
+	.thing .title.loggedin.click:visited,
+	.tagline a {
+		color: #810ba8;
+	}
+
 	a:hover,
+	.thing .title:hover,
 	.thing .title.loggedin:hover {
 		color: #00F;
 	}
 
 	a:active,
+	.thing .title:active,
 	.thing .title.loggedin:active {
-		color: #861010;
-	}
-
-.buttons li a {
-	color: #888 !important;
-}
-
-	.buttons li a:hover {
-		color: #08c !important;
-	}
-
-	.buttons li a:visited {
-		color: #888 !important;
-	}
-
-	.buttons li a:active {
 		color: #861010;
 	}
 
@@ -1699,6 +1674,11 @@ hr,
 		box-shadow: 0 1px 4px 1px #d1d5c6;
 	}
 
+.md blockquote,
+.help blockquote {
+	border-color: #a7acb9;
+	border-left-color: #5ca2e8;
+}
 /* --  B.1.1. Tables ---------- */
 
 .md table {
@@ -1790,22 +1770,48 @@ a[href='/s'] {
 .btn .button {
 }
 
+.entry .flat-list.buttons a[onclick*='reply'] {
+	border-color: #efeded;
+	border-radius: 2px;
+	background-color: #ccc;
+	background-image: -webkit-linear-gradient(top,#faf5f5,#f5f9f9);
+	background-image: -moz-linear-gradient(top,#faf5f5,#f5f9f9);
+	background-image: linear-gradient(top,#faf5f5,#f5f9f9);
+	color: #e1e2e2!important;
+	font-size: 11px;
+	font-family: helvetica,arial,"nimbus sans l",sans-serif;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.entry:hover .flat-list.buttons a[onclick*='reply'],
+.entry.keyHighlight .flat-list.buttons a[onclick*='reply'],
+.entry.RES-keyNav-activeElement .flat-list.buttons a[onclick*='reply'] {
+	border-color: #3079ed;
+	background-color: #63b7f8;
+	background-image: -webkit-linear-gradient(top,#63b7f8,#4b8adb);
+	background-image: -moz-linear-gradient(top,#63b7f8,#4b8adb);
+	background-image: linear-gradient(top,#63b7f8,#4b8adb);
+	color: #fff!important;
+}
+
 .btn,
 button,
 .button,
+button.blueButton,
 input[type='submit'],
-.side a[href*='/#btn'],
-.entry .buttons a[onclick*='reply'] {
+.side a[href*='/#btn'] {
 	border-color: #3079ed;
 	border-radius: 2px;
 	background-color: #63b7f8;
 	background-image: -webkit-linear-gradient(top,#63b7f8,#4b8adb);
 	background-image: -moz-linear-gradient(top,#63b7f8,#4b8adb);
 	background-image: linear-gradient(top,#63b7f8,#4b8adb);
-	color: #fff!important;
+	color: #fff;
 	font-size: 13px;
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
 	text-shadow: 1px 1px 2px #0f0f0f;
+	text-decoration: none;
 }
 
 	.btn a {
@@ -1815,8 +1821,10 @@ input[type='submit'],
 	.btn:hover,
 	button:hover,
 	.button:hover,
+	button.blueButton:hover,
 	input[type='submit']:hover,
-	.side a[href*='/#btn']:hover .entry .buttons a[onclick*='reply'] {
+	.side a[href*='/#btn']:hover,
+	.entry .flat-list.buttons a[onclick*='reply']:hover {
 		border-color: #08c;
 		background-color: #357ae8;
 		background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
@@ -1826,23 +1834,59 @@ input[type='submit'],
 	}
 
 	.btn.right,
-	button.cancel {
+	button.cancel,
+	.usertext span[class*='toggle'],
+	button.RESBigEditorPop {
 		background: none transparent;
 	}
 
-		.btn.right:hover,
-		button.cancel:hover {
-			border-color: transparent;
+		.btn.right a,
+		button.cancel,
+		.usertext span[class*='toggle'] a,
+		button.RESBigEditorPop {
+			border: 0;
+			color: #888;
 			background: none transparent;
-			color: #56a6f7;
+			text-shadow: 1px 1px 2px #eee;
+			text-decoration: underline;
 		}
 
+			.btn.right a:hover,
+			button.cancel:hover,
+			.usertext span[class*='toggle'] a:hover,
+			button.RESBigEditorPop:hover {
+				background: none transparent;
+				color: #56a6f7;
+			}
+
+.flat-list.buttons li a,
+.flat-list.buttons li a:visited {
+	color: #ebe2e2;
+}
+
+	.flat-list.buttons li a:hover {
+		color: #e00000;
+	}
+
+	.flat-list.buttons li a:active {
+		color: #5ca2e8;
+	}
+
+.entry:hover > .flat-list.buttons > li a,
+.entry:focus > .flat-list.buttons > li a,
+.keyHighlight .flat-list.buttons > li a,
+.entry.RES-keyNav-activeElement .flat-list.buttons > li a,
+.noncollapsed:hover > .flat-list.buttons > li a,
+.flat-list.buttons > li a.comments,
+.flat-list.buttons > a.comments.click,
+.flat-list.buttons > a.comments:visited {
+	color: #777;
+}
 /* ~~  B.2. Top Sr-Bar ~~~~~~~~~~~~~ */
 
 #sr-header-area {
-	border-bottom-color: #fff;
-	background-color: #fff;
-	box-shadow: -5px 1px 17px -1px #fff;
+	background-color: transparent;
+	box-shadow: -5px 1px 10px -1px #fff;
 }
 
 	#sr-header-area .separator {
@@ -1887,17 +1931,9 @@ input[type='submit'],
 
 #sr-header-area .drop-choices {
 	border-color: #d2d2d2;
-	border-radius: 5px;
-	background-color: #ffffff !important;
+	border-radius: 2px;
+	background-color: #000 !important;
 }
-
-	#sr-header-area .drop-choices a.choice {
-		background-color: #ffffff;
-	}
-
-		#sr-header-area .drop-choices a.choice:hover {
-			background-color: #ffffff;
-		}
 
 /* ~~  B.3. Header ~~~~~~~~~~~~~ */
 
@@ -1924,9 +1960,6 @@ input[type='submit'],
 
 /* --  B.3.1. User Controls ---------- */
 
-span.user {
-}
-
 a.pref-lang {
 }
 
@@ -1934,10 +1967,16 @@ a.pref-lang {
 }
 
 #header-bottom-right {
-	background-color: #fff;
+	background-color: transparent;
 }
 
-	#header-bottom-right a {
+	#header-bottom-right a,
+	#header-bottom-right span {
+		color: #2154a3;
+	}
+
+	#header-bottom-right:hover {
+		background-color: #def0fe;
 	}
 
 	#header-bottom-right.res-navTop {
@@ -1989,9 +2028,6 @@ a.pref-lang {
 	box-shadow: 0 4px 6px #bbb;
 }
 
-	#header-img-a img {
-	}
-
 /* --  B.3.5. Header Nav ---------- */
 
 ul.tabmenu {
@@ -2013,6 +2049,7 @@ ul.tabmenu {
 			ul.tabmenu li a:hover,
 			ul.tabmenu li.selected a:hover {
 				color: #fff;
+				background-color: #def0fe;
 			}
 
 			ul.tabmenu li.selected a,
@@ -2032,8 +2069,13 @@ ul.tabmenu {
 div.content {
 	border-color: #fdfdfd;
 	background-color: #fdfdfe;
-	box-shadow: 0 1px 4px 1px #cccccc;
+	box-shadow: 0 1px 3px 1px #cccccc;
 }
+
+	div.content .linklisting,
+	div.content > .commentarea > .linklisting {
+		border-color: #fbfbf9;
+	}
 
 body.listing-page > div.content,
 body.single-page > div.content,
@@ -2042,17 +2084,11 @@ body.messages-page > div.content {
 	background-color: transparent;
 }
 
-	body.listing-page > div.content,
-	body.messages-page > div.content,
 	body.search-page > div.content > .linklisting,
 	body.single-page > div.content > .linklisting {
-		border-color: #fdfdfd;
-		box-shadow: 0 1px 4px 1px #cccccc;
 	}
 
 	body.single-page > div.content > .commentarea {
-		border-color: #fdfdfd;
-		box-shadow: 0 1px 4px 1px #cccccc;
 	}
 
 	body.single-page > div.content > .linklisting .link {
@@ -2077,19 +2113,24 @@ body.other-discussions-page > div.content {
 
 /* --  B.4.2. Links (Post) ---------- */
 
-.link.promotedlink.promoted {
+.thing.link.promotedlink.promoted {
 	border-color: #d2d2d2;
+	background-color: #fefff0;
+}
+
+.linklisting .thing.link {
+	background-color: #fff;
+	border-color: #f7f7f7;
+	box-shadow: 0 1px 4px 0 #ccc;
 }
 
 .linklisting .even {
-	border-top-color: #f1f1f1;
 	background-color: #fbfbfb;
 	background-image: -moz-linear-gradient(left,#fefefe,#fbfbfb);
 	background-image: -webkit-linear-gradient(left, #fefefe, #fbfbfb);
 }
 
 .linklisting .odd {
-	border-top-color: #f1f1f1;
 	background-color: #fefefe;
 	background-image: -moz-linear-gradient(left,#fdfdfd,#fefefe);
 	background-image: -webkit-linear-gradient(left, #fdfdfd, #fefefe);
@@ -2112,7 +2153,6 @@ body.other-discussions-page > div.content {
 		border-radius: 25px;
 		background-color: transparent;
 		/* box-shadow: inset -6px 0 9px -1px #dadac8; */
-		text-align: left;
 	}
 
 	.link .midcol {
@@ -2124,11 +2164,7 @@ body.other-discussions-page > div.content {
 	.link.compressed .thumbnail {
 	}
 
-	.link .entry {
-	}
-
 	.link .title {
-		color: #2482fa;
 	}
 
 	.link.self .usertext-body .md p,
@@ -2139,18 +2175,8 @@ body.other-discussions-page > div.content {
 		background-color: transparent;
 	}
 
-.entry .buttons {
-}
-
-	.entry .buttons li a {
-	}
-
-	.entry .buttons a[onclick*='reply'] {
-		font-size: 11px;
-	}
-
 .panestack-title {
-	border-bottom-color: gray;
+	border-bottom-color: #ccc;
 }
 
 	.panestack-title .title {
@@ -2182,27 +2208,6 @@ div.usertext-edit {
 	.usertext button {
 	}
 
-	.usertext span[class*='toggle'],
-	.btn.right {
-		background-color: transparent;
-	}
-
-		.usertext span[class*='toggle'] a,
-		.btn.right a,
-		button.cancel {
-			border: 0;
-			color: #888!important;
-			text-decoration: underline;
-			text-shadow: 1px 1px 2px #eee;
-		}
-
-			.usertext span[class*='toggle'] a:hover,
-			.btn.right a:hover,
-			button.cancel:hover {
-				color: #449ef8;
-				text-shadow: 1px 1px 2px #ddd;
-			}
-
 	.usertext table.markhelp {
 	}
 
@@ -2231,7 +2236,7 @@ ul.tabmenu.formtab {
 		}
 
 			ul.tabmenu.formtab li.selected a {
-				background-color: #5ca2e8;
+				background-color: #5ca2e8!important;
 			}
 
 #noresults {
@@ -2268,11 +2273,7 @@ body div.content > form > div .commentarea .even {
 	background-color: transparent;
 }
 
-.commentarea .menuarea {
-	background-color: transparent;
-}
-
-.commentarea p {
+.commentarea p.tagline {
 }
 
 .commentarea h1,
@@ -2299,7 +2300,6 @@ body div.content > form > div .commentarea .even {
 }
 
 .commentarea .nestedlisting {
-	background-color: #fdfdfd;
 }
 
 .commentarea .comment {
@@ -2308,11 +2308,9 @@ body div.content > form > div .commentarea .even {
 	border-radius: 0 !important;
 }
 
-.commentarea .sitetable.nestedlisting > .comment:first-child {
-}
-
 .commentarea .sitetable.nestedlisting > .comment {
 	border-color: #eeeeee #e0e0e0 #e0e0e0 #e0e0e0!important;
+	box-shadow: 1px 1px 3px -1px #cccccc;
 }
 
 .even.comment {
@@ -2334,12 +2332,6 @@ body div.content > form > div .commentarea .even {
 	.nestedlisting > .comment .comment .comment {
 		background-color: #fdfdfd!important;
 	}
-
-.comment .collapsed {
-}
-
-.comment .noncollapsed {
-}
 
 .comment a.expand {
 	color: #888 !important;
@@ -2447,6 +2439,11 @@ body.search-page .menuarea {
 /* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs ---------- */
 
 .infobar {
+	border-color: #acd9fc;
+	background-color: #eaf4fc;
+	background-image: -webkit-linear-gradient(top,#eaf4fc,#eff8ff);
+	background-image: -moz-linear-gradient(top,#eaf4fc,#eff8ff);
+	background-image: linear-gradient(top,#eaf4fc,#eff8ff);
 }
 
 	.infobar .md {
@@ -2557,10 +2554,10 @@ body:not(.listing-page) .morelink,
 body:not(.listing-page) .morelink:hover {
 	border-color: #5ba2fd;
 	border-radius: 2px;
-	background-color: #c6e4fc;
-	background-image: -webkit-linear-gradient(top,#c6e4fc,#addafd);
-	background-image: -moz-linear-gradient(top,#c6e4fc,#addafd);
-	background-image: linear-gradient(top,#c6e4fc,#addafd);
+	background-color: #acd9fc;
+	background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
+	background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);
+	background-image: linear-gradient(top,#acd9fc,#8ccbfc);
 	color: #2154a3;
 	text-shadow: 1px 1px 2px #eee;
 }
@@ -2625,18 +2622,6 @@ body .disabled .morelink:hover {
 	background-color: transparent !important;
 }
 
-	.sidecontentbox a {
-		color: #08c !important;
-	}
-
-		.sidecontentbox a:hover {
-			color: #08c !important;
-		}
-
-		.sidecontentbox a:visited {
-			color: #08c !important;
-		}
-
 	.sidecontentbox .title h1 {
 		color: #888;
 	}
@@ -2667,6 +2652,11 @@ body .disabled .morelink:hover {
 	background-color: transparent;
 }
 
+
+	.footer .flat-vert.title {
+		color: #2154a3;
+	}
+
 /* --  B.6.1. Reddit Copyright Text ---------- */
 
 .bottommenu {
@@ -2682,9 +2672,12 @@ body .disabled .morelink:hover {
 
 .menuarea {
 	border-bottom-color: #d2d2d2;
-	background-color: #fdfdfe;
+	background-color: transparent;
 }
 
+.tabpane-content {
+	border-color: #5ca2e8;
+}
 /* --  B.7.1. Wiki Page ---------- */
 
 body.wiki-page h1.wikititle {
@@ -2710,7 +2703,7 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
 		color: #323638;
-		text-shadow: 0px 0px 0px #fdfdfe,0px 0px 1px #585858;
+		text-shadow: 0 0 0 #fdfdfe,0 0 1px #585858;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
@@ -2720,15 +2713,12 @@ body.wiki-page .wiki-page-content {
 
 /* ~~  B.8. RES Optimisation ~~~~~~~~~~~~~ */
 
-.lcTagged {
-	outline: 0 !important;
-	border: 0 !important;
-	background-color: transparent !important;
-}
-
-.keyHighlight {
+.keyHighlight,
+.entry.RES-keyNav-activeElement,
+.entry.RES-keyNav-activeElement div.md,
+.entry.RES-keyNav-activeElement .usertext-body,
+.commentarea .entry.RES-keyNav-activeElement div.noncollapsed {
 	outline-color: #ffe0a5 !important;
-	border-right-color: #ffe0a5 !important;
 	background: none transparent !important;
 }
 
@@ -2748,7 +2738,7 @@ div#userbarToggle {
 		border-color: #e0e0e0;
 		background-color: #ececec;
 		background-image: none;
-		color: #777;
+		color: #777!important;
 		text-shadow: 1px 1px 2px #eee;
 	}
 
@@ -2757,10 +2747,9 @@ div#userbarToggle {
 p#progressIndicator.neverEndingReddit,
 div.NERPageMarker,
 #NERFail {
-	border-width: 1px 0;
-	border-color: #d2d2d2;
+	border-width: 0;
 	border-radius: 0;
-	background-color: #fbfbf9;
+	background-color: transparent;
 	font-size: 20px;
 }
 
@@ -2772,13 +2761,13 @@ div.NERPageMarker,
 /* ~~  B.9. Sidebar Boxes ~~~~~~~~~~~~~ */
 /* --  B.9.1 Boxes ---------- */
 
-.side blockquote {
+.side .md blockquote {
 	border-color: #ccc;
 	border-radius: 2px;
 	background-color: #f5f5f5;
 }
 
-	.side blockquote h1 {
+	.side .md blockquote h1 {
 		background-color: transparent;
 	}
 
@@ -2792,10 +2781,10 @@ div.NERPageMarker,
 .side .spacer .md h2,
 .side .spacer .md h3 {
 	background: none transparent;
-	text-shadow: 0 0 1px #585858;
+	text-shadow: 0 0 1px #fdfdfe,0 1px 1px #585858;
 }
 
-.side blockquote + p,
+.side .md blockquote + p,
 .side p + blockquote,
 .side p + h4,
 .side p + h5,
@@ -2815,7 +2804,7 @@ div.NERPageMarker,
 
 /* --  B.9.2 Colored Boxes ---------- */
 
-.side blockquote a[href*='#icon-']:before {
+.side .md blockquote a[href*='#icon-']:before {
 	border-radius: 3px;
 	background-color: #5c5c5c;
 	background-image: -moz-linear-gradient(top, #666666, #4d4d4d);
@@ -2832,7 +2821,7 @@ div.NERPageMarker,
 }
 
 	.side h3 + blockquote a[href*='#icon-']:before,
-	.side blockquote a[href$='blue']:before {
+	.side .md blockquote a[href$='blue']:before {
 		background-color: #a2e5f9;
 		background-image: -moz-linear-gradient(top,#50a3fd,#1c89d1);
 		background-image: -webkit-linear-gradient(top,#50a3fd,#1c89d1);
@@ -2849,7 +2838,7 @@ div.NERPageMarker,
 }
 
 	.side h4 + blockquote a[href*='#icon-']:before,
-	.side blockquote a[href$='green']:before {
+	.side .md blockquote a[href$='green']:before {
 		background-color: #5dd15d;
 		background-image: -moz-linear-gradient(top, #6de46d, #39c739);
 		background-image: -webkit-linear-gradient(top, #6de46d, #39c739);
@@ -2865,7 +2854,7 @@ div.NERPageMarker,
 }
 
 	.side h5 + blockquote a[href*='#icon-']:before,
-	.side blockquote a[href$='yellow']:before {
+	.side .md blockquote a[href$='yellow']:before {
 		background-color: #ffce36;
 		background-image: -moz-linear-gradient(top, #fde000, #fcca2e);
 		background-image: -webkit-linear-gradient(top, #fde000, #fcca2e);
@@ -2881,7 +2870,7 @@ div.NERPageMarker,
 }
 
 	.side h6 + blockquote a[href*='#icon-']:before,
-	.side blockquote a[href$='red']:before {
+	.side .md blockquote a[href$='red']:before {
 		background-color: #e86537;
 		background-image: -moz-linear-gradient(top, #ef784e, #dd4814);
 		background-image: -webkit-linear-gradient(top, #ef784e, #dd4814);
@@ -2914,7 +2903,8 @@ body.res-nightmode {
 		color: #ff910b;
 	}
 
-		body.res-nightmode a:visited {
+		body.res-nightmode a:visited,
+		body.res-nightmode .comment .md p > a:visited {
 			color: #7b9f6f;
 		}
 
@@ -2926,24 +2916,75 @@ body.res-nightmode {
 			color: #79efef;
 		}
 
-	body.res-nightmode .buttons li a {
-		color: #777!important;
+	body.res-nightmode .roundfield,
+	body.res-nightmode .linefield,
+	body.res-nightmode .content.submit .roundfield.info-notice {
+		border-color: #582b2b;
+		border-radius: 2px;
+		background-color: #000!important;
+		box-shadow: 0 0 1px 1px #333;
 	}
 
-		body.res-nightmode .buttons li a:hover {
+		body.res-nightmode .roundfield textarea,
+		body.res-nightmode .roundfield input[type=text],
+		body.res-nightmode .roundfield input[type=url],
+		body.res-nightmode .roundfield input[type=password],
+		body.res-nightmode .roundfield input[type=number],
+		body.res-nightmode .linefield textarea,
+		body.res-nightmode .linefield input[type=text],
+		body.res-nightmode .linefield input[type=password] {
+			border-color: #9b9999;
+			border-radius: 2px;
+			box-shadow: 0 1px 4px 1px #4b4949;
+		}
+
+	body.res-nightmode .md blockquote,
+	body.res-nightmode .help blockquote {
+		border-color: #d2d2d2;
+		border-left-color: #5ca2e8;
+	}
+
+	body.res-nightmode .entry .flat-list.buttons a[onclick*='reply'] {
+		border-color: #302f2f;
+		border-radius: 2px;
+		background-color: #222;
+		background-image: none;
+		color: #333!important;
+	}
+
+	body.res-nightmode .entry:hover .flat-list.buttons a[onclick*='reply'],
+	body.res-nightmode .entry.keyHighlight .flat-list.buttons a[onclick*='reply'],
+	body.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons a[onclick*='reply'] {
+		border-color: #3079ed;
+		background-color: #63b7f8;
+		background-image: -webkit-linear-gradient(top,#63b7f8,#4b8adb);
+		background-image: -moz-linear-gradient(top,#63b7f8,#4b8adb);
+		background-image: linear-gradient(top,#63b7f8,#4b8adb);
+		color: #fff!important;
+	}
+
+	body.res-nightmode .flat-list.buttons li a,
+	body.res-nightmode .flat-list.buttons li a:visited {
+		color: #333!important;
+	}
+
+		body.res-nightmode .flat-list.buttons li a:hover {
 			color: #f73!important;
 		}
 
-		body.res-nightmode .buttons li a:visited {
-			color: #777!important;
-		}
-
-		body.res-nightmode .buttons li a:active {
+		body.res-nightmode .flat-list.buttons li a:active {
 			color: #79efef;
 		}
 
-	body.res-nightmode .comment .md p > a:visited {
-		color: #6cf15a;
+	body.res-nightmode .entry:hover > .flat-list.buttons > li a,
+	body.res-nightmode .entry:focus > .flat-list.buttons > li a,
+	body.res-nightmode .keyHighlight .flat-list.buttons > li a,
+	body.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons > li a,
+	body.res-nightmode .noncollapsed:hover > .flat-list.buttons > li a,
+	body.res-nightmode .flat-list.buttons > li a.comments,
+	body.res-nightmode .flat-list.buttons > a.comments.click,
+	body.res-nightmode .flat-list.buttons > a.comments:visited {
+		color: #777!important;
 	}
 
 	body.res-nightmode #sr-header-area {
@@ -2990,17 +3031,21 @@ body.res-nightmode {
 		color: black;
 	}
 
-	body.res-nightmode #sr-header-area .drop-choices {
+	body.res-nightmode #sr-header-area .drop-choices,
+	body.res-nightmode #RESSubredditGroupDropdown,
+	body.res-nightmode #srList {
 		border: none!important;
-		border-radius: 5px;
-		background-color: #000000!important;
+		border-radius: 3px;
+		background-color: #393939!important;
 	}
 
 		body.res-nightmode #sr-header-area .drop-choices a.choice {
 			background-color: #000000;
 		}
 
-			body.res-nightmode #sr-header-area .drop-choices a.choice:hover {
+			body.res-nightmode #sr-header-area .drop-choices a.choice:hover,
+			body.res-nightmode #RESSubredditGroupDropdown li:hover,
+			body.res-nightmode #srList tr:hover {
 				background-color: #000000;
 			}
 
@@ -3062,9 +3107,9 @@ body.res-nightmode {
 		box-shadow: 0 4px 6px #444;
 	}
 
-	body.res-nightmode #header ul.tabmenu li a,
-	body.res-nightmode #header ul.tabmenu li a:visited,
-	body.res-nightmode #header ul.tabmenu li.selected a {
+	body.res-nightmode ul.tabmenu li a,
+	body.res-nightmode ul.tabmenu li a:visited,
+	body.res-nightmode ul.tabmenu li.selected a {
 		background-color: #414141;
 		background-image: -webkit-linear-gradient(top,#696969,#414141);
 		background-image: -moz-linear-gradient(top,#696969,#414141);
@@ -3072,8 +3117,8 @@ body.res-nightmode {
 		color: #ff910b;
 	}
 
-		body.res-nightmode #header ul.tabmenu li.selected a,
-		body.res-nightmode #header ul.tabmenu li.selected a:visited {
+		body.res-nightmode ul.tabmenu li.selected a,
+		body.res-nightmode ul.tabmenu li.selected a:visited {
 			padding-bottom: 10px!important;
 			border: 1px solid #a35d17!important;
 			background-color: #040406;
@@ -3081,38 +3126,31 @@ body.res-nightmode {
 			box-shadow: 0 13px 0 -9px #a35d17;
 		}
 
-			body.res-nightmode #header ul.tabmenu li a:hover,
-			body.res-nightmode #header ul.tabmenu li.selected a:hover {
+			body.res-nightmode ul.tabmenu li a:hover,
+			body.res-nightmode ul.tabmenu li.selected a:hover {
 				color: #e06935;
 			}
 
 	body.res-nightmode div.content {
 		border-color: #202020;
-		background-color: #1b1b1b !important; /*020201;*/
+		background-color: #1b1b1b !important;
 		box-shadow: 0 1px 4px 3px #000;
 	}
+
+		body.res-nightmode div.content .linklisting,
+		body.res-nightmode div.content > .commentarea > .linklisting {
+			border: 1px solid #202020;
+		}
 
 	body.res-nightmode.listing-page > div.content,
 	body.res-nightmode.single-page > div.content,
 	body.res-nightmode.search-page > div.content,
 	body.res-nightmode.messages-page > div.content {
-		border: 0;
 		background-color: transparent!important;
 		box-shadow: none;
+		border: 0 none;
+		padding: 0;
 	}
-
-		body.res-nightmode.listing-page > div.content,
-		body.res-nightmode.messages-page > div.content,
-		body.res-nightmode.search-page > div.content > .linklisting,
-		body.res-nightmode.single-page > div.content > .linklisting {
-			border-color: #202020;
-			box-shadow: 0 1px 4px 3px #000;
-		}
-
-		body.res-nightmode.single-page > div.content > .commentarea {
-			border-color: #202020;
-			box-shadow: 0 1px 4px 3px #000;
-		}
 
 		body.res-nightmode.single-page > div.content > .linklisting .link {
 			border-radius: 0;
@@ -3121,42 +3159,34 @@ body.res-nightmode {
 			background-image: -webkit-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
 		}
 
+	body.res-nightmode .linklisting .thing.link {
+		border-color: #3a3939;
+		box-shadow: 0 1px 12px -1px #000;
+		margin: 0;
+	}
+
 	body.res-nightmode .linklisting .even {
-		border: 0 !important;
-		border-top: 1px solid #0e0e0e;
 		background-color: #262626;
 		background-image: -moz-linear-gradient(left,#222,#262626);
 		background-image: -webkit-linear-gradient(left,#222,#262626);
 	}
 
 	body.res-nightmode .linklisting .odd {
-		border: 0 !important;
-		border-top: 1px solid #0e0e0e;
 		background-color: #1e1e1e;
 		background-image: -moz-linear-gradient(left,#222,#1e1e1e);
 		background-image: -webkit-linear-gradient(left,#222,#1e1e1e);
 	}
 
-	body.res-nightmode .linklisting .even:first-child {
-		border-top: 0 !important;
-	}
-
-	body.res-nightmode .linklisting .odd:first-child {
-		border-top: 0 !important;
-	}
-
-	body.res-nightmode .link .rank {
-		border-radius: 25px;
-		background-color: transparent;
-		text-align: left;
+	body.res-nightmode .link.last-clicked {
+		border-width: 1px 0 0;
+		background-color: #0a0a0a;
+		background-image: -moz-linear-gradient(left,#1a1a1a,#111);
+		background-image: -webkit-linear-gradient(left,#1a1a1a,#111);
 	}
 
 	body.res-nightmode .link .usertext .md {
 		border: 0 none;
 		background-color: transparent;
-	}
-
-	body.res-nightmode .entry .buttons li a {
 	}
 
 	body.res-nightmode .panestack-title {
@@ -3172,35 +3202,9 @@ body.res-nightmode {
 		border-radius: 0;
 	}
 
-	body.res-nightmode .usertext span[class*="toggle"],
-	body.res-nightmode .btn.right {
-		border: 0 none;
-		background-color: transparent!important;
-	}
-
-		body.res-nightmode .usertext span[class*="toggle"] a,
-		body.res-nightmode .btn.right a {
-			color: #777;
-			text-decoration: underline;
-			text-shadow: 1px 1px 2px #111;
-		}
-
-			body.res-nightmode .usertext span[class*="toggle"] a:hover,
-			body.res-nightmode .btn.right a:hover {
-				color: #bb6107;
-				text-shadow: 1px 1px 2px #222;
-			}
-
 	body.res-nightmode .formtabs-content .infobar {
 		color: #ddd;
 		text-shadow: none;
-	}
-
-	body.res-nightmode .link.last-clicked {
-		border-width: 1px 0 0;
-		background-color: #0a0a0a;
-		background-image: -moz-linear-gradient(top,#040404,#0a0a0a);
-		background-image: -webkit-linear-gradient(top,#040404,#0a0a0a);
 	}
 
 	body.res-nightmode .nextprev {
@@ -3217,19 +3221,19 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .commentarea .nestedlisting {
-		background-color: #202020;
 	}
 
 	body.res-nightmode .commentarea .comment {
 		border: 1px solid #111!important;
-		border-color: #4f4f52 #4f4f52 #2d2d2d #4f4f52!important;
+		border-color: #2d2d2d!important;
 		border-right: 0 !important;
 		border-radius: 0 !important;
 	}
 
 	body.res-nightmode .commentarea .sitetable.nestedlisting > .comment {
 		border: 1px solid #111!important;
-		border-color: #1f1f1f #2d2d2d #2d2d2d #1f1f1f!important;
+		border-color: #2d2d2d!important;
+		box-shadow: 1px 1px 3px -1px #000;
 	}
 
 	body.res-nightmode .even.comment {
@@ -3403,6 +3407,7 @@ body.res-nightmode {
 	body.res-nightmode .morelink,
 	body.res-nightmode .morelink:hover {
 		border-color: #bb6107;
+		border-radius: 2px!important;
 		background-color: #083e5c!important;
 		background-image: -webkit-linear-gradient(top,#546477,#083e5c)!important;
 		background-image: -moz-linear-gradient(top,#546477,#083e5c)!important;
@@ -3454,18 +3459,6 @@ body.res-nightmode {
 	body.res-nightmode .sidecontentbox {
 		background-color: transparent!important;
 	}
-
-		body.res-nightmode .sidecontentbox a {
-			color: #f73!important;
-		}
-
-			body.res-nightmode .sidecontentbox a:hover {
-				color: #f73!important;
-			}
-
-			body.res-nightmode .sidecontentbox a:visited {
-				color: #f73!important;
-			}
 
 		body.res-nightmode .sidecontentbox .title h1 {
 			color: #d2d2d2;
@@ -3548,18 +3541,18 @@ body.res-nightmode {
 		color: white;
 	}
 
-	body.res-nightmode .lcTagged {
-		outline: 0 !important;
-		border: 0 !important;
-		background-color: transparent!important;
-	}
-
-	body.res-nightmode .keyHighlight {
+	body.res-nightmode .keyHighlight,
+	body.res-nightmode .entry.RES-keyNav-activeElement {
 		outline: 1px dotted #e46700!important;
-		border: 0 !important;
-		border-right: 2px solid #e46700!important;
 		background: none transparent!important;
 	}
+
+		body.res-nightmode .entry.RES-keyNav-activeElement div.md,
+		body.res-nightmode .entry.RES-keyNav-activeElement .usertext-body,
+		body.res-nightmode .entry.RES-keyNav-activeElement div.noncollapsed {
+			outline: none!important;
+			background: none transparent!important;
+		}
 
 		body.res-nightmode .keyHighlight,
 		body.res-nightmode .keyHighlight .usertext-body,
@@ -3567,7 +3560,14 @@ body.res-nightmode {
 		body.res-nightmode .keyHighlight .usertext-body .md p,
 		body.res-nightmode .keyHighlight .noncollapsed,
 		body.res-nightmode .keyHighlight .noncollapsed .md,
-		body.res-nightmode .keyHighlight .noncollapsed .md p {
+		body.res-nightmode .keyHighlight .noncollapsed .md p,
+		body.res-nightmode .RES-keyNav-activeElement,
+		body.res-nightmode .RES-keyNav-activeElement .usertext-body,
+		body.res-nightmode .RES-keyNav-activeElement .usertext-body .md,
+		body.res-nightmode .RES-keyNav-activeElement .usertext-body .md p,
+		body.res-nightmode .RES-keyNav-activeElement .noncollapsed,
+		body.res-nightmode .RES-keyNav-activeElement .noncollapsed .md,
+		body.res-nightmode .RES-keyNav-activeElement .noncollapsed .md p {
 			background-color: transparent!important;
 		}
 
@@ -3587,10 +3587,9 @@ body.res-nightmode {
 
 	body.res-nightmode p#progressIndicator.neverEndingReddit,
 	body.res-nightmode div.NERPageMarker {
-		border: 1px solid #2d2d2d;
-		border-width: 1px 0;
+		border-width: 0;
 		border-radius: 0;
-		background-color: #040406;
+		background-color: transparent;
 		font-size: 20px;
 	}
 
@@ -3618,7 +3617,7 @@ body.res-nightmode {
 
 	body.res-nightmode .md ul,
 	body.res-nightmode .md ol {
-		background-color: transparent;
+		background-color: transparent!important;
 	}
 
 	body.res-nightmode .sidebox {
@@ -3628,10 +3627,11 @@ body.res-nightmode {
 	body.res-nightmode .btn,
 	body.res-nightmode button,
 	body.res-nightmode .button,
+	body.res-nightmode button.blueButton,
 	body.res-nightmode input[type="submit"],
 	body.res-nightmode .side a[href*="/#btn"],
 	body.res-nightmode form#newlink.submit button.btn {
-		border: none;
+		border: 1px solid #083e5c!important;
 		border-radius: 2px;
 		background-color: #083e5c!important;
 		background-image: -webkit-linear-gradient(top,#546477,#083e5c);
@@ -3651,24 +3651,43 @@ body.res-nightmode {
 		body.res-nightmode .btn:hover,
 		body.res-nightmode button:hover,
 		body.res-nightmode .button:hover,
+		body.res-nightmode button.blueButton:hover,
 		body.res-nightmode input[type="submit"]:hover,
 		body.res-nightmode .side a[href*="/#btn"]:hover {
 			border-color: #a95908!important;
 			background-color: #333!important;
-			background-image: -moz-linear-gradient(top,#4f4f52,#333333);
-			background-image: -webkit-linear-gradient(top,#4f4f52,#333333);
-			background-image: -o-linear-gradient(top,#4f4f52,#333333);
-			background-image: -ms-linear-gradient(top,#4f4f52,#333333);
-			background-image: linear-gradient(tobottom,#4f4f52,#333333);
+			background-image: -moz-linear-gradient(top,#4f4f52,#333333)!important;
+			background-image: -webkit-linear-gradient(top,#4f4f52,#333333)!important;
+			background-image: linear-gradient(tobottom,#4f4f52,#333333)!important;
 			color: #ddd!important;
 		}
 
 		body.res-nightmode .btn.right,
-		body.res-nightmode .btn.right:hover {
-			border-color: transparent!important;
+		body.res-nightmode button.cancel,
+		body.res-nightmode .usertext span[class*='toggle'],
+		body.res-nightmode button.RESBigEditorPop {
 			background: none transparent!important;
-			color: #a95908!important;
 		}
+
+			body.res-nightmode .btn.right a,
+			body.res-nightmode button.cancel,
+			body.res-nightmode .usertext span[class*='toggle'] a,
+			body.res-nightmode button.RESBigEditorPop {
+				border: 0!important;
+				background: none transparent!important;
+				color: #777!important;
+				text-shadow: 1px 1px 2px #222;
+				box-shadow: none;
+				text-decoration: underline;
+			}
+
+				body.res-nightmode .btn.right a:hover,
+				body.res-nightmode button.cancel:hover,
+				body.res-nightmode .usertext span[class*='toggle'] a:hover,
+				body.res-nightmode button.RESBigEditorPop:hover {
+					background: none transparent!important;
+					color: #a95908!important;
+				}
 
 	body.res-nightmode .usertext-body pre,
 	body.res-nightmode .md.wiki pre {
@@ -3721,18 +3740,18 @@ body.res-nightmode {
 			font-size: small;
 		}
 
-	body.res-nightmode .side blockquote {
+	body.res-nightmode .side .md blockquote {
 		border: 1px solid #6a6a6a;
 		border-radius: 2px;
 		background-color: #0a0a0a;
 	}
 
-		body.res-nightmode .side blockquote h1 {
+		body.res-nightmode .side .md blockquote h1 {
 			background-color: transparent;
 		}
 
-		body.res-nightmode .side blockquote pre,
-		body.res-nightmode .side blockquote code {
+		body.res-nightmode .side .md blockquote pre,
+		body.res-nightmode .side .md blockquote code {
 			color: #ddd!important;
 		}
 
@@ -3759,7 +3778,7 @@ body.res-nightmode {
 		background-color: transparent;
 	}
 
-	body.res-nightmode .side blockquote a[href*='#icon-']:before {
+	body.res-nightmode .side .md blockquote a[href*='#icon-']:before {
 		color: #111;
 	}
 
@@ -3792,6 +3811,14 @@ body.res-nightmode {
 
 	body.res-nightmode .side a[href*='#icon-'] {
 		color: #ccc;
+	}
+
+	body.res-nightmode .flair {
+		border-color: #585757;
+		border-radius: 2px;
+		background-color: #3c3b3b;
+		background-image: none;
+		color: #d2d2d2;
 	}
 
 /* [ C ]. Modules for specific customization ............ */
