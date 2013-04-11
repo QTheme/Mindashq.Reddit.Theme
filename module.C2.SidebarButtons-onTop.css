@@ -60,27 +60,7 @@ body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 
 /*-- C.2.2.end Dual buttons ---- */
 
-/*-- C.2.3 Custom button text --*/
-
-.sidebox.submit-link .morelink a,
-.sidebox.submit-text .morelink a {
-	content: '';
-	font-size: 0px;
-}
-
-	.sidebox.submit-link .morelink a:before {
-		content: 'Submit a Link'; /*Type your custom text here*/
-		font-size: 16px;
-	}
-
-	.sidebox.submit-text .morelink a:before {
-		content: 'Post a Note'; /*Type your custom text here*/
-		font-size: 16px;
-	}
-
-/*-- C.2.3.end Custom button text --*/
-
-/*-- C.2.4. Top Positioning with message to moderator text --*/
+/*-- C.2.3. Top Positioning with message to moderator text --*/
 .sidebox.submit {
 	position: absolute;
 	top: 105px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
@@ -108,6 +88,6 @@ body.res-nightmode .sidebox.submit-link .morelink .nub:before {
 body.search-page .side .titlebox {
 	margin-top: 70px;
 }
-/*-- C.2.4.end Top Positioning with message to moderator text --*/
+/*-- C.2.3.end Top Positioning with message to moderator text --*/
 
 /* --  C.2.end Sidebar Buttons on Top---- */
