@@ -1822,9 +1822,9 @@ div.NERPageMarker,
 		margin-left: 10px;
 	}
 
-.side h4 + blockquote p,
-.side h5 + blockquote p,
-.side h6 + blockquote p {
+.side .md h4 + blockquote p,
+.side .md h5 + blockquote p,
+.side .md h6 + blockquote p {
 	margin: 0 10px;
 	color: #000;
 }
@@ -1838,10 +1838,10 @@ div.NERPageMarker,
 }
 
 .side .md blockquote + p,
-.side p + blockquote,
-.side p + h4,
-.side p + h5,
-.side p + h6 {
+.side .md p + blockquote,
+.side .md p + h4,
+.side .md p + h5,
+.side .md p + h6 {
 	margin-top: 10px;
 }
 
@@ -1876,26 +1876,26 @@ div.NERPageMarker,
 /* --  A.9.2. Colored Boxes  ---------- */
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
 
-.side h3 + blockquote,
-.side h4 + blockquote,
-.side h5 + blockquote,
-.side h6 + blockquote {
+.side .md h3 + blockquote,
+.side .md h4 + blockquote,
+.side .md h5 + blockquote,
+.side .md h6 + blockquote {
 	display: block;
 	border: 1px solid #fafafa;
 }
 
-	.side h3 + blockquote > h1,
-	.side h4 + blockquote > h1,
-	.side h5 + blockquote > h1,
-	.side h6 + blockquote > h1,
-	.side h3 + blockquote > h2,
-	.side h4 + blockquote > h2,
-	.side h5 + blockquote > h2,
-	.side h6 + blockquote > h2,
-	.side h3 + blockquote > h3,
-	.side h4 + blockquote > h3,
-	.side h5 + blockquote > h3,
-	.side h6 + blockquote > h3 {
+	.side .md h3 + blockquote > h1,
+	.side .md h4 + blockquote > h1,
+	.side .md h5 + blockquote > h1,
+	.side .md h6 + blockquote > h1,
+	.side .md h3 + blockquote > h2,
+	.side .md h4 + blockquote > h2,
+	.side .md h5 + blockquote > h2,
+	.side .md h6 + blockquote > h2,
+	.side .md h3 + blockquote > h3,
+	.side .md h4 + blockquote > h3,
+	.side .md h5 + blockquote > h3,
+	.side .md h6 + blockquote > h3 {
 		font-size: 19px;
 	}
 
@@ -1910,12 +1910,12 @@ div.NERPageMarker,
 	text-shadow: none;
 }
 /*Blue*/
-.side h3 + blockquote {
+.side .md h3 + blockquote {
 	border-color: #aacdf1;
 	background-color: #d4ecfe;
 }
 
-	.side h3 + blockquote a[href*='#icon-']:before,
+	.side .md h3 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='blue']:before {
 		background-color: #a2e5f9;
 		background-image: -moz-linear-gradient(top,#50a3fd,#1c89d1);
@@ -1927,12 +1927,12 @@ div.NERPageMarker,
 	}
 
 /*Green*/
-.side h4 + blockquote {
+.side .md h4 + blockquote {
 	border-color: #45e745;
 	background-color: #e9ffe6;
 }
 
-	.side h4 + blockquote a[href*='#icon-']:before,
+	.side .md h4 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='green']:before {
 		background-color: #5dd15d;
 		background-image: -moz-linear-gradient(top, #6de46d, #39c739);
@@ -1943,12 +1943,12 @@ div.NERPageMarker,
 	}
 
 /*Yellow*/
-.side h5 + blockquote {
+.side .md h5 + blockquote {
 	border-color: #fae296;
 	background-color: #fffde6;
 }
 
-	.side h5 + blockquote a[href*='#icon-']:before,
+	.side .md h5 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='yellow']:before {
 		background-color: #ffce36;
 		background-image: -moz-linear-gradient(top, #fde000, #fcca2e);
@@ -1959,12 +1959,12 @@ div.NERPageMarker,
 	}
 
 /*Red*/
-.side h6 + blockquote {
+.side .md h6 + blockquote {
 	border-color: #ff9185;
 	background-color: #fef0f0;
 }
 
-	.side h6 + blockquote a[href*='#icon-']:before,
+	.side .md h6 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='red']:before {
 		background-color: #e86537;
 		background-image: -moz-linear-gradient(top, #ef784e, #dd4814);
