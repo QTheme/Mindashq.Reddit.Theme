@@ -56,12 +56,16 @@
 	text-align: right;
 }
 
-body.res-nightmode .sidebox.submit-link .morelink .nub:before {
-	border: 1px solid #222222;
-	background-color: #222222!important;
-	color: #bb6107;
-	text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
+body.res-nightmode .sidebox.submit-link .morelink .nub {
+	display: block!important;
 }
+
+	body.res-nightmode .sidebox.submit-link .morelink .nub:before {
+		border: 1px solid #222222;
+		background-color: #222222!important;
+		color: #bb6107;
+		text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
+	}
 
 body.res-nightmode .sidebox.submit-text {
 	top: -2px;
