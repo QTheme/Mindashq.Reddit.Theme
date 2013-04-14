@@ -1,6 +1,8 @@
 ﻿# Staging area for Mindashq Theme
-## Running v1.3
+## Running v1.4
 ### Some things may seem wonky at times.
+
+---
 
 > # [Click Here to know more](/17dfy5#icon-lightbulb-blue "Click here to know more")
 
@@ -63,9 +65,14 @@
 > S1 | Coming up | Inactive | Swap
 > S2 | RESiprocator | Inactive | Independent
 
+---
 
+---
 
---- 
+Theme based on [Mindashq 1.4](/r/mindashq)
+
+---
+
 > # [☰ *Related Reddits*](#navigator "Hover me to see Menu")
 
 >* [CSS](/r)
