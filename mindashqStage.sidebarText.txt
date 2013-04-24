@@ -1,5 +1,5 @@
 ﻿# Staging area for Mindashq Theme
-## Running v1.4
+## Running v1.5
 ### Some things may seem wonky at times.
 
 ---
@@ -69,9 +69,11 @@
 
 ---
 
-Theme based on [Mindashq 1.4](/r/mindashq)
+Theme based on [Mindashq 1.5](/r/mindashq)
 
 ---
+
+
 
 > # [☰ *Related Reddits*](#navigator "Hover me to see Menu")
 
