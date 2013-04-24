@@ -1,21 +1,20 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.4.0
+	v1.5.0
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
 
 /* [ A ]. Normal Theme............ */
-/* ~~  A.1. Common Tags ~~~~~~~~~~~~~ */
+/* ~~  A.1. Common Tags ~~~~~~~~~ */
 
 body {
 	position: relative;
 	min-width: 800px;
-	background-color: #fbfbf9;
+	background-color: #f9f9f7;
 	color: #333;
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
-	/* font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; */
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
 	line-height: 1.4;
 }
@@ -32,7 +31,6 @@ h3, h4 {
 }
 
 a {
-	text-decoration: underline;
 }
 
 	a,
@@ -40,34 +38,37 @@ a {
 	.thing .title,
 	.thing .title.loggedin {
 		color: #006ef4;
-		text-decoration: none;
 	}
 
-
-		.thing .title:visited,
-		.thing .title.loggedin:visited {
-			color: #211a39;
+		.thing .title,
+		.thing .title.loggedin {
+			text-shadow: 0 1px 0 #ddd;
 		}
 
-		a:visited,
-		.thing .title.loggedin.click:visited,
-		.tagline a,
-		.comment .md p > a:visited {
-			color: #810ba8;
-		}
+			.thing .title:visited,
+			.thing .title.loggedin:visited {
+				color: #211a39;
+			}
 
-		a:hover,
-		.thing .title:hover,
-		.thing .title.loggedin:hover {
-			color: #00f;
-			text-decoration: none;
-		}
+			a:visited,
+			.thing .title.loggedin.click:visited,
+			.tagline a,
+			.comment .md p > a:visited {
+				color: #810ba8;
+			}
 
-		a:active,
-		.thing .title:active,
-		.thing .title.loggedin:active {
-			color: #861010;
-		}
+			a:hover,
+			.thing .title:hover,
+			.thing .title.loggedin:hover {
+				color: #00f;
+				text-decoration: none;
+			}
+
+			a:active,
+			.thing .title:active,
+			.thing .title.loggedin:active {
+				color: #861010;
+			}
 
 .rounded {
 	border-radius: 4px;
@@ -76,10 +77,9 @@ a {
 .roundfield,
 .linefield,
 .content.submit .roundfield.info-notice {
-	border-color: #fff;
 	border-radius: 2px;
 	background-color: #eee;
-	box-shadow: 0 0 1px 1px #d7e2eb;
+	box-shadow: 0 0 1px 1px #ddd;
 }
 
 	.roundfield textarea,
@@ -101,12 +101,11 @@ a {
 
 	.md blockquote,
 	.help blockquote {
-		padding: 4px 4px 4px 15px;
+		padding: 1px 1px 1px 15px;
 		max-width: 60em;
-		border: 1px dotted #fafafa;
-		border-color: #a7acb9;
-		border-left: 2px solid;
-		border-left-color: #5ca2e8;
+		border: 1px solid #ccc;
+		border-width: 0 0 0 2px;
+		margin-left: 5px;
 	}
 
 hr {
@@ -121,8 +120,8 @@ hr {
 }
 
 	.side .md > hr + hr {
-		width: auto;
 		margin: 5px 0 15px;
+		width: auto;
 	}
 
 hr,
@@ -131,7 +130,7 @@ hr,
 	color: #c8c8c8;
 }
 
-/* --  A.1.1. Tables ---------- */
+/* --  A.1.1. Tables ------ */
 
 .md table {
 	margin: 10px 0;
@@ -151,12 +150,12 @@ hr,
 		background-color: #f3f3f3;
 	}
 
-	.md table tbody tr:nth-child(even) {
-		background-color: #f6f6f6;
+	.md table tbody tr:nth-child(odd) {
+		background-color: #f9f9f7;
 	}
 
-	.md table tbody tr:nth-child(odd) {
-		background-color: #fbfbf9;
+	.md table tbody tr:nth-child(even) {
+		background-color: #f6f6f6;
 	}
 
 	.md table td,
@@ -165,7 +164,7 @@ hr,
 		border-right: 1px solid #ccc;
 	}
 
-/* --  A.1.2. Lists ---------- */
+/* --  A.1.2. Lists ------ */
 
 .md ul,
 .md ol {
@@ -195,13 +194,13 @@ hr,
 			margin: 2px;
 		}
 
-/* --  A.1.3. Code Style ---------- */
+/* --  A.1.3. Code Style ------ */
 
 .usertext-body pre,
 .md.wiki pre {
 	margin: 10px 0;
 	padding: 10px;
-	color: #222 !important;
+	color: #222!important;
 }
 
 .usertext-body pre,
@@ -211,8 +210,8 @@ li > code {
 	overflow: auto;
 	border: 1px solid #ccc;
 	border-radius: 2px;
-	background-color: #f7f7f7;
-	color: #222 !important;
+	background-color: #fbf9f4;
+	color: #222!important;
 	font-size: 11px;
 }
 
@@ -223,18 +222,18 @@ code {
 p > code,
 li > code {
 	padding: 0 3px;
-	color: #222 !important;
+	color: #222!important;
 	font-family: Consolas,Monaco,'Courier New',monospace;
 }
 
-/* --  A.1.4. Spoilers ---------- */
+/* --  A.1.4. Spoilers ------ */
 
 a[href='#s'],
 a[href='/s'] {
 	display: inline-block;
 	padding: 0 4px;
-	background-color: #c2dcfe;
-	color: #00F;
+	background-color: #acd9fc;
+	color: #2154a3;
 	cursor: default;
 }
 
@@ -258,7 +257,7 @@ a[href='/s'] {
 		text-decoration: none;
 	}
 
-/* --  A.1.5. Common Button Style ---------- */
+/* --  A.1.5. Common Button Style ------ */
 
 .btn button,
 .btn .button {
@@ -285,21 +284,11 @@ a[href='/s'] {
 .entry.keyHighlight .flat-list.buttons a[onclick*='reply'],
 .entry.RES-keyNav-activeElement .flat-list.buttons a[onclick*='reply'] {
 	border-color: #3079ed!important;
-	background-color: #63b7f8;
-	background-image: -webkit-linear-gradient(top,#63b7f8,#4b8adb)!important;
-	background-image: -moz-linear-gradient(top,#63b7f8,#4b8adb)!important;
-	background-image: linear-gradient(top,#63b7f8,#4b8adb)!important;
+	background-color: #5ba2fd;
+	background-image: -webkit-linear-gradient(top,#5ba2fd,#4b8adb)!important;
+	background-image: -moz-linear-gradient(top,#5ba2fd,#4b8adb)!important;
+	background-image: linear-gradient(top,#5ba2fd,#4b8adb)!important;
 	color: #fff!important;
-}
-
-.side a[href*='/#btn'] {
-	display: block;
-	margin: 10px 0;
-	width: auto;
-	font-size: 12px;
-	line-height: 29px;
-	letter-spacing: 0;
-	text-align: center;
 }
 
 .btn,
@@ -313,10 +302,10 @@ input[type='submit'],
 	min-width: 70px;
 	border: 1px solid #3079ed!important;
 	border-radius: 2px;
-	background-color: #63b7f8!important;
-	background-image: -webkit-linear-gradient(top,#63b7f8,#4b8adb)!important;
-	background-image: -moz-linear-gradient(top,#63b7f8,#4b8adb)!important;
-	background-image: linear-gradient(top,#63b7f8,#4b8adb)!important;
+	background-color: #5ba2fd!important;
+	background-image: -webkit-linear-gradient(top,#5ba2fd,#4b8adb)!important;
+	background-image: -moz-linear-gradient(top,#5ba2fd,#4b8adb)!important;
+	background-image: linear-gradient(top,#5ba2fd,#4b8adb)!important;
 	color: #fff;
 	font-size: 13px;
 	font-family: Helvetica,Arial,'Nimbus Sans L',sans-serif;
@@ -349,17 +338,20 @@ input[type='submit'],
 	.usertext span[class*='toggle'] {
 		border-width: 0!important;
 		background: none transparent!important;
+		padding: 6px 10px;
+		font-size: small;
 	}
 
 		.btn.right a,
 		button.cancel,
 		.usertext span[class*='toggle'] a,
 		button.RESBigEditorPop,
-		.RESSubscriptionButton {
+		span.RESSubscriptionButton {
 			border: 0!important;
 			background: none transparent!important;
 			box-shadow: none;
 			color: #888;
+			font-weight: bold;
 			text-decoration: underline;
 			text-shadow: 1px 1px 2px #eee;
 		}
@@ -368,10 +360,20 @@ input[type='submit'],
 			button.cancel:hover,
 			.usertext span[class*='toggle'] a:hover,
 			button.RESBigEditorPop:hover,
-			.RESSubscriptionButton:hover {
+			span.RESSubscriptionButton:hover {
 				background: none transparent!important;
-				color: #56a6f7;
+				color: #5ca2e8;
 			}
+
+.side a[href*='/#btn'] {
+	display: block;
+	margin: 10px 0;
+	width: auto;
+	font-size: 12px;
+	line-height: 29px;
+	letter-spacing: 0;
+	text-align: center;
+}
 
 .flat-list.buttons {
 	display: inline-block;
@@ -379,7 +381,8 @@ input[type='submit'],
 }
 
 	.flat-list.buttons li a,
-	.flat-list.buttons li a:visited {
+	.flat-list.buttons li a:visited,
+	li .redditSingleClick {
 		color: #ebe2e2;
 	}
 
@@ -392,9 +395,12 @@ input[type='submit'],
 		}
 
 	.entry:hover > .flat-list.buttons > li a,
+	.entry:hover > .flat-list.buttons > li .redditSingleClick,
 	.entry:focus > .flat-list.buttons > li a,
+	.entry:focus > .flat-list.buttons > li .redditSingleClick,
 	.keyHighlight .flat-list.buttons > li a,
 	.entry.RES-keyNav-activeElement .flat-list.buttons > li a,
+	.entry.RES-keyNav-activeElement .flat-list.buttons > li .redditSingleClick,
 	.noncollapsed:hover > .flat-list.buttons > li a,
 	.flat-list.buttons > li a.comments,
 	.flat-list.buttons > a.comments.click,
@@ -402,16 +408,14 @@ input[type='submit'],
 		color: #777;
 	}
 
-/* ~~  A.2. Top Sr-Bar ~~~~~~~~~~~~~ */
+/* ~~  A.2. Top Sr-Bar ~~~~~~~~~ */
 
 #sr-header-area {
 	margin-top: -21px;
-	margin-left: 0 !important;
 	padding: 0 0 0 5px;
 	height: 20px;
-	border-width: 0;
-	background-color: transparent;
-	box-shadow: -5px 1px 10px -1px #fff;
+	border-color: #fff;
+	background-color: #fff;
 	font-weight: 500;
 	font-size: 11px;
 	line-height: 20px;
@@ -430,91 +434,56 @@ input[type='submit'],
 		margin: 0 7px 0 2px;
 	}
 
-.sr-bar {
-	display: inline;
-	margin-left: 0;
+.sr-bar a:link,
+.sr-list a {
+	line-height: 20px;
+	opacity: 0.40;
+	-ms-filter: Alpha(Opacity=40);
+	filter: Alpha(Opacity=40);
 }
 
-	.sr-bar a:link,
-	.sr-list a {
-		line-height: 20px;
-		opacity: 0.40;
-		-ms-filter: Alpha(Opacity=40);
-		filter: Alpha(Opacity=40);
-	}
-
-	.sr-bar:hover a:link,
-	.sr-list:hover a {
-		opacity: 1;
-		-ms-filter: Alpha(Opacity=100);
-		filter: Alpha(Opacity=100);
-	}
-
-.srSep {
-	margin: 0 5px;
-}
-
-#RESShortcutsViewport {
-	display: inline-block;
+.sr-bar:hover a:link,
+.sr-list:hover a {
+	opacity: 1;
+	-ms-filter: Alpha(Opacity=100);
+	filter: Alpha(Opacity=100);
 }
 
 #RESStaticShortcuts {
 	text-transform: lowercase;
 }
 
-#RESShortcutsEditContainer {
-	position: relative;
-	display: inline-block;
-	height: 23px;
-	background: none transparent!important;
+div#RESShortcutsEditContainer {
+	background: none #fff;
 	font-family: Consolas,Monaco,'Courier New',monospace;
-	word-spacing: -5px;
 }
 
-	#RESShortcutsEditContainer div {
-		background: none transparent;
-		background-color: transparent;
-	}
-
-#RESSettingsButton {
-	vertical-align: middle;
-}
-
-#srLeftContainer,
-#RESStaticShortcuts,
-#RESShortcuts,
+#header #srLeftContainer,
+#header #RESStaticShortcuts,
+#header #RESShortcuts,
+#header #RESShortcutsSort,
+#header #RESShortcutsRight,
+#header #RESShortcutsLeft,
+#header #RESShortcutsAdd,
+#header #RESShortcutsTrash,
 #srDropdown {
 	background: none transparent;
 }
 
 #sr-more-link {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0 5px 0 15px;
-	background-color: #fbfbf9;
-	color: black;
-	font-weight: bold;
+	background-color: #f9f9f7;
+	color: #333;
 }
 
-/* --  A.2.1. Dropdown Subreddits Bar ---------- */
+/* --  A.2.1. Dropdown Subreddits Bar ------ */
 
 .drop-choices,
 table#srList,
 div#RESSubredditGroupDropdown {
-	margin: 0;
-	padding: 0;
 	border-color: #acd9fc;
-	border-radius: 2px;
 	background-color: #8ccbfc;
 	color: #2154a3;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
 	font-size: 12px;
-	word-spacing: -1px;
-	z-index: 400;
 }
 
 	div#RESSubredditGroupDropdown li {
@@ -539,11 +508,10 @@ div#RESSubredditGroupDropdown {
 		border-color: #acd9fc;
 	}
 
-/* ~~  A.3. Header ~~~~~~~~~~~~~ */
+/* ~~  A.3. Header ~~~~~~~~~ */
 
 #header {
 	margin: 20px 0 30px;
-	padding: 0;
 	height: auto;
 	background-color: #fff;
 	box-shadow: 0 -3px 9px 5px #ddd;
@@ -557,7 +525,7 @@ div#RESSubredditGroupDropdown {
 		display: block;
 		width: 100%;
 		height: 30px;
-		border: 1px solid #fafafa;
+		border: 1px solid;
 		border-width: 1px 0;
 		z-index: -1;
 	}
@@ -577,18 +545,15 @@ div#RESSubredditGroupDropdown {
 		background-image: linear-gradient(top,#acd9fc,#8ccbfc);
 	}
 
-/* --  A.3.1. User Controls ---------- */
+/* --  A.3.1. User Controls ------ */
 
 #header-bottom-right {
 	top: auto!important;
-	bottom: 0 !important;
-	padding: 6px 10px 4px !important;
-	height: 20px !important;
-	border-radius: 0 !important;
+	bottom: 0!important;
+	padding: 6px 10px 4px!important;
+	height: 20px!important;
+	border-radius: 0!important;
 	background-color: transparent;
-	font-size: 10px;
-	word-spacing: -1px;
-	z-index: 102;
 }
 
 	#header-bottom-right a,
@@ -600,24 +565,28 @@ div#RESSubredditGroupDropdown {
 		background-color: #def0fe;
 	}
 
-	#header-bottom-right.res-navTop {
-	}
+		#header-bottom-right:hover a,
+		#header-bottom-right:hover span {
+			text-shadow: 0 1px 0 #ddd;
+		}
 
 	#header-bottom-right .user,
 	#header-bottom-right .logout {
 		font-weight: bold;
 	}
 
-/* --  A.3.2. Banner Image ---------- */
+#RESSettingsButton {
+	vertical-align: middle;
+}
+
+/* --  A.3.2. Banner Image ------ */
 
 #header-bottom-left {
 	position: relative;
 	bottom: 0;
 	display: inline-block;
-	margin: 0 10px;
-	padding: 0;
+	margin: 0 10px 0 25px;
 	background-color: transparent;
-	font-size: larger;
 }
 
 	#header-bottom-left:before {
@@ -641,7 +610,7 @@ div#RESSubredditGroupDropdown {
 		height: 30px;
 	}
 
-/* --  A.3.3. The Reddit Name, applies to all pages ---------- */
+/* --  A.3.3. The Reddit Name, applies to all pages ------ */
 
 .pagename {
 	display: inline-block;
@@ -654,11 +623,6 @@ div#RESSubredditGroupDropdown {
 	vertical-align: bottom;
 }
 
-	.pagename.redditname,
-	.pagename.redditname.hover {
-		padding: 0;
-	}
-
 	.pagename a,
 	.pagename.selected {
 		display: inline-block;
@@ -670,7 +634,7 @@ div#RESSubredditGroupDropdown {
 		background-image: -webkit-linear-gradient(top,#5ba2fd,#4b8adb);
 		background-image: -moz-linear-gradient(top,#5ba2fd,#4b8adb);
 		background-image: linear-gradient(top,#5ba2fd,#4b8adb);
-		box-shadow: 0 4px 6px #bbb;
+		box-shadow: -2px 4px 4px -2px #BBB;
 		color: #dcebfa;
 		font-size: 18px!important;
 		line-height: 30px;
@@ -686,7 +650,7 @@ div#RESSubredditGroupDropdown {
 			text-decoration: none;
 		}
 
-/* --  A.3.4. Reddit Image and Text ---------- */
+/* --  A.3.4. Reddit Image and Text ------ */
 
 #header-img.default-header {
 	margin: 15px 10px 0 5px;
@@ -711,13 +675,14 @@ div#RESSubredditGroupDropdown {
 	-moz-border-radius-bottomleft: 2px;
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 2px;
-	background-color: #c2dcfe;
-	box-shadow: 0 4px 6px #bbb;
+	background-color: #acd9fc;
+	box-shadow: 2px 4px 4px -2px #BBB;
+	line-height: 50px;
 	vertical-align: bottom;
 }
 
 	#header-img-a img {
-		margin: 0 0 -15px 0;
+		margin: 0;
 		padding: 0;
 		max-height: 50px;
 		width: auto!important;
@@ -728,7 +693,7 @@ div#RESSubredditGroupDropdown {
 		-moz-border-radius-bottomleft: 2px;
 		border-top-left-radius: 2px;
 		border-bottom-left-radius: 2px;
-		vertical-align: bottom;
+		vertical-align: middle;
 	}
 
 	#header-img-a + .pagename a,
@@ -741,7 +706,7 @@ div#RESSubredditGroupDropdown {
 		border-bottom-left-radius: 0;
 	}
 
-/* --  A.3.5. Header Nav ---------- */
+/* --  A.3.5. Header Nav ------ */
 
 ul.tabmenu {
 	margin: 15px 10px -17px 35px;
@@ -766,27 +731,27 @@ ul.tabmenu {
 			color: #2154a3;
 		}
 
+			ul.tabmenu li a:hover,
+			ul.tabmenu li.selected a:hover {
+				background-color: #def0fe;
+				color: #fff;
+				text-shadow: 0 1px 0 #333;
+			}
+
 			ul.tabmenu li.selected a,
 			ul.tabmenu li.selected a:hover,
 			ul.tabmenu li.selected a:visited {
 				margin-top: -5px;
 				padding: 10px 15px;
-				border: 1px solid #fafafa;
-				border-color: #5ca2e8;
+				border: 1px solid #5ca2e8;
 				border-radius: 2px;
-				background-color: #fbfbf9;
+				background-color: #f9f9f7;
 				background-image: none;
 				box-shadow: 0 7px 0 -4px #5ca2e8;
 				color: #ff4500;
 			}
 
-				ul.tabmenu li a:hover,
-				ul.tabmenu li.selected a:hover {
-					background-color: #def0fe;
-					color: #fff;
-				}
-
-/* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
+/* ~~  A.4. Content Pane and Link Listings ~~~~~~~~~ */
 
 .panestack-title {
 	margin: 10px 0 0;
@@ -797,7 +762,6 @@ ul.tabmenu {
 }
 
 	.panestack-title .title {
-		margin: 0;
 		color: #888;
 	}
 
@@ -821,14 +785,15 @@ ul.tabmenu {
 	font-family: Verdana,Arial,'Nimbus Sans L',sans-serif;
 }
 
-/* --  A.4.1. Content Box ---------- */
+/* --  A.4.1. Content Box ------ */
 
 div.content {
-	margin: 0 360px 10px 10px;
+	margin: 0 360px 10px 30px;
 	padding: 10px 20px;
 	border: 1px solid #fdfdfd;
 	background-color: #fdfdfe;
-	box-shadow: 0 1px 3px 1px #cccccc;
+	box-shadow: 0 1px 3px 1px #ccc;
+	font-size: 11px;
 }
 
 body.listing-page > div.content,
@@ -839,6 +804,7 @@ body.messages-page > div.content {
 	border: 0 none;
 	background-color: transparent;
 	box-shadow: none;
+	font-size: x-small;
 }
 
 	body.single-page > div.content > .linklisting .link {
@@ -849,7 +815,7 @@ body.messages-page > div.content {
 		margin: 4px 10px 0 10px;
 	}
 
-/* --  A.4.2. Links (Posts) listing ---------- */
+/* --  A.4.2. Links (Posts) listing ------ */
 
 .thing.link.promotedlink.promoted {
 	border-width: 0!important;
@@ -860,15 +826,9 @@ body.messages-page > div.content {
 .linklisting .thing {
 	margin: 0;
 	padding: 2px 0 2px;
-	border-color: #f7f7f7;
+	border-color: #fbf9f4;
 	background-color: #fff;
 	box-shadow: 0 1px 4px 0 #ccc;
-}
-
-.linklisting .even {
-	background-color: #fbfbfb;
-	background-image: -moz-linear-gradient(left,#fefefe,#fbfbfb);
-	background-image: -webkit-linear-gradient(left, #fefefe, #fbfbfb);
 }
 
 .linklisting .odd {
@@ -877,8 +837,14 @@ body.messages-page > div.content {
 	background-image: -webkit-linear-gradient(left, #fdfdfd, #fefefe);
 }
 
+.linklisting .even {
+	background-color: #fbfbfb;
+	background-image: -moz-linear-gradient(left,#fefefe,#fbfbfb);
+	background-image: -webkit-linear-gradient(left, #fefefe, #fbfbfb);
+}
+
 .linklisting .link:first-child {
-	border-top-width: 0 !important;
+	border-top-width: 0!important;
 }
 
 .linklisting .link:last-of-type .flairselector.drop-choices.active {
@@ -894,14 +860,15 @@ body.messages-page > div.content {
 	background-image: -webkit-linear-gradient(top,#fbfbfb,#f5f5f5);
 }
 
-/* --  A.4.3. Links sub-parts ---------- */
+/* --  A.4.3. Links sub-parts ------ */
+
+.tagline {
+}
 
 .sitetable .rank {
 	margin: 15px 0 0 8px;
 	padding: 5px 5px 5px 0;
-	border-radius: 25px;
 	background-color: transparent;
-	/* box-shadow: inset -6px 0 9px -1px #dadac8; */
 	text-align: right;
 }
 
@@ -925,60 +892,34 @@ body.messages-page > div.content {
 }
 
 .sitetable .title {
-	margin-top: 2px !important;
-	margin-bottom: 2px !important;
+	margin-top: 2px!important;
+	margin-bottom: 2px!important;
 	font-style: normal;
 	font-variant: normal;
 	word-spacing: -1px;
 }
 
 .link .usertext .md {
-	padding: 5px 10px;
 	border: 0 none;
 	background-color: transparent;
 }
 
-/* --  A.4.4. Usertext-edit textarea ---------- */
+/* --  A.4.4. Usertext-edit textarea ------ */
 
 form.usertext.cloneable {
 	padding: 0 20px;
-	/* border: 1px solid #d2d2d2; */
-	border-width: 1px 0;
-	border-radius: 0;
-	/* background-color: #f5f5f5; */
+	border-width: 0;
 }
 
-div.usertext-edit {
-	margin-top: 5px !important;
-	padding: 10px 10px 0 2px;
-}
-
-	div.usertext-edit textarea {
-		padding: 5px;
-	}
-
-.usertext .bottom-area {
-	padding: 0 5px;
-}
-
-.usertext button {
-	margin: 5px 5px 10px 0;
-	min-width: 70px;
-}
-
-.usertext span[class*='toggle'],
-.btn.right {
-	margin: 5px 0;
-	padding: 6px 10px;
-	border: 0 none;
-	font-size: small;
+div.usertext-edit textarea {
+	padding: 5px;
 }
 
 .usertext table.markhelp {
 	width: 450px;
 }
 
-/* --  A.4.5. Link submission form ---------- */
+/* --  A.4.5. Link submission form ------ */
 
 .formtabs-content {
 	border-color: #5ca2e8!important;
@@ -991,8 +932,7 @@ div.usertext-edit {
 	}
 
 ul.tabmenu.formtab {
-	margin: 15px 0 -19px 0;
-	padding: 0;
+	margin-left: 0;
 }
 
 	ul.tabmenu.formtab li {
@@ -1007,7 +947,9 @@ ul.tabmenu.formtab {
 		ul.tabmenu.formtab li.selected {
 		}
 
-			ul.tabmenu.formtab li.selected a {
+			ul.tabmenu.formtab li.selected a,
+			ul.tabmenu.formtab li.selected a:hover {
+				padding: 5px 15px;
 				-webkit-border-bottom-right-radius: 0;
 				-moz-border-radius-bottomright: 0;
 				-webkit-border-bottom-left-radius: 0;
@@ -1015,6 +957,7 @@ ul.tabmenu.formtab {
 				border-bottom-right-radius: 0;
 				border-bottom-left-radius: 0;
 				background-color: #5ca2e8!important;
+				box-shadow: none;
 			}
 
 #noresults {
@@ -1029,45 +972,65 @@ ul.tabmenu.formtab {
 	border-top: 1px dotted #d2d2d2;
 }
 
-/* --  A.4.6. Custom Upvote/Downvote Arrows ---------- */
-/*.arrow {
-	padding-right: 0;
-	padding-left: 0;
-	width: 22px;
-	height: 22px;
+/* --  A.4.6. Custom Upvote/Downvote Arrows ------ */
+
+.arrow {
+	margin: 0px auto 5px;
+	background: none transparent!important;
+	color: #b7b7b7;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: Consolas,Monaco,'Courier New',monospace;
+	text-align: center;
 }
-
-	.arrow.up {
-		background-position: 0 0;
-		opacity: 0.5;
-		filter: alpha(opacity=05);
-		-khtml-opacity: 0.5;
-	}
-
-	.arrow.down {
-		background-position: 0 -22px;
-		opacity: 0.5;
-		filter: alpha(opacity=05);
-		-khtml-opacity: 0.5;
-	}
 
 	.arrow.upmod,
 	.arrow.up:hover {
-		background-position: -22px 0;
+		margin-top: -5px;
+		padding: 0 0 5px;
+		font-size: 18px;
 	}
 
 	.arrow.downmod,
 	.arrow.down:hover {
-		background-position: -22px -22px;
-	}*/
+		margin-top: -3px;
+		padding: 0 0 5px;
+		font-size: 17px;
+	}
 
-/* --  A.4.7. Comment Formatting ---------- */
+	.arrow.up:after {
+		content: '△';
+	}
 
-body div.content > form > div .commentarea .even {
-	/*padding: 10px 0 10px 10px !important;
-	border-top-color: #eee;
-	background-color: transparent;*/
+	.arrow.down:after {
+		content: '▽';
+	}
+
+	.arrow.upmod:after,
+	.arrow.up:hover:after {
+		content: '▲';
+		color: #ff4900;
+	}
+
+	.arrow.downmod:after,
+	.arrow.down:hover:after {
+		content: '▼';
+		color: #9aa8f2;
+	}
+
+.link .score {
+	color: #c6c6c6;
 }
+
+	.link .score.likes {
+		color: #ff4900;
+	}
+
+	.link .score.dislikes {
+		color: #9aa8f2;
+	}
+
+/* --  A.4.7. Comment Formatting ------ */
 
 .commentarea {
 	margin-top: 15px;
@@ -1105,54 +1068,59 @@ body div.content > form > div .commentarea .even {
 
 	.commentarea .comment,
 	.linklisting .comment {
-		margin: 3px 0 -2px 5px!important;
-		padding: 1px 0 1px 5px!important;
-		border: 1px solid #fafafa!important;
-		border-color: #eeeeee #eeeeee #e0e0e0 #eeeeee !important;
-		border-right: 0 !important;
-		border-radius: 0 !important;
+		margin: 3px 0 -2px 0!important;
+		padding: 1px 0 1px 2px!important;
+		border: 1px solid #eee!important;
+		border-color: #eee #eee #e0e0e0 #eee!important;
+		border-right: 0!important;
+		border-radius: 0!important;
 	}
 
-.linklisting .comment {
+.linklisting .comment,
+.linklisting .message {
 	margin: 0!important;
-	padding: 10px!important;
+	padding: 5px 10px 1px!important;
 	border: 0!important;
 }
 
 .nestedlisting > .comment {
-	margin: 4px 0 0 !important;
+	margin: 4px 0 0!important;
 	border: 1px solid #fafafa!important;
-	border-color: #eeeeee #e0e0e0 #e0e0e0 #e0e0e0!important;
-	box-shadow: 1px 1px 3px -1px #cccccc;
+	border-color: #eee #e0e0e0 #e0e0e0 #e0e0e0!important;
+	box-shadow: 1px 1px 3px -1px #ccc;
+}
+
+.odd.comment {
+	background-color: #f9f9f9;
 }
 
 .even.comment {
 	background-color: #fbfbfb;
 }
 
-.odd.comment {
-	background-color: #f7f7f7;
+.nestedlisting > .comment .comment,
+.nestedlisting > .comment .comment .comment .comment,
+.nestedlisting > .comment .comment .comment .comment .comment .comment {
+	background-color: #f9f9f6!important;
 }
 
-.child {
-	margin: 0 0 0 15px !important;
-	background: none transparent!important;
-}
-
-.nestedlisting > .comment .comment {
-	background-color: #fbfbfa!important;
-}
-
-	.nestedlisting > .comment .comment .comment {
+	.nestedlisting > .comment .comment .comment,
+	.nestedlisting > .comment .comment .comment .comment .comment,
+	.nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
 		background-color: #fdfdfd!important;
 	}
 
+.child {
+	margin: 0 0 0 15px!important;
+	background: none transparent!important;
+}
+
 .comment .noncollapsed {
-	padding-bottom: 5px;
+	padding-bottom: 1px;
 }
 
 .comment a.expand {
-	color: #888 !important;
+	color: #888!important;
 }
 
 	.comment a.expand:hover {
@@ -1160,18 +1128,8 @@ body div.content > form > div .commentarea .even {
 	}
 
 	.comment a.expand:visited {
-		color: #888 !important;
+		color: #888!important;
 	}
-
-.commentarea .author {
-	margin-left: 0;
-	font-weight: bold;
-}
-
-.commentarea .collapsed .author {
-	color: #888 !important;
-	font-style: normal;
-}
 
 .commentarea .flat-list.buttons {
 	position: relative;
@@ -1188,6 +1146,10 @@ body div.content > form > div .commentarea .even {
 	border: 0 none;
 }
 
+.commentarea > .sitetable > .entry {
+	padding-left: 0px;
+}
+
 .morecomments {
 	display: inline-block;
 	margin: 4px 0 -7px;
@@ -1197,14 +1159,15 @@ body div.content > form > div .commentarea .even {
 	.morecomments a .gray {
 		display: inline-block;
 		margin: 0;
+		border-color: #e0e0e0!important;
+		background-color: #ececec!important;
+		background-image: none!important;
+		color: #777!important;
+		text-shadow: 1px 1px 2px #eee;
 	}
 
 .comment .morechildren {
 	margin-bottom: -2px;
-}
-
-.commentarea > .sitetable > .entry {
-	padding-left: 0px;
 }
 
 .commentarea > .sitetable > .morechildren .morecomments {
@@ -1212,8 +1175,8 @@ body div.content > form > div .commentarea .even {
 	padding-left: 0px;
 }
 
-/* --  A.4.8. Sort By Dropdown ---------- */
-/* ~~  A.5. Sidebar ~~~~~~~~~~~~~ */
+/* --  A.4.8. Sort By Dropdown ------ */
+/* ~~  A.5. Sidebar ~~~~~~~~~ */
 
 .side {
 	margin: 0 20px;
@@ -1225,14 +1188,12 @@ body div.content > form > div .commentarea .even {
 }
 
 	.side .spacer {
-		clear: both;
 		margin: 5px 0 5px 0;
 		background-color: transparent;
-		font-size: x-small;
 	}
 
 	.side .md {
-		overflow: hidden;
+		overflow: visible;
 		max-width: 100%;
 	}
 
@@ -1251,17 +1212,17 @@ body div.content > form > div .commentarea .even {
 			text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
 		}
 
+			.side .titlebox h1.redditname a {
+			}
+
 div.sidebox.create {
 	position: absolute;
 	right: 30px;
-	bottom: 110px;
+	bottom: 112px;
 	display: block;
-	border: 0 solid #fafafa!important;
+	overflow: visible;
+	border-width: 0!important;
 	background: none transparent!important;
-}
-
-.icon-menu li {
-	margin: 0 0 5px;
 }
 
 .side h1,
@@ -1286,7 +1247,7 @@ div.sidebox.create {
 	font-size: 12px;
 }
 
-/* --  A.5.1. Search ---------- */
+/* --  A.5.1. Search ------ */
 
 .side .spacer #search {
 	margin: 0 0 15px 0;
@@ -1319,7 +1280,7 @@ div.sidebox.create {
 	padding: 10px 15px;
 }
 
-/* --  A.5.2 Infobar, MoreInfo and MoreSearch Divs ---------- */
+/* --  A.5.2 Infobar, MoreInfo and MoreSearch Divs ------ */
 
 .infobar {
 	margin: 5px 0;
@@ -1331,21 +1292,20 @@ div.sidebox.create {
 }
 
 	.infobar a {
-		color: #08c !important;
+		color: #08c!important;
 	}
 
 		.infobar a:hover {
-			color: #08c !important;
+			color: #08c!important;
 			text-decoration: underline;
 		}
 
 .linkinfo {
 	margin: 0 0 10px;
 	padding: 10px 10px 0 10px;
-	border: 1px solid #fafafa;
+	border: 1px solid #d2d2d2;
 	border-width: 1px 0;
-	border-color: #d2d2d2;
-	border-radius: 0 !important;
+	border-radius: 0!important;
 	background-color: transparent;
 	color: #333;
 	font-weight: normal;
@@ -1376,14 +1336,14 @@ div.sidebox.create {
 	}
 
 	.linkinfo .shortlink input {
-		margin-top: 7px !important;
-		border: 0 !important;
+		margin-top: 7px!important;
+		border: 0!important;
 		background-color: transparent;
-		color: #0a0a0a !important;
-		font-size: 12px !important;
+		color: #0a0a0a!important;
+		font-size: 12px!important;
 	}
 
-/* --  A.5.3. Contributor and Moderator Buttons ---------- */
+/* --  A.5.3. Contributor and Moderator Buttons ------ */
 
 .titlebox form.toggle,
 .leavemoderator {
@@ -1397,10 +1357,13 @@ div.sidebox.create {
 
 .leavecontributor-button {
 	display: none;
-	background: none transparent !important;
+	background: none transparent!important;
 }
 
-/* --  A.5.4. Login Form ---------- */
+.titlebox form.toggle, .leavemoderator {
+}
+
+/* --  A.5.4. Login Form ------ */
 
 .login-form-side {
 	margin: 0 0 10px;
@@ -1414,7 +1377,7 @@ div.sidebox.create {
 		border-color: #d2d2d2;
 	}
 
-/* --  A.5.5. Flair Setting area ---------- */
+/* --  A.5.5. Flair Setting area ------ */
 
 .titlebox form.toggle {
 	background-color: transparent;
@@ -1434,7 +1397,17 @@ div.sidebox.create {
 	border-color: #e3e3e3!important;
 }
 
-/* --  A.5.6. Submit Button ---------- */
+.fancy-toggle-button .remove,
+span.RESshortcutside.remove,
+span.RESDashboardToggle.remove {
+}
+
+.fancy-toggle-button .add,
+span.RESshortcutside,
+span.RESDashboardToggle {
+}
+
+/* --  A.5.6. Submit Button ------ */
 
 .sidebox.submit {
 	width: 300px;
@@ -1449,11 +1422,11 @@ body:not(.listing-page) .morelink {
 	background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc)!important;
 	background-image: linear-gradient(top,#acd9fc,#8ccbfc)!important;
 	color: #2154a3;
-	text-shadow: 1px 1px 2px #eee;
 }
 
 	body:not(.listing-page) .morelink a {
 		color: #2154a3!important;
+		text-shadow: 1px 1px 2px #eee;
 	}
 
 body .morelink {
@@ -1468,7 +1441,6 @@ body .morelink {
 	color: #fff;
 	font-weight: normal;
 	letter-spacing: 0;
-	text-shadow: 1px 1px 2px #0f0f0f;
 }
 
 	body .morelink:hover,
@@ -1486,6 +1458,7 @@ body .morelink {
 		color: #fff!important;
 		font-weight: bold;
 		font-size: 16px;
+		text-shadow: 1px 1px 2px #0f0f0f;
 	}
 
 		body .morelink a:hover,
@@ -1496,43 +1469,33 @@ body .morelink {
 		}
 
 	body .morelink .nub,
-	body .morelink:hover .nub {
-		background: none transparent!important;
-	}
-
-body .disabled .morelink,
-body .disabled .morelink:hover {
-	border-color: #f5f5f5;
-	background-color: #f5f5f5;
-	background-image: none;
-}
-
-	body .disabled .morelink a,
-	body .disabled .morelink a:hover {
-		color: #aaa;
-		text-shadow: none;
-		cursor: default;
-	}
-
+	body .morelink:hover .nub,
 	body .disabled .morelink .nub,
 	body .disabled .morelink:hover .nub {
 		background: none transparent!important;
 	}
 
-/* --  A.5.7. Moderators Area ---------- */
+body .disabled .morelink,
+body .disabled .morelink:hover {
+	border-color: #f5f5f5!important;
+	background-color: #eee;
+	background-image: none!important;
+}
+
+	body .disabled .morelink a,
+	body .disabled .morelink a:hover {
+		color: #aaa!important;
+		text-shadow: none!important;
+		cursor: default!important;
+	}
+
+/* --  A.5.7. Moderators Area ------ */
 
 .sidecontentbox {
 	padding: 5px 0 5px;
-	background-color: transparent !important;
+	background-color: transparent!important;
 	line-height: 1.3;
 }
-
-	.sidecontentbox a:hover {
-		text-decoration: underline !important;
-	}
-
-	.sidecontentbox a:visited {
-	}
 
 	.sidecontentbox a.helplink {
 		font-size: 12px;
@@ -1540,22 +1503,31 @@ body .disabled .morelink:hover {
 
 	.sidecontentbox .title h1 {
 		color: #888;
+		letter-spacing: 0;
 	}
 
 .spacer .sidecontentbox .content {
-	margin: 0 !important;
-	margin-top: 5px !important;
+	margin: 0!important;
+	margin-top: 5px!important;
 	padding: 10px;
 	border: 1px solid #ccc;
 	background-color: #f5f5f5;
 }
 
-/* --  A.5.8. Account Activity area at Bottom of Sidebar ---------- */
+.side .icon-menu li {
+	margin: 0 0 5px;
+}
+
+.side .icon-menu a {
+	background-color: transparent!important;
+}
+
+/* --  A.5.8. Account Activity area at Bottom of Sidebar ------ */
 
 .account-activity-box {
 	padding: 0;
 	height: 60px;
-	border-radius: 2px !important;
+	border-radius: 2px!important;
 	background-color: transparent;
 	background-position: center bottom;
 }
@@ -1565,7 +1537,7 @@ body .disabled .morelink:hover {
 		padding: 20px 0 0 0;
 	}
 
-/* ~~  A.6. Footer ~~~~~~~~~~~~~ */
+/* ~~  A.6. Footer ~~~~~~~~~ */
 
 .footer-parent {
 	position: relative;
@@ -1575,6 +1547,7 @@ body .disabled .morelink:hover {
 	background-color: #fff;
 	box-shadow: 0 -3px 9px -2px #ddd;
 	font-size: 12px;
+	line-height: 15px;
 	text-align: left;
 	z-index: -2;
 }
@@ -1587,7 +1560,7 @@ body .disabled .morelink:hover {
 		display: block;
 		width: 100%;
 		height: 30px;
-		border: 1px solid #fafafa;
+		border-style: solid;
 		border-width: 1px 0;
 		z-index: -1;
 	}
@@ -1603,14 +1576,15 @@ body .disabled .morelink:hover {
 	}
 
 	.footer .flat-vert.title {
+		margin: 3px 0px 15px;
 		color: #2154a3;
 	}
 
-/* --  A.6.1. Reddit Copyright Text ---------- */
+/* --  A.6.1. Reddit Copyright Text ------ */
 
 .bottommenu,
 .bottommenu a {
-	font-size: x-small;
+	font-size: 10px;
 }
 
 .bottommenu {
@@ -1622,7 +1596,7 @@ body .disabled .morelink:hover {
 		color: #231307;
 	}
 
-/* ~~  A.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~ */
+/* ~~  A.7. Other areas in Reddit - [WIP] ~~~~~~~~~ */
 
 .upload li,
 #image-upload {
@@ -1650,7 +1624,7 @@ body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
 	border-color: #5ca2e8;
 }
 
-/* ~~   A.8. Wiki Pages ~~~~~~~~~~~~~ */
+/* ~~   A.8. Wiki Pages ~~~~~~~~~ */
 
 body.wiki-page h1.wikititle {
 	display: inline-block;
@@ -1672,7 +1646,7 @@ body.wiki-page .wiki-page-content {
 
 	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
 		border-color: #eee;
-		background-color: #fbfbf9;
+		background-color: #f9f9f7;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
@@ -1713,10 +1687,10 @@ body.wiki-page .wiki-page-content {
 }
 
 .sheets {
-	margin: 10px;
+	margin: 0;
 }
 
-/* ~~  A.9. RES Optimisation ~~~~~~~~~~~~~ */
+/* ~~  A.9. RES Optimisation ~~~~~~~~~ */
 
 #RESPinnedHeaderSpacer {
 	margin-bottom: 30px;
@@ -1724,8 +1698,9 @@ body.wiki-page .wiki-page-content {
 
 .keyHighlight,
 .entry.RES-keyNav-activeElement {
+	margin-right: 0;
 	outline: 1px dotted #ff9a02!important;
-	border: 0 !important;
+	border: 0!important;
 	border-right: 1px solid #ff9a02!important;
 }
 
@@ -1733,7 +1708,7 @@ body.wiki-page .wiki-page-content {
 	.commentarea .entry.RES-keyNav-activeElement div.noncollapsed,
 	.entry.RES-keyNav-activeElement .usertext-body {
 		outline: none!important;
-		border: 0 !important;
+		border: 0!important;
 	}
 
 	.keyHighlight,
@@ -1741,7 +1716,7 @@ body.wiki-page .wiki-page-content {
 	.entry.RES-keyNav-activeElement div.md,
 	.entry.RES-keyNav-activeElement .usertext-body,
 	.commentarea .entry.RES-keyNav-activeElement div.noncollapsed {
-		background: none transparent !important;
+		background: none transparent!important;
 	}
 
 .keyNavAnnotation {
@@ -1749,14 +1724,8 @@ body.wiki-page .wiki-page-content {
 }
 
 div#userbarToggle {
-	left: 0 !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	padding-bottom: 2px !important;
-	width: 16px !important;
-	height: 19px !important;
-	border: 0 !important;
-	background-color: transparent !important;
+	border: 0!important;
+	background-color: transparent!important;
 	color: #888;
 }
 
@@ -1765,18 +1734,7 @@ button.RESBigEditorPop.blueButton {
 	padding: 5px;
 }
 
-.morecomments {
-}
-
-	.morecomments a.button {
-		border-color: #e0e0e0;
-		background-color: #ececec;
-		background-image: none;
-		color: #777!important;
-		text-shadow: 1px 1px 2px #eee;
-	}
-
-/* --  A.9.1. Progress Indicator and Page marker for RES mode ---------- */
+/* --  A.9.1. Progress Indicator and Page marker for RES mode ------ */
 
 #progressIndicator.neverEndingReddit,
 div.NERPageMarker,
@@ -1794,15 +1752,34 @@ div.NERPageMarker,
 	text-align: right;
 }
 
-#progressIndicator.neverEndingReddit, #NERFail,
+#progressIndicator.neverEndingReddit,
+#NERFail,
 #endOfReddit {
 	color: #b90a0a;
 	font-size: 12px;
 	letter-spacing: 0;
 }
 
-/* ~~  A.10. Sidebar Boxes ~~~~~~~~~~~~~ */
-/* --  A.10.1. Boxes ---------- */
+/* ~~  A.10. Sidebar Boxes ~~~~~~~~~ */
+
+.side .md h1,
+.side .md h2,
+.side .md h3 {
+	margin: 5px;
+	background: none transparent;
+	text-shadow: 0 0 1px #fdfdfe,0 1px 1px #585858;
+}
+
+.side .md p {
+	margin: 5px 10px;
+}
+
+.side .md li p,
+.side .md ol p {
+	margin: 0;
+}
+
+/* --  A.10.1. Boxes ------ */
 
 .side .md blockquote {
 	position: relative;
@@ -1814,11 +1791,13 @@ div.NERPageMarker,
 	background-color: #f5f5f5;
 }
 
-	.side .md blockquote h1 {
-		background-color: transparent;
+	.side .md blockquote > h1,
+	.side .md blockquote > h2,
+	.side .md blockquote > h3 {
+		font-size: 18px;
 	}
 
-	.side .md blockquote blockquote {
+	.side .md blockquote > blockquote {
 		margin: 5px 0 0 5px;
 	}
 
@@ -1846,75 +1825,33 @@ div.NERPageMarker,
 		margin-left: 10px;
 	}
 
+.side .md h3 + blockquote p,
 .side .md h4 + blockquote p,
 .side .md h5 + blockquote p,
 .side .md h6 + blockquote p {
 	margin: 0 10px;
-	color: #000;
-}
-
-.side .md h1,
-.side .md h2,
-.side .md h3 {
-	margin: 5px;
-	background: none transparent;
-	text-shadow: 0 0 1px #fdfdfe,0 1px 1px #585858;
+	color: #333;
 }
 
 .side .md blockquote + p,
 .side .md p + blockquote,
+.side .md p + h3,
 .side .md p + h4,
 .side .md p + h5,
 .side .md p + h6 {
-	margin-top: 10px;
+	margin-top: 12px;
 }
 
-.side .md p {
-	margin: 5px 10px;
-}
-
-.side .md li p,
-.side .md ol p {
-	margin: 0;
-}
-
-.side .icon-menu a {
-	background-color: transparent;
-}
-
-/* --  A.10.2. Colored Boxes ---------- */
+/* --  A.10.2. Colored Boxes ------ */
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
-
-.side .md h3 + blockquote,
-.side .md h4 + blockquote,
-.side .md h5 + blockquote,
-.side .md h6 + blockquote {
-	display: block;
-	border: 1px solid #fafafa;
-}
-
-	.side .md h3 + blockquote > h1,
-	.side .md h4 + blockquote > h1,
-	.side .md h5 + blockquote > h1,
-	.side .md h6 + blockquote > h1,
-	.side .md h3 + blockquote > h2,
-	.side .md h4 + blockquote > h2,
-	.side .md h5 + blockquote > h2,
-	.side .md h6 + blockquote > h2,
-	.side .md h3 + blockquote > h3,
-	.side .md h4 + blockquote > h3,
-	.side .md h5 + blockquote > h3,
-	.side .md h6 + blockquote > h3 {
-		font-size: 19px;
-	}
 
 .side .md blockquote a[href*='#icon-']:before {
 	border-radius: 3px;
 	background-color: #5c5c5c;
-	background-image: -moz-linear-gradient(top, #666666, #4d4d4d);
-	background-image: -webkit-linear-gradient(top, #666666, #4d4d4d);
-	background-image: -o-linear-gradient(top, #666666, #4d4d4d);
-	background-image: linear-gradient(to bottom, #666666, #4d4d4d);
+	background-image: -moz-linear-gradient(top, #666, #4d4d4d);
+	background-image: -webkit-linear-gradient(top, #666, #4d4d4d);
+	background-image: -o-linear-gradient(top, #666, #4d4d4d);
+	background-image: linear-gradient(to bottom, #666, #4d4d4d);
 	color: #eee;
 	text-shadow: none;
 }
@@ -1984,7 +1921,7 @@ div.NERPageMarker,
 		color: #fef0f0;
 	}
 
-/* --  A.10.3. Sidebar Icons ---------- */
+/* --  A.10.3. Sidebar Icons ------ */
 
 .side a[href*='#icon-'] {
 	margin: 0 10px;
@@ -2001,11 +1938,11 @@ div.NERPageMarker,
 		margin: -16px 5px 0 -10px;
 		padding: 5px 5px 0;
 		width: 30px;
-		height: 52px;
+		height: 47px;
 		background-position: 0 0;
 		font-weight: bold;
 		font-size: 25px;
-		line-height: 60px;
+		line-height: 45px;
 		text-align: center;
 	}
 
@@ -2073,13 +2010,25 @@ div.NERPageMarker,
 	content: '✿';
 }
 
-/* ~~  A.11. Vibgyor Flairs ~~~~~~~~~~~~~ */
+/* ~~  A.11. Vibgyor Flairs ~~~~~~~~~ */
+
+.flair,
+.linkflairlabel,
+span.linkflair {
+	display: inline-block;
+	padding: 0 2px;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	background: #F5F5F5;
+	color: #555;
+	text-shadow: none;
+}
 
 .thing.linkflair[class*="-m-"] {
 }
 
 	.thing.linkflair[class*="-m-"] .linkflairlabel {
-		padding: 0px 5px 2px;
+		padding: 0 5px 2px;
 		font-weight: bold;
 		vertical-align: text-bottom;
 	}
@@ -2090,19 +2039,19 @@ div.NERPageMarker,
 .linkflair-m-vt .linkflairlabel {
 	border: 1px solid #9004ac;
 	background: #8b008b;
-	color: #fbfbf9;
+	color: #f9f9f7;
 }
 
 .linkflair-m-io .linkflairlabel {
 	border: 1px solid #08c;
 	background: #3b6aa7;
-	color: #fbfbf9;
+	color: #f9f9f7;
 }
 
 .linkflair-m-be .linkflairlabel {
 	border: 1px solid #0e98ff;
 	background: #0247fe;
-	color: #fbfbf9;
+	color: #f9f9f7;
 }
 
 .linkflair-m-gn .linkflairlabel {
@@ -2166,6 +2115,8 @@ div.NERPageMarker,
 .linkflair-meta .arrow {
 	display: inline-block!important;
 	margin: 0 3px;
+	padding: 0px;
+	font-size: 16px;
 }
 
 .linkflair-meta .title > .linkflairlabel {
@@ -2174,14 +2125,14 @@ div.NERPageMarker,
 	margin: 25px 10px 0 -80px;
 	padding: 5px 10px 5px;
 	background-color: #fff;
-	box-shadow: 0 1px 10px 0px #ccd1d8;
+	box-shadow: 0 1px 10px 0 #ccd1d8;
 	font-weight: bold;
 	font-size: 14px;
 	vertical-align: text-bottom;
 }
 
 /* [ B ]. Night Mode ............ */
-/* ~~  B.1. Common Tags ~~~~~~~~~~~~~ */
+/* ~~  B.1. Common Tags ~~~~~~~~~ */
 
 body.res-nightmode {
 	color: #ccc;
@@ -2195,9 +2146,16 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode a,
-	body.res-nightmode a:link {
+	body.res-nightmode a:link,
+	body.res-nightmode .thing .title,
+	body.res-nightmode .thing .title.loggedin {
 		color: #ff910b;
 	}
+
+		body.res-nightmode .thing .title,
+		body.res-nightmode .thing .title.loggedin {
+			text-shadow: 0 1px 0 #000;
+		}
 
 		body.res-nightmode a:visited,
 		body.res-nightmode .comment .md p > a:visited {
@@ -2235,7 +2193,6 @@ body.res-nightmode {
 
 	body.res-nightmode hr,
 	body.res-nightmode .side .usertext-body .md hr {
-		border: none;
 		background-color: #414141;
 		color: #373737;
 	}
@@ -2246,7 +2203,7 @@ body.res-nightmode {
 		border-left-color: #5ca2e8;
 	}
 
-	/* --  B.1.1. Tables ---------- */
+	/* --  B.1.1. Tables ------ */
 
 	body.res-nightmode .md table {
 		border-color: #6a6a6a;
@@ -2257,12 +2214,12 @@ body.res-nightmode {
 			background-color: #090909;
 		}
 
-		body.res-nightmode .md table tr:nth-child(even) {
-			background-color: #222222;
-		}
-
 		body.res-nightmode .md table tr:nth-child(odd) {
 			background-color: #292929;
+		}
+
+		body.res-nightmode .md table tr:nth-child(even) {
+			background-color: #222;
 		}
 
 		body.res-nightmode .md table td,
@@ -2270,14 +2227,7 @@ body.res-nightmode {
 			border-right: 1px solid #6a6a6a;
 		}
 
-	/* --  B.1.2. Lists ---------- */
-
-	body.res-nightmode .md ul,
-	body.res-nightmode .md ol {
-		background-color: transparent!important;
-	}
-
-	/* --  B.1.3. Code Style ---------- */
+	/* --  B.1.3. Code Style ------ */
 
 	body.res-nightmode .usertext-body pre,
 	body.res-nightmode .md.wiki pre {
@@ -2305,12 +2255,12 @@ body.res-nightmode {
 		color: #ddd!important;
 	}
 
-	/* --  B.1.4. Spoilers ---------- */
+	/* --  B.1.4. Spoilers ------ */
 
 	body.res-nightmode a[href='#s'],
 	body.res-nightmode a[href='/s'] {
 		background-color: #3d3d3d;
-		color: #f7f7f7;
+		color: #fbf9f4;
 	}
 
 		body.res-nightmode a[href='#s']:after,
@@ -2327,7 +2277,7 @@ body.res-nightmode {
 			font-size: small;
 		}
 
-	/* --  B.1.5. Common Button Style ---------- */
+	/* --  B.1.5. Common Button Style ------ */
 
 	body.res-nightmode .entry .flat-list.buttons a[onclick*='reply'] {
 		border-color: #302f2f;
@@ -2349,14 +2299,6 @@ body.res-nightmode {
 			color: #000;
 		}
 
-		body.res-nightmode .btn:hover,
-		body.res-nightmode button:hover,
-		body.res-nightmode .button:hover,
-		body.res-nightmode button.blueButton:hover,
-		body.res-nightmode input[type="submit"]:hover,
-		body.res-nightmode .side a[href*="/#btn"]:hover {
-		}
-
 		body.res-nightmode .btn.right,
 		body.res-nightmode button.cancel,
 		body.res-nightmode .usertext span[class*='toggle'] {
@@ -2367,7 +2309,7 @@ body.res-nightmode {
 			body.res-nightmode button.cancel,
 			body.res-nightmode .usertext span[class*='toggle'] a,
 			body.res-nightmode button.RESBigEditorPop,
-			body.res-nightmode .RESSubscriptionButton {
+			body.res-nightmode span.RESSubscriptionButton {
 				color: #777;
 				text-shadow: 1px 1px 2px #222;
 			}
@@ -2376,12 +2318,13 @@ body.res-nightmode {
 				body.res-nightmode button.cancel:hover,
 				body.res-nightmode .usertext span[class*='toggle'] a:hover,
 				body.res-nightmode button.RESBigEditorPop:hover,
-				body.res-nightmode .RESSubscriptionButton:hover {
+				body.res-nightmode span.RESSubscriptionButton:hover {
 					color: #a95908;
 				}
 
 	body.res-nightmode .flat-list.buttons li a,
-	body.res-nightmode .flat-list.buttons li a:visited {
+	body.res-nightmode .flat-list.buttons li a:visited,
+	body.res-nightmode .flat-list.buttons li .redditSingleClick {
 		color: #333;
 	}
 
@@ -2394,9 +2337,12 @@ body.res-nightmode {
 		}
 
 	body.res-nightmode .entry:hover > .flat-list.buttons > li a,
+	body.res-nightmode .entry:hover > .flat-list.buttons > li .redditSingleClick,
 	body.res-nightmode .entry:focus > .flat-list.buttons > li a,
+	body.res-nightmode .entry:focus > .flat-list.buttons > li .redditSingleClick,
 	body.res-nightmode .keyHighlight .flat-list.buttons > li a,
 	body.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons > li a,
+	body.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons > li .redditSingleClick,
 	body.res-nightmode .noncollapsed:hover > .flat-list.buttons > li a,
 	body.res-nightmode .flat-list.buttons > li a.comments,
 	body.res-nightmode .flat-list.buttons > a.comments.click,
@@ -2404,11 +2350,11 @@ body.res-nightmode {
 		color: #777;
 	}
 
-	/* ~~  B.2. Top Sr-Bar ~~~~~~~~~~~~~ */
+	/* ~~  B.2. Top Sr-Bar ~~~~~~~~~ */
 
 	body.res-nightmode #sr-header-area {
 		border-bottom-color: #000;
-		background-color: #000 !important;
+		background-color: #000!important;
 		box-shadow: 0 1px 8px 1px #000;
 	}
 
@@ -2416,33 +2362,24 @@ body.res-nightmode {
 			color: #d2d2d2;
 		}
 
-	body.res-nightmode #srLeftContainer,
-	body.res-nightmode #RESStaticShortcuts,
-	body.res-nightmode #RESShortcuts,
-	body.res-nightmode #srDropdown {
-		background: none transparent;
+	body.res-nightmode .sr-bar a:link,
+	body.res-nightmode .sr-list a {
+		line-height: 20px;
+		opacity: 0.70;
+		-ms-filter: Alpha(Opacity=70);
+		filter: Alpha(Opacity=70);
 	}
 
-	body.res-nightmode #RESShortcutsEditContainer {
-		background: none transparent;
-		font-family: Consolas,Monaco,'Courier New',monospace;
-	}
-
-		body.res-nightmode #RESShortcutsEditContainer div {
-			background: none transparent;
-			background-color: transparent;
-		}
-
-	body.res-nightmode #RESSettingsButton {
-		vertical-align: middle;
+	body.res-nightmode div#RESShortcutsEditContainer {
+		background: none #000;
 	}
 
 	body.res-nightmode #sr-more-link {
-		background-color: #040406 !important;
+		background-color: #040406!important;
 		color: black;
 	}
 
-	/* --  B.2.1. Dropdown Subreddits Bar ---------- */
+	/* --  B.2.1. Dropdown Subreddits Bar ------ */
 
 	body.res-nightmode .drop-choices,
 	body.res-nightmode table#srList,
@@ -2470,7 +2407,7 @@ body.res-nightmode {
 			border-color: #696969;
 		}
 
-	/* ~~  B.3. Header ~~~~~~~~~~~~~ */
+	/* ~~  B.3. Header ~~~~~~~~~ */
 
 	body.res-nightmode #header {
 		background-color: #000!important;
@@ -2493,24 +2430,24 @@ body.res-nightmode {
 			background-image: linear-gradient(top,#696969,#414141);
 		}
 
-	/* --  B.3.1. User Controls ---------- */
+	/* --  B.3.1. User Controls ------ */
 
 	body.res-nightmode #header-bottom-right {
-		border-radius: 0 !important;
-		background-color: #1b1b1b !important;
+		border-radius: 0!important;
+		background-color: #1b1b1b!important;
 	}
 
 		body.res-nightmode #header-bottom-right a,
 		body.res-nightmode #header-bottom-right span {
 			color: #acd9fc;
 		}
-	/* --  B.3.2. Banner Image ---------- */
+	/* --  B.3.2. Banner Image ------ */
 
 	body.res-nightmode #header-bottom-left {
-		background-color: transparent !important;
+		background-color: transparent!important;
 	}
 
-	/* --  B.3.3. The Reddit Name, applies to all pages ---------- */
+	/* --  B.3.3. The Reddit Name, applies to all pages ------ */
 
 	body.res-nightmode .pagename {
 		color: #acd9fc;
@@ -2525,19 +2462,19 @@ body.res-nightmode {
 			background-image: linear-gradient(top,#546477,#083e5c);
 			box-shadow: 0 4px 6px #010611;
 			color: #acd9fc;
-			font-size: 18px!important;
+			font-size: 18px;
 			text-shadow: 0 1px 0 #231405;
 		}
 
 			body.res-nightmode .pagename a:hover {
 				background-color: #333;
-				background-image: -moz-linear-gradient(top,#4f4f52,#333333);
-				background-image: -webkit-linear-gradient(top,#4f4f52,#333333);
-				background-image: linear-gradient(tobottom,#4f4f52,#333333);
-				font-size: 18px!important;
+				background-image: -moz-linear-gradient(top,#4f4f52,#333);
+				background-image: -webkit-linear-gradient(top,#4f4f52,#333);
+				background-image: linear-gradient(tobottom,#4f4f52,#333);
+				font-size: 18px;
 			}
 
-	/* --  B.3.4. Reddit Image and Text ---------- */
+	/* --  B.3.4. Reddit Image and Text ------ */
 
 	body.res-nightmode #header-img.default-header {
 		color: #acd9fc;
@@ -2547,10 +2484,10 @@ body.res-nightmode {
 		border-width: 1px 0 1px 1px;
 		border-color: #1c1c1c;
 		background-color: #414141;
-		box-shadow: 0 4px 6px #444;
+		box-shadow: 0 4px 6px #000;
 	}
 
-	/* --  B.3.5. Header Nav ---------- */
+	/* --  B.3.5. Header Nav ------ */
 
 	body.res-nightmode ul.tabmenu li a,
 	body.res-nightmode ul.tabmenu li a:visited,
@@ -2576,17 +2513,17 @@ body.res-nightmode {
 				color: #e06935;
 			}
 
-	/* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~~~~~ */
+	/* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~ */
 
 	body.res-nightmode .menuarea {
 		border-color: #414141;
 	}
 
-	/* --  B.4.1. Content Box ---------- */
+	/* --  B.4.1. Content Box ------ */
 
 	body.res-nightmode div.content {
 		border-color: #202020;
-		background-color: #1b1b1b !important;
+		background-color: #1b1b1b!important;
 		box-shadow: 0 1px 4px 3px #000;
 	}
 
@@ -2612,7 +2549,7 @@ body.res-nightmode {
 			background-image: -webkit-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
 		}
 
-	/* --  B.4.2. Links (Posts) listings ---------- */
+	/* --  B.4.2. Links (Posts) listings ------ */
 
 	body.res-nightmode .linklisting .thing {
 		margin: 0;
@@ -2620,16 +2557,16 @@ body.res-nightmode {
 		box-shadow: 0 1px 12px -1px #000;
 	}
 
-	body.res-nightmode .linklisting .even {
-		background-color: #262626;
-		background-image: -moz-linear-gradient(left,#222,#262626);
-		background-image: -webkit-linear-gradient(left,#222,#262626);
-	}
-
 	body.res-nightmode .linklisting .odd {
 		background-color: #1e1e1e;
 		background-image: -moz-linear-gradient(left,#222,#1e1e1e);
 		background-image: -webkit-linear-gradient(left,#222,#1e1e1e);
+	}
+
+	body.res-nightmode .linklisting .even {
+		background-color: #262626;
+		background-image: -moz-linear-gradient(left,#222,#262626);
+		background-image: -webkit-linear-gradient(left,#222,#262626);
 	}
 
 	body.res-nightmode .link.last-clicked {
@@ -2639,12 +2576,7 @@ body.res-nightmode {
 		background-image: -webkit-linear-gradient(left,#1a1a1a,#111);
 	}
 
-	/* --  B.4.3. Links sub-parts ---------- */
-
-	body.res-nightmode .link .usertext .md {
-		border: 0 none;
-		background-color: transparent;
-	}
+	/* --  B.4.3. Links sub-parts ------ */
 
 	body.res-nightmode .panestack-title {
 		border-bottom: 1px dotted gray;
@@ -2654,17 +2586,9 @@ body.res-nightmode {
 			color: #777;
 		}
 
-	/* --  B.4.4. usertext-edit textarea ---------- */
-
-	body.res-nightmode form.usertext.cloneable {
-		border-width: 1px 0;
-		border-radius: 0;
-	}
-
-	/* --  B.4.5. Link submission form ---------- */
+	/* --  B.4.5. Link submission form ------ */
 
 	body.res-nightmode .formtabs-content .infobar {
-		color: #ddd;
 		text-shadow: none;
 	}
 
@@ -2672,9 +2596,9 @@ body.res-nightmode {
 		border-top: 1px dotted #2d2d2d;
 	}
 
-	/* --  B.4.6. Custom Upvote/Downvote Arrows ---------- */
+	/* --  B.4.6. Custom Upvote/Downvote Arrows ------ */
 
-	/* --  B.4.7. Comment Formatting ---------- */
+	/* --  B.4.7. Comment Formatting ------ */
 
 	body.res-nightmode div.content > form > div .commentarea .even {
 		border-top: 1px solid #111;
@@ -2684,8 +2608,8 @@ body.res-nightmode {
 	body.res-nightmode .commentarea .comment {
 		border: 1px solid #111!important;
 		border-color: #2d2d2d!important;
-		border-right: 0 !important;
-		border-radius: 0 !important;
+		border-right: 0!important;
+		border-radius: 0!important;
 	}
 
 	body.res-nightmode .commentarea .sitetable.nestedlisting > .comment {
@@ -2694,23 +2618,23 @@ body.res-nightmode {
 		box-shadow: 1px 1px 3px -1px #000;
 	}
 
-	body.res-nightmode .even.comment {
-		background-color: #131313!important;
-	}
-
 	body.res-nightmode .odd.comment {
 		background-color: #1b1b1b!important;
 	}
 
-	body.res-nightmode .child {
-		background: none transparent!important;
-	}
-
-	body.res-nightmode .nestedlisting > .comment .comment {
+	body.res-nightmode .even.comment {
 		background-color: #131313!important;
 	}
 
-		body.res-nightmode .nestedlisting > .comment .comment .comment {
+	body.res-nightmode .nestedlisting > .comment .comment,
+	body.res-nightmode .nestedlisting > .comment .comment .comment .comment,
+	body.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment .comment {
+		background-color: #131313!important;
+	}
+
+		body.res-nightmode .nestedlisting > .comment .comment .comment,
+		body.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment,
+		body.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
 			background-color: #1b1b1b!important;
 		}
 
@@ -2718,42 +2642,13 @@ body.res-nightmode {
 		color: #777!important;
 	}
 
-		body.res-nightmode .comment a.expand:hover {
-			background-color: transparent;
-		}
-
 		body.res-nightmode .comment a.expand:visited {
 			color: #777!important;
 		}
 
-	body.res-nightmode .commentarea .author {
-		margin-left: 0;
-		font-weight: normal;
-	}
+	/* --  B.4.8. Sort By Dropdown ------ */
 
-	body.res-nightmode .commentarea .collapsed .author {
-		color: #777!important;
-	}
-
-	body.res-nightmode .comment .child,
-	body.res-nightmode .comment .showreplies {
-		border: 0 none;
-	}
-
-	body.res-nightmode .commentarea .infobar {
-	}
-
-		body.res-nightmode .commentarea .infobar a {
-			color: #f73!important;
-		}
-
-			body.res-nightmode .commentarea .infobar a:hover {
-				color: #f73!important;
-			}
-
-	/* --  B.4.8. Sort By Dropdown ---------- */
-
-	/* ~~  B.5. Sidebar ~~~~~~~~~~~~~ */
+	/* ~~  B.5. Sidebar ~~~~~~~~~ */
 
 	body.res-nightmode .side {
 		background-color: transparent;
@@ -2773,7 +2668,7 @@ body.res-nightmode {
 			color: #ddd;
 		}
 
-	/* --  B.5.1. Search ---------- */
+	/* --  B.5.1. Search ------ */
 
 	body.res-nightmode #search input[type='text'] {
 		border-color: #1c1c1c;
@@ -2782,7 +2677,7 @@ body.res-nightmode {
 
 	body.res-nightmode .searchpane {
 		border-color: #151515;
-		border-radius: 0 !important;
+		border-radius: 0!important;
 		background-color: #393939;
 		box-shadow: none;
 	}
@@ -2793,12 +2688,12 @@ body.res-nightmode {
 		box-shadow: none;
 	}
 
-	/* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs ---------- */
+	/* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs ------ */
 
 	body.res-nightmode .linkinfo {
 		border: 1px solid #2d2d2d;
 		border-width: 1px 0;
-		border-radius: 0 !important;
+		border-radius: 0!important;
 		background-color: transparent!important;
 		color: #ccc;
 		text-shadow: none;
@@ -2818,31 +2713,16 @@ body.res-nightmode {
 			}
 
 		body.res-nightmode .linkinfo .shortlink input {
-			border: 0 !important;
+			border: 0!important;
 			background-color: transparent!important;
 			color: #f5f5f5!important;
 		}
 
-	/* --  B.5.3. Contributor and Moderator Buttons ---------- */
-
-	body.res-nightmode .titlebox form.toggle,
-	body.res-nightmode .leavemoderator {
-		background-color: transparent;
-	}
-
-	body.res-nightmode .leavemoderator-button {
-		background-color: transparent!important;
-	}
-
-	body.res-nightmode .leavecontributor-button {
-		background-color: transparent!important;
-	}
-
-	/* --  B.5.4. Login Form ---------- */
+	/* --  B.5.4. Login Form ------ */
 
 	body.res-nightmode .login-form-side {
 		border: 1px solid #111!important;
-		border-width: 1px 0 !important;
+		border-width: 1px 0!important;
 		background-color: transparent!important;
 	}
 
@@ -2851,11 +2731,7 @@ body.res-nightmode {
 		}
 
 
-	/* --  B.5.5. Flair Setting area ---------- */
-
-	body.res-nightmode .titlebox form.toggle {
-		background-color: transparent;
-	}
+	/* --  B.5.5. Flair Setting area ------ */
 
 	body.res-nightmode .titlebox .tagline {
 		border: 1px solid #151515;
@@ -2868,12 +2744,12 @@ body.res-nightmode {
 		border-color: #010101!important;
 	}
 
-	/* --  B.5.6. Submit Button ---------- */
+	/* --  B.5.6. Submit Button ------ */
 
 	body.res-nightmode div.spacer > .submit {
 		overflow: visible!important;
 	}
-	/* --  B.5.7. Moderators Area ---------- */
+	/* --  B.5.7. Moderators Area ------ */
 
 	body.res-nightmode .sidecontentbox {
 		background-color: transparent!important;
@@ -2892,14 +2768,14 @@ body.res-nightmode {
 		background-color: #222;
 	}
 
-	/* --  B.5.8. Account Activity area at Bottom of Sidebar ---------- */
+	/* --  B.5.8. Account Activity area at Bottom of Sidebar ------ */
 
 	body.res-nightmode .account-activity-box {
 		border-radius: 0 3px;
 		background-color: transparent;
 	}
 
-	/* ~~  B.6. Footer ~~~~~~~~~~~~~ */
+	/* ~~  B.6. Footer ~~~~~~~~~ */
 
 	body.res-nightmode .footer-parent {
 		background-color: #393939;
@@ -2915,7 +2791,7 @@ body.res-nightmode {
 			color: #acd9fc;
 		}
 
-	/* --  B.6.1. Reddit Copyright Text ---------- */
+	/* --  B.6.1. Reddit Copyright Text ------ */
 
 	body.res-nightmode .bottommenu {
 		color: #fac8b1;
@@ -2925,10 +2801,10 @@ body.res-nightmode {
 			color: #dcecf8;
 		}
 
-	/* ~~  B.7. Other areas in Reddit - [WIP] ~~~~~~~~~~~~~ */
+	/* ~~  B.7. Other areas in Reddit - [WIP] ~~~~~~~~~ */
 
 
-	/* ~~   B.8. Wiki Pages ~~~~~~~~~~~~~ */
+	/* ~~   B.8. Wiki Pages ~~~~~~~~~ */
 
 	body.res-nightmode.wiki-page .wiki-page-content {
 		border-top: 1px dotted #414141;
@@ -2954,7 +2830,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode.wiki-page .pageactions .wikiaction:hover {
-		background-color: #c2dcfe;
+		background-color: #acd9fc;
 	}
 
 	body.res-nightmode.wiki-page .pageactions .wikiaction-current {
@@ -2962,13 +2838,13 @@ body.res-nightmode {
 		color: white;
 	}
 
-	/* ~~  B.9. RES Optimisation ~~~~~~~~~~~~~ */
+	/* ~~  B.9. RES Optimisation ~~~~~~~~~ */
 
 	body.res-nightmode .keyHighlight,
 	body.res-nightmode .entry.RES-keyNav-activeElement {
 		outline: 1px dotted #e46700!important;
-		background: none transparent!important;
 		border-right: 1px solid #e46700!important;
+		background: none transparent!important;
 	}
 
 		body.res-nightmode .entry.RES-keyNav-activeElement div.md,
@@ -3000,7 +2876,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode div#userbarToggle {
-		border: 0 !important;
+		border: 0!important;
 		background-color: transparent!important;
 		color: #777;
 	}
@@ -3010,17 +2886,24 @@ body.res-nightmode {
 	}
 
 
-	/* --  B.9.1. Progress Indicator and Page marker for RES mode ---------- */
+	/* --  B.9.1. Progress Indicator and Page marker for RES mode ------ */
 
-	body.res-nightmode p#progressIndicator.neverEndingReddit,
-	body.res-nightmode div.NERPageMarker {
-		border-width: 0;
-		border-radius: 0;
-		background-color: transparent;
-		font-size: 20px;
+	body.res-nightmode #progressIndicator.neverEndingReddit,
+	body.res-nightmode div.NERPageMarker,
+	body.res-nightmode #NERFail,
+	body.res-nightmode #endOfReddit {
+		color: #ff4900;
 	}
 
-	/* ~~  B.10. Sidebar Boxes ~~~~~~~~~~~~~ */
+	/* ~~  B.10. Sidebar Boxes ~~~~~~~~~ */
+
+	body.res-nightmode .side .spacer .md h1,
+	body.res-nightmode .side .spacer .md h2,
+	body.res-nightmode .side .spacer .md h3 {
+		background-color: transparent!important;
+	}
+
+	/* --  B.10.1. Boxes ------ */
 
 	body.res-nightmode .side .md blockquote {
 		border: 1px solid #6a6a6a;
@@ -3041,16 +2924,6 @@ body.res-nightmode {
 	body.res-nightmode .side .md h5 + blockquote p,
 	body.res-nightmode .side .md h4 + blockquote p {
 		color: #fff;
-	}
-
-	body.res-nightmode .side .spacer .md h1,
-	body.res-nightmode .side .spacer .md h2,
-	body.res-nightmode .side .spacer .md h3 {
-		background-color: transparent!important;
-	}
-
-	body.res-nightmode .side .icon-menu a {
-		background-color: transparent;
 	}
 
 	body.res-nightmode .side .md blockquote a[href*='#icon-']:before {
@@ -3084,14 +2957,17 @@ body.res-nightmode {
 			color: #010f0f;
 		}
 
-	body.res-nightmode .side .md a[href*='#icon-'] {
+	/* --  B.10.3. Sidebar Icons ------ */
+
+	body.res-nightmode .side a[href*='#icon-'] {
 		color: #ccc;
 	}
 
-	/* ~~  B.11. Vibgyor Flairs ~~~~~~~~~~~~~ */
+	/* ~~  B.11. Vibgyor Flairs ~~~~~~~~~ */
 
 	body.res-nightmode .flair,
-	body.res-nightmode .linkflairlabel {
+	body.res-nightmode .linkflairlabel,
+	body.res-nightmode span.linkflair {
 		border-color: #585757;
 		border-radius: 2px;
 		background-color: #3c3b3b;
@@ -3102,19 +2978,19 @@ body.res-nightmode {
 	body.res-nightmode .linkflair-m-vt .linkflairlabel {
 		border: 1px solid #9004ac;
 		background: #8b008b;
-		color: #fbfbf9;
+		color: #f9f9f7;
 	}
 
 	body.res-nightmode .linkflair-m-io .linkflairlabel {
 		border: 1px solid #08c;
 		background: #3b6aa7;
-		color: #fbfbf9;
+		color: #f9f9f7;
 	}
 
 	body.res-nightmode .linkflair-m-be .linkflairlabel {
 		border: 1px solid #0e98ff;
 		background: #0247fe;
-		color: #fbfbf9;
+		color: #f9f9f7;
 	}
 
 	body.res-nightmode .linkflair-m-gn .linkflairlabel {
@@ -3126,13 +3002,13 @@ body.res-nightmode {
 	body.res-nightmode .linkflair-m-yw .linkflairlabel {
 		border: 1px solid #fff400;
 		background: #ffff00;
-		color: #c58f04;
+		color: #63290e;
 	}
 
 	body.res-nightmode .linkflair-m-oe .linkflairlabel {
 		border: 1px solid #ffa300;
 		background: #f90;
-		color: #fffbcb;
+		color: #63290e;
 	}
 
 	body.res-nightmode .linkflair-m-rd .linkflairlabel {
@@ -3156,10 +3032,11 @@ body.res-nightmode {
 
 	body.res-nightmode .linkflair-meta .title > .linkflairlabel {
 		background-color: #000;
+		box-shadow: 0 1px 10px 0 #000;
 		color: #fff;
-		box-shadow: 0 1px 10px 0px #525151;
+		border-color: #333;
 	}
 
 
 /* [ C ]. Modules for specific customization ............ */
-/*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use code, samples and compatible modules  */
+/*  visit http://www.reddit.com/r/mindashq/wiki/modules for opt-in modules  */
