@@ -62,6 +62,9 @@
 > C6 | [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - Clickable | Active | Opt-in
 > C6 | [Sidebar Images](/r/mindashq/wiki/modules/sidebarimages) - View Only | Inactive | Opt-in
 > C7 | [Rage Faces](/r/mindashq/wiki/modules/ragefaces) from F7U12 | Active | Opt-in
+> C8 | [Reddit Name Switcher](/r/mindashq/wiki/modules/TextSwitchers) | Active | Opt-in
+> C9 | [Subscriber Info Switcher](/r/mindashq/wiki/modules/TextSwitchers) | Inactive | Opt-in
+> C10 | [Emoticons](/r/mindashq/wiki/modules/emoticons) | Active | Opt-in
 > S1 | Coming up | Inactive | Swap
 > S2 | RESiprocator | Inactive | Independent
 
