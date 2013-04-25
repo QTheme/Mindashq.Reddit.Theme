@@ -12,6 +12,7 @@ a[href="/fy1"]:nth-of-type(n):after, a[href="/milk"]:nth-of-type(n):after, a[hre
 	height: 25px;
 	background-image: url(%%hypermegafinal3%%); /*Ensure image of this name is loaded from sidebar*/
 }
+
 a[href="/fy1"]:nth-of-type(n):after { width: 25px; height: 25px; background-position: -240px -30px; }
 a[href="/milk"]:nth-of-type(n):after { width: 21px; height: 25px; background-position: -210px -60px; }
 a[href="/pickletime"]:nth-of-type(n):after { width: 56px; height: 21px; background-position: -240px -87px; }

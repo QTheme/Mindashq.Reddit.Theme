@@ -1,0 +1,117 @@
+﻿/* --  C.10. Emoticons
+		This module is contributed by /u/DIAMOND_OR_NOT_DIAMO
+	 + 	Add only when corresponding image emoticons is added from http://www.reddit.com/r/mindashq/wiki/modules/emoticons
+	 + 	Update the main CSS header comment block when this module is used
+---- */
+
+a[href$="#menupic2"],a[href$="#menupic3"],a[href$="#crazy"],a[href$="#shocked2"],a[href$="#blush"],a[href$="#angry3"],a[href$="#laughing"],a[href$="#whistling"],a[href$="#grin"],a[href$="#smile2"],a[href$="#heart2"],a[href$="#heh"],a[href$="#doh"],a[href$="#money"],a[href$="#meh"],a[href$="#peaceout"],a[href$="#crazy3"],a[href$="#laughing3"],a[href$="#minus"],a[href$="#plus"],a[href$="#nerd"],a[href$="#good"],a[href$="#robot"],a[href$="#ugh"],a[href$="#menupic"],a[href$="#ftripoff"],a[href$="#ufo"],a[href$="#spoon2"],a[href$="#frown"],a[href$="#sleeping3"],a[href$="#heart3"],a[href$="#vector"],a[href$="#muffin"],a[href$="#gape2"],a[href$="#ninja"],a[href$="#dead3"],a[href$="#huh"],a[href$="#dead"],a[href$="#erm"],a[href$="#ninja3"],a[href$="#sleeping"],a[href$="#curious2"],a[href$="#crying3"],a[href$="#chromakode3"],a[href$="#angry2"],a[href$="#bomb"],a[href$="#sulk"],a[href$="#sad"],a[href$="#gape"],a[href$="#laughing2"],a[href$="#dead2"],a[href$="#ftripoff2"],a[href$="#hellyes"],a[href$="#smile3"],a[href$="#crying"],a[href$="#sick"],a[href$="#smile4"],a[href$="#yeah"],a[href$="#smiley"],a[href$="#evil"],a[href$="#cool"],a[href$="#angry"],a[href$="#ninja2"],a[href$="#reading"],a[href$="#wink3"],a[href$="#halfsmile3"],a[href$="#spoon"],a[href$="#ashamed"],a[href$="#brokenheart"],a[href$="#drool"],a[href$="#love2"],a[href$="#crying2"],a[href$="#love3"],a[href$="#grin2"],a[href$="#boring"],a[href$="#err"],a[href$="#raspberry2"],a[href$="#grin3"],a[href$="#sulk2"],a[href$="#muffin2"],a[href$="#wink"],a[href$="#curious"],a[href$="#halfsmile2"],a[href$="#ashamed3"],a[href$="#aww"],a[href$="#sour"],a[href$="#chromakode"],a[href$="#sleeping2"],a[href$="#halfsmile"],a[href$="#alien"],a[href$="#unimpressed"],a[href$="#love"],a[href$="#wink2"],a[href$="#ohmygod"],a[href$="#shocked"],a[href$="#raspberry"],a[href$="#sad2"],a[href$="#star"],a[href$="#heart"] {
+	display: inline-block;
+	background: url(%%emoticons%%) no-repeat;
+	width: 24px;
+	height: 24px; 
+}
+
+a[href$="#menupic2"] {background-position: -0px -0px; width: 32px; height: 32px; }
+a[href$="#menupic3"] {background-position: -0px -32px; width: 32px; height: 32px; }
+a[href$="#crazy"] {background-position: -0px -64px; }
+a[href$="#shocked2"] {background-position: -0px -88px; }
+a[href$="#blush"] {background-position: -0px -112px; }
+a[href$="#angry3"] {background-position: -0px -136px; }
+a[href$="#laughing"] {background-position: -0px -160px; }
+a[href$="#whistling"] {background-position: -0px -184px; }
+a[href$="#grin"] {background-position: -0px -208px; }
+a[href$="#smile2"] {background-position: -0px -232px; }
+a[href$="#heart2"] {background-position: -0px -256px; }
+a[href$="#heh"] {background-position: -0px -280px; }
+a[href$="#doh"] {background-position: -0px -304px; }
+a[href$="#money"] {background-position: -0px -328px; }
+a[href$="#meh"] {background-position: -0px -352px; }
+a[href$="#peaceout"] {background-position: -0px -376px; }
+a[href$="#crazy3"] {background-position: -0px -400px; }
+a[href$="#laughing3"] {background-position: -0px -424px; }
+a[href$="#minus"] {background-position: -0px -448px; }
+a[href$="#plus"] {background-position: -0px -472px; }
+a[href$="#nerd"] {background-position: -0px -496px; }
+a[href$="#good"] {background-position: -0px -520px; }
+a[href$="#robot"] {background-position: -0px -544px; }
+a[href$="#ugh"] {background-position: -0px -568px; }
+a[href$="#menupic"] {background-position: -0px -592px; }
+a[href$="#ftripoff"] {background-position: -0px -616px; }
+a[href$="#ufo"] {background-position: -0px -640px; }
+a[href$="#spoon2"] {background-position: -0px -664px; }
+a[href$="#frown"] {background-position: -0px -688px; }
+a[href$="#sleeping3"] {background-position: -0px -712px; }
+a[href$="#heart3"] {background-position: -0px -736px; }
+a[href$="#vector"] {background-position: -0px -760px; }
+a[href$="#muffin"] {background-position: -0px -784px; }
+a[href$="#gape2"] {background-position: -0px -808px; }
+a[href$="#ninja"] {background-position: -0px -832px; }
+a[href$="#dead3"] {background-position: -0px -856px; }
+a[href$="#huh"] {background-position: -0px -880px; }
+a[href$="#dead"] {background-position: -0px -904px; }
+a[href$="#erm"] {background-position: -0px -928px; }
+a[href$="#ninja3"] {background-position: -0px -952px; }
+a[href$="#sleeping"] {background-position: -0px -976px; }
+a[href$="#curious2"] {background-position: -0px -1000px; }
+a[href$="#crying3"] {background-position: -0px -1024px; }
+a[href$="#chromakode3"] {background-position: -0px -1048px; }
+a[href$="#angry2"] {background-position: -0px -1072px; }
+a[href$="#bomb"] {background-position: -0px -1096px; }
+a[href$="#sulk"] {background-position: -0px -1120px; }
+a[href$="#sad"] {background-position: -0px -1144px; }
+a[href$="#gape"] {background-position: -0px -1168px; }
+a[href$="#laughing2"] {background-position: -0px -1192px; }
+a[href$="#dead2"] {background-position: -0px -1216px; }
+a[href$="#ftripoff2"] {background-position: -0px -1240px; }
+a[href$="#hellyes"] {background-position: -0px -1264px; }
+a[href$="#smile3"] {background-position: -0px -1288px; }
+a[href$="#crying"] {background-position: -0px -1312px; }
+a[href$="#sick"] {background-position: -0px -1336px; }
+a[href$="#smile4"] {background-position: -0px -1360px; }
+a[href$="#yeah"] {background-position: -0px -1384px; }
+a[href$="#smiley"] {background-position: -0px -1408px; }
+a[href$="#evil"] {background-position: -0px -1432px; }
+a[href$="#cool"] {background-position: -0px -1456px; }
+a[href$="#angry"] {background-position: -0px -1480px; }
+a[href$="#ninja2"] {background-position: -0px -1504px; }
+a[href$="#reading"] {background-position: -0px -1528px; }
+a[href$="#wink3"] {background-position: -0px -1552px; }
+a[href$="#halfsmile3"] {background-position: -0px -1576px; }
+a[href$="#spoon"] {background-position: -0px -1600px; }
+a[href$="#ashamed"] {background-position: -0px -1624px; }
+a[href$="#brokenheart"] {background-position: -0px -1648px; }
+a[href$="#drool"] {background-position: -0px -1672px; }
+a[href$="#love2"] {background-position: -0px -1696px; }
+a[href$="#crying2"] {background-position: -0px -1720px; }
+a[href$="#love3"] {background-position: -0px -1744px; }
+a[href$="#grin2"] {background-position: -0px -1768px; }
+a[href$="#boring"] {background-position: -0px -1792px; }
+a[href$="#err"] {background-position: -0px -1816px; }
+a[href$="#raspberry2"] {background-position: -0px -1840px; }
+a[href$="#grin3"] {background-position: -0px -1864px; }
+a[href$="#sulk2"] {background-position: -0px -1888px; }
+a[href$="#muffin2"] {background-position: -0px -1912px; }
+a[href$="#wink"] {background-position: -0px -1936px; }
+a[href$="#curious"] {background-position: -0px -1960px; }
+a[href$="#halfsmile2"] {background-position: -0px -1984px; }
+a[href$="#ashamed3"] {background-position: -0px -2008px; }
+a[href$="#aww"] {background-position: -0px -2032px; }
+a[href$="#sour"] {background-position: -0px -2056px; }
+a[href$="#chromakode"] {background-position: -0px -2080px; }
+a[href$="#sleeping2"] {background-position: -0px -2104px; }
+a[href$="#halfsmile"] {background-position: -0px -2128px; }
+a[href$="#alien"] {background-position: -0px -2152px; }
+a[href$="#unimpressed"] {background-position: -0px -2176px; }
+a[href$="#love"] {background-position: -0px -2200px; }
+a[href$="#wink2"] {background-position: -0px -2224px; }
+a[href$="#ohmygod"] {background-position: -0px -2248px; }
+a[href$="#shocked"] {background-position: -0px -2272px; }
+a[href$="#raspberry"] {background-position: -0px -2296px; }
+a[href$="#sad2"] {background-position: -0px -2320px; }
+a[href$="#star"] {background-position: -0px -2344px; }
+a[href$="#heart"] {background-position: -0px -2368px;}
+
+a[href$="#menupic2"] + .keyNavAnnotation, a[href$="#menupic3"] + .keyNavAnnotation, a[href$="#crazy"] + .keyNavAnnotation, a[href$="#shocked2"] + .keyNavAnnotation, a[href$="#blush"] + .keyNavAnnotation, a[href$="#angry3"] + .keyNavAnnotation, a[href$="#laughing"] + .keyNavAnnotation, a[href$="#whistling"] + .keyNavAnnotation, a[href$="#grin"] + .keyNavAnnotation, a[href$="#smile2"] + .keyNavAnnotation, a[href$="#heart2"] + .keyNavAnnotation, a[href$="#heh"] + .keyNavAnnotation, a[href$="#doh"] + .keyNavAnnotation, a[href$="#money"] + .keyNavAnnotation, a[href$="#meh"] + .keyNavAnnotation, a[href$="#peaceout"] + .keyNavAnnotation, a[href$="#crazy3"] + .keyNavAnnotation, a[href$="#laughing3"] + .keyNavAnnotation, a[href$="#minus"] + .keyNavAnnotation, a[href$="#plus"] + .keyNavAnnotation, a[href$="#nerd"] + .keyNavAnnotation, a[href$="#good"] + .keyNavAnnotation, a[href$="#robot"] + .keyNavAnnotation, a[href$="#ugh"] + .keyNavAnnotation, a[href$="#menupic"] + .keyNavAnnotation, a[href$="#ftripoff"] + .keyNavAnnotation, a[href$="#ufo"] + .keyNavAnnotation, a[href$="#spoon2"] + .keyNavAnnotation, a[href$="#frown"] + .keyNavAnnotation, a[href$="#sleeping3"] + .keyNavAnnotation, a[href$="#heart3"] + .keyNavAnnotation, a[href$="#vector"] + .keyNavAnnotation, a[href$="#muffin"] + .keyNavAnnotation, a[href$="#gape2"] + .keyNavAnnotation, a[href$="#ninja"] + .keyNavAnnotation, a[href$="#dead3"] + .keyNavAnnotation, a[href$="#huh"] + .keyNavAnnotation, a[href$="#dead"] + .keyNavAnnotation, a[href$="#erm"] + .keyNavAnnotation, a[href$="#ninja3"] + .keyNavAnnotation, a[href$="#sleeping"] + .keyNavAnnotation, a[href$="#curious2"] + .keyNavAnnotation, a[href$="#crying3"] + .keyNavAnnotation, a[href$="#chromakode3"] + .keyNavAnnotation, a[href$="#angry2"] + .keyNavAnnotation, a[href$="#bomb"] + .keyNavAnnotation, a[href$="#sulk"] + .keyNavAnnotation, a[href$="#sad"] + .keyNavAnnotation, a[href$="#gape"] + .keyNavAnnotation, a[href$="#laughing2"] + .keyNavAnnotation, a[href$="#dead2"] + .keyNavAnnotation, a[href$="#ftripoff2"] + .keyNavAnnotation, a[href$="#hellyes"] + .keyNavAnnotation, a[href$="#smile3"] + .keyNavAnnotation, a[href$="#crying"] + .keyNavAnnotation, a[href$="#sick"] + .keyNavAnnotation, a[href$="#smile4"] + .keyNavAnnotation, a[href$="#yeah"] + .keyNavAnnotation, a[href$="#smiley"] + .keyNavAnnotation, a[href$="#evil"] + .keyNavAnnotation, a[href$="#cool"] + .keyNavAnnotation, a[href$="#angry"] + .keyNavAnnotation, a[href$="#ninja2"] + .keyNavAnnotation, a[href$="#reading"] + .keyNavAnnotation, a[href$="#wink3"] + .keyNavAnnotation, a[href$="#halfsmile3"] + .keyNavAnnotation, a[href$="#spoon"] + .keyNavAnnotation, a[href$="#ashamed"] + .keyNavAnnotation, a[href$="#brokenheart"] + .keyNavAnnotation, a[href$="#drool"] + .keyNavAnnotation, a[href$="#love2"] + .keyNavAnnotation, a[href$="#crying2"] + .keyNavAnnotation, a[href$="#love3"] + .keyNavAnnotation, a[href$="#grin2"] + .keyNavAnnotation, a[href$="#boring"] + .keyNavAnnotation, a[href$="#err"] + .keyNavAnnotation, a[href$="#raspberry2"] + .keyNavAnnotation, a[href$="#grin3"] + .keyNavAnnotation, a[href$="#sulk2"] + .keyNavAnnotation, a[href$="#muffin2"] + .keyNavAnnotation, a[href$="#wink"] + .keyNavAnnotation, a[href$="#curious"] + .keyNavAnnotation, a[href$="#halfsmile2"] + .keyNavAnnotation, a[href$="#ashamed3"] + .keyNavAnnotation, a[href$="#aww"] + .keyNavAnnotation, a[href$="#sour"] + .keyNavAnnotation, a[href$="#chromakode"] + .keyNavAnnotation, a[href$="#sleeping2"] + .keyNavAnnotation, a[href$="#halfsmile"] + .keyNavAnnotation, a[href$="#alien"] + .keyNavAnnotation, a[href$="#unimpressed"] + .keyNavAnnotation, a[href$="#love"] + .keyNavAnnotation, a[href$="#wink2"] + .keyNavAnnotation, a[href$="#ohmygod"] + .keyNavAnnotation, a[href$="#shocked"] + .keyNavAnnotation, a[href$="#raspberry"] + .keyNavAnnotation, a[href$="#sad2"] + .keyNavAnnotation, a[href$="#star"] + .keyNavAnnotation, a[href$="#heart"] {
+	display: none;
+}
+/* --  C.10.end Emoticons ---- */
