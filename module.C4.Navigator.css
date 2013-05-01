@@ -13,9 +13,9 @@
 	top: 69px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
 	left: 0px; /* set for stage; tweak as per subreddit */
 	display: block;
-	margin: 0px;
-	padding: 0px;
-	border: 0px none;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
 	background-color: transparent;
 	z-index: 99;
 }
@@ -46,8 +46,8 @@
 	.side .md > blockquote:last-child ul {
 		display: none;
 		overflow: visible;
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 		white-space: normal;
 		vertical-align: top;
 		list-style: none outside;
@@ -71,20 +71,20 @@
 	.side .md > blockquote:last-child:hover > ul,
 	.side .md > blockquote:last-child:active > ul {
 		display: block;
-		margin: -3px 0px 0px -50px;
-		padding: 0px 50px 50px;
+		margin: -3px 0 0 -50px;
+		padding: 0 50px 50px;
 	}
 
 	.side .md > blockquote:last-child li {
-		margin: 0px;
-		padding: 5px 15px 0px;
+		margin: 0;
+		padding: 5px 15px 0;
 		width: 150px;
 		height: 30px;
-		border-width: 0px 1px 1px 1px;
+		border-width: 0 1px 1px 1px;
 		border-style: solid;
 		border-color: #ccc;
 		background-color: #f5f5f5;
-		box-shadow: 0px 1px 6px 0px #bbb;
+		box-shadow: 0 1px 6px 0 #bbb;
 		line-height: 30px;
 		white-space: normal;
 		text-shadow: 0 1px 0 #ddd;
@@ -116,7 +116,7 @@
 		display: inline-block;
 		overflow: hidden;
 		margin-left: 163px;
-		padding: 0px 50px 50px 3px;
+		padding: 0 50px 50px 3px;
 		height: auto;
 	}
 
@@ -125,7 +125,8 @@
 		min-width: 150px;
 		width: auto;
 		background-color: #ddd;
-		box-shadow: 0px 2px 6px 0px #bebebe;
+		box-shadow: 0 2px 6px 0 #bebebe;
+		color: #5ca2e8;
 		white-space: nowrap;
 	}
 
@@ -134,42 +135,48 @@
 	margin-left: 33px;
 }
 
-body.res-nightmode .side .md > blockquote:last-child > h1,
-body.res-nightmode .side .md > blockquote:last-child > h1 a {
-	background-color: #414141!important;
-	color: #ff910b!important;
+body.res-nightmode .side .md > blockquote:last-child {
+	border: 0 none;
+	background-color: transparent;
 }
 
-body.res-nightmode .side .md > blockquote:last-child:hover > h1,
-body.res-nightmode .side .md > blockquote:last-child:active > h1,
-body.res-nightmode .side .md > blockquote:last-child:hover > h1 a,
-body.res-nightmode .side .md > blockquote:last-child:active > h1 a {
-	background-color: #ff910b!important;
-	color: #414141!important;
-}
-
-body.res-nightmode .side .md > blockquote:last-child li {
-	border-color: #6a6a6a;
-	background-color: #444444;
-	box-shadow: 0px 1px 6px 0px #000;
-	text-shadow: 0 1px 0 #888;
-}
-
-	body.res-nightmode .side .md > blockquote:last-child li a {
-		color: #bbb;
+	body.res-nightmode .side .md > blockquote:last-child > h1,
+	body.res-nightmode .side .md > blockquote:last-child > h1 a {
+		background-color: #414141!important;
+		color: #ff910b!important;
 	}
 
-body.res-nightmode .side .md > blockquote:last-child ul > li:hover,
-body.res-nightmode .side .md > blockquote:last-child ul > li:active,
-body.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
-body.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
-	background-color: #ff910b;
-	color: #dcebfa!important;
-	text-shadow: 0 1px 0 #333;
-}
+	body.res-nightmode .side .md > blockquote:last-child:hover > h1,
+	body.res-nightmode .side .md > blockquote:last-child:active > h1,
+	body.res-nightmode .side .md > blockquote:last-child:hover > h1 a,
+	body.res-nightmode .side .md > blockquote:last-child:active > h1 a {
+		background-color: #ff910b!important;
+		color: #414141!important;
+	}
 
-body.res-nightmode .side .md > blockquote:last-child li > ul > li {
-	background-color: #4a4a4a;
-	box-shadow: 0px 1px 6px 0px #000;
-}
+	body.res-nightmode .side .md > blockquote:last-child li {
+		border-color: #6a6a6a;
+		background-color: #444;
+		box-shadow: 0 1px 6px 0 #000;
+		text-shadow: 0 1px 0 #888;
+	}
+
+		body.res-nightmode .side .md > blockquote:last-child li a {
+			color: #bbb;
+		}
+
+	body.res-nightmode .side .md > blockquote:last-child ul > li:hover,
+	body.res-nightmode .side .md > blockquote:last-child ul > li:active,
+	body.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
+	body.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
+		background-color: #ff910b;
+		color: #dcebfa!important;
+		text-shadow: 0 1px 0 #333;
+	}
+
+	body.res-nightmode .side .md > blockquote:last-child li > ul > li {
+		background-color: #4a4a4a;
+		box-shadow: 0 1px 6px 0 #000;
+	}
+
 /* --  C.4.end Navigator ---- */
