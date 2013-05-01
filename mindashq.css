@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.5.2
+	v1.5.3
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -19,15 +19,41 @@ body {
 	line-height: 1.4;
 }
 
-h1, h2 {
+.md h1,
+.md h2 {
 	margin-bottom: 6px;
 	color: #223f4f;
-	letter-spacing: -1px;
 }
 
-h3, h4 {
+.md h3,
+.md h4 {
 	margin-bottom: 3px;
 	color: #223f4f;
+}
+
+.md h1,
+.md h2,
+.md h3,
+.md h4 {
+	border-color: #d2d2d2;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.md h1 {
+	font-size: 110%;
+}
+
+.md h2 {
+	font-size: 108%;
+}
+
+.md h3 {
+	font-size: 104%;
+}
+
+.md h4 {
+	font-size: 102%;
 }
 
 a {
@@ -101,11 +127,11 @@ a {
 
 	.md blockquote,
 	.help blockquote {
+		margin-left: 5px;
 		padding: 1px 1px 1px 15px;
 		max-width: 60em;
 		border: 1px solid #ccc;
 		border-width: 0 0 0 2px;
-		margin-left: 5px;
 	}
 
 hr {
@@ -298,7 +324,7 @@ button,
 .button,
 button.blueButton,
 input[type='submit'],
-a[href*='/#btn'] {
+a[href*='#btn'] {
 	margin: 5px 5px 5px 0;
 	padding: 6px 10px;
 	min-width: 70px;
@@ -325,7 +351,7 @@ a[href*='/#btn'] {
 	.button:hover,
 	button.blueButton:hover,
 	input[type='submit']:hover,
-	a[href*='/#btn']:hover,
+	a[href*='#btn']:hover,
 	.entry .flat-list.buttons a[onclick*='reply']:hover {
 		border-color: #08c;
 		background-color: #357ae8;
@@ -338,9 +364,9 @@ a[href*='/#btn'] {
 	.btn.right,
 	button.cancel,
 	.usertext span[class*='toggle'] {
+		padding: 6px 10px;
 		border-width: 0!important;
 		background: none transparent!important;
-		padding: 6px 10px;
 		font-size: small;
 	}
 
@@ -367,19 +393,19 @@ a[href*='/#btn'] {
 				color: #5ca2e8;
 			}
 
-a[href*='/#btn'] {
+a[href*='#btn'] {
 	display: block;
 	margin: 10px 0;
 	width: auto;
+	color: #fff!important;
 	font-size: 12px;
 	line-height: 29px;
 	letter-spacing: 0;
 	text-align: center;
-	color: #fff!important;
 }
 
-.md.wiki a[href*='/#btn'] {
-	/*display: inline-block;*/
+.md.wiki a[href*='#btn'] {
+	/* display: inline-block; */
 }
 
 .flat-list.buttons {
@@ -841,13 +867,13 @@ body.messages-page > div.content {
 .linklisting .odd {
 	background-color: #fefefe;
 	background-image: -moz-linear-gradient(left,#fdfdfd,#fefefe);
-	background-image: -webkit-linear-gradient(left, #fdfdfd, #fefefe);
+	background-image: -webkit-linear-gradient(left,#fdfdfd,#fefefe);
 }
 
 .linklisting .even {
 	background-color: #fbfbfb;
 	background-image: -moz-linear-gradient(left,#fefefe,#fbfbfb);
-	background-image: -webkit-linear-gradient(left, #fefefe, #fbfbfb);
+	background-image: -webkit-linear-gradient(left,#fefefe,#fbfbfb);
 }
 
 .linklisting .link:first-child {
@@ -890,7 +916,7 @@ body.messages-page > div.content {
 }
 
 	.sitetable .thumbnail.self {
-		margin: 2px 0px;
+		margin: 2px 0;
 	}
 
 .sitetable .entry {
@@ -982,7 +1008,7 @@ ul.tabmenu.formtab {
 /* --  A.4.6. Custom Upvote/Downvote Arrows ------ */
 
 .arrow {
-	margin: 0px auto 5px;
+	margin: 0 auto 5px;
 	background: none transparent!important;
 	color: #b7b7b7;
 	font-weight: normal;
@@ -1044,33 +1070,7 @@ ul.tabmenu.formtab {
 }
 
 	.commentarea p.tagline {
-		margin: 2px 0px 0px;
-	}
-
-	.commentarea h1,
-	.commentarea h2,
-	.commentarea h3,
-	.commentarea h4 {
-		border-color: #d2d2d2;
-		font-weight: bold;
-		font-size: 1.1em;
-		letter-spacing: 0;
-	}
-
-	.commentarea h1 {
-		font-size: 110%;
-	}
-
-	.commentarea h2 {
-		font-size: 108%;
-	}
-
-	.commentarea h3 {
-		font-size: 104%;
-	}
-
-	.commentarea h4 {
-		font-size: 102%;
+		margin: 2px 0 0;
 	}
 
 	.commentarea .comment,
@@ -1078,7 +1078,7 @@ ul.tabmenu.formtab {
 		margin: 3px 0 -2px 0!important;
 		padding: 1px 0 1px 2px!important;
 		border: 1px solid #eee!important;
-		border-color: #eee #eee #e0e0e0 #eee!important;
+		border-color: #e0e0e0 #e6e6e6!important;
 		border-right: 0!important;
 		border-radius: 0!important;
 	}
@@ -1093,7 +1093,7 @@ ul.tabmenu.formtab {
 .nestedlisting > .comment {
 	margin: 4px 0 0!important;
 	border: 1px solid #fafafa!important;
-	border-color: #eee #e0e0e0 #e0e0e0 #e0e0e0!important;
+	border-color: #e6e6e6 #e0e0e0 #e0e0e0 #e0e0e0!important;
 	box-shadow: 1px 1px 3px -1px #ccc;
 }
 
@@ -1118,7 +1118,7 @@ ul.tabmenu.formtab {
 	}
 
 .child {
-	margin: 0 0 0 15px!important;
+	margin: 0 0 0 30px!important;
 	background: none transparent!important;
 }
 
@@ -1145,7 +1145,7 @@ ul.tabmenu.formtab {
 
 	.commentarea .flat-list.buttons .toggleChildren {
 		position: absolute;
-		right: 0px;
+		right: 0;
 	}
 
 .comment .child,
@@ -1154,7 +1154,7 @@ ul.tabmenu.formtab {
 }
 
 .commentarea > .sitetable > .entry {
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 .morecomments {
@@ -1179,7 +1179,7 @@ ul.tabmenu.formtab {
 
 .commentarea > .sitetable > .morechildren .morecomments {
 	margin: 4px 0 0;
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 /* --  A.4.8. Sort By Dropdown ------ */
@@ -1191,7 +1191,7 @@ ul.tabmenu.formtab {
 	width: 300px;
 	background-color: transparent;
 	line-height: 1.3;
-	z-index: 0;
+	z-index: 10;
 }
 
 	.side .spacer {
@@ -1216,7 +1216,7 @@ ul.tabmenu.formtab {
 			margin: 1.2em 0 .2em 0;
 			font-size: 26px;
 			letter-spacing: -1px;
-			text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
+			text-shadow: 1px 1px 1px #fff,2px 2px 3px #aaa,-1px -1px 1px #eee;
 		}
 
 			.side .titlebox h1.redditname a {
@@ -1567,8 +1567,8 @@ body .disabled .morelink:hover {
 		display: block;
 		width: 100%;
 		height: 30px;
-		border-style: solid;
 		border-width: 1px 0;
+		border-style: solid;
 		z-index: -1;
 	}
 
@@ -1583,7 +1583,7 @@ body .disabled .morelink:hover {
 	}
 
 	.footer .flat-vert.title {
-		margin: 3px 0px 15px;
+		margin: 3px 0 15px;
 		color: #2154a3;
 	}
 
@@ -1607,7 +1607,7 @@ body .disabled .morelink:hover {
 
 .upload li,
 #image-upload {
-	margin: 10px 0px;
+	margin: 10px 0;
 	font-size: larger;
 }
 
@@ -1658,10 +1658,12 @@ body.wiki-page .wiki-page-content {
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
 		font-size: 2.4em;
+		letter-spacing: -1px;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h2 {
 		font-size: 1.8em;
+		letter-spacing: -1px;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h3 {
@@ -1855,10 +1857,10 @@ div.NERPageMarker,
 .side .md blockquote a[href*='#icon-']:before {
 	border-radius: 3px;
 	background-color: #5c5c5c;
-	background-image: -moz-linear-gradient(top, #666, #4d4d4d);
-	background-image: -webkit-linear-gradient(top, #666, #4d4d4d);
-	background-image: -o-linear-gradient(top, #666, #4d4d4d);
-	background-image: linear-gradient(to bottom, #666, #4d4d4d);
+	background-image: -moz-linear-gradient(top,#666,#4d4d4d);
+	background-image: -webkit-linear-gradient(top,#666,#4d4d4d);
+	background-image: -o-linear-gradient(top,#666,#4d4d4d);
+	background-image: linear-gradient(to bottom,#666,#4d4d4d);
 	color: #eee;
 	text-shadow: none;
 }
@@ -1889,10 +1891,10 @@ div.NERPageMarker,
 	.side .md h4 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='green']:before {
 		background-color: #5dd15d;
-		background-image: -moz-linear-gradient(top, #6de46d, #39c739);
-		background-image: -webkit-linear-gradient(top, #6de46d, #39c739);
-		background-image: -o-linear-gradient(top, #62c462, #51a351);
-		background-image: linear-gradient(to bottom, #6de46d, #39c739);
+		background-image: -moz-linear-gradient(top,#6de46d,#39c739);
+		background-image: -webkit-linear-gradient(top,#6de46d,#39c739);
+		background-image: -o-linear-gradient(top,#62c462,#51a351);
+		background-image: linear-gradient(to bottom,#6de46d,#39c739);
 		color: #e9ffe6;
 	}
 
@@ -1905,10 +1907,10 @@ div.NERPageMarker,
 	.side .md h5 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='yellow']:before {
 		background-color: #ffce36;
-		background-image: -moz-linear-gradient(top, #fde000, #fcca2e);
-		background-image: -webkit-linear-gradient(top, #fde000, #fcca2e);
-		background-image: -o-linear-gradient(top, #fff185, #ffe40e);
-		background-image: linear-gradient(to bottom, #fde000, #fcca2e);
+		background-image: -moz-linear-gradient(top,#fde000,#fcca2e);
+		background-image: -webkit-linear-gradient(top,#fde000,#fcca2e);
+		background-image: -o-linear-gradient(top,#fff185,#ffe40e);
+		background-image: linear-gradient(to bottom,#fde000,#fcca2e);
 		color: #ffffe6;
 	}
 
@@ -1921,10 +1923,10 @@ div.NERPageMarker,
 	.side .md h6 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='red']:before {
 		background-color: #e86537;
-		background-image: -moz-linear-gradient(top, #ef784e, #dd4814);
-		background-image: -webkit-linear-gradient(top, #ef784e, #dd4814);
-		background-image: -o-linear-gradient(top, #ef784e, #dd4814);
-		background-image: linear-gradient(to bottom, #ef784e, #dd4814);
+		background-image: -moz-linear-gradient(top,#ef784e,#dd4814);
+		background-image: -webkit-linear-gradient(top,#ef784e,#dd4814);
+		background-image: -o-linear-gradient(top,#ef784e,#dd4814);
+		background-image: linear-gradient(to bottom,#ef784e,#dd4814);
 		color: #fef0f0;
 	}
 
@@ -2024,7 +2026,7 @@ div.NERPageMarker,
 span.linkflair {
 	display: inline-block;
 	padding: 0 2px;
-	border: 1px solid #DDD;
+	border: 1px solid #ddd;
 	border-radius: 2px;
 	background: #f5f5f5;
 	color: #555;
@@ -2117,11 +2119,13 @@ span.linkflair {
 .linkflair-meta .arrow {
 	display: inline-block!important;
 	margin: 0 3px;
-	padding: 0px;
+	padding: 0;
 	font-size: 16px;
 }
 
 .linkflair-meta .title > .linkflairlabel {
+	position: absolute;
+	left: 20px;
 	display: inline-block;
 	margin: 25px 10px 0 0;
 	padding: 5px 10px 5px;
@@ -2130,8 +2134,6 @@ span.linkflair {
 	font-weight: bold;
 	font-size: 12px;
 	vertical-align: text-bottom;
-	position: absolute;
-	left: 20px;
 }
 
 /* [ B ]. Night Mode ............ */
@@ -2301,7 +2303,7 @@ body.res-nightmode {
 	body.res-nightmode .button,
 	body.res-nightmode button.blueButton,
 	body.res-nightmode input[type="submit"],
-	body.res-nightmode .side a[href*="/#btn"] {
+	body.res-nightmode .side a[href*="#btn"] {
 		text-shadow: 1px 1px 2px #000;
 	}
 
@@ -2386,7 +2388,7 @@ body.res-nightmode {
 
 	body.res-nightmode #sr-more-link {
 		background-color: #040406!important;
-		color: black;
+		color: #000;
 	}
 
 	/* --  B.2.1. Dropdown Subreddits Bar ------ */
@@ -2451,6 +2453,7 @@ body.res-nightmode {
 		body.res-nightmode #header-bottom-right span {
 			color: #acd9fc;
 		}
+
 	/* --  B.3.2. Banner Image ------ */
 
 	body.res-nightmode #header-bottom-left {
@@ -2589,7 +2592,7 @@ body.res-nightmode {
 	/* --  B.4.3. Links sub-parts ------ */
 
 	body.res-nightmode .panestack-title {
-		border-bottom: 1px dotted gray;
+		border-bottom: 1px dotted #808080;
 	}
 
 		body.res-nightmode .panestack-title .title {
@@ -2701,9 +2704,9 @@ body.res-nightmode {
 	/* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs ------ */
 
 	body.res-nightmode .infobar {
+		border: 1px solid #ffa500;
 		background-color: #885b2a;
 		background-image: none;
-		border: 1px solid #ffa500;
 		color: #f6e69f;
 	}
 
@@ -2747,7 +2750,6 @@ body.res-nightmode {
 			color: #fff!important;
 		}
 
-
 	/* --  B.5.5. Flair Setting area ------ */
 
 	body.res-nightmode .titlebox .tagline {
@@ -2766,6 +2768,7 @@ body.res-nightmode {
 	body.res-nightmode div.spacer > .submit {
 		overflow: visible!important;
 	}
+
 	/* --  B.5.7. Moderators Area ------ */
 
 	body.res-nightmode .sidecontentbox {
@@ -2852,7 +2855,7 @@ body.res-nightmode {
 
 	body.res-nightmode.wiki-page .pageactions .wikiaction-current {
 		background-color: #686868;
-		color: white;
+		color: #fff;
 	}
 
 	body.res-nightmode .sheets {
@@ -2905,7 +2908,6 @@ body.res-nightmode {
 	body.res-nightmode .morecomments a.button {
 		color: #111;
 	}
-
 
 	/* --  B.9.1. Progress Indicator and Page marker for RES mode ------ */
 
@@ -3050,14 +3052,12 @@ body.res-nightmode {
 		color: #000;
 	}
 
-
 	body.res-nightmode .linkflair-meta .title > .linkflairlabel {
+		border-color: #333;
 		background-color: #000;
 		box-shadow: 0 1px 10px 0 #000;
 		color: #fff;
-		border-color: #333;
 	}
-
 
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for opt-in modules  */
