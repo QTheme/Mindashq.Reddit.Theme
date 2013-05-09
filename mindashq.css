@@ -1631,6 +1631,21 @@ body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
 	border-color: #5ca2e8;
 }
 
+.message.message-reply .entry, .message.message-parent .entry {
+	border-left-width: 0;
+}
+
+.message.new > .entry {
+	border: 1px solid #acd9fc;
+	border-width: 1px 1px 1px 2px;
+}
+
+	.message.new > .entry.RES-keyNav-activeElement {
+		outline: 1px dotted #acd9fc!important;
+		border-color: #acd9fc!important;
+		background-color: #f8f8fa!important;
+	}
+
 /* ~~   A.8. Wiki Pages ~~~~~~~~~ */
 
 body.wiki-page h1.wikititle {
