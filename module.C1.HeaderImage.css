@@ -26,23 +26,40 @@
 
 	#header-bottom-left:before {
 		background-color: #acd9fc; /*tweak to match the image color*/
-		opacity: .1;
-		/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
+		opacity: .1; /*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
 #header ul.tabmenu li a,
-#header ul.tabmenu li a:visited {
+#header ul.tabmenu li a:visited,
+#header .pagename.redditname,
+#header .pagename.redditname.hover {
 	background-color: transparent; /*tweak to match the background image color, or use the default #acd9fc;*/
 	background-image: none;
-	/*do not use opacity here*/
-	/*be creative with usage of background color, and additional background images here*/
+	color: #acd9fc;
 }
 
 #header ul.tabmenu li.selected a {
-	background-color: #acd9fc; /*tweak to match the background image color*/
-	background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
-	background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);
-	background-image: linear-gradient(top,#acd9fc,#8ccbfc);
+	background-color: #fff; /*tweak to match the background image color*/
+	background-image: none;
+	color: #ff4500;
+}
+
+body.res-nightmode #header ul.tabmenu li.selected a {
+	background-color: #040406;
+	color: #e06935;
+}
+
+#header-bottom-right a,
+#header-bottom-right span {
+	color: #def0fe;
+}
+
+#header-bottom-right:hover {
+	background-color: #2154a3;
+}
+
+#sr-header-area {
+	background-color: #fff; /*tweak to match the image color*/
 }
 
 /* --  C.1.end Header Image ---- */
