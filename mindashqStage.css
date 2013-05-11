@@ -32,7 +32,8 @@ body.res-nightmode{color:#ccc}body.res-nightmode h1,body.res-nightmode h2,body.r
 }
 
 /* --  C.1. Header Image ---- */
-#header {
+#header,
+body.res-nightmode #header {
 	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
 	background: #fff url('%%headerImage%%') repeat-x scroll 0px 80%!important; /*color, url, repeat and position of image, tweak as per requirements */
 }
