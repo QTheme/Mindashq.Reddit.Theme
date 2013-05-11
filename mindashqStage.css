@@ -1,4 +1,4 @@
-﻿/* ~~ Mindashq.Reddit.Theme
+/* ~~ Mindashq.Reddit.Theme
     v1.5.3
     http://www.reddit.com/r/mindashq/wiki 
 	Added Modules
@@ -34,11 +34,7 @@ body.res-nightmode{color:#ccc}body.res-nightmode h1,body.res-nightmode h2,body.r
 /* --  C.1. Header Image ---- */
 #header {
 	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
-	background-color: #fff; /*add a matching color when image is not spanning entire header*/
-	background-image: url('%%header-falls%%'); /*url of image */
-	background-repeat: repeat; /*this will repeat the image to entire header*/
-	background-attachment: scroll;
-	background-position: 0px 80%; /* adjust for best view */
+	background: #fff url('%%headerImage%%') repeat-x scroll 0px 80%!important; /*color, url, repeat and position of image, tweak as per requirements */
 }
 
 	#header:after {
@@ -53,8 +49,8 @@ body.res-nightmode{color:#ccc}body.res-nightmode h1,body.res-nightmode h2,body.r
 }
 
 	#header-bottom-left:before {
-		background-color: #acd9fc; /*tweak to match the image color*/
-		opacity: .1;
+		background-color: #2a5484; /*tweak to match the image color*/
+		opacity: .1; /*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
 #header ul.tabmenu li a,
@@ -69,7 +65,12 @@ body.res-nightmode{color:#ccc}body.res-nightmode h1,body.res-nightmode h2,body.r
 #header ul.tabmenu li.selected a {
 	background-color: #fff; /*tweak to match the background image color*/
 	background-image: none;
-	color: #0b0c0e;
+	color: #ff4500;
+}
+
+body.res-nightmode #header ul.tabmenu li.selected a {
+	background-color: #040406;
+	color: #e06935;
 }
 
 #header-bottom-right a,
