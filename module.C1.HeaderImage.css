@@ -4,13 +4,10 @@
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
 
-#header {
+#header,
+body.res-nightmode #header{
 	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
-	background-color: #fff; /*add a matching color when image is not spanning entire header*/
-	background-image: url('%%headerImage%%'); /*url of image */
-	background-repeat: repeat; /*this will repeat the image to entire header*/
-	background-attachment: scroll;
-	background-position: 0px 80%; /* adjust for best view */
+	background: #fff url('%%headerImage%%') repeat-x scroll 0px 80%!important; /*color, url, repeat and position of image, tweak as per requirements */
 }
 
 	#header:after {
