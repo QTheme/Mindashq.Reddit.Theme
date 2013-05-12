@@ -413,7 +413,6 @@ a[href*='#btn'] {
 
 .flat-list.buttons {
 	display: inline-block;
-	margin: 5px 0 0 0;
 }
 
 	.flat-list.buttons li a,
@@ -861,7 +860,7 @@ body.messages-page > div.content {
 
 .linklisting .thing {
 	margin: 0;
-	padding: 3px 0;
+	padding: 3px 0 4px;
 	border-color: #fbf9f4;
 	background-color: #fff;
 	box-shadow: 0 1px 4px 0 #ccc;
@@ -1147,6 +1146,7 @@ ul.tabmenu.formtab {
 .commentarea .flat-list.buttons {
 	position: relative;
 	display: block;
+	margin: 5px 0 0;
 }
 
 	.commentarea .flat-list.buttons .toggleChildren {
@@ -1407,6 +1407,9 @@ div.sidebox.create {
 .RESDashboardToggle {
 	padding: 3px 7px!important;
 	border-color: #e3e3e3!important;
+	line-height: 14px!important;
+	display: inline-block!important;
+	font-size: 11px!important;
 }
 
 .fancy-toggle-button .remove,
