@@ -2333,13 +2333,15 @@ body.res-nightmode {
 
 		body.res-nightmode .btn.right,
 		body.res-nightmode button.cancel,
-		body.res-nightmode .usertext span[class*='toggle'] {
+		body.res-nightmode .usertext span[class*='toggle'],
+		body.res-nightmode a.reddiquette {
 			background: none transparent!important;
 		}
 
 			body.res-nightmode .btn.right a,
 			body.res-nightmode button.cancel,
 			body.res-nightmode .usertext span[class*='toggle'] a,
+			body.res-nightmode a.reddiquette,
 			body.res-nightmode button.RESBigEditorPop,
 			body.res-nightmode span.RESSubscriptionButton {
 				color: #777;
@@ -2349,6 +2351,7 @@ body.res-nightmode {
 				body.res-nightmode .btn.right a:hover,
 				body.res-nightmode button.cancel:hover,
 				body.res-nightmode .usertext span[class*='toggle'] a:hover,
+				body.res-nightmode a.reddiquette:hover,
 				body.res-nightmode button.RESBigEditorPop:hover,
 				body.res-nightmode span.RESSubscriptionButton:hover {
 					color: #a95908;
