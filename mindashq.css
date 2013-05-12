@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.5.3
+	v1.5.4
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -363,16 +363,18 @@ a[href*='#btn'] {
 
 	.btn.right,
 	button.cancel,
-	.usertext span[class*='toggle'] {
+	.usertext span[class*='toggle'],
+	a.reddiquette {
 		padding: 6px 10px;
 		border-width: 0!important;
 		background: none transparent!important;
-		font-size: small;
+		font-size: small!important;
 	}
 
 		.btn.right a,
 		button.cancel,
 		.usertext span[class*='toggle'] a,
+		a.reddiquette,
 		button.RESBigEditorPop,
 		span.RESSubscriptionButton {
 			border: 0!important;
@@ -387,6 +389,7 @@ a[href*='#btn'] {
 			.btn.right a:hover,
 			button.cancel:hover,
 			.usertext span[class*='toggle'] a:hover,
+			a.reddiquette:hover,
 			button.RESBigEditorPop:hover,
 			span.RESSubscriptionButton:hover {
 				background: none transparent!important;
@@ -858,7 +861,7 @@ body.messages-page > div.content {
 
 .linklisting .thing {
 	margin: 0;
-	padding: 2px 0 2px;
+	padding: 3px 0;
 	border-color: #fbf9f4;
 	background-color: #fff;
 	box-shadow: 0 1px 4px 0 #ccc;
@@ -1024,10 +1027,13 @@ ul.tabmenu.formtab {
 		font-size: 18px;
 	}
 
+	.arrow.upmod {
+		padding: 0 0 4px;
+	}
+
 	.arrow.downmod,
 	.arrow.down:hover {
-		margin-top: -3px;
-		padding: 0 0 5px;
+		margin-top: -4px;
 		font-size: 17px;
 	}
 
@@ -1182,7 +1188,6 @@ ul.tabmenu.formtab {
 	padding-left: 0;
 }
 
-/* --  A.4.8. Sort By Dropdown ------ */
 /* ~~  A.5. Sidebar ~~~~~~~~~ */
 
 .side {
@@ -1632,7 +1637,7 @@ body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
 }
 
 .message.message-reply .entry, .message.message-parent .entry {
-	border-left-width: 0;
+	border-left: 0 none;
 }
 
 .message.new > .entry {
@@ -2874,7 +2879,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .sheets {
-		/* margin-right: 333px;*/
+		/* margin-right: 333px; */
 	}
 
 	/* ~~  B.9. RES Optimisation ~~~~~~~~~ */
