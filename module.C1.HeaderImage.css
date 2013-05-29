@@ -54,6 +54,10 @@ body.res-nightmode #header ul.tabmenu li.selected a {
 #header-bottom-right:hover {
 	background-color: #2154a3;
 }
+		#header-bottom-right:hover a,
+		#header-bottom-right:hover span {
+			text-shadow: none;
+		}
 
 #sr-header-area {
 	background-color: #fff; /*tweak to match the image color*/

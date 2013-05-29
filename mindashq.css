@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.5.4
+	v1.5.5
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -309,7 +309,6 @@ a[href='/s'] {
 }
 
 .entry:hover .flat-list.buttons a[onclick*='reply'],
-.entry.keyHighlight .flat-list.buttons a[onclick*='reply'],
 .entry.RES-keyNav-activeElement .flat-list.buttons a[onclick*='reply'] {
 	border-color: #3079ed!important;
 	background-color: #5ba2fd;
@@ -383,7 +382,7 @@ a[href*='#btn'] {
 			color: #888;
 			font-weight: bold;
 			text-decoration: underline;
-			text-shadow: 1px 1px 2px #eee;
+			text-shadow: 1px 1px 1px #eee;
 		}
 
 			.btn.right a:hover,
@@ -433,7 +432,6 @@ a[href*='#btn'] {
 	.entry:hover > .flat-list.buttons > li .redditSingleClick,
 	.entry:focus > .flat-list.buttons > li a,
 	.entry:focus > .flat-list.buttons > li .redditSingleClick,
-	.keyHighlight .flat-list.buttons > li a,
 	.entry.RES-keyNav-activeElement .flat-list.buttons > li a,
 	.entry.RES-keyNav-activeElement .flat-list.buttons > li .redditSingleClick,
 	.noncollapsed:hover > .flat-list.buttons > li a,
@@ -446,7 +444,6 @@ a[href*='#btn'] {
 /* ~~  A.2. Top Sr-Bar ~~~~~~~~~ */
 
 #sr-header-area {
-	margin-top: -21px;
 	padding: 0 0 0 5px;
 	height: 20px;
 	border-color: #fff;
@@ -502,7 +499,7 @@ div#RESShortcutsEditContainer {
 #header #RESShortcutsAdd,
 #header #RESShortcutsTrash,
 #srDropdown {
-	background: none transparent;
+	background: none transparent!important;
 }
 
 #sr-more-link {
@@ -546,7 +543,7 @@ div#RESSubredditGroupDropdown {
 /* ~~  A.3. Header ~~~~~~~~~ */
 
 #header {
-	margin: 20px 0 30px;
+	margin: 0 0 30px;
 	height: auto;
 	background-color: #fff;
 	box-shadow: 0 -3px 9px 5px #ddd;
@@ -602,7 +599,7 @@ div#RESSubredditGroupDropdown {
 
 		#header-bottom-right:hover a,
 		#header-bottom-right:hover span {
-			text-shadow: 0 1px 0 #ddd;
+			text-shadow: 0 -1px 0 #dadada,0 1px 0 #fff;
 		}
 
 	#header-bottom-right .user,
@@ -769,8 +766,8 @@ ul.tabmenu {
 			ul.tabmenu li a:hover,
 			ul.tabmenu li.selected a:hover {
 				background-color: #def0fe;
-				color: #fff;
-				text-shadow: 0 1px 0 #333;
+				color: #000;
+				text-shadow: none;
 			}
 
 			ul.tabmenu li.selected a,
@@ -802,7 +799,7 @@ ul.tabmenu {
 
 .menuarea {
 	margin: 0!important;
-	padding: 0px 10px 5px!important;
+	padding: 0 10px 5px!important;
 	border-bottom-color: #d2d2d2;
 	background-color: transparent;
 	font-size: 11px;
@@ -860,7 +857,7 @@ body.messages-page > div.content {
 
 .linklisting .thing {
 	margin: 0;
-	padding: 3px 0 4px;
+	padding: 4px 0 5px;
 	border-color: #fbf9f4;
 	background-color: #fff;
 	box-shadow: 0 1px 4px 0 #ccc;
@@ -922,7 +919,7 @@ body.messages-page > div.content {
 	}
 
 .sitetable .entry {
-	margin: 1px 3px 1px 0;
+	margin: 1px 5px 1px 0;
 	padding-left: 5px;
 }
 
@@ -1034,6 +1031,7 @@ ul.tabmenu.formtab {
 	.arrow.down:hover {
 		margin-top: -4px;
 		font-size: 17px;
+		padding-bottom: 4px;
 	}
 
 	.arrow.up:after {
@@ -1096,31 +1094,23 @@ ul.tabmenu.formtab {
 }
 
 .nestedlisting > .comment {
-	margin: 4px 0 0!important;
+	margin: 5px 0 0!important;
 	border: 1px solid #fafafa!important;
 	border-color: #e6e6e6 #e0e0e0 #e0e0e0 #e0e0e0!important;
 	box-shadow: 1px 1px 3px -1px #ccc;
 }
 
-.odd.comment {
-	background-color: #f9f9f9;
-}
-
-.even.comment {
-	background-color: #fbfbfb;
-}
-
-.nestedlisting > .comment .comment,
-.nestedlisting > .comment .comment .comment .comment,
-.nestedlisting > .comment .comment .comment .comment .comment .comment {
-	background-color: #f9f9f6!important;
-}
-
-	.nestedlisting > .comment .comment .comment,
-	.nestedlisting > .comment .comment .comment .comment .comment,
-	.nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
-		background-color: #fdfdfd!important;
+	.nestedlisting > .comment .comment,
+	.nestedlisting > .comment .comment .comment .comment,
+	.nestedlisting > .comment .comment .comment .comment .comment .comment {
+		background-color: #f9f9f6!important;
 	}
+
+		.nestedlisting > .comment .comment .comment,
+		.nestedlisting > .comment .comment .comment .comment .comment,
+		.nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
+			background-color: #fdfdfd!important;
+		}
 
 .child {
 	margin: 0 0 0 30px!important;
@@ -1173,7 +1163,7 @@ ul.tabmenu.formtab {
 		display: inline-block;
 		margin: 0;
 		border-color: #e0e0e0!important;
-		background-color: #ececec!important;
+		background-color: #fcfcfc!important;
 		background-image: none!important;
 		color: #777!important;
 		text-shadow: 1px 1px 2px #eee;
@@ -1724,13 +1714,29 @@ body.wiki-page .wiki-page-content {
 
 /* ~~  A.9. RES Optimisation ~~~~~~~~~ */
 
+/* Pin Sub-bar*/
+body.pinHeader-sub #RESShortcutsSort,
+body.pinHeader-sub #RESShortcutsRight,
+body.pinHeader-sub #RESShortcutsLeft,
+body.pinHeader-sub #RESShortcutsAdd,
+body.pinHeader-sub #RESShortcutsTrash {
+	background-color: transparent;
+}
+
+/* Pin Sub-Bar User Bar */
+body.pinHeader-userbar #header-bottom-right,
+body.pinHeader-subanduser #header-bottom-right {
+	top: 20px!important;
+	bottom: auto!important;
+}
+
+/* Pin Full Header */
 #RESPinnedHeaderSpacer {
 	margin-bottom: 30px;
 }
 
-.keyHighlight,
+/* Handling the keynav */
 .entry.RES-keyNav-activeElement {
-	margin-right: 0;
 	outline: 1px dotted #ff9a02!important;
 	border: 0!important;
 	border-right: 1px solid #ff9a02!important;
@@ -1743,7 +1749,6 @@ body.wiki-page .wiki-page-content {
 		border: 0!important;
 	}
 
-	.keyHighlight,
 	.entry.RES-keyNav-activeElement,
 	.entry.RES-keyNav-activeElement div.md,
 	.entry.RES-keyNav-activeElement .usertext-body,
@@ -1799,7 +1804,7 @@ div.NERPageMarker,
 .side .md h3 {
 	margin: 5px;
 	background: none transparent;
-	text-shadow: 0 0 1px #fdfdfe,0 1px 1px #585858;
+	text-shadow: 0 -1px 0 #dadada, 0 1px 0 #fff;
 }
 
 .side .md p {
@@ -2378,7 +2383,6 @@ body.res-nightmode {
 	body.res-nightmode .entry:hover > .flat-list.buttons > li .redditSingleClick,
 	body.res-nightmode .entry:focus > .flat-list.buttons > li a,
 	body.res-nightmode .entry:focus > .flat-list.buttons > li .redditSingleClick,
-	body.res-nightmode .keyHighlight .flat-list.buttons > li a,
 	body.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons > li a,
 	body.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons > li .redditSingleClick,
 	body.res-nightmode .noncollapsed:hover > .flat-list.buttons > li a,
@@ -2657,14 +2661,6 @@ body.res-nightmode {
 		box-shadow: 1px 1px 3px -1px #000;
 	}
 
-	body.res-nightmode .odd.comment {
-		background-color: #1b1b1b!important;
-	}
-
-	body.res-nightmode .even.comment {
-		background-color: #131313!important;
-	}
-
 	body.res-nightmode .nestedlisting > .comment .comment,
 	body.res-nightmode .nestedlisting > .comment .comment .comment .comment,
 	body.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment .comment {
@@ -2890,7 +2886,6 @@ body.res-nightmode {
 
 	/* ~~  B.9. RES Optimisation ~~~~~~~~~ */
 
-	body.res-nightmode .keyHighlight,
 	body.res-nightmode .entry.RES-keyNav-activeElement {
 		outline: 1px dotted #e46700!important;
 		border-right: 1px solid #e46700!important;
@@ -2904,22 +2899,15 @@ body.res-nightmode {
 			background: none transparent!important;
 		}
 
-		body.res-nightmode .keyHighlight,
-		body.res-nightmode .keyHighlight .usertext-body,
-		body.res-nightmode .keyHighlight .usertext-body .md,
-		body.res-nightmode .keyHighlight .usertext-body .md p,
-		body.res-nightmode .keyHighlight .noncollapsed,
-		body.res-nightmode .keyHighlight .noncollapsed .md,
-		body.res-nightmode .keyHighlight .noncollapsed .md p,
-		body.res-nightmode .RES-keyNav-activeElement,
-		body.res-nightmode .RES-keyNav-activeElement .usertext-body,
-		body.res-nightmode .RES-keyNav-activeElement .usertext-body .md,
-		body.res-nightmode .RES-keyNav-activeElement .usertext-body .md p,
-		body.res-nightmode .RES-keyNav-activeElement .noncollapsed,
-		body.res-nightmode .RES-keyNav-activeElement .noncollapsed .md,
-		body.res-nightmode .RES-keyNav-activeElement .noncollapsed .md p {
-			background-color: transparent!important;
-		}
+	body.res-nightmode .RES-keyNav-activeElement,
+	body.res-nightmode .RES-keyNav-activeElement .usertext-body,
+	body.res-nightmode .RES-keyNav-activeElement .usertext-body .md,
+	body.res-nightmode .RES-keyNav-activeElement .usertext-body .md p,
+	body.res-nightmode .RES-keyNav-activeElement .noncollapsed,
+	body.res-nightmode .RES-keyNav-activeElement .noncollapsed .md,
+	body.res-nightmode .RES-keyNav-activeElement .noncollapsed .md p {
+		background-color: transparent!important;
+	}
 
 	body.res-nightmode .keyNavAnnotation {
 		color: #777;
