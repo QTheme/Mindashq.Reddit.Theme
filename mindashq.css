@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.6
+	v1.6.1
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -10,12 +10,12 @@
 body {
 	position: relative;
 	min-width: 800px;
-	background-color: #f9f9f7;
+	background-color: #f1f1f1; /*#f9f9f7;*/
 	color: #333;
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
-	font-family: Helvetica, arial, freesans, clean, sans-serif;
+	font-family: sans-serif;
 	line-height: 1.4;
 }
 
@@ -72,30 +72,29 @@ a {
 		}
 
 			.thing .title:visited,
+			.thing .title.loggedin.click:visited,
 			.thing .title.loggedin:visited {
-				color: #211a39;
+				color: #211a39; /*#5d0081;*/
 				text-shadow: 0 1px 0 #757575;
 			}
 
-			a:visited,
-			.thing .title.loggedin.click:visited,
-			.tagline a,
-			.comment .md p > a:visited {
-				color: #810ba8;
-			}
+		a:visited,
+		div.comment .md p > a:visited {
+			color: #a409aa; /*#810ba8;*/
+		}
 
-			a:hover,
-			.thing .title:hover,
-			.thing .title.loggedin:hover {
-				color: #00f;
-				text-decoration: none;
-			}
+		a:hover,
+		.thing .title:hover,
+		.thing .title.loggedin:hover {
+			color: #00f;
+			text-decoration: none;
+		}
 
-			a:active,
-			.thing .title:active,
-			.thing .title.loggedin:active {
-				color: #861010;
-			}
+		a:active,
+		.thing .title:active,
+		.thing .title.loggedin:active {
+			color: #861010;
+		}
 
 .rounded {
 	border-radius: 4px;
@@ -136,6 +135,10 @@ a {
 		max-width: 60em;
 		border: 1px solid #ccc;
 		border-width: 0 0 0 2px;
+	}
+
+	.md p {
+		margin: 10px 0;
 	}
 
 hr {
@@ -305,7 +308,7 @@ a[href='/s'] {
 	border: 1px solid #efeded;
 	border-radius: 2px;
 	background-color: #fafafa;
-	color: #4b8adb!important;
+	color: #555!important;
 	font-size: 11px;
 	text-decoration: none;
 	text-shadow: none;
@@ -415,13 +418,13 @@ a[href*='#btn'] {
 
 .flat-list.buttons {
 	display: inline-block;
-	font-size: 10px;
+	font-size: 11px;
 }
 
 	.flat-list.buttons li a,
 	.flat-list.buttons li a:visited,
 	li .redditSingleClick {
-		color: #ebe2e2;
+		color: #ddd;
 	}
 
 		.flat-list.buttons li a:hover {
@@ -473,7 +476,7 @@ a[href*='#btn'] {
 .sr-bar a:link,
 .sr-list a {
 	line-height: 20px;
-	opacity: 0.40;
+	opacity: 0.4;
 	-ms-filter: Alpha(Opacity=40);
 	filter: Alpha(Opacity=40);
 }
@@ -818,12 +821,11 @@ ul.tabmenu {
 
 p.tagline {
 	color: #555;
-	font-size: 10px;
+	font-size: 11px;
 }
 
 .tagline a {
 	color: #333;
-	font-size: 11px;
 }
 
 .author.submitter,
@@ -853,6 +855,7 @@ body.messages-page > div.content {
 
 	body.single-page > div.content > .linklisting .link {
 		border-top-width: 1px!important;
+		background: none #fff;
 	}
 
 	body.single-page > div.content > .linklisting .midcol {
@@ -869,7 +872,7 @@ body.messages-page > div.content {
 
 .linklisting .thing {
 	margin: 0;
-	padding: 4px 0 5px;
+	padding: 8px 0 9px;
 	border-color: #fbf9f4;
 	background-color: #fff;
 	box-shadow: 0 1px 4px 0 #ccc;
@@ -933,7 +936,7 @@ body.messages-page > div.content {
 
 .sitetable .entry {
 	margin: 1px 5px 1px 0;
-	padding-left: 5px;
+	padding: 5px 0 5px 5px;
 }
 
 .sitetable .title {
@@ -1086,13 +1089,13 @@ ul.tabmenu.formtab {
 }
 
 	.commentarea p.tagline {
-		margin: 2px 0 0;
+		margin: 2px -2px;
 	}
 
 	.commentarea .comment,
 	.linklisting .comment {
-		margin: 3px 0 -2px 0!important;
-		padding: 1px 0 1px 2px!important;
+		margin: 6px 0 -3px 0!important;
+		padding: 3px 0 2px 2px!important;
 		border: 1px solid #eee!important;
 		border-color: #e0e0e0 #e6e6e6!important;
 		border-right: 0!important;
@@ -1107,7 +1110,7 @@ ul.tabmenu.formtab {
 }
 
 .nestedlisting > .comment {
-	margin: 5px 0 0!important;
+	margin: 6px 0 0!important;
 	border: 1px solid #fafafa!important;
 	border-color: #e6e6e6 #e0e0e0 #e0e0e0 #e0e0e0!important;
 	background-color: #fbfbfb;
@@ -1129,6 +1132,10 @@ ul.tabmenu.formtab {
 .child {
 	margin: 0 0 0 30px!important;
 	background: none transparent!important;
+}
+
+.comment .collapsed {
+	padding: 5px;
 }
 
 .comment .noncollapsed {
@@ -1192,6 +1199,10 @@ ul.tabmenu.formtab {
 	padding-left: 0;
 }
 
+.new-comment .usertext-body {
+	padding: 0 10px;
+}
+
 .usertext.grayed .usertext-body {
 	display: none; /*compact deleted messages/comments*/
 }
@@ -1208,7 +1219,7 @@ div.thing.spam {
 }
 
 	div.thing.spam > .entry {
-		margin: -2px 3px 0px 30px;
+		margin: 0 3px 0px 30px;
 		border: 1px solid #fbb!important;
 		background-color: #ffe5e2!important;
 	}
@@ -2142,6 +2153,7 @@ span.linkflair {
 		padding: 0 5px 2px;
 		font-weight: bold;
 		vertical-align: text-bottom;
+		text-align: center;
 	}
 
 	.thing.linkflair[class*="-m-"]:hover .linkflairlabel {
@@ -2172,7 +2184,7 @@ span.linkflair {
 }
 
 .linkflair-m-yw .linkflairlabel {
-	border: 1px solid #fff400;
+	border: 1px solid #c58f04;
 	background: #ffff00;
 	color: #c58f04;
 }
@@ -2736,6 +2748,7 @@ body.res-nightmode {
 	body.res-nightmode .nestedlisting > .comment {
 		border: 1px solid #111!important;
 		border-color: #2d2d2d!important;
+		background-color: #1b1b1b!important;
 		box-shadow: 1px 1px 3px -1px #000;
 	}
 
