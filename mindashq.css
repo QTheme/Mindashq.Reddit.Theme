@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.6.1
+	v1.6.2
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -62,7 +62,8 @@ a {
 	a,
 	a:link,
 	.thing .title,
-	.thing .title.loggedin {
+	.thing .title.loggedin,
+	a:visited {
 		color: #015dcc;
 	}
 
@@ -78,23 +79,23 @@ a {
 				text-shadow: 0 1px 0 #757575;
 			}
 
-		a:visited,
-		div.comment .md p > a:visited {
-			color: #a409aa; /*#810ba8;*/
-		}
+.content .md a:visited,
+div.comment .md p > a:visited {
+	color: #a409aa; /*#810ba8;*/
+}
 
-		a:hover,
-		.thing .title:hover,
-		.thing .title.loggedin:hover {
-			color: #00f;
-			text-decoration: none;
-		}
+a:hover,
+.thing .title:hover,
+.thing .title.loggedin:hover {
+	color: #00f;
+	text-decoration: none;
+}
 
-		a:active,
-		.thing .title:active,
-		.thing .title.loggedin:active {
-			color: #861010;
-		}
+a:active,
+.thing .title:active,
+.thing .title.loggedin:active {
+	color: #861010;
+}
 
 .rounded {
 	border-radius: 4px;
@@ -341,6 +342,7 @@ a[href*='#btn'] {
 	background-image: -moz-linear-gradient(top,#5ba2fd,#4b8adb)!important;
 	background-image: linear-gradient(top,#5ba2fd,#4b8adb)!important;
 	color: #fff;
+	font-weight: bold;
 	font-size: 13px;
 	text-decoration: none;
 	text-shadow: 1px 1px 2px #0f0f0f;
@@ -380,6 +382,7 @@ a[href*='#btn'] {
 		button.cancel,
 		.usertext span[class*='toggle'] a,
 		a.reddiquette,
+		#url-field button,
 		button.RESBigEditorPop,
 		span.RESSubscriptionButton {
 			border: 0!important;
@@ -388,12 +391,13 @@ a[href*='#btn'] {
 			color: #888;
 			font-weight: bold;
 			text-decoration: underline;
-			text-shadow: 1px 1px 1px #eee;
+			text-shadow: none;
 		}
 
 			.btn.right a:hover,
 			button.cancel:hover,
 			.usertext span[class*='toggle'] a:hover,
+			#url-field button:hover,
 			a.reddiquette:hover,
 			button.RESBigEditorPop:hover,
 			span.RESSubscriptionButton:hover {
@@ -997,7 +1001,9 @@ ul.tabmenu.formtab {
 
 			ul.tabmenu.formtab li.selected a,
 			ul.tabmenu.formtab li.selected a:hover {
-				padding: 5px 15px;
+				margin: 1px 0 0;
+				padding: 5px 20px;
+				border: 0;
 				-webkit-border-bottom-right-radius: 0;
 				-moz-border-radius-bottomright: 0;
 				-webkit-border-bottom-left-radius: 0;
@@ -1006,6 +1012,7 @@ ul.tabmenu.formtab {
 				border-bottom-left-radius: 0;
 				background-color: #5ca2e8!important;
 				box-shadow: none;
+				color: #dcebfa;
 			}
 
 #noresults {
@@ -1360,7 +1367,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 /* --  A.5.2 Infobar, MoreInfo and MoreSearch Divs ------ */
 
 .infobar {
-	margin: 5px 0;
+	margin: 1px 0;
 	border-color: #acd9fc;
 	background-color: #eaf4fc;
 	background-image: -webkit-linear-gradient(top,#eaf4fc,#eff8ff);
@@ -1384,7 +1391,6 @@ body:not(.profile-page) .side .titlebox .bottom {
 	border-width: 1px 0;
 	border-radius: 0!important;
 	background-color: transparent;
-	color: #333;
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
@@ -1394,12 +1400,10 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 	.linkinfo .score {
 		margin: 2px 0;
-		color: #333;
 	}
 
 		.linkinfo .score .number,
 		.linkinfo .score .word {
-			color: #333;
 			font-weight: bold;
 			font-size: 15px;
 		}
@@ -1841,9 +1845,9 @@ body.pinHeader-subanduser #header-bottom-right {
 
 /* Handling the keynav */
 .entry.RES-keyNav-activeElement {
-	outline: 1px dotted #ff9a02!important;
+	outline: 1px dotted #4b8adb!important;
 	border: 0!important;
-	border-right: 1px solid #ff9a02!important;
+	border-right: 1px solid #4b8adb!important;
 }
 
 	.entry.RES-keyNav-activeElement div.md,
@@ -2250,6 +2254,10 @@ span.linkflair {
 	vertical-align: text-bottom;
 }
 
+body.with-listing-chooser .linkflair-meta .title > .linkflairlabel {
+	left: 135px;
+}
+
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~~~~~ */
 
@@ -2436,6 +2444,7 @@ body.res-nightmode {
 			body.res-nightmode button.cancel,
 			body.res-nightmode .usertext span[class*='toggle'] a,
 			body.res-nightmode a.reddiquette,
+			body.res-nightmode #url-field button,
 			body.res-nightmode button.RESBigEditorPop,
 			body.res-nightmode span.RESSubscriptionButton {
 				color: #777;
@@ -2446,6 +2455,7 @@ body.res-nightmode {
 				body.res-nightmode button.cancel:hover,
 				body.res-nightmode .usertext span[class*='toggle'] a:hover,
 				body.res-nightmode a.reddiquette:hover,
+				body.res-nightmode #url-field button:hover,
 				body.res-nightmode button.RESBigEditorPop:hover,
 				body.res-nightmode span.RESSubscriptionButton:hover {
 					color: #a95908;
@@ -2718,6 +2728,13 @@ body.res-nightmode {
 		body.res-nightmode .panestack-title .title {
 			color: #777;
 		}
+
+	body.res-nightmode ul.tabmenu.formtab li.selected a,
+	body.res-nightmode ul.tabmenu.formtab li.selected a:hover {
+		padding: 5px 20px!important;
+		border: 0!important;
+		box-shadow: none;
+	}
 
 	/* --  B.4.5. Link submission form ------ */
 
