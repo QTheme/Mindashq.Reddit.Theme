@@ -1506,7 +1506,7 @@ body.res .titlebox .fancy-toggle-button {
 
 .fancy-toggle-button .remove {
 	background: none #f3f3f3!important;
-	color: #c13c07;
+	color: #aaa;
 }
 
 .RESshortcutside,
@@ -2929,7 +2929,7 @@ body.res-nightmode {
 
 	body.res-nightmode .fancy-toggle-button .remove {
 		background: none #0f0000!important;
-		color: #c13c07;
+		color: #6a6a6a;
 	}
 
 	body.res-nightmode .RESshortcutside,
