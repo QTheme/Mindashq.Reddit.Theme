@@ -1,5 +1,5 @@
 ﻿# Staging area for Mindashq Theme
-## Running v1.5
+## Running v1.6
 ### Some things may seem wonky at times.
 
 ---
