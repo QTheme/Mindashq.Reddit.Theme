@@ -871,7 +871,7 @@ body.messages-page > div.content {
 .thing.link.promotedlink.promoted {
 	border-width: 0!important;
 	border-color: #d2d2d2;
-	background-color: #fefff0;
+	background: none #fffeed;
 }
 
 .linklisting .thing {
