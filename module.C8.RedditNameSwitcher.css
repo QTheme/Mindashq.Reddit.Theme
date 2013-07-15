@@ -5,10 +5,11 @@
 
 .pagename a:after,
 .titlebox .redditname a:after {
-	content: "Stage Mindashq"; /* type the custom name here */
+	content: "Stage Mindashq"; /*Type the custom name here*/
 }
 
-.pagename a, .titlebox .redditname a {
+.pagename a,
+.titlebox .redditname a {
 	font-size: 0!important;
 }
 

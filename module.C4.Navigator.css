@@ -10,8 +10,8 @@
 
 .side .md > blockquote:last-child {
 	position: absolute;
-	top: 69px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
-	left: 0px; /* set for stage; tweak as per subreddit */
+	top: 69px; /*Tweak this as per the header height (esp when C1 HeaderImages is used)*/
+	left: 0px; /*Tweak depending on subreddit name length; Set for stage*/
 	display: block;
 	margin: 0;
 	padding: 0;

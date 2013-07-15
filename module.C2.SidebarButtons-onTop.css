@@ -67,7 +67,7 @@ body.res-nightmode .sidebox.submit-link .morelink .nub {
 /*-- C.2.3. Top Positioning with message to moderator text --*/
 .sidebox.submit {
 	position: absolute;
-	top: 105px; /*Tweak this as per the header height (esp when C1 Header Images is used)*/
+	top: 105px; /*Tweak this as per the header height (esp when C1 HeaderImages is used)*/
 }
 
 .sidecontentbox a.helplink {

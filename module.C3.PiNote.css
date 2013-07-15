@@ -7,7 +7,7 @@
 
 .side .md > blockquote:nth-of-type(1) {
 	position: absolute;
-	top: 175px; /*Tweak this as per the header height (esp when C1 Header Images is used) */
+	top: 175px; /*Tweak this as per the header height (esp when C1 HeaderImages is used)*/
 	right: 360px;
 	left: 10px;
 	border: 0!important;

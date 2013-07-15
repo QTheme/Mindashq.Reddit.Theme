@@ -4,12 +4,12 @@
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
 
-/*  Selective blockquotes collapsed/uncollapsed  */
+/*  Enlist blocks to be seen uncollapsed  */
 .side .md > blockquote:nth-of-type(5) > * {
 	display: block;
 }
 
-/* All blockquotes collapsed/uncollapsed  */
+/* Collapsing all boxes by default  */
 
 .side .md > blockquote > * {
 	display: none;

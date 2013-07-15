@@ -1,0 +1,27 @@
+﻿/* --  C.11. Selective Downvotes
+	 + 	Update the main CSS header comment block when this module is used
+---- */
+
+.link .down {
+	display: none;
+}
+/*To hide them on posts only, recommended */
+
+
+/* uncomment
+	.comment .down {
+	display: none;
+}
+To hide them on comments only*/
+
+/* delete above and uncomment
+	.down {
+	display: none;
+}
+To hide downvote everywhere*/
+
+.linkinfo .downvotes {
+	display: none;
+}
+
+/* --  C.11.end Selective Downvotes ---- */

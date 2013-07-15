@@ -5,9 +5,9 @@
 ---- */
 
 #header,
-body.res-nightmode #header{
-	min-height: 150px; /*give a nice height for image to be seen, be conservative*/
-	background: #fff url('%%headerImage%%') repeat-x scroll 0px 80%!important; /*color, url, repeat and position of image, tweak as per requirements */
+body.res-nightmode #header {
+	min-height: 150px; /*Tweak to give a nice height for image to be seen, be conservative*/
+	background: #fff url('%%headerImage%%') repeat-x scroll 0px 80%!important; /*Tweak as per requirements*/
 }
 
 	#header:after {
@@ -17,28 +17,29 @@ body.res-nightmode #header{
 	}
 
 #header-bottom-left {
-	/*this adjusts the top navigation bar, leave as default*/
+	/*do not change this. positions the top navigation bar*/
 	position: absolute;
 }
 
 	#header-bottom-left:before {
-		background-color: #acd9fc; /*tweak to match the image color*/
-		opacity: .1; /*be creative with usage of shadows, opacity, background color, and even additional background images here*/
+		background-color: #acd9fc; /*Tweak to match the image color*/
+		opacity: .1; 
+		/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
 #header ul.tabmenu li a,
 #header ul.tabmenu li a:visited,
 #header .pagename.redditname,
 #header .pagename.redditname.hover {
-	background-color: transparent; /*tweak to match the background image color, or use the default #acd9fc;*/
+	background-color: transparent; /*Tweak to match the image color, or use default #acd9fc;*/
 	background-image: none;
-	color: #acd9fc;
+	color: #acd9fc; /*Tweak against background color*/
 }
 
 #header ul.tabmenu li.selected a {
-	background-color: #fff; /*tweak to match the background image color*/
+	background-color: #fff; /*Tweak to match the background image color*/
 	background-image: none;
-	color: #ff4500;
+	color: #ff4500; /*Tweak against background color*/
 }
 
 body.res-nightmode #header ul.tabmenu li.selected a {
@@ -54,13 +55,14 @@ body.res-nightmode #header ul.tabmenu li.selected a {
 #header-bottom-right:hover {
 	background-color: #2154a3;
 }
-		#header-bottom-right:hover a,
-		#header-bottom-right:hover span {
-			text-shadow: none;
-		}
+
+	#header-bottom-right:hover a,
+	#header-bottom-right:hover span {
+		text-shadow: none;
+	}
 
 #sr-header-area {
-	background-color: #fff; /*tweak to match the image color*/
+	background-color: #fff; /*Tweak to match the image color*/
 }
 
 /* --  C.1.end Header Image ---- */

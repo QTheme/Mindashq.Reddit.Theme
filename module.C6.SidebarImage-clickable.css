@@ -17,7 +17,7 @@
 	max-width: 310px;
 	max-height: 300px;
 	width: auto;
-	height: 100px; /*tweak according to desired image height*/
+	height: 100px; /*Tweak according to desired image height*/
 	background: transparent url('%%SidebarImage%%') no-repeat 0 0;
 	font-size: 0px;
 }
