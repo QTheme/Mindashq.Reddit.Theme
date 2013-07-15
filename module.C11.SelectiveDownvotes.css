@@ -2,22 +2,16 @@
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
 
-.link .down {
-	display: none;
-}
 /*To hide them on posts only, recommended */
+.link .down { display: none }
 
 
 /* uncomment
-	.comment .down {
-	display: none;
-}
+	.comment .down { display: none }
 To hide them on comments only*/
 
 /* delete above and uncomment
-	.down {
-	display: none;
-}
+	.down { display: none }
 To hide downvote everywhere*/
 
 .linkinfo .downvotes {
