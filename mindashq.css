@@ -1237,13 +1237,12 @@ div.thing.reported > .entry {
 
 a.pretty-button,
 .pretty-button.inoffensive {
-	padding: 4px 10px;
+	padding: 3px 10px;
 	border: 1px solid #e4dbd0;
 	background-color: #fff6ea;
 	box-shadow: 1px 1px 1px 0 #ccc;
 	color: #333;
 	font-weight: bold;
-	line-height: 25px;
 }
 
 	a.pretty-button.negative {
