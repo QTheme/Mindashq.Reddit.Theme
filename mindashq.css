@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.6.2
+	v1.6.3
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -125,7 +125,7 @@ a:active,
 .md {
 	max-width: 55em;
 	color: #000;
-	/*font-size: 14px;*/
+	/*font-size: 1.1em;*/
 	line-height: 1.5;
 }
 
@@ -402,7 +402,7 @@ a[href*='#btn'] {
 			button.RESBigEditorPop:hover,
 			span.RESSubscriptionButton:hover {
 				background: none transparent!important;
-				color: #5ca2e8;
+				color: #5ba2fd;
 			}
 
 a[href*='#btn'] {
@@ -428,16 +428,8 @@ a[href*='#btn'] {
 	.flat-list.buttons li a,
 	.flat-list.buttons li a:visited,
 	li .redditSingleClick {
-		color: #ddd;
+		color: #eee;
 	}
-
-		.flat-list.buttons li a:hover {
-			color: #e00000;
-		}
-
-		.flat-list.buttons li a:active {
-			color: #5ca2e8;
-		}
 
 	.entry:hover > .flat-list.buttons > li a,
 	.entry:hover > .flat-list.buttons > li .redditSingleClick,
@@ -604,7 +596,7 @@ div#RESSubredditGroupDropdown {
 	}
 
 	#header-bottom-right:hover {
-		background-color: #def0fe;
+		background-color: #dcebfa;
 	}
 
 		#header-bottom-right:hover a,
@@ -765,18 +757,14 @@ ul.tabmenu {
 		ul.tabmenu li a:visited,
 		ul.tabmenu li.selected a {
 			display: inline-block;
-			margin-top: 5px;
-			padding: 5px 8px;
-			background-color: #acd9fc;
-			background-image: -webkit-linear-gradient(top,#acd9fc,#8ccbfc);
-			background-image: -moz-linear-gradient(top,#acd9fc,#8ccbfc);
-			background-image: linear-gradient(top,#acd9fc,#8ccbfc);
+			padding: 8px;
+			background: none transparent;
 			color: #2154a3;
 		}
 
 			ul.tabmenu li a:hover,
 			ul.tabmenu li.selected a:hover {
-				background-color: #def0fe;
+				background-color: #dcebfa;
 				color: #000;
 				text-shadow: none;
 			}
@@ -784,13 +772,12 @@ ul.tabmenu {
 			ul.tabmenu li.selected a,
 			ul.tabmenu li.selected a:hover,
 			ul.tabmenu li.selected a:visited {
-				margin-top: -5px;
-				padding: 10px 15px;
-				border: 1px solid #5ca2e8;
+				padding: 9px 15px;
+				border: 1px solid #8ccbfc;
 				border-radius: 2px;
 				background-color: #f9f9f7;
 				background-image: none;
-				box-shadow: 0 7px 0 -4px #5ca2e8;
+				box-shadow: 0 5px 4px -4px #8CCBFC;
 				color: #ff4500;
 			}
 
@@ -850,7 +837,8 @@ div.content {
 body.listing-page > div.content,
 body.single-page > div.content,
 body.search-page > div.content,
-body.messages-page > div.content {
+body.messages-page > div.content,
+body.multi-page > div.content {
 	padding: 0;
 	border: 0 none;
 	background-color: transparent;
@@ -862,24 +850,25 @@ body.messages-page > div.content {
 		background: none #fff;
 	}
 
-	body.single-page > div.content > .linklisting .midcol {
-		margin: 4px 10px 0 10px;
-	}
-
 /* --  A.4.2. Links (Posts) listing ------ */
 
+.organic-listing,
 .thing.link.promotedlink.promoted {
-	border-width: 0!important;
+	overflow: hidden;
 	border-color: #d2d2d2;
 	background: none #fffeed;
 }
 
 .linklisting .thing {
 	margin: 0;
-	padding: 8px 0 9px;
+	padding: 2px 0 3px;
 	border-color: #fbf9f4;
-	background-color: #fff;
+	background-color: #fbfbfb;
 	box-shadow: 0 1px 4px 0 #ccc;
+}
+
+.linklisting .compressed.thing {
+	padding: 1px 0;
 }
 
 .linklisting .odd {
@@ -918,18 +907,27 @@ body.messages-page > div.content {
 /* --  A.4.3. Links sub-parts ------ */
 
 .sitetable .rank {
-	margin: 15px 0 0 8px;
-	padding: 5px 5px 5px 0;
+	margin: 16px 0 0 8px;
+	padding: 10px 5px 0;
 	background-color: transparent;
+	font-size: small;
 	text-align: right;
 }
 
+.sitetable .compressed .rank {
+	margin: 8px 0 0 5px;
+}
+
 .sitetable .midcol {
-	margin: 4px 4px 0 5px;
+	margin: 8px 10px 0;
+}
+
+.sitetable .compressed .midcol {
+	margin: 5px 5px 0;
 }
 
 .sitetable .thumbnail {
-	margin: 2px 2px 2px 5px;
+	margin: 6px 5px 0;
 	max-height: 60px;
 	width: auto;
 }
@@ -939,13 +937,16 @@ body.messages-page > div.content {
 	}
 
 .sitetable .entry {
-	margin: 1px 5px 1px 0;
 	padding: 5px 0 5px 5px;
 }
 
-.sitetable .title {
-	margin-top: 2px!important;
-	margin-bottom: 2px!important;
+.sitetable .compressed .entry {
+	padding: 2px 0 2px 2px;
+}
+
+.sitetable .title,
+.sitetable .compressed .title {
+	margin: 2px .4em 2px 0!important;
 	font-style: normal;
 	font-variant: normal;
 	word-spacing: -1px;
@@ -974,7 +975,7 @@ div.usertext-edit textarea {
 /* --  A.4.5. Link submission form ------ */
 
 .formtabs-content {
-	border-color: #5ca2e8!important;
+	border-color: #5ba2fd!important;
 }
 
 	.formtabs-content .infobar {
@@ -993,7 +994,7 @@ ul.tabmenu.formtab {
 		ul.tabmenu.formtab li a {
 			padding: 5px 15px;
 			border-width: 0;
-			border-color: #5ca2e8;
+			border-color: #5ba2fd;
 		}
 
 		ul.tabmenu.formtab li.selected {
@@ -1010,7 +1011,7 @@ ul.tabmenu.formtab {
 				-moz-border-radius-bottomleft: 0;
 				border-bottom-right-radius: 0;
 				border-bottom-left-radius: 0;
-				background-color: #5ca2e8!important;
+				background-color: #5ba2fd!important;
 				box-shadow: none;
 				color: #dcebfa;
 			}
@@ -1022,9 +1023,7 @@ ul.tabmenu.formtab {
 }
 
 .nextprev {
-	margin: 0;
 	padding: 10px;
-	border-top: 1px dotted #d2d2d2;
 }
 
 /* --  A.4.6. Custom Upvote/Downvote Arrows ------ */
@@ -1032,7 +1031,7 @@ ul.tabmenu.formtab {
 .arrow {
 	margin: 0 auto 5px;
 	background: none transparent!important;
-	color: #b7b7b7;
+	color: #666;
 	font-weight: normal;
 	font-size: 14px;
 	font-family: Consolas,Monaco,'Courier New',monospace;
@@ -1078,7 +1077,7 @@ ul.tabmenu.formtab {
 	}
 
 .link .score {
-	color: #c6c6c6;
+	color: #666;
 }
 
 	.link .score.likes {
@@ -1112,7 +1111,7 @@ ul.tabmenu.formtab {
 .linklisting .comment,
 .linklisting .message {
 	margin: 0!important;
-	padding: 5px 10px 1px!important;
+	padding: 5px 0 1px 10px!important;
 	border: 0!important;
 }
 
@@ -1141,11 +1140,11 @@ ul.tabmenu.formtab {
 	background: none transparent!important;
 }
 
-.comment .collapsed {
+.comment div.collapsed {
 	padding: 5px;
 }
 
-.comment .noncollapsed {
+.comment div.noncollapsed {
 	padding-bottom: 1px;
 }
 
@@ -1169,7 +1168,7 @@ ul.tabmenu.formtab {
 
 	.commentarea .flat-list.buttons .toggleChildren {
 		position: absolute;
-		right: 0;
+		right: 10px;
 	}
 
 .comment .child,
@@ -1187,7 +1186,8 @@ ul.tabmenu.formtab {
 }
 
 	.morecomments a.button,
-	.morecomments a .gray {
+	.morecomments a .gray,
+	.nextprev a {
 		display: inline-block;
 		margin: 0;
 		border-color: #e0e0e0!important;
@@ -1198,7 +1198,7 @@ ul.tabmenu.formtab {
 	}
 
 .comment .morechildren {
-	margin-bottom: -2px;
+	margin-bottom: -3px;
 }
 
 .commentarea > .sitetable > .morechildren .morecomments {
@@ -1220,32 +1220,65 @@ div.thing.suspicious {
 	border-color: #ff910b!important;
 }
 
-div.thing.spam {
-	border-color: #fbb!important;
-	color: #000;
+div.thing.spam > .entry,
+div.thing.reported > .entry {
+	margin: 0 3px 0 30px;
+	border: 1px solid #fbb!important;
+	background-color: #ffe5e2!important;
 }
 
-	div.thing.spam > .entry {
-		margin: 0 3px 0px 30px;
-		border: 1px solid #fbb!important;
-		background-color: #ffe5e2!important;
+	div.thing.spam > p > *,
+	div.thing.spam > .entry .title,
+	div.thing.reported > p > *,
+	div.thing.reported > .entry .title {
+		background-color: transparent!important;
+		color: #c80707!important;
 	}
 
-		div.thing.spam > p > *,
-		div.thing.spam > .entry .title {
-			background-color: transparent!important;
-			color: #c80707!important;
-		}
-
-a.pretty-button {
-	border: 1px solid #f7f7f7;
-	border-radius: 0px;
-	color: #000;
-	font-weight: bold;
-	padding: 4px 9px;
-	line-height: 25px;
+a.pretty-button,
+.pretty-button.inoffensive {
+	padding: 4px 10px;
+	border: 1px solid #e4dbd0;
 	background-color: #fff6ea;
-	box-shadow: 0px 0px 8px -1px #979797;
+	box-shadow: 1px 1px 1px 0 #ccc;
+	color: #333;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+	a.pretty-button.negative {
+		border-color: #C25656;
+		background: none #ff6e6e;
+		color: #fff;
+	}
+
+	a.pretty-button.neutral {
+		border-color: #555;
+		background: none #888;
+		color: #fff;
+	}
+
+	a.pretty-button.positive {
+		border-color: #148614;
+		background: none #5ad15a;
+		color: #fff;
+	}
+
+.entry .buttons li.reported-stamp {
+	padding: 3px 5px;
+	border: 1px solid #d5b97e!important;
+	border-radius: 2px;
+	background-color: #ffdc91;
+	background-image: none;
+	color: #444;
+	font-weight: bold;
+}
+
+select {
+	padding: 1px;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	background-color: #ddd!important;
 }
 
 /* ~~  A.5. Sidebar ~~~~~~~~~ */
@@ -1291,6 +1324,11 @@ div.sidebox.create {
 	overflow: visible;
 	border-width: 0!important;
 	background: none transparent!important;
+}
+
+.sidebox.create .subtitle:last-child:after {
+	content: "...with theme /r/Mindashq.";
+	display: block;
 }
 
 .side h1,
@@ -1475,12 +1513,30 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 .titlebox .fancy-toggle-button {
-	display: block;
-	margin: 0px;
+	display: inline-block;
+	margin: 0;
 }
 
-body.res .titlebox .fancy-toggle-button {
-	display: inline-block;
+.subscription-box ul > a[count] {
+	display: block;
+	margin: -10px;
+	padding: 10px;
+	background-color: #DDD;
+}
+
+.subscription-box .fancy-toggle-button .active {
+	margin: 0!important;
+	min-width: 70px;
+}
+
+.subscription-box .subButtons + a:last-child {
+	float: right;
+	margin: -60px 10px;
+}
+
+.subscription-box .subButtons .RESshortcutside,
+.subscription-box .subButtons .RESDashboardToggle {
+	margin: 0 0 20px -5px!important;
 }
 
 .fancy-toggle-button .active,
@@ -1493,7 +1549,7 @@ body.res .titlebox .fancy-toggle-button {
 	height: auto!important;
 	outline: none;
 	border-color: #e3e3e3!important;
-	border-radius: 0px!important;
+	border-radius: 0!important;
 	font-size: 11px!important;
 	line-height: 14px!important;
 	text-align: center;
@@ -1519,6 +1575,10 @@ body.res .titlebox .fancy-toggle-button {
 	.RESDashboardToggle.remove {
 		color: #aaa!important;
 	}
+
+.subscribers {
+	display: block;
+}
 
 /* --  A.5.6. Submit Button ------ */
 
@@ -1701,13 +1761,9 @@ body .disabled .morelink:hover {
 }
 
 .bottommenu {
-	background-color: transparent;
-	color: #05374e;
+	background-color: #fff;
+	color: #777;
 }
-
-	.bottommenu a {
-		color: #231307;
-	}
 
 /* ~~  A.7. Other areas in Reddit - [WIP] ~~~~~~~~~ */
 
@@ -1727,17 +1783,18 @@ ul#image-preview-list {
 	font-size: larger;
 }
 
-body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
+body.profile-page .linklisting .odd,
+body.profile-page .linklisting .even {
 	padding: 5px 0 5px 15px!important;
 }
 
 .tabpane-content {
-	margin-top: -4px;
-	padding: 15px 10px;
-	border-color: #5ca2e8;
+	padding: 15px;
+	border-color: #8ccbfc;
 }
 
-.message.message-reply .entry, .message.message-parent .entry {
+.message.message-reply .entry,
+.message.message-parent .entry {
 	border-left: 0 none;
 }
 
@@ -1757,7 +1814,7 @@ body.profile-page .linklisting .odd, body.profile-page .linklisting .even {
 body.wiki-page h1.wikititle {
 	display: inline-block;
 	margin: 10px 15px 5px;
-	color: #5ca2e8;
+	color: #5ba2fd;
 	font-size: 1em;
 	letter-spacing: 0;
 }
@@ -1844,10 +1901,11 @@ body.pinHeader-subanduser #header-bottom-right {
 }
 
 /* Handling the keynav */
-.entry.RES-keyNav-activeElement {
-	outline: 1px dotted #4b8adb!important;
+.entry.RES-keyNav-activeElement,
+.entry:hover {
+	outline: 0;
 	border: 0!important;
-	border-right: 1px solid #4b8adb!important;
+	border-right: 3px solid #4b8adb!important;
 }
 
 	.entry.RES-keyNav-activeElement div.md,
@@ -1890,11 +1948,11 @@ div.NERPageMarker,
 	width: auto;
 	border-width: 0;
 	border-radius: 0;
-	background-color: transparent;
+	background-color: transparent!important;
 	font-weight: bold;
 	font-size: 20px;
 	letter-spacing: -1px;
-	text-align: right;
+	text-align: left;
 }
 
 #progressIndicator.neverEndingReddit,
@@ -1996,7 +2054,7 @@ div.NERPageMarker,
 		background-image: -o-linear-gradient(top,#50a3fd,#1c89d1);
 		background-image: -ms-linear-gradient(top,#50a3fd,#1c89d1);
 		background-image: linear-gradient(to bottom,#50a3fd,#1c89d1);
-		color: #e9f4f7;
+		color: #d4ecfe;
 	}
 
 /*Green*/
@@ -2217,21 +2275,22 @@ span.linkflair {
 	color: #f5f5f5;
 }
 
-.linkflair-meta .entry {
-	margin-left: 60px;
-}
-
 .linkflair-meta a.title {
 	font-weight: bold;
 }
 
 .linkflair-meta .rank,
-.linkflair-meta .score {
+.linkflair-meta .score,
+.linkflair-meta .score-placeholder {
 	display: none!important;
 }
 
 .linkflair-meta .midcol {
 	width: 50px!important;
+}
+
+.linkflair-meta.compressed .midcol {
+	margin: 0 3px 0;
 }
 
 .linkflair-meta .arrow {
@@ -2246,7 +2305,7 @@ span.linkflair {
 	left: 20px;
 	display: inline-block;
 	margin: 25px 10px 0 0;
-	padding: 5px 10px 5px;
+	padding: 5px 10px;
 	background-color: #fff;
 	box-shadow: 0 1px 10px 0 #ccd1d8;
 	font-weight: bold;
@@ -2254,8 +2313,37 @@ span.linkflair {
 	vertical-align: text-bottom;
 }
 
+.linkflair-meta.compressed .title > .linkflairlabel {
+	margin: 18px 10px 0 0;
+	padding: 3px 8px;
+}
+
 body.with-listing-chooser .linkflair-meta .title > .linkflairlabel {
-	left: 135px;
+	left: 140px;
+	z-index: 100;
+}
+
+/* ~~  A.12. Multireddit ~~~~~~~~~ */
+
+body.with-listing-chooser .listing-chooser .grippy {
+	background-color: #f1f1f1;
+}
+
+	body.with-listing-chooser .listing-chooser .grippy:after {
+		border-right: 1px solid #ccc;
+		box-shadow: 3px 0 6px -2px #ccc;
+	}
+
+	body.with-listing-chooser .listing-chooser .grippy:hover:after {
+		background-color: #fff;
+	}
+
+.titlebox.multi-details button.cancel,
+.titlebox.multi-details .usertext span[class*='toggle'],
+.titlebox.multi-details a.reddiquette {
+	margin: 15px 0!important;
+	padding: 0 5px;
+	font-size: 11px!important;
 }
 
 /* [ B ]. Night Mode ............ */
@@ -2275,8 +2363,9 @@ body.res-nightmode {
 	body.res-nightmode a,
 	body.res-nightmode a:link,
 	body.res-nightmode .thing .title,
-	body.res-nightmode .thing .title.loggedin {
-		color: #ff910b;
+	body.res-nightmode .thing .title.loggedin,
+	body.res-nightmode a:visited {
+		color: #acd9fc;
 	}
 
 		body.res-nightmode .thing .title,
@@ -2284,17 +2373,19 @@ body.res-nightmode {
 			text-shadow: 0 1px 0 #000;
 		}
 
-		body.res-nightmode a:visited,
-		body.res-nightmode .comment .md p > a:visited {
-		}
+	body.res-nightmode .content .md a:visited,
+	body.res-nightmode div.comment .md p > a:visited {
+	}
 
-		body.res-nightmode a:hover {
-			color: #ff0;
-		}
+	body.res-nightmode a:hover,
+	body.res-nightmode .thing .title:hover,
+	body.res-nightmode .thing .title.loggedin:hover {
+		color: #ff910b;
+	}
 
-		body.res-nightmode a:active {
-			color: #79efef;
-		}
+	body.res-nightmode a:active {
+		color: #79efef;
+	}
 
 	body.res-nightmode .roundfield,
 	body.res-nightmode .linefield,
@@ -2318,6 +2409,10 @@ body.res-nightmode {
 			box-shadow: 0 1px 4px 1px #4b4949;
 		}
 
+	body.res-nightmode .md {
+		color: #ccc;
+	}
+
 	body.res-nightmode hr,
 	body.res-nightmode .side .usertext-body .md hr {
 		background-color: #414141;
@@ -2327,7 +2422,7 @@ body.res-nightmode {
 	body.res-nightmode .md blockquote,
 	body.res-nightmode .help blockquote {
 		border-color: #d2d2d2;
-		border-left-color: #5ca2e8;
+		border-left-color: #5ba2fd;
 	}
 
 	/* --  B.1.1. Tables ------ */
@@ -2571,8 +2666,12 @@ body.res-nightmode {
 
 	body.res-nightmode #header-bottom-right {
 		border-radius: 0!important;
-		background-color: #1b1b1b!important;
+		background-color: transparent;
 	}
+
+		body.res-nightmode #header-bottom-right:hover {
+			background-color: #333!important;
+		}
 
 		body.res-nightmode #header-bottom-right a,
 		body.res-nightmode #header-bottom-right span {
@@ -2635,31 +2734,32 @@ body.res-nightmode {
 	body.res-nightmode ul.tabmenu li a,
 	body.res-nightmode ul.tabmenu li a:visited,
 	body.res-nightmode ul.tabmenu li.selected a {
-		background-color: #414141;
-		background-image: -webkit-linear-gradient(top,#696969,#414141);
-		background-image: -moz-linear-gradient(top,#696969,#414141);
-		background-image: linear-gradient(top,#696969,#414141);
 		color: #acd9fc;
 	}
 
 		body.res-nightmode ul.tabmenu li.selected a,
 		body.res-nightmode ul.tabmenu li.selected a:visited {
 			padding-bottom: 10px!important;
-			border: 1px solid #acd9fc!important;
-			background-color: #040406;
+			border: 1px solid #49677e!important;
+			background-color: #1d1c27;
 			background-image: none;
-			box-shadow: 0 13px 0 -9px #acd9fc;
+			box-shadow: 0 5px 4px -4px #49677e;
 		}
 
 			body.res-nightmode ul.tabmenu li a:hover,
 			body.res-nightmode ul.tabmenu li.selected a:hover {
 				color: #e06935;
+				background-color: #333;
 			}
 
 	/* ~~  B.4. Content Pane and Link Listings ~~~~~~~~~ */
 
 	body.res-nightmode .menuarea {
 		border-color: #414141;
+	}
+
+	body.res-nightmode p.tagline {
+		color: #888;
 	}
 
 	/* --  B.4.1. Content Box ------ */
@@ -2678,7 +2778,8 @@ body.res-nightmode {
 	body.res-nightmode.listing-page > div.content,
 	body.res-nightmode.single-page > div.content,
 	body.res-nightmode.search-page > div.content,
-	body.res-nightmode.messages-page > div.content {
+	body.res-nightmode.messages-page > div.content,
+	body.res-nightmode.multi-page > div.content {
 		padding: 0;
 		border: 0 none;
 		background-color: transparent!important;
@@ -2687,16 +2788,22 @@ body.res-nightmode {
 
 		body.res-nightmode.single-page > div.content > .linklisting .link {
 			border-radius: 0;
-			background-color: #160f08;
-			background-image: -moz-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
-			background-image: -webkit-linear-gradient(top,#160f08,#040404,#040404,#040404,#040404);
+			background-color: #040404;
 		}
 
 	/* --  B.4.2. Links (Posts) listings ------ */
 
+	body.res-nightmode .organic-listing,
+	body.res-nightmode .thing.link.promotedlink.promoted {
+		overflow: hidden;
+		border-color: #000;
+		background: none #3d3c30;
+	}
+
 	body.res-nightmode .linklisting .thing {
 		margin: 0;
 		border-color: #3a3939;
+		background-color: #1e1e1e;
 		box-shadow: 0 1px 12px -1px #000;
 	}
 
@@ -2743,7 +2850,7 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .nextprev {
-		border-top: 1px dotted #2d2d2d;
+		color: #888!important;
 	}
 
 	/* --  B.4.6. Custom Upvote/Downvote Arrows ------ */
@@ -2789,35 +2896,43 @@ body.res-nightmode {
 			color: #777!important;
 		}
 
+	body.res-nightmode .morecomments a.button,
+	body.res-nightmode .morecomments a .gray,
+	body.res-nightmode .nextprev a {
+		border-color: #111!important;
+		background-color: #222!important;
+		color: #888!important;
+		text-shadow: none;
+	}
 	/* --  B.4.8. Mod highlighting ------ */
 
 	body.res-nightmode div.thing.suspicious {
 		border-color: #ff910b!important;
 	}
 
-	body.res-nightmode div.thing.spam {
-		border-color: #d30000!important;
-		color: #000;
+	body.res-nightmode div.thing.spam > .entry,
+	body.res-nightmode div.thing.reported > .entry {
+		border: 1px solid #d30000!important;
+		background-color: #771207!important;
 	}
 
-		body.res-nightmode div.thing.spam > .entry {
-			margin: -2px 3px 0px 30px;
-			border: 1px solid #d30000!important;
-			background-color: #771207!important;
+		body.res-nightmode div.thing.spam > p > *,
+		body.res-nightmode div.thing.spam > .entry .title,
+		body.res-nightmode div.thing.reported > p > *,
+		body.res-nightmode div.thing.reported > .entry .title {
+			background-color: transparent!important;
+			color: #ff3a3a!important;
 		}
 
-			body.res-nightmode div.thing.spam > p > *,
-			body.res-nightmode div.thing.spam > .entry .title {
-				background-color: transparent!important;
-				color: #c80707!important;
-			}
-
 	body.res-nightmode a.pretty-button {
-		border: 1px solid #BBB;
-		border-radius: 0px;
-		color: #000;
-		font-weight: bold;
+		box-shadow: 1px 1px 1px 0 #222;
+		color: #fff9e0;
 	}
+
+		body.res-nightmode a.pretty-button.inoffensive {
+			border-color: #777;
+			background: none #313131;
+		}
 
 	/* ~~  B.5. Sidebar ~~~~~~~~~ */
 
@@ -2995,11 +3110,8 @@ body.res-nightmode {
 
 	body.res-nightmode .bottommenu {
 		color: #fac8b1;
+		background-color: #393939;
 	}
-
-		body.res-nightmode .bottommenu a {
-			color: #dcecf8;
-		}
 
 	/* ~~  B.7. Other areas in Reddit - [WIP] ~~~~~~~~~ */
 
@@ -3044,18 +3156,12 @@ body.res-nightmode {
 
 	/* ~~  B.9. RES Optimisation ~~~~~~~~~ */
 
-	body.res-nightmode .entry.RES-keyNav-activeElement {
-		outline: 1px dotted #e46700!important;
-		border-right: 1px solid #e46700!important;
+	body.res-nightmode .entry.RES-keyNav-activeElement div.md,
+	body.res-nightmode .entry.RES-keyNav-activeElement .usertext-body,
+	body.res-nightmode .entry.RES-keyNav-activeElement div.noncollapsed {
+		outline: none!important;
 		background: none transparent!important;
 	}
-
-		body.res-nightmode .entry.RES-keyNav-activeElement div.md,
-		body.res-nightmode .entry.RES-keyNav-activeElement .usertext-body,
-		body.res-nightmode .entry.RES-keyNav-activeElement div.noncollapsed {
-			outline: none!important;
-			background: none transparent!important;
-		}
 
 	body.res-nightmode .RES-keyNav-activeElement,
 	body.res-nightmode .RES-keyNav-activeElement .usertext-body,
@@ -3075,10 +3181,6 @@ body.res-nightmode {
 		border: 0!important;
 		background-color: transparent!important;
 		color: #777;
-	}
-
-	body.res-nightmode .morecomments a.button {
-		color: #111;
 	}
 
 	/* --  B.9.1. Progress Indicator and Page marker for RES mode ------ */
@@ -3229,6 +3331,45 @@ body.res-nightmode {
 		background-color: #000;
 		box-shadow: 0 1px 10px 0 #000;
 		color: #fff;
+	}
+
+	/* ~~  B.12. Multireddit ~~~~~~~~~ */
+	body.res-nightmode.with-listing-chooser .listing-chooser {
+		background-color: #666;
+	}
+
+		body.res-nightmode.with-listing-chooser .listing-chooser .grippy {
+			border-color: #666;
+			background-color: #222;
+		}
+
+			body.res-nightmode.with-listing-chooser .listing-chooser .grippy:after {
+				border-color: #666;
+				background-color: #444;
+				box-shadow: 3px 0 6px -2px #000;
+			}
+
+			body.res-nightmode.with-listing-chooser .listing-chooser .grippy:hover:after {
+				background-color: #ccc;
+			}
+
+		body.res-nightmode.with-listing-chooser .listing-chooser li {
+			border-color: #333;
+			background-color: #444;
+		}
+
+	body.res-nightmode.with-listing-chooser li a .description {
+		color: #ddd;
+	}
+
+	body.res-nightmode.with-listing-chooser .create button {
+		border-color: #aaa;
+		background: #222;
+		color: #fff;
+	}
+
+	body.res-nightmode.with-listing-chooser .intro p {
+		color: #333;
 	}
 
 /* [ C ]. Modules for specific customization ............ */
