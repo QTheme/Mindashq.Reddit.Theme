@@ -126,7 +126,7 @@ a:active,
 	max-width: 55em;
 	color: #000;
 	/*font-size: 1.1em;*/
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 	.md blockquote,
@@ -139,7 +139,7 @@ a:active,
 	}
 
 	.md p {
-		margin: 10px 0;
+		margin: 8px 0;
 	}
 
 hr {
@@ -1223,7 +1223,7 @@ div.thing.suspicious {
 div.thing.spam > .entry,
 div.thing.reported > .entry {
 	margin: 0 3px 0 30px;
-	border: 1px solid #fbb!important;
+	outline: 1px solid #fbb!important;
 	background-color: #ffe5e2!important;
 }
 
@@ -1237,31 +1237,36 @@ div.thing.reported > .entry {
 
 a.pretty-button,
 .pretty-button.inoffensive {
-	padding: 3px 10px;
+	padding: 1px 10px 5px;
 	border: 1px solid #e4dbd0;
 	background-color: #fff6ea;
 	box-shadow: 1px 1px 1px 0 #ccc;
 	color: #333;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
 }
 
-	a.pretty-button.negative {
-		border-color: #C25656;
-		background: none #ff6e6e;
-		color: #fff;
-	}
+.pretty-button.inoffensive {
+	text-shadow: none;
+}
 
-	a.pretty-button.neutral {
-		border-color: #555;
-		background: none #888;
-		color: #fff;
-	}
+a.pretty-button.negative {
+	border-color: #C25656;
+	background: none #ff6e6e;
+	color: #fff;
+}
 
-	a.pretty-button.positive {
-		border-color: #148614;
-		background: none #5ad15a;
-		color: #fff;
-	}
+a.pretty-button.neutral {
+	border-color: #555;
+	background: none #888;
+	color: #fff;
+}
+
+a.pretty-button.positive {
+	border-color: #148614;
+	background: none #5ad15a;
+	color: #fff;
+}
 
 .entry .buttons li.reported-stamp {
 	padding: 3px 5px;
@@ -1540,7 +1545,8 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 .fancy-toggle-button .active,
 .RESshortcutside,
-.RESDashboardToggle {
+.RESDashboardToggle,
+.RESFilterToggle {
 	display: inline-block!important;
 	margin: 5px -6px 10px 0!important;
 	padding: 3px 7px!important;
@@ -1565,13 +1571,15 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 .RESshortcutside,
-.RESDashboardToggle {
+.RESDashboardToggle,
+.RESFilterToggle {
 	background: none #f3f3f3!important;
 	color: #2154a3!important;
 }
 
 	.RESshortcutside.remove,
-	.RESDashboardToggle.remove {
+	.RESDashboardToggle.remove,
+	.RESFilterToggle.remove {
 		color: #aaa!important;
 	}
 
@@ -1798,14 +1806,12 @@ body.profile-page .linklisting .even {
 }
 
 .message.new > .entry {
-	border: 1px solid #acd9fc;
-	border-width: 1px 1px 1px 2px;
+	outline: 1px solid #acd9fc;
+	border: 0;
 }
 
 	.message.new > .entry.RES-keyNav-activeElement {
-		outline: 1px dotted #acd9fc!important;
-		border-color: #acd9fc!important;
-		background-color: #f8f8fa!important;
+		background-color: #f7f7f7!important;
 	}
 
 /* ~~   A.8. Wiki Pages ~~~~~~~~~ */
@@ -1828,45 +1834,49 @@ body.wiki-page .wiki-page-content {
 	border-top: 1px dotted #d2d2d2;
 }
 
-	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
-		border-color: #eee;
-		background-color: #f9f9f7;
+	body.wiki-page .wiki-page-content .md {
+		/*font-size: 1em;*/
 	}
 
-	body.wiki-page .wiki-page-content .md.wiki h1 {
-		font-size: 2.4em;
-		letter-spacing: -1px;
-	}
+		body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
+			border-color: #eee;
+			background-color: #f9f9f7;
+		}
 
-	body.wiki-page .wiki-page-content .md.wiki h2 {
-		font-size: 1.8em;
-		letter-spacing: -1px;
-	}
+		body.wiki-page .wiki-page-content .md.wiki h1 {
+			font-size: 2.4em;
+			letter-spacing: -1px;
+		}
 
-	body.wiki-page .wiki-page-content .md.wiki h3 {
-		font-size: 1.4em;
-	}
+		body.wiki-page .wiki-page-content .md.wiki h2 {
+			font-size: 1.8em;
+			letter-spacing: -1px;
+		}
 
-	body.wiki-page .wiki-page-content .md.wiki h4 {
-		font-size: 1.2em;
-	}
+		body.wiki-page .wiki-page-content .md.wiki h3 {
+			font-size: 1.4em;
+		}
 
-	body.wiki-page .wiki-page-content .md.wiki img {
-		max-width: 100%;
-	}
+		body.wiki-page .wiki-page-content .md.wiki h4 {
+			font-size: 1.2em;
+		}
 
-	body.wiki-page .wiki-page-content .md.wiki h1,
-	body.wiki-page .wiki-page-content .md.wiki h2,
-	body.wiki-page .wiki-page-content .md.wiki h3,
-	body.wiki-page .wiki-page-content .md.wiki h4 {
-		color: #323638;
-		text-shadow: 0 0 0 #fdfdfe,0 0 1px #585858;
-	}
+		body.wiki-page .wiki-page-content .md.wiki img {
+			max-width: 100%;
+		}
 
-	body.wiki-page .wiki-page-content .md.wiki h5,
-	body.wiki-page .wiki-page-content .md.wiki h6 {
-		color: #08c;
-	}
+		body.wiki-page .wiki-page-content .md.wiki h1,
+		body.wiki-page .wiki-page-content .md.wiki h2,
+		body.wiki-page .wiki-page-content .md.wiki h3,
+		body.wiki-page .wiki-page-content .md.wiki h4 {
+			color: #323638;
+			text-shadow: 0 0 0 #fdfdfe,0 0 1px #585858;
+		}
+
+		body.wiki-page .wiki-page-content .md.wiki h5,
+		body.wiki-page .wiki-page-content .md.wiki h6 {
+			color: #08c;
+		}
 
 #newlink {
 	margin-left: 20px;
@@ -1909,7 +1919,8 @@ body.pinHeader-subanduser #header-bottom-right {
 
 	.entry.RES-keyNav-activeElement div.md,
 	.commentarea .entry.RES-keyNav-activeElement div.noncollapsed,
-	.entry.RES-keyNav-activeElement .usertext-body {
+	.entry.RES-keyNav-activeElement .usertext-body,
+	.new-comment .usertext-body .md {
 		outline: none!important;
 		border: 0!important;
 	}
@@ -3032,7 +3043,8 @@ body.res-nightmode {
 
 	body.res-nightmode .fancy-toggle-button .active,
 	body.res-nightmode .RESshortcutside,
-	body.res-nightmode .RESDashboardToggle {
+	body.res-nightmode .RESDashboardToggle,
+	body.res-nightmode .RESFilterToggle {
 		border-color: #010101!important;
 	}
 
@@ -3047,13 +3059,15 @@ body.res-nightmode {
 	}
 
 	body.res-nightmode .RESshortcutside,
-	body.res-nightmode .RESDashboardToggle {
+	body.res-nightmode .RESDashboardToggle,
+	body.res-nightmode .RESFilterToggle {
 		background: none #0f0000!important;
 		color: #2154a3!important;
 	}
 
 		body.res-nightmode .RESshortcutside.remove,
-		body.res-nightmode .RESDashboardToggle.remove {
+		body.res-nightmode .RESDashboardToggle.remove,
+		body.res-nightmode .RESFilterToggle.remove {
 			color: #777!important;
 		}
 
