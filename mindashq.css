@@ -1145,7 +1145,7 @@ ul.tabmenu.formtab {
 }
 
 .comment div.noncollapsed {
-	padding-bottom: 1px;
+	padding:0 10px 1px 0;
 }
 
 .comment a.expand {
@@ -1803,6 +1803,7 @@ body.profile-page .linklisting .even {
 .message.message-reply .entry,
 .message.message-parent .entry {
 	border-left: 0 none;
+	padding:10px 15px;
 }
 
 .message.new > .entry {
