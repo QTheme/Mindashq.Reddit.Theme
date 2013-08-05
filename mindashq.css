@@ -126,7 +126,7 @@ a:active,
 	max-width: 55em;
 	color: #000;
 	font-size: 1.1em;
-	line-height: 1.4;
+	line-height: 1.3;
 }
 
 	.md blockquote,
@@ -136,10 +136,6 @@ a:active,
 		max-width: 60em;
 		border: 1px solid #ccc;
 		border-width: 0 0 0 2px;
-	}
-
-	.md p {
-		margin: 8px 0;
 	}
 
 hr {
@@ -1113,6 +1109,7 @@ ul.tabmenu.formtab {
 	margin: 0!important;
 	padding: 5px 0 1px 10px!important;
 	border: 0!important;
+	font-size: 11px;
 }
 
 .nestedlisting > .comment {
@@ -1149,15 +1146,16 @@ ul.tabmenu.formtab {
 }
 
 .comment a.expand {
-	color: #888!important;
+	color: #888;
+	padding: 0 2px 1px;
 }
 
 	.comment a.expand:hover {
-		background-color: transparent;
+		background-color: #bbb;
 	}
 
 	.comment a.expand:visited {
-		color: #888!important;
+		color: #888;
 	}
 
 .commentarea .flat-list.buttons {
@@ -1793,10 +1791,6 @@ ul#image-preview-list {
 	font-size: larger;
 }
 
-body.messages-page .md {
-	font-size: 13px;
-}
-
 body.profile-page .linklisting .odd,
 body.profile-page .linklisting .even {
 	padding: 5px 0 5px 15px!important;
@@ -1843,7 +1837,7 @@ body.wiki-page .wiki-page-content {
 }
 
 	body.wiki-page .wiki-page-content .md {
-		/*font-size: 1em;*/
+		font-size: 13px;
 	}
 
 		body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
@@ -2393,6 +2387,7 @@ body.res-nightmode {
 
 	body.res-nightmode .content .md a:visited,
 	body.res-nightmode div.comment .md p > a:visited {
+		color: #acd9fc;
 	}
 
 	body.res-nightmode a:hover,
@@ -2753,6 +2748,7 @@ body.res-nightmode {
 	body.res-nightmode ul.tabmenu li a:visited,
 	body.res-nightmode ul.tabmenu li.selected a {
 		color: #acd9fc;
+		background-color: transparent;
 	}
 
 		body.res-nightmode ul.tabmenu li.selected a,
@@ -2876,6 +2872,13 @@ body.res-nightmode {
 		color: #666;
 	}
 
+	body.res-nightmode .arrow.upmod,
+	body.res-nightmode .arrow.up:hover,
+	body.res-nightmode .arrow.downmod,
+	body.res-nightmode .arrow.down:hover {
+		background: none transparent!important;
+	}
+
 	body.res-nightmode .link .score {
 		color: #aaa;
 	}
@@ -2914,11 +2917,15 @@ body.res-nightmode {
 			}
 
 	body.res-nightmode .comment a.expand {
-		color: #777!important;
+		color: #777;
 	}
 
+		body.res-nightmode .comment a.expand:hover {
+			background-color: #444;
+		}
+
 		body.res-nightmode .comment a.expand:visited {
-			color: #777!important;
+			color: #777;
 		}
 
 	body.res-nightmode .morecomments a.button,
@@ -3157,7 +3164,7 @@ body.res-nightmode {
 
 		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h1,
 		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h2 {
-			text-shadow: 0 0 2px #fff,1px 1px 3px #0a0a0a;
+			text-shadow: 0 0 2px #ccc,1px 1px 3px #0a0a0a;
 		}
 
 		body.res-nightmode.wiki-page .wiki-page-content .md.wiki h5,
@@ -3209,6 +3216,15 @@ body.res-nightmode {
 		border: 0!important;
 		background-color: transparent!important;
 		color: #777;
+	}
+
+	body.res-nightmode.messages-page a {
+		color: #4d90fe;
+	}
+
+	a[href$="NightModeCompatible"],
+	body.res-nightmode a[href$="NightModeCompatible"] {
+		display: none;
 	}
 
 	/* --  B.9.1. Progress Indicator and Page marker for RES mode ------ */
@@ -3382,7 +3398,7 @@ body.res-nightmode {
 			}
 
 		body.res-nightmode.with-listing-chooser .listing-chooser li {
-			border-color: #333;
+			border-color: #111;
 			background-color: #444;
 		}
 
