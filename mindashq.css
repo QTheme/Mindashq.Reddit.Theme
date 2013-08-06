@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.6.4
+	v1.6.5
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -2547,6 +2547,7 @@ body.res-nightmode {
 	body.res-nightmode .button,
 	body.res-nightmode button.save,
 	body.res-nightmode button.blueButton,
+	body.res-nightmode .BEFoot button,
 	body.res-nightmode input[type="submit"],
 	body.res-nightmode .side a[href*="#btn"] {
 		text-shadow: 1px 1px 2px #000;
@@ -3081,7 +3082,9 @@ body.res-nightmode {
 	body.res-nightmode .fancy-toggle-button .active,
 	body.res-nightmode .RESshortcutside,
 	body.res-nightmode .RESDashboardToggle,
-	body.res-nightmode .RESFilterToggle {
+	body.res-nightmode .RESFilterToggle,
+	body.res-nightmode a.blueButton,
+	body.res-nightmode div.blueButton {
 		border-color: #010101!important;
 	}
 
@@ -3097,7 +3100,9 @@ body.res-nightmode {
 
 	body.res-nightmode .RESshortcutside,
 	body.res-nightmode .RESDashboardToggle,
-	body.res-nightmode .RESFilterToggle {
+	body.res-nightmode .RESFilterToggle,
+	body.res-nightmode a.blueButton,
+	body.res-nightmode div.blueButton {
 		background: none #0f0000!important;
 		color: #2154a3!important;
 	}
