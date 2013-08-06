@@ -125,7 +125,7 @@ a:active,
 .md {
 	max-width: 55em;
 	color: #000;
-	/*font-size: 1.1em;*/
+	font-size: 1.1em;
 	line-height: 1.3;
 }
 
@@ -326,10 +326,9 @@ a[href='/s'] {
 .button,
 button.save,
 button.blueButton,
-.BEFoot button,
 input[type='submit'],
 a[href*='#btn'] {
-	margin: 1px 5px 2px 0;
+	margin: 5px 5px 5px 0;
 	padding: 6px 10px!important;
 	min-width: 70px;
 	border: 1px solid #3079ed!important;
@@ -354,7 +353,6 @@ a[href*='#btn'] {
 	.button:hover,
 	button.save:hover,
 	button.blueButton:hover,
-	.BEFoot button:hover,
 	input[type='submit']:hover,
 	a[href*='#btn']:hover,
 	.entry .flat-list.buttons a[onclick*='reply']:hover {
@@ -370,7 +368,7 @@ a[href*='#btn'] {
 	button.cancel,
 	.usertext span[class*='toggle'],
 	a.reddiquette {
-		padding: 2px 5px;
+		padding: 6px 10px;
 		border-width: 0!important;
 		background: none transparent!important;
 		font-size: small!important;
@@ -381,10 +379,10 @@ a[href*='#btn'] {
 		.usertext span[class*='toggle'] a,
 		a.reddiquette,
 		#url-field button,
-		.content button.RESBigEditorPop,
+		button.RESBigEditorPop,
 		span.RESSubscriptionButton {
 			border: 0!important;
-			background-color: transparent!important;
+			background: none transparent!important;
 			box-shadow: none;
 			color: #888;
 			font-weight: bold;
@@ -397,9 +395,9 @@ a[href*='#btn'] {
 			.usertext span[class*='toggle'] a:hover,
 			#url-field button:hover,
 			a.reddiquette:hover,
-			.content button.RESBigEditorPop:hover,
+			button.RESBigEditorPop:hover,
 			span.RESSubscriptionButton:hover {
-				background-color: transparent!important;
+				background: none transparent!important;
 				color: #5ba2fd;
 			}
 
@@ -813,7 +811,7 @@ ul.tabmenu {
 }
 
 p.tagline {
-	font-size: 110%;
+	font-size: 115%;
 }
 
 .tagline a {
@@ -854,7 +852,6 @@ body.multi-page > div.content {
 /* --  A.4.2. Links (Posts) listing ------ */
 
 .organic-listing,
-.thing.link.stickied,
 .thing.link.promotedlink.promoted {
 	overflow: hidden;
 	border-color: #d2d2d2;
@@ -1093,8 +1090,8 @@ ul.tabmenu.formtab {
 	.commentarea p.tagline,
 	.comment .collapsed,
 	.comment .score {
-		margin: 2px 4px 2px -2px;
-		font-size: 11px;
+		margin: 2px -2px;
+		font-size: 110%;
 	}
 
 	.commentarea .comment,
@@ -1112,15 +1109,8 @@ ul.tabmenu.formtab {
 	margin: 0!important;
 	padding: 5px 0 1px 10px!important;
 	border: 0!important;
-	font-size: 10px;
+	font-size: 11px;
 }
-
-	.linklisting .comment .md,
-	.linklisting .message .md {
-		font-size: 13px;
-		line-height: 1.4;
-		margin: 5px 0;
-	}
 
 .nestedlisting > .comment {
 	margin: 6px 0 0!important;
@@ -1557,9 +1547,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 .fancy-toggle-button .active,
 .RESshortcutside,
 .RESDashboardToggle,
-.RESFilterToggle,
-a.blueButton,
-div.blueButton {
+.RESFilterToggle {
 	display: inline-block!important;
 	margin: 5px -6px 10px 0!important;
 	padding: 3px 7px!important;
@@ -1571,7 +1559,6 @@ div.blueButton {
 	font-size: 11px!important;
 	line-height: 14px!important;
 	text-align: center;
-	font-weight: bold;
 }
 
 .fancy-toggle-button .add {
@@ -1586,9 +1573,7 @@ div.blueButton {
 
 .RESshortcutside,
 .RESDashboardToggle,
-.RESFilterToggle,
-a.blueButton,
-div.blueButton {
+.RESFilterToggle {
 	background: none #f3f3f3!important;
 	color: #2154a3!important;
 }
@@ -2568,7 +2553,7 @@ body.res-nightmode {
 			body.res-nightmode .usertext span[class*='toggle'] a,
 			body.res-nightmode a.reddiquette,
 			body.res-nightmode #url-field button,
-			body.res-nightmode .content button.RESBigEditorPop,
+			body.res-nightmode button.RESBigEditorPop,
 			body.res-nightmode span.RESSubscriptionButton {
 				color: #777;
 				text-shadow: 1px 1px 2px #222;
@@ -2579,7 +2564,7 @@ body.res-nightmode {
 				body.res-nightmode .usertext span[class*='toggle'] a:hover,
 				body.res-nightmode a.reddiquette:hover,
 				body.res-nightmode #url-field button:hover,
-				body.res-nightmode .content button.RESBigEditorPop:hover,
+				body.res-nightmode button.RESBigEditorPop:hover,
 				body.res-nightmode span.RESSubscriptionButton:hover {
 					color: #a95908;
 				}
