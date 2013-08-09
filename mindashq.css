@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.6.5
+	v1.6.6
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -828,11 +828,12 @@ p.tagline {
 /* --  A.4.1. Content Box ------ */
 
 div.content {
-	margin: 0 360px 10px 30px;
+	margin: 0 30px 10px 30px;
 	padding: 10px 20px;
 	border: 1px solid #fbfbfb;
 	background-color: #fdfdfe;
 	box-shadow: 0 1px 3px 1px #ccc;
+	overflow: hidden;
 }
 
 body.listing-page > div.content,
@@ -840,7 +841,7 @@ body.single-page > div.content,
 body.search-page > div.content,
 body.messages-page > div.content,
 body.multi-page > div.content {
-	padding: 0;
+	padding: 5px;
 	border: 0 none;
 	background-color: transparent;
 	box-shadow: none;
@@ -853,20 +854,33 @@ body.multi-page > div.content {
 
 /* --  A.4.2. Links (Posts) listing ------ */
 
+/* specials - stickied, promoted and sponsored links */
 .organic-listing,
 .thing.link.stickied,
-.thing.link.promotedlink.promoted {
+.thing.link.promoted {
 	overflow: hidden;
 	border-color: #d2d2d2;
+	background: none #edf5ff;
+	box-shadow: 0 1px 4px 0 #CCC;
+	margin: 0 -1px 10px;
+}
+
+	.organic-listing .thing.link.promoted {
+		margin: 0;
+	}
+
+.thing.link.stickied {
 	background: none #fffeed;
 }
 
+/* Rest of links */
 .linklisting .thing {
 	margin: 0;
 	padding: 2px 0 3px;
 	border-color: #fbf9f4;
 	background-color: #fbfbfb;
 	box-shadow: 0 1px 4px 0 #ccc;
+	overflow: hidden;
 }
 
 .linklisting .compressed.thing {
@@ -1105,6 +1119,7 @@ ul.tabmenu.formtab {
 		border-color: #e0e0e0 #e6e6e6!important;
 		border-right: 0!important;
 		border-radius: 0!important;
+		overflow: hidden;
 	}
 
 .linklisting .comment,
@@ -1294,6 +1309,14 @@ select {
 	border: 1px solid #aaa;
 	border-radius: 2px;
 	background-color: #ddd!important;
+}
+
+
+.modactions .button {
+	min-width: 10px;
+	background: none transparent!important;
+	border: 0 !important;
+	padding: 6px 0 6px 2em!important;
 }
 
 /* ~~  A.5. Sidebar ~~~~~~~~~ */
@@ -2825,9 +2848,19 @@ body.with-listing-chooser .listing-chooser .grippy {
 
 	.res-nightmode div.organic-listing,
 	.res-nightmode div.thing.link.stickied,
-	.res-nightmode div.thing.link.promotedlink.promoted {
+	.res-nightmode div.thing.link.promoted {
 		overflow: hidden;
-		border-color: #000;
+		border-color: #111;
+		background: none #00121f;
+		box-shadow: 0 1px 12px -1px #000;
+		margin: 0 -1px 10px;
+	}
+
+	.res-nightmode .organic-listing div.thing.link.promoted {
+		margin: 0;
+	}
+
+	.res-nightmode div.thing.link.stickied {
 		background: none #3d3c30;
 	}
 
