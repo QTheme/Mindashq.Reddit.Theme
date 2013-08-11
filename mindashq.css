@@ -123,7 +123,7 @@ a:active,
 	}
 
 .md {
-	max-width: 55em;
+	max-width: 60em;
 	color: #000;
 	/*font-size: 1.1em;*/
 	line-height: 1.3;
@@ -445,7 +445,6 @@ a[href*='#btn'] {
 	color: #2154a3;
 }
 
-
 /* ~~  A.2. Top Sr-Bar ~~~~~~~~~ */
 
 #sr-header-area {
@@ -517,20 +516,22 @@ div#RESShortcutsEditContainer {
 .drop-choices,
 table#srList,
 div#RESSubredditGroupDropdown {
-	border-color: #acd9fc;
-	background-color: #8ccbfc;
+	padding: 0;
+	border: 1px solid #acd9fc;
+	background-color: #eff8ff;
 	color: #2154a3;
 	font-size: 12px;
 }
 
 	div#RESSubredditGroupDropdown li {
-		padding: 3px 5px;
+		padding: 5px 0;
 	}
 
 		.drop-choices a.choice,
 		table#srList a,
 		div#RESSubredditGroupDropdown li a {
 			color: #2154a3;
+			padding: 2px 10px;
 		}
 
 			.drop-choices a.choice:hover,
@@ -811,10 +812,11 @@ ul.tabmenu {
 	font-size: 11px;
 }
 
+.related-page .panestack-title,
 .search-page .menuarea,
 .messages-page .menuarea,
 .profile-page .menuarea {
-	margin: 20px 5px 0!important;
+	margin: 20px 5px -5px!important;
 	font-size: 14px;
 }
 
@@ -874,7 +876,7 @@ body.multi-page > div.content {
 	background: none #fffeed;
 }
 
-.linklisting .link:first-child.stickied {
+.listing-page .link:first-child.stickied {
 	margin: 0 0 10px;
 }
 
@@ -1004,45 +1006,43 @@ div.usertext-edit textarea {
 
 .formtabs-content {
 	border-color: #5ba2fd!important;
+	padding: 0;
 }
 
 	.formtabs-content .infobar {
 		padding: 10px;
-		color: #222;
-		text-shadow: none;
 	}
 
 ul.tabmenu.formtab {
-	margin-left: 0;
+	margin: 15px 0 0;
+	height: auto;
 }
 
 	ul.tabmenu.formtab li {
 	}
 
 		ul.tabmenu.formtab li a {
+			margin: 0 1px 1px;
 			padding: 5px 15px;
 			border-width: 0;
-			border-color: #5ba2fd;
+			background-color: #dcebfa;
 		}
 
-		ul.tabmenu.formtab li.selected {
+		ul.tabmenu.formtab li.selected a,
+		ul.tabmenu.formtab li.selected a:hover {
+			margin: 0;
+			padding: 5px 20px;
+			border: 0;
+			-webkit-border-bottom-right-radius: 0;
+			-moz-border-radius-bottomright: 0;
+			-webkit-border-bottom-left-radius: 0;
+			-moz-border-radius-bottomleft: 0;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+			background-color: #5ba2fd!important;
+			box-shadow: none;
+			color: #dcebfa;
 		}
-
-			ul.tabmenu.formtab li.selected a,
-			ul.tabmenu.formtab li.selected a:hover {
-				margin: 1px 0 0;
-				padding: 5px 20px;
-				border: 0;
-				-webkit-border-bottom-right-radius: 0;
-				-moz-border-radius-bottomright: 0;
-				-webkit-border-bottom-left-radius: 0;
-				-moz-border-radius-bottomleft: 0;
-				border-bottom-right-radius: 0;
-				border-bottom-left-radius: 0;
-				background-color: #5ba2fd!important;
-				box-shadow: none;
-				color: #dcebfa;
-			}
 
 #noresults {
 	margin-right: 310px;
@@ -1316,7 +1316,7 @@ select {
 	padding: 1px;
 	border: 1px solid #aaa;
 	border-radius: 2px;
-	background-color: #ddd!important;
+	background-color: #fffedf!important;
 }
 
 
@@ -1423,6 +1423,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 #search input[type='text'] {
+	margin: 0 0 -4px;
 	padding: 10px;
 	width: 278px;
 	border: 1px solid #e3e3e3;
@@ -1438,7 +1439,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 .searchfacets {
-	margin: -1px 0;
+	margin: -1px 5px;
 	border-color: #d2d2d2;
 	background-color: transparent;
 	box-shadow: none;
@@ -1451,22 +1452,13 @@ body:not(.profile-page) .side .titlebox .bottom {
 /* --  A.5.2 Infobar, MoreInfo and MoreSearch Divs ------ */
 
 .infobar {
-	margin: 1px 0;
+	margin: 0 5px;
 	border-color: #acd9fc;
 	background-color: #eaf4fc;
 	background-image: -webkit-linear-gradient(top,#eaf4fc,#eff8ff);
 	background-image: -moz-linear-gradient(top,#eaf4fc,#eff8ff);
 	background-image: linear-gradient(top,#eaf4fc,#eff8ff);
 }
-
-	.infobar a {
-		color: #08c!important;
-	}
-
-		.infobar a:hover {
-			color: #08c!important;
-			text-decoration: underline;
-		}
 
 .linkinfo {
 	margin: 0 0 10px;
@@ -1488,8 +1480,6 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 		.linkinfo .score .number,
 		.linkinfo .score .word {
-			font-weight: bold;
-			font-size: 15px;
 		}
 
 		.linkinfo .score .number {
@@ -1555,6 +1545,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 	margin: 10px 0 25px 0;
 	padding: 10px;
 	border: 1px solid #eaeaea;
+	background: #fafafa;
 	font-size: 12px;
 }
 
@@ -1608,6 +1599,7 @@ div.blueButton {
 .fancy-toggle-button .add {
 	border-color: #27b307!important;
 	background: none #1a8b00!important;
+	color: #fff;
 }
 
 .fancy-toggle-button .remove {
@@ -1928,6 +1920,7 @@ body.wiki-page .wiki-page-content {
 
 #newlink {
 	margin-left: 20px;
+	background: none transparent;
 }
 
 .sheets {
@@ -2348,7 +2341,7 @@ span.linkflair {
 }
 
 .linkflair-meta.compressed .midcol {
-	margin: 0 3px 0;
+	margin: 2px 3px 0;
 }
 
 .linkflair-meta .arrow {
@@ -2686,8 +2679,8 @@ body.with-listing-chooser .listing-chooser .grippy {
 	.res-nightmode .drop-choices,
 	.res-nightmode table#srList,
 	.res-nightmode #RESSubredditGroupDropdown {
-		border-color: #696969;
-		background-color: #414141;
+		border-color: #666;
+		background-color: #444;
 		color: #ff910b;
 	}
 
@@ -3068,10 +3061,9 @@ body.with-listing-chooser .listing-chooser .grippy {
 	/* --  B.5.2. Infobar, MoreInfo and MoreSearch Divs ------ */
 
 	.res-nightmode .infobar {
-		border: 1px solid #ffa500;
-		background-color: #885b2a;
+		border-color: #083e4c;
+		background-color: #546477;
 		background-image: none;
-		color: #f6e69f;
 	}
 
 	.res-nightmode .linkinfo {
