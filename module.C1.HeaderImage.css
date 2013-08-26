@@ -47,6 +47,10 @@ body.res-nightmode #header ul.tabmenu li.selected a {
 	color: #e06935;
 }
 
+#header ul.tabmenu li a:hover {
+	color:#ff4500;
+}
+
 #header-bottom-right a,
 #header-bottom-right span {
 	color: #def0fe;
