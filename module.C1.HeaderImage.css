@@ -11,7 +11,7 @@ body.res-nightmode #header {
 }
 
 	#header:after {
-		background-color: ##2a5484;
+		background-color: #2a5484;
 		background-image: none;
 		opacity: 0.7;
 	}
