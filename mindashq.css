@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.6.6
+	v1.6.7
 	http://www.reddit.com/r/mindashq/wiki
 	For reuse : Always copy latest from Github
  .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
@@ -10,7 +10,7 @@
 body {
 	position: relative;
 	min-width: 800px;
-	background-color: #f1f1f1; /*#f9f9f7;*/
+	background-color: #f1f1f1;
 	color: #333;
 	font-weight: normal;
 	font-style: normal;
@@ -809,7 +809,7 @@ ul.tabmenu {
 	padding: 0 10px 5px!important;
 	border-bottom-color: #d2d2d2;
 	background-color: transparent;
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .related-page .panestack-title,
@@ -877,13 +877,13 @@ body.multi-page > div.content {
 }
 
 .listing-page .link:first-child.stickied {
-	margin: 0 0 10px;
+	margin: 0 0 10px!important;
 }
 
 /* Rest of links */
 .linklisting .thing {
 	overflow: hidden;
-	margin: 0;
+	margin: 0!important;
 	padding: 2px 0 3px;
 	border-color: #fbf9f4;
 	background-color: #fbfbfb;
@@ -962,7 +962,8 @@ body.multi-page > div.content {
 		width: auto;
 	}
 
-		.sitetable .thumbnail.self {
+		.sitetable .thumbnail.self,
+		.sitetable .thumbnail.default {
 			margin: 2px 0;
 		}
 
@@ -1117,14 +1118,13 @@ ul.tabmenu.formtab {
 }
 
 	.commentarea p.tagline,
-	.comment .collapsed,
 	.comment .score {
 		margin: 2px 4px 2px -2px;
 		font-size: 11px;
 	}
 
-	.commentarea .comment,
-	.linklisting .comment {
+	.commentarea div.comment,
+	.linklisting div.comment {
 		overflow: hidden;
 		margin: 6px 0 -3px 0!important;
 		padding: 3px 0 2px 2px!important;
@@ -1134,22 +1134,21 @@ ul.tabmenu.formtab {
 		border-radius: 0!important;
 	}
 
-.linklisting .comment,
-.linklisting .message {
+.linklisting div.comment,
+.linklisting div.message {
 	margin: 0!important;
 	padding: 5px 0 1px 10px!important;
 	border: 0!important;
 	font-size: 10px;
 }
 
-	.linklisting .comment .md,
-	.linklisting .message .md {
-		margin: 5px 0;
-		font-size: 13px;
-		line-height: 1.4;
-	}
+.linklisting .comment .md,
+.linklisting .message .md {
+	font-size: 13px;
+	line-height: 1.4;
+}
 
-.nestedlisting > .comment {
+.nestedlisting > div.comment {
 	margin: 6px 0 0!important;
 	border: 1px solid #fafafa!important;
 	border-color: #e6e6e6 #e0e0e0 #e0e0e0 #e0e0e0!important;
@@ -1157,17 +1156,17 @@ ul.tabmenu.formtab {
 	box-shadow: 1px 1px 3px -1px #ccc;
 }
 
-	.nestedlisting > .comment .comment,
-	.nestedlisting > .comment .comment .comment .comment,
-	.nestedlisting > .comment .comment .comment .comment .comment .comment {
-		background-color: #f9f9f6!important;
-	}
+.nestedlisting > .comment .comment,
+.nestedlisting > .comment .comment .comment .comment,
+.nestedlisting > .comment .comment .comment .comment .comment .comment {
+	background-color: #f9f9f6!important;
+}
 
-		.nestedlisting > .comment .comment .comment,
-		.nestedlisting > .comment .comment .comment .comment .comment,
-		.nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
-			background-color: #fbfbfb!important;
-		}
+	.nestedlisting > .comment .comment .comment,
+	.nestedlisting > .comment .comment .comment .comment .comment,
+	.nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
+		background-color: #fbfbfb!important;
+	}
 
 .child {
 	margin: 0 0 0 30px!important;
@@ -1176,6 +1175,7 @@ ul.tabmenu.formtab {
 
 .comment div.collapsed {
 	padding: 2px 10px 5px 32px;
+	font-size: 11px;
 }
 
 .comment div.noncollapsed {
@@ -1232,12 +1232,7 @@ ul.tabmenu.formtab {
 	}
 
 .comment .morechildren {
-	margin-bottom: -3px;
-}
-
-.commentarea > .sitetable > .morechildren .morecomments {
-	margin: 4px 0 0;
-	padding-left: 0;
+	margin: 0 0 -3px -8px!important;
 }
 
 .new-comment .usertext-body {
@@ -1251,23 +1246,28 @@ ul.tabmenu.formtab {
 /* --  A.4.8. Mod highlighting ------ */
 
 div.thing.suspicious {
-	border-color: #ff910b!important;
+	outline: 1px solid #ff910b!important;
 }
 
-div.thing.spam > .entry,
-div.thing.reported > .entry {
-	margin: 0 3px 0 30px;
+div.thing.spam,
+div.thing.reported {
 	outline: 1px solid #fbb!important;
 	background-color: #ffe5e2!important;
+	background-image: none!important;
 }
 
-	div.thing.spam > p > *,
-	div.thing.spam > .entry .title,
-	div.thing.reported > p > *,
-	div.thing.reported > .entry .title {
-		background-color: transparent!important;
-		color: #c80707!important;
+	div.thing.spam > .entry,
+	div.thing.reported > .entry {
+		background-color: #ffe5e2!important;
 	}
+
+		div.thing.spam > p > *,
+		div.thing.spam > .entry .title,
+		div.thing.reported > p > *,
+		div.thing.reported > .entry .title {
+			background-color: transparent!important;
+			color: #c80707!important;
+		}
 
 a.pretty-button,
 .pretty-button.inoffensive {
@@ -1762,7 +1762,7 @@ body .disabled .morelink:hover {
 	position: relative;
 	clear: both;
 	margin: 40px 0 0;
-	padding: 5px 0 15px 30px;
+	padding: 5px 0 15px 0;
 	background-color: #fff;
 	box-shadow: 0 -3px 9px -2px #ddd;
 	font-size: 12px;
@@ -1807,6 +1807,7 @@ body .disabled .morelink:hover {
 }
 
 .bottommenu {
+	margin: 0 0 0 25px;
 	background-color: #fff;
 	color: #777;
 }
@@ -1839,10 +1840,21 @@ body.profile-page .linklisting .even {
 	border-color: #8ccbfc;
 }
 
-.message.message-reply .entry,
-.message.message-parent .entry {
-	padding: 10px 15px;
+.message .midcol {
+	margin: 0;
+}
+
+.message .child {
+	margin: 0 0 0 15px!important;
+}
+
+.message.message-parent .entry,
+.message.message-reply .entry {
 	border-left: 0 none;
+}
+
+.message.message-reply .entry {
+	margin-left: 0;
 }
 
 .message.new > .entry {
@@ -1953,9 +1965,10 @@ body.pinHeader-subanduser #header-bottom-right {
 /* Handling the keynav */
 .entry.RES-keyNav-activeElement,
 .entry:hover {
+	padding-right: 0;
 	outline: 0;
-	border: 0!important;
-	border-right: 3px solid #4b8adb!important;
+	border: 0 !important;
+	border-right: 3px solid #4b8adb !important;
 }
 
 	.entry.RES-keyNav-activeElement div.md,
@@ -2704,50 +2717,50 @@ body.with-listing-chooser .listing-chooser .grippy {
 
 	/* ~~  B.3. Header ~~~~~~~~~ */
 
-	.res-nightmode #header {
+	.res-nightmode div#header {
 		background-color: #000!important;
 		box-shadow: 0 -3px 9px 5px #000;
 	}
 
-		.res-nightmode #header:after,
-		.res-nightmode .footer-parent:after {
-			border-top-color: #494848;
-			border-bottom-color: #494848;
-		}
+	.res-nightmode #header:after,
+	.res-nightmode .footer-parent:after {
+		border-top-color: #494848;
+		border-bottom-color: #494848;
+	}
 
-		.res-nightmode #header:after,
-		.res-nightmode #header-bottom-left:before,
-		.res-nightmode .footer-parent:after {
-			background-color: #414141;
-			background-image: -webkit-linear-gradient(top,#696969,#414141);
-			background-image: -moz-linear-gradient(top,#696969,#414141);
-			background-image: linear-gradient(top,#696969,#414141);
-		}
+	.res-nightmode #header:after,
+	.res-nightmode #header-bottom-left:before,
+	.res-nightmode .footer-parent:after {
+		background-color: #414141;
+		background-image: -webkit-linear-gradient(top,#696969,#414141);
+		background-image: -moz-linear-gradient(top,#696969,#414141);
+		background-image: linear-gradient(top,#696969,#414141);
+	}
 
 	/* --  B.3.1. User Controls ------ */
 
-	.res-nightmode #header-bottom-right {
+	.res-nightmode div#header-bottom-right {
 		border-radius: 0!important;
 		background-color: transparent;
 	}
 
-		.res-nightmode #header-bottom-right:hover {
-			background-color: #333!important;
-		}
+	.res-nightmode #header-bottom-right:hover {
+		background-color: #333!important;
+	}
 
-		.res-nightmode #header-bottom-right a,
-		.res-nightmode #header-bottom-right span {
-			color: #acd9fc;
-		}
+	.res-nightmode #header-bottom-right a,
+	.res-nightmode #header-bottom-right span {
+		color: #acd9fc;
+	}
 
-		.res-nightmode #header-bottom-right:hover a,
-		.res-nightmode #header-bottom-right:hover span {
-			text-shadow: none;
-		}
+	.res-nightmode #header-bottom-right:hover a,
+	.res-nightmode #header-bottom-right:hover span {
+		text-shadow: none;
+	}
 
 	/* --  B.3.2. Banner Image ------ */
 
-	.res-nightmode #header-bottom-left {
+	.res-nightmode div#header-bottom-left {
 		background-color: transparent!important;
 	}
 
@@ -2920,6 +2933,7 @@ body.with-listing-chooser .listing-chooser .grippy {
 
 	.res-nightmode .arrow:not(.prev):not(.next) {
 		color: #666;
+		background: none transparent!important;
 	}
 
 	.res-nightmode .arrow.upmod,
@@ -2940,31 +2954,31 @@ body.with-listing-chooser .listing-chooser .grippy {
 		background-color: transparent;
 	}
 
-	.res-nightmode .commentarea .comment {
+	.res-nightmode .commentarea div.comment {
 		border: 1px solid #111!important;
 		border-color: #2d2d2d!important;
 		border-right: 0!important;
 		border-radius: 0!important;
 	}
 
-	.res-nightmode .nestedlisting > .comment {
+	.res-nightmode .nestedlisting > div.comment {
 		border: 1px solid #111!important;
 		border-color: #2d2d2d!important;
 		background-color: #1b1b1b!important;
 		box-shadow: 1px 1px 3px -1px #000;
 	}
 
-		.res-nightmode .nestedlisting > .comment .comment,
-		.res-nightmode .nestedlisting > .comment .comment .comment .comment,
-		.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment .comment {
-			background-color: #131313!important;
-		}
+	.res-nightmode .nestedlisting > .comment .comment,
+	.res-nightmode .nestedlisting > .comment .comment .comment .comment,
+	.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment .comment {
+		background-color: #131313!important;
+	}
 
-			.res-nightmode .nestedlisting > .comment .comment .comment,
-			.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment,
-			.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
-				background-color: #1b1b1b!important;
-			}
+		.res-nightmode .nestedlisting > .comment .comment .comment,
+		.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment,
+		.res-nightmode .nestedlisting > .comment .comment .comment .comment .comment .comment .comment {
+			background-color: #1b1b1b!important;
+		}
 
 	.res-nightmode .comment a.expand {
 		color: #777;
@@ -2993,19 +3007,25 @@ body.with-listing-chooser .listing-chooser .grippy {
 		border-color: #ff910b!important;
 	}
 
-	.res-nightmode div.thing.spam > .entry,
-	.res-nightmode div.thing.reported > .entry {
+	.res-nightmode div.thing.spam,
+	.res-nightmode div.thing.reported {
 		outline: 1px solid #d30000!important;
 		background-color: #771207!important;
+		background-image: none!important;
 	}
 
-		.res-nightmode div.thing.spam > p > *,
-		.res-nightmode div.thing.spam > .entry .title,
-		.res-nightmode div.thing.reported > p > *,
-		.res-nightmode div.thing.reported > .entry .title {
-			background-color: transparent!important;
-			color: #ff3a3a!important;
+		.res-nightmode div.thing.spam > .entry,
+		.res-nightmode div.thing.reported > .entry {
+			background-color: #771207!important;
 		}
+
+			.res-nightmode div.thing.spam > p > *,
+			.res-nightmode div.thing.spam > .entry .title,
+			.res-nightmode div.thing.reported > p > *,
+			.res-nightmode div.thing.reported > .entry .title {
+				background-color: transparent!important;
+				color: #ff3a3a!important;
+			}
 
 	.res-nightmode a.pretty-button {
 		box-shadow: 1px 1px 1px 0 #222;
