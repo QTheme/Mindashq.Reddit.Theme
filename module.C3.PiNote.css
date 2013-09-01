@@ -9,7 +9,7 @@
 	position: absolute;
 	top: 175px; /*Tweak this as per the header height (esp when C1 HeaderImages is used)*/
 	right: 360px;
-	left: 10px;
+	left: 5px;
 	border: 0!important;
 	background-color: transparent!important;
 	z-index: 10;
