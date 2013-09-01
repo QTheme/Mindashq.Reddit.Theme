@@ -1254,6 +1254,7 @@ div.thing.reported {
 	outline: 1px solid #fbb!important;
 	background-color: #ffe5e2!important;
 	background-image: none!important;
+	box-shadow: none;
 }
 
 	div.thing.spam > .entry,
@@ -2172,7 +2173,6 @@ div.NERPageMarker,
 /* --  A.10.3. Sidebar Icons ------ */
 
 .side a[href*='#icon-'] {
-	margin: 0 10px;
 	color: #333;
 	cursor: default;
 }
@@ -2182,16 +2182,21 @@ div.NERPageMarker,
 	}
 
 	.side a[href*='#icon-']:before {
-		display: inline-block;
-		margin: -16px 5px 0 -10px;
+		margin: -15px 10px 5px 0;
 		padding: 5px 5px 0;
 		width: 30px;
-		height: 47px;
 		background-position: 0 0;
 		font-weight: bold;
 		font-size: 25px;
 		line-height: 45px;
 		text-align: center;
+		float: left;
+	}
+
+	.side a[href*="#icon-"]:after {
+		content: '';
+		display: table;
+		clear: both;
 	}
 
 .side a[href*='#icon-exclamation']:before {
@@ -2418,9 +2423,9 @@ body.with-listing-chooser .listing-chooser .grippy {
 	color: #ccc;
 }
 
-	.res-nightmode h1,
-	.res-nightmode h2,
-	.res-nightmode h3 {
+	.res-nightmode .md h1,
+	.res-nightmode .md h2,
+	.res-nightmode .md h3 {
 		border: 0 none!important;
 		color: #d7d7d7!important;
 	}
