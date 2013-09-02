@@ -1136,7 +1136,7 @@ ul.tabmenu.formtab {
 
 .linklisting div.comment,
 .linklisting div.message {
-	margin: 0!important;
+	margin: 0 0 7px!important;
 	padding: 5px 0 1px 10px!important;
 	border: 0!important;
 	font-size: 10px;
@@ -1319,7 +1319,6 @@ select {
 	border-radius: 2px;
 	background-color: #fffedf!important;
 }
-
 
 .modactions .button {
 	padding: 6px 0 6px 2em!important;
@@ -1841,31 +1840,27 @@ body.profile-page .linklisting .even {
 	border-color: #8ccbfc;
 }
 
-.message .midcol {
-	margin: 0;
-}
-
 .message .child {
 	margin: 0 0 0 15px!important;
 }
 
+.message .midcol,
 .message.message-parent .entry,
 .message.message-reply .entry {
-	border-left: 0 none;
-}
-
-.message.message-reply .entry {
-	margin-left: 0;
+	border-left: 0 none!important;
+	margin-left: 0!important;
 }
 
 .message.new > .entry {
-	outline: 1px solid #acd9fc;
-	border: 0;
+	background-color: #f7f7f7!important;
+	outline: 1px solid #acd9fc!important;
+	border: 0!important;
 }
 
-	.message.new > .entry.RES-keyNav-activeElement {
-		background-color: #f7f7f7!important;
-	}
+div.message-reply.message {
+	margin: 7px 0 0!important;
+	padding: 5px 0 5px 5px!important;
+}
 
 /* ~~   A.8. Wiki Pages ~~~~~~~~~ */
 
@@ -3017,6 +3012,7 @@ body.with-listing-chooser .listing-chooser .grippy {
 		outline: 1px solid #d30000!important;
 		background-color: #771207!important;
 		background-image: none!important;
+		box-shadow: none!important;
 	}
 
 		.res-nightmode div.thing.spam > .entry,
