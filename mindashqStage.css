@@ -34,7 +34,9 @@ body.res div.beta-notice {
 	background:#101213 url('%%headerImage%%') no-repeat scroll 0px 80%!important;
 }
 
-	#header:after {
+	#header:after,
+	#header-bottom-left:before,
+	.footer-parent:after {
 		background-color:#2a5484;
 		background-image:none;
 		opacity:0.7;
@@ -44,15 +46,11 @@ body.res div.beta-notice {
 	position:absolute;
 }
 
-	#header-bottom-left:before {
-		background-color:#2a5484;
-		opacity:.1;
-	}
-
 #header ul.tabmenu li a,
 #header ul.tabmenu li a:visited,
 #header .pagename.redditname,
-#header .pagename.redditname.hover {
+#header .pagename.redditname.hover,
+.footer .flat-vert.title {
 	background-color: transparent; /*Tweak to match the image color*/
 	color:#acd9fc;
 }

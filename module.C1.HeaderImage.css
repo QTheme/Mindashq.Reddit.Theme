@@ -10,10 +10,12 @@ body.res-nightmode #header {
 	background: #101213 url('%%headerImage%%') no-repeat scroll 0px 80%!important; /*Tweak as per requirements*/
 }
 
-	#header:after {
-		background-color: #2a5484;
-		background-image: none;
-		opacity: 0.7;
+	#header:after,
+	#header-bottom-left:before,
+	.footer-parent:after {
+		background-color:#2a5484; /*Tweak to match the image color*/
+		background-image:none;
+		opacity:0.7; /*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
 #header-bottom-left {
@@ -21,17 +23,12 @@ body.res-nightmode #header {
 	position: absolute;
 }
 
-	#header-bottom-left:before {
-		background-color: #acd9fc; /*Tweak to match the image color*/
-		opacity: .1; 
-		/*be creative with usage of shadows, opacity, background color, and even additional background images here*/
-	}
-
 #header ul.tabmenu li a,
 #header ul.tabmenu li a:visited,
 #header .pagename.redditname,
-#header .pagename.redditname.hover {
-	background-color: transparent; /*Tweak to match the image color, or use default #acd9fc;*/
+#header .pagename.redditname.hover,
+.footer .flat-vert.title {
+	background-color: transparent; /*Tweak to match the image color, or keep transparent*/
 	background-image: none;
 	color: #acd9fc; /*Tweak against background color*/
 }
