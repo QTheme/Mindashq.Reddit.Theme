@@ -1,0 +1,22 @@
+﻿/* --  C.12. Sidebar Space - flow the content of posts and comments into space reserved for sidebar
+	 + 	Update the main CSS header comment block when this module is used
+---- */
+
+.panestack-title {
+	overflow: hidden;
+}
+
+body.listing-page > div.content,
+body.single-page > div.content,
+body.search-page > div.content,
+body.messages-page > div.content,
+body.multi-page > div.content {
+	overflow: visible;
+}
+
+.searchpane {
+	margin: 0 355px 0 0;
+	/* may have to tweak 355px if the side paddings or margins are changed on div.content */
+}
+
+/* --  C.12.end Sidebar Space - flow the content ---- */
