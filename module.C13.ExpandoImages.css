@@ -1,0 +1,59 @@
+﻿/* --  C.13. Expando Images
+	 + 	Update the main CSS header comment block when this module is used
+---- */
+
+.expando-button {
+	background: none transparent !important;
+	cursor: pointer;
+}
+
+	.expando-button:after {
+		margin: 0px 5px 0px 0px !important;
+		padding: 1px 5px;
+		width: 14px !important;
+		height: 20px !important;
+		border-radius: 3px;
+		background-color: #ddd;
+		border: 1px solid #ddd;
+		color: #777;
+		font-size: 11px;
+		text-shadow: 0 0 3px #f1f1f1;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	.expando-button.selftext.collapsed:after {
+		content: '✚';
+	}
+
+	.expando-button.selftext.expanded:after {
+		content: '▪▪';
+	}
+
+	.expando-button.video.collapsed:after {
+		content: '▶';
+	}
+
+	.expando-button.video.expanded:after {
+		content: '●';
+	}
+
+	.expando-button.image.collapsedExpando:after {
+		content: '❏';
+	}
+
+	.expando-button.image.expanded:after {
+		content: '❐';
+	}
+
+	.expando-button.expanded:after {
+		border-radius: 15px;
+	}
+
+	.expando-button:hover:after {
+		background-color: #666;
+		color: #fff;
+		box-shadow: 0px 4px 7px -3px #aaa;
+	}
+
+/* --  C.13.end Expando Images ---- */
