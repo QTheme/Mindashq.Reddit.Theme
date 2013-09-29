@@ -1220,7 +1220,7 @@ ul.tabmenu.formtab {
 		display: inline-block;
 		margin: 0;
 		padding: 5px 15px 8px!important;
-		border-color: #e0e0e0!important;
+		border: 1px solid #e0e0e0!important;
 		background-color: #fcfcfc!important;
 		background-image: none!important;
 		color: #777!important;
@@ -1229,7 +1229,6 @@ ul.tabmenu.formtab {
 
 	.morerecursion .deepthread {
 		padding: 5px 15px!important;
-		border: 1px solid;
 	}
 
 .nestedlisting > .morechildren {
