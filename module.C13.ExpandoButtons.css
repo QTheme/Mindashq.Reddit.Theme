@@ -1,5 +1,5 @@
 ﻿/* --  C.13. Expando Buttons
-	 + 	Update the main CSS header comment block when this module is used
+      +      Update the main CSS header comment block when this module is used
 ---- */
 
 .expando-button,
@@ -7,14 +7,16 @@
 .res-nightmode .thing .expando-button.image {
 	background: none transparent!important;
 	cursor: pointer;
+	height: 15px!important;
+	width: 0!important;
+	margin: 15px 0px 0px 0!important;
 }
 
-
-	.expando-button:after {
+	.expando-button:before {
 		margin: 0px 5px 0px 0px !important;
 		padding: 1px 5px;
-		width: 14px !important;
-		height: 20px !important;
+		width: 8px !important;
+		height: 14px !important;
 		border-radius: 3px;
 		background-color: #ddd;
 		border: 1px solid #ddd;
@@ -23,55 +25,67 @@
 		text-shadow: 0 0 3px #f1f1f1;
 		text-align: center;
 		vertical-align: top;
+		display: block;
+		cursor: pointer;
+		position: absolute;
 	}
 
-	.expando-button.selftext.collapsed:after {
+	.expando-button.selftext.collapsed:before {
 		content: '✚';
 	}
 
-	.expando-button.selftext.expanded:after {
+	.expando-button.selftext.expanded:before {
 		content: '▪▪';
 	}
 
-	.expando-button.video.collapsed:after {
+	.expando-button.video.collapsed:before {
 		content: '▶';
 	}
 
-	.expando-button.video.expanded:after {
+	.expando-button.video.expanded:before {
 		content: '●';
 	}
 
-	.expando-button.image.collapsedExpando:after {
+	.expando-button.image.collapsedExpando:before {
 		content: '❏';
 	}
 
-	.expando-button.image.expanded:after {
+	.expando-button.image.expanded:before {
 		content: '❐';
 	}
 
-	.expando-button:hover:after {
+	.expando-button:hover:before {
 		background-color: #666;
 		border-color: #666;
 		color: #eee;
 		box-shadow: 0px 0px 4px -2px #333;
 	}
 
-	.expando-button.expanded:after {
+	.expando-button.expanded:before {
 		border-radius: 15px;
 	}
 
-.res-nightmode .expando-button:after {
+.res-nightmode .expando-button:before {
 	background-color: #666;
 	border: 1px solid #666;
 	color: #eee;
 	text-shadow: 0 0 3px #222;
 }
 
-.res-nightmode .expando-button:hover:after {
+.res-nightmode .expando-button:hover:before {
 	background-color: #444;
 	border-color: #444;
 	color: #aaa;
 	box-shadow: 0px 4px 7px -3px #aaa;
 }
 
+.expando-button + p.tagline + .flat-list {
+	margin-left: 25px;
+}
+
+.res .md .expando-button.image,
+.res .parent .expando-button.image {
+	width: 20px!important;
+	margin: 0 5px!important;
+}
 /* --  C.13.end Expando Buttons ---- */
