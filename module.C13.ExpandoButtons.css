@@ -3,8 +3,8 @@
 ---- */
 
 .expando-button,
-.res-nightmode .thing div.expando-button,
-.res-nightmode .thing .expando-button.image {
+.thing div.expando-button,
+.thing .expando-button.image {
 	background: none transparent!important;
 	cursor: pointer;
 	height: 15px!important;
@@ -65,6 +65,16 @@
 		border-radius: 15px;
 	}
 
+	.expando-button + p.tagline + .flat-list {
+		margin-left: 25px;
+	}
+
+.res .md .expando-button.image,
+.res .parent .expando-button.image {
+	width: 20px!important;
+	margin: 0 5px!important;
+}
+
 .res-nightmode .expando-button:before {
 	background-color: #666;
 	border: 1px solid #666;
@@ -77,15 +87,5 @@
 	border-color: #444;
 	color: #aaa;
 	box-shadow: 0px 4px 7px -3px #aaa;
-}
-
-.expando-button + p.tagline + .flat-list {
-	margin-left: 25px;
-}
-
-.res .md .expando-button.image,
-.res .parent .expando-button.image {
-	width: 20px!important;
-	margin: 0 5px!important;
 }
 /* --  C.13.end Expando Buttons ---- */
