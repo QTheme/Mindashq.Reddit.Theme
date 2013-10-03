@@ -811,6 +811,7 @@ body.multi-page > div.content {
 
 p.tagline {
 	font-size: 115%;
+	white-space: nowrap;
 }
 
 .tagline a {
@@ -889,7 +890,7 @@ ul.tabmenu.formtab {
 .expando-button,
 .thing div.expando-button,
 .thing .expando-button.image {
-	margin: 17px 0px 0px 0!important;
+	margin: 1.8em 0px 0px 0!important;
 	width: 0!important;
 	height: 15px!important;
 	background: none transparent!important;
