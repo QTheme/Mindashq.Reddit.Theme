@@ -474,17 +474,19 @@ a[href*='#btn'] {
 	border-color: #fff;
 	background-color: #fff;
 	color: #acd9fc;
+	color: #555;
 	font-weight: 500;
 	font-size: 11px;
 	line-height: 20px;
-	text-transform: none;
+	opacity: 0.4;
+	-ms-filter: Alpha(Opacity=40);
+	filter: Alpha(Opacity=40);
 }
 
 	#sr-header-area .separator {
 		display: inline-block;
 		margin: 0;
 		width: 8px;
-		color: #acd9fc;
 		text-align: center;
 	}
 
@@ -492,24 +494,19 @@ a[href*='#btn'] {
 		margin: 0 7px 0 2px;
 	}
 
-.sr-bar a:link,
-.sr-list a {
-	line-height: 20px;
-	opacity: 0.4;
-	-ms-filter: Alpha(Opacity=40);
-	filter: Alpha(Opacity=40);
-}
+	#sr-header-area:hover {
+		opacity: 1;
+		-ms-filter: Alpha(Opacity=100);
+		filter: Alpha(Opacity=100);
+	}
 
-.sr-bar:hover a:link,
-.sr-list:hover a {
-	opacity: 1;
-	-ms-filter: Alpha(Opacity=100);
-	filter: Alpha(Opacity=100);
-}
+	#sr-header-area a {
+		color: #555;
+	}
 
-#RESStaticShortcuts {
-	text-transform: lowercase;
-}
+		#sr-header-area a:hover {
+			color: #015dcc;
+		}
 
 div#RESShortcutsEditContainer {
 	background: none #fff;
@@ -570,8 +567,8 @@ div#RESSubredditGroupDropdown {
 /* --  A.2.3. User Controls -- */
 #header-bottom-right {
 	top: auto!important;
-	bottom: 0!important;
-	padding: 6px 10px 4px!important;
+	bottom: -1px!important;
+	padding: 8px 10px 4px!important;
 	height: 20px!important;
 	border-radius: 0!important;
 	background-color: transparent;
@@ -583,7 +580,7 @@ div#RESSubredditGroupDropdown {
 	}
 
 	#header-bottom-right:hover {
-		background-color: #dcebfa;
+		background-color: #eaf4fc;
 	}
 
 		#header-bottom-right:hover a,
@@ -1078,6 +1075,7 @@ ul.tabmenu.formtab {
 
 .entry {
 	padding: 3px 3px 0;
+	margin: 0;
 }
 
 .compressed .entry {
@@ -1497,7 +1495,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 #search input[type='text'] {
-	margin: 0 0 -4px;
+	margin: 0 0 -6px;
 	padding: 10px;
 	width: 278px;
 	border: 1px solid #e3e3e3;
@@ -1525,7 +1523,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 /* --  A.8.2 Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
-	margin: 0 5px;
+	margin: 0 5px 10px;
 	border-color: #acd9fc;
 	background-color: #eaf4fc;
 	border-radius: 2px;
@@ -1926,20 +1924,42 @@ body.wiki-page .wiki-page-content {
 		}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
+div#userbarToggle,
+div#userbarToggle.userbarShow {
+	top: 28%!important;
+	bottom: 28%!important;
+	padding: 2px;
+	min-height: 10px;
+	height: 10px;
+	border: 0!important;
+	border-radius: 10px;
+	background-color: #eaf4fc!important;
+	color: #888;
+	font-weight: bold;
+	line-height: 0.7;
+	text-align: center;
+}
+
 /* --  A.11.1. Pin Sub-bar -- */
-body.pinHeader-sub #RESShortcutsSort,
-body.pinHeader-sub #RESShortcutsRight,
-body.pinHeader-sub #RESShortcutsLeft,
-body.pinHeader-sub #RESShortcutsAdd,
-body.pinHeader-sub #RESShortcutsTrash {
+.res.pinHeader-sub #RESShortcutsSort,
+.res.pinHeader-sub #RESShortcutsRight,
+.res.pinHeader-sub #RESShortcutsLeft,
+.res.pinHeader-sub #RESShortcutsAdd,
+.res.pinHeader-sub #RESShortcutsTrash,
+.res.pinHeader-subanduser #RESShortcutsSort,
+.res.pinHeader-subanduser #RESShortcutsRight,
+.res.pinHeader-subanduser #RESShortcutsLeft,
+.res.pinHeader-subanduser #RESShortcutsAdd,
+.res.pinHeader-subanduser #RESShortcutsTrash {
 	background-color: transparent;
 }
 
 /* --  A.11.2. Pin Sub-Bar User Bar -- */
 body.pinHeader-userbar #header-bottom-right,
 body.pinHeader-subanduser #header-bottom-right {
-	top: 20px!important;
+	top: 15px!important;
 	bottom: auto!important;
+	background-color: #fff;
 }
 
 /* --  A.11.3. Pin Full Header -- */
@@ -1972,12 +1992,6 @@ body.pinHeader-subanduser #header-bottom-right {
 	}
 
 .keyNavAnnotation {
-	color: #888;
-}
-
-div#userbarToggle {
-	border: 0!important;
-	background-color: transparent!important;
 	color: #888;
 }
 
@@ -3090,6 +3104,7 @@ ul#image-preview-list {
 
 .res-nightmode div.thing.spam,
 .res-nightmode div.thing.reported {
+	margin: 0 0 5px;
 	outline: 1px solid #8f0606!important;
 	background-color: #771207!important;
 	background-image: linear-gradient(#771207,#711107);
@@ -3354,19 +3369,8 @@ ul#image-preview-list {
 	color: #777;
 }
 
-.res-nightmode div#userbarToggle {
-	border: 0!important;
-	background-color: transparent!important;
-	color: #777;
-}
-
 .res-nightmode.messages-page a {
 	color: #4d90fe;
-}
-
-a[href$="NightModeCompatible"],
-.res-nightmode a[href$="NightModeCompatible"] {
-	display: none;
 }
 
 /* --  B.11.1. Progress Indicator and Page marker for RES mode -- */
