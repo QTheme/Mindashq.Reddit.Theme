@@ -773,12 +773,17 @@ body.multi-page > div.content {
 }
 
 	body.single-page > div.content > .linklisting .link {
-		border-top-width: 1px!important;
 		background: none #fff;
+		padding: 0 0 10px 10px;
 	}
+
+		body.single-page > div.content > .linklisting .link .rank {
+			display: none;
+		}
 
 /* --  A.3.1. Common areas -- */
 .panestack-title {
+	overflow: hidden;
 	margin: 10px 5px 0;
 	padding: 2px 10px 5px;
 	padding-bottom: 3px;
@@ -888,6 +893,7 @@ ul.tabmenu.formtab {
 .thing div.expando-button,
 .thing .expando-button.image {
 	margin: 1.8em 0px 0px 0!important;
+	padding: 0px!important;
 	width: 0!important;
 	height: 15px!important;
 	background: none transparent!important;
@@ -987,7 +993,7 @@ ul.tabmenu.formtab {
 .linklisting .thing {
 	overflow: hidden;
 	margin: 0;
-	padding: 2px 0 3px 3px;
+	padding: 0 0 3px 3px;
 	border: 1px solid #fff;
 	border-width: 1px 0 0 1px;
 	background-color: #fdfdff; /*#fbfbfb;*/
@@ -1022,10 +1028,10 @@ ul.tabmenu.formtab {
 	margin: 0;
 }
 
-.linklisting div.comment,
+.linklisting div.thing.comment,
 .linklisting div.message-parent {
 	margin: 0 0 5px!important;
-	padding: 5px 0 5px 15px!important;
+	padding: 5px 0 5px 10px!important;
 	font-size: 11px;
 }
 
@@ -1091,7 +1097,7 @@ ul.tabmenu.formtab {
 }
 
 .link .usertext .md {
-	padding: 0;
+	padding: 0 15px 0 0;
 	border: 0 none;
 	background-color: transparent;
 }
@@ -1163,18 +1169,18 @@ ul.tabmenu.formtab {
 		font-size: 11px;
 	}
 
-	.commentarea .nestedlisting {
-		margin: 0 5px;
-		padding: 5px 0;
-		border: 1px solid #e0e0e0;
-		background-color: #fbfbfb;
-		box-shadow: 0px 0px 3px 0px #ccc;
-	}
+.nestedlisting > div.comment {
+	margin: 0 0 3px;
+	border: 1px solid #e0e0e0;
+	background-color: #fbfbfb;
+	overflow: hidden;
+}
 
 .comment {
 }
 
 	.comment .collapsed {
+		padding: 0px 0 5px 23px;
 		font-style: normal;
 		/*for the collapsed line of text, and expando collapsed state*/
 	}
@@ -1198,6 +1204,8 @@ ul.tabmenu.formtab {
 	}
 
 	.comment .midcol {
+		margin: 5px;
+		width: 15px!important;
 		font-size: 130%;
 	}
 
@@ -1226,7 +1234,7 @@ ul.tabmenu.formtab {
 
 /* --  A.6.2. Comments with RES comment box enabled -- */
 .res-commentBoxes div.collapsed {
-	padding: 0 0 5px 28px;
+	padding: 0 0 5px 26px;
 	font-size: 11px;
 }
 
@@ -1235,7 +1243,7 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes .comment .midcol {
-	margin: 5px 5px 5px 8px;
+	margin: 5px 0 5px 8px;
 }
 
 .res-commentBoxes .child,
@@ -1294,7 +1302,6 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes div.comment {
-	overflow: hidden;
 	margin: -1px 0 0 25px!important;
 	padding: 5px 0px!important;
 	border: 1px solid #eee!important;
@@ -1523,10 +1530,11 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 /* --  A.8.2 Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
+	overflow:hidden;
 	margin: 0 5px 10px;
 	border-color: #acd9fc;
-	background-color: #eaf4fc;
 	border-radius: 2px;
+	background-color: #eaf4fc;
 	background-image: linear-gradient(#eaf4fc,#eff8ff);
 }
 
@@ -2473,12 +2481,11 @@ ul#image-preview-list {
 
 .profile-page div.thing {
 	margin: 0 0 5px!important;
-	padding: 5px 0 5px 15px!important;
 }
 
 .thing.message {
 	margin: 0 0 5px;
-	padding-left: 10px;
+	padding: 5px 0 5px 10px;
 }
 
 	.thing.message .midcol,
@@ -2496,11 +2503,6 @@ ul#image-preview-list {
 
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
-.res-nightmode body {
-	background-color: #222;
-	color: #ccc;
-}
-
 .res-nightmode .md h1,
 .res-nightmode .md h2,
 .res-nightmode .md h3 {
@@ -2766,13 +2768,9 @@ ul#image-preview-list {
 		color: #d2d2d2;
 	}
 
-.res-nightmode .sr-bar a:link,
-.res-nightmode .sr-list a {
-	line-height: 20px;
-	opacity: 0.70;
-	-ms-filter: Alpha(Opacity=70);
-	filter: Alpha(Opacity=70);
-}
+	.res-nightmode #sr-header-area a {
+		color: #aaa;
+	}
 
 .res-nightmode div#RESShortcutsEditContainer {
 	background: none #000;
@@ -3017,7 +3015,7 @@ ul#image-preview-list {
 
 /* ~~  B.6. Comments ~~~~~ */
 /* --  B.6.1. Default Comments -- */
-.res-nightmode .commentarea .nestedlisting {
+.res-nightmode .nestedlisting > div.comment {
 	border: 1px solid #2d2d2d;
 	background-color: #1b1b1b;
 	box-shadow: 1px 1px 3px -1px #000;
@@ -3351,6 +3349,11 @@ ul#image-preview-list {
 }
 
 /* ~~  B.11. RES Optimisation ~~~~~ */
+.res-nightmode div#userbarToggle {
+	background-color: #333!important;
+	color: #acd9fc;
+}
+
 .res-nightmode .entry.RES-keyNav-activeElement div.md,
 .res-nightmode .entry.RES-keyNav-activeElement .usertext-body,
 .res-nightmode .entry.RES-keyNav-activeElement div.noncollapsed,
