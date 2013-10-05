@@ -17,11 +17,11 @@
 	.pagename a:after {
 		font-size: 18px;
 		vertical-align: bottom;
-		text-shadow: 1px 1px 1px #FFF, 2px 2px 3px #AAA, -1px -1px 1px #EEE;
 	}
 
 
 	.titlebox .redditname a:after {
 		font-size: 26px;
+		text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
 	}
 /* --  C.8.end Reddit Name Switcher ---- */

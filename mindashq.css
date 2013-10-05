@@ -74,13 +74,13 @@ a {
 			.thing .title:visited,
 			.thing .title.loggedin.click:visited,
 			.thing .title.loggedin:visited {
-				color: #15001d; /*#211a39; #5d0081;*/
+				color: #15001d; /*#211a39, #5d0081*/
 				text-shadow: 0 1px 0 #757575;
 			}
 
 .content .md a:visited,
 div.comment .md p > a:visited {
-	color: #a409aa; /*#810ba8;*/
+	color: #a409aa; /*#810ba8*/
 }
 
 a:hover,
@@ -121,21 +121,21 @@ a:active,
 		box-shadow: 0 1px 4px 1px #d1d5c6;
 	}
 
-.md {
+body:not(.wiki-page) .md {
 	max-width: 60em;
 	color: #000;
 	/*font-size: 1.1em;*/
 	line-height: 1.4;
 }
 
-	.md blockquote,
-	.help blockquote {
-		margin-left: 5px;
-		padding: 1px 1px 1px 15px;
-		max-width: 60em;
-		border: 1px solid #ccc;
-		border-width: 0 0 0 2px;
-	}
+.md blockquote,
+.help blockquote {
+	margin-left: 5px;
+	padding: 1px 1px 1px 15px;
+	max-width: 60em;
+	border: 1px solid #ccc;
+	border-width: 0 0 0 2px;
+}
 
 hr {
 	width: auto;
@@ -292,7 +292,7 @@ a[href='/s'] {
 	margin: 0 0 0 20px;
 }
 
-.entry .flat-list.buttons a[onclick*='reply'] {
+.entry .flat-list li a[onclick*='reply'] {
 	display: inline-block;
 	margin: -5px 5px 0 0;
 	padding: 2px 10px 3px;
@@ -307,8 +307,8 @@ a[href='/s'] {
 	cursor: pointer;
 }
 
-.entry:hover .flat-list.buttons a[onclick*='reply'],
-.entry.RES-keyNav-activeElement .flat-list.buttons a[onclick*='reply'] {
+.entry:hover .flat-list li a[onclick*='reply'],
+.entry.RES-keyNav-activeElement .flat-list li a[onclick*='reply'] {
 	border-color: #3079ed!important;
 	background-color: #5ba2fd;
 	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
@@ -348,7 +348,7 @@ a[href*='#btn'] {
 	.BEFoot button:hover,
 	input[type='submit']:hover,
 	a[href*='#btn']:hover,
-	.entry .flat-list.buttons a[onclick*='reply']:hover {
+	.entry .flat-list li a[onclick*='reply']:hover {
 		border-color: #08c;
 		background-color: #357ae8;
 		background-image: linear-gradient(#4d90fe,#357ae8)!important;
@@ -403,34 +403,28 @@ a[href*='#btn'] {
 	text-align: center;
 }
 
-.md.wiki a[href*='#btn'] {
-	/* display: inline-block; */
-}
-
-.flat-list.buttons {
+.entry .flat-list {
 	display: inline-block;
 	font-size: 11px;
 }
 
-	.flat-list.buttons li a,
-	.flat-list.buttons li a:visited,
-	li .redditSingleClick {
+	.entry .flat-list li a,
+	.entry .flat-list li a:visited,
+	.entry li .redditSingleClick {
 		color: #eee;
 	}
 
-.entry:hover > .flat-list.buttons > li a:not(.comments),
-.entry:hover > .flat-list.buttons > li .redditSingleClick,
-.entry:focus > .flat-list.buttons > li a:not(.comments),
-.entry:focus > .flat-list.buttons > li .redditSingleClick,
-.entry.RES-keyNav-activeElement .flat-list.buttons > li a:not(.comments),
-.entry.RES-keyNav-activeElement .flat-list.buttons > li .redditSingleClick,
-.noncollapsed:hover > .flat-list.buttons > li a:not(.comments) {
+.entry:hover > .flat-list li a,
+.entry:hover > .flat-list .redditSingleClick,
+.entry:focus > .flat-list li a,
+.entry:focus > .flat-list .redditSingleClick,
+.entry.RES-keyNav-activeElement .flat-list li a,
+.entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
+.noncollapsed:hover > .flat-list li a {
 	color: #777;
 }
 
-.flat-list.buttons > li a.comments,
-.flat-list.buttons > a.comments.click,
-.flat-list.buttons > a.comments:visited {
+.entry .flat-list li a.comments {
 	color: #015dcc;
 }
 
@@ -821,7 +815,8 @@ p.tagline {
 }
 
 .res .author.submitter,
-.res .author.moderator {
+.res .author.moderator,
+.res .author.friend {
 	padding: 1px 5px;
 	font-size: 11px;
 }
@@ -891,6 +886,7 @@ ul.tabmenu.formtab {
 /* --  A.3.4. Expando Buttons -- */
 .expando-button,
 .thing div.expando-button,
+.thing div.expando-button.collapsed,
 .thing .expando-button.image {
 	margin: 1.8em 0px 0px 0!important;
 	padding: 0px!important;
@@ -996,7 +992,7 @@ ul.tabmenu.formtab {
 	padding: 0 0 3px 3px;
 	border: 1px solid #fff;
 	border-width: 1px 0 0 1px;
-	background-color: #fdfdff; /*#fbfbfb;*/
+	background-color: #fdfdff; /*#fbfbfb*/
 	box-shadow: 0 1px 3px 0 #ccb;
 }
 
@@ -1006,12 +1002,10 @@ ul.tabmenu.formtab {
 
 .linklisting .odd {
 	/*background-color: #fbfbfb;*/
-	background-image: linear-gradient(#fefefe,#fbfbfb);
 }
 
 .linklisting .even {
 	/*background-color: #f8f8f8;*/
-	background-image: linear-gradient(#fefefe,#f8f8f8);
 }
 
 .link.last-clicked {
@@ -1029,7 +1023,7 @@ ul.tabmenu.formtab {
 }
 
 .linklisting div.thing.comment,
-.linklisting div.message-parent {
+.linklisting div.thing.message {
 	margin: 0 0 5px!important;
 	padding: 5px 0 5px 10px!important;
 	font-size: 11px;
@@ -1198,7 +1192,7 @@ ul.tabmenu.formtab {
 			color: #888;
 		}
 
-	.comment .flat-list.buttons {
+	.comment .flat-list {
 		position: relative;
 		display: block;
 	}
@@ -1530,7 +1524,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 /* --  A.8.2 Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
-	overflow:hidden;
+	overflow: hidden;
 	margin: 0 5px 10px;
 	border-color: #acd9fc;
 	border-radius: 2px;
@@ -1887,49 +1881,46 @@ body.wiki-page .wiki-page-content {
 	border-top: 1px dotted #d2d2d2;
 }
 
-	body.wiki-page .wiki-page-content .md {
-		font-size: 13px;
+	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
+		border-color: #eee;
+		background-color: #f9f9f7;
+		list-style: none;
 	}
 
-		body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
-			border-color: #eee;
-			background-color: #f9f9f7;
-		}
+	body.wiki-page .wiki-page-content .md.wiki h1 {
+		font-size: 2.4em;
+		letter-spacing: -1px;
+	}
 
-		body.wiki-page .wiki-page-content .md.wiki h1 {
-			font-size: 2.4em;
-			letter-spacing: -1px;
-		}
+	body.wiki-page .wiki-page-content .md.wiki h2 {
+		font-size: 1.8em;
+		letter-spacing: -1px;
+	}
 
-		body.wiki-page .wiki-page-content .md.wiki h2 {
-			font-size: 1.8em;
-			letter-spacing: -1px;
-		}
+	body.wiki-page .wiki-page-content .md.wiki h3 {
+		font-size: 1.4em;
+	}
 
-		body.wiki-page .wiki-page-content .md.wiki h3 {
-			font-size: 1.4em;
-		}
+	body.wiki-page .wiki-page-content .md.wiki h4 {
+		font-size: 1.2em;
+	}
 
-		body.wiki-page .wiki-page-content .md.wiki h4 {
-			font-size: 1.2em;
-		}
+	body.wiki-page .wiki-page-content .md.wiki img {
+		max-width: 100%;
+	}
 
-		body.wiki-page .wiki-page-content .md.wiki img {
-			max-width: 100%;
-		}
+	body.wiki-page .wiki-page-content .md.wiki h1,
+	body.wiki-page .wiki-page-content .md.wiki h2,
+	body.wiki-page .wiki-page-content .md.wiki h3,
+	body.wiki-page .wiki-page-content .md.wiki h4 {
+		color: #323638;
+		text-shadow: 0 0 0 #fdfdfe,0 0 1px #585858;
+	}
 
-		body.wiki-page .wiki-page-content .md.wiki h1,
-		body.wiki-page .wiki-page-content .md.wiki h2,
-		body.wiki-page .wiki-page-content .md.wiki h3,
-		body.wiki-page .wiki-page-content .md.wiki h4 {
-			color: #323638;
-			text-shadow: 0 0 0 #fdfdfe,0 0 1px #585858;
-		}
-
-		body.wiki-page .wiki-page-content .md.wiki h5,
-		body.wiki-page .wiki-page-content .md.wiki h6 {
-			color: #08c;
-		}
+	body.wiki-page .wiki-page-content .md.wiki h5,
+	body.wiki-page .wiki-page-content .md.wiki h6 {
+		color: #08c;
+	}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
 div#userbarToggle,
@@ -2484,8 +2475,7 @@ ul#image-preview-list {
 }
 
 .thing.message {
-	margin: 0 0 5px;
-	padding: 5px 0 5px 10px;
+	/*applies to mail mod and normal */
 }
 
 	.thing.message .midcol,
@@ -2499,6 +2489,11 @@ ul#image-preview-list {
 		outline: 1px solid #acd9fc!important;
 		border: 0!important;
 		background-color: #f7f7f7!important;
+	}
+
+	.thing.message .child .message {
+		margin: 1px 0 -1px!important;
+		padding: 2px 0 3px!important;
 	}
 
 /* [ B ]. Night Mode ............ */
@@ -2662,7 +2657,7 @@ ul#image-preview-list {
 	}
 
 /* --  B.1.5. Common Button Style -- */
-.res-nightmode .entry .flat-list.buttons a[onclick*='reply'] {
+.res-nightmode .entry .flat-list li a[onclick*='reply'] {
 	border-color: #302f2f;
 	border-radius: 2px;
 	background-color: #222;
@@ -2711,30 +2706,30 @@ ul#image-preview-list {
 				color: #a95908;
 			}
 
-.res-nightmode .flat-list.buttons li a,
-.res-nightmode .flat-list.buttons li a:visited,
-.res-nightmode .flat-list.buttons li .redditSingleClick {
+.res-nightmode .flat-list a,
+.res-nightmode .flat-list a:visited,
+.res-nightmode .flat-list .redditSingleClick {
 	color: #333;
 }
 
-	.res-nightmode .flat-list.buttons li a:hover {
+	.res-nightmode .flat-list a:hover {
 		color: #f73;
 	}
 
-	.res-nightmode .flat-list.buttons li a:active {
+	.res-nightmode .flat-list a:active {
 		color: #79efef;
 	}
 
-.res-nightmode .entry:hover > .flat-list.buttons > li a,
-.res-nightmode .entry:hover > .flat-list.buttons > li .redditSingleClick,
-.res-nightmode .entry:focus > .flat-list.buttons > li a,
-.res-nightmode .entry:focus > .flat-list.buttons > li .redditSingleClick,
-.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons > li a,
-.res-nightmode .entry.RES-keyNav-activeElement .flat-list.buttons > li .redditSingleClick,
-.res-nightmode .noncollapsed:hover > .flat-list.buttons > li a,
-.res-nightmode .flat-list.buttons > li a.comments,
-.res-nightmode .flat-list.buttons > a.comments.click,
-.res-nightmode .flat-list.buttons > a.comments:visited {
+.res-nightmode .entry:hover > .flat-list > li a,
+.res-nightmode .entry:hover > .flat-list > li .redditSingleClick,
+.res-nightmode .entry:focus > .flat-list > li a,
+.res-nightmode .entry:focus > .flat-list > li .redditSingleClick,
+.res-nightmode .entry.RES-keyNav-activeElement .flat-list > li a,
+.res-nightmode .entry.RES-keyNav-activeElement .flat-list > li .redditSingleClick,
+.res-nightmode .noncollapsed:hover > .flat-list > li a,
+.res-nightmode .flat-list > li a.comments,
+.res-nightmode .flat-list > a.comments.click,
+.res-nightmode .flat-list > a.comments:visited {
 	color: #777;
 }
 
@@ -3342,10 +3337,6 @@ ul#image-preview-list {
 .res-nightmode.wiki-page .pageactions .wikiaction-current {
 	background-color: #686868;
 	color: #fff;
-}
-
-.res-nightmode .sheets {
-	/* margin-right: 333px; */
 }
 
 /* ~~  B.11. RES Optimisation ~~~~~ */
