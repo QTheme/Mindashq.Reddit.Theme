@@ -32,6 +32,7 @@
 		line-height: 28px;
 		vertical-align: middle;
 		text-align: center;
+		text-shadow: -1px -1px 0 #d8eeff,1px 1px 0 #075e85;
 	}
 
 		.side .md > blockquote:last-child > h1 a {
@@ -60,6 +61,7 @@
 		padding-bottom: 15px;
 		background-color: #5ca2e8;
 		color: #dcebfa;
+		text-shadow: none;
 	}
 
 		.side .md > blockquote:last-child:hover > h1 a,
@@ -129,11 +131,6 @@
 		color: #5ca2e8;
 		white-space: nowrap;
 	}
-
-#header-bottom-left {
-	/*same selector includes via headerImages module as well, with different values*/
-	margin-left: 33px;
-}
 
 body.res-nightmode .side .md > blockquote:last-child {
 	border: 0 none;
