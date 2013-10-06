@@ -6,7 +6,7 @@
 
 #header,
 body.res-nightmode #header {
-	min-height: 150px; /*Tweak to give a nice height for image to be seen, be conservative*/
+	min-height: 150px; /*Tweak to give a nice height for image to be seen, be conservative*/ 
 	background: #101213 url('%%headerImage%%') no-repeat scroll 0px 80%!important; /*Tweak as per requirements*/
 }
 
