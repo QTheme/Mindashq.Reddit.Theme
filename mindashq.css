@@ -1573,12 +1573,8 @@ body:not(.profile-page) .side .titlebox .bottom {
 /* --  A.8.3. Contributor and Moderator Buttons -- */
 .titlebox form.flairtoggle,
 .titlebox .leavemoderator {
-	font-size: 12px;
-}
-
-.titlebox form.toggle,
-.leavemoderator {
 	background: none transparent;
+	font-size: 12px;
 }
 
 .leavemoderator-button,
