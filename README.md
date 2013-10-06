@@ -15,6 +15,7 @@ It takes just <a href="http://www.reddit.com/r/mindashq/wiki/index#wiki_two_step
 +  **Readability improvements** : Minimal borders and breaks to give a nice reading experience. The buttons change colors based on context. The "Reply" button on comments is more prominent to make replying to a comment more obvious (rather than hiding the submit link/text buttons)
 +  **100% text-only** theme, no images required for the standard theme. Even the voting arrows are theme-based and manageable for color changes without having to  depend on images.
 +  **Modular CSS** for controlled and easy to manage changes with opt-in modules (custom css code) and images as needed. There are no images added by the theme, only the images that would be needed as per the subreddit customization.
++  Comments are incrementally enhanced. Default threaded format of reddit is themed as base, and it scales nicely for the RES commentBoxes module. Compact and clean comments without overlapping nested borders are seen in all versions.
 +  All areas (moderator, user pages, and settings pages) also accounted for. This makes the base theme suitable for use with stylish, or stylebot across reddits (Works perfectly with Stylish for Google Chrome).
 +  [RES compatible](http://redditenhancementsuite.com/) (top bar, never ending reddit, night-mode full support, fixed header, custom buttons on links/posts/comments).
 +  Works with [Reddit Companion for Chrome](https://chrome.google.com/webstore/detail/reddit-companion/algjnflpgoopkdijmkalfcifomdhmcbe)
