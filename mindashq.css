@@ -307,8 +307,8 @@ a[href='/s'] {
 	cursor: pointer;
 }
 
-.entry:hover .flat-list li a[onclick*='reply'],
-.entry.RES-keyNav-activeElement .flat-list li a[onclick*='reply'] {
+.entry:hover ul.flat-list li a[onclick*='reply'],
+.entry.RES-keyNav-activeElement ul.flat-list li a[onclick*='reply'] {
 	border-color: #3079ed!important;
 	background-color: #5ba2fd;
 	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
@@ -348,7 +348,7 @@ a[href*='#btn'] {
 	.BEFoot button:hover,
 	input[type='submit']:hover,
 	a[href*='#btn']:hover,
-	.entry .flat-list li a[onclick*='reply']:hover {
+	.entry ul.flat-list li a[onclick*='reply']:hover {
 		border-color: #08c;
 		background-color: #357ae8;
 		background-image: linear-gradient(#4d90fe,#357ae8)!important;
@@ -410,7 +410,7 @@ a[href*='#btn'] {
 
 	.entry .flat-list li a,
 	.entry .flat-list li a:visited,
-	.entry li .redditSingleClick {
+	.entry .flat-list .redditSingleClick {
 		color: #eee;
 	}
 
@@ -2498,6 +2498,11 @@ ul#image-preview-list {
 
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
+.res-nightmode body {
+	background-color: #222;
+	color: #ccc;
+}
+
 .res-nightmode .md h1,
 .res-nightmode .md h2,
 .res-nightmode .md h3 {
@@ -2511,34 +2516,30 @@ ul#image-preview-list {
 .res-nightmode .thing .title.loggedin,
 .res-nightmode a:visited,
 .res-nightmode .searchfacets .title {
-	color: #acd9fc;
+	color: #bbb!important;
 }
 
 	.res-nightmode .thing .title,
 	.res-nightmode .thing .title.loggedin {
-		text-shadow: 0 1px 0 #000;
+		text-shadow: 0 1px 0 #000!important;
 	}
 
 		.res-nightmode .thing .title:visited,
 		.res-nightmode .thing .title.loggedin.click:visited,
 		.res-nightmode .thing .title.loggedin:visited {
-			color: #38709d;
-			text-shadow: 0 1px 0 #111;
+			color: #666!important;
+			text-shadow: 0 1px 0 #111!important;
 		}
 
 .res-nightmode .content .md a:visited,
 .res-nightmode div.comment .md p > a:visited {
-	color: #acd9fc;
+	color: #bbb!important;
 }
 
 .res-nightmode a:hover,
 .res-nightmode .thing .title:hover,
 .res-nightmode .thing .title.loggedin:hover {
-	color: #ff910b;
-}
-
-.res-nightmode a:active {
-	color: #79efef;
+	color: #ff910b!important;
 }
 
 .res-nightmode .roundfield,
@@ -2563,7 +2564,7 @@ ul#image-preview-list {
 		box-shadow: 0 1px 4px 1px #4b4949;
 	}
 
-.res-nightmode .md {
+.res-nightmode body:not(.wiki-page) .md {
 	color: #ccc;
 }
 
@@ -2706,31 +2707,24 @@ ul#image-preview-list {
 				color: #a95908;
 			}
 
-.res-nightmode .flat-list a,
-.res-nightmode .flat-list a:visited,
-.res-nightmode .flat-list .redditSingleClick {
-	color: #333;
+.res-nightmode .entry .flat-list a,
+.res-nightmode .entry .flat-list a:visited,
+.res-nightmode .entry .flat-list .redditSingleClick {
+	color: #333!important;
 }
 
-	.res-nightmode .flat-list a:hover {
-		color: #f73;
-	}
+.res-nightmode .entry:hover > .flat-list li a,
+.res-nightmode .entry:hover > .flat-list .redditSingleClick,
+.res-nightmode .entry:focus > .flat-list li a,
+.res-nightmode .entry:focus > .flat-list .redditSingleClick,
+.res-nightmode .entry.RES-keyNav-activeElement .flat-list li a,
+.res-nightmode .entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
+.res-nightmode .noncollapsed:hover > .flat-list li a {
+	color: #999!important;
+}
 
-	.res-nightmode .flat-list a:active {
-		color: #79efef;
-	}
-
-.res-nightmode .entry:hover > .flat-list > li a,
-.res-nightmode .entry:hover > .flat-list > li .redditSingleClick,
-.res-nightmode .entry:focus > .flat-list > li a,
-.res-nightmode .entry:focus > .flat-list > li .redditSingleClick,
-.res-nightmode .entry.RES-keyNav-activeElement .flat-list > li a,
-.res-nightmode .entry.RES-keyNav-activeElement .flat-list > li .redditSingleClick,
-.res-nightmode .noncollapsed:hover > .flat-list > li a,
-.res-nightmode .flat-list > li a.comments,
-.res-nightmode .flat-list > a.comments.click,
-.res-nightmode .flat-list > a.comments:visited {
-	color: #777;
+.res-nightmode .entry .flat-list li a.comments {
+	color: #aaa!important;
 }
 
 /* ~~  B.2. Header ~~~~~ */
@@ -3364,7 +3358,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode.messages-page a {
-	color: #4d90fe;
+	color: #acd9fc;
 }
 
 /* --  B.11.1. Progress Indicator and Page marker for RES mode -- */
