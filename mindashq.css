@@ -989,7 +989,7 @@ ul.tabmenu.formtab {
 .linklisting .thing {
 	overflow: hidden;
 	margin: 0;
-	padding: 0 0 3px 3px;
+	padding: 2px 0;
 	border: 1px solid #fff;
 	border-width: 1px 0 0 1px;
 	background-color: #fdfdff; /*#fbfbfb*/
@@ -1060,13 +1060,13 @@ ul.tabmenu.formtab {
 }
 
 .thumbnail {
-	margin: 5px;
+	margin: 5px 10px;
 	width: auto;
 }
 
 	.thumbnail.self,
 	.thumbnail.default {
-		margin: 2px 0;
+		margin: 5px 3px;
 	}
 
 .listing-page .thumbnail {
@@ -1074,7 +1074,7 @@ ul.tabmenu.formtab {
 }
 
 .entry {
-	padding: 3px 3px 0;
+	padding: 3px;
 	margin: 0;
 }
 
@@ -2379,10 +2379,6 @@ span.linkflair {
 	width: 50px!important;
 }
 
-.linkflair-meta .thumbnail {
-	margin-left: 0;
-}
-
 .linkflair-meta .arrow {
 	display: inline-block!important;
 	margin: 0 3px;
@@ -2771,7 +2767,7 @@ ul#image-preview-list {
 .res-nightmode table#srList,
 .res-nightmode #RESSubredditGroupDropdown {
 	border-color: #666;
-	background-color: #444;
+	background-color: #444!important;
 	color: #ff910b;
 }
 
@@ -3144,6 +3140,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode .searchpane {
+	border-width: 0!important;
 	border-color: #333;
 	border-radius: 0!important;
 	background-color: #111;
@@ -3152,7 +3149,7 @@ ul#image-preview-list {
 
 .res-nightmode .searchfacets {
 	border-color: #333;
-	background-color: transparent;
+	background-color: transparent!important;
 	box-shadow: none;
 }
 
@@ -3175,15 +3172,6 @@ ul#image-preview-list {
 	.res-nightmode .linkinfo .score {
 		color: #ccc;
 	}
-
-		.res-nightmode .linkinfo .score .number,
-		.res-nightmode .linkinfo .score .word {
-			color: #ccc;
-		}
-
-		.res-nightmode .linkinfo .score .number {
-			color: #ccc;
-		}
 
 	.res-nightmode .linkinfo .shortlink input {
 		border: 0!important;
