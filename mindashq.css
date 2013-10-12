@@ -1074,7 +1074,7 @@ ul.tabmenu.formtab {
 }
 
 .entry {
-	padding: 3px;
+	padding: 3px 5px;
 	margin: 0;
 }
 
@@ -1964,7 +1964,7 @@ body.pinHeader-subanduser #header-bottom-right {
 /* --  A.11.4. Handling the keynav -- */
 .entry.RES-keyNav-activeElement,
 .entry:hover {
-	padding-right: 0;
+	padding-right: 2px;
 	outline: 0;
 	border: 0!important;
 	border-right: 3px solid #4b8adb!important;
