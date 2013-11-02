@@ -1250,7 +1250,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes .morechildren,
 .res-commentBoxes .morerecursion {
-	margin: 0 0 -2px -20px;
+	margin: 0 0 -5px -20px;
 	padding: 1px 0;
 }
 
@@ -1522,7 +1522,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 	padding: 10px 15px;
 }
 
-/* --  A.8.2 Infobar, MoreInfo and MoreSearch Divs -- */
+/* --  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
 	overflow: hidden;
 	margin: 0 5px 10px;
