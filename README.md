@@ -6,7 +6,7 @@ Mindashq is a CSS Theme designed to be used on any subreddit with minimal modifi
 
 It takes just <a href="http://www.reddit.com/r/mindashq/wiki/index#wiki_two_step_setup"> two steps</a> to have a well designed reddit experience with Mindashq.
 
-<a href="http://i.imgur.com/Tlbap5A.png"><img src="http://i.imgur.com/Tlbap5A.png" title="Hosted by imgur.com" alt="" /></a>
+<a href="http://i.imgur.com/XcVwqei.png"><img src="http://i.imgur.com/XcVwqei.png" title="Hosted by imgur.com" alt="" /></a>
 
 ## Salient Features
 
