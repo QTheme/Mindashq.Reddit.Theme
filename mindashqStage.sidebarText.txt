@@ -72,7 +72,7 @@
 
 ---
 
-Theme based on [Mindashq 1.5](/r/mindashq)
+Theme based on [Mindashq 1.7](/r/mindashq)
 
 ---
 
