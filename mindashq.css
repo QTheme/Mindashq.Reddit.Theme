@@ -1,15 +1,15 @@
 /* ~~ Mindashq.Reddit.Theme
-v1.7
-http://www.reddit.com/r/mindashq/wiki
-For reuse : Always copy latest from Github
-.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~. */
+	v1.7a
+	http://www.reddit.com/r/mindashq/wiki
+	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* [ A ]. Normal Theme............ */
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
 	position: relative;
 	min-width: 800px;
-	background-color: #ececea; /*f2f2ea, #efefe8*/
+	background-color: #ececea;
 	color: #333;
 	font-weight: normal;
 	font-style: normal;
@@ -74,13 +74,13 @@ a {
 			.thing .title:visited,
 			.thing .title.loggedin.click:visited,
 			.thing .title.loggedin:visited {
-				color: #15001d; /*#211a39, #5d0081*/
+				color: #15001d;
 				text-shadow: 0 1px 0 #757575;
 			}
 
 .content .md a:visited,
 div.comment .md p > a:visited {
-	color: #a409aa; /*#810ba8*/
+	color: #a409aa;
 }
 
 a:hover,
@@ -138,23 +138,8 @@ body:not(.wiki-page) .md {
 }
 
 hr {
-	width: auto;
 	height: 1px;
 	border: 0 none;
-}
-
-.side .md > hr {
-	width: 0;
-	background-color: transparent;
-}
-
-	.side .md > hr + hr {
-		margin: 5px 0 15px;
-		width: auto;
-	}
-
-hr,
-.side .md hr {
 	background-color: #d2d2d2;
 	color: #c8c8c8;
 }
@@ -807,11 +792,10 @@ body.multi-page > div.content {
 
 p.tagline {
 	font-size: 115%;
-	white-space: nowrap;
 }
 
 .tagline a {
-	color: #777;
+	color: #888;
 }
 
 .res .author.submitter,
@@ -888,7 +872,7 @@ ul.tabmenu.formtab {
 .thing div.expando-button,
 .thing div.expando-button.collapsed,
 .thing .expando-button.image {
-	margin: 1.8em 0px 0px 0!important;
+	margin: 0 25px 0 0!important;
 	padding: 0px!important;
 	width: 0!important;
 	height: 15px!important;
@@ -899,7 +883,7 @@ ul.tabmenu.formtab {
 	.expando-button:before {
 		position: absolute;
 		display: block;
-		margin: 0px 5px 0px 0px !important;
+		margin: 0 5px 0 0!important;
 		padding: 1px 5px;
 		width: 8px !important;
 		height: 14px !important;
@@ -941,22 +925,13 @@ ul.tabmenu.formtab {
 	.expando-button:hover:before {
 		border-color: #666;
 		background-color: #666;
-		box-shadow: 0px 0px 4px -2px #333;
+		box-shadow: 0 0 4px -2px #333;
 		color: #eee;
 	}
 
 	.expando-button.expanded:before {
 		border-radius: 15px;
 	}
-
-.link:not(.compressed) .expando-button + p.tagline + .flat-list {
-	margin-left: 25px;
-}
-
-.link.compressed .expando-button,
-.thing.compressed div.expando-button {
-	margin: 0 25px 0 0!important;
-}
 
 .res .md .expando-button.image,
 .res .parent .expando-button.image {
@@ -992,7 +967,7 @@ ul.tabmenu.formtab {
 	padding: 1px 0 3px;
 	border: 1px solid #fff;
 	border-width: 1px 0 0 1px;
-	background-color: #fdfdff; /*#fbfbfb*/
+	background-color: #fdfdff;
 	box-shadow: 0 1px 3px 0 #ccb;
 }
 
@@ -1082,6 +1057,10 @@ ul.tabmenu.formtab {
 	padding: 2px 3px 2px 2px;
 }
 
+.compressed p.tagline {
+	display: inline-block;
+}
+
 .link .title,
 .link.compressed .title {
 	margin: 2px .4em 2px 0!important;
@@ -1159,7 +1138,7 @@ ul.tabmenu.formtab {
 
 	.commentarea p.tagline,
 	.comment .score {
-		margin: 2px 4px 2px -2px;
+		margin: 2px 4px 2px -1px;
 		font-size: 11px;
 	}
 
@@ -1174,28 +1153,19 @@ ul.tabmenu.formtab {
 }
 
 	.comment .collapsed {
-		padding: 0px 0 5px 23px;
+		padding: 0 0 0 25px;
 		font-style: normal;
 		/*for the collapsed line of text, and expando collapsed state*/
 	}
 
 	.comment a.expand {
-		padding: 0 2px 1px;
+		padding: 1px 2px 2px;
 		color: #888;
 	}
 
 		.comment a.expand:hover {
 			background-color: #bbb;
 		}
-
-		.comment a.expand:visited {
-			color: #888;
-		}
-
-	.comment .flat-list {
-		position: relative;
-		display: block;
-	}
 
 	.comment .midcol {
 		margin: 5px;
@@ -1228,7 +1198,6 @@ ul.tabmenu.formtab {
 
 /* --  A.6.2. Comments with RES comment box enabled -- */
 .res-commentBoxes div.collapsed {
-	padding: 0 0 0 26px;
 	font-size: 11px;
 }
 
@@ -1237,7 +1206,7 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes .comment .midcol {
-	margin: 5px 0 5px 8px;
+	margin: 5px -4px 5px 10px;
 }
 
 .res-commentBoxes .child,
@@ -1319,8 +1288,14 @@ ul.tabmenu.formtab {
 		background-color: #fbfbfb!important;
 	}
 
-.usertext.grayed .usertext-body {
-	display: none; /*compact deleted messages/comments*/
+/* --  A.6.3. Compact deleted messages/comments -- */
+.deleted.comment .entry > * {
+	margin: 0;
+	padding: 0 0 0 25px;
+}
+
+.usertext.grayed {
+	display: none;
 }
 
 /* ~~  A.7. Spam highlighting ~~~~~ */
@@ -1333,7 +1308,7 @@ div.thing.reported {
 	margin: 0 0 5px;
 	outline: 1px solid #fbb!important;
 	background-color: #ffe5e2!important;
-	background-image: linear-gradient(#ffe5e2,#ffdfdb);
+	background-image: linear-gradient(#ffe5e2,#ffdfdb)!important;
 }
 
 	div.thing.spam > .entry,
@@ -1487,6 +1462,7 @@ div.sidebox.create {
 
 body:not(.profile-page) .side .titlebox .bottom {
 	display: none;
+	border-color: #d2d2d2;
 }
 
 /* --  A.8.1. Search -- */
@@ -1534,53 +1510,83 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 .linkinfo {
 	margin: 0 0 10px;
-	padding: 10px 10px 0 10px;
-	border: 1px solid #d2d2d2;
-	border-width: 1px 0;
+	padding: 5px 0;
+	border: 1px solid #e3e3e3;
 	border-radius: 0!important;
-	background-color: transparent;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-size: 12px;
-	text-shadow: none;
+	background: transparent;
+	text-align:center;
 }
 
-	.linkinfo .score {
-		margin: 2px 0;
-	}
+.linkinfo .date {
+	padding: 5px 0;
+}
 
-		.linkinfo .score .number,
-		.linkinfo .score .word {
-		}
+.linkinfo .score {
+	display: inline-block;
+	float:left;
+	margin: 0 0 0 -1px;
+	padding: 10px 0;
+	width: 130px;
+	height: 61px;
+	border: 1px solid #e3e3e3;
+	background: #f3f3f3;
+}
 
-		.linkinfo .score .number {
-			font-size: 22px;
-		}
+.linkinfo .score .number {
+	display: block;
+	font-size: 20px;
+}
 
-	.linkinfo .downvotes {
-		margin-left: 5px;
-	}
+.linkinfo .score .word { 
+	display: block;
+}
+
+.linkinfo .upvotes,
+.linkinfo .downvotes {
+	display: block;
+	margin: 0 -1px 0 130px!important;
+	padding: 10px;
+	height: 20px;
+	border: 1px solid #e3e3e3;
+	background: #f3f3f3;
+	text-align: left;
+}
+
+.linkinfo .downvotes {
+    margin-top: -1px!important;
+}
+
+.linkinfo .upvotes .number,
+.linkinfo .downvotes .number {
+	font-size: 20px;
+}
+
+.linkinfo .upvotes .word,
+.linkinfo .downvotes .word {
+	float: left;
+	margin: 5px 10px 0 0;
+	font-size: 12px;
+}
+
+.linkinfo .shortlink {
+	clear: both;
+}
 
 	.linkinfo input#shortlink-text {
-		margin-top: 7px!important;
+		margin-top: 5px;
 		border: 0!important;
 		background-color: transparent;
 		color: #0a0a0a!important;
-		font-size: 12px!important;
+		font-size: 12px;
 	}
 
 /* --  A.8.3. Contributor and Moderator Buttons -- */
-.titlebox form.flairtoggle,
-.titlebox .leavemoderator {
+.titlebox form.toggle,
+.leavemoderator,
+.leavemoderator-button,
+.leavecontributor-button  {
 	background: none transparent;
 	font-size: 12px;
-}
-
-.leavemoderator-button,
-.leavecontributor-button {
-	display: none;
-	background: none transparent!important;
 }
 
 /* --  A.8.4. Login Form -- */
@@ -1597,15 +1603,26 @@ body:not(.profile-page) .side .titlebox .bottom {
 	}
 
 /* --  A.8.5. Flair Setting area -- */
-.titlebox form.toggle {
-	background-color: transparent;
+.titlebox form.flairtoggle {
+	position: relative;
+	margin-top: 5px;
+	padding: 5px 5px 5px 35px;
+	border: 1px solid #e3e3e3;
+	border-width: 1px 1px 0;
+	background: #f3f3f3;
+}
+
+.titlebox form.flairtoggle input {
+	float: left;
+	margin: 10px 10px 0px -25px;
 }
 
 .titlebox .tagline {
-	margin: 10px 0 25px 0;
-	padding: 10px;
-	border: 1px solid #eaeaea;
-	background: #fafafa;
+	margin: 0 0 10px 0;
+	padding: 0 5px 5px 35px;
+	border: 1px solid #e3e3e3;
+	border-width: 0 1px 1px ;
+	background: #f3f3f3;
 	font-size: 12px;
 }
 
@@ -1997,7 +2014,7 @@ button.RESBigEditorPop.blueButton {
 /* --  A.11.5. Progress Indicator and Page marker for RES mode -- */
 #progressIndicator.neverEndingReddit,
 div.NERPageMarker,
-#NERFail,
+div#NERFail,
 #endOfReddit {
 	margin: 0;
 	padding: 10px 0;
@@ -2012,7 +2029,7 @@ div.NERPageMarker,
 }
 
 #progressIndicator.neverEndingReddit,
-#NERFail,
+div#NERFail,
 #endOfReddit {
 	color: #b90a0a;
 	font-size: 12px;
@@ -2081,9 +2098,17 @@ div.NERPageMarker,
 	margin-top: 12px;
 }
 
+.side .md > hr {
+	width: 0;
+}
+
+	.side .md > hr + hr {
+		margin: 5px 0 15px;
+		width: auto;
+	}
+
 /* --  A.12.1. Colored Boxes -- */
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
-
 .side .md blockquote a[href*='#icon-']:before {
 	border-radius: 3px;
 	background-color: #666;
@@ -2370,7 +2395,7 @@ span.linkflair {
 }
 
 .linkflair-meta .midcol {
-	width: 55px!important;
+	width: 50px!important;
 }
 
 .linkflair-meta.compressed .midcol {
@@ -2559,8 +2584,7 @@ ul#image-preview-list {
 	color: #ccc;
 }
 
-.res-nightmode hr,
-.res-nightmode .side .usertext-body .md hr {
+.res-nightmode hr {
 	background-color: #414141;
 	color: #373737;
 }
@@ -2933,7 +2957,7 @@ ul#image-preview-list {
 .res-nightmode .expando-button:hover:before {
 	border-color: #444;
 	background-color: #444;
-	box-shadow: 0px 4px 7px -3px #aaa;
+	box-shadow: 0 4px 7px -3px #aaa;
 	color: #aaa;
 }
 
@@ -2957,7 +2981,7 @@ ul#image-preview-list {
 	margin: 0;
 	border-color: #292929!important;
 	background-color: #1e1e1e;
-	box-shadow: 0 0px 5px 0px #111;
+	box-shadow: 0 0 5px 0 #111;
 }
 
 .res-nightmode .linklisting .odd {
@@ -3132,6 +3156,10 @@ ul#image-preview-list {
 		text-shadow: 0 -1px 0 #444, 0 1px 0 #0f0000;
 	}
 
+.res-nightmode body:not(.profile-page) .side .titlebox .bottom {
+	border-color: #666;
+}
+
 /* --  B.8.1. Search -- */
 .res-nightmode #search input[type='text'] {
 	border-color: #1c1c1c;
@@ -3160,16 +3188,16 @@ ul#image-preview-list {
 }
 
 .res-nightmode .linkinfo {
-	border-width: 1px 0;
-	border-radius: 0!important;
-	background-color: transparent!important;
-	color: #ccc;
-	text-shadow: none;
+	border-color: #333!important;
+	background: transparent!important;
 }
 
-	.res-nightmode .linkinfo .score {
-		color: #ccc;
-	}
+.res-nightmode .linkinfo .score,
+.res-nightmode .linkinfo .upvotes,
+.res-nightmode .linkinfo .downvotes {
+	border-color: #333;
+	background: #111;
+}
 
 .res-nightmode .linkinfo input#shortlink-text {
 	border: 0!important;
@@ -3189,9 +3217,13 @@ ul#image-preview-list {
 	}
 
 /* --  B.8.5. Flair Setting area -- */
+.res-nightmode .titlebox form.flairtoggle {
+	border-color: #333;
+	background: #111!important;
+}
 .res-nightmode .titlebox .tagline {
-	border: 1px solid #333;
-	background-color: #111;
+	border-color: #333;
+	background: #111;
 }
 
 .res-nightmode .subscription-box ul > a[count] {
@@ -3345,7 +3377,7 @@ ul#image-preview-list {
 /* --  B.11.1. Progress Indicator and Page marker for RES mode -- */
 .res-nightmode #progressIndicator.neverEndingReddit,
 .res-nightmode div.NERPageMarker,
-.res-nightmode #NERFail,
+.res-nightmode div#NERFail,
 .res-nightmode #endOfReddit {
 	color: #ff4900;
 }
@@ -3537,8 +3569,3 @@ ul#image-preview-list {
 
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
-
-/* Experimental: For the multireddit beta bar */
-body.res div.beta-notice {
-	top: 77px;
-}
