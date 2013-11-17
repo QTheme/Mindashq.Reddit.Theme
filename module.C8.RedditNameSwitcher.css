@@ -21,11 +21,11 @@
 
 
 	.titlebox .redditname a:after {
-		font-size: 26px;
-		text-shadow: 1px 1px 1px #fff, 2px 2px 3px #aaa, -1px -1px 1px #eee;
+		font-size: 30px;
+		text-shadow: 0px 0px 1px #888;
 	}
 
 .res-nightmode .titlebox .redditname a:after {
-	text-shadow: 1px 1px 1px #000000, 2px 2px 3px #555555, -1px -1px 1px #111111;
+	text-shadow: 0px 0px 1px #555;
 }
 /* --  C.8.end Reddit Name Switcher ---- */
