@@ -36,7 +36,7 @@ body{position:relative;min-width:800px;background-color:#ececea;color:#333;font-
 #header .pagename.redditname,
 #header .pagename.redditname.hover,
 .footer .flat-vert.title {
-	background-color: transparent; /*Tweak to match the image color*/
+	background-color:transparent; /*Tweak to match the image color*/
 	color:#acd9fc;
 }
 
@@ -54,6 +54,7 @@ body{position:relative;min-width:800px;background-color:#ececea;color:#333;font-
 #header ul.tabmenu li a:hover {
 	color:#ff4500;
 }
+
 #header-bottom-right a,
 #header-bottom-right span {
 	color:#def0fe;
@@ -63,10 +64,10 @@ body{position:relative;min-width:800px;background-color:#ececea;color:#333;font-
 	background-color:#285281;
 }
 
-		#header-bottom-right:hover a,
-		#header-bottom-right:hover span {
-			text-shadow:none;
-		}
+	#header-bottom-right:hover a,
+	#header-bottom-right:hover span {
+		text-shadow:none;
+	}
 
 #sr-header-area {
 	background-color:#fff;
@@ -77,97 +78,97 @@ body{position:relative;min-width:800px;background-color:#ececea;color:#333;font-
 /*  C.2. Sidebar Buttons - inSitu - */
 /*-- C.2.2 Dual buttons - */
 .sidebox.submit {
-	width: 147px;
-	word-spacing: 1px;
-	letter-spacing: -1px;
+	width:147px;
+	word-spacing:1px;
+	letter-spacing:-1px;
 }
 
 .sidebox.submit-link {
-	position: relative;
-	display: block;
-	margin-left: 0px;
-	text-indent: 0px;
+	position:relative;
+	display:block;
+	margin-left:0px;
+	text-indent:0px;
 }
 
 	.sidebox.submit-link .morelink .nub:before {
-		content: 'OR';
-		position: relative;
-		top: 4px;
-		margin-left: 12px;
-		padding: 5px;
-		height: auto;
-		border: 1px solid #fbfbf9;
-		border-radius: 20px;
-		background-color: #fbfbf9!important;
-		color: #2977c6;
-		font-weight: bold;
-		font-size: 12px;
-		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
-		z-index: 1;
+		content:'OR';
+		position:relative;
+		top:4px;
+		margin-left:12px;
+		padding:5px;
+		height:auto;
+		border:1px solid #fbfbf9;
+		border-radius:20px;
+		background-color:#fbfbf9!important;
+		color:#2977c6;
+		font-weight:bold;
+		font-size:12px;
+		text-shadow:1px 1px 1px #fff,1px 1px 2px #808088;
+		z-index:1;
 	}
 
 .sidebox.submit-text {
-	position: relative;
-	float: right;
-	margin-top: -44px;
-	text-align: right;
+	position:relative;
+	float:right;
+	margin-top:-44px;
+	text-align:right;
 }
 
 .res-nightmode .sidebox.submit-link .morelink .nub {
-	display: block!important;
+	display:block!important;
 }
 
 	.res-nightmode .sidebox.submit-link .morelink .nub:before {
-		border: 1px solid #222;
-		background-color: #222!important;
-		color: #bb6107;
-		text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
+		border:1px solid #222;
+		background-color:#222!important;
+		color:#bb6107;
+		text-shadow:1px 1px 1px #000,1px 1px 2px #1f1f1f;
 	}
 
 .res-nightmode .sidebox.submit-text {
-	top: -2px;
+	top:-2px;
 }
 /*--  C.2.end Sidebar Buttons on Top -*/
 
 /*  C.3. Pinote - */
 .side .md > blockquote:nth-of-type(1) {
-	position: absolute;
-	top: 175px; /*Tweak */
-	right: 360px;
-	left: 5px;
-	border: 0!important;
-	background-color: transparent!important;
-	z-index: 10;
+	position:absolute;
+	top:175px; /*Tweak */
+	right:360px;
+	left:5px;
+	border:0!important;
+	background-color:transparent!important;
+	z-index:10;
 }
 
 	.side .md > blockquote:nth-of-type(1) > h1 > a {
-		float: right;
-		margin: -3px -5px -5px 0px;
-		padding: 10px 5px;
-		max-width: 120px;
-		font-size: 12px;
-		letter-spacing: 0;
-		text-align: right;
-		text-align: center;
-		text-decoration: underline;
-		text-shadow: 1px 1px 1px #fdfdfe;
+		float:right;
+		margin:-3px -5px -5px 0px;
+		padding:10px 5px;
+		max-width:120px;
+		font-size:12px;
+		letter-spacing:0;
+		text-align:right;
+		text-align:center;
+		text-decoration:underline;
+		text-shadow:1px 1px 1px #fdfdfe;
 	}
 
 		.side .md > blockquote:nth-of-type(1) > h1 > a[href*="#icon-"]:before {
-			position: absolute;
-			left: 20px;
-			margin-top: -5px;
-			padding: 0 5px;
-			cursor: default;
+			position:absolute;
+			left:20px;
+			margin-top:-5px;
+			padding:0 5px;
+			cursor:default;
 		}
 
 a[name='content'] {
-	display: block;
-	margin: 0px 360px 25px 30px;
-	min-height: 65px;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-	background-color: #f5f5f5;
+	display:block;
+	margin:0px 360px 25px 30px;
+	min-height:65px;
+	border:1px solid #ccc;
+	border-radius:2px;
+	background-color:#f5f5f5;
 }
 
 	a[name='content']:before {
@@ -180,7 +181,7 @@ a[name='content'] {
 		font-size:12px;
 	}
 
-.res-nightmode a[name='content']{
+.res-nightmode a[name='content'] {
 	border-color:#403f3f;
 	background-color:#0a0a0a;
 }
@@ -223,7 +224,7 @@ a[name='content'] {
 		line-height:28px;
 		vertical-align:middle;
 		text-align:center;
-		text-shadow: -1px -1px 0 #d8eeff,1px 1px 0 #075e85;
+		text-shadow:-1px -1px 0 #d8eeff,1px 1px 0 #075e85;
 	}
 
 		.side .md > blockquote:last-child > h1 a {
@@ -252,7 +253,7 @@ a[name='content'] {
 		padding-bottom:15px;
 		background-color:#5ca2e8;
 		color:#dcebfa;
-		text-shadow: none;
+		text-shadow:none;
 	}
 
 		.side .md > blockquote:last-child:hover > h1 a,
@@ -401,7 +402,7 @@ a[name='content'] {
 .side .usertext a[href$='jpg'],
 .side .usertext a[href$='jpeg'],
 .side .usertext a[href$='gif'],
-.side .usertext a[href$='#view']{
+.side .usertext a[href$='#view'] {
 	position:static;
 	display:block;
 	margin:0px -10px 15px -15px;
@@ -440,7 +441,7 @@ a[name='content'] {
 /*  C.6.end Sidebar Image - */
 
 /*  C.7. Rage Faces - */
-a[href='/fy1']:nth-of-type(n):after,a[href='/milk']:nth-of-type(n):after,a[href='/pickletime']:nth-of-type(n):after,a[href='/fuckthatshit']:nth-of-type(n):after,a[href='/teethrage']:nth-of-type(n):after,a[href='/foreveralone']:nth-of-type(n):after,a[href='/bzz']:nth-of-type(n):after,a[href='/creepy']:nth-of-type(n):after,a[href='/itstime']:nth-of-type(n):after,a[href='/gtroll']:nth-of-type(n):after,a[href='/fap']:nth-of-type(n):after,a[href='/pfttxt']:nth-of-type(n):after,a[href='/biggusta']:nth-of-type(n):after,a[href='/notsureifgusta']:nth-of-type(n):after,a[href='/hahahahaha']:nth-of-type(n):after,a[href='/2229']:nth-of-type(n):after,a[href='/smokeweedeveryday']:nth-of-type(n):after,a[href='/drunk1']:nth-of-type(n):after,a[href='/truestory']:nth-of-type(n):after,a[href='/didthere']:nth-of-type(n):after,a[href='/tobey']:nth-of-type(n):after,a[href='/hatersgonnahate']:nth-of-type(n):after,a[href='/dinostare']:nth-of-type(n):after,a[href='/puke']:nth-of-type(n):after,a[href='/awthanks']:nth-of-type(n):after,a[href='/knowthatfeel']:nth-of-type(n):after,a[href='/no']:nth-of-type(n):after,a[href='/jackieeeee!']:nth-of-type(n):after,a[href='/happyjackie']:nth-of-type(n):after,a[href='/ohgodwhy']:nth-of-type(n):after,a[href='/ohgodyes']:nth-of-type(n):after,a[href='/jetpack']:nth-of-type(n):after,a[href='/badass']:nth-of-type(n):after,a[href='/soclose']:nth-of-type(n):after,a[href='/allthethings']:nth-of-type(n):after,a[href='/youdontsay']:nth-of-type(n):after,a[href='/dinofuckyeah']:nth-of-type(n):after,a[href='/dinofuckyeah2']:nth-of-type(n):after,a[href='/excitedtroll']:nth-of-type(n):after,a[href='/feelsbadman']:nth-of-type(n):after,a[href='/jizzsplosion']:nth-of-type(n):after,a[href='/21424']:nth-of-type(n):after,a[href='/ohmy']:nth-of-type(n):after,a[href='/likeasir']:nth-of-type(n):after,a[href='/likealady']:nth-of-type(n):after,a[href='/ifeelsyabreh']:nth-of-type(n):after,a[href='/trollmom']:nth-of-type(n):after,a[href='/femyao']:nth-of-type(n):after,a[href='/ilovethebeefytaco']:nth-of-type(n):after,a[href='/gyey']:nth-of-type(n):after,a[href='/gwat']:nth-of-type(n):after,a[href='/gsmile']:nth-of-type(n):after,a[href='/gtongue']:nth-of-type(n):after,a[href='/gohno']:nth-of-type(n):after,a[href='/gwah']:nth-of-type(n):after,a[href='/ghappy']:nth-of-type(n):after,a[href='/gbeh']:nth-of-type(n):after,a[href='/gfu']:nth-of-type(n):after,a[href='/guhm']:nth-of-type(n):after,a[href='/fu']:nth-of-type(n):after,a[href='/beh']:nth-of-type(n):after,a[href='/gah']:nth-of-type(n):after,a[href='/perfect']:nth-of-type(n):after,a[href='/happy']:nth-of-type(n):after,a[href='/uhm']:nth-of-type(n):after,a[href='/wat']:nth-of-type(n):after,a[href='/yey']:nth-of-type(n):after,a[href='/fuckyeah']:nth-of-type(n):after,a[href='/ewbte']:nth-of-type(n):after,a[href='/son']:nth-of-type(n):after,a[href='/high']:nth-of-type(n):after,a[href='/poker']:nth-of-type(n):after,a[href='/rightmilk']:nth-of-type(n):after,a[href='/megusta']:nth-of-type(n):after,a[href='/troll']:nth-of-type(n):after,a[href='/rtroll']:nth-of-type(n):after,a[href='/leftmilk']:nth-of-type(n):after,a[href='/futext']:nth-of-type(n):after,a[href='/pft']:nth-of-type(n):after,a[href='/sadtroll']:nth-of-type(n):after,a[href='/wetodddog']:nth-of-type(n):after,a[href='/harpdarp']:nth-of-type(n):after,a[href='/dude']:nth-of-type(n):after,a[href='/eyes']:nth-of-type(n):after,a[href='/awman']:nth-of-type(n):after,a[href='/bepsausage']:nth-of-type(n):after,a[href='/lol']:nth-of-type(n):after,a[href='/omg']:nth-of-type(n):after,a[href='/pissed']:nth-of-type(n):after,a[href='/hmm']:nth-of-type(n):after,a[href='/whoa']:nth-of-type(n):after,a[href='/sad']:nth-of-type(n):after,a[href='/thumbsup']:nth-of-type(n):after,a[href='/blackhair']:nth-of-type(n):after,a[href='/hehheh']:nth-of-type(n):after,a[href='/straight']:nth-of-type(n):after,a[href='/bepinthemorning']:nth-of-type(n):after,a[href='/red']:nth-of-type(n):after,a[href='/bepislaughingatyourmum']:nth-of-type(n):after,a[href='/nomegusta']:nth-of-type(n):after,a[href='/wtf']:nth-of-type(n):after,a[href='/trolldad']:nth-of-type(n):after,a[href='/wayevil']:nth-of-type(n):after,a[href='/challengeaccepted']:nth-of-type(n):after,a[href='/melvin']:nth-of-type(n):after,a[href='/welp']:nth-of-type(n):after,a[href='/bepistrollingyoubetter']:nth-of-type(n):after,a[href='/djlovestaco']:nth-of-type(n):after,a[href='/why']:nth-of-type(n):after,a[href='/surprised']:nth-of-type(n):after,a[href='/suprised']:nth-of-type(n):after,a[href='/longneck']:nth-of-type(n):after,a[href='/sweetjesus']:nth-of-type(n):after,a[href='/notokay']:nth-of-type(n):after,a[href='/yuno']:nth-of-type(n):after,a[href='/awyeah']:nth-of-type(n):after,a[href='/awyea']:nth-of-type(n):after,a[href='/ohisthatacarrot']:nth-of-type(n):after,a[href='/carrt']:nth-of-type(n):after,a[href='/iamawaffle']:nth-of-type(n):after,a[href='/jackieeeee']:nth-of-type(n):after,a[href='/aintthatsomeshit']:nth-of-type(n):after,a[href='/igotthis']:nth-of-type(n):after,a[href='/teeth']:nth-of-type(n):after,a[href='/foreveralonewithyourmum']:nth-of-type(n):after,a[href='/megustaperfect']:nth-of-type(n):after,a[href='/fapfap']:nth-of-type(n):after,a[href='/schlick']:nth-of-type(n):after,a[href='/hug']:nth-of-type(n):after,a[href='/gtfo']:nth-of-type(n):after,a[href='/stare']:nth-of-type(n):after,a[href='/fumanchu']:nth-of-type(n):after,a[href='/vuvu']:nth-of-type(n):after,a[href='/pfttext']:nth-of-type(n):after,a[href='/indeed']:nth-of-type(n):after,a[href='/ifeelyoubrah']:nth-of-type(n):after,a[href='/steve']:nth-of-type(n):after,a[href='/serious']:nth-of-type(n):after,a[href='/gserious']:nth-of-type(n):after,a[href='/gaytroll']:nth-of-type(n):after,a[href='/deviltroll']:nth-of-type(n):after,a[href='/freddie']:nth-of-type(n):after,a[href='/thestonedmod']:nth-of-type(n):after,a[href='/notbad']:nth-of-type(n):after,a[href='/trollmum']:nth-of-type(n):after,a[href='/gwtf']:nth-of-type(n):after,a[href='/okay']:nth-of-type(n):after,a[href='/splashy']:nth-of-type(n):after,a[href='/toomuchweed']:nth-of-type(n):after,a[href='/chrisbrpwnd']:nth-of-type(n):after,a[href='/dinokay']:nth-of-type(n):after,a[href='/dino']:nth-of-type(n):after,a[href='/table']:nth-of-type(n):after,a[href='/nowkiss']:nth-of-type(n):after,a[href='/everybodywalkthedinosaur']:nth-of-type(n):after,a[href='/angryharpdarp']:nth-of-type(n):after,a[href='/cerealspit']:nth-of-type(n):after,a[href='/biebs']:nth-of-type(n):after,a[href='/cereal']:nth-of-type(n):after,a[href='/foreveralonelaugh']:nth-of-type(n):after,a[href='/ohcrap']:nth-of-type(n):after,a[href='/jasonqualman']:nth-of-type(n):after,a[href='/jonzibar']:nth-of-type(n):after,a[href='/fyl']:nth-of-type(n):after,a[href='/rmilk']:nth-of-type(n):after,a[href='/ewbtetext']:nth-of-type(n):after,a[href='/trap']:nth-of-type(n):after,a[href='/hdad']:nth-of-type(n):after {
+a[href='/fy1']:nth-of-type(n):after, a[href='/milk']:nth-of-type(n):after, a[href='/pickletime']:nth-of-type(n):after, a[href='/fuckthatshit']:nth-of-type(n):after, a[href='/teethrage']:nth-of-type(n):after, a[href='/foreveralone']:nth-of-type(n):after, a[href='/bzz']:nth-of-type(n):after, a[href='/creepy']:nth-of-type(n):after, a[href='/itstime']:nth-of-type(n):after, a[href='/gtroll']:nth-of-type(n):after, a[href='/fap']:nth-of-type(n):after, a[href='/pfttxt']:nth-of-type(n):after, a[href='/biggusta']:nth-of-type(n):after, a[href='/notsureifgusta']:nth-of-type(n):after, a[href='/hahahahaha']:nth-of-type(n):after, a[href='/2229']:nth-of-type(n):after, a[href='/smokeweedeveryday']:nth-of-type(n):after, a[href='/drunk1']:nth-of-type(n):after, a[href='/truestory']:nth-of-type(n):after, a[href='/didthere']:nth-of-type(n):after, a[href='/tobey']:nth-of-type(n):after, a[href='/hatersgonnahate']:nth-of-type(n):after, a[href='/dinostare']:nth-of-type(n):after, a[href='/puke']:nth-of-type(n):after, a[href='/awthanks']:nth-of-type(n):after, a[href='/knowthatfeel']:nth-of-type(n):after, a[href='/no']:nth-of-type(n):after, a[href='/jackieeeee!']:nth-of-type(n):after, a[href='/happyjackie']:nth-of-type(n):after, a[href='/ohgodwhy']:nth-of-type(n):after, a[href='/ohgodyes']:nth-of-type(n):after, a[href='/jetpack']:nth-of-type(n):after, a[href='/badass']:nth-of-type(n):after, a[href='/soclose']:nth-of-type(n):after, a[href='/allthethings']:nth-of-type(n):after, a[href='/youdontsay']:nth-of-type(n):after, a[href='/dinofuckyeah']:nth-of-type(n):after, a[href='/dinofuckyeah2']:nth-of-type(n):after, a[href='/excitedtroll']:nth-of-type(n):after, a[href='/feelsbadman']:nth-of-type(n):after, a[href='/jizzsplosion']:nth-of-type(n):after, a[href='/21424']:nth-of-type(n):after, a[href='/ohmy']:nth-of-type(n):after, a[href='/likeasir']:nth-of-type(n):after, a[href='/likealady']:nth-of-type(n):after, a[href='/ifeelsyabreh']:nth-of-type(n):after, a[href='/trollmom']:nth-of-type(n):after, a[href='/femyao']:nth-of-type(n):after, a[href='/ilovethebeefytaco']:nth-of-type(n):after, a[href='/gyey']:nth-of-type(n):after, a[href='/gwat']:nth-of-type(n):after, a[href='/gsmile']:nth-of-type(n):after, a[href='/gtongue']:nth-of-type(n):after, a[href='/gohno']:nth-of-type(n):after, a[href='/gwah']:nth-of-type(n):after, a[href='/ghappy']:nth-of-type(n):after, a[href='/gbeh']:nth-of-type(n):after, a[href='/gfu']:nth-of-type(n):after, a[href='/guhm']:nth-of-type(n):after, a[href='/fu']:nth-of-type(n):after, a[href='/beh']:nth-of-type(n):after, a[href='/gah']:nth-of-type(n):after, a[href='/perfect']:nth-of-type(n):after, a[href='/happy']:nth-of-type(n):after, a[href='/uhm']:nth-of-type(n):after, a[href='/wat']:nth-of-type(n):after, a[href='/yey']:nth-of-type(n):after, a[href='/fuckyeah']:nth-of-type(n):after, a[href='/ewbte']:nth-of-type(n):after, a[href='/son']:nth-of-type(n):after, a[href='/high']:nth-of-type(n):after, a[href='/poker']:nth-of-type(n):after, a[href='/rightmilk']:nth-of-type(n):after, a[href='/megusta']:nth-of-type(n):after, a[href='/troll']:nth-of-type(n):after, a[href='/rtroll']:nth-of-type(n):after, a[href='/leftmilk']:nth-of-type(n):after, a[href='/futext']:nth-of-type(n):after, a[href='/pft']:nth-of-type(n):after, a[href='/sadtroll']:nth-of-type(n):after, a[href='/wetodddog']:nth-of-type(n):after, a[href='/harpdarp']:nth-of-type(n):after, a[href='/dude']:nth-of-type(n):after, a[href='/eyes']:nth-of-type(n):after, a[href='/awman']:nth-of-type(n):after, a[href='/bepsausage']:nth-of-type(n):after, a[href='/lol']:nth-of-type(n):after, a[href='/omg']:nth-of-type(n):after, a[href='/pissed']:nth-of-type(n):after, a[href='/hmm']:nth-of-type(n):after, a[href='/whoa']:nth-of-type(n):after, a[href='/sad']:nth-of-type(n):after, a[href='/thumbsup']:nth-of-type(n):after, a[href='/blackhair']:nth-of-type(n):after, a[href='/hehheh']:nth-of-type(n):after, a[href='/straight']:nth-of-type(n):after, a[href='/bepinthemorning']:nth-of-type(n):after, a[href='/red']:nth-of-type(n):after, a[href='/bepislaughingatyourmum']:nth-of-type(n):after, a[href='/nomegusta']:nth-of-type(n):after, a[href='/wtf']:nth-of-type(n):after, a[href='/trolldad']:nth-of-type(n):after, a[href='/wayevil']:nth-of-type(n):after, a[href='/challengeaccepted']:nth-of-type(n):after, a[href='/melvin']:nth-of-type(n):after, a[href='/welp']:nth-of-type(n):after, a[href='/bepistrollingyoubetter']:nth-of-type(n):after, a[href='/djlovestaco']:nth-of-type(n):after, a[href='/why']:nth-of-type(n):after, a[href='/surprised']:nth-of-type(n):after, a[href='/suprised']:nth-of-type(n):after, a[href='/longneck']:nth-of-type(n):after, a[href='/sweetjesus']:nth-of-type(n):after, a[href='/notokay']:nth-of-type(n):after, a[href='/yuno']:nth-of-type(n):after, a[href='/awyeah']:nth-of-type(n):after, a[href='/awyea']:nth-of-type(n):after, a[href='/ohisthatacarrot']:nth-of-type(n):after, a[href='/carrt']:nth-of-type(n):after, a[href='/iamawaffle']:nth-of-type(n):after, a[href='/jackieeeee']:nth-of-type(n):after, a[href='/aintthatsomeshit']:nth-of-type(n):after, a[href='/igotthis']:nth-of-type(n):after, a[href='/teeth']:nth-of-type(n):after, a[href='/foreveralonewithyourmum']:nth-of-type(n):after, a[href='/megustaperfect']:nth-of-type(n):after, a[href='/fapfap']:nth-of-type(n):after, a[href='/schlick']:nth-of-type(n):after, a[href='/hug']:nth-of-type(n):after, a[href='/gtfo']:nth-of-type(n):after, a[href='/stare']:nth-of-type(n):after, a[href='/fumanchu']:nth-of-type(n):after, a[href='/vuvu']:nth-of-type(n):after, a[href='/pfttext']:nth-of-type(n):after, a[href='/indeed']:nth-of-type(n):after, a[href='/ifeelyoubrah']:nth-of-type(n):after, a[href='/steve']:nth-of-type(n):after, a[href='/serious']:nth-of-type(n):after, a[href='/gserious']:nth-of-type(n):after, a[href='/gaytroll']:nth-of-type(n):after, a[href='/deviltroll']:nth-of-type(n):after, a[href='/freddie']:nth-of-type(n):after, a[href='/thestonedmod']:nth-of-type(n):after, a[href='/notbad']:nth-of-type(n):after, a[href='/trollmum']:nth-of-type(n):after, a[href='/gwtf']:nth-of-type(n):after, a[href='/okay']:nth-of-type(n):after, a[href='/splashy']:nth-of-type(n):after, a[href='/toomuchweed']:nth-of-type(n):after, a[href='/chrisbrpwnd']:nth-of-type(n):after, a[href='/dinokay']:nth-of-type(n):after, a[href='/dino']:nth-of-type(n):after, a[href='/table']:nth-of-type(n):after, a[href='/nowkiss']:nth-of-type(n):after, a[href='/everybodywalkthedinosaur']:nth-of-type(n):after, a[href='/angryharpdarp']:nth-of-type(n):after, a[href='/cerealspit']:nth-of-type(n):after, a[href='/biebs']:nth-of-type(n):after, a[href='/cereal']:nth-of-type(n):after, a[href='/foreveralonelaugh']:nth-of-type(n):after, a[href='/ohcrap']:nth-of-type(n):after, a[href='/jasonqualman']:nth-of-type(n):after, a[href='/jonzibar']:nth-of-type(n):after, a[href='/fyl']:nth-of-type(n):after, a[href='/rmilk']:nth-of-type(n):after, a[href='/ewbtetext']:nth-of-type(n):after, a[href='/trap']:nth-of-type(n):after, a[href='/hdad']:nth-of-type(n):after {
 	content:' ';
 	display:inline-block;
 	width:25px;
@@ -622,29 +623,29 @@ a[href='/hdad']:nth-of-type(n):after{width:41px;height:60px;background-position:
 
 .pagename a:after,
 .titlebox .redditname a:after {
-	content: "Stage Mindashq";
+	content:"Stage Mindashq";
 }
 
 .pagename a, .titlebox .redditname a {
-	font-size: 0!important;
+	font-size:0!important;
 }
 
 	.pagename a:after {
-		font-size: 18px;
-		vertical-align: bottom;
+		font-size:18px;
+		vertical-align:bottom;
 	}
 
 .titlebox .redditname a {
-	text-shadow: none;
+	text-shadow:none;
 }
 
 	.titlebox .redditname a:after {
-		font-size: 30px;
-		text-shadow: 0px 0px 1px #888;
+		font-size:30px;
+		text-shadow:0px 0px 1px #888;
 	}
 
 .res-nightmode .titlebox .redditname a:after {
-	text-shadow: 0px 0px 1px #555;
+	text-shadow:0px 0px 1px #555;
 }
 
 /*  C.8.end Reddit Name Switcher - */
