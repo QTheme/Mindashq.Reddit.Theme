@@ -55,44 +55,37 @@ body {
 	font-size: 102%;
 }
 
-a {
+a,
+.thing a.title {
 }
 
-	a,
-	a:link,
-	.thing .title,
-	.thing .title.loggedin,
-	a:visited {
+	.thing a.title,
+	.thing a.title.loggedin {
 		color: #015dcc;
+		text-shadow: 0 1px 0 #ececec;
 	}
 
-		.thing .title,
-		.thing .title.loggedin {
-			text-shadow: 0 1px 0 #ececec;
+		.thing a.title:visited,
+		.thing a.title.loggedin.click:visited,
+		.thing a.title.loggedin:visited {
+			color: #15001d;
+			text-shadow: 0 1px 0 #757575;
 		}
 
-			.thing .title:visited,
-			.thing .title.loggedin.click:visited,
-			.thing .title.loggedin:visited {
-				color: #15001d;
-			}
+		.thing a.title:hover,
+		.thing a.title.loggedin:hover {
+			color: #00f;
+			text-decoration: none;
+		}
+
+		.thing a.title:active,
+		.thing a.title.loggedin:active {
+			color: #861010;
+		}
 
 .content .md a:visited,
 div.comment .md p > a:visited {
 	color: #a409aa;
-}
-
-a:hover,
-.thing .title:hover,
-.thing .title.loggedin:hover {
-	color: #00f;
-	text-decoration: none;
-}
-
-a:active,
-.thing .title:active,
-.thing .title.loggedin:active {
-	color: #861010;
 }
 
 .rounded {
@@ -785,7 +778,7 @@ body.multi-page > div.content {
 .search-page .menuarea,
 .messages-page .menuarea,
 .profile-page .menuarea {
-	margin: 20px 5px -5px!important;
+	margin: 20px 5px -6px!important;
 	font-size: 14px;
 }
 
@@ -794,12 +787,12 @@ p.tagline {
 	font-size: 115%;
 }
 
+	p.tagline span {
+		margin: 0px 2px;
+	}
+
 .tagline a {
 	color: #888;
-}
-
-.tagline span {
-	margin: 0px 2px;
 }
 
 .res .thing .tagline .author.submitter,
@@ -950,6 +943,10 @@ ul.tabmenu.formtab {
 	background: none #fffeed;
 }
 
+	.thing.link.stickied a.title {
+		color: #50722b;
+	}
+
 .listing-page .link:first-child.stickied {
 	margin: 0 0 10px!important;
 	border-width: 1px 0 1px 1px;
@@ -1048,10 +1045,6 @@ ul.tabmenu.formtab {
 
 .compressed .entry {
 	padding: 2px 3px 2px 2px;
-}
-
-.compressed p.tagline {
-	display: inline-block;
 }
 
 .link .title,
@@ -2528,35 +2521,27 @@ ul#image-preview-list {
 	color: #d7d7d7!important;
 }
 
-.res-nightmode a,
-.res-nightmode a:link,
-.res-nightmode .thing .title,
-.res-nightmode .thing .title.loggedin,
-.res-nightmode a:visited,
+.res-nightmode .thing a.title,
+.res-nightmode .thing a.title.loggedin,
 .res-nightmode .searchfacets .title {
 	color: #bbb!important;
+	text-shadow: 0 1px 0 #000!important;
 }
 
-	.res-nightmode .thing .title,
-	.res-nightmode .thing .title.loggedin {
-		text-shadow: 0 1px 0 #000!important;
+	.res-nightmode .thing a.title:visited,
+	.res-nightmode .thing a.title.loggedin.click:visited,
+	.res-nightmode .thing a.title.loggedin:visited {
+		color: #666!important;
 	}
 
-		.res-nightmode .thing .title:visited,
-		.res-nightmode .thing .title.loggedin.click:visited,
-		.res-nightmode .thing .title.loggedin:visited {
-			color: #666!important;
-		}
+	.res-nightmode .thing a.title:hover,
+	.res-nightmode .thing a.title.loggedin:hover {
+		color: #ff910b!important;
+	}
 
 .res-nightmode .content .md a:visited,
 .res-nightmode div.comment .md p > a:visited {
 	color: #bbb!important;
-}
-
-.res-nightmode a:hover,
-.res-nightmode .thing .title:hover,
-.res-nightmode .thing .title.loggedin:hover {
-	color: #ff910b!important;
 }
 
 .res-nightmode .roundfield,
