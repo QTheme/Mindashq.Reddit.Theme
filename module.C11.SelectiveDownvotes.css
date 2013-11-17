@@ -2,20 +2,57 @@
 	 + 	Update the main CSS header comment block when this module is used
 ---- */
 
-/*To hide them on posts only, recommended */
-.link .down { display: none }
+/* To hide downvotes on posts only (recommended) */
+.link .down {
+	display: none;
+}
 
+/* or, To hide downvotes on comments only */
+/* .comment .down { display: none }
+ uncomment above line to enable */
 
-/* uncomment
-	.comment .down { display: none }
-To hide them on comments only*/
+/* To hide downvotes everywhere */
+/* .down { display: none }
+ uncomment above line to enable, and delete both the abvoe rules */
 
-/* delete above and uncomment
-	.down { display: none }
-To hide downvote everywhere*/
+.linkinfo .score {
+	float: none;
+	display: block;
+	margin: -1px;
+	width: auto;
+	height: auto;
+}
+
+	.linkinfo .score .word {
+		display: inline;
+		margin: 5px;
+	}
+
+.linkinfo .upvotes,
+.linkinfo .downvotes {
+	display: block;
+	margin: 0 -1px!important;
+	padding: 10px;
+	height: auto;
+	border: 1px solid #e3e3e3;
+	text-align: center;
+}
 
 .linkinfo .downvotes {
 	display: none;
 }
 
+	.linkinfo .upvotes .number,
+	.linkinfo .downvotes .number {
+		float: none;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.linkinfo .upvotes .word,
+	.linkinfo .downvotes .word {
+		float: none;
+		margin: 5px 10px 0 0;
+		font-size: 12px;
+	}
 /* --  C.11.end Selective Downvotes ---- */
