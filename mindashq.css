@@ -60,27 +60,25 @@ a,
 }
 
 	.thing a.title,
-	.thing a.title.loggedin {
-		color: #015dcc;
+	.thing a.title.loggedin,
+	.sidecontentbox a {
+		color: #2154a3;
 		text-shadow: 0 1px 0 #ececec;
 	}
 
 		.thing a.title:visited,
 		.thing a.title.loggedin.click:visited,
-		.thing a.title.loggedin:visited {
-			color: #15001d;
-			text-shadow: 0 1px 0 #757575;
+		.thing a.title.loggedin:visited,
+		.sidecontentbox a:visited {
+			color: #181818;
+			text-shadow: 0 1px 0 #777;
 		}
 
 		.thing a.title:hover,
-		.thing a.title.loggedin:hover {
-			color: #00f;
+		.thing a.title.loggedin:hover,
+		.sidecontentbox a:hover {
+			color: #4d90fe;
 			text-decoration: none;
-		}
-
-		.thing a.title:active,
-		.thing a.title.loggedin:active {
-			color: #861010;
 		}
 
 .content .md a:visited,
@@ -286,7 +284,7 @@ a[href='/s'] {
 
 .entry:hover ul.flat-list li a[onclick*='reply'],
 .entry.RES-keyNav-activeElement ul.flat-list li a[onclick*='reply'] {
-	border-color: #3079ed!important;
+	border-color: #357ae8!important;
 	background-color: #5ba2fd;
 	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
 	color: #fff!important;
@@ -302,7 +300,7 @@ a[href*='#btn'] {
 	margin: 1px 5px 2px 0;
 	padding: 6px 10px!important;
 	min-width: 70px;
-	border: 1px solid #3079ed!important;
+	border: 1px solid #357ae8!important;
 	border-radius: 2px;
 	background-color: #5ba2fd!important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
@@ -310,7 +308,7 @@ a[href*='#btn'] {
 	font-weight: bold;
 	font-size: 13px;
 	text-decoration: none;
-	text-shadow: 1px 1px 2px #0f0f0f;
+	text-shadow: 1px 1px 2px #181818;
 	cursor: pointer;
 }
 
@@ -427,8 +425,7 @@ a[href*='#btn'] {
 
 	#header:after,
 	.footer-parent:after {
-		border-top-color: #aacefc;
-		border-bottom-color: #94c3ff;
+		border-color: #8ccbfc;
 	}
 
 	#header:after,
@@ -507,7 +504,7 @@ table#srList,
 div#RESSubredditGroupDropdown {
 	padding: 0;
 	border: 1px solid #acd9fc;
-	background-color: #eff8ff;
+	background-color: #eaf4fc;
 	color: #2154a3;
 	font-size: 12px;
 }
@@ -556,7 +553,7 @@ div#RESSubredditGroupDropdown {
 
 		#header-bottom-right:hover a,
 		#header-bottom-right:hover span {
-			text-shadow: 0 -1px 0 #dadada,0 1px 0 #fff;
+			text-shadow: 0 -1px 0 #eee,0 1px 0 #fff;
 		}
 
 	#header-bottom-right .user,
@@ -616,7 +613,7 @@ div#RESSubredditGroupDropdown {
 		display: inline-block;
 		margin: 0 0 -10px 0;
 		padding: 10px 20px;
-		border-color: #3079ed;
+		border-color: #357ae8;
 		border-radius: 2px;
 		background-color: #5ba2fd;
 		background-image: linear-gradient(#5ba2fd,#4b8adb);
@@ -705,7 +702,7 @@ ul.tabmenu {
 
 			ul.tabmenu li a:hover,
 			ul.tabmenu li.selected a:hover {
-				background-color: #dcebfa;
+				background-color: #eaf4fc;
 				color: #000;
 				text-shadow: none;
 			}
@@ -839,7 +836,7 @@ ul.tabmenu.formtab {
 			margin: 0 1px 1px;
 			padding: 5px 15px;
 			border-width: 0;
-			background-color: #dcebfa;
+			background-color: #acd9fc;
 		}
 
 		ul.tabmenu.formtab li.selected a,
@@ -851,7 +848,7 @@ ul.tabmenu.formtab {
 			border-bottom-left-radius: 0;
 			background-color: #5ba2fd!important;
 			box-shadow: none;
-			color: #dcebfa;
+			color: #eaf4fc;
 			font-weight: bold;
 		}
 
@@ -911,8 +908,8 @@ ul.tabmenu.formtab {
 	}
 
 	.expando-button:hover:before {
-		border-color: #666;
-		background-color: #666;
+		border-color: #555;
+		background-color: #555;
 		box-shadow: 0 0 4px -2px #333;
 		color: #eee;
 	}
@@ -1105,7 +1102,7 @@ ul.tabmenu.formtab {
 }
 
 .link .score {
-	color: #666;
+	color: #555;
 }
 
 	.link .score.likes {
@@ -1498,7 +1495,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 	border-color: #acd9fc;
 	border-radius: 2px;
 	background-color: #eaf4fc;
-	background-image: linear-gradient(#eaf4fc,#eff8ff);
+	color: #2154a3;
 }
 
 .linkinfo {
@@ -1713,12 +1710,12 @@ body:not(.listing-page) .morelink {
 
 	body:not(.listing-page) .morelink a {
 		color: #2154a3!important;
-		text-shadow: 1px 1px 2px #eee;
+		text-shadow: 1px 1px 2px #eaf4fc;
 	}
 
 body .morelink {
 	padding: 4px 10px;
-	border-color: #3079ed!important;
+	border-color: #357ae8!important;
 	border-radius: 2px!important;
 	background: none #5ba2fd!important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
@@ -1739,14 +1736,14 @@ body .morelink {
 		color: #fff!important;
 		font-weight: bold;
 		font-size: 16px;
-		text-shadow: 1px 1px 2px #0f0f0f;
+		text-shadow: 1px 1px 2px #181818;
 	}
 
 		body .morelink a:hover,
 		body:not(.listing-page) .morelink:hover a,
 		body:not(.listing-page) .morelink a:hover {
 			color: #fff!important;
-			text-shadow: 1px 1px 2px #0f0f0f!important;
+			text-shadow: 1px 1px 2px #181818!important;
 		}
 
 	body .morelink .nub,
@@ -1940,7 +1937,7 @@ div#userbarToggle.userbarShow {
 	border: 0!important;
 	border-radius: 10px;
 	background-color: #eaf4fc!important;
-	color: #888;
+	color: #2154a3;
 	font-weight: bold;
 	line-height: 0.7;
 	text-align: center;
@@ -1979,7 +1976,7 @@ body.pinHeader-subanduser #header-bottom-right {
 	padding-right: 2px;
 	outline: 0;
 	border: 0!important;
-	border-right: 3px solid #4b8adb!important;
+	border-right: 3px solid #4d90fe!important;
 }
 
 	.entry.RES-keyNav-activeElement div.md,
@@ -2106,8 +2103,8 @@ div#NERFail,
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
 .side .md blockquote a[href*='#icon-']:before {
 	border-radius: 3px;
-	background-color: #666;
-	background-image: linear-gradient(#666,#4d4d4d);
+	background-color: #555;
+	background-image: linear-gradient(#555,#4d4d4d);
 	color: #eee;
 	text-shadow: none;
 }
@@ -2424,7 +2421,7 @@ span.linkflair {
 }
 
 body.with-listing-chooser .linkflair-meta .title > .linkflairlabel {
-	left: 140px;
+	left: 145px;
 	z-index: 100;
 }
 
@@ -2523,19 +2520,22 @@ ul#image-preview-list {
 
 .res-nightmode .thing a.title,
 .res-nightmode .thing a.title.loggedin,
-.res-nightmode .searchfacets .title {
+.res-nightmode .searchfacets .title,
+.res-nightmode .sidecontentbox a {
 	color: #bbb!important;
 	text-shadow: 0 1px 0 #000!important;
 }
 
 	.res-nightmode .thing a.title:visited,
 	.res-nightmode .thing a.title.loggedin.click:visited,
-	.res-nightmode .thing a.title.loggedin:visited {
-		color: #666!important;
+	.res-nightmode .thing a.title.loggedin:visited,
+	.res-nightmode .sidecontentbox a:visited {
+		color: #777!important;
 	}
 
 	.res-nightmode .thing a.title:hover,
-	.res-nightmode .thing a.title.loggedin:hover {
+	.res-nightmode .thing a.title.loggedin:hover,
+	.res-nightmode .sidecontentbox a:hover {
 		color: #ff910b!important;
 	}
 
@@ -2646,8 +2646,8 @@ ul#image-preview-list {
 
 	.res-nightmode a[href='#s']:after,
 	.res-nightmode a[href='/s']:after {
-		background-color: #666;
-		color: #666;
+		background-color: #555;
+		color: #555;
 	}
 
 	.res-nightmode a[href='#s']:hover:after,
@@ -2721,7 +2721,7 @@ ul#image-preview-list {
 .res-nightmode .entry.RES-keyNav-activeElement .flat-list li a,
 .res-nightmode .entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
 .res-nightmode .noncollapsed:hover > .flat-list li a {
-	color: #999!important;
+	color: #888!important;
 }
 
 .res-nightmode .entry .flat-list li a.comments {
@@ -2736,8 +2736,7 @@ ul#image-preview-list {
 
 .res-nightmode #header:after,
 .res-nightmode .footer-parent:after {
-	border-top-color: #494848;
-	border-bottom-color: #494848;
+	border-color: #494848;
 }
 
 .res-nightmode #header:after,
@@ -2775,7 +2774,7 @@ ul#image-preview-list {
 .res-nightmode .drop-choices,
 .res-nightmode table#srList,
 .res-nightmode #RESSubredditGroupDropdown {
-	border-color: #666;
+	border-color: #555;
 	background-color: #444!important;
 	color: #ff910b;
 }
@@ -2832,17 +2831,15 @@ ul#image-preview-list {
 	.res-nightmode .pagename.selected {
 		border-width: 0 0 1px 0;
 		background-color: #083e5c;
-		background-image: linear-gradient(#546477,#083e5c);
-		box-shadow: 0 4px 6px #010611;
-		color: #acd9fc;
-		font-size: 18px;
-		text-shadow: 0 1px 0 #231405;
+		background-image: linear-gradient(#083e5c,#091D47);
+		box-shadow: 0 4px 6px #111;
+		color: #fff;
+		text-shadow: 0 1px 0 #111;
 	}
 
 		.res-nightmode .pagename a:hover {
 			background-color: #333;
-			background-image: linear-gradient(#4f4f52,#333);
-			font-size: 18px;
+			background-image: linear-gradient(#555,#222);
 		}
 
 /* --  B.2.6. Reddit Image and Text -- */
@@ -2934,8 +2931,8 @@ ul#image-preview-list {
 
 /* --  B.3.4. Expando Buttons -- */
 .res-nightmode .expando-button:before {
-	border: 1px solid #666;
-	background-color: #666;
+	border: 1px solid #555;
+	background-color: #555;
 	color: #eee;
 	text-shadow: 0 0 3px #222;
 }
@@ -2989,7 +2986,7 @@ ul#image-preview-list {
 /* ~~  B.5. Custom Upvote/Downvote Arrows ~~~~~ */
 .res-nightmode .arrow:not(.prev):not(.next) {
 	background: none transparent!important;
-	color: #666;
+	color: #555;
 }
 
 .res-nightmode .arrow.upmod,
@@ -3143,7 +3140,7 @@ ul#image-preview-list {
 	}
 
 .res-nightmode body:not(.profile-page) .side .titlebox .bottom {
-	border-color: #666;
+	border-color: #555;
 }
 
 /* --  B.8.1. Search -- */
@@ -3270,7 +3267,7 @@ ul#image-preview-list {
 	}
 
 .res-nightmode .spacer .sidecontentbox .content {
-	border-color: #444;
+	border-color: #333;
 	background-color: #222;
 }
 
@@ -3508,16 +3505,16 @@ ul#image-preview-list {
 
 /* ~~  B.14. Multireddit ~~~~~ */
 .res-nightmode.with-listing-chooser .listing-chooser {
-	background-color: #666;
+	background-color: #555;
 }
 
 	.res-nightmode.with-listing-chooser .listing-chooser .grippy {
-		border-color: #666;
+		border-color: #555;
 		background-color: #222;
 	}
 
 		.res-nightmode.with-listing-chooser .listing-chooser .grippy:after {
-			border-color: #666;
+			border-color: #555;
 			background-color: #444;
 			box-shadow: 3px 0 6px -2px #000;
 		}
