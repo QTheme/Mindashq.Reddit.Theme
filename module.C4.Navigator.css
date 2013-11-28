@@ -26,7 +26,7 @@
 		padding: 2px;
 		width: 25px;
 		background-color: #acd9fc;
-		color: #1f96ca;
+		color: #357ae8;
 		font-weight: bold;
 		font-size: 20px;
 		line-height: 28px;
@@ -37,7 +37,7 @@
 
 		.side .md > blockquote:last-child > h1 a {
 			background-color: #acd9fc;
-			color: #1f96ca;
+			color: #357ae8;
 		}
 
 		.side .md > blockquote:last-child > h1 em {
@@ -59,15 +59,15 @@
 	.side .md > blockquote:last-child:active > h1 {
 		margin-bottom: -15px;
 		padding-bottom: 15px;
-		background-color: #5ca2e8;
-		color: #dcebfa;
+		background-color: #5ba2fd;
+		color: #eaf4fc;
 		text-shadow: none;
 	}
 
 		.side .md > blockquote:last-child:hover > h1 a,
 		.side .md > blockquote:last-child:active > h1 a {
 			background-color: transparent;
-			color: #dcebfa;
+			color: #eaf4fc;
 		}
 
 	.side .md > blockquote:last-child:hover > ul,
@@ -82,11 +82,10 @@
 		padding: 5px 15px 0;
 		width: 150px;
 		height: 30px;
+		border: 1px solid #ddd;
 		border-width: 0 1px 1px 1px;
-		border-style: solid;
-		border-color: #ccc;
-		background-color: #f5f5f5;
-		box-shadow: 0 1px 6px 0 #bbb;
+		background-color: #eee;
+		box-shadow: 0 1px 3px 0 #bbb;
 		line-height: 30px;
 		white-space: normal;
 		text-shadow: 0 1px 0 #ddd;
@@ -97,15 +96,15 @@
 		}
 
 		.side .md > blockquote:last-child li a {
-			color: #0026ff;
+			color: #357ae8;
 		}
 
 	.side .md > blockquote:last-child ul > li:hover,
 	.side .md > blockquote:last-child ul > li:active,
 	.side .md > blockquote:last-child ul > li:hover > a,
 	.side .md > blockquote:last-child ul > li:active > a {
-		background-color: #5ca2e8;
-		color: #dcebfa;
+		background-color: #5ba2fd;
+		color: #eaf4fc;
 		text-shadow: 0 1px 0 #333;
 	}
 
@@ -126,9 +125,8 @@
 	.side .md > blockquote:last-child li > ul > li {
 		min-width: 150px;
 		width: auto;
-		background-color: #ddd;
-		box-shadow: 0 2px 6px 0 #bebebe;
-		color: #5ca2e8;
+		background-color: #f8f8f8;
+		color: #5ba2fd;
 		white-space: nowrap;
 	}
 
@@ -167,7 +165,7 @@ body.res-nightmode .side .md > blockquote:last-child {
 	body.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
 	body.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
 		background-color: #ff910b;
-		color: #dcebfa!important;
+		color: #eaf4fc!important;
 		text-shadow: 0 1px 0 #333;
 	}
 
