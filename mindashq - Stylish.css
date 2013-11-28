@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7a 
+	v1.7b
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -60,24 +60,21 @@ a,
 }
 
 	.thing a.title,
-	.thing a.title.loggedin,
-	.sidecontentbox a {
-		color: #2154a3!important;
+	.thing a.title.loggedin {
+		color: #357ae8!important;
 		text-shadow: 0 1px 0 #ececec!important;
 	}
 
 		.thing a.title:visited,
 		.thing a.title.loggedin.click:visited,
-		.thing a.title.loggedin:visited,
-		.sidecontentbox a:visited {
+		.thing a.title.loggedin:visited {
 			color: #181818!important;
 			text-shadow: 0 1px 0 #777!important;
 		}
 
 		.thing a.title:hover,
-		.thing a.title.loggedin:hover,
-		.sidecontentbox a:hover {
-			color: #4d90fe!important;
+		.thing a.title.loggedin:hover {
+			color: #223f4f!important;
 			text-decoration: none!important;
 		}
 
@@ -106,7 +103,7 @@ div.comment .md p > a:visited {
 	.linefield textarea,
 	.linefield input[type=text],
 	.linefield input[type=password] {
-		border-color: #c8c8c8!important;
+		border-color: #ccc!important;
 		border-radius: 2px!important;
 		box-shadow: 0 1px 4px 1px #d1d5c6!important;
 	}
@@ -131,7 +128,7 @@ hr {
 	height: 1px!important;
 	border: 0 none!important;
 	background-color: #d2d2d2!important;
-	color: #c8c8c8!important;
+	color: #ccc!important;
 }
 
 /* --  A.1.1. Tables -- */
@@ -275,7 +272,7 @@ a[href='/s'] {
 	border: 1px solid #efeded!important;
 	border-radius: 2px!important;
 	background-color: #fafafa!important;
-	color: #015dcc!important;
+	color: #4d90fe!important;
 	font-size: 11px!important;
 	text-decoration: none!important;
 	text-shadow: none!important;
@@ -308,7 +305,7 @@ a[href*='#btn'] {
 	font-weight: bold!important;
 	font-size: 13px!important;
 	text-decoration: none!important;
-	text-shadow: 1px 1px 2px #181818!important;
+	text-shadow: 1px 1px 2px #2154a3!important;
 	cursor: pointer!important;
 }
 
@@ -323,6 +320,7 @@ a[href*='#btn'] {
 	.BEFoot button:hover,
 	input[type='submit']:hover,
 	a[href*='#btn']:hover,
+	.res a[href*='#btn']:hover,
 	.entry ul.flat-list li a[onclick*='reply']:hover {
 		border-color: #08c!important;
 		background-color: #357ae8!important;
@@ -400,7 +398,7 @@ a[href*='#btn'] {
 }
 
 .entry .flat-list li a.comments {
-	color: #015dcc!important;
+	color: #4d90fe!important;
 }
 
 /* ~~  A.2. Header ~~~~~ */
@@ -468,12 +466,13 @@ a[href*='#btn'] {
 		filter: Alpha(Opacity=100)!important;
 	}
 
-	#sr-header-area a {
+	#sr-header-area a,
+	#sr-header-area span {
 		color: #555!important;
 	}
 
 		#sr-header-area a:hover {
-			color: #015dcc!important;
+			color: #357ae8!important;
 		}
 
 div#RESShortcutsEditContainer {
@@ -513,14 +512,14 @@ div#RESSubredditGroupDropdown {
 		padding: 5px 0!important;
 	}
 
-		.drop-choices a.choice,
+		#sr-header-area a.choice,
 		table#srList a,
 		div#RESSubredditGroupDropdown li a {
 			padding: 2px 10px!important;
 			color: #2154a3!important;
 		}
 
-			.drop-choices a.choice:hover,
+			#sr-header-area a.choice:hover,
 			table#srList a:hover,
 			table#srList tr:hover,
 			div#RESSubredditGroupDropdown li:hover {
@@ -715,8 +714,8 @@ ul.tabmenu {
 				border-radius: 2px!important;
 				background-color: #f9f9f7!important;
 				background-image: none!important;
-				box-shadow: 0 5px 4px -4px #8CCBFC!important;
-				color: #ff4500!important;
+				box-shadow: 0 5px 4px -4px #8ccbfc!important;
+				color: #ff910b!important;
 			}
 
 /* ~~  A.3. Content box and common parts ~~~~~ */
@@ -725,7 +724,7 @@ div.content {
 	margin: 0 20px 10px 25px!important;
 	padding: 10px 20px!important;
 	border: 1px solid #fbfbfb!important;
-	background-color: #fdfdfe!important;
+	background-color: #fefefd!important;
 	box-shadow: 0 1px 3px 1px #ccc!important;
 }
 
@@ -785,7 +784,9 @@ p.tagline {
 }
 
 	p.tagline span {
-		margin: 0px 2px!important;
+		margin-left: 2px!important;
+		margin-right: 2px!important;
+		vertical-align: text-top!important;
 	}
 
 .tagline a {
@@ -956,7 +957,7 @@ ul.tabmenu.formtab {
 	padding: 2px 0!important;
 	border: 1px solid #fff!important;
 	border-width: 1px 0!important;
-	background-color: #fdfdff!important;
+	background-color: #fefefd!important;
 	box-shadow: 0 1px 3px 0 #ccb!important;
 }
 
@@ -1172,7 +1173,7 @@ ul.tabmenu.formtab {
 	padding: 0!important;
 	border-width: 0!important;
 	background: none transparent!important;
-	color: #015dcc!important;
+	color: #4d90fe!important;
 	font-weight: bold!important;
 	text-shadow: 1px 1px 2px #eee!important;
 }
@@ -1361,7 +1362,7 @@ select {
 	padding: 1px!important;
 	border: 1px solid #aaa!important;
 	border-radius: 2px!important;
-	background-color: #fffedf!important;
+	background-color: #fffeed!important;
 }
 
 .modactions .button {
@@ -1426,7 +1427,7 @@ div.sidebox.create {
 	margin: 5px!important;
 	background: none transparent!important;
 	color: #222!important;
-	text-shadow: 0 -1px 0 #dadada, 0 1px 0 #fff!important;
+	text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff!important;
 }
 
 .side h1 {
@@ -1568,7 +1569,6 @@ body:not(.profile-page) .side .titlebox .bottom {
 		margin-top: 5px!important;
 		border: 0!important;
 		background-color: transparent!important;
-		color: #0a0a0a!important;
 		font-size: 12px!important;
 	}
 
@@ -1736,14 +1736,14 @@ body .morelink {
 		color: #fff!important;
 		font-weight: bold!important;
 		font-size: 16px!important;
-		text-shadow: 1px 1px 2px #181818!important;
+		text-shadow: 1px 1px 2px #2154a3!important;
 	}
 
 		body .morelink a:hover,
 		body:not(.listing-page) .morelink:hover a,
 		body:not(.listing-page) .morelink a:hover {
 			color: #fff!important;
-			text-shadow: 1px 1px 2px #181818!important;
+			text-shadow: 1px 1px 2px #2154a3!important;
 		}
 
 	body .morelink .nub,
@@ -1756,13 +1756,11 @@ body .morelink {
 body .disabled .morelink,
 body .disabled .morelink:hover {
 	border-color: #f5f5f5!important;
-	background-color: #eee!important;
-	background-image: none!important;
+	background: none #ccc!important;
 }
 
 	body .disabled .morelink a,
 	body .disabled .morelink a:hover {
-		color: #aaa!important;
 		text-shadow: none!important;
 		cursor: default!important;
 	}
@@ -1917,8 +1915,8 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki h2,
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
-		color: #323638!important;
-		text-shadow: 0 0 0 #fdfdfe,0 0 1px #585858!important;
+		color: #333!important;
+		text-shadow: 0 0 0 #fefefd,0 0 1px #555!important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
@@ -1927,6 +1925,10 @@ body.wiki-page .wiki-page-content {
 	}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
+.tagline .RESUserTag {
+	margin: 0 0 0 -4px!important;
+}
+
 div#userbarToggle,
 div#userbarToggle.userbarShow {
 	top: 28%!important;
@@ -2518,26 +2520,29 @@ ul#image-preview-list {
 	color: #d7d7d7!important;
 }
 
-.res-nightmode .thing a.title,
-.res-nightmode .thing a.title.loggedin,
-.res-nightmode .searchfacets .title,
-.res-nightmode .sidecontentbox a {
-	color: #bbb!important;
-	text-shadow: 0 1px 0 #000!important;
+.res-nightmode a,
+.res-nightmode .thing a.title {
+	color: #acd9fc!important;
 }
 
-	.res-nightmode .thing a.title:visited,
-	.res-nightmode .thing a.title.loggedin.click:visited,
-	.res-nightmode .thing a.title.loggedin:visited,
-	.res-nightmode .sidecontentbox a:visited {
-		color: #777!important;
+	.res-nightmode .thing a.title,
+	.res-nightmode .thing a.title.loggedin,
+	.res-nightmode .searchfacets .title {
+		color: #bbb!important;
+		text-shadow: 0 1px 0 #000!important;
 	}
 
-	.res-nightmode .thing a.title:hover,
-	.res-nightmode .thing a.title.loggedin:hover,
-	.res-nightmode .sidecontentbox a:hover {
-		color: #ff910b!important;
-	}
+		.res-nightmode .thing a.title:visited,
+		.res-nightmode .thing a.title.loggedin.click:visited,
+		.res-nightmode .thing a.title.loggedin:visited {
+			color: #777!important;
+		}
+
+		.res-nightmode a:hover,
+		.res-nightmode .thing a.title:hover,
+		.res-nightmode .thing a.title.loggedin:hover {
+			color: #ff910b!important;
+		}
 
 .res-nightmode .content .md a:visited,
 .res-nightmode div.comment .md p > a:visited {
@@ -2830,8 +2835,8 @@ ul#image-preview-list {
 	.res-nightmode .pagename a,
 	.res-nightmode .pagename.selected {
 		border-width: 0 0 1px 0!important;
-		background-color: #083e5c!important;
-		background-image: linear-gradient(#083e5c,#091D47)!important;
+		background-color: #223f4f!important;
+		background-image: linear-gradient(#223f4f, #181817)!important;
 		box-shadow: 0 4px 6px #111!important;
 		color: #fff!important;
 		text-shadow: 0 1px 0 #111!important;
@@ -2865,10 +2870,10 @@ ul#image-preview-list {
 	.res-nightmode ul.tabmenu li.selected a,
 	.res-nightmode ul.tabmenu li.selected a:visited {
 		padding-bottom: 10px!important;
-		border: 1px solid #49677e!important;
+		border-color: #223f4f!important;
 		background-color: #1d1c27!important;
 		background-image: none!important;
-		box-shadow: 0 5px 4px -4px #49677e!important;
+		box-shadow: 0 5px 4px -4px #223f4f!important;
 	}
 
 		.res-nightmode ul.tabmenu li a:hover,
@@ -2968,7 +2973,6 @@ ul#image-preview-list {
 }
 
 .res-nightmode .linklisting .odd {
-	background-color: #1e1e1e!important;
 	background-image: linear-gradient(#222,#1e1e1e)!important;
 }
 
@@ -2978,9 +2982,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode .link.last-clicked {
-	border-width: 1px 0 0!important;
-	background-color: #0a0a0a!important;
-	background-image: linear-gradient(#1a1a1a,#0a0a0a)!important;
+	background: #111!important;
 }
 
 /* ~~  B.5. Custom Upvote/Downvote Arrows ~~~~~ */
@@ -3309,7 +3311,7 @@ ul#image-preview-list {
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h1,
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h2 {
-		text-shadow: 0 0 2px #ccc,1px 1px 3px #0a0a0a!important;
+		text-shadow: 0 0 2px #ccc,1px 1px 3px #111!important;
 	}
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h5,
@@ -3543,6 +3545,10 @@ ul#image-preview-list {
 }
 
 /* ~~  B.15. Other areas in Reddit - [WIP] ~~~~~ */
+.res-nightmode .tabpane-content {
+	border-color: #555!important;
+}
+
 .res-nightmode .thing.message.new > .entry {
 	outline: 1px solid #4d90fe!important;
 }
