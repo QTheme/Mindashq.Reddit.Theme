@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7b
+	v1.7c
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -36,23 +36,11 @@ body {
 .md h4 {
 	border-color: #d2d2d2!important;
 	font-weight: bold!important;
-	font-size: 1.1em!important;
+	font-size: 115%!important;
 }
 
 .md h1 {
-	font-size: 110%!important;
-}
-
-.md h2 {
-	font-size: 108%!important;
-}
-
-.md h3 {
-	font-size: 104%!important;
-}
-
-.md h4 {
-	font-size: 102%!important;
+	font-size: 120%!important;
 }
 
 a,
@@ -1007,8 +995,8 @@ ul.tabmenu.formtab {
 	text-align: right!important;
 }
 
-.link .compressed .rank {
-	margin: 8px 0 0 5px!important;
+.link.compressed .rank {
+	margin-top: 5px!important;
 }
 
 .link .midcol {
@@ -1394,16 +1382,16 @@ select {
 		padding: 0!important;
 	}
 
-		.side .titlebox h1.redditname {
-			margin: 1.2em 0 .2em 0!important;
-			font-size: 26px!important;
-			letter-spacing: -1px!important;
-			text-shadow: 0px 0px 1px #aaa!important;
-		}
+	.side h1.redditname {
+		margin: 1.2em 0 .2em 0!important;
+		font-size: 26px!important;
+		letter-spacing: -1px!important;
+		text-shadow: 0px 0px 1px #aaa!important;
+	}
 
-			.side .titlebox h1.redditname a {
-				color: #222!important;
-			}
+		.side h1.redditname a {
+			color: #222!important;
+		}
 
 div.sidebox.create {
 	position: absolute!important;
@@ -2663,7 +2651,7 @@ ul#image-preview-list {
 	border-color: #302f2f!important;
 	border-radius: 2px!important;
 	background-color: #222!important;
-	color: #333!important;
+	color: #eee!important;
 }
 
 .res-nightmode .btn,
@@ -2672,7 +2660,7 @@ ul#image-preview-list {
 .res-nightmode button.blueButton,
 .res-nightmode .BEFoot button,
 .res-nightmode input[type="submit"],
-.res-nightmode .side a[href*="#btn"] {
+.res-nightmode a[href*="#btn"] {
 	text-shadow: 1px 1px 2px #000!important;
 }
 
@@ -2701,8 +2689,8 @@ ul#image-preview-list {
 			.res-nightmode .btn.right a:hover,
 			.res-nightmode button.cancel:hover,
 			.res-nightmode .usertext span[class*='toggle'] a:hover,
-			.res-nightmode a.reddiquette:hover,
 			.res-nightmode #url-field button:hover,
+			.res-nightmode a.reddiquette:hover,
 			.res-nightmode .content button.RESBigEditorPop:hover,
 			.res-nightmode span.RESSubscriptionButton:hover {
 				color: #a95908!important;
