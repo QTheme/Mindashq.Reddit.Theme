@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7b
+	v1.7c
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -1396,16 +1396,16 @@ select {
 		padding: 0;
 	}
 
-		.side .titlebox h1.redditname {
-			margin: 1.2em 0 .2em 0;
-			font-size: 26px;
-			letter-spacing: -1px;
-			text-shadow: 0px 0px 1px #aaa;
-		}
+	.side h1.redditname {
+		margin: 1.2em 0 .2em 0;
+		font-size: 26px;
+		letter-spacing: -1px;
+		text-shadow: 0px 0px 1px #aaa;
+	}
 
-			.side .titlebox h1.redditname a {
-				color: #222;
-			}
+		.side h1.redditname a {
+			color: #222;
+		}
 
 div.sidebox.create {
 	position: absolute;
