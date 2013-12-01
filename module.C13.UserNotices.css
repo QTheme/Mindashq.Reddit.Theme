@@ -1,0 +1,49 @@
+﻿/* --  C.13. User Notices - inform submitters about reporting buttons and downvotes ---- */
+/* Emphasising reporting buttons */
+.entry .flat-list li form.report-button .main a,
+.entry .flat-list li form.remove-button .main a {
+	color: #777;
+}
+
+.entry:hover ul.flat-list li form.report-button .main a,
+.entry:hover ul.flat-list li form.remove-button .main a,
+.entry.RES-keyNav-activeElement ul.flat-list li form.report-button .main a,
+.entry.RES-keyNav-activeElement ul.flat-list li form.remove-button .main a {
+	color: #a90404;
+}
+
+/* Notice for Report button */
+.report-button a:hover:after {
+	content: "Please send a message to moderators with the link for this item citing the reason for reporting. Thank you for your help. ";
+	position: absolute;
+	display: block;
+	margin-top: 5px;
+	margin-left: 25px;
+	padding: 5px;
+	width: 300px;
+	border: 1px solid #333;
+	background: #1d1212;
+	color: #f6f6f6;
+	font-size: 11px;
+	white-space: normal;
+	text-align: center;
+	z-index: 1000;
+}
+
+/* Notice for downvote */
+.arrow.down:hover:before {
+	content: "Use only to discourage non-related content. A downvote should not be used for simply a disagreement. ";
+	position: absolute;
+	display: block;
+	margin-top: 15px;
+	margin-left: 15px;
+	padding: 5px;
+	width: 200px;
+	border: 1px solid #333;
+	background: #1d1212;
+	color: #f6f6f6;
+	font-size: 11px;
+	text-align: center;
+	z-index: 1000;
+}
+/* --  C.13.end User Notices ---- */

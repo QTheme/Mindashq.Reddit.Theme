@@ -1,7 +1,6 @@
 /* --  C.4. Navigator
 		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
 	 + 	Add only when corresponding markup is added in sidebar
-	 + 	Update the main CSS header comment block when this module is used
 ---- */
 
 .side .md > blockquote:last-child {

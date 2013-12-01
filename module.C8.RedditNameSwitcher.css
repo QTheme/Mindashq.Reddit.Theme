@@ -1,7 +1,4 @@
-﻿/* --  C.8. Reddit Name Switcher
-		see http://www.reddit.com/r/mindashq/wiki/modules/TextSwitchers for details
-	 + 	This css adds visible text to reddit, check for translations	
----- */
+﻿/* --  C.8. Reddit Name Switcher ---- */
 
 .pagename a:after,
 .titlebox .redditname a:after {
@@ -22,7 +19,7 @@
 
 	.titlebox .redditname a:after {
 		font-size: 30px;
-		text-shadow: 0px 0px 1px #888;
+		text-shadow: 0px 0px 1px #aaa;
 	}
 
 .res-nightmode .titlebox .redditname a:after {
