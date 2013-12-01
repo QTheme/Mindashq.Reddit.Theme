@@ -1,8 +1,6 @@
 /* --  C.3. Pinote
 		see http://www.reddit.com/r/mindashq/wiki/modules/pinote for details		
 	 + 	Add only when corresponding markup is added in sidebar	
-	 + 	This css adds visible text to reddit, check for translations	
-	 + 	Update the main CSS header comment block when this module is used
 ---- */
 
 .side .md > blockquote:nth-of-type(1) {
@@ -41,7 +39,7 @@
 
 a[name='content'] {
 	display: block;
-	margin: 0px 360px 25px 30px;
+	margin: 0px 365px 15px 30px;
 	min-height: 65px;
 	border: 1px solid #ccc;
 	border-radius: 2px;
