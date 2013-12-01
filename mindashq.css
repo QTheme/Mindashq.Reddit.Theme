@@ -36,23 +36,11 @@ body {
 .md h4 {
 	border-color: #d2d2d2;
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 115%;
 }
 
 .md h1 {
-	font-size: 110%;
-}
-
-.md h2 {
-	font-size: 108%;
-}
-
-.md h3 {
-	font-size: 104%;
-}
-
-.md h4 {
-	font-size: 102%;
+	font-size: 120%;
 }
 
 a,
@@ -1009,8 +997,8 @@ ul.tabmenu.formtab {
 	text-align: right;
 }
 
-.link .compressed .rank {
-	margin: 8px 0 0 5px;
+.link.compressed .rank {
+	margin-top: 5px;
 }
 
 .link .midcol {
@@ -1051,6 +1039,7 @@ ul.tabmenu.formtab {
 }
 
 .link.compressed .title {
+	margin: -1px .4em 1px 0;
 	font-size: 123%;
 }
 
@@ -2665,7 +2654,7 @@ ul#image-preview-list {
 	border-color: #302f2f;
 	border-radius: 2px;
 	background-color: #222;
-	color: #333;
+	color: #eee!important;
 }
 
 .res-nightmode .btn,
@@ -2674,7 +2663,7 @@ ul#image-preview-list {
 .res-nightmode button.blueButton,
 .res-nightmode .BEFoot button,
 .res-nightmode input[type="submit"],
-.res-nightmode .side a[href*="#btn"] {
+.res-nightmode a[href*="#btn"] {
 	text-shadow: 1px 1px 2px #000;
 }
 
@@ -2703,8 +2692,8 @@ ul#image-preview-list {
 			.res-nightmode .btn.right a:hover,
 			.res-nightmode button.cancel:hover,
 			.res-nightmode .usertext span[class*='toggle'] a:hover,
-			.res-nightmode a.reddiquette:hover,
 			.res-nightmode #url-field button:hover,
+			.res-nightmode a.reddiquette:hover,
 			.res-nightmode .content button.RESBigEditorPop:hover,
 			.res-nightmode span.RESSubscriptionButton:hover {
 				color: #a95908;
