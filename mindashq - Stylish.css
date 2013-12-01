@@ -1037,6 +1037,7 @@ ul.tabmenu.formtab {
 }
 
 .link.compressed .title {
+	margin: -1px .4em 1px 0!important;
 	font-size: 123%!important;
 }
 
