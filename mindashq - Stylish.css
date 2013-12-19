@@ -3536,10 +3536,48 @@ ul#image-preview-list {
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
 
 body.with-listing-chooser > .content,
-body.with-listing-chooser .footer-parent {
+body.with-listing-chooser .footer-parent,
+body.with-listing-chooser > #savedLinksList {
 	margin-left: 155px!important;
 }
 
 .message.message-parent.recipient > .entry .head > a {
 	font-size: 11px!important;
 }
+
+/* table for moderation matrix */
+table.generic-table.mod-matrix {
+	margin-top: 15px!important;
+}
+
+	table.generic-table.mod-matrix td {
+		padding: 2px 5px!important;
+		border: 1px solid #eee!important;
+	}
+
+	table.generic-table.mod-matrix th {
+		vertical-align: text-bottom!important;
+		text-align: center!important;
+	}
+
+	table.generic-table.mod-matrix a.modactions {
+		margin-top: 120px!important;
+		vertical-align: bottom!important;
+	}
+
+		table.generic-table.mod-matrix a.modactions:before {
+			content: attr(title)!important;
+			position: relative!important;
+			bottom: 20px!important;
+			display: block!important;
+			font-size: 11px!important;
+			white-space: nowrap!important;
+			text-transform: capitalize!important;
+			-webkit-transform: rotate(-90.0deg)!important;
+			transform: rotate(-90.0deg)!important;
+		}
+
+	table.generic-table.mod-matrix .modactions.setpermissions {
+		display: block!important;
+		width: 20px!important;
+	}
