@@ -3547,7 +3547,7 @@ body.with-listing-chooser > #savedLinksList {
 
 /* table for moderation matrix */
 table.generic-table.mod-matrix {
-	margin-top: 15px!important;
+	margin-top: 30px!important;
 }
 
 	table.generic-table.mod-matrix td {
@@ -3571,6 +3571,7 @@ table.generic-table.mod-matrix {
 			bottom: 20px!important;
 			display: block!important;
 			font-size: 11px!important;
+			font-family: Verdana, monospace;
 			white-space: nowrap!important;
 			text-transform: capitalize!important;
 			-webkit-transform: rotate(-90.0deg)!important;
@@ -3579,5 +3580,6 @@ table.generic-table.mod-matrix {
 
 	table.generic-table.mod-matrix .modactions.setpermissions {
 		display: block!important;
-		width: 20px!important;
+		width: 16px!important;
+		height: 16px!important;
 	}
