@@ -17,20 +17,20 @@ body{position:relative;min-width:800px;background-color:#ececea;color:#1d1212;fo
 /*  C.1. Header Image - */
 #header,
 .res-nightmode div#header {
-	min-height:150px;
-	background:#101213 url('%%headerImage%%') no-repeat scroll 0px 80%!important;
+	min-height: 150px;
+	background: #101213 url('%%headerImage%%') no-repeat scroll 0px 80% !important;
 }
 
 	#header:after,
 	#header-bottom-left:before,
 	.footer-parent:after {
-		background-color:#2a5484;
-		background-image:none;
-		opacity:0.7;
+		background-color: #2a5484;
+		background-image: none;
+		opacity: 0.7;
 	}
 
 #header-bottom-left {
-	position:absolute;
+	position: absolute;
 }
 
 #header ul.tabmenu li a,
@@ -39,41 +39,41 @@ body{position:relative;min-width:800px;background-color:#ececea;color:#1d1212;fo
 #header .pagename.redditname.hover,
 .footer .flat-vert.title,
 #header-img.default-header {
-	background-color:transparent; /*Tweak to match the image color*/
-	color:#acd9fc;
+	background-color: transparent; /*Tweak to match the image color*/
+	color: #acd9fc;
 }
 
 #header ul.tabmenu li.selected a {
-	background-color:#fff;
-	background-image:none;
-	color:#ff4500;
+	background-color: #fff;
+	background-image: none;
+	color: #ff4500;
 }
 
 .res-nightmode #header ul.tabmenu li.selected a {
-	background-color:#040406;
-	color:#e06935;
+	background-color: #040406;
+	color: #e06935;
 }
 
 #header ul.tabmenu li a:hover {
-	color:#ff4500;
+	color: #ff4500;
 }
 
 #header-bottom-right a,
 #header-bottom-right span {
-	color:#def0fe;
+	color: #def0fe;
 }
 
 #header-bottom-right:hover {
-	background-color:#285281;
+	background-color: #285281;
 }
 
 	#header-bottom-right:hover a,
 	#header-bottom-right:hover span {
-		text-shadow:none;
+		text-shadow: none;
 	}
 
 #sr-header-area {
-	background-color:#fff;
+	background-color: #fff;
 }
 
 /*  C.1.end Header Image - */
@@ -81,302 +81,302 @@ body{position:relative;min-width:800px;background-color:#ececea;color:#1d1212;fo
 /*  C.2. Sidebar Buttons - inSitu - */
 /*-- C.2.2 Dual buttons - */
 .sidebox.submit {
-	width:147px;
-	word-spacing:1px;
-	letter-spacing:-1px;
+	width: 147px;
+	word-spacing: 1px;
+	letter-spacing: -1px;
 }
 
 .sidebox.submit-link {
-	position:relative;
-	display:block;
-	margin-left:0px;
-	text-indent:0px;
+	position: relative;
+	display: block;
+	margin-left: 0px;
+	text-indent: 0px;
 }
 
 	.sidebox.submit-link .morelink .nub:before {
-		content:'OR';
-		position:relative;
-		top:4px;
-		margin-left:12px;
-		padding:5px;
-		height:auto;
-		border:1px solid #fbfbf9;
-		border-radius:20px;
-		background-color:#fbfbf9!important;
-		color:#2977c6;
-		font-weight:bold;
-		font-size:12px;
-		text-shadow:1px 1px 1px #fff,1px 1px 2px #808088;
-		z-index:1;
+		content: 'OR';
+		position: relative;
+		top: 4px;
+		margin-left: 12px;
+		padding: 5px;
+		height: auto;
+		border: 1px solid #fbfbf9;
+		border-radius: 20px;
+		background-color: #fbfbf9 !important;
+		color: #2977c6;
+		font-weight: bold;
+		font-size: 12px;
+		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
+		z-index: 1;
 	}
 
 .sidebox.submit-text {
-	position:relative;
-	float:right;
-	margin-top:-44px;
-	text-align:right;
+	position: relative;
+	float: right;
+	margin-top: -44px;
+	text-align: right;
 }
 
 .res-nightmode .sidebox.submit-link .morelink .nub {
-	display:block!important;
+	display: block !important;
 }
 
 	.res-nightmode .sidebox.submit-link .morelink .nub:before {
-		border:1px solid #222;
-		background-color:#222!important;
-		color:#eee;
-		text-shadow:1px 1px 1px #000,1px 1px 2px #1f1f1f;
+		border: 1px solid #222;
+		background-color: #222 !important;
+		color: #eee;
+		text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
 	}
 
 .res-nightmode .sidebox.submit-text {
-	top:-2px;
+	top: -2px;
 }
 /*--  C.2.end Sidebar Buttons on Top -*/
 
 /*  C.3. Pinote - */
 .side .md > blockquote:nth-of-type(1) {
-	position:absolute;
-	top:175px; /*Tweak */
-	right:360px;
-	left:5px;
-	border:0!important;
-	background-color:transparent!important;
-	z-index:10;
+	position: absolute;
+	top: 175px; /*Tweak */
+	right: 360px;
+	left: 5px;
+	border: 0 !important;
+	background-color: transparent !important;
+	z-index: 10;
 }
 
 	.side .md > blockquote:nth-of-type(1) > h1 > a {
-		float:right;
-		margin:-3px -5px -5px 0px;
-		padding:10px 5px;
-		max-width:120px;
-		font-size:12px;
-		letter-spacing:0;
-		text-align:right;
-		text-align:center;
-		text-decoration:underline;
-		text-shadow:1px 1px 1px #fdfdfe;
+		float: right;
+		margin: -3px -5px -5px 0px;
+		padding: 10px 5px;
+		max-width: 120px;
+		font-size: 12px;
+		letter-spacing: 0;
+		text-align: right;
+		text-align: center;
+		text-decoration: underline;
+		text-shadow: 1px 1px 1px #fdfdfe;
 	}
 
 		.side .md > blockquote:nth-of-type(1) > h1 > a[href*="#icon-"]:before {
-			position:absolute;
-			left:20px;
-			margin-top:-5px;
-			padding:0 5px;
-			cursor:default;
+			position: absolute;
+			left: 20px;
+			margin-top: -5px;
+			padding: 0 5px;
+			cursor: default;
 		}
 
 a[name='content'] {
-	display:block;
-	margin:0px 365px 15px 30px;
-	min-height:65px;
-	border:1px solid #ccc;
-	border-radius:2px;
-	background-color:#f5f5f5;
+	display: block;
+	margin: 0px 365px 15px 30px;
+	min-height: 65px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: #f5f5f5;
 }
 
 	a[name='content']:before {
-		content:'This is staging area for /r/mindashq with preview of opt-in modules. To know more,and for feedback, discussions and enhancments :click the link.';
-		position:relative;
-		display:block;
-		margin:15px 150px 15px 40px;
-		color:#222;
-		font-weight:bold;
-		font-size:12px;
+		content: 'This is staging area for /r/mindashq with preview of opt-in modules. To know more,and for feedback, discussions and enhancments :click the link.';
+		position: relative;
+		display: block;
+		margin: 15px 150px 15px 40px;
+		color: #222;
+		font-weight: bold;
+		font-size: 12px;
 	}
 
 .res-nightmode a[name='content'] {
-	border-color:#403f3f;
-	background-color:#0a0a0a;
+	border-color: #403f3f;
+	background-color: #0a0a0a;
 }
 
 	.res-nightmode a[name='content']:before {
-		color:#bcbcbc;
+		color: #bcbcbc;
 	}
 
 .res-nightmode .side .md > blockquote:nth-of-type(1) > h1 > a {
-	text-shadow:1px 1px 1px #414141;
+	text-shadow: 1px 1px 1px #414141;
 }
 /*  C.3.end PiNote - */
 
 /*  C.4. Navigator - */
 .side .md > blockquote:last-child {
-	display:none;
+	display: none;
 }
 
 .side .md > blockquote:last-child {
-	position:absolute;
-	top:144px;
-	left:0px;
-	display:block;
-	margin:0;
-	padding:0;
-	border:0 none;
-	background-color:transparent;
-	z-index:99;
+	position: absolute;
+	top: 144px;
+	left: 0px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	background-color: transparent;
+	z-index: 99;
 }
 
 	.side .md > blockquote:last-child > h1 {
-		overflow:hidden;
-		margin:-24px 0px 0px;
-		padding:2px;
-		width:25px;
-		background-color:#acd9fc;
-		color:#357ae8;
-		font-weight:bold;
-		font-size:20px;
-		line-height:28px;
-		vertical-align:middle;
-		text-align:center;
-		text-shadow:-1px -1px 0 #d8eeff,1px 1px 0 #075e85;
+		overflow: hidden;
+		margin: -24px 0px 0px;
+		padding: 2px;
+		width: 25px;
+		background-color: #acd9fc;
+		color: #357ae8;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		vertical-align: middle;
+		text-align: center;
+		text-shadow: -1px -1px 0 #d8eeff,1px 1px 0 #075e85;
 	}
 
 		.side .md > blockquote:last-child > h1 a {
-			background-color:#acd9fc;
-			color:#357ae8;
+			background-color: #acd9fc;
+			color: #357ae8;
 		}
 
 		.side .md > blockquote:last-child > h1 em {
-			display:none;
+			display: none;
 		}
 
 	.side .md > blockquote:last-child ul {
-		display:none;
-		overflow:visible;
-		margin:0;
-		padding:0;
-		white-space:normal;
-		vertical-align:top;
-		list-style:none outside;
-		list-style-image:none;
+		display: none;
+		overflow: visible;
+		margin: 0;
+		padding: 0;
+		white-space: normal;
+		vertical-align: top;
+		list-style: none outside;
+		list-style-image: none;
 	}
 
 	.side .md > blockquote:last-child:hover > h1,
 	.side .md > blockquote:last-child:active > h1 {
-		margin-bottom:-15px;
-		padding-bottom:15px;
-		background-color:#5ba2fd;
-		color:#eaf4fc;
-		text-shadow:none;
+		margin-bottom: -15px;
+		padding-bottom: 15px;
+		background-color: #5ba2fd;
+		color: #eaf4fc;
+		text-shadow: none;
 	}
 
 		.side .md > blockquote:last-child:hover > h1 a,
 		.side .md > blockquote:last-child:active > h1 a {
-			background-color:transparent;
-			color:#eaf4fc;
+			background-color: transparent;
+			color: #eaf4fc;
 		}
 
 	.side .md > blockquote:last-child:hover > ul,
 	.side .md > blockquote:last-child:active > ul {
-		display:block;
-		margin:-3px 0 0 -50px;
-		padding:0 50px 50px;
+		display: block;
+		margin: -3px 0 0 -50px;
+		padding: 0 50px 50px;
 	}
 
 	.side .md > blockquote:last-child li {
-		margin:0;
-		padding:5px 15px 0;
-		width:150px;
-		height:30px;
-		border:1px solid #ddd;
-		border-width:0 1px 1px 1px;
-		background-color:#eee;
-		box-shadow:0 1px 6px 0 #bbb;
-		line-height:30px;
-		white-space:normal;
-		text-shadow:0 1px 0 #ddd;
+		margin: 0;
+		padding: 5px 15px 0;
+		width: 150px;
+		height: 30px;
+		border: 1px solid #ddd;
+		border-width: 0 1px 1px 1px;
+		background-color: #eee;
+		box-shadow: 0 1px 6px 0 #bbb;
+		line-height: 30px;
+		white-space: normal;
+		text-shadow: 0 1px 0 #ddd;
 	}
 
 		.side .md > blockquote:last-child li:first-child {
-			border-width:1px;
+			border-width: 1px;
 		}
 
 		.side .md > blockquote:last-child li a {
-			color:#0026ff;
+			color: #0026ff;
 		}
 
 	.side .md > blockquote:last-child ul > li:hover,
 	.side .md > blockquote:last-child ul > li:active,
 	.side .md > blockquote:last-child ul > li:hover > a,
 	.side .md > blockquote:last-child ul > li:active > a {
-		background-color:#5ba2fd;
-		color:#eaf4fc;
-		text-shadow:0 1px 0 #333;
+		background-color: #5ba2fd;
+		color: #eaf4fc;
+		text-shadow: 0 1px 0 #333;
 	}
 
 	.side .md > blockquote:last-child > ul > li:hover > ul,
 	.side .md > blockquote:last-child > ul > li:active > ul,
 	.side .md > blockquote:last-child > ul > li > ul:hover,
 	.side .md > blockquote:last-child > ul > li > ul:active {
-		position:relative;
-		top:-36px;
-		display:inline-block;
-		overflow:hidden;
-		margin-left:163px;
-		padding:0 50px 50px 3px;
-		height:auto;
+		position: relative;
+		top: -36px;
+		display: inline-block;
+		overflow: hidden;
+		margin-left: 163px;
+		padding: 0 50px 50px 3px;
+		height: auto;
 	}
 
 	.side .md > blockquote:last-child li > ul > li,
 	.side .md > blockquote:last-child li > ul > li {
-		min-width:150px;
-		width:auto;
-		background-color:#f8f8f8;
-		color:#5ba2fd;
-		white-space:nowrap;
+		min-width: 150px;
+		width: auto;
+		background-color: #f8f8f8;
+		color: #5ba2fd;
+		white-space: nowrap;
 	}
 
 .res-nightmode .side .md > blockquote:last-child {
-	border:0 none;
-	background-color:transparent;
+	border: 0 none;
+	background-color: transparent;
 }
 
 	.res-nightmode .side .md > blockquote:last-child > h1,
 	.res-nightmode .side .md > blockquote:last-child > h1 a {
-		background-color:#414141!important;
-		color:#ff910b!important;
+		background-color: #414141 !important;
+		color: #ff910b !important;
 	}
 
 	.res-nightmode .side .md > blockquote:last-child:hover > h1,
 	.res-nightmode .side .md > blockquote:last-child:active > h1,
 	.res-nightmode .side .md > blockquote:last-child:hover > h1 a,
 	.res-nightmode .side .md > blockquote:last-child:active > h1 a {
-		background-color:#ff910b!important;
-		color:#414141!important;
+		background-color: #ff910b !important;
+		color: #414141 !important;
 	}
 
 	.res-nightmode .side .md > blockquote:last-child li {
-		border-color:#6a6a6a;
-		background-color:#444;
-		box-shadow:0 1px 6px 0 #000;
-		text-shadow:0 1px 0 #888;
+		border-color: #6a6a6a;
+		background-color: #444;
+		box-shadow: 0 1px 6px 0 #000;
+		text-shadow: 0 1px 0 #888;
 	}
 
 		.res-nightmode .side .md > blockquote:last-child li a {
-			color:#bbb;
+			color: #bbb;
 		}
 
 	.res-nightmode .side .md > blockquote:last-child ul > li:hover,
 	.res-nightmode .side .md > blockquote:last-child ul > li:active,
 	.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
 	.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
-		background-color:#ff910b;
-		color:#eaf4fc!important;
-		text-shadow:0 1px 0 #333;
+		background-color: #ff910b;
+		color: #eaf4fc !important;
+		text-shadow: 0 1px 0 #333;
 	}
 
 	.res-nightmode .side .md > blockquote:last-child li > ul > li {
-		background-color:#4a4a4a;
-		box-shadow:0 1px 6px 0 #000;
+		background-color: #4a4a4a;
+		box-shadow: 0 1px 6px 0 #000;
 	}
 /*  C.4.end Navigator - */
 
 /*  C.5. Sidebar Collapsible Boxes - */
 .side .md > blockquote:nth-of-type(6) > * {
-	display:block;
+	display: block;
 }
 
 .side .md > blockquote > * {
-	display:none;
+	display: none;
 }
 
 .side .md > blockquote > h1,
@@ -385,16 +385,16 @@ a[name='content'] {
 .side .md > blockquote > h4,
 .side .md > blockquote > h5,
 .side .md > blockquote > h6 {
-	display:block;
-	cursor:pointer;
+	display: block;
+	cursor: pointer;
 }
 
 .side .md > blockquote a {
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .side .md > blockquote:hover > * {
-	display:block;
+	display: block;
 }
 /*  C.5.end Sidebar Collapsible Boxes - */
 
@@ -404,17 +404,17 @@ a[name='content'] {
 .side .usertext a[href$='jpeg'],
 .side .usertext a[href$='gif'],
 .side .usertext a[href$='#view'] {
-	position:static;
-	display:block;
-	margin:0px -10px 15px -15px;
-	min-width:300px;
-	min-height:70px;
-	max-width:310px;
-	max-height:300px;
-	width:auto;
-	height:190px;
-	background:transparent url('%%header-elephants%%') no-repeat 7% 70%;
-	font-size:0px;
+	position: static;
+	display: block;
+	margin: 0px -10px 15px -15px;
+	min-width: 300px;
+	min-height: 70px;
+	max-width: 310px;
+	max-height: 300px;
+	width: auto;
+	height: 190px;
+	background: transparent url('%%header-elephants%%') no-repeat 7% 70%;
+	font-size: 0px;
 }
 
 	.side .usertext a[href$='png']:hover:after,
@@ -422,32 +422,32 @@ a[name='content'] {
 	.side .usertext a[href$='jpeg']:hover:after,
 	.side .usertext a[href$='gif']:hover:after,
 	.side .usertext a[href$='#view']:hover:after {
-		content:"Click to see original size";
-		position:relative;
-		top:auto;
-		bottom:-20px;
-		left:50%;
-		display:block;
-		margin:0px -105px;
-		padding:10px 5px;
-		max-width:200px;
-		border:1px solid #d2d2d2;
-		border-radius:2px;
-		background:#f5f5f9;
-		font-weight:bold;
-		font-size:12px;
-		text-align:center;
-		opacity:.8;
+		content: "Click to see original size";
+		position: relative;
+		top: auto;
+		bottom: -20px;
+		left: 50%;
+		display: block;
+		margin: 0px -105px;
+		padding: 10px 5px;
+		max-width: 200px;
+		border: 1px solid #d2d2d2;
+		border-radius: 2px;
+		background: #f5f5f9;
+		font-weight: bold;
+		font-size: 12px;
+		text-align: center;
+		opacity: .8;
 	}
 /*  C.6.end Sidebar Image - */
 
 /*  C.7. Rage Faces - */
 a[href='/fy1']:nth-of-type(n):after, a[href='/milk']:nth-of-type(n):after, a[href='/pickletime']:nth-of-type(n):after, a[href='/fuckthatshit']:nth-of-type(n):after, a[href='/teethrage']:nth-of-type(n):after, a[href='/foreveralone']:nth-of-type(n):after, a[href='/bzz']:nth-of-type(n):after, a[href='/creepy']:nth-of-type(n):after, a[href='/itstime']:nth-of-type(n):after, a[href='/gtroll']:nth-of-type(n):after, a[href='/fap']:nth-of-type(n):after, a[href='/pfttxt']:nth-of-type(n):after, a[href='/biggusta']:nth-of-type(n):after, a[href='/notsureifgusta']:nth-of-type(n):after, a[href='/hahahahaha']:nth-of-type(n):after, a[href='/2229']:nth-of-type(n):after, a[href='/smokeweedeveryday']:nth-of-type(n):after, a[href='/drunk1']:nth-of-type(n):after, a[href='/truestory']:nth-of-type(n):after, a[href='/didthere']:nth-of-type(n):after, a[href='/tobey']:nth-of-type(n):after, a[href='/hatersgonnahate']:nth-of-type(n):after, a[href='/dinostare']:nth-of-type(n):after, a[href='/puke']:nth-of-type(n):after, a[href='/awthanks']:nth-of-type(n):after, a[href='/knowthatfeel']:nth-of-type(n):after, a[href='/no']:nth-of-type(n):after, a[href='/jackieeeee!']:nth-of-type(n):after, a[href='/happyjackie']:nth-of-type(n):after, a[href='/ohgodwhy']:nth-of-type(n):after, a[href='/ohgodyes']:nth-of-type(n):after, a[href='/jetpack']:nth-of-type(n):after, a[href='/badass']:nth-of-type(n):after, a[href='/soclose']:nth-of-type(n):after, a[href='/allthethings']:nth-of-type(n):after, a[href='/youdontsay']:nth-of-type(n):after, a[href='/dinofuckyeah']:nth-of-type(n):after, a[href='/dinofuckyeah2']:nth-of-type(n):after, a[href='/excitedtroll']:nth-of-type(n):after, a[href='/feelsbadman']:nth-of-type(n):after, a[href='/jizzsplosion']:nth-of-type(n):after, a[href='/21424']:nth-of-type(n):after, a[href='/ohmy']:nth-of-type(n):after, a[href='/likeasir']:nth-of-type(n):after, a[href='/likealady']:nth-of-type(n):after, a[href='/ifeelsyabreh']:nth-of-type(n):after, a[href='/trollmom']:nth-of-type(n):after, a[href='/femyao']:nth-of-type(n):after, a[href='/ilovethebeefytaco']:nth-of-type(n):after, a[href='/gyey']:nth-of-type(n):after, a[href='/gwat']:nth-of-type(n):after, a[href='/gsmile']:nth-of-type(n):after, a[href='/gtongue']:nth-of-type(n):after, a[href='/gohno']:nth-of-type(n):after, a[href='/gwah']:nth-of-type(n):after, a[href='/ghappy']:nth-of-type(n):after, a[href='/gbeh']:nth-of-type(n):after, a[href='/gfu']:nth-of-type(n):after, a[href='/guhm']:nth-of-type(n):after, a[href='/fu']:nth-of-type(n):after, a[href='/beh']:nth-of-type(n):after, a[href='/gah']:nth-of-type(n):after, a[href='/perfect']:nth-of-type(n):after, a[href='/happy']:nth-of-type(n):after, a[href='/uhm']:nth-of-type(n):after, a[href='/wat']:nth-of-type(n):after, a[href='/yey']:nth-of-type(n):after, a[href='/fuckyeah']:nth-of-type(n):after, a[href='/ewbte']:nth-of-type(n):after, a[href='/son']:nth-of-type(n):after, a[href='/high']:nth-of-type(n):after, a[href='/poker']:nth-of-type(n):after, a[href='/rightmilk']:nth-of-type(n):after, a[href='/megusta']:nth-of-type(n):after, a[href='/troll']:nth-of-type(n):after, a[href='/rtroll']:nth-of-type(n):after, a[href='/leftmilk']:nth-of-type(n):after, a[href='/futext']:nth-of-type(n):after, a[href='/pft']:nth-of-type(n):after, a[href='/sadtroll']:nth-of-type(n):after, a[href='/wetodddog']:nth-of-type(n):after, a[href='/harpdarp']:nth-of-type(n):after, a[href='/dude']:nth-of-type(n):after, a[href='/eyes']:nth-of-type(n):after, a[href='/awman']:nth-of-type(n):after, a[href='/bepsausage']:nth-of-type(n):after, a[href='/lol']:nth-of-type(n):after, a[href='/omg']:nth-of-type(n):after, a[href='/pissed']:nth-of-type(n):after, a[href='/hmm']:nth-of-type(n):after, a[href='/whoa']:nth-of-type(n):after, a[href='/sad']:nth-of-type(n):after, a[href='/thumbsup']:nth-of-type(n):after, a[href='/blackhair']:nth-of-type(n):after, a[href='/hehheh']:nth-of-type(n):after, a[href='/straight']:nth-of-type(n):after, a[href='/bepinthemorning']:nth-of-type(n):after, a[href='/red']:nth-of-type(n):after, a[href='/bepislaughingatyourmum']:nth-of-type(n):after, a[href='/nomegusta']:nth-of-type(n):after, a[href='/wtf']:nth-of-type(n):after, a[href='/trolldad']:nth-of-type(n):after, a[href='/wayevil']:nth-of-type(n):after, a[href='/challengeaccepted']:nth-of-type(n):after, a[href='/melvin']:nth-of-type(n):after, a[href='/welp']:nth-of-type(n):after, a[href='/bepistrollingyoubetter']:nth-of-type(n):after, a[href='/djlovestaco']:nth-of-type(n):after, a[href='/why']:nth-of-type(n):after, a[href='/surprised']:nth-of-type(n):after, a[href='/suprised']:nth-of-type(n):after, a[href='/longneck']:nth-of-type(n):after, a[href='/sweetjesus']:nth-of-type(n):after, a[href='/notokay']:nth-of-type(n):after, a[href='/yuno']:nth-of-type(n):after, a[href='/awyeah']:nth-of-type(n):after, a[href='/awyea']:nth-of-type(n):after, a[href='/ohisthatacarrot']:nth-of-type(n):after, a[href='/carrt']:nth-of-type(n):after, a[href='/iamawaffle']:nth-of-type(n):after, a[href='/jackieeeee']:nth-of-type(n):after, a[href='/aintthatsomeshit']:nth-of-type(n):after, a[href='/igotthis']:nth-of-type(n):after, a[href='/teeth']:nth-of-type(n):after, a[href='/foreveralonewithyourmum']:nth-of-type(n):after, a[href='/megustaperfect']:nth-of-type(n):after, a[href='/fapfap']:nth-of-type(n):after, a[href='/schlick']:nth-of-type(n):after, a[href='/hug']:nth-of-type(n):after, a[href='/gtfo']:nth-of-type(n):after, a[href='/stare']:nth-of-type(n):after, a[href='/fumanchu']:nth-of-type(n):after, a[href='/vuvu']:nth-of-type(n):after, a[href='/pfttext']:nth-of-type(n):after, a[href='/indeed']:nth-of-type(n):after, a[href='/ifeelyoubrah']:nth-of-type(n):after, a[href='/steve']:nth-of-type(n):after, a[href='/serious']:nth-of-type(n):after, a[href='/gserious']:nth-of-type(n):after, a[href='/gaytroll']:nth-of-type(n):after, a[href='/deviltroll']:nth-of-type(n):after, a[href='/freddie']:nth-of-type(n):after, a[href='/thestonedmod']:nth-of-type(n):after, a[href='/notbad']:nth-of-type(n):after, a[href='/trollmum']:nth-of-type(n):after, a[href='/gwtf']:nth-of-type(n):after, a[href='/okay']:nth-of-type(n):after, a[href='/splashy']:nth-of-type(n):after, a[href='/toomuchweed']:nth-of-type(n):after, a[href='/chrisbrpwnd']:nth-of-type(n):after, a[href='/dinokay']:nth-of-type(n):after, a[href='/dino']:nth-of-type(n):after, a[href='/table']:nth-of-type(n):after, a[href='/nowkiss']:nth-of-type(n):after, a[href='/everybodywalkthedinosaur']:nth-of-type(n):after, a[href='/angryharpdarp']:nth-of-type(n):after, a[href='/cerealspit']:nth-of-type(n):after, a[href='/biebs']:nth-of-type(n):after, a[href='/cereal']:nth-of-type(n):after, a[href='/foreveralonelaugh']:nth-of-type(n):after, a[href='/ohcrap']:nth-of-type(n):after, a[href='/jasonqualman']:nth-of-type(n):after, a[href='/jonzibar']:nth-of-type(n):after, a[href='/fyl']:nth-of-type(n):after, a[href='/rmilk']:nth-of-type(n):after, a[href='/ewbtetext']:nth-of-type(n):after, a[href='/trap']:nth-of-type(n):after, a[href='/hdad']:nth-of-type(n):after {
-	content:' ';
-	display:inline-block;
-	width:25px;
-	height:25px;
-	background-image:url(%%hypermegafinal3%%);
+	content: ' ';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url(%%hypermegafinal3%%);
 }
 a[href='/fy1']:nth-of-type(n):after{width:25px;height:25px;background-position:-240px -30px}
 a[href='/milk']:nth-of-type(n):after{width:21px;height:25px;background-position:-210px -60px}
@@ -621,43 +621,42 @@ a[href='/hdad']:nth-of-type(n):after{width:41px;height:60px;background-position:
 /*  C.7.end Rage Faces - */
 
 /*  C.8. Reddit Name Switcher - */
-
 .pagename a:after,
 .titlebox .redditname a:after {
-	content:"Stage Mindashq";
+	content: "Stage Mindashq";
 }
 
 .pagename a, .titlebox .redditname a {
-	font-size:0!important;
+	font-size: 0 !important;
 }
 
 	.pagename a:after {
-		font-size:18px;
-		vertical-align:bottom;
+		font-size: 18px;
+		vertical-align: bottom;
 	}
 
 .titlebox .redditname a {
-	text-shadow:none;
+	text-shadow: none;
 }
 
 	.titlebox .redditname a:after {
-		font-size:30px;
-		text-shadow:0px 0px 1px #888;
+		font-size: 30px;
+		text-shadow: 0px 0px 1px #888;
 	}
 
 .res-nightmode .titlebox .redditname a:after {
-	text-shadow:0px 0px 1px #555;
+	text-shadow: 0px 0px 1px #555;
 }
 
 /*  C.8.end Reddit Name Switcher - */
 
 /*  C.10. Emoticons - */
 
-a[href$='#menupic2'],a[href$='#menupic3'],a[href$='#crazy'],a[href$='#shocked2'],a[href$='#blush'],a[href$='#angry3'],a[href$='#laughing'],a[href$='#whistling'],a[href$='#grin'],a[href$='#smile2'],a[href$='#heart2'],a[href$='#heh'],a[href$='#doh'],a[href$='#money'],a[href$='#meh'],a[href$='#peaceout'],a[href$='#crazy3'],a[href$='#laughing3'],a[href$='#minus'],a[href$='#plus'],a[href$='#nerd'],a[href$='#good'],a[href$='#robot'],a[href$='#ugh'],a[href$='#menupic'],a[href$='#ftripoff'],a[href$='#ufo'],a[href$='#spoon2'],a[href$='#frown'],a[href$='#sleeping3'],a[href$='#heart3'],a[href$='#vector'],a[href$='#muffin'],a[href$='#gape2'],a[href$='#ninja'],a[href$='#dead3'],a[href$='#huh'],a[href$='#dead'],a[href$='#erm'],a[href$='#ninja3'],a[href$='#sleeping'],a[href$='#curious2'],a[href$='#crying3'],a[href$='#chromakode3'],a[href$='#angry2'],a[href$='#bomb'],a[href$='#sulk'],a[href$='#sad'],a[href$='#gape'],a[href$='#laughing2'],a[href$='#dead2'],a[href$='#ftripoff2'],a[href$='#hellyes'],a[href$='#smile3'],a[href$='#crying'],a[href$='#sick'],a[href$='#smile4'],a[href$='#yeah'],a[href$='#smiley'],a[href$='#evil'],a[href$='#cool'],a[href$='#angry'],a[href$='#ninja2'],a[href$='#reading'],a[href$='#wink3'],a[href$='#halfsmile3'],a[href$='#spoon'],a[href$='#ashamed'],a[href$='#brokenheart'],a[href$='#drool'],a[href$='#love2'],a[href$='#crying2'],a[href$='#love3'],a[href$='#grin2'],a[href$='#boring'],a[href$='#err'],a[href$='#raspberry2'],a[href$='#grin3'],a[href$='#sulk2'],a[href$='#muffin2'],a[href$='#wink'],a[href$='#curious'],a[href$='#halfsmile2'],a[href$='#ashamed3'],a[href$='#aww'],a[href$='#sour'],a[href$='#chromakode'],a[href$='#sleeping2'],a[href$='#halfsmile'],a[href$='#alien'],a[href$='#unimpressed'],a[href$='#love'],a[href$='#wink2'],a[href$='#ohmygod'],a[href$='#shocked'],a[href$='#raspberry'],a[href$='#sad2'],a[href$='#star'],a[href$='#heart']{
-	display:inline-block;
-	background:url(%%emoticons%%) no-repeat;
-	width:24px;
-	height:24px;
+a[href$='#menupic2'], a[href$='#menupic3'], a[href$='#crazy'], a[href$='#shocked2'], a[href$='#blush'], a[href$='#angry3'], a[href$='#laughing'], a[href$='#whistling'], a[href$='#grin'], a[href$='#smile2'], a[href$='#heart2'], a[href$='#heh'], a[href$='#doh'], a[href$='#money'], a[href$='#meh'], a[href$='#peaceout'], a[href$='#crazy3'], a[href$='#laughing3'], a[href$='#minus'], a[href$='#plus'], a[href$='#nerd'], a[href$='#good'], a[href$='#robot'], a[href$='#ugh'], a[href$='#menupic'], a[href$='#ftripoff'], a[href$='#ufo'], a[href$='#spoon2'], a[href$='#frown'], a[href$='#sleeping3'], a[href$='#heart3'], a[href$='#vector'], a[href$='#muffin'], a[href$='#gape2'], a[href$='#ninja'], a[href$='#dead3'], a[href$='#huh'], a[href$='#dead'], a[href$='#erm'], a[href$='#ninja3'], a[href$='#sleeping'], a[href$='#curious2'], a[href$='#crying3'], a[href$='#chromakode3'], a[href$='#angry2'], a[href$='#bomb'], a[href$='#sulk'], a[href$='#sad'], a[href$='#gape'], a[href$='#laughing2'], a[href$='#dead2'], a[href$='#ftripoff2'], a[href$='#hellyes'], a[href$='#smile3'], a[href$='#crying'], a[href$='#sick'], a[href$='#smile4'], a[href$='#yeah'], a[href$='#smiley'], a[href$='#evil'], a[href$='#cool'], a[href$='#angry'], a[href$='#ninja2'], a[href$='#reading'], a[href$='#wink3'], a[href$='#halfsmile3'], a[href$='#spoon'], a[href$='#ashamed'], a[href$='#brokenheart'], a[href$='#drool'], a[href$='#love2'], a[href$='#crying2'], a[href$='#love3'], a[href$='#grin2'], a[href$='#boring'], a[href$='#err'], a[href$='#raspberry2'], a[href$='#grin3'], a[href$='#sulk2'], a[href$='#muffin2'], a[href$='#wink'], a[href$='#curious'], a[href$='#halfsmile2'], a[href$='#ashamed3'], a[href$='#aww'], a[href$='#sour'], a[href$='#chromakode'], a[href$='#sleeping2'], a[href$='#halfsmile'], a[href$='#alien'], a[href$='#unimpressed'], a[href$='#love'], a[href$='#wink2'], a[href$='#ohmygod'], a[href$='#shocked'], a[href$='#raspberry'], a[href$='#sad2'], a[href$='#star'], a[href$='#heart'] {
+	display: inline-block;
+	background: url(%%emoticons%%) no-repeat;
+	width: 24px;
+	height: 24px;
 }
 a[href$='#menupic2']{background-position:-0px -0px;width:32px;height:32px}
 a[href$='#menupic3']{background-position:-0px -32px;width:32px;height:32px}

@@ -13,7 +13,7 @@
 }
 
 /* Notice for Report button */
-.report-button a:hover:after {
+.report-button a.yes:hover:after {
 	content: "Please send a message to moderators with the link for this item citing the reason for reporting. Thank you for your help. ";
 	position: absolute;
 	display: block;
