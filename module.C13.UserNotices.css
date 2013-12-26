@@ -17,8 +17,8 @@
 	content: "Please send a message to moderators with the link for this item citing the reason for reporting. Thank you for your help. ";
 	position: absolute;
 	display: block;
-	margin-top: 5px;
-	margin-left: 25px;
+	margin-top: -80px;
+	margin-left: -40px;
 	padding: 5px;
 	width: 300px;
 	border: 1px solid #333;
