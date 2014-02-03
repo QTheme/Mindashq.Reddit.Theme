@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7c
+	v1.7d
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -366,7 +366,7 @@ a[href*='#btn'] {
 
 .entry .flat-list {
 	display: inline-block;
-	font-size: 11px;
+	/*font-size: 11px;*/
 }
 
 	.entry .flat-list li a,
@@ -768,7 +768,7 @@ body.multi-page > div.content {
 
 p.tagline {
 	margin: 2px;
-	font-size: 115%;
+	/*font-size: 115%;*/
 }
 
 	p.tagline span span {
@@ -2320,47 +2320,56 @@ span.linkflair {
 	.linkflair[class*="-m-"]:hover .linkflairlabel {
 	}
 
-.linkflair-m-vt .linkflairlabel {
+.linkflair-m-vt .linkflairlabel,
+.flairoptionpane .linkflair-m-vt .linkflairlabel {
 	background: #c566c5;
 	color: #fff;
 }
 
-.linkflair-m-io .linkflairlabel {
+.linkflair-m-io .linkflairlabel,
+.flairoptionpane .linkflair-m-io .linkflairlabel {
 	background: #5f8bc4;
 	color: #fff;
 }
 
-.linkflair-m-be .linkflairlabel {
+.linkflair-m-be .linkflairlabel,
+.flairoptionpane .linkflair-m-be .linkflairlabel {
 	background: #84cbff;
 	color: #fff;
 }
 
-.linkflair-m-gn .linkflairlabel {
+.linkflair-m-gn .linkflairlabel,
+.flairoptionpane .linkflair-m-gn .linkflairlabel {
 	background: #5fd35d;
 	color: #fff;
 }
 
-.linkflair-m-yw .linkflairlabel {
+.linkflair-m-yw .linkflairlabel,
+.flairoptionpane .linkflair-m-yw .linkflairlabel {
 	background: #fde950;
 	color: #a77d19;
 }
 
-.linkflair-m-oe .linkflairlabel {
+.linkflair-m-oe .linkflairlabel,
+.flairoptionpane .linkflair-m-oe .linkflairlabel {
 	background: #ffac30;
 	color: #fffbcb;
 }
 
-.linkflair-m-rd .linkflairlabel {
+.linkflair-m-rd .linkflairlabel,
+.flairoptionpane .linkflair-m-rd .linkflairlabel {
 	background: #f00;
 	color: #fff;
 }
 
-.linkflair-m-gy .linkflairlabel {
+.linkflair-m-gy .linkflairlabel,
+.flairoptionpane .linkflair-m-gy .linkflairlabel {
 	background: #eaeaed;
 	color: #555;
 }
 
-.linkflair-m-it .linkflairlabel {
+.linkflair-m-it .linkflairlabel,
+.flairoptionpane .linkflair-m-it .linkflairlabel {
 	background: #555;
 	color: #fff;
 }
