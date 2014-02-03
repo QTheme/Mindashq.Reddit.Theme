@@ -1,6 +1,6 @@
 /* --  C.4. Navigator
-		see http://www.reddit.com/r/mindashq/wiki/modules/navigator for details		
-	 + 	Add only when corresponding markup is added in sidebar
+	Details : http://www.reddit.com/r/mindashq/wiki/modules/navigator 
+	+ 	Add only when corresponding markup is added in sidebar
 ---- */
 
 .side .md > blockquote:last-child {
@@ -136,16 +136,16 @@ body.res-nightmode .side .md > blockquote:last-child {
 
 	body.res-nightmode .side .md > blockquote:last-child > h1,
 	body.res-nightmode .side .md > blockquote:last-child > h1 a {
-		background-color: #414141!important;
-		color: #ff910b!important;
+		background-color: #414141 !important;
+		color: #ff910b !important;
 	}
 
 	body.res-nightmode .side .md > blockquote:last-child:hover > h1,
 	body.res-nightmode .side .md > blockquote:last-child:active > h1,
 	body.res-nightmode .side .md > blockquote:last-child:hover > h1 a,
 	body.res-nightmode .side .md > blockquote:last-child:active > h1 a {
-		background-color: #ff910b!important;
-		color: #414141!important;
+		background-color: #ff910b !important;
+		color: #414141 !important;
 	}
 
 	body.res-nightmode .side .md > blockquote:last-child li {
@@ -164,7 +164,7 @@ body.res-nightmode .side .md > blockquote:last-child {
 	body.res-nightmode .side .md > blockquote:last-child ul > li:hover > a,
 	body.res-nightmode .side .md > blockquote:last-child ul > li:active > a {
 		background-color: #ff910b;
-		color: #eaf4fc!important;
+		color: #eaf4fc !important;
 		text-shadow: 0 1px 0 #333;
 	}
 

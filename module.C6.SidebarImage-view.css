@@ -1,6 +1,6 @@
 /* --  C.6. Sidebar Image - view only
-		see http://www.reddit.com/r/mindashq/wiki/modules/SidebarImages for details		
-	 + 	Add only when corresponding image is loaded in subreddit settings > stylesheet 
+	Details : http://www.reddit.com/r/mindashq/wiki/modules/SidebarImages
+	+ 	Add only when corresponding image is loaded in subreddit settings > stylesheet 
 ---- */
 
 .side .usertext-body:before {

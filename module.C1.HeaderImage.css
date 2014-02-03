@@ -1,12 +1,12 @@
 /* --  C.1. Header Image
-		see http://www.reddit.com/r/mindashq/wiki/modules/HeaderImages for details		
-	 + 	Add only when corresponding image is loaded in community settings > stylesheet 
+	Details http://www.reddit.com/r/mindashq/wiki/modules/HeaderImages		
+	+ 	Add only when corresponding image is loaded in community settings > stylesheet 
 ---- */
 
 #header,
 body.res-nightmode #header {
 	min-height: 150px; /*Tweak to give a nice height for image to be seen, be conservative*/
-	background: #101213 url('%%headerImage%%') no-repeat scroll 0px 80%!important; /*Tweak as per requirements*/
+	background: #101213 url('%%headerImage%%') no-repeat scroll 0px 80% !important; /*Tweak as per requirements*/
 }
 
 	#header:after,

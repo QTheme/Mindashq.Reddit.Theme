@@ -7,40 +7,40 @@
 /* [ A ]. Normal Theme............ */
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
-	position: relative!important;
-	min-width: 800px!important;
-	background-color: #ececea!important;
-	color: #1d1212!important;
-	font-weight: normal!important;
-	font-style: normal!important;
-	font-variant: normal!important;
-	font-family: sans-serif!important;
-	line-height: 1.4!important;
+	position: relative !important;
+	min-width: 800px !important;
+	background-color: #ececea !important;
+	color: #1d1212 !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	font-family: sans-serif !important;
+	line-height: 1.4 !important;
 }
 
 .md h1,
 .md h2 {
-	margin-bottom: 6px!important;
-	color: #2154a3!important;
+	margin-bottom: 6px !important;
+	color: #2154a3 !important;
 }
 
 .md h3,
 .md h4 {
-	margin-bottom: 3px!important;
-	color: #2154a3!important;
+	margin-bottom: 3px !important;
+	color: #2154a3 !important;
 }
 
 .md h1,
 .md h2,
 .md h3,
 .md h4 {
-	border-color: #d2d2d2!important;
-	font-weight: bold!important;
-	font-size: 115%!important;
+	border-color: #d2d2d2 !important;
+	font-weight: bold !important;
+	font-size: 115% !important;
 }
 
 .md h1 {
-	font-size: 120%!important;
+	font-size: 120% !important;
 }
 
 a,
@@ -49,38 +49,38 @@ a,
 
 	.thing a.title,
 	.thing a.title.loggedin {
-		color: #357ae8!important;
-		text-shadow: 0 1px 0 #ececec!important;
+		color: #357ae8 !important;
+		text-shadow: 0 1px 0 #ececec !important;
 	}
 
 		.thing a.title:visited,
 		.thing a.title.loggedin.click:visited,
 		.thing a.title.loggedin:visited {
-			color: #181818!important;
-			text-shadow: 0 1px 0 #777!important;
+			color: #181818 !important;
+			text-shadow: 0 1px 0 #777 !important;
 		}
 
 		.thing a.title:hover,
 		.thing a.title.loggedin:hover {
-			color: #5ba2fd!important;
-			text-decoration: none!important;
+			color: #5ba2fd !important;
+			text-decoration: none !important;
 		}
 
 .content .md a:visited,
 div.comment .md p > a:visited {
-	color: #a409aa!important;
+	color: #a409aa !important;
 }
 
 .rounded {
-	border-radius: 2px!important;
+	border-radius: 2px !important;
 }
 
 .roundfield,
 .linefield,
 .content.submit .roundfield.info-notice {
-	border-radius: 0!important;
-	background-color: #eee!important;
-	box-shadow: 0 0 1px 1px #ddd!important;
+	border-radius: 0 !important;
+	background-color: #eee !important;
+	box-shadow: 0 0 1px 1px #ddd !important;
 }
 
 	.roundfield textarea,
@@ -91,186 +91,186 @@ div.comment .md p > a:visited {
 	.linefield textarea,
 	.linefield input[type=text],
 	.linefield input[type=password] {
-		border-color: #ccc!important;
-		box-shadow: 0 1px 4px 1px #ddd!important;
+		border-color: #ccc !important;
+		box-shadow: 0 1px 4px 1px #ddd !important;
 	}
 
 body:not(.wiki-page) .md {
-	max-width: 60em!important;
-	color: #1d1212!important;
+	max-width: 60em !important;
+	color: #1d1212 !important;
 	/*font-size: 1.1em!important;*/
-	line-height: 1.4!important;
+	line-height: 1.4 !important;
 }
 
 .md blockquote,
 .help blockquote {
-	margin-left: 5px!important;
-	padding: 1px 1px 1px 15px!important;
-	max-width: 60em!important;
-	border: 1px solid #ccc!important;
-	border-width: 0 0 0 2px!important;
+	margin-left: 5px !important;
+	padding: 1px 1px 1px 15px !important;
+	max-width: 60em !important;
+	border: 1px solid #ccc !important;
+	border-width: 0 0 0 2px !important;
 }
 
 hr {
-	height: 1px!important;
-	border: 0 none!important;
-	background-color: #d2d2d2!important;
-	color: #ccc!important;
+	height: 1px !important;
+	border: 0 none !important;
+	background-color: #d2d2d2 !important;
+	color: #ccc !important;
 }
 
 /* --  A.1.1. Tables -- */
 .md table {
-	margin: 10px 0!important;
-	border: 1px solid #ccc!important;
-	border-width: 1px 0 1px 1px!important;
+	margin: 10px 0 !important;
+	border: 1px solid #ccc !important;
+	border-width: 1px 0 1px 1px !important;
 }
 
 	.md table * {
-		border: 0!important;
+		border: 0 !important;
 	}
 
 	.md table th {
-		text-align: center!important;
+		text-align: center !important;
 	}
 
 	.md table thead {
-		border-bottom: 1px solid #ccc!important;
-		background-color: #f3f3f3!important;
+		border-bottom: 1px solid #ccc !important;
+		background-color: #f3f3f3 !important;
 	}
 
 	.md table tbody tr:nth-child(odd) {
-		background-color: #f9f9f7!important;
+		background-color: #f9f9f7 !important;
 	}
 
 	.md table tbody tr:nth-child(even) {
-		background-color: #f6f6f6!important;
+		background-color: #f6f6f6 !important;
 	}
 
 	.md table td,
 	.md table th {
-		padding: 4px 8px!important;
-		border-right: 1px solid #ccc!important;
+		padding: 4px 8px !important;
+		border-right: 1px solid #ccc !important;
 	}
 
 /* --  A.1.2. Lists -- */
 .md ul,
 .md ol {
-	margin: 5px 0 5px 20px!important;
-	padding: 0 0 0 10px!important;
-	max-width: 60em!important;
-	background-color: transparent!important;
+	margin: 5px 0 5px 20px !important;
+	padding: 0 0 0 10px !important;
+	max-width: 60em !important;
+	background-color: transparent !important;
 }
 
 .md ul {
-	list-style: disc outside!important;
+	list-style: disc outside !important;
 }
 
 	.md ul li,
 	.md ol li {
-		margin: 1px 10px 0 0!important;
-		padding: 2px 0!important;
-		line-height: 1.3!important;
+		margin: 1px 10px 0 0 !important;
+		padding: 2px 0 !important;
+		line-height: 1.3 !important;
 	}
 
 		.md ul li ul,
 		.md ol li ol {
-			margin: 5px 0 5px 10px!important;
+			margin: 5px 0 5px 10px !important;
 		}
 
 		.md ul li p,
 		.md ol li p,
 		.wiki-page .wiki-page-content .md.wiki ul li p,
 		.wiki-page .wiki-page-content .md.wiki ol li p {
-			margin: 2px!important;
+			margin: 2px !important;
 		}
 
 /* --  A.1.3. Code Style -- */
 .usertext-body pre,
 .md.wiki pre {
-	margin: 10px 0!important;
-	padding: 10px!important;
-	color: #222!important;
+	margin: 10px 0 !important;
+	padding: 10px !important;
+	color: #222 !important;
 }
 
 .usertext-body pre,
 .md.wiki pre,
 p > code,
 li > code {
-	overflow: auto!important;
-	border: 1px solid #ccc!important;
-	background-color: #fbf9f4!important;
-	color: #222!important;
-	font-size: 11px!important;
+	overflow: auto !important;
+	border: 1px solid #ccc !important;
+	background-color: #fbf9f4 !important;
+	color: #222 !important;
+	font-size: 11px !important;
 }
 
 code {
-	line-height: 1.5em!important;
+	line-height: 1.5em !important;
 }
 
 p > code,
 li > code {
-	padding: 0 3px!important;
-	color: #222!important;
-	font-family: Consolas,Monaco,'Courier New',monospace!important;
+	padding: 0 3px !important;
+	color: #222 !important;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
 }
 
 /* --  A.1.4. Spoilers -- */
 a[href='#s'],
 a[href='/s'] {
-	display: inline-block!important;
-	padding: 0 4px!important;
-	background-color: #acd9fc!important;
-	color: #2154a3!important;
-	cursor: default!important;
+	display: inline-block !important;
+	padding: 0 4px !important;
+	background-color: #acd9fc !important;
+	color: #2154a3 !important;
+	cursor: default !important;
 }
 
 	a[href='#s']:after,
 	a[href='/s']:after {
-		content: attr(title)!important;
-		visibility: visible!important;
-		margin-left: 5px!important;
-		padding: 2px 3px!important;
-		background-color: #5ba2fd!important;
-		color: #5ba2fd!important;
-		font-size: small!important;
+		content: attr(title) !important;
+		visibility: visible !important;
+		margin-left: 5px !important;
+		padding: 2px 3px !important;
+		background-color: #5ba2fd !important;
+		color: #5ba2fd !important;
+		font-size: small !important;
 	}
 
 	a[href='#s']:hover:after,
 	a[href='#s']:active:after,
 	a[href='/s']:hover:after,
 	a[href='/s']:active:after {
-		color: #fff!important;
-		font-size: small!important;
-		text-decoration: none!important;
+		color: #fff !important;
+		font-size: small !important;
+		text-decoration: none !important;
 	}
 
 /* --  A.1.5. Common Button Style -- */
 .btn button,
 .btn .button {
-	margin: 0 0 0 20px!important;
+	margin: 0 0 0 20px !important;
 }
 
 .entry .flat-list li a[onclick*='reply'] {
-	display: inline-block!important;
-	margin: -5px 5px 0 0!important;
-	padding: 2px 10px 3px!important;
-	min-width: 30px!important;
-	border: 1px solid #e6e6e6!important;
-	border-radius: 2px!important;
-	background-color: #fafafa!important;
-	color: #4d90fe!important;
-	font-size: 11px!important;
-	text-decoration: none!important;
-	text-shadow: none!important;
-	cursor: pointer!important;
+	display: inline-block !important;
+	margin: -5px 5px 0 0 !important;
+	padding: 2px 10px 3px !important;
+	min-width: 30px !important;
+	border: 1px solid #e6e6e6 !important;
+	border-radius: 2px !important;
+	background-color: #fafafa !important;
+	color: #4d90fe !important;
+	font-size: 11px !important;
+	text-decoration: none !important;
+	text-shadow: none !important;
+	cursor: pointer !important;
 }
 
 .entry:hover ul.flat-list li a[onclick*='reply'],
 .entry.RES-keyNav-activeElement ul.flat-list li a[onclick*='reply'] {
-	border-color: #357ae8!important;
-	background-color: #5ba2fd!important;
-	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
-	color: #fff!important;
+	border-color: #357ae8 !important;
+	background-color: #5ba2fd !important;
+	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
+	color: #fff !important;
 }
 
 .btn,
@@ -280,23 +280,23 @@ button.blueButton,
 .BEFoot button,
 input[type='submit'],
 a[href*='#btn'] {
-	margin: 1px 5px 2px 0!important;
-	padding: 6px 10px!important;
-	min-width: 70px!important;
-	border: 1px solid #357ae8!important;
-	border-radius: 2px!important;
-	background-color: #5ba2fd!important;
-	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
-	color: #fff!important;
-	font-weight: bold!important;
-	font-size: 13px!important;
-	text-decoration: none!important;
-	text-shadow: 1px 1px 2px #2154a3!important;
-	cursor: pointer!important;
+	margin: 1px 5px 2px 0 !important;
+	padding: 6px 10px !important;
+	min-width: 70px !important;
+	border: 1px solid #357ae8 !important;
+	border-radius: 2px !important;
+	background-color: #5ba2fd !important;
+	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
+	color: #fff !important;
+	font-weight: bold !important;
+	font-size: 13px !important;
+	text-decoration: none !important;
+	text-shadow: 1px 1px 2px #2154a3 !important;
+	cursor: pointer !important;
 }
 
 	.btn a {
-		color: #fff!important;
+		color: #fff !important;
 	}
 
 	.btn:hover,
@@ -308,20 +308,20 @@ a[href*='#btn'] {
 	a[href*='#btn']:hover,
 	.res a[href*='#btn']:hover,
 	.entry ul.flat-list li a[onclick*='reply']:hover {
-		border-color: #08c!important;
-		background-color: #357ae8!important;
-		background-image: linear-gradient(#4d90fe,#357ae8)!important;
-		color: #fff!important;
+		border-color: #08c !important;
+		background-color: #357ae8 !important;
+		background-image: linear-gradient(#4d90fe,#357ae8) !important;
+		color: #fff !important;
 	}
 
 	.btn.right,
 	button.cancel,
 	.usertext span[class*='toggle'],
 	a.reddiquette {
-		padding: 2px 5px!important;
-		border-width: 0!important;
-		background: none transparent!important;
-		font-size: small!important;
+		padding: 2px 5px !important;
+		border-width: 0 !important;
+		background: none transparent !important;
+		font-size: small !important;
 	}
 
 		.btn.right a,
@@ -331,13 +331,13 @@ a[href*='#btn'] {
 		#url-field button,
 		.content button.RESBigEditorPop,
 		span.RESSubscriptionButton {
-			border: 0!important;
-			background-color: transparent!important;
-			box-shadow: none!important;
-			color: #888!important;
-			font-weight: bold!important;
-			text-decoration: underline!important;
-			text-shadow: none!important;
+			border: 0 !important;
+			background-color: transparent !important;
+			box-shadow: none !important;
+			color: #888 !important;
+			font-weight: bold !important;
+			text-decoration: underline !important;
+			text-shadow: none !important;
 		}
 
 			.btn.right a:hover,
@@ -347,30 +347,30 @@ a[href*='#btn'] {
 			a.reddiquette:hover,
 			.content button.RESBigEditorPop:hover,
 			span.RESSubscriptionButton:hover {
-				background-color: transparent!important;
-				color: #5ba2fd!important;
+				background-color: transparent !important;
+				color: #5ba2fd !important;
 			}
 
 a[href*='#btn'] {
-	display: block!important;
-	margin: 10px 0!important;
-	width: auto!important;
-	color: #fff!important;
-	font-size: 12px!important;
-	line-height: 29px!important;
-	letter-spacing: 0!important;
-	text-align: center!important;
+	display: block !important;
+	margin: 10px 0 !important;
+	width: auto !important;
+	color: #fff !important;
+	font-size: 12px !important;
+	line-height: 29px !important;
+	letter-spacing: 0 !important;
+	text-align: center !important;
 }
 
 .entry .flat-list {
-	display: inline-block!important;
-	font-size: 11px!important;
+	display: inline-block !important;
+	font-size: 11px !important;
 }
 
 	.entry .flat-list li a,
 	.entry .flat-list li a:visited,
 	.entry .flat-list .redditSingleClick {
-		color: #eee!important;
+		color: #eee !important;
 	}
 
 .entry:hover > .flat-list li a,
@@ -380,90 +380,90 @@ a[href*='#btn'] {
 .entry.RES-keyNav-activeElement .flat-list li a,
 .entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
 .noncollapsed:hover > .flat-list li a {
-	color: #777!important;
+	color: #777 !important;
 }
 
 .entry .flat-list li a.comments {
-	color: #4d90fe!important;
+	color: #4d90fe !important;
 }
 
 /* ~~  A.2. Header ~~~~~ */
 #header {
-	margin: 0 0 30px!important;
-	height: auto!important;
-	background-color: #fff!important;
-	box-shadow: 0 -3px 9px 5px #ddd!important;
+	margin: 0 0 30px !important;
+	height: auto !important;
+	background-color: #fff !important;
+	box-shadow: 0 -3px 9px 5px #ddd !important;
 }
 
 	#header:after {
-		content: " "!important;
-		position: absolute!important;
-		bottom: -1px!important;
-		display: block!important;
-		width: 100%!important;
-		height: 30px!important;
-		border: 1px solid!important;
-		border-width: 1px 0!important;
-		z-index: -1!important;
+		content: " " !important;
+		position: absolute !important;
+		bottom: -1px !important;
+		display: block !important;
+		width: 100% !important;
+		height: 30px !important;
+		border: 1px solid !important;
+		border-width: 1px 0 !important;
+		z-index: -1 !important;
 	}
 
 	#header:after,
 	.footer-parent:after {
-		border-color: #8ccbfc!important;
+		border-color: #8ccbfc !important;
 	}
 
 	#header:after,
 	#header-bottom-left:before,
 	.footer-parent:after {
-		background-color: #acd9fc!important;
-		background-image: linear-gradient(#acd9fc,#8ccbfc)!important;
+		background-color: #acd9fc !important;
+		background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
 	}
 
 /* --  A.2.1. Top Sr-Bar -- */
 #sr-header-area {
-	padding: 0 0 0 5px!important;
-	height: 20px!important;
-	border-color: #fff!important;
-	background-color: #fff!important;
-	color: #acd9fc!important;
-	color: #555!important;
-	font-weight: 500!important;
-	font-size: 11px!important;
-	line-height: 20px!important;
-	opacity: 0.4!important;
-	-ms-filter: Alpha(Opacity=40)!important;
-	filter: Alpha(Opacity=40)!important;
+	padding: 0 0 0 5px !important;
+	height: 20px !important;
+	border-color: #fff !important;
+	background-color: #fff !important;
+	color: #acd9fc !important;
+	color: #555 !important;
+	font-weight: 500 !important;
+	font-size: 11px !important;
+	line-height: 20px !important;
+	opacity: 0.4 !important;
+	-ms-filter: Alpha(Opacity=40) !important;
+	filter: Alpha(Opacity=40) !important;
 }
 
 	#sr-header-area .separator {
-		display: inline-block!important;
-		margin: 0!important;
-		width: 8px!important;
-		text-align: center!important;
+		display: inline-block !important;
+		margin: 0 !important;
+		width: 8px !important;
+		text-align: center !important;
 	}
 
 	#sr-header-area > .separator {
-		margin: 0 7px 0 2px!important;
+		margin: 0 7px 0 2px !important;
 	}
 
 	#sr-header-area:hover {
-		opacity: 1!important;
-		-ms-filter: Alpha(Opacity=100)!important;
-		filter: Alpha(Opacity=100)!important;
+		opacity: 1 !important;
+		-ms-filter: Alpha(Opacity=100) !important;
+		filter: Alpha(Opacity=100) !important;
 	}
 
 	#sr-header-area a,
 	#sr-header-area span {
-		color: #555!important;
+		color: #555 !important;
 	}
 
 		#sr-header-area a:hover {
-			color: #357ae8!important;
+			color: #357ae8 !important;
 		}
 
 div#RESShortcutsEditContainer {
-	background: none #fff!important;
-	font-family: Consolas,Monaco,'Courier New',monospace!important;
+	background: none #fff !important;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
 }
 
 #header #srLeftContainer,
@@ -475,243 +475,243 @@ div#RESShortcutsEditContainer {
 #header #RESShortcutsAdd,
 #header #RESShortcutsTrash,
 #srDropdown {
-	background: none transparent!important;
+	background: none transparent !important;
 }
 
 #sr-more-link {
-	background-color: #f9f9f7!important;
-	color: #1d1212!important;
+	background-color: #f9f9f7 !important;
+	color: #1d1212 !important;
 }
 
 /* --  A.2.2. Dropdown Subreddits Bar -- */
 .drop-choices,
 table#srList,
 div#RESSubredditGroupDropdown {
-	padding: 0!important;
-	border: 1px solid #acd9fc!important;
-	background-color: #eaf4fc!important;
-	color: #2154a3!important;
-	font-size: 12px!important;
+	padding: 0 !important;
+	border: 1px solid #acd9fc !important;
+	background-color: #eaf4fc !important;
+	color: #2154a3 !important;
+	font-size: 12px !important;
 }
 
 	div#RESSubredditGroupDropdown li {
-		padding: 5px 0!important;
+		padding: 5px 0 !important;
 	}
 
 		#sr-header-area a.choice,
 		table#srList a,
 		div#RESSubredditGroupDropdown li a {
-			padding: 2px 10px!important;
-			color: #2154a3!important;
+			padding: 2px 10px !important;
+			color: #2154a3 !important;
 		}
 
 			#sr-header-area a.choice:hover,
 			table#srList a:hover,
 			table#srList tr:hover,
 			div#RESSubredditGroupDropdown li:hover {
-				background-color: #acd9fc!important;
+				background-color: #acd9fc !important;
 			}
 
 	.srdrop .choice.bottom-option,
 	table#srList tr {
-		border-color: #acd9fc!important;
+		border-color: #acd9fc !important;
 	}
 
 /* --  A.2.3. User Controls -- */
 #header-bottom-right {
-	top: auto!important;
-	bottom: -1px!important;
-	padding: 8px 10px 4px!important;
-	height: 20px!important;
-	border-radius: 0!important;
-	background-color: transparent!important;
+	top: auto !important;
+	bottom: -1px !important;
+	padding: 8px 10px 4px !important;
+	height: 20px !important;
+	border-radius: 0 !important;
+	background-color: transparent !important;
 }
 
 	#header-bottom-right a,
 	#header-bottom-right span {
-		color: #2154a3!important;
+		color: #2154a3 !important;
 	}
 
 	#header-bottom-right:hover {
-		background-color: #eaf4fc!important;
+		background-color: #eaf4fc !important;
 	}
 
 		#header-bottom-right:hover a,
 		#header-bottom-right:hover span {
-			text-shadow: 0 -1px 0 #eee,0 1px 0 #fff!important;
+			text-shadow: 0 -1px 0 #eee,0 1px 0 #fff !important;
 		}
 
 	#header-bottom-right .user,
 	#header-bottom-right .logout {
-		font-weight: bold!important;
+		font-weight: bold !important;
 	}
 
 #RESSettingsButton {
-	vertical-align: middle!important;
+	vertical-align: middle !important;
 }
 
 /* --  A.2.4. Banner Image -- */
 #header-bottom-left {
-	position: relative!important;
-	bottom: 0!important;
-	display: inline-block!important;
-	margin: 0 10px 0 0!important;
-	background-color: transparent!important;
+	position: relative !important;
+	bottom: 0 !important;
+	display: inline-block !important;
+	margin: 0 10px 0 0 !important;
+	background-color: transparent !important;
 }
 
 	#header-bottom-left:before {
-		content: " "!important;
-		position: absolute!important;
-		top: 25px!important;
-		left: -10px!important;
-		display: block!important;
-		padding: 0 10px!important;
-		width: 100%!important;
-		height: 30px!important;
-		z-index: -1!important;
+		content: " " !important;
+		position: absolute !important;
+		top: 25px !important;
+		left: -10px !important;
+		display: block !important;
+		padding: 0 10px !important;
+		width: 100% !important;
+		height: 30px !important;
+		z-index: -1 !important;
 	}
 
 	#header-bottom-left:after {
-		content: ''!important;
-		position: relative!important;
-		display: inline-block!important;
-		margin: 15px 0 0 310px!important;
-		width: 1px!important;
-		height: 30px!important;
+		content: '' !important;
+		position: relative !important;
+		display: inline-block !important;
+		margin: 15px 0 0 310px !important;
+		width: 1px !important;
+		height: 30px !important;
 	}
 
 /* --  A.2.5. The Reddit Name, applies to all pages -- */
 .pagename {
-	position: static!important;
-	display: inline-block!important;
-	margin: 0!important;
-	color: #2154a3!important;
-	font-weight: bold!important;
-	font-variant: normal!important;
-	font-size: 18px!important;
-	line-height: 30px!important;
-	vertical-align: bottom!important;
+	position: static !important;
+	display: inline-block !important;
+	margin: 0 !important;
+	color: #2154a3 !important;
+	font-weight: bold !important;
+	font-variant: normal !important;
+	font-size: 18px !important;
+	line-height: 30px !important;
+	vertical-align: bottom !important;
 }
 
 	.pagename a,
 	.pagename.selected {
-		display: inline-block!important;
-		margin: 0 0 -10px 0!important;
-		padding: 10px 20px!important;
-		border-color: #357ae8!important;
-		border-radius: 2px!important;
-		background-color: #5ba2fd!important;
-		background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
-		box-shadow: -2px 4px 4px -2px #bbb!important;
-		color: #fff!important;
-		font-size: 18px!important;
-		line-height: 30px!important;
-		text-shadow: 0 1px 0 #333!important;
+		display: inline-block !important;
+		margin: 0 0 -10px 0 !important;
+		padding: 10px 20px !important;
+		border-color: #357ae8 !important;
+		border-radius: 2px !important;
+		background-color: #5ba2fd !important;
+		background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
+		box-shadow: -2px 4px 4px -2px #bbb !important;
+		color: #fff !important;
+		font-size: 18px !important;
+		line-height: 30px !important;
+		text-shadow: 0 1px 0 #333 !important;
 	}
 
 		.pagename a:hover {
-			border-color: #08c!important;
-			background: none #357ae8!important;
-			background-image: linear-gradient(#4d90fe,#357ae8)!important;
-			text-decoration: none!important;
+			border-color: #08c !important;
+			background: none #357ae8 !important;
+			background-image: linear-gradient(#4d90fe,#357ae8) !important;
+			text-decoration: none !important;
 		}
 
 /* --  A.2.6. Reddit Image and Text -- */
 #header-img.default-header {
-	margin: 15px 15px 0 25px!important;
-	min-width: 75px!important;
-	width: auto!important;
-	background-position: -10000px -2058px!important;
-	color: #2154a3!important;
-	font-weight: bold!important;
-	font-size: 12px!important;
-	line-height: 50px!important;
-	vertical-align: bottom!important;
-	text-align: right!important;
-	text-indent: 0!important;
+	margin: 15px 15px 0 25px !important;
+	min-width: 75px !important;
+	width: auto !important;
+	background-position: -10000px -2058px !important;
+	color: #2154a3 !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
+	line-height: 50px !important;
+	vertical-align: bottom !important;
+	text-align: right !important;
+	text-indent: 0 !important;
 }
 
 .with-listing-chooser #header-img.default-header {
-	min-width: 110px!important;
+	min-width: 110px !important;
 }
 
 #header-img-a {
-	display: inline-block!important;
-	margin: 15px -3px -10px 35px!important;
-	padding: 0!important;
-	height: 50px!important;
-	border-top-left-radius: 2px!important;
-	border-bottom-left-radius: 2px!important;
-	background-color: #acd9fc!important;
-	box-shadow: 2px 4px 4px -2px #bbb!important;
-	line-height: 50px!important;
-	vertical-align: bottom!important;
+	display: inline-block !important;
+	margin: 15px -3px -10px 35px !important;
+	padding: 0 !important;
+	height: 50px !important;
+	border-top-left-radius: 2px !important;
+	border-bottom-left-radius: 2px !important;
+	background-color: #acd9fc !important;
+	box-shadow: 2px 4px 4px -2px #bbb !important;
+	line-height: 50px !important;
+	vertical-align: bottom !important;
 }
 
 	#header-img-a img {
-		margin: -1px 0 0!important;
-		padding: 0!important;
-		max-height: 50px!important;
-		width: auto!important;
-		height: auto!important;
-		border-top-left-radius: 2px!important;
-		border-bottom-left-radius: 2px!important;
-		vertical-align: middle!important;
+		margin: -1px 0 0 !important;
+		padding: 0 !important;
+		max-height: 50px !important;
+		width: auto !important;
+		height: auto !important;
+		border-top-left-radius: 2px !important;
+		border-bottom-left-radius: 2px !important;
+		vertical-align: middle !important;
 	}
 
 	#header-img-a + .pagename a,
 	#header-img-a + .pagename.selected {
-		border-top-left-radius: 0!important;
-		border-bottom-left-radius: 0!important;
+		border-top-left-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
 	}
 
 /* --  A.2.7. Header Nav -- */
 ul.tabmenu {
-	margin: 15px 10px -17px 35px!important;
-	height: 50px!important;
-	border: 0 none!important;
+	margin: 15px 10px -17px 35px !important;
+	height: 50px !important;
+	border: 0 none !important;
 }
 
 	ul.tabmenu li {
-		margin: auto!important;
+		margin: auto !important;
 	}
 
 		ul.tabmenu li a,
 		ul.tabmenu li a:visited,
 		ul.tabmenu li.selected a {
-			display: inline-block!important;
-			padding: 8px!important;
-			background: none transparent!important;
-			color: #2154a3!important;
+			display: inline-block !important;
+			padding: 8px !important;
+			background: none transparent !important;
+			color: #2154a3 !important;
 		}
 
 			ul.tabmenu li a:hover,
 			ul.tabmenu li.selected a:hover {
-				background-color: #eaf4fc!important;
-				color: #1d1212!important;
-				text-shadow: none!important;
+				background-color: #eaf4fc !important;
+				color: #1d1212 !important;
+				text-shadow: none !important;
 			}
 
 			ul.tabmenu li.selected a,
 			ul.tabmenu li.selected a:hover,
 			ul.tabmenu li.selected a:visited {
-				padding: 9px 15px!important;
-				border: 1px solid #8ccbfc!important;
-				border-radius: 2px!important;
-				background-color: #f9f9f7!important;
-				background-image: none!important;
-				box-shadow: 0 5px 4px -4px #8ccbfc!important;
-				color: #ff910b!important;
+				padding: 9px 15px !important;
+				border: 1px solid #8ccbfc !important;
+				border-radius: 2px !important;
+				background-color: #f9f9f7 !important;
+				background-image: none !important;
+				box-shadow: 0 5px 4px -4px #8ccbfc !important;
+				color: #ff910b !important;
 			}
 
 /* ~~  A.3. Content box and common parts ~~~~~ */
 div.content {
-	overflow: hidden!important;
-	margin: 0 20px 10px 25px!important;
-	padding: 10px 20px!important;
-	border: 1px solid #fbfbfb!important;
-	background-color: #fefefd!important;
-	box-shadow: 0 1px 3px 1px #ccc!important;
+	overflow: hidden !important;
+	margin: 0 20px 10px 25px !important;
+	padding: 10px 20px !important;
+	border: 1px solid #fbfbfb !important;
+	background-color: #fefefd !important;
+	box-shadow: 0 1px 3px 1px #ccc !important;
 }
 
 body.listing-page > div.content,
@@ -719,59 +719,59 @@ body.single-page > div.content,
 body.search-page > div.content,
 body.messages-page > div.content,
 body.multi-page > div.content {
-	padding: 0!important;
-	border: 0 none!important;
-	background-color: transparent!important;
-	box-shadow: none!important;
+	padding: 0 !important;
+	border: 0 none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 	body.single-page > div.content > .linklisting .link {
-		padding: 5px 0 5px 10px!important;
-		background: none #fff!important;
+		padding: 5px 0 5px 10px !important;
+		background: none #fff !important;
 	}
 
 		body.single-page > div.content > .linklisting .link .rank {
-			display: none!important;
+			display: none !important;
 		}
 
 /* --  A.3.1. Common areas -- */
 .panestack-title {
-	overflow: hidden!important;
-	margin: 10px 5px 0!important;
-	padding: 5px 0!important;
-	padding-bottom: 3px!important;
-	border-bottom-color: #ccc!important;
-	font-size: larger!important;
+	overflow: hidden !important;
+	margin: 10px 5px 0 !important;
+	padding: 5px 0 !important;
+	padding-bottom: 3px !important;
+	border-bottom-color: #ccc !important;
+	font-size: larger !important;
 }
 
 	.panestack-title .title {
-		color: #888!important;
+		color: #888 !important;
 	}
 
 .commentarea .menuarea {
-	margin: 0 0 10px!important;
-	padding: 5px!important;
-	border-bottom-color: #d2d2d2!important;
-	background-color: transparent!important;
-	font-size: 12px!important;
+	margin: 0 0 10px !important;
+	padding: 5px !important;
+	border-bottom-color: #d2d2d2 !important;
+	background-color: transparent !important;
+	font-size: 12px !important;
 }
 
 .related-page .panestack-title,
 .search-page .menuarea,
 .messages-page .menuarea,
 .profile-page .menuarea {
-	margin: 20px 5px -6px!important;
-	font-size: 14px!important;
+	margin: 20px 5px -6px !important;
+	font-size: 14px !important;
 }
 
 p.tagline {
-	margin: 2px!important;
-	font-size: 115%!important;
+	margin: 2px !important;
+	font-size: 115% !important;
 }
 
 	p.tagline span span {
-		margin-left: 2px!important;
-		margin-right: 2px!important;
+		margin-left: 2px !important;
+		margin-right: 2px !important;
 	}
 
 .tagline a {
@@ -781,61 +781,61 @@ p.tagline {
 .res .thing .tagline .author.submitter,
 .res .thing .tagline .author.moderator,
 .res .thing .tagline .author.friend {
-	padding: 2px 5px!important;
-	font-size: 11px!important;
+	padding: 2px 5px !important;
+	font-size: 11px !important;
 }
 
 #noresults {
-	margin-right: 310px!important;
-	padding: 5px 10px!important;
-	font-weight: bold!important;
+	margin-right: 310px !important;
+	padding: 5px 10px !important;
+	font-weight: bold !important;
 }
 
 .nav-buttons {
-	margin: 10px 0!important;
+	margin: 10px 0 !important;
 }
 
 /* --  A.3.2. Comment submission Usertext-edit textarea -- */
 div.usertext-edit textarea {
-	padding: 5px!important;
+	padding: 5px !important;
 }
 
 /* --  A.3.3. Link submission form -- */
 .formtabs-content {
-	padding: 0!important;
-	border-color: #5ba2fd!important;
+	padding: 0 !important;
+	border-color: #5ba2fd !important;
 }
 
 	.formtabs-content .infobar {
-		padding: 10px!important;
+		padding: 10px !important;
 	}
 
 ul.tabmenu.formtab {
-	margin: 15px 0 0!important;
-	height: auto!important;
+	margin: 15px 0 0 !important;
+	height: auto !important;
 }
 
 	ul.tabmenu.formtab li {
 	}
 
 		ul.tabmenu.formtab li a {
-			margin: 0 1px 1px!important;
-			padding: 5px 15px!important;
-			border-width: 0!important;
-			background-color: #acd9fc!important;
+			margin: 0 1px 1px !important;
+			padding: 5px 15px !important;
+			border-width: 0 !important;
+			background-color: #acd9fc !important;
 		}
 
 		ul.tabmenu.formtab li.selected a,
 		ul.tabmenu.formtab li.selected a:hover {
-			margin: 0!important;
-			padding: 5px 20px!important;
-			border: 0!important;
-			border-bottom-right-radius: 0!important;
-			border-bottom-left-radius: 0!important;
-			background-color: #5ba2fd!important;
-			box-shadow: none!important;
-			color: #eaf4fc!important;
-			font-weight: bold!important;
+			margin: 0 !important;
+			padding: 5px 20px !important;
+			border: 0 !important;
+			border-bottom-right-radius: 0 !important;
+			border-bottom-left-radius: 0 !important;
+			background-color: #5ba2fd !important;
+			box-shadow: none !important;
+			color: #eaf4fc !important;
+			font-weight: bold !important;
 		}
 
 /* --  A.3.4. Expando Buttons -- */
@@ -843,71 +843,71 @@ ul.tabmenu.formtab {
 .thing div.expando-button,
 .thing div.expando-button.collapsed,
 .thing .expando-button.image {
-	margin: 0 25px 0 0!important;
-	padding: 0px!important;
-	width: 0!important;
-	height: 15px!important;
-	background: none transparent!important;
-	cursor: pointer!important;
+	margin: 0 25px 0 0 !important;
+	padding: 0px !important;
+	width: 0 !important;
+	height: 15px !important;
+	background: none transparent !important;
+	cursor: pointer !important;
 }
 
 	.expando-button:before {
-		position: absolute!important;
-		display: block!important;
-		margin: 0 5px 0 0!important;
-		padding: 1px 5px!important;
+		position: absolute !important;
+		display: block !important;
+		margin: 0 5px 0 0 !important;
+		padding: 1px 5px !important;
 		width: 8px !important;
 		height: 14px !important;
-		border: 1px solid #ddb!important;
-		border-radius: 3px!important;
-		background-color: #efefe8!important;
-		color: #997!important;
-		font-size: 11px!important;
-		vertical-align: top!important;
-		text-align: center!important;
-		text-shadow: 0 0 3px #f1f1f1!important;
-		cursor: pointer!important;
+		border: 1px solid #ddb !important;
+		border-radius: 3px !important;
+		background-color: #efefe8 !important;
+		color: #997 !important;
+		font-size: 11px !important;
+		vertical-align: top !important;
+		text-align: center !important;
+		text-shadow: 0 0 3px #f1f1f1 !important;
+		cursor: pointer !important;
 	}
 
 	.expando-button.selftext.collapsed:before {
-		content: '✚'!important;
+		content: '✚' !important;
 	}
 
 	.expando-button.selftext.expanded:before {
-		content: '▪▪'!important;
+		content: '▪▪' !important;
 	}
 
 	.expando-button.video.collapsed:before {
-		content: '▶'!important;
+		content: '▶' !important;
 	}
 
 	.expando-button.video.expanded:before {
-		content: '●'!important;
+		content: '●' !important;
 	}
 
 	.expando-button.image.collapsedExpando:before {
-		content: '❏'!important;
+		content: '❏' !important;
 	}
 
 	.expando-button.image.expanded:before {
-		content: '❐'!important;
+		content: '❐' !important;
 	}
 
 	.expando-button:hover:before {
-		border-color: #555!important;
-		background-color: #555!important;
-		box-shadow: 0 0 4px -2px #333!important;
-		color: #eee!important;
+		border-color: #555 !important;
+		background-color: #555 !important;
+		box-shadow: 0 0 4px -2px #333 !important;
+		color: #eee !important;
 	}
 
 	.expando-button.expanded:before {
-		border-radius: 15px!important;
+		border-radius: 15px !important;
 	}
 
 .res .md .expando-button.image,
 .res .parent .expando-button.image {
-	margin: 0 5px!important;
-	width: 20px!important;
+	margin: 0 5px !important;
+	width: 20px !important;
 }
 
 /* ~~  A.4. Links and Posts ~~~~~ */
@@ -915,38 +915,38 @@ ul.tabmenu.formtab {
 .organic-listing,
 .thing.link.stickied,
 .thing.link.promoted {
-	overflow: hidden!important;
-	border-color: #d2d2d2!important;
-	background: none #edf5ff!important;
-	box-shadow: 0 1px 3px 0 #ccb!important;
+	overflow: hidden !important;
+	border-color: #d2d2d2 !important;
+	background: none #edf5ff !important;
+	box-shadow: 0 1px 3px 0 #ccb !important;
 }
 
 .thing.link.stickied {
-	background: none #fffeed!important;
+	background: none #fffeed !important;
 }
 
 	.thing.link.stickied a.title {
-		color: #50722b!important;
+		color: #50722b !important;
 	}
 
 .listing-page .link:first-child.stickied {
-	margin: 0 0 10px!important;
-	border-width: 1px 0 1px 1px!important;
+	margin: 0 0 10px !important;
+	border-width: 1px 0 1px 1px !important;
 }
 
 /* --  A.4.2. Rest of Links (Posts) -- */
 .linklisting .thing {
-	overflow: hidden!important;
-	margin: 0!important;
-	padding: 2px 0!important;
-	border: 1px solid #fff!important;
-	border-width: 1px 0!important;
-	background-color: #fefefd!important;
-	box-shadow: 0 1px 3px 0 #ccb!important;
+	overflow: hidden !important;
+	margin: 0 !important;
+	padding: 2px 0 !important;
+	border: 1px solid #fff !important;
+	border-width: 1px 0 !important;
+	background-color: #fefefd !important;
+	box-shadow: 0 1px 3px 0 #ccb !important;
 }
 
 .linklisting .compressed.thing {
-	padding: 1px 0!important;
+	padding: 1px 0 !important;
 }
 
 .linklisting .odd {
@@ -958,114 +958,114 @@ ul.tabmenu.formtab {
 }
 
 .link.last-clicked {
-	background-color: #f5f5f5!important;
-	background-image: linear-gradient(#f8f8f8,#f5f5f5)!important;
+	background-color: #f5f5f5 !important;
+	background-image: linear-gradient(#f8f8f8,#f5f5f5) !important;
 }
 
 .linklisting .link.self .domain {
-	display: none!important; /*hides self posts*/
+	display: none !important; /*hides self posts*/
 }
 
 .link .expando {
-	margin: 0!important;
+	margin: 0 !important;
 }
 
 .linklisting div.thing.comment,
 .linklisting div.thing.message {
-	margin: 0 0 5px!important;
-	padding: 5px 0 5px 10px!important;
-	font-size: 11px!important;
+	margin: 0 0 5px !important;
+	padding: 5px 0 5px 10px !important;
+	font-size: 11px !important;
 }
 
 /* --  A.4.3. Links sub-parts -- */
 .sitetable {
-	padding: 5px!important;
+	padding: 5px !important;
 }
 
 	.sitetable .sitetable {
-		padding: 0!important;
+		padding: 0 !important;
 	}
 
 .link .rank {
-	margin: 14px 0 0 5px!important;
-	padding: 10px 5px 0!important;
-	background-color: transparent!important;
-	color: #ccb!important;
-	font-size: small!important;
-	text-align: right!important;
+	margin: 14px 0 0 5px !important;
+	padding: 10px 5px 0 !important;
+	background-color: transparent !important;
+	color: #ccb !important;
+	font-size: small !important;
+	text-align: right !important;
 }
 
 .link.compressed .rank {
-	margin-top: 5px!important;
+	margin-top: 5px !important;
 }
 
 .link .midcol {
-	margin: 5px 10px!important;
+	margin: 5px 10px !important;
 }
 
 .link.compressed .midcol {
-	margin: 5px!important;
+	margin: 5px !important;
 }
 
 .thumbnail {
-	margin: 5px 10px 5px 0!important;
+	margin: 5px 10px 5px 0 !important;
 }
 
 	.thumbnail.self,
 	.thumbnail.default {
-		display: none!important;
+		display: none !important;
 	}
 
 .listing-page .thumbnail {
-	max-height: 55px!important;
+	max-height: 55px !important;
 }
 
 .entry {
-	margin: 0!important;
-	padding: 3px 5px!important;
+	margin: 0 !important;
+	padding: 3px 5px !important;
 }
 
 .compressed .entry {
-	padding: 2px 3px 2px 2px!important;
+	padding: 2px 3px 2px 2px !important;
 }
 
 .link .title {
-	margin: 0 .4em 2px 0!important;
-	font-size: 125%!important;
-	line-height: 1.3!important;
-	word-spacing: -1px!important;
+	margin: 0 .4em 2px 0 !important;
+	font-size: 125% !important;
+	line-height: 1.3 !important;
+	word-spacing: -1px !important;
 }
 
 .link.compressed .title {
-	margin: -1px .4em 1px 0!important;
-	font-size: 123%!important;
+	margin: -1px .4em 1px 0 !important;
+	font-size: 123% !important;
 }
 
 .link .usertext .md {
-	padding-right: 15px!important;
-	border: 0!important;
-	background: transparent!important;
+	padding-right: 15px !important;
+	border: 0 !important;
+	background: transparent !important;
 }
 
 /* ~~  A.5. Custom Upvote/Downvote Arrows ~~~~~ */
 .arrow:not(.prev):not(.next) {
-	background: none transparent!important;
-	color: #aaa!important;
-	font-weight: normal!important;
-	font-size: 120%!important;
-	font-family: Consolas,Monaco,'Courier New',monospace!important;
-	line-height: 12px!important;
-	text-align: center!important;
+	background: none transparent !important;
+	color: #aaa !important;
+	font-weight: normal !important;
+	font-size: 120% !important;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
+	line-height: 12px !important;
+	text-align: center !important;
 }
 
 .arrow.up:after,
 .arrow.upmod:after {
-	content: '▲'!important;
+	content: '▲' !important;
 }
 
 .arrow.down:after,
 .arrow.downmod:after {
-	content: '▼'!important;
+	content: '▼' !important;
 }
 
 .arrow.upmod,
@@ -1074,7 +1074,7 @@ ul.tabmenu.formtab {
 
 	.arrow.upmod:after,
 	.arrow.up:hover:after {
-		color: #ff4900!important;
+		color: #ff4900 !important;
 	}
 
 .arrow.downmod,
@@ -1083,168 +1083,168 @@ ul.tabmenu.formtab {
 
 	.arrow.downmod:after,
 	.arrow.down:hover:after {
-		color: #9aa8f2!important;
+		color: #9aa8f2 !important;
 	}
 
 .compressed .arrow:not(.prev):not(.next) {
-	margin: 1px 0!important;
+	margin: 1px 0 !important;
 }
 
 .link .score {
-	color: #555!important;
+	color: #555 !important;
 }
 
 	.link .score.likes {
-		color: #ff4900!important;
+		color: #ff4900 !important;
 	}
 
 	.link .score.dislikes {
-		color: #9aa8f2!important;
+		color: #9aa8f2 !important;
 	}
 
 /* ~~  A.6. Comments ~~~~~ */
 /* --  A.6.1. Default Comments -- */
 .commentarea {
-	margin-top: 15px!important;
+	margin-top: 15px !important;
 }
 
 	.commentarea p.tagline,
 	.comment .score {
-		margin-left: -1px!important;
-		font-size: 11px!important;
+		margin-left: -1px !important;
+		font-size: 11px !important;
 	}
 
 .nestedlisting > div.comment {
-	overflow: hidden!important;
-	margin: 0 0 3px!important;
-	border: 1px solid #e0e0e0!important;
-	background-color: #fbfbfb!important;
+	overflow: hidden !important;
+	margin: 0 0 3px !important;
+	border: 1px solid #e0e0e0 !important;
+	background-color: #fbfbfb !important;
 }
 
 .comment {
-	margin-left: 0!important;
+	margin-left: 0 !important;
 }
 
 	.comment .collapsed {
-		padding: 2px 0 0 25px!important;
-		font-style: normal!important;
-		font-size: 11px!important;
+		padding: 2px 0 0 25px !important;
+		font-style: normal !important;
+		font-size: 11px !important;
 		/*for the collapsed line of text, and expando collapsed state*/
 	}
 
 	.comment a.expand {
-		padding: 1px 2px 2px!important;
-		color: #888!important;
+		padding: 1px 2px 2px !important;
+		color: #888 !important;
 	}
 
 		.comment a.expand:hover {
-			background-color: #bbb!important;
+			background-color: #bbb !important;
 		}
 
 	.comment .midcol {
-		margin: 5px!important;
-		width: 15px!important;
-		font-size: 130%!important;
+		margin: 5px !important;
+		width: 15px !important;
+		font-size: 130% !important;
 	}
 
 	.comment .child,
 	.comment .showreplies {
-		margin-left: 30px!important;
-		border-color: #e6e6e6!important;
+		margin-left: 30px !important;
+		border-color: #e6e6e6 !important;
 	}
 
 .morechildren a.button,
 .morerecursion .deepthread,
 .nextprev a {
-	display: inline-block!important;
-	margin: 0!important;
-	padding: 0!important;
-	border-width: 0!important;
-	background: none transparent!important;
-	color: #4d90fe!important;
-	font-weight: bold!important;
-	text-shadow: 1px 1px 2px #eee!important;
+	display: inline-block !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border-width: 0 !important;
+	background: none transparent !important;
+	color: #4d90fe !important;
+	font-weight: bold !important;
+	text-shadow: 1px 1px 2px #eee !important;
 }
 
 .new-comment .usertext-body {
-	margin: 0 0 5px!important;
-	padding: 0 10px!important;
+	margin: 0 0 5px !important;
+	padding: 0 10px !important;
 }
 
 /* --  A.6.2. Comments with RES comment box enabled -- */
 .res-commentBoxes div.collapsed {
-	font-size: 11px!important;
+	font-size: 11px !important;
 }
 
 .res-commentBoxes div.noncollapsed {
-	padding: 0 5px!important;
+	padding: 0 5px !important;
 }
 
 .res-commentBoxes .comment .midcol {
-	margin: 5px -4px 5px 10px!important;
+	margin: 5px -4px 5px 10px !important;
 }
 
 .res-commentBoxes .child,
 .res-commentBoxes .showreplies {
-	margin: 2px 0 -7px 5px!important;
-	padding: 0 0 1px!important;
-	border: 0!important;
-	background: none transparent!important;
+	margin: 2px 0 -7px 5px !important;
+	padding: 0 0 1px !important;
+	border: 0 !important;
+	background: none transparent !important;
 }
 
 .res-commentBoxes .morechildren,
 .res-commentBoxes .morerecursion {
-	margin: 0 0 -5px -20px!important;
+	margin: 0 0 -5px -20px !important;
 }
 
 	.res-commentBoxes .morechildren a.button,
 	.res-commentBoxes .morerecursion .deepthread,
 	.nextprev a {
-		display: inline-block!important;
-		margin: 0!important;
-		padding: 5px 15px!important;
-		border: 1px solid #e0e0e0!important;
-		background-color: #fbfbfb!important;
-		background-image: none!important;
-		color: #777!important;
-		text-shadow: 1px 1px 2px #eee!important;
+		display: inline-block !important;
+		margin: 0 !important;
+		padding: 5px 15px !important;
+		border: 1px solid #e0e0e0 !important;
+		background-color: #fbfbfb !important;
+		background-image: none !important;
+		color: #777 !important;
+		text-shadow: 1px 1px 2px #eee !important;
 	}
 
 	.res-commentBoxes .morerecursion .deepthread {
-		padding: 5px 15px!important;
+		padding: 5px 15px !important;
 	}
 
 .res-commentBoxes .nestedlisting > .morechildren {
-	margin-left: -10px!important;
+	margin-left: -10px !important;
 }
 
 .res-commentBoxes.res-commentBoxes-rounded div.comment {
-	border-radius: 0px!important;
+	border-radius: 0px !important;
 }
 
 .res-commentBoxes .commentarea .nestedlisting {
-	padding: 0!important;
-	border: 0!important;
-	background-color: transparent!important;
-	box-shadow: none!important;
+	padding: 0 !important;
+	border: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 .res-commentBoxes .nestedlisting > div.comment {
-	margin: 0 0 5px!important;
-	padding: 5px 0px!important;
-	border: 1px solid #fafafa!important;
-	border-color: #e6e6e6 #e0e0e0 #e0e0e0 #e0e0e0!important;
-	background-color: #fbfbfb!important;
-	box-shadow: 1px 1px 3px -1px #ccc!important;
+	margin: 0 0 5px !important;
+	padding: 5px 0px !important;
+	border: 1px solid #fafafa !important;
+	border-color: #e6e6e6 #e0e0e0 #e0e0e0 #e0e0e0 !important;
+	background-color: #fbfbfb !important;
+	box-shadow: 1px 1px 3px -1px #ccc !important;
 }
 
 .res-commentBoxes div.comment {
-	margin: -1px 0 0 25px!important;
-	padding: 5px 0px!important;
-	border: 1px solid #eee!important;
-	border-color: #e0e0e0 #e6e6e6!important;
-	border-right: 0!important;
-	border-radius: 0!important;
+	margin: -1px 0 0 25px !important;
+	padding: 5px 0px !important;
+	border: 1px solid #eee !important;
+	border-color: #e0e0e0 #e6e6e6 !important;
+	border-right: 0 !important;
+	border-radius: 0 !important;
 }
 
 .res-commentBoxes .comment .comment,
@@ -1252,316 +1252,316 @@ ul.tabmenu.formtab {
 .res-commentBoxes .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-	background-color: #f9f9f6!important;
+	background-color: #f9f9f6 !important;
 }
 
 	.res-commentBoxes .comment .comment .comment,
 	.res-commentBoxes .comment .comment .comment .comment .comment,
 	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment,
 	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-		background-color: #fbfbfb!important;
+		background-color: #fbfbfb !important;
 	}
 
 /* --  A.6.3. Compact deleted messages/comments -- */
 .deleted.comment > .entry {
-	padding: 0!important;
+	padding: 0 !important;
 }
 
 	.deleted.comment > .entry > * {
-		margin: 0!important;
-		padding: 2px 0 0 31px!important;
+		margin: 0 !important;
+		padding: 2px 0 0 31px !important;
 	}
 
 .usertext.grayed,
 .usertext.grayed + ul {
-	display: none!important;
+	display: none !important;
 }
 
 /* ~~  A.7. Spam highlighting ~~~~~ */
 div.thing.suspicious {
-	outline: 1px solid #ff910b!important;
+	outline: 1px solid #ff910b !important;
 }
 
 div.thing.spam,
 div.thing.reported {
-	margin: 0 0 5px!important;
-	outline: 1px solid #fbb!important;
-	background-color: #ffe5e2!important;
-	background-image: linear-gradient(#ffe5e2,#ffdfdb)!important;
+	margin: 0 0 5px !important;
+	outline: 1px solid #fbb !important;
+	background-color: #ffe5e2 !important;
+	background-image: linear-gradient(#ffe5e2,#ffdfdb) !important;
 }
 
 	div.thing.spam > .entry,
 	div.thing.reported > .entry {
-		background-color: #ffe5e2!important;
+		background-color: #ffe5e2 !important;
 	}
 
 		div.thing.spam > p > *,
 		div.thing.spam > .entry .title,
 		div.thing.reported > p > *,
 		div.thing.reported > .entry .title {
-			background-color: transparent!important;
-			color: #a90404!important;
+			background-color: transparent !important;
+			color: #a90404 !important;
 		}
 
 a.pretty-button,
 .pretty-button.inoffensive {
-	padding: 1px 10px 5px!important;
-	border: 1px solid #e4dbd0!important;
-	background-color: #fff6ea!important;
-	box-shadow: 1px 1px 1px 0 #ccc!important;
-	color: #1d1212!important;
-	font-weight: bold!important;
-	text-shadow: 1px 1px 2px #000!important;
+	padding: 1px 10px 5px !important;
+	border: 1px solid #e4dbd0 !important;
+	background-color: #fff6ea !important;
+	box-shadow: 1px 1px 1px 0 #ccc !important;
+	color: #1d1212 !important;
+	font-weight: bold !important;
+	text-shadow: 1px 1px 2px #000 !important;
 }
 
 .pretty-button.inoffensive {
-	text-shadow: none!important;
+	text-shadow: none !important;
 }
 
 a.pretty-button.negative {
-	border-color: #c25656!important;
-	background: none #ff6e6e!important;
-	color: #fff!important;
+	border-color: #c25656 !important;
+	background: none #ff6e6e !important;
+	color: #fff !important;
 }
 
 a.pretty-button.neutral {
-	border-color: #555!important;
-	background: none #888!important;
-	color: #fff!important;
+	border-color: #555 !important;
+	background: none #888 !important;
+	color: #fff !important;
 }
 
 a.pretty-button.positive {
-	border-color: #148614!important;
-	background: none #5ad15a!important;
-	color: #fff!important;
+	border-color: #148614 !important;
+	background: none #5ad15a !important;
+	color: #fff !important;
 }
 
 .entry .buttons li.reported-stamp {
-	padding: 3px 5px!important;
-	border: 1px solid #d5b97e!important;
-	background-color: #ffdc91!important;
-	background-image: none!important;
-	color: #a90404!important;
-	font-weight: bold!important;
+	padding: 3px 5px !important;
+	border: 1px solid #d5b97e !important;
+	background-color: #ffdc91 !important;
+	background-image: none !important;
+	color: #a90404 !important;
+	font-weight: bold !important;
 }
 
 select {
-	padding: 1px!important;
-	border: 1px solid #aaa!important;
-	border-radius: 0!important;
-	background-color: #fffeed!important;
+	padding: 1px !important;
+	border: 1px solid #aaa !important;
+	border-radius: 0 !important;
+	background-color: #fffeed !important;
 }
 
 .modactions .button {
-	padding: 6px 0 6px 2em!important;
-	min-width: 10px!important;
-	border: 0!important;
-	background: none transparent!important;
+	padding: 6px 0 6px 2em !important;
+	min-width: 10px !important;
+	border: 0 !important;
+	background: none transparent !important;
 }
 
 /* ~~  A.8. Sidebar ~~~~~ */
 .side {
-	margin: 0 20px!important;
-	padding: 0 10px!important;
-	background-color: transparent!important;
-	line-height: 1.3!important;
+	margin: 0 20px !important;
+	padding: 0 10px !important;
+	background-color: transparent !important;
+	line-height: 1.3 !important;
 	/*font-size: 1em!important;*/
-	z-index: 10!important;
+	z-index: 10 !important;
 }
 
 	.side .spacer {
-		margin: 5px 0 5px 0!important;
-		background-color: transparent!important;
+		margin: 5px 0 5px 0 !important;
+		background-color: transparent !important;
 	}
 
 	.side .md {
-		overflow: visible!important;
-		max-width: 100%!important;
+		overflow: visible !important;
+		max-width: 100% !important;
 	}
 
 	.side .titlebox {
-		padding: 0!important;
+		padding: 0 !important;
 	}
 
 	.side h1.redditname {
-		margin: 1.2em 0 .2em 0!important;
-		font-size: 26px!important;
-		letter-spacing: -1px!important;
-		text-shadow: 0px 0px 1px #aaa!important;
+		margin: 1.2em 0 .2em 0 !important;
+		font-size: 26px !important;
+		letter-spacing: -1px !important;
+		text-shadow: 0px 0px 1px #aaa !important;
 	}
 
 		.side h1.redditname a {
-			color: #222!important;
+			color: #222 !important;
 		}
 
 div.sidebox.create {
-	position: absolute!important;
-	right: 30px!important;
-	bottom: 112px!important;
-	display: block!important;
-	overflow: visible!important;
-	border-width: 0!important;
-	background: none transparent!important;
+	position: absolute !important;
+	right: 30px !important;
+	bottom: 112px !important;
+	display: block !important;
+	overflow: visible !important;
+	border-width: 0 !important;
+	background: none transparent !important;
 }
 
 .sidebox.create .subtitle:last-child:after {
-	content: "...with theme /r/Mindashq."!important;
-	display: block!important;
+	content: "...with theme /r/Mindashq." !important;
+	display: block !important;
 }
 
 .side h1,
 .side h2,
 .side h3 {
-	margin: 5px!important;
-	background: none transparent!important;
-	color: #222!important;
-	text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff!important;
+	margin: 5px !important;
+	background: none transparent !important;
+	color: #222 !important;
+	text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff !important;
 }
 
 .side h1 {
-	font-size: 19px!important;
+	font-size: 19px !important;
 }
 
 .side h2 {
-	font-size: 16px!important;
+	font-size: 16px !important;
 }
 
 .side h3 {
-	font-size: 14px!important;
+	font-size: 14px !important;
 }
 
 .side .md p {
-	margin: 5px 10px!important;
+	margin: 5px 10px !important;
 }
 
 .side .md li p,
 .side .md ol p {
-	margin: 0!important;
+	margin: 0 !important;
 }
 
 body:not(.profile-page) .side .titlebox .bottom {
-	display: none!important;
-	border-color: #d2d2d2!important;
+	display: none !important;
+	border-color: #d2d2d2 !important;
 }
 
 /* --  A.8.1. Search -- */
 .side .spacer #search {
-	margin: 0 0 15px 0!important;
-	padding: 0!important;
+	margin: 0 0 15px 0 !important;
+	padding: 0 !important;
 }
 
 #search input[type='text'] {
-	margin: 0 0 -6px!important;
-	padding: 10px!important;
-	width: 278px!important;
-	border: 1px solid #e3e3e3!important;
-	font-size: 14px!important;
+	margin: 0 0 -6px !important;
+	padding: 10px !important;
+	width: 278px !important;
+	border: 1px solid #e3e3e3 !important;
+	font-size: 14px !important;
 }
 
 .searchpane {
-	margin: 0!important;
-	padding: 10px 0 20px 96px!important;
-	border-color: #ccb!important;
-	background-color: #fbfbfb!important;
-	font-size: 12px!important;
+	margin: 0 !important;
+	padding: 10px 0 20px 96px !important;
+	border-color: #ccb !important;
+	background-color: #fbfbfb !important;
+	font-size: 12px !important;
 }
 
 .searchfacets {
-	margin: -1px 5px!important;
-	border-color: #ccb!important;
-	background-color: transparent!important;
-	box-shadow: none!important;
+	margin: -1px 5px !important;
+	border-color: #ccb !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 #search input[type='submit'] {
-	padding: 10px 15px!important;
+	padding: 10px 15px !important;
 }
 
 #searchexpando {
-	margin: 6px 1px 0!important;
-	border-radius: 0!important;
+	margin: 6px 1px 0 !important;
+	border-radius: 0 !important;
 }
 
 /* --  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
-	overflow: hidden!important;
-	margin: 0 5px 10px!important;
-	border-color: #acd9fc!important;
-	background-color: #eaf4fc!important;
-	color: #2154a3!important;
+	overflow: hidden !important;
+	margin: 0 5px 10px !important;
+	border-color: #acd9fc !important;
+	background-color: #eaf4fc !important;
+	color: #2154a3 !important;
 }
 
 .linkinfo {
-	margin: 0 0 10px!important;
-	padding: 5px 0!important;
-	border: 1px solid #e3e3e3!important;
-	border-radius: 0!important;
-	background: transparent!important;
-	text-align: center!important;
+	margin: 0 0 10px !important;
+	padding: 5px 0 !important;
+	border: 1px solid #e3e3e3 !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	text-align: center !important;
 }
 
 	.linkinfo .date {
-		padding: 5px 0!important;
+		padding: 5px 0 !important;
 	}
 
 	.linkinfo .score {
-		display: inline-block!important;
-		float: left!important;
-		margin: 0 0 0 -1px!important;
-		padding: 10px 0!important;
-		width: 130px!important;
-		height: 61px!important;
-		border: 1px solid #e3e3e3!important;
-		background: #f3f3f3!important;
+		display: inline-block !important;
+		float: left !important;
+		margin: 0 0 0 -1px !important;
+		padding: 10px 0 !important;
+		width: 130px !important;
+		height: 61px !important;
+		border: 1px solid #e3e3e3 !important;
+		background: #f3f3f3 !important;
 	}
 
 		.linkinfo .score .number {
-			font-size: 20px!important;
+			font-size: 20px !important;
 		}
 
 		.linkinfo .score .word {
-			display: block!important;
-			font-weight: 300!important;
+			display: block !important;
+			font-weight: 300 !important;
 		}
 
 	.linkinfo .upvotes,
 	.linkinfo .downvotes {
-		display: block!important;
-		margin: 0 -1px 0 130px!important;
-		padding: 10px!important;
-		height: 20px!important;
-		border: 1px solid #e3e3e3!important;
-		background: #f3f3f3!important;
-		text-align: left!important;
+		display: block !important;
+		margin: 0 -1px 0 130px !important;
+		padding: 10px !important;
+		height: 20px !important;
+		border: 1px solid #e3e3e3 !important;
+		background: #f3f3f3 !important;
+		text-align: left !important;
 	}
 
 	.linkinfo .downvotes {
-		margin-top: -1px!important;
+		margin-top: -1px !important;
 	}
 
 		.linkinfo .upvotes .number,
 		.linkinfo .downvotes .number {
-			float: right!important;
-			font-size: 20px!important;
-			text-align: right!important;
+			float: right !important;
+			font-size: 20px !important;
+			text-align: right !important;
 		}
 
 		.linkinfo .upvotes .word,
 		.linkinfo .downvotes .word {
-			float: left!important;
-			margin: 5px 10px 0 0!important;
-			font-size: 12px!important;
+			float: left !important;
+			margin: 5px 10px 0 0 !important;
+			font-size: 12px !important;
 		}
 
 	.linkinfo .shortlink {
-		clear: both!important;
+		clear: both !important;
 	}
 
 	.linkinfo input#shortlink-text {
-		margin-top: 5px!important;
-		border: 0!important;
-		background-color: transparent!important;
-		font-size: 12px!important;
+		margin-top: 5px !important;
+		border: 0 !important;
+		background-color: transparent !important;
+		font-size: 12px !important;
 	}
 
 /* --  A.8.3. Contributor and Moderator Buttons -- */
@@ -1569,72 +1569,72 @@ body:not(.profile-page) .side .titlebox .bottom {
 .leavemoderator,
 .leavemoderator-button,
 .leavecontributor-button {
-	background: none transparent!important;
-	font-size: 12px!important;
+	background: none transparent !important;
+	font-size: 12px !important;
 }
 
 /* --  A.8.4. Login Form -- */
 .login-form-side {
-	margin: 0 0 10px!important;
-	padding: 10px 0 0!important;
-	border: 1px solid #eee!important;
-	border-width: 1px 0!important;
+	margin: 0 0 10px !important;
+	padding: 10px 0 0 !important;
+	border: 1px solid #eee !important;
+	border-width: 1px 0 !important;
 }
 
 	.login-form-side input[type=text],
 	.login-form-side input[type=password] {
-		border-color: #d2d2d2!important;
+		border-color: #d2d2d2 !important;
 	}
 
 /* --  A.8.5. Flair Setting area -- */
 .titlebox form.flairtoggle {
-	position: relative!important;
-	margin-top: 5px!important;
-	padding: 5px 5px 5px 35px!important;
-	border: 1px solid #e3e3e3!important;
-	border-width: 1px 1px 0!important;
-	background: #f3f3f3!important;
+	position: relative !important;
+	margin-top: 5px !important;
+	padding: 5px 5px 5px 35px !important;
+	border: 1px solid #e3e3e3 !important;
+	border-width: 1px 1px 0 !important;
+	background: #f3f3f3 !important;
 }
 
 	.titlebox form.flairtoggle input {
-		float: left!important;
-		margin: 10px 10px 0px -25px!important;
+		float: left !important;
+		margin: 10px 10px 0px -25px !important;
 	}
 
 .titlebox .tagline {
-	margin: 0 0 10px 0!important;
-	padding: 0 5px 5px 35px!important;
-	border: 1px solid #e3e3e3!important;
-	border-width: 0 1px 1px!important;
-	background: #f3f3f3!important;
-	font-size: 12px!important;
+	margin: 0 0 10px 0 !important;
+	padding: 0 5px 5px 35px !important;
+	border: 1px solid #e3e3e3 !important;
+	border-width: 0 1px 1px !important;
+	background: #f3f3f3 !important;
+	font-size: 12px !important;
 }
 
 .titlebox .fancy-toggle-button {
-	display: inline-block!important;
-	margin: 0!important;
+	display: inline-block !important;
+	margin: 0 !important;
 }
 
 .subscription-box ul > a[count] {
-	display: block!important;
-	margin: 10px -10px -10px!important;
-	padding: 10px!important;
-	background-color: #ddd!important;
+	display: block !important;
+	margin: 10px -10px -10px !important;
+	padding: 10px !important;
+	background-color: #ddd !important;
 }
 
 .subscription-box .fancy-toggle-button .active {
-	margin: 0!important;
-	min-width: 70px!important;
+	margin: 0 !important;
+	min-width: 70px !important;
 }
 
 .subscription-box .subButtons + a:last-child {
-	float: right!important;
-	margin: -60px 10px!important;
+	float: right !important;
+	margin: -60px 10px !important;
 }
 
 .subscription-box .subButtons .RESshortcutside,
 .subscription-box .subButtons .RESDashboardToggle {
-	margin: 0 0 20px -5px!important;
+	margin: 0 0 20px -5px !important;
 }
 
 .fancy-toggle-button .active,
@@ -1643,29 +1643,29 @@ body:not(.profile-page) .side .titlebox .bottom {
 .RESFilterToggle,
 a.blueButton,
 div.blueButton {
-	display: inline-block!important;
-	margin: 5px -6px 10px 0!important;
-	padding: 3px 7px!important;
-	min-width: 80px!important;
-	height: auto!important;
-	outline: none!important;
-	border-color: #e3e3e3!important;
-	border-radius: 0!important;
-	font-weight: bold!important;
-	font-size: 11px!important;
-	line-height: 14px!important;
-	text-align: center!important;
+	display: inline-block !important;
+	margin: 5px -6px 10px 0 !important;
+	padding: 3px 7px !important;
+	min-width: 80px !important;
+	height: auto !important;
+	outline: none !important;
+	border-color: #e3e3e3 !important;
+	border-radius: 0 !important;
+	font-weight: bold !important;
+	font-size: 11px !important;
+	line-height: 14px !important;
+	text-align: center !important;
 }
 
 .fancy-toggle-button .add {
-	border-color: #27b307!important;
-	background: none #1a8b00!important;
-	color: #fff!important;
+	border-color: #27b307 !important;
+	background: none #1a8b00 !important;
+	color: #fff !important;
 }
 
 .fancy-toggle-button .remove {
-	background: none #f3f3f3!important;
-	color: #aaa!important;
+	background: none #f3f3f3 !important;
+	color: #aaa !important;
 }
 
 .RESshortcutside,
@@ -1673,268 +1673,268 @@ div.blueButton {
 .RESFilterToggle,
 a.blueButton,
 div.blueButton {
-	background: none #f3f3f3!important;
-	color: #2154a3!important;
+	background: none #f3f3f3 !important;
+	color: #2154a3 !important;
 }
 
 	.RESshortcutside.remove,
 	.RESDashboardToggle.remove,
 	.RESFilterToggle.remove {
-		color: #aaa!important;
+		color: #aaa !important;
 	}
 
 .subscribers {
-	display: block!important;
+	display: block !important;
 }
 
 /* --  A.8.6. Submit Button -- */
 .sidebox.submit {
-	width: 300px!important;
+	width: 300px !important;
 }
 
 body:not(.listing-page) .morelink {
-	border-color: #5ba2fd!important;
-	border-radius: 2px!important;
-	background: none #acd9fc!important;
-	background-image: linear-gradient(#acd9fc,#8ccbfc)!important;
-	color: #2154a3!important;
+	border-color: #5ba2fd !important;
+	border-radius: 2px !important;
+	background: none #acd9fc !important;
+	background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
+	color: #2154a3 !important;
 }
 
 	body:not(.listing-page) .morelink a {
-		color: #2154a3!important;
-		text-shadow: 1px 1px 2px #eaf4fc!important;
+		color: #2154a3 !important;
+		text-shadow: 1px 1px 2px #eaf4fc !important;
 	}
 
 body .morelink {
-	padding: 4px 10px!important;
-	border-color: #357ae8!important;
-	border-radius: 2px!important;
-	background: none #5ba2fd!important;
-	background-image: linear-gradient(#5ba2fd,#4b8adb)!important;
-	color: #fff!important;
-	font-weight: normal!important;
-	letter-spacing: 0!important;
+	padding: 4px 10px !important;
+	border-color: #357ae8 !important;
+	border-radius: 2px !important;
+	background: none #5ba2fd !important;
+	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
+	color: #fff !important;
+	font-weight: normal !important;
+	letter-spacing: 0 !important;
 }
 
 	body .morelink:hover,
 	body:not(.listing-page) .morelink:hover {
-		border-color: #08c!important;
-		background: none #4d90fe!important;
-		background-image: linear-gradient(#4d90fe,#357ae8)!important;
-		color: #fff!important;
+		border-color: #08c !important;
+		background: none #4d90fe !important;
+		background-image: linear-gradient(#4d90fe,#357ae8) !important;
+		color: #fff !important;
 	}
 
 	body .morelink a {
-		color: #fff!important;
-		font-weight: bold!important;
-		font-size: 16px!important;
-		text-shadow: 1px 1px 2px #2154a3!important;
+		color: #fff !important;
+		font-weight: bold !important;
+		font-size: 16px !important;
+		text-shadow: 1px 1px 2px #2154a3 !important;
 	}
 
 		body .morelink a:hover,
 		body:not(.listing-page) .morelink:hover a,
 		body:not(.listing-page) .morelink a:hover {
-			color: #fff!important;
-			text-shadow: 1px 1px 2px #2154a3!important;
+			color: #fff !important;
+			text-shadow: 1px 1px 2px #2154a3 !important;
 		}
 
 	body .morelink .nub,
 	body .morelink:hover .nub,
 	body .disabled .morelink .nub,
 	body .disabled .morelink:hover .nub {
-		background: none transparent!important;
+		background: none transparent !important;
 	}
 
 body .disabled .morelink,
 body .disabled .morelink:hover {
-	border-color: #f5f5f5!important;
-	background: none #ccc!important;
+	border-color: #f5f5f5 !important;
+	background: none #ccc !important;
 }
 
 	body .disabled .morelink a,
 	body .disabled .morelink a:hover {
-		text-shadow: none!important;
-		cursor: default!important;
+		text-shadow: none !important;
+		cursor: default !important;
 	}
 
 /* --  A.8.7. Moderators Area -- */
 .sidecontentbox {
-	padding: 5px 0 5px!important;
-	background-color: transparent!important;
-	line-height: 1.3!important;
+	padding: 5px 0 5px !important;
+	background-color: transparent !important;
+	line-height: 1.3 !important;
 }
 
 	.sidecontentbox a.helplink {
-		font-size: 12px!important;
+		font-size: 12px !important;
 	}
 
 	.sidecontentbox .title h1 {
-		color: #888!important;
-		letter-spacing: 0!important;
+		color: #888 !important;
+		letter-spacing: 0 !important;
 	}
 
 .spacer .sidecontentbox .content {
-	margin: 0!important;
-	margin-top: 5px!important;
-	padding: 10px!important;
-	border: 1px solid #ccc!important;
-	background-color: #f5f5f5!important;
+	margin: 0 !important;
+	margin-top: 5px !important;
+	padding: 10px !important;
+	border: 1px solid #ccc !important;
+	background-color: #f5f5f5 !important;
 }
 
 .side .icon-menu li {
-	margin: 0 0 5px!important;
+	margin: 0 0 5px !important;
 }
 
 .side .icon-menu a {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 /* --  A.8.8. Account Activity area at Bottom of Sidebar -- */
 .account-activity-box {
-	padding: 0!important;
-	height: 60px!important;
-	border-radius: 2px!important;
-	background-color: transparent!important;
-	background-position: center bottom!important;
+	padding: 0 !important;
+	height: 60px !important;
+	border-radius: 2px !important;
+	background-color: transparent !important;
+	background-position: center bottom !important;
 }
 
 	.account-activity-box a {
-		margin: 20px 0 0 0!important;
-		padding: 20px 0 0 0!important;
+		margin: 20px 0 0 0 !important;
+		padding: 20px 0 0 0 !important;
 	}
 
 /* ~~  A.9. Footer ~~~~~ */
 .footer-parent {
-	position: relative!important;
-	clear: both!important;
-	margin: 40px 0 0!important;
-	padding: 5px 0 15px 0!important;
-	background-color: #fff!important;
-	box-shadow: 0 -3px 9px -2px #ddd!important;
-	font-size: 12px!important;
-	line-height: 15px!important;
-	text-align: left!important;
-	z-index: -2!important;
+	position: relative !important;
+	clear: both !important;
+	margin: 40px 0 0 !important;
+	padding: 5px 0 15px 0 !important;
+	background-color: #fff !important;
+	box-shadow: 0 -3px 9px -2px #ddd !important;
+	font-size: 12px !important;
+	line-height: 15px !important;
+	text-align: left !important;
+	z-index: -2 !important;
 }
 
 	.footer-parent:after {
-		content: " "!important;
-		position: absolute!important;
-		top: 0!important;
-		left: 0!important;
-		display: block!important;
-		width: 100%!important;
-		height: 30px!important;
-		border-width: 1px 0!important;
-		border-style: solid!important;
-		z-index: -1!important;
+		content: " " !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		display: block !important;
+		width: 100% !important;
+		height: 30px !important;
+		border-width: 1px 0 !important;
+		border-style: solid !important;
+		z-index: -1 !important;
 	}
 
 .footer {
-	margin: -15px 5px 5px!important;
-	border: 0 none!important;
-	background-color: transparent!important;
+	margin: -15px 5px 5px !important;
+	border: 0 none !important;
+	background-color: transparent !important;
 }
 
 	.footer .col {
-		border: 0 none!important;
+		border: 0 none !important;
 	}
 
 	.footer .flat-vert.title {
-		margin: 3px 0 15px!important;
-		color: #2154a3!important;
+		margin: 3px 0 15px !important;
+		color: #2154a3 !important;
 	}
 
 /* --  A.9.1. Reddit Copyright Text -- */
 .bottommenu,
 .bottommenu a {
-	font-size: 10px!important;
+	font-size: 10px !important;
 }
 
 .bottommenu {
-	margin: 0 0 0 25px!important;
-	color: #777!important;
+	margin: 0 0 0 25px !important;
+	color: #777 !important;
 }
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
 body.wiki-page h1.wikititle {
-	display: inline-block!important;
-	margin: 10px 15px 5px!important;
-	color: #5ba2fd!important;
-	font-size: 1em!important;
-	letter-spacing: 0!important;
+	display: inline-block !important;
+	margin: 10px 15px 5px !important;
+	color: #5ba2fd !important;
+	font-size: 1em !important;
+	letter-spacing: 0 !important;
 }
 
 body.wiki-page .pageactions {
-	float: right!important;
-	border: 0 none!important;
+	float: right !important;
+	border: 0 none !important;
 }
 
 body.wiki-page .wiki-page-content {
-	margin: 0 15px 15px!important;
-	border-top: 1px dotted #d2d2d2!important;
+	margin: 0 15px 15px !important;
+	border-top: 1px dotted #d2d2d2 !important;
 }
 
 	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
-		border-color: #eee!important;
-		background-color: #f9f9f7!important;
-		list-style: none!important;
+		border-color: #eee !important;
+		background-color: #f9f9f7 !important;
+		list-style: none !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
-		font-size: 2.4em!important;
-		letter-spacing: -1px!important;
+		font-size: 2.4em !important;
+		letter-spacing: -1px !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h2 {
-		font-size: 1.8em!important;
-		letter-spacing: -1px!important;
+		font-size: 1.8em !important;
+		letter-spacing: -1px !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h3 {
-		font-size: 1.4em!important;
+		font-size: 1.4em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h4 {
-		font-size: 1.2em!important;
+		font-size: 1.2em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki img {
-		max-width: 100%!important;
+		max-width: 100% !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1,
 	body.wiki-page .wiki-page-content .md.wiki h2,
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
-		color: #1d1212!important;
-		text-shadow: 0 0 0 #fefefd,0 0 1px #555!important;
+		color: #1d1212 !important;
+		text-shadow: 0 0 0 #fefefd,0 0 1px #555 !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
 	body.wiki-page .wiki-page-content .md.wiki h6 {
-		color: #08c!important;
+		color: #08c !important;
 	}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
 .tagline .RESUserTag {
-	margin: 0 0 0 -4px!important;
+	margin: 0 0 0 -4px !important;
 }
 
 div#userbarToggle,
 div#userbarToggle.userbarShow {
-	top: 28%!important;
-	bottom: 28%!important;
-	padding: 2px!important;
-	min-height: 10px!important;
-	height: 10px!important;
-	border: 0!important;
-	border-radius: 10px!important;
-	background-color: #eaf4fc!important;
-	color: #2154a3!important;
-	font-weight: bold!important;
-	line-height: 0.7!important;
-	text-align: center!important;
+	top: 28% !important;
+	bottom: 28% !important;
+	padding: 2px !important;
+	min-height: 10px !important;
+	height: 10px !important;
+	border: 0 !important;
+	border-radius: 10px !important;
+	background-color: #eaf4fc !important;
+	color: #2154a3 !important;
+	font-weight: bold !important;
+	line-height: 0.7 !important;
+	text-align: center !important;
 }
 
 /* --  A.11.1. Pin Sub-bar -- */
@@ -1948,53 +1948,53 @@ div#userbarToggle.userbarShow {
 .res.pinHeader-subanduser #RESShortcutsLeft,
 .res.pinHeader-subanduser #RESShortcutsAdd,
 .res.pinHeader-subanduser #RESShortcutsTrash {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 /* --  A.11.2. Pin Sub-Bar User Bar -- */
 body.pinHeader-userbar #header-bottom-right,
 body.pinHeader-subanduser #header-bottom-right {
-	top: 15px!important;
-	bottom: auto!important;
-	background-color: #fff!important;
+	top: 15px !important;
+	bottom: auto !important;
+	background-color: #fff !important;
 }
 
 /* --  A.11.3. Pin Full Header -- */
 #RESPinnedHeaderSpacer {
-	margin-bottom: 30px!important;
+	margin-bottom: 30px !important;
 }
 
 /* --  A.11.4. Handling the keynav -- */
 .entry.RES-keyNav-activeElement,
 .entry:hover {
-	padding-right: 2px!important;
-	outline: 0!important;
-	border: 0!important;
-	border-right: 3px solid #4d90fe!important;
+	padding-right: 2px !important;
+	outline: 0 !important;
+	border: 0 !important;
+	border-right: 3px solid #4d90fe !important;
 }
 
 	.entry.RES-keyNav-activeElement div.md,
 	.commentarea .entry.RES-keyNav-activeElement div.noncollapsed,
 	.entry.RES-keyNav-activeElement .usertext-body,
 	.new-comment .usertext-body .md {
-		outline: none!important;
-		border: 0!important;
+		outline: none !important;
+		border: 0 !important;
 	}
 
 	.entry.RES-keyNav-activeElement,
 	.entry.RES-keyNav-activeElement div.md,
 	.entry.RES-keyNav-activeElement .usertext-body,
 	.commentarea .entry.RES-keyNav-activeElement div.noncollapsed {
-		background: none transparent!important;
+		background: none transparent !important;
 	}
 
 .keyNavAnnotation {
-	color: #888!important;
+	color: #888 !important;
 }
 
 button.RESBigEditorPop.blueButton {
-	margin: 7px 0 0 12px!important;
-	padding: 5px!important;
+	margin: 7px 0 0 12px !important;
+	padding: 5px !important;
 }
 
 /* --  A.11.5. Progress Indicator and Page marker for RES mode -- */
@@ -2002,55 +2002,55 @@ button.RESBigEditorPop.blueButton {
 div.NERPageMarker,
 div#NERFail,
 #endOfReddit {
-	margin: 0!important;
-	padding: 10px 0!important;
-	width: auto!important;
-	border-width: 0!important;
-	border-radius: 0!important;
-	background-color: transparent!important;
-	font-weight: bold!important;
-	font-size: 20px!important;
-	letter-spacing: -1px!important;
-	text-align: left!important;
+	margin: 0 !important;
+	padding: 10px 0 !important;
+	width: auto !important;
+	border-width: 0 !important;
+	border-radius: 0 !important;
+	background-color: transparent !important;
+	font-weight: bold !important;
+	font-size: 20px !important;
+	letter-spacing: -1px !important;
+	text-align: left !important;
 }
 
 #progressIndicator.neverEndingReddit,
 div#NERFail,
 #endOfReddit {
-	color: #a90404!important;
-	font-size: 12px!important;
-	letter-spacing: 0!important;
+	color: #a90404 !important;
+	font-size: 12px !important;
+	letter-spacing: 0 !important;
 }
 
 /* ~~  A.12. Sidebar Boxes ~~~~~ */
 .side .md blockquote {
-	position: relative!important;
-	margin: 5px 0 10px!important;
-	padding: 5px 10px 10px 5px!important;
-	max-width: 100%!important;
-	border: 1px solid #ccc!important;
-	border-radius: 2px!important;
-	background-color: #f5f5f5!important;
+	position: relative !important;
+	margin: 5px 0 10px !important;
+	padding: 5px 10px 10px 5px !important;
+	max-width: 100% !important;
+	border: 1px solid #ccc !important;
+	border-radius: 2px !important;
+	background-color: #f5f5f5 !important;
 }
 
 	.side .md blockquote > h1,
 	.side .md blockquote > h2,
 	.side .md blockquote > h3 {
-		font-size: 18px!important;
+		font-size: 18px !important;
 	}
 
 	.side .md blockquote > blockquote {
-		margin: 5px 0 0 5px!important;
+		margin: 5px 0 0 5px !important;
 	}
 
 	.side .md blockquote table {
-		margin: 5px -11px 5px -6px!important;
-		min-width: 299px!important;
-		max-width: 300px!important;
+		margin: 5px -11px 5px -6px !important;
+		min-width: 299px !important;
+		max-width: 300px !important;
 	}
 
 		.side .md blockquote table:last-child {
-			margin-bottom: -11px!important;
+			margin-bottom: -11px !important;
 		}
 
 	.side .md blockquote + hr,
@@ -2058,21 +2058,21 @@ div#NERFail,
 	.side .md blockquote + h4,
 	.side .md blockquote + h5,
 	.side .md blockquote + h6 {
-		margin: 0 0 5px 0!important;
-		width: 0!important;
-		height: 1px!important;
+		margin: 0 0 5px 0 !important;
+		width: 0 !important;
+		height: 1px !important;
 	}
 
 	.side .md blockquote h1 ~ p {
-		margin-left: 10px!important;
+		margin-left: 10px !important;
 	}
 
 .side .md h3 + blockquote p,
 .side .md h4 + blockquote p,
 .side .md h5 + blockquote p,
 .side .md h6 + blockquote p {
-	margin: 2px 10px!important;
-	color: #1d1212!important;
+	margin: 2px 10px !important;
+	color: #1d1212 !important;
 }
 
 .side .md blockquote + p,
@@ -2081,114 +2081,114 @@ div#NERFail,
 .side .md p + h4,
 .side .md p + h5,
 .side .md p + h6 {
-	margin-top: 12px!important;
+	margin-top: 12px !important;
 }
 
 .side .md > hr {
-	width: 0!important;
+	width: 0 !important;
 }
 
 	.side .md > hr + hr {
-		margin: 5px 0 15px!important;
-		width: auto!important;
+		margin: 5px 0 15px !important;
+		width: auto !important;
 	}
 
 /* --  A.12.1. Colored Boxes -- */
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
 .side .md blockquote a[href*='#icon-']:before {
-	border-radius: 3px!important;
-	background-color: #555!important;
-	background-image: linear-gradient(#555,#4d4d4d)!important;
-	color: #eee!important;
-	text-shadow: none!important;
+	border-radius: 3px !important;
+	background-color: #555 !important;
+	background-image: linear-gradient(#555,#4d4d4d) !important;
+	color: #eee !important;
+	text-shadow: none !important;
 }
 
 /*Blue*/
 .side .md h3 + blockquote {
-	border-color: #aacdf1!important;
-	background-color: #d4ecfe!important;
+	border-color: #aacdf1 !important;
+	background-color: #d4ecfe !important;
 }
 
 	.side .md h3 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='blue']:before {
-		background-color: #50a3fd!important;
-		background-image: linear-gradient(#50a3fd,#1c89d1)!important;
-		color: #d4ecfe!important;
+		background-color: #50a3fd !important;
+		background-image: linear-gradient(#50a3fd,#1c89d1) !important;
+		color: #d4ecfe !important;
 	}
 
 	.side .md h3 + blockquote hr {
-		background-color: #aacdf1!important;
-		color: #aacdf1!important;
+		background-color: #aacdf1 !important;
+		color: #aacdf1 !important;
 	}
 
 	.side .md h3 + blockquote * {
-		border-color: #aacdf1!important;
+		border-color: #aacdf1 !important;
 	}
 
 /*Green*/
 .side .md h4 + blockquote {
-	border-color: #45e745!important;
-	background-color: #e9ffe6!important;
+	border-color: #45e745 !important;
+	background-color: #e9ffe6 !important;
 }
 
 	.side .md h4 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='green']:before {
-		background-color: #39c739!important;
-		background-image: linear-gradient(#6de46d,#39c739)!important;
-		color: #e9ffe6!important;
+		background-color: #39c739 !important;
+		background-image: linear-gradient(#6de46d,#39c739) !important;
+		color: #e9ffe6 !important;
 	}
 
 	.side .md h4 + blockquote hr {
-		background-color: #45e745!important;
-		color: #45e745!important;
+		background-color: #45e745 !important;
+		color: #45e745 !important;
 	}
 
 	.side .md h4 + blockquote * {
-		border-color: #45e745!important;
+		border-color: #45e745 !important;
 	}
 
 /*Yellow*/
 .side .md h5 + blockquote {
-	border-color: #fae296!important;
-	background-color: #fffde6!important;
+	border-color: #fae296 !important;
+	background-color: #fffde6 !important;
 }
 
 	.side .md h5 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='yellow']:before {
-		background-color: #ffce36!important;
-		background-image: linear-gradient(#fde000,#ffce36)!important;
-		color: #ffffe6!important;
+		background-color: #ffce36 !important;
+		background-image: linear-gradient(#fde000,#ffce36) !important;
+		color: #ffffe6 !important;
 	}
 
 	.side .md h5 + blockquote hr {
-		background-color: #fae296!important;
-		color: #fae296!important;
+		background-color: #fae296 !important;
+		color: #fae296 !important;
 	}
 
 	.side .md h5 + blockquote * {
-		border-color: #fae296!important;
+		border-color: #fae296 !important;
 	}
 
 /*Red*/
 .side .md h6 + blockquote {
-	border-color: #ff9185!important;
-	background-color: #fef0f0!important;
+	border-color: #ff9185 !important;
+	background-color: #fef0f0 !important;
 }
 
 	.side .md h6 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='red']:before {
-		background-color: #dd4814!important;
-		background-image: linear-gradient(#ef784e,#dd4814)!important;
-		color: #fef0f0!important;
+		background-color: #dd4814 !important;
+		background-image: linear-gradient(#ef784e,#dd4814) !important;
+		color: #fef0f0 !important;
 	}
 
 	.side .md h6 + blockquote hr {
-		background-color: #ff9185!important;
-		color: #ff9185!important;
+		background-color: #ff9185 !important;
+		color: #ff9185 !important;
 	}
 
 	.side .md h6 + blockquote * {
-		border-color: #ff9185!important;
+		border-color: #ff9185 !important;
 	}
 
 	.side .md h6 + blockquote table,
@@ -2200,272 +2200,272 @@ div#NERFail,
 
 /* --  A.12.2. Sidebar Icons -- */
 .side a[href*='#icon-'] {
-	color: #1d1212!important;
-	cursor: default!important;
+	color: #1d1212 !important;
+	cursor: default !important;
 }
 
 	.side a[href*='#icon-']:hover {
-		text-decoration: none!important;
+		text-decoration: none !important;
 	}
 
 	.side a[href*='#icon-']:before {
-		float: left!important;
-		margin: -15px 10px 5px 0!important;
-		padding: 5px 5px 0!important;
-		width: 30px!important;
-		background-position: 0 0!important;
-		font-weight: bold!important;
-		font-size: 25px!important;
-		line-height: 45px!important;
-		text-align: center!important;
+		float: left !important;
+		margin: -15px 10px 5px 0 !important;
+		padding: 5px 5px 0 !important;
+		width: 30px !important;
+		background-position: 0 0 !important;
+		font-weight: bold !important;
+		font-size: 25px !important;
+		line-height: 45px !important;
+		text-align: center !important;
 	}
 
 	.side a[href*="#icon-"]:after {
-		content: ''!important;
-		display: table!important;
-		clear: both!important;
+		content: '' !important;
+		display: table !important;
+		clear: both !important;
 	}
 
 .side a[href*='#icon-exclamation']:before {
-	content: '♔'!important;
+	content: '♔' !important;
 }
 
 .side a[href*='#icon-information']:before {
-	content: 'ⓘ'!important;
+	content: 'ⓘ' !important;
 }
 
 .side a[href*='#icon-lightbulb']:before {
-	content: '☼'!important;
+	content: '☼' !important;
 }
 
 .side a[href*='#icon-comments']:before {
-	content: '❝'!important;
+	content: '❝' !important;
 }
 
 .side a[href*='#icon-unhappy']:before {
-	content: '☹'!important;
+	content: '☹' !important;
 }
 
 .side a[href*='#icon-check']:before {
-	content: '✓'!important;
+	content: '✓' !important;
 }
 
 .side a[href*='#icon-clock']:before {
-	content: '◔'!important;
+	content: '◔' !important;
 }
 
 .side a[href*='#icon-cross']:before {
-	content: '⊘'!important;
+	content: '⊘' !important;
 }
 
 .side a[href*='#icon-smile']:before {
-	content: '☺'!important;
+	content: '☺' !important;
 }
 
 .side a[href*='#icon-error']:before {
-	content: '☢'!important;
+	content: '☢' !important;
 }
 
 .side a[href*='#icon-note']:before {
-	content: '✑'!important;
+	content: '✑' !important;
 }
 
 .side a[href*='#icon-star']:before {
-	content: '✰'!important;
+	content: '✰' !important;
 }
 
 .side a[href*='#icon-help']:before {
-	content: '✍'!important;
+	content: '✍' !important;
 }
 
 .side a[href*='#icon-time']:before {
-	content: '⌚'!important;
+	content: '⌚' !important;
 }
 
 .side a[href*='#icon-bell']:before {
-	content: '❂'!important;
+	content: '❂' !important;
 }
 
 .side a[href*='#icon-eye']:before {
-	content: '✿'!important;
+	content: '✿' !important;
 }
 
 /* ~~  A.13. Vibgyor Flairs ~~~~~ */
 .flair,
 .linkflairlabel,
 span.linkflair {
-	display: inline-block!important;
-	padding: 1px 5px!important;
-	border: 1px solid #ddd!important;
-	border-radius: 2px!important;
-	background: #f5f5f5!important;
-	color: #555!important;
-	text-shadow: none!important;
+	display: inline-block !important;
+	padding: 1px 5px !important;
+	border: 1px solid #ddd !important;
+	border-radius: 2px !important;
+	background: #f5f5f5 !important;
+	color: #555 !important;
+	text-shadow: none !important;
 }
 
 .linkflair[class*="-m-"] {
 }
 
 	.linkflair[class*="-m-"] .linkflairlabel {
-		padding: 1px 5px 2px!important;
-		border: 0 none!important;
-		font-weight: bold!important;
-		vertical-align: text-bottom!important;
-		text-align: center!important;
+		padding: 1px 5px 2px !important;
+		border: 0 none !important;
+		font-weight: bold !important;
+		vertical-align: text-bottom !important;
+		text-align: center !important;
 	}
 
 	.linkflair[class*="-m-"]:hover .linkflairlabel {
 	}
 
 .linkflair-m-vt .linkflairlabel {
-	background: #c566c5!important;
-	color: #fff!important;
+	background: #c566c5 !important;
+	color: #fff !important;
 }
 
 .linkflair-m-io .linkflairlabel {
-	background: #5f8bc4!important;
-	color: #fff!important;
+	background: #5f8bc4 !important;
+	color: #fff !important;
 }
 
 .linkflair-m-be .linkflairlabel {
-	background: #84cbff!important;
-	color: #fff!important;
+	background: #84cbff !important;
+	color: #fff !important;
 }
 
 .linkflair-m-gn .linkflairlabel {
-	background: #5fd35d!important;
-	color: #fff!important;
+	background: #5fd35d !important;
+	color: #fff !important;
 }
 
 .linkflair-m-yw .linkflairlabel {
-	background: #fde950!important;
-	color: #a77d19!important;
+	background: #fde950 !important;
+	color: #a77d19 !important;
 }
 
 .linkflair-m-oe .linkflairlabel {
-	background: #ffac30!important;
-	color: #fffbcb!important;
+	background: #ffac30 !important;
+	color: #fffbcb !important;
 }
 
 .linkflair-m-rd .linkflairlabel {
-	background: #f00!important;
-	color: #fff!important;
+	background: #f00 !important;
+	color: #fff !important;
 }
 
 .linkflair-m-gy .linkflairlabel {
-	background: #eaeaed!important;
-	color: #555!important;
+	background: #eaeaed !important;
+	color: #555 !important;
 }
 
 .linkflair-m-it .linkflairlabel {
-	background: #555!important;
-	color: #fff!important;
+	background: #555 !important;
+	color: #fff !important;
 }
 
 .linkflair-meta a.title {
-	font-weight: bold!important;
+	font-weight: bold !important;
 }
 
 .linkflair-meta .rank,
 .linkflair-meta .score,
 .linkflair-meta .score-placeholder {
-	display: none!important;
+	display: none !important;
 }
 
 .linkflair-meta .midcol {
-	width: 50px!important;
+	width: 50px !important;
 }
 
 .linkflair-meta.compressed .midcol {
-	margin: 2px 3px 0!important;
-	width: 50px!important;
+	margin: 2px 3px 0 !important;
+	width: 50px !important;
 }
 
 .linkflair-meta .arrow {
-	display: inline-block!important;
-	margin: 0 3px!important;
-	padding: 0!important;
-	font-size: 16px!important;
+	display: inline-block !important;
+	margin: 0 3px !important;
+	padding: 0 !important;
+	font-size: 16px !important;
 }
 
 .linkflair-meta .title > .linkflairlabel {
-	position: absolute!important;
-	left: 20px!important;
-	display: inline-block!important;
-	margin: 25px 10px 0 0!important;
-	padding: 5px 10px!important;
-	background-color: #fff!important;
-	box-shadow: 0 1px 10px 0 #ccf!important;
-	font-weight: bold!important;
-	font-size: 12px!important;
-	vertical-align: text-bottom!important;
+	position: absolute !important;
+	left: 20px !important;
+	display: inline-block !important;
+	margin: 25px 10px 0 0 !important;
+	padding: 5px 10px !important;
+	background-color: #fff !important;
+	box-shadow: 0 1px 10px 0 #ccf !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
+	vertical-align: text-bottom !important;
 }
 
 .linkflair-meta.compressed .title > .linkflairlabel {
-	margin: 18px 10px 0 0!important;
-	padding: 3px 8px!important;
+	margin: 18px 10px 0 0 !important;
+	padding: 3px 8px !important;
 }
 
 body.with-listing-chooser .linkflair-meta .title > .linkflairlabel {
-	left: 145px!important;
-	z-index: 100!important;
+	left: 145px !important;
+	z-index: 100 !important;
 }
 
 /* ~~  A.14. Multireddit ~~~~~ */
 body.with-listing-chooser .listing-chooser .grippy {
-	background-color: #ececea!important;
+	background-color: #ececea !important;
 }
 
 	body.with-listing-chooser .listing-chooser .grippy:after {
-		border-right: 1px solid #ccc!important;
-		box-shadow: 3px 0 6px -2px #ccc!important;
+		border-right: 1px solid #ccc !important;
+		box-shadow: 3px 0 6px -2px #ccc !important;
 	}
 
 	body.with-listing-chooser .listing-chooser .grippy:hover:after {
-		background-color: #fff!important;
+		background-color: #fff !important;
 	}
 
 .titlebox.multi-details button.cancel,
 .titlebox.multi-details .usertext span[class*='toggle'],
 .titlebox.multi-details a.reddiquette {
-	margin: 15px 0!important;
-	padding: 0 5px!important;
-	font-size: 11px!important;
+	margin: 15px 0 !important;
+	padding: 0 5px !important;
+	font-size: 11px !important;
 }
 
 /* ~~  A.15. Other areas in Reddit - [WIP] ~~~~~ */
 .upload li,
 #image-upload {
-	margin: 10px 0!important;
-	font-size: larger!important;
+	margin: 10px 0 !important;
+	font-size: larger !important;
 }
 
 	#image-upload label {
-		font-size: 12px!important;
+		font-size: 12px !important;
 	}
 
 ul#image-preview-list {
-	overflow: hidden!important;
-	margin: 20px 0 20px 20px!important;
-	font-size: larger!important;
+	overflow: hidden !important;
+	margin: 20px 0 20px 20px !important;
+	font-size: larger !important;
 }
 
 #newlink {
-	margin-left: 20px!important;
-	background: none transparent!important;
+	margin-left: 20px !important;
+	background: none transparent !important;
 }
 
 .sheets {
-	margin: 0!important;
+	margin: 0 !important;
 }
 
 .tabpane-content {
-	padding: 15px!important;
-	border-color: #8ccbfc!important;
+	padding: 15px !important;
+	border-color: #8ccbfc !important;
 }
 
 .profile-page div.thing {
-	margin: 0 0 5px!important;
+	margin: 0 0 5px !important;
 }
 
 .thing.message {
@@ -2475,71 +2475,71 @@ ul#image-preview-list {
 	.thing.message .midcol,
 	.thing.message .entry,
 	.thing.message .entry {
-		margin: 0!important;
-		border-left: 0 none!important;
+		margin: 0 !important;
+		border-left: 0 none !important;
 	}
 
 	.thing.message.new > .entry {
-		outline: 1px solid #acd9fc!important;
-		border: 0!important;
-		background-color: #f7f7f7!important;
+		outline: 1px solid #acd9fc !important;
+		border: 0 !important;
+		background-color: #f7f7f7 !important;
 	}
 
 	.thing.message .child .message {
-		margin: 1px 0 -1px!important;
-		padding: 2px 0 3px!important;
+		margin: 1px 0 -1px !important;
+		padding: 2px 0 3px !important;
 	}
 
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
 .res-nightmode body {
-	background-color: #222!important;
-	color: #ccc!important;
+	background-color: #222 !important;
+	color: #ccc !important;
 }
 
 .res-nightmode .md h1,
 .res-nightmode .md h2,
 .res-nightmode .md h3 {
-	border: 0 none!important;
-	color: #d7d7d7!important;
+	border: 0 none !important;
+	color: #d7d7d7 !important;
 }
 
 .res-nightmode a,
 .res-nightmode .thing a.title {
-	color: #acd9fc!important;
+	color: #acd9fc !important;
 }
 
 	.res-nightmode .thing a.title,
 	.res-nightmode .thing a.title.loggedin,
 	.res-nightmode .searchfacets .title {
-		color: #bbb!important;
-		text-shadow: 0 1px 0 #000!important;
+		color: #bbb !important;
+		text-shadow: 0 1px 0 #000 !important;
 	}
 
 		.res-nightmode .thing a.title:visited,
 		.res-nightmode .thing a.title.loggedin.click:visited,
 		.res-nightmode .thing a.title.loggedin:visited {
-			color: #777!important;
+			color: #777 !important;
 		}
 
 		.res-nightmode a:hover,
 		.res-nightmode .thing a.title:hover,
 		.res-nightmode .thing a.title.loggedin:hover {
-			color: #ff910b!important;
+			color: #ff910b !important;
 		}
 
 .res-nightmode .content .md a:visited,
 .res-nightmode div.comment .md p > a:visited {
-	color: #bbb!important;
+	color: #bbb !important;
 }
 
 .res-nightmode .roundfield,
 .res-nightmode .linefield,
 .res-nightmode .content.submit .roundfield.info-notice {
-	border-color: #582b2b!important;
-	border-radius: 2px!important;
-	background-color: #000!important;
-	box-shadow: 0 0 1px 1px #333!important;
+	border-color: #582b2b !important;
+	border-radius: 2px !important;
+	background-color: #000 !important;
+	box-shadow: 0 0 1px 1px #333 !important;
 }
 
 	.res-nightmode .roundfield textarea,
@@ -2550,109 +2550,109 @@ ul#image-preview-list {
 	.res-nightmode .linefield textarea,
 	.res-nightmode .linefield input[type=text],
 	.res-nightmode .linefield input[type=password] {
-		border-color: #9b9999!important;
-		border-radius: 2px!important;
-		box-shadow: 0 1px 4px 1px #4b4949!important;
+		border-color: #9b9999 !important;
+		border-radius: 2px !important;
+		box-shadow: 0 1px 4px 1px #4b4949 !important;
 	}
 
 .res-nightmode body:not(.wiki-page) .md {
-	color: #ccc!important;
+	color: #ccc !important;
 }
 
 .res-nightmode hr {
-	background-color: #414141!important;
-	color: #373737!important;
+	background-color: #414141 !important;
+	color: #373737 !important;
 }
 
 .res-nightmode .md blockquote,
 .res-nightmode .help blockquote {
-	border-color: #d2d2d2!important;
-	border-left-color: #5ba2fd!important;
+	border-color: #d2d2d2 !important;
+	border-left-color: #5ba2fd !important;
 }
 
 /* --  B.1.1. Tables -- */
 .res-nightmode .md table {
-	border-color: #444!important;
+	border-color: #444 !important;
 }
 
 	.res-nightmode .md table thead {
-		border-bottom: 1px solid #444!important;
-		background-color: #090909!important;
+		border-bottom: 1px solid #444 !important;
+		background-color: #090909 !important;
 	}
 
 	.res-nightmode .md table tr:nth-child(odd) {
-		background-color: #292929!important;
+		background-color: #292929 !important;
 	}
 
 	.res-nightmode .md table tr:nth-child(even) {
-		background-color: #222!important;
+		background-color: #222 !important;
 	}
 
 	.res-nightmode .md table td,
 	.res-nightmode .md table th {
-		border-right: 1px solid #444!important;
+		border-right: 1px solid #444 !important;
 	}
 
 /* --  B.1.2. Lists -- */
 .res-nightmode .md ul,
 .res-nightmode .md ol {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 /* --  B.1.3. Code Style -- */
 .res-nightmode .usertext-body pre,
 .res-nightmode .md.wiki pre {
-	color: #ddd!important;
+	color: #ddd !important;
 }
 
 .res-nightmode .usertext-body pre,
 .res-nightmode .md.wiki pre,
 .res-nightmode p > code,
 .res-nightmode li > code {
-	border: 1px solid #333!important;
-	border-radius: 2px!important;
-	background-color: #080808!important;
-	color: #ddd!important;
-	font-size: 11px!important;
+	border: 1px solid #333 !important;
+	border-radius: 2px !important;
+	background-color: #080808 !important;
+	color: #ddd !important;
+	font-size: 11px !important;
 }
 
 .res-nightmode code {
-	color: #ddd!important;
-	font-family: Consolas,Monaco,'Courier New',monospace!important;
+	color: #ddd !important;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
 }
 
 .res-nightmode p > code,
 .res-nightmode li > code {
-	color: #ddd!important;
+	color: #ddd !important;
 }
 
 /* --  B.1.4. Spoilers -- */
 .res-nightmode a[href='#s'],
 .res-nightmode a[href='/s'] {
-	background-color: #3d3d3d!important;
-	color: #fbf9f4!important;
+	background-color: #3d3d3d !important;
+	color: #fbf9f4 !important;
 }
 
 	.res-nightmode a[href='#s']:after,
 	.res-nightmode a[href='/s']:after {
-		background-color: #555!important;
-		color: #555!important;
+		background-color: #555 !important;
+		color: #555 !important;
 	}
 
 	.res-nightmode a[href='#s']:hover:after,
 	.res-nightmode a[href='#s']:active:after,
 	.res-nightmode a[href='/s']:hover:after,
 	.res-nightmode a[href='/s']:active:after {
-		color: #fff!important;
-		font-size: small!important;
+		color: #fff !important;
+		font-size: small !important;
 	}
 
 /* --  B.1.5. Common Button Style -- */
 .res-nightmode .entry .flat-list li a[onclick*='reply'] {
-	border-color: #302f2f!important;
-	border-radius: 2px!important;
-	background-color: #222!important;
-	color: #eee!important;
+	border-color: #302f2f !important;
+	border-radius: 2px !important;
+	background-color: #222 !important;
+	color: #eee !important;
 }
 
 .res-nightmode .btn,
@@ -2662,18 +2662,18 @@ ul#image-preview-list {
 .res-nightmode .BEFoot button,
 .res-nightmode input[type="submit"],
 .res-nightmode a[href*="#btn"] {
-	text-shadow: 1px 1px 2px #000!important;
+	text-shadow: 1px 1px 2px #000 !important;
 }
 
 	.res-nightmode .btn a {
-		color: #000!important;
+		color: #000 !important;
 	}
 
 	.res-nightmode .btn.right,
 	.res-nightmode button.cancel,
 	.res-nightmode .usertext span[class*='toggle'],
 	.res-nightmode a.reddiquette {
-		background: none transparent!important;
+		background: none transparent !important;
 	}
 
 		.res-nightmode .btn.right a,
@@ -2683,8 +2683,8 @@ ul#image-preview-list {
 		.res-nightmode #url-field button,
 		.res-nightmode .content button.RESBigEditorPop,
 		.res-nightmode span.RESSubscriptionButton {
-			color: #777!important;
-			text-shadow: 1px 1px 2px #222!important;
+			color: #777 !important;
+			text-shadow: 1px 1px 2px #222 !important;
 		}
 
 			.res-nightmode .btn.right a:hover,
@@ -2694,13 +2694,13 @@ ul#image-preview-list {
 			.res-nightmode a.reddiquette:hover,
 			.res-nightmode .content button.RESBigEditorPop:hover,
 			.res-nightmode span.RESSubscriptionButton:hover {
-				color: #a95908!important;
+				color: #a95908 !important;
 			}
 
 .res-nightmode .entry .flat-list li a,
 .res-nightmode .entry .flat-list li a:visited,
 .res-nightmode .entry .flat-list .redditSingleClick {
-	color: #333!important;
+	color: #333 !important;
 }
 
 .res-nightmode .entry:hover > .flat-list li a,
@@ -2710,167 +2710,167 @@ ul#image-preview-list {
 .res-nightmode .entry.RES-keyNav-activeElement .flat-list li a,
 .res-nightmode .entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
 .res-nightmode .noncollapsed:hover > .flat-list li a {
-	color: #888!important;
+	color: #888 !important;
 }
 
 .res-nightmode .entry .flat-list li a.comments {
-	color: #aaa!important;
+	color: #aaa !important;
 }
 
 /* ~~  B.2. Header ~~~~~ */
 .res-nightmode div#header {
-	background-color: #000!important;
-	box-shadow: 0 -3px 9px 5px #000!important;
+	background-color: #000 !important;
+	box-shadow: 0 -3px 9px 5px #000 !important;
 }
 
 .res-nightmode #header:after,
 .res-nightmode .footer-parent:after {
-	border-color: #494848!important;
+	border-color: #494848 !important;
 }
 
 .res-nightmode #header:after,
 .res-nightmode #header-bottom-left:before,
 .res-nightmode .footer-parent:after {
-	background-color: #414141!important;
-	background-image: linear-gradient(#696969,#414141)!important;
+	background-color: #414141 !important;
+	background-image: linear-gradient(#696969,#414141) !important;
 }
 
 /* --  B.2.1. Top Sr-Bar -- */
 .res-nightmode #sr-header-area {
-	border-bottom-color: #000!important;
-	background-color: #000!important;
-	box-shadow: 0 1px 8px 1px #000!important;
+	border-bottom-color: #000 !important;
+	background-color: #000 !important;
+	box-shadow: 0 1px 8px 1px #000 !important;
 }
 
 	.res-nightmode #sr-header-area .separator {
-		color: #d2d2d2!important;
+		color: #d2d2d2 !important;
 	}
 
 	.res-nightmode #sr-header-area a {
-		color: #aaa!important;
+		color: #aaa !important;
 	}
 
 .res-nightmode div#RESShortcutsEditContainer {
-	background: none #000!important;
+	background: none #000 !important;
 }
 
 .res-nightmode #sr-more-link {
-	background-color: #040406!important;
-	color: #000!important;
+	background-color: #040406 !important;
+	color: #000 !important;
 }
 
 /* --  B.2.2. Dropdown Subreddits Bar -- */
 .res-nightmode .drop-choices,
 .res-nightmode table#srList,
 .res-nightmode #RESSubredditGroupDropdown {
-	border-color: #555!important;
-	background-color: #444!important;
-	color: #ff910b!important;
+	border-color: #555 !important;
+	background-color: #444 !important;
+	color: #ff910b !important;
 }
 
 	.res-nightmode .drop-choices a.choice,
 	.res-nightmode table#srList a,
 	.res-nightmode div#RESSubredditGroupDropdown li a {
-		color: #ff910b!important;
+		color: #ff910b !important;
 	}
 
 		.res-nightmode .drop-choices a.choice:hover,
 		.res-nightmode table#srList a:hover,
 		.res-nightmode table#srList tr:hover,
 		.res-nightmode div#RESSubredditGroupDropdown li:hover {
-			background-color: #696969!important;
+			background-color: #696969 !important;
 		}
 
 	.res-nightmode .srdrop .choice.bottom-option,
 	.res-nightmode table#srList tr {
-		border-color: #696969!important;
+		border-color: #696969 !important;
 	}
 
 /* --  B.2.3. User Controls -- */
 .res-nightmode div#header-bottom-right {
-	border-radius: 0!important;
-	background-color: transparent!important;
+	border-radius: 0 !important;
+	background-color: transparent !important;
 }
 
 .res-nightmode #header-bottom-right:hover {
-	background-color: #333!important;
+	background-color: #333 !important;
 }
 
 .res-nightmode #header-bottom-right a,
 .res-nightmode #header-bottom-right span {
-	color: #acd9fc!important;
+	color: #acd9fc !important;
 }
 
 .res-nightmode #header-bottom-right:hover a,
 .res-nightmode #header-bottom-right:hover span {
-	text-shadow: none!important;
+	text-shadow: none !important;
 }
 
 /* --  B.2.4. Banner Image -- */
 .res-nightmode div#header-bottom-left {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 /* --  B.2.5. The Reddit Name, applies to all pages -- */
 .res-nightmode .pagename {
-	color: #acd9fc!important;
+	color: #acd9fc !important;
 }
 
 	.res-nightmode .pagename a,
 	.res-nightmode .pagename.selected {
-		border-width: 0 0 1px 0!important;
-		background-color: #223f4f!important;
-		background-image: linear-gradient(#223f4f, #181817)!important;
-		box-shadow: 0 4px 6px #111!important;
-		color: #fff!important;
-		text-shadow: 0 1px 0 #111!important;
+		border-width: 0 0 1px 0 !important;
+		background-color: #223f4f !important;
+		background-image: linear-gradient(#223f4f, #181817) !important;
+		box-shadow: 0 4px 6px #111 !important;
+		color: #fff !important;
+		text-shadow: 0 1px 0 #111 !important;
 	}
 
 		.res-nightmode .pagename a:hover {
-			background-color: #333!important;
-			background-image: linear-gradient(#555,#222)!important;
+			background-color: #333 !important;
+			background-image: linear-gradient(#555,#222) !important;
 		}
 
 /* --  B.2.6. Reddit Image and Text -- */
 .res-nightmode #header-img.default-header {
-	color: #acd9fc!important;
+	color: #acd9fc !important;
 }
 
 .res-nightmode #header-img-a {
-	border-width: 1px 0 1px 1px!important;
-	border-color: #1c1c1c!important;
-	background-color: #414141!important;
-	box-shadow: 0 4px 6px #000!important;
+	border-width: 1px 0 1px 1px !important;
+	border-color: #1c1c1c !important;
+	background-color: #414141 !important;
+	box-shadow: 0 4px 6px #000 !important;
 }
 
 /* --  B.2.7. Header Nav -- */
 .res-nightmode ul.tabmenu li a,
 .res-nightmode ul.tabmenu li a:visited,
 .res-nightmode ul.tabmenu li.selected a {
-	background-color: transparent!important;
-	color: #acd9fc!important;
+	background-color: transparent !important;
+	color: #acd9fc !important;
 }
 
 	.res-nightmode ul.tabmenu li.selected a,
 	.res-nightmode ul.tabmenu li.selected a:visited {
-		padding-bottom: 10px!important;
-		border-color: #223f4f!important;
-		background-color: #1d1c27!important;
-		background-image: none!important;
-		box-shadow: 0 5px 4px -4px #223f4f!important;
+		padding-bottom: 10px !important;
+		border-color: #223f4f !important;
+		background-color: #1d1c27 !important;
+		background-image: none !important;
+		box-shadow: 0 5px 4px -4px #223f4f !important;
 	}
 
 		.res-nightmode ul.tabmenu li a:hover,
 		.res-nightmode ul.tabmenu li.selected a:hover {
-			background-color: #333!important;
-			color: #e06935!important;
+			background-color: #333 !important;
+			color: #e06935 !important;
 		}
 
 /* ~~  B.3. Content box and common parts ~~~~~ */
 .res-nightmode div.content {
-	border-color: #202020!important;
-	background-color: #1b1b1b!important;
-	box-shadow: 0 1px 4px 3px #000!important;
+	border-color: #202020 !important;
+	background-color: #1b1b1b !important;
+	box-shadow: 0 1px 4px 3px #000 !important;
 }
 
 .res-nightmode.listing-page > div.content,
@@ -2878,28 +2878,28 @@ ul#image-preview-list {
 .res-nightmode.search-page > div.content,
 .res-nightmode.messages-page > div.content,
 .res-nightmode.multi-page > div.content {
-	padding: 0!important;
-	border: 0 none!important;
-	background-color: transparent!important;
-	box-shadow: none!important;
+	padding: 0 !important;
+	border: 0 none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 	.res-nightmode.single-page > div.content > .linklisting .link {
-		border-radius: 0!important;
-		background-color: #040404!important;
+		border-radius: 0 !important;
+		background-color: #040404 !important;
 	}
 
 /* --  B.3.1. Common Areas -- */
 .res-nightmode .panestack-title {
-	border-color: #444!important;
+	border-color: #444 !important;
 }
 
 	.res-nightmode .panestack-title .title {
-		color: #777!important;
+		color: #777 !important;
 	}
 
 .res-nightmode .menuarea {
-	border-color: #444!important;
+	border-color: #444 !important;
 }
 
 .res-nightmode p.tagline {
@@ -2907,30 +2907,30 @@ ul#image-preview-list {
 
 /* --  B.3.3. Link submission form -- */
 .res-nightmode .formtabs-content .infobar {
-	text-shadow: none!important;
+	text-shadow: none !important;
 }
 
 .res-nightmode ul.tabmenu.formtab li.selected a,
 .res-nightmode ul.tabmenu.formtab li.selected a:hover {
-	padding: 5px 20px!important;
-	border: 0!important;
-	box-shadow: none!important;
-	color: #fff!important;
+	padding: 5px 20px !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	color: #fff !important;
 }
 
 /* --  B.3.4. Expando Buttons -- */
 .res-nightmode .expando-button:before {
-	border: 1px solid #555!important;
-	background-color: #555!important;
-	color: #eee!important;
-	text-shadow: 0 0 3px #222!important;
+	border: 1px solid #555 !important;
+	background-color: #555 !important;
+	color: #eee !important;
+	text-shadow: 0 0 3px #222 !important;
 }
 
 .res-nightmode .expando-button:hover:before {
-	border-color: #444!important;
-	background-color: #444!important;
-	box-shadow: 0 4px 7px -3px #aaa!important;
-	color: #aaa!important;
+	border-color: #444 !important;
+	background-color: #444 !important;
+	box-shadow: 0 4px 7px -3px #aaa !important;
+	color: #aaa !important;
 }
 
 /* ~~  B.4. Links and Posts ~~~~~ */
@@ -2938,119 +2938,119 @@ ul#image-preview-list {
 .res-nightmode div.organic-listing,
 .res-nightmode div.thing.link.stickied,
 .res-nightmode div.thing.link.promoted {
-	overflow: hidden!important;
-	border-color: #111!important;
-	background: none #00121f!important;
-	box-shadow: 0 1px 6px -1px #000!important;
+	overflow: hidden !important;
+	border-color: #111 !important;
+	background: none #00121f !important;
+	box-shadow: 0 1px 6px -1px #000 !important;
 }
 
 .res-nightmode div.thing.link.stickied {
-	background: none #3d3c30!important;
+	background: none #3d3c30 !important;
 }
 
 /* --  B.4.2. Rest of Links (Posts) -- */
 .res-nightmode .linklisting div.thing {
-	margin: 0!important;
-	border-color: #292929!important;
-	background-color: #1e1e1e!important;
-	box-shadow: 0 0 5px 0 #111!important;
+	margin: 0 !important;
+	border-color: #292929 !important;
+	background-color: #1e1e1e !important;
+	box-shadow: 0 0 5px 0 #111 !important;
 }
 
 .res-nightmode .linklisting .odd {
-	background-image: linear-gradient(#222,#1e1e1e)!important;
+	background-image: linear-gradient(#222,#1e1e1e) !important;
 }
 
 .res-nightmode .linklisting .even {
-	background-color: #262626!important;
-	background-image: linear-gradient(#222,#262626)!important;
+	background-color: #262626 !important;
+	background-image: linear-gradient(#222,#262626) !important;
 }
 
 .res-nightmode .link.last-clicked {
-	background: #111!important;
+	background: #111 !important;
 }
 
 /* ~~  B.5. Custom Upvote/Downvote Arrows ~~~~~ */
 .res-nightmode .arrow:not(.prev):not(.next) {
-	background: none transparent!important;
-	color: #555!important;
+	background: none transparent !important;
+	color: #555 !important;
 }
 
 .res-nightmode .arrow.upmod,
 .res-nightmode .arrow.up:hover,
 .res-nightmode .arrow.downmod,
 .res-nightmode .arrow.down:hover {
-	background: none transparent!important;
+	background: none transparent !important;
 }
 
 .res-nightmode .link .score {
-	color: #aaa!important;
+	color: #aaa !important;
 }
 
 /* ~~  B.6. Comments ~~~~~ */
 /* --  B.6.1. Default Comments -- */
 .res-nightmode .nestedlisting > div.comment {
-	border: 1px solid #2d2d2d!important;
-	background-color: #1b1b1b!important;
-	box-shadow: 1px 1px 3px -1px #000!important;
+	border: 1px solid #2d2d2d !important;
+	background-color: #1b1b1b !important;
+	box-shadow: 1px 1px 3px -1px #000 !important;
 }
 
 .res-nightmode .comment a.expand {
-	color: #777!important;
+	color: #777 !important;
 }
 
 	.res-nightmode .comment a.expand:hover {
-		background-color: #444!important;
+		background-color: #444 !important;
 	}
 
 	.res-nightmode .comment a.expand:visited {
-		color: #777!important;
+		color: #777 !important;
 	}
 
 .res-nightmode .comment .child,
 .res-nightmode .comment .showreplies {
-	border-color: #2d2d2d!important;
+	border-color: #2d2d2d !important;
 }
 
 .res-nightmode .morechildren a.button,
 .res-nightmode .morerecursion .deepthread,
 .res-nightmode .nextprev a {
-	color: #888!important;
-	text-shadow: none!important;
+	color: #888 !important;
+	text-shadow: none !important;
 }
 
 /* --  B.6.2. Comments with RES comment box enabled -- */
 .res-nightmode div.content > form > div .commentarea .even {
-	border-top: 1px solid #111!important;
-	background-color: transparent!important;
+	border-top: 1px solid #111 !important;
+	background-color: transparent !important;
 }
 
 .res-nightmode.res-commentBoxes .commentarea .nestedlisting {
-	border: 0!important;
-	background-color: transparent!important;
-	box-shadow: none!important;
+	border: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 .res-nightmode.res-commentBoxes .morechildren a.button,
 .res-nightmode.res-commentBoxes .morerecursion .deepthread,
 .res-nightmode .nextprev a {
-	border-color: #222!important;
-	background-color: #1b1b1b!important;
-	color: #888!important;
-	text-shadow: none!important;
+	border-color: #222 !important;
+	background-color: #1b1b1b !important;
+	color: #888 !important;
+	text-shadow: none !important;
 }
 
 .res-nightmode.res-commentBoxes .nestedlisting > div.comment {
-	border: 1px solid #111!important;
-	border-color: #2d2d2d!important;
-	background-color: #1b1b1b!important;
-	box-shadow: 1px 1px 3px -1px #000!important;
+	border: 1px solid #111 !important;
+	border-color: #2d2d2d !important;
+	background-color: #1b1b1b !important;
+	box-shadow: 1px 1px 3px -1px #000 !important;
 }
 
 .res-nightmode.res-commentBoxes div.comment {
-	border: 1px solid #111!important;
-	border-color: #2d2d2d!important;
-	border-right: 0!important;
-	border-radius: 0!important;
+	border: 1px solid #111 !important;
+	border-color: #2d2d2d !important;
+	border-right: 0 !important;
+	border-radius: 0 !important;
 }
 
 .res-nightmode.res-commentBoxes .comment .comment,
@@ -3058,146 +3058,146 @@ ul#image-preview-list {
 .res-nightmode.res-commentBoxes .comment .comment .comment .comment .comment .comment,
 .res-nightmode.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-	background-color: #131313!important;
+	background-color: #131313 !important;
 }
 
 	.res-nightmode.res-commentBoxes .comment .comment .comment,
 	.res-nightmode.res-commentBoxes .comment .comment .comment .comment .comment,
 	.res-nightmode.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment,
 	.res-nightmode.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-		background-color: #1b1b1b!important;
+		background-color: #1b1b1b !important;
 	}
 
 /* ~~  B.7. Spam highlighting ~~~~~ */
 .res-nightmode div.thing.suspicious {
-	border-color: #ff910b!important;
+	border-color: #ff910b !important;
 }
 
 .res-nightmode div.thing.spam,
 .res-nightmode div.thing.reported {
-	margin: 0 0 5px!important;
-	outline: 1px solid #8f0606!important;
-	background-color: #771207!important;
-	background-image: linear-gradient(#771207,#711107)!important;
-	box-shadow: none!important;
+	margin: 0 0 5px !important;
+	outline: 1px solid #8f0606 !important;
+	background-color: #771207 !important;
+	background-image: linear-gradient(#771207,#711107) !important;
+	box-shadow: none !important;
 }
 
 	.res-nightmode div.thing.spam > .entry,
 	.res-nightmode div.thing.reported > .entry {
-		background-color: #771207!important;
+		background-color: #771207 !important;
 	}
 
 		.res-nightmode div.thing.spam > p > *,
 		.res-nightmode div.thing.spam > .entry .title,
 		.res-nightmode div.thing.reported > p > *,
 		.res-nightmode div.thing.reported > .entry .title {
-			background-color: transparent!important;
-			color: #fd9285!important;
+			background-color: transparent !important;
+			color: #fd9285 !important;
 		}
 
 .res-nightmode a.pretty-button {
-	box-shadow: 1px 1px 1px 0 #222!important;
-	color: #fff9e0!important;
+	box-shadow: 1px 1px 1px 0 #222 !important;
+	color: #fff9e0 !important;
 }
 
 	.res-nightmode a.pretty-button.inoffensive {
-		border-color: #444!important;
-		background: none #313131!important;
+		border-color: #444 !important;
+		background: none #313131 !important;
 	}
 
 /* ~~  B.8. Sidebar ~~~~~ */
 .res-nightmode .side {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 	.res-nightmode .side .titlebox {
-		padding: 0!important;
+		padding: 0 !important;
 	}
 
 		.res-nightmode .side .titlebox > h1 {
-			text-shadow: 1px 1px 1px #000,2px 2px 3px #555,-1px -1px 1px #111!important;
+			text-shadow: 1px 1px 1px #000,2px 2px 3px #555,-1px -1px 1px #111 !important;
 		}
 
 	.res-nightmode .side h1,
 	.res-nightmode .side h2,
 	.res-nightmode .side h3 {
-		color: #ddd!important;
-		text-shadow: 0 -1px 0 #444, 0 1px 0 #0f0000!important;
+		color: #ddd !important;
+		text-shadow: 0 -1px 0 #444, 0 1px 0 #0f0000 !important;
 	}
 
 .res-nightmode body:not(.profile-page) .side .titlebox .bottom {
-	border-color: #555!important;
+	border-color: #555 !important;
 }
 
 /* --  B.8.1. Search -- */
 .res-nightmode #search input[type='text'] {
-	border-color: #1c1c1c!important;
-	color: #fff!important;
+	border-color: #1c1c1c !important;
+	color: #fff !important;
 }
 
 .res-nightmode .searchpane {
-	border-width: 0!important;
-	border-color: #333!important;
-	border-radius: 0!important;
-	background-color: #111!important;
-	box-shadow: none!important;
+	border-width: 0 !important;
+	border-color: #333 !important;
+	border-radius: 0 !important;
+	background-color: #111 !important;
+	box-shadow: none !important;
 }
 
 .res-nightmode .searchfacets {
-	border-color: #333!important;
-	background-color: transparent!important;
-	box-shadow: none!important;
+	border-color: #333 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 /* --  B.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .res-nightmode .infobar {
-	border-color: #083e4c!important;
-	background-color: #546477!important;
-	background-image: none!important;
+	border-color: #083e4c !important;
+	background-color: #546477 !important;
+	background-image: none !important;
 }
 
 .res-nightmode .linkinfo {
-	border-color: #333!important;
-	background: transparent!important;
+	border-color: #333 !important;
+	background: transparent !important;
 }
 
 	.res-nightmode .linkinfo .score,
 	.res-nightmode .linkinfo .upvotes,
 	.res-nightmode .linkinfo .downvotes {
-		border-color: #333!important;
-		background: #111!important;
+		border-color: #333 !important;
+		background: #111 !important;
 	}
 
 	.res-nightmode .linkinfo input#shortlink-text {
-		border: 0!important;
-		background-color: transparent!important;
-		color: #f5f5f5!important;
+		border: 0 !important;
+		background-color: transparent !important;
+		color: #f5f5f5 !important;
 	}
 
 /* --  B.8.4. Login Form -- */
 .res-nightmode .login-form-side {
-	border: 1px solid #111!important;
-	border-width: 1px 0!important;
-	background-color: transparent!important;
+	border: 1px solid #111 !important;
+	border-width: 1px 0 !important;
+	background-color: transparent !important;
 }
 
 	.res-nightmode .login-form-side label {
-		color: #fff!important;
+		color: #fff !important;
 	}
 
 /* --  B.8.5. Flair Setting area -- */
 .res-nightmode .titlebox form.flairtoggle {
-	border-color: #333!important;
-	background: #111!important;
+	border-color: #333 !important;
+	background: #111 !important;
 }
 
 .res-nightmode .titlebox .tagline {
-	border-color: #333!important;
-	background: #111!important;
+	border-color: #333 !important;
+	background: #111 !important;
 }
 
 .res-nightmode .subscription-box ul > a[count] {
-	background-color: #111!important;
+	background-color: #111 !important;
 }
 
 .res-nightmode .fancy-toggle-button .active,
@@ -3206,17 +3206,17 @@ ul#image-preview-list {
 .res-nightmode .RESFilterToggle,
 .res-nightmode a.blueButton,
 .res-nightmode div.blueButton {
-	border-color: #010101!important;
+	border-color: #010101 !important;
 }
 
 .res-nightmode .fancy-toggle-button .add {
-	border-color: #27b307!important;
-	background: none #1a8b00!important;
+	border-color: #27b307 !important;
+	background: none #1a8b00 !important;
 }
 
 .res-nightmode .fancy-toggle-button .remove {
-	background: none #0f0000!important;
-	color: #777!important;
+	background: none #0f0000 !important;
+	color: #777 !important;
 }
 
 .res-nightmode .RESshortcutside,
@@ -3224,102 +3224,102 @@ ul#image-preview-list {
 .res-nightmode .RESFilterToggle,
 .res-nightmode a.blueButton,
 .res-nightmode div.blueButton {
-	background: none #0f0000!important;
-	color: #2154a3!important;
+	background: none #0f0000 !important;
+	color: #2154a3 !important;
 }
 
 	.res-nightmode .RESshortcutside.remove,
 	.res-nightmode .RESDashboardToggle.remove,
 	.res-nightmode .RESFilterToggle.remove {
-		color: #777!important;
+		color: #777 !important;
 	}
 
 /* --  B.8.6. Submit Button -- */
 .res-nightmode div.spacer > .submit {
-	overflow: visible!important;
+	overflow: visible !important;
 }
 
 /* --  B.8.7. Moderators Area -- */
 .res-nightmode .sidecontentbox {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 	.res-nightmode .sidecontentbox .title h1 {
-		color: #d2d2d2!important;
+		color: #d2d2d2 !important;
 	}
 
 	.res-nightmode .sidecontentbox .thing {
-		border: 0 none #222!important;
+		border: 0 none #222 !important;
 	}
 
 .res-nightmode .spacer .sidecontentbox .content {
-	border-color: #333!important;
-	background-color: #222!important;
+	border-color: #333 !important;
+	background-color: #222 !important;
 }
 
 /* --  B.8.8. Account Activity area at Bottom of Sidebar -- */
 .res-nightmode .account-activity-box {
-	border-radius: 0 3px!important;
-	background-color: transparent!important;
+	border-radius: 0 3px !important;
+	background-color: transparent !important;
 }
 
 /* ~~  B.9. Footer ~~~~~ */
 .res-nightmode .footer-parent {
-	background-color: #393939!important;
-	box-shadow: 0 -3px 9px -2px #222!important;
+	background-color: #393939 !important;
+	box-shadow: 0 -3px 9px -2px #222 !important;
 }
 
 .res-nightmode .footer {
-	border: 0 none!important;
-	background-color: transparent!important;
+	border: 0 none !important;
+	background-color: transparent !important;
 }
 
 	.res-nightmode .footer .flat-vert.title {
-		color: #acd9fc!important;
+		color: #acd9fc !important;
 	}
 
 /* --  B.9.1. Reddit Copyright Text -- */
 .res-nightmode .bottommenu {
-	color: #fac8b1!important;
+	color: #fac8b1 !important;
 }
 
 /* ~~   B.10. Wiki Pages ~~~~~ */
 .res-nightmode.wiki-page .wiki-page-content {
-	border-top: 1px dotted #414141!important;
+	border-top: 1px dotted #414141 !important;
 }
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki > .toc > ul {
-		border-color: #111!important;
-		background-color: #040406!important;
+		border-color: #111 !important;
+		background-color: #040406 !important;
 	}
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h1,
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h2 {
-		text-shadow: 0 0 2px #ccc,1px 1px 3px #111!important;
+		text-shadow: 0 0 2px #ccc,1px 1px 3px #111 !important;
 	}
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h5,
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h6 {
-		color: #fff!important;
+		color: #fff !important;
 	}
 
 .res-nightmode.wiki-page .pageactions .wikiaction-current:hover {
-	background-color: #ff910b!important;
+	background-color: #ff910b !important;
 }
 
 .res-nightmode.wiki-page .pageactions .wikiaction:hover {
-	background-color: #acd9fc!important;
+	background-color: #acd9fc !important;
 }
 
 .res-nightmode.wiki-page .pageactions .wikiaction-current {
-	background-color: #686868!important;
-	color: #fff!important;
+	background-color: #686868 !important;
+	color: #fff !important;
 }
 
 /* ~~  B.11. RES Optimisation ~~~~~ */
 .res-nightmode div#userbarToggle {
-	background-color: #333!important;
-	color: #acd9fc!important;
+	background-color: #333 !important;
+	color: #acd9fc !important;
 }
 
 .res-nightmode .entry.RES-keyNav-activeElement div.md,
@@ -3332,16 +3332,16 @@ ul#image-preview-list {
 .res-nightmode .RES-keyNav-activeElement .noncollapsed,
 .res-nightmode .RES-keyNav-activeElement .noncollapsed .md,
 .res-nightmode div.RES-keyNav-activeElement .noncollapsed .md p {
-	outline: none!important;
-	background: none transparent!important;
+	outline: none !important;
+	background: none transparent !important;
 }
 
 .res-nightmode .keyNavAnnotation {
-	color: #777!important;
+	color: #777 !important;
 }
 
 .res-nightmode.messages-page a {
-	color: #acd9fc!important;
+	color: #acd9fc !important;
 }
 
 /* --  B.11.1. Progress Indicator and Page marker for RES mode -- */
@@ -3349,187 +3349,187 @@ ul#image-preview-list {
 .res-nightmode div.NERPageMarker,
 .res-nightmode div#NERFail,
 .res-nightmode #endOfReddit {
-	color: #ff4900!important;
+	color: #ff4900 !important;
 }
 
 /* ~~  B.12. Sidebar Boxes ~~~~~ */
 .res-nightmode .side .spacer .md h1,
 .res-nightmode .side .spacer .md h2,
 .res-nightmode .side .spacer .md h3 {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 .res-nightmode .side .md blockquote {
-	border: 1px solid #444!important;
-	border-radius: 2px!important;
-	background-color: #111!important;
+	border: 1px solid #444 !important;
+	border-radius: 2px !important;
+	background-color: #111 !important;
 }
 
 	.res-nightmode .side .md blockquote h1 {
-		background-color: transparent!important;
+		background-color: transparent !important;
 	}
 
 	.res-nightmode .side .md blockquote pre,
 	.res-nightmode .side .md blockquote code {
-		color: #ddd!important;
+		color: #ddd !important;
 	}
 
 .res-nightmode .side .md h6 + blockquote p,
 .res-nightmode .side .md h5 + blockquote p,
 .res-nightmode .side .md h4 + blockquote p {
-	color: #fff!important;
+	color: #fff !important;
 }
 
 /* --  B.12.1. Colored Boxes -- */
 .res-nightmode .side .md blockquote a[href*='#icon-']:before {
-	color: #111!important;
+	color: #111 !important;
 }
 
 .res-nightmode .side .md h4 + blockquote {
-	border: 1px solid #046f04!important;
-	background-color: #031401!important;
+	border: 1px solid #046f04 !important;
+	background-color: #031401 !important;
 }
 
 	.res-nightmode .side .md h4 + blockquote a[href*='#icon-']:before {
-		color: #160019!important;
+		color: #160019 !important;
 	}
 
 .res-nightmode .side .md h5 + blockquote {
-	border: 1px solid #745800!important;
-	background-color: #120e01!important;
+	border: 1px solid #745800 !important;
+	background-color: #120e01 !important;
 }
 
 	.res-nightmode .side .md h5 + blockquote a[href*='#icon-']:before {
-		color: #000019!important;
+		color: #000019 !important;
 	}
 
 .res-nightmode .side .md h6 + blockquote {
-	border: 1px solid #77150b!important;
-	background-color: #100000!important;
+	border: 1px solid #77150b !important;
+	background-color: #100000 !important;
 }
 
 	.res-nightmode .side .md h6 + blockquote a[href*='#icon-']:before {
-		color: #010f0f!important;
+		color: #010f0f !important;
 	}
 
 /* --  B.12.2. Sidebar Icons -- */
 .res-nightmode .side a[href*='#icon-'] {
-	color: #ccc!important;
+	color: #ccc !important;
 }
 
 /* ~~  B.13. Vibgyor Flairs ~~~~~ */
 .res-nightmode .flair,
 .res-nightmode .linkflairlabel,
 .res-nightmode span.linkflair {
-	border-color: #585757!important;
-	border-radius: 2px!important;
-	background-color: #3c3b3b!important;
-	background-image: none!important;
-	color: #d2d2d2!important;
+	border-color: #585757 !important;
+	border-radius: 2px !important;
+	background-color: #3c3b3b !important;
+	background-image: none !important;
+	color: #d2d2d2 !important;
 }
 
 .res-nightmode .linkflair-m-vt .linkflairlabel {
-	background: #8f2a8f!important;
-	color: #ddd!important;
+	background: #8f2a8f !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-io .linkflairlabel {
-	background: #325a8d!important;
-	color: #ddd!important;
+	background: #325a8d !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-be .linkflairlabel {
-	background: #026fbe!important;
-	color: #ddd!important;
+	background: #026fbe !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-gn .linkflairlabel {
-	background: #2e742d!important;
-	color: #ddd!important;
+	background: #2e742d !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-yw .linkflairlabel {
-	background: #f8f87e!important;
-	color: #333!important;
+	background: #f8f87e !important;
+	color: #333 !important;
 }
 
 .res-nightmode .linkflair-m-oe .linkflairlabel {
-	background: #ffa51d!important;
-	color: #333!important;
+	background: #ffa51d !important;
+	color: #333 !important;
 }
 
 .res-nightmode .linkflair-m-rd .linkflairlabel {
-	background: #d53838!important;
-	color: #ddd!important;
+	background: #d53838 !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-gy .linkflairlabel {
-	background: #4e4e4e!important;
-	color: #ddd!important;
+	background: #4e4e4e !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-it .linkflairlabel {
-	background: #fff!important;
-	color: #000!important;
+	background: #fff !important;
+	color: #000 !important;
 }
 
 .res-nightmode .linkflair-meta .title > .linkflairlabel {
-	border-color: #333!important;
-	background-color: #000!important;
-	box-shadow: 0 1px 10px 0 #000!important;
-	color: #fff!important;
+	border-color: #333 !important;
+	background-color: #000 !important;
+	box-shadow: 0 1px 10px 0 #000 !important;
+	color: #fff !important;
 }
 
 /* ~~  B.14. Multireddit ~~~~~ */
 .res-nightmode.with-listing-chooser .listing-chooser {
-	background-color: #555!important;
+	background-color: #555 !important;
 }
 
 	.res-nightmode.with-listing-chooser .listing-chooser .grippy {
-		border-color: #555!important;
-		background-color: #222!important;
+		border-color: #555 !important;
+		background-color: #222 !important;
 	}
 
 		.res-nightmode.with-listing-chooser .listing-chooser .grippy:after {
-			border-color: #555!important;
-			background-color: #444!important;
-			box-shadow: 3px 0 6px -2px #000!important;
+			border-color: #555 !important;
+			background-color: #444 !important;
+			box-shadow: 3px 0 6px -2px #000 !important;
 		}
 
 		.res-nightmode.with-listing-chooser .listing-chooser .grippy:hover:after {
-			background-color: #ccc!important;
+			background-color: #ccc !important;
 		}
 
 	.res-nightmode.with-listing-chooser .listing-chooser li {
-		border-color: #111!important;
-		background-color: #444!important;
+		border-color: #111 !important;
+		background-color: #444 !important;
 	}
 
 .res-nightmode.with-listing-chooser li a .description {
-	color: #ddd!important;
+	color: #ddd !important;
 }
 
 .res-nightmode.with-listing-chooser .create button {
-	border-color: #aaa!important;
-	background: #222!important;
-	color: #fff!important;
+	border-color: #aaa !important;
+	background: #222 !important;
+	color: #fff !important;
 }
 
 .res-nightmode.with-listing-chooser .intro p {
-	color: #333!important;
+	color: #333 !important;
 }
 
 /* ~~  B.15. Other areas in Reddit - [WIP] ~~~~~ */
 .res-nightmode .tabpane-content {
-	border-color: #555!important;
+	border-color: #555 !important;
 }
 
 .res-nightmode .thing.message.new > .entry {
-	outline: 1px solid #4d90fe!important;
+	outline: 1px solid #4d90fe !important;
 }
 
 	.res-nightmode .thing.message.new > .entry.RES-keyNav-activeElement {
-		background-color: #393939!important;
+		background-color: #393939 !important;
 	}
 
 /* [ C ]. Modules for specific customization ............ */
@@ -3538,48 +3538,48 @@ ul#image-preview-list {
 body.with-listing-chooser > .content,
 body.with-listing-chooser .footer-parent,
 body.with-listing-chooser > #savedLinksList {
-	margin-left: 155px!important;
+	margin-left: 155px !important;
 }
 
 .message.message-parent.recipient > .entry .head > a {
-	font-size: 11px!important;
+	font-size: 11px !important;
 }
 
 /* table for moderation matrix */
 table.generic-table.mod-matrix {
-	margin-top: 30px!important;
+	margin-top: 30px !important;
 }
 
 	table.generic-table.mod-matrix td {
-		padding: 2px 5px!important;
-		border: 1px solid #eee!important;
+		padding: 2px 5px !important;
+		border: 1px solid #eee !important;
 	}
 
 	table.generic-table.mod-matrix th {
-		vertical-align: text-bottom!important;
-		text-align: center!important;
+		vertical-align: text-bottom !important;
+		text-align: center !important;
 	}
 
 	table.generic-table.mod-matrix a.modactions {
-		margin-top: 120px!important;
-		vertical-align: bottom!important;
+		margin-top: 120px !important;
+		vertical-align: bottom !important;
 	}
 
 		table.generic-table.mod-matrix a.modactions:before {
-			content: attr(title)!important;
-			position: relative!important;
-			bottom: 20px!important;
-			display: block!important;
-			font-size: 11px!important;
+			content: attr(title) !important;
+			position: relative !important;
+			bottom: 20px !important;
+			display: block !important;
+			font-size: 11px !important;
 			font-family: Verdana, monospace;
-			white-space: nowrap!important;
-			text-transform: capitalize!important;
-			-webkit-transform: rotate(-90.0deg)!important;
-			transform: rotate(-90.0deg)!important;
+			white-space: nowrap !important;
+			text-transform: capitalize !important;
+			-webkit-transform: rotate(-90.0deg) !important;
+			transform: rotate(-90.0deg) !important;
 		}
 
 	table.generic-table.mod-matrix .modactions.setpermissions {
-		display: block!important;
-		width: 16px!important;
-		height: 16px!important;
+		display: block !important;
+		width: 16px !important;
+		height: 16px !important;
 	}

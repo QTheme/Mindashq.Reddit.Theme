@@ -29,7 +29,7 @@
 .linkinfo .upvotes,
 .linkinfo .downvotes {
 	display: block;
-	margin: 0 -1px!important;
+	margin: 0 -1px !important;
 	padding: 10px;
 	height: auto;
 	border: 1px solid #e3e3e3;

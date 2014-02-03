@@ -7,7 +7,7 @@
 
 .pagename a,
 .titlebox .redditname a {
-	font-size: 0!important;
+	font-size: 0 !important;
 	text-shadow: none;
 }
 
