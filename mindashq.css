@@ -768,7 +768,7 @@ body.multi-page > div.content {
 
 p.tagline {
 	margin: 2px;
-	font-size: 115%;
+	/*font-size: 115%;*/
 }
 
 	p.tagline span span {
