@@ -1,6 +1,6 @@
-/* --  C.2. Sidebar Buttons - in situ 
+/*--  C.2. Sidebar Buttons - in situ 
 	Details : http://www.reddit.com/r/mindashq/wiki/modules/SidebarButtons
----- */
+----*/
 
 /*-- C.2.1 Button Appearance --*/
 /* Delete C.2.1 from code if buttons are not to be hidden via CSS*/
@@ -14,7 +14,7 @@
 }
 /*-- end Button Appearance  --*/
 
-/*-- C.2.2 Dual buttons ---- */
+/*-- C.2.2 Dual buttons ----*/
 /* Delete C.2.2 from code if side-by-side buttons not desired */
 
 .sidebox.submit {
@@ -69,6 +69,6 @@ body.res-nightmode .sidebox.submit-text {
 	top: -2px;
 }
 
-/*-- C.2.2.end Dual buttons ---- */
+/*-- C.2.2.end Dual buttons ----*/
 
-/* --  C.2.end Sidebar Buttons in situ ---- */
+/*--  C.2.end Sidebar Buttons in situ ----*/

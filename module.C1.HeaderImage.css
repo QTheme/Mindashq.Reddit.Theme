@@ -1,7 +1,7 @@
-/* --  C.1. Header Image
+/*--  C.1. Header Image
 	Details http://www.reddit.com/r/mindashq/wiki/modules/HeaderImages		
 	+ 	Add only when corresponding image is loaded in community settings > stylesheet 
----- */
+----*/
 
 #header,
 body.res-nightmode #header {
@@ -66,4 +66,4 @@ body.res-nightmode #header ul.tabmenu li.selected a {
 	background-color: #fff; /*Tweak to match the image color*/
 }
 
-/* --  C.1.end Header Image ---- */
+/*--  C.1.end Header Image ----*/

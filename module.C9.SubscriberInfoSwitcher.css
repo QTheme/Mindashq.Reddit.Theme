@@ -1,6 +1,4 @@
-﻿/* --  C.9. Subscriber Info Switcher
-	Details : http://www.reddit.com/r/mindashq/wiki/modules/TextSwitchers
----- */
+﻿/*--  C.9. Subscriber Info Switcher ----*/
 
 .titlebox span.word {
 	display: none;
@@ -14,4 +12,4 @@
 	content: " Themers here now"; /*This is replacement for users online*/
 }
 
-/* --  C.9.end Subscriber Info Switcher ---- */
+/*--  C.9.end Subscriber Info Switcher ----*/

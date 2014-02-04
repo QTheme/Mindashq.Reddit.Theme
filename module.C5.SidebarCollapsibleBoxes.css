@@ -1,6 +1,6 @@
-﻿/* --  C.5. Sidebar Collapsible Boxes 
+﻿/*--  C.5. Sidebar Collapsible Boxes 
 	Details : http://www.reddit.com/r/mindashq/wiki/modules/collapsibleboxes
----- */
+----*/
 
 /*  Enlist blocks to be seen uncollapsed  */
 .side .md > blockquote:nth-of-type(5) > * {
@@ -31,4 +31,4 @@
 .side .md > blockquote:hover > * {
 	display: block;
 }
-/* --  C.5.end Sidebar Collapsible Boxes ---- */
+/*--  C.5.end Sidebar Collapsible Boxes ----*/

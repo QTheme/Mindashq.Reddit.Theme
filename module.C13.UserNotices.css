@@ -1,4 +1,4 @@
-﻿/* --  C.13. User Notices - inform submitters about reporting buttons and downvotes ---- */
+﻿/*--  C.13. User Notices - inform submitters about reporting buttons and downvotes ----*/
 /* Emphasising reporting buttons */
 .entry .flat-list li form.report-button .main a,
 .entry .flat-list li form.remove-button .main a {
@@ -46,4 +46,4 @@
 	text-align: center;
 	z-index: 1000;
 }
-/* --  C.13.end User Notices ---- */
+/*--  C.13.end User Notices ----*/

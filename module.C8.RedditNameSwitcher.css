@@ -1,4 +1,4 @@
-﻿/* --  C.8. Reddit Name Switcher ---- */
+﻿/*--  C.8. Reddit Name Switcher ----*/
 
 .pagename a:after,
 .titlebox .redditname a:after {
@@ -25,4 +25,4 @@
 .res-nightmode .titlebox .redditname a:after {
 	text-shadow: 0px 0px 1px #555;
 }
-/* --  C.8.end Reddit Name Switcher ---- */
+/*--  C.8.end Reddit Name Switcher ----*/
