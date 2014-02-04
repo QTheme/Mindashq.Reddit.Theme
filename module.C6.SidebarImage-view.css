@@ -1,7 +1,7 @@
-/* --  C.6. Sidebar Image - view only
+/*--  C.6. Sidebar Image - view only
 	Details : http://www.reddit.com/r/mindashq/wiki/modules/SidebarImages
 	+ 	Add only when corresponding image is loaded in subreddit settings > stylesheet 
----- */
+----*/
 
 .side .usertext-body:before {
 	content: url('%%SidebarImage%%');
@@ -10,4 +10,4 @@
 	margin: 10px 0px;
 	text-align: center;
 }
-/* --  C.6.end Sidebar Image ---- */
+/*--  C.6.end Sidebar Image ----*/

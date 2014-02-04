@@ -1,8 +1,8 @@
-﻿/* --  C.6. Sidebar Image - clickable
+﻿/*--  C.6. Sidebar Image - clickable
 	Details : http://www.reddit.com/r/mindashq/wiki/modules/SidebarImages		
 	+ 	Add only when corresponding image is loaded in community settings > stylesheet 
 	+ 	Update the main CSS header comment block when this module is used
----- */
+----*/
 
 .side .usertext a[href$='png'],
 .side .usertext a[href$='jpg'],
@@ -44,4 +44,4 @@
 		text-align: center;
 		opacity: .8;
 	}
-/* --  C.6.end Sidebar Image ---- */
+/*--  C.6.end Sidebar Image ----*/

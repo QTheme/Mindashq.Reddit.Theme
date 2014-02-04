@@ -1,4 +1,4 @@
-﻿/* --  C.12. Sidebar Space - flow the content of posts and comments into space reserved for sidebar ---- */
+﻿/*--  C.12. Sidebar Space - flow the content of posts and comments into space reserved for sidebar ----*/
 body.listing-page > div.content,
 body.single-page > div.content,
 body.search-page > div.content,
@@ -12,4 +12,4 @@ body.multi-page > div.content {
 	/* may have to tweak 355px if the side paddings or margins are changed on div.content */
 }
 
-/* --  C.12.end Sidebar Space - flow the content ---- */
+/*--  C.12.end Sidebar Space - flow the content ----*/

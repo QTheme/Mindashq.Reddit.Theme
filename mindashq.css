@@ -120,7 +120,7 @@ hr {
 	color: #ccc;
 }
 
-/* --  A.1.1. Tables -- */
+/*--  A.1.1. Tables -- */
 .md table {
 	margin: 10px 0;
 	border: 1px solid #ccc;
@@ -154,7 +154,7 @@ hr {
 		border-right: 1px solid #ccc;
 	}
 
-/* --  A.1.2. Lists -- */
+/*--  A.1.2. Lists -- */
 .md ul,
 .md ol {
 	margin: 5px 0 5px 20px;
@@ -186,7 +186,7 @@ hr {
 			margin: 2px;
 		}
 
-/* --  A.1.3. Code Style -- */
+/*--  A.1.3. Code Style -- */
 .usertext-body pre,
 .md.wiki pre {
 	margin: 10px 0;
@@ -216,7 +216,7 @@ li > code {
 	font-family: Consolas,Monaco,'Courier New',monospace;
 }
 
-/* --  A.1.4. Spoilers -- */
+/*--  A.1.4. Spoilers -- */
 a[href='#s'],
 a[href='/s'] {
 	display: inline-block;
@@ -246,7 +246,7 @@ a[href='/s'] {
 		text-decoration: none;
 	}
 
-/* --  A.1.5. Common Button Style -- */
+/*--  A.1.5. Common Button Style -- */
 .btn button,
 .btn .button {
 	margin: 0 0 0 20px;
@@ -421,7 +421,7 @@ a[href*='#btn'] {
 		background-image: linear-gradient(#acd9fc,#8ccbfc);
 	}
 
-/* --  A.2.1. Top Sr-Bar -- */
+/*--  A.2.1. Top Sr-Bar -- */
 #sr-header-area {
 	padding: 0 0 0 5px;
 	height: 20px;
@@ -485,7 +485,7 @@ div#RESShortcutsEditContainer {
 	color: #1d1212;
 }
 
-/* --  A.2.2. Dropdown Subreddits Bar -- */
+/*--  A.2.2. Dropdown Subreddits Bar -- */
 .drop-choices,
 table#srList,
 div#RESSubredditGroupDropdown {
@@ -519,7 +519,7 @@ div#RESSubredditGroupDropdown {
 		border-color: #acd9fc;
 	}
 
-/* --  A.2.3. User Controls -- */
+/*--  A.2.3. User Controls -- */
 #header-bottom-right {
 	top: auto !important;
 	bottom: -1px !important;
@@ -552,7 +552,7 @@ div#RESSubredditGroupDropdown {
 	vertical-align: middle;
 }
 
-/* --  A.2.4. Banner Image -- */
+/*--  A.2.4. Banner Image -- */
 #header-bottom-left {
 	position: relative;
 	bottom: 0;
@@ -582,7 +582,7 @@ div#RESSubredditGroupDropdown {
 		height: 30px;
 	}
 
-/* --  A.2.5. The Reddit Name, applies to all pages -- */
+/*--  A.2.5. The Reddit Name, applies to all pages -- */
 .pagename {
 	position: static !important;
 	display: inline-block;
@@ -618,7 +618,7 @@ div#RESSubredditGroupDropdown {
 			text-decoration: none;
 		}
 
-/* --  A.2.6. Reddit Image and Text -- */
+/*--  A.2.6. Reddit Image and Text -- */
 #header-img.default-header {
 	margin: 15px 15px 0 25px;
 	min-width: 75px;
@@ -667,7 +667,7 @@ div#RESSubredditGroupDropdown {
 		border-bottom-left-radius: 0;
 	}
 
-/* --  A.2.7. Header Nav -- */
+/*--  A.2.7. Header Nav -- */
 ul.tabmenu {
 	margin: 15px 10px -17px 35px;
 	height: 50px;
@@ -736,7 +736,7 @@ body.multi-page > div.content {
 			display: none;
 		}
 
-/* --  A.3.1. Common areas -- */
+/*--  A.3.1. Common areas -- */
 .panestack-title {
 	overflow: hidden;
 	margin: 10px 5px 0;
@@ -768,7 +768,7 @@ body.multi-page > div.content {
 
 p.tagline {
 	margin: 2px;
-	/*font-size: 115%;*/
+	font-size: 115%;
 }
 
 	p.tagline span span {
@@ -797,12 +797,12 @@ p.tagline {
 	margin: 10px 0;
 }
 
-/* --  A.3.2. Comment submission Usertext-edit textarea -- */
+/*--  A.3.2. Comment submission Usertext-edit textarea -- */
 div.usertext-edit textarea {
 	padding: 5px;
 }
 
-/* --  A.3.3. Link submission form -- */
+/*--  A.3.3. Link submission form -- */
 .formtabs-content {
 	padding: 0;
 	border-color: #5ba2fd !important;
@@ -840,7 +840,7 @@ ul.tabmenu.formtab {
 			font-weight: bold;
 		}
 
-/* --  A.3.4. Expando Buttons -- */
+/*--  A.3.4. Expando Buttons -- */
 .expando-button,
 .thing div.expando-button,
 .thing div.expando-button.collapsed,
@@ -913,7 +913,7 @@ ul.tabmenu.formtab {
 }
 
 /* ~~  A.4. Links and Posts ~~~~~ */
-/* --  A.4.1. specials - stickied, promoted and sponsored links  -- */
+/*--  A.4.1. specials - stickied, promoted and sponsored links  -- */
 .organic-listing,
 .thing.link.stickied,
 .thing.link.promoted {
@@ -936,7 +936,7 @@ ul.tabmenu.formtab {
 	border-width: 1px 0 1px 1px;
 }
 
-/* --  A.4.2. Rest of Links (Posts) -- */
+/*--  A.4.2. Rest of Links (Posts) -- */
 .linklisting .thing {
 	overflow: hidden;
 	margin: 0;
@@ -979,7 +979,7 @@ ul.tabmenu.formtab {
 	font-size: 11px;
 }
 
-/* --  A.4.3. Links sub-parts -- */
+/*--  A.4.3. Links sub-parts -- */
 .sitetable {
 	padding: 5px;
 }
@@ -1105,7 +1105,7 @@ ul.tabmenu.formtab {
 	}
 
 /* ~~  A.6. Comments ~~~~~ */
-/* --  A.6.1. Default Comments -- */
+/*--  A.6.1. Default Comments -- */
 .commentarea {
 	margin-top: 15px;
 }
@@ -1173,7 +1173,7 @@ ul.tabmenu.formtab {
 	padding: 0 10px;
 }
 
-/* --  A.6.2. Comments with RES comment box enabled -- */
+/*--  A.6.2. Comments with RES comment box enabled -- */
 .res-commentBoxes div.collapsed {
 	font-size: 11px;
 }
@@ -1264,7 +1264,7 @@ ul.tabmenu.formtab {
 		background-color: #fbfbfb !important;
 	}
 
-/* --  A.6.3. Compact deleted messages/comments -- */
+/*--  A.6.3. Compact deleted messages/comments -- */
 .deleted.comment > .entry {
 	padding: 0;
 }
@@ -1447,7 +1447,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 	border-color: #d2d2d2;
 }
 
-/* --  A.8.1. Search -- */
+/*--  A.8.1. Search -- */
 .side .spacer #search {
 	margin: 0 0 15px 0;
 	padding: 0;
@@ -1485,7 +1485,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 	border-radius: 0;
 }
 
-/* --  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
+/*--  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
 	overflow: hidden;
 	margin: 0 5px 10px;
@@ -1567,7 +1567,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 		font-size: 12px;
 	}
 
-/* --  A.8.3. Contributor and Moderator Buttons -- */
+/*--  A.8.3. Contributor and Moderator Buttons -- */
 .titlebox form.toggle,
 .leavemoderator,
 .leavemoderator-button,
@@ -1576,7 +1576,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 	font-size: 12px;
 }
 
-/* --  A.8.4. Login Form -- */
+/*--  A.8.4. Login Form -- */
 .login-form-side {
 	margin: 0 0 10px;
 	padding: 10px 0 0;
@@ -1589,7 +1589,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 		border-color: #d2d2d2;
 	}
 
-/* --  A.8.5. Flair Setting area -- */
+/*--  A.8.5. Flair Setting area -- */
 .titlebox form.flairtoggle {
 	position: relative;
 	margin-top: 5px;
@@ -1690,7 +1690,7 @@ div.blueButton {
 	display: block;
 }
 
-/* --  A.8.6. Submit Button -- */
+/*--  A.8.6. Submit Button -- */
 .sidebox.submit {
 	width: 300px;
 }
@@ -1760,7 +1760,7 @@ body .disabled .morelink:hover {
 		cursor: default;
 	}
 
-/* --  A.8.7. Moderators Area -- */
+/*--  A.8.7. Moderators Area -- */
 .sidecontentbox {
 	padding: 5px 0 5px;
 	background-color: transparent !important;
@@ -1792,7 +1792,7 @@ body .disabled .morelink:hover {
 	background-color: transparent !important;
 }
 
-/* --  A.8.8. Account Activity area at Bottom of Sidebar -- */
+/*--  A.8.8. Account Activity area at Bottom of Sidebar -- */
 .account-activity-box {
 	padding: 0;
 	height: 60px;
@@ -1848,7 +1848,7 @@ body .disabled .morelink:hover {
 		color: #2154a3;
 	}
 
-/* --  A.9.1. Reddit Copyright Text -- */
+/*--  A.9.1. Reddit Copyright Text -- */
 .bottommenu,
 .bottommenu a {
 	font-size: 10px;
@@ -1940,7 +1940,7 @@ div#userbarToggle.userbarShow {
 	text-align: center;
 }
 
-/* --  A.11.1. Pin Sub-bar -- */
+/*--  A.11.1. Pin Sub-bar -- */
 .res.pinHeader-sub #RESShortcutsSort,
 .res.pinHeader-sub #RESShortcutsRight,
 .res.pinHeader-sub #RESShortcutsLeft,
@@ -1954,7 +1954,7 @@ div#userbarToggle.userbarShow {
 	background-color: transparent;
 }
 
-/* --  A.11.2. Pin Sub-Bar User Bar -- */
+/*--  A.11.2. Pin Sub-Bar User Bar -- */
 body.pinHeader-userbar #header-bottom-right,
 body.pinHeader-subanduser #header-bottom-right {
 	top: 15px !important;
@@ -1962,12 +1962,12 @@ body.pinHeader-subanduser #header-bottom-right {
 	background-color: #fff;
 }
 
-/* --  A.11.3. Pin Full Header -- */
+/*--  A.11.3. Pin Full Header -- */
 #RESPinnedHeaderSpacer {
 	margin-bottom: 30px;
 }
 
-/* --  A.11.4. Handling the keynav -- */
+/*--  A.11.4. Handling the keynav -- */
 .entry.RES-keyNav-activeElement,
 .entry:hover {
 	padding-right: 2px;
@@ -2000,7 +2000,7 @@ button.RESBigEditorPop.blueButton {
 	padding: 5px;
 }
 
-/* --  A.11.5. Progress Indicator and Page marker for RES mode -- */
+/*--  A.11.5. Progress Indicator and Page marker for RES mode -- */
 #progressIndicator.neverEndingReddit,
 div.NERPageMarker,
 div#NERFail,
@@ -2096,7 +2096,7 @@ div#NERFail,
 		width: auto;
 	}
 
-/* --  A.12.1. Colored Boxes -- */
+/*--  A.12.1. Colored Boxes -- */
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
 .side .md blockquote a[href*='#icon-']:before {
 	border-radius: 3px;
@@ -2201,7 +2201,7 @@ div#NERFail,
 		/* replace * and use the above selector set for selective border colors in all boxes based on h3,4,5,6 */
 	}
 
-/* --  A.12.2. Sidebar Icons -- */
+/*--  A.12.2. Sidebar Icons -- */
 .side a[href*='#icon-'] {
 	color: #1d1212;
 	cursor: default;
@@ -2582,7 +2582,7 @@ ul#image-preview-list {
 	border-left-color: #5ba2fd;
 }
 
-/* --  B.1.1. Tables -- */
+/*--  B.1.1. Tables -- */
 .res-nightmode .md table {
 	border-color: #444;
 }
@@ -2605,13 +2605,13 @@ ul#image-preview-list {
 		border-right: 1px solid #444;
 	}
 
-/* --  B.1.2. Lists -- */
+/*--  B.1.2. Lists -- */
 .res-nightmode .md ul,
 .res-nightmode .md ol {
 	background-color: transparent !important;
 }
 
-/* --  B.1.3. Code Style -- */
+/*--  B.1.3. Code Style -- */
 .res-nightmode .usertext-body pre,
 .res-nightmode .md.wiki pre {
 	color: #ddd !important;
@@ -2638,7 +2638,7 @@ ul#image-preview-list {
 	color: #ddd !important;
 }
 
-/* --  B.1.4. Spoilers -- */
+/*--  B.1.4. Spoilers -- */
 .res-nightmode a[href='#s'],
 .res-nightmode a[href='/s'] {
 	background-color: #3d3d3d;
@@ -2659,7 +2659,7 @@ ul#image-preview-list {
 		font-size: small;
 	}
 
-/* --  B.1.5. Common Button Style -- */
+/*--  B.1.5. Common Button Style -- */
 .res-nightmode .entry .flat-list li a[onclick*='reply'] {
 	border-color: #302f2f;
 	border-radius: 2px;
@@ -2747,7 +2747,7 @@ ul#image-preview-list {
 	background-image: linear-gradient(#696969,#414141);
 }
 
-/* --  B.2.1. Top Sr-Bar -- */
+/*--  B.2.1. Top Sr-Bar -- */
 .res-nightmode #sr-header-area {
 	border-bottom-color: #000;
 	background-color: #000 !important;
@@ -2771,7 +2771,7 @@ ul#image-preview-list {
 	color: #000;
 }
 
-/* --  B.2.2. Dropdown Subreddits Bar -- */
+/*--  B.2.2. Dropdown Subreddits Bar -- */
 .res-nightmode .drop-choices,
 .res-nightmode table#srList,
 .res-nightmode #RESSubredditGroupDropdown {
@@ -2798,7 +2798,7 @@ ul#image-preview-list {
 		border-color: #696969;
 	}
 
-/* --  B.2.3. User Controls -- */
+/*--  B.2.3. User Controls -- */
 .res-nightmode div#header-bottom-right {
 	border-radius: 0 !important;
 	background-color: transparent;
@@ -2818,12 +2818,12 @@ ul#image-preview-list {
 	text-shadow: none;
 }
 
-/* --  B.2.4. Banner Image -- */
+/*--  B.2.4. Banner Image -- */
 .res-nightmode div#header-bottom-left {
 	background-color: transparent !important;
 }
 
-/* --  B.2.5. The Reddit Name, applies to all pages -- */
+/*--  B.2.5. The Reddit Name, applies to all pages -- */
 .res-nightmode .pagename {
 	color: #acd9fc;
 }
@@ -2843,7 +2843,7 @@ ul#image-preview-list {
 			background-image: linear-gradient(#555,#222);
 		}
 
-/* --  B.2.6. Reddit Image and Text -- */
+/*--  B.2.6. Reddit Image and Text -- */
 .res-nightmode #header-img.default-header {
 	color: #acd9fc;
 }
@@ -2855,7 +2855,7 @@ ul#image-preview-list {
 	box-shadow: 0 4px 6px #000;
 }
 
-/* --  B.2.7. Header Nav -- */
+/*--  B.2.7. Header Nav -- */
 .res-nightmode ul.tabmenu li a,
 .res-nightmode ul.tabmenu li a:visited,
 .res-nightmode ul.tabmenu li.selected a {
@@ -2901,7 +2901,7 @@ ul#image-preview-list {
 		background-color: #040404;
 	}
 
-/* --  B.3.1. Common Areas -- */
+/*--  B.3.1. Common Areas -- */
 .res-nightmode .panestack-title {
 	border-color: #444;
 }
@@ -2917,7 +2917,7 @@ ul#image-preview-list {
 .res-nightmode p.tagline {
 }
 
-/* --  B.3.3. Link submission form -- */
+/*--  B.3.3. Link submission form -- */
 .res-nightmode .formtabs-content .infobar {
 	text-shadow: none;
 }
@@ -2930,7 +2930,7 @@ ul#image-preview-list {
 	color: #fff;
 }
 
-/* --  B.3.4. Expando Buttons -- */
+/*--  B.3.4. Expando Buttons -- */
 .res-nightmode .expando-button:before {
 	border: 1px solid #555;
 	background-color: #555;
@@ -2946,7 +2946,7 @@ ul#image-preview-list {
 }
 
 /* ~~  B.4. Links and Posts ~~~~~ */
-/* --  B.4.1. specials - stickied, promoted and sponsored links  -- */
+/*--  B.4.1. specials - stickied, promoted and sponsored links  -- */
 .res-nightmode div.organic-listing,
 .res-nightmode div.thing.link.stickied,
 .res-nightmode div.thing.link.promoted {
@@ -2960,7 +2960,7 @@ ul#image-preview-list {
 	background: none #3d3c30 !important;
 }
 
-/* --  B.4.2. Rest of Links (Posts) -- */
+/*--  B.4.2. Rest of Links (Posts) -- */
 .res-nightmode .linklisting div.thing {
 	margin: 0;
 	border-color: #292929 !important;
@@ -2999,7 +2999,7 @@ ul#image-preview-list {
 }
 
 /* ~~  B.6. Comments ~~~~~ */
-/* --  B.6.1. Default Comments -- */
+/*--  B.6.1. Default Comments -- */
 .res-nightmode .nestedlisting > div.comment {
 	border: 1px solid #2d2d2d;
 	background-color: #1b1b1b;
@@ -3030,7 +3030,7 @@ ul#image-preview-list {
 	text-shadow: none;
 }
 
-/* --  B.6.2. Comments with RES comment box enabled -- */
+/*--  B.6.2. Comments with RES comment box enabled -- */
 .res-nightmode div.content > form > div .commentarea .even {
 	border-top: 1px solid #111;
 	background-color: transparent;
@@ -3141,7 +3141,7 @@ ul#image-preview-list {
 	border-color: #555;
 }
 
-/* --  B.8.1. Search -- */
+/*--  B.8.1. Search -- */
 .res-nightmode #search input[type='text'] {
 	border-color: #1c1c1c;
 	color: #fff !important;
@@ -3161,7 +3161,7 @@ ul#image-preview-list {
 	box-shadow: none;
 }
 
-/* --  B.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
+/*--  B.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .res-nightmode .infobar {
 	border-color: #083e4c;
 	background-color: #546477;
@@ -3186,7 +3186,7 @@ ul#image-preview-list {
 		color: #f5f5f5;
 	}
 
-/* --  B.8.4. Login Form -- */
+/*--  B.8.4. Login Form -- */
 .res-nightmode .login-form-side {
 	border: 1px solid #111 !important;
 	border-width: 1px 0 !important;
@@ -3197,7 +3197,7 @@ ul#image-preview-list {
 		color: #fff !important;
 	}
 
-/* --  B.8.5. Flair Setting area -- */
+/*--  B.8.5. Flair Setting area -- */
 .res-nightmode .titlebox form.flairtoggle {
 	border-color: #333;
 	background: #111 !important;
@@ -3246,12 +3246,12 @@ ul#image-preview-list {
 		color: #777 !important;
 	}
 
-/* --  B.8.6. Submit Button -- */
+/*--  B.8.6. Submit Button -- */
 .res-nightmode div.spacer > .submit {
 	overflow: visible !important;
 }
 
-/* --  B.8.7. Moderators Area -- */
+/*--  B.8.7. Moderators Area -- */
 .res-nightmode .sidecontentbox {
 	background-color: transparent !important;
 }
@@ -3269,7 +3269,7 @@ ul#image-preview-list {
 	background-color: #222;
 }
 
-/* --  B.8.8. Account Activity area at Bottom of Sidebar -- */
+/*--  B.8.8. Account Activity area at Bottom of Sidebar -- */
 .res-nightmode .account-activity-box {
 	border-radius: 0 3px;
 	background-color: transparent;
@@ -3290,7 +3290,7 @@ ul#image-preview-list {
 		color: #acd9fc;
 	}
 
-/* --  B.9.1. Reddit Copyright Text -- */
+/*--  B.9.1. Reddit Copyright Text -- */
 .res-nightmode .bottommenu {
 	color: #fac8b1;
 }
@@ -3356,7 +3356,7 @@ ul#image-preview-list {
 	color: #acd9fc;
 }
 
-/* --  B.11.1. Progress Indicator and Page marker for RES mode -- */
+/*--  B.11.1. Progress Indicator and Page marker for RES mode -- */
 .res-nightmode #progressIndicator.neverEndingReddit,
 .res-nightmode div.NERPageMarker,
 .res-nightmode div#NERFail,
@@ -3392,7 +3392,7 @@ ul#image-preview-list {
 	color: #fff;
 }
 
-/* --  B.12.1. Colored Boxes -- */
+/*--  B.12.1. Colored Boxes -- */
 .res-nightmode .side .md blockquote a[href*='#icon-']:before {
 	color: #111;
 }
@@ -3424,7 +3424,7 @@ ul#image-preview-list {
 		color: #010f0f;
 	}
 
-/* --  B.12.2. Sidebar Icons -- */
+/*--  B.12.2. Sidebar Icons -- */
 .res-nightmode .side a[href*='#icon-'] {
 	color: #ccc;
 }
