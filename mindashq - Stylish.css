@@ -807,7 +807,7 @@ p.tagline {
 
 div.usertext-edit textarea {
 	padding: 5px !important;
-	border-color: #ccc !important;
+	border: 1px solid #ccc !important;
 }
 
 /*--  A.3.3. Link submission form -- */
