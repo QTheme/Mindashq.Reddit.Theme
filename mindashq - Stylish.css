@@ -362,6 +362,11 @@ a[href*='#btn'] {
 	text-align: center !important;
 }
 
+.thing a[href*="#btn"] {
+	display: inline-block !important;
+	margin: 0 !important;
+}
+
 .entry .flat-list {
 	display: inline-block !important;
 	/*font-size: 11px!important;*/
@@ -796,8 +801,13 @@ p.tagline {
 }
 
 /*--  A.3.2. Comment submission Usertext-edit textarea -- */
+.usertext.cloneable {
+	margin: 10px 0 20px 25px !important;
+}
+
 div.usertext-edit textarea {
 	padding: 5px !important;
+	border-color: #ccc !important;
 }
 
 /*--  A.3.3. Link submission form -- */
@@ -1398,11 +1408,15 @@ select {
 div.sidebox.create {
 	position: absolute !important;
 	right: 30px !important;
-	bottom: 112px !important;
+	bottom: 109px !important;
 	display: block !important;
 	overflow: visible !important;
 	border-width: 0 !important;
 	background: none transparent !important;
+}
+
+.mod-toolbox div.sidebox.create {
+	bottom: 133px !important;
 }
 
 .sidebox.create .subtitle:last-child:after {
