@@ -56,7 +56,7 @@ a,
 		.thing a.title:visited,
 		.thing a.title.loggedin.click:visited,
 		.thing a.title.loggedin:visited {
-			color: #181818 !important;
+			color: #888686 !important;
 			text-shadow: 0 1px 0 #777 !important;
 		}
 
@@ -413,13 +413,13 @@ a[href*='#btn'] {
 	}
 
 	#header:after,
-	.footer-parent:after {
+	.footer:after {
 		border-color: #8ccbfc !important;
 	}
 
 	#header:after,
 	#header-bottom-left:before,
-	.footer-parent:after {
+	.footer:after {
 		background-color: #acd9fc !important;
 		background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
 	}
@@ -529,7 +529,8 @@ div#RESSubredditGroupDropdown {
 	padding: 8px 10px 4px !important;
 	height: 20px !important;
 	border-radius: 0 !important;
-	background-color: transparent !important;
+	background-color: #acd9fc !important;
+	background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
 }
 
 	#header-bottom-right a,
@@ -539,6 +540,7 @@ div#RESSubredditGroupDropdown {
 
 	#header-bottom-right:hover {
 		background-color: #eaf4fc !important;
+		background-image: linear-gradient(#eaf4fc,#eaf4fc) !important;
 	}
 
 		#header-bottom-right:hover a,
@@ -1408,15 +1410,16 @@ select {
 div.sidebox.create {
 	position: absolute !important;
 	right: 30px !important;
-	bottom: 109px !important;
+	bottom: 108px !important;
 	display: block !important;
 	overflow: visible !important;
 	border-width: 0 !important;
+	border-radius: 0 !important;
 	background: none transparent !important;
 }
 
 .mod-toolbox div.sidebox.create {
-	bottom: 133px !important;
+	bottom: 132px !important;
 }
 
 .sidebox.create .subtitle:last-child:after {
@@ -1820,19 +1823,26 @@ body .disabled .morelink:hover {
 
 /* ~~  A.9. Footer ~~~~~ */
 .footer-parent {
-	position: relative !important;
-	clear: both !important;
-	margin: 40px 0 0 !important;
-	padding: 5px 0 15px 0 !important;
-	background-color: #fff !important;
-	box-shadow: 0 -3px 9px -2px #ddd !important;
-	font-size: 12px !important;
 	line-height: 15px !important;
 	text-align: left !important;
-	z-index: -2 !important;
+	clear: both !important;
+	padding: 0 !important;
+	font-size: 12px !important;
 }
 
-	.footer-parent:after {
+.footer {
+	position: relative !important;
+	display: block !important;
+	overflow: hidden !important;
+	margin: 0 0 5px !important;
+	padding: 0 10px !important;
+	width: 100% !important;
+	border: 0 none !important;
+	background-color: #fff !important;
+	z-index: -1 !important;
+}
+
+	.footer:after {
 		content: " " !important;
 		position: absolute !important;
 		top: 0 !important;
@@ -1845,18 +1855,12 @@ body .disabled .morelink:hover {
 		z-index: -1 !important;
 	}
 
-.footer {
-	margin: -15px 5px 5px !important;
-	border: 0 none !important;
-	background-color: transparent !important;
-}
-
 	.footer .col {
 		border: 0 none !important;
 	}
 
 	.footer .flat-vert.title {
-		margin: 3px 0 15px !important;
+		margin: 0 0 15px !important;
 		color: #2154a3 !important;
 	}
 
@@ -1869,6 +1873,9 @@ body .disabled .morelink:hover {
 .bottommenu {
 	margin: 0 0 0 25px !important;
 	color: #777 !important;
+	background: #fff !important;
+	margin: -5px 0px !important;
+	padding: 5px 25px !important;
 }
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
@@ -1923,12 +1930,12 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
 		color: #1d1212 !important;
-		text-shadow: 0 0 0 #fefefd,0 0 1px #555 !important;
+		text-shadow: 0 0 1px #555 !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
 	body.wiki-page .wiki-page-content .md.wiki h6 {
-		color: #08c !important;
+		color: #181818 !important;
 	}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
@@ -2315,6 +2322,7 @@ span.linkflair {
 	border-radius: 2px !important;
 	background: #f5f5f5 !important;
 	color: #555 !important;
+	font-size: x-small !important;
 	text-shadow: none !important;
 }
 
@@ -2748,13 +2756,13 @@ ul#image-preview-list {
 }
 
 .res-nightmode #header:after,
-.res-nightmode .footer-parent:after {
+.res-nightmode .footer:after {
 	border-color: #494848 !important;
 }
 
 .res-nightmode #header:after,
 .res-nightmode #header-bottom-left:before,
-.res-nightmode .footer-parent:after {
+.res-nightmode .footer:after {
 	background-color: #414141 !important;
 	background-image: linear-gradient(#696969,#414141) !important;
 }
@@ -2813,11 +2821,12 @@ ul#image-preview-list {
 /*--  B.2.3. User Controls -- */
 .res-nightmode div#header-bottom-right {
 	border-radius: 0 !important;
-	background-color: transparent !important;
+	background-image: linear-gradient(#696969,#414141) !important;
 }
 
 .res-nightmode #header-bottom-right:hover {
 	background-color: #333 !important;
+	background-image: linear-gradient(#333,#333) !important;
 }
 
 .res-nightmode #header-bottom-right a,
@@ -2969,7 +2978,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode div.thing.link.stickied {
-	background: none #3d3c30 !important;
+	background: none #050C02 !important;
 }
 
 /*--  B.4.2. Rest of Links (Posts) -- */
@@ -3289,13 +3298,12 @@ ul#image-preview-list {
 
 /* ~~  B.9. Footer ~~~~~ */
 .res-nightmode .footer-parent {
-	background-color: #393939 !important;
-	box-shadow: 0 -3px 9px -2px #222 !important;
 }
 
 .res-nightmode .footer {
 	border: 0 none !important;
-	background-color: transparent !important;
+	background: #393939 !important;
+	box-shadow: 0 -3px 9px -2px #222 !important;
 }
 
 	.res-nightmode .footer .flat-vert.title {
@@ -3305,6 +3313,7 @@ ul#image-preview-list {
 /*--  B.9.1. Reddit Copyright Text -- */
 .res-nightmode .bottommenu {
 	color: #fac8b1 !important;
+	background: #393939 !important;
 }
 
 /* ~~   B.10. Wiki Pages ~~~~~ */
@@ -3314,7 +3323,7 @@ ul#image-preview-list {
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki > .toc > ul {
 		border-color: #111 !important;
-		background-color: #040406 !important;
+		background: #040406 !important;
 	}
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h1,
