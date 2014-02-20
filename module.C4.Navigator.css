@@ -1,7 +1,7 @@
-/* --  C.4. Navigator
+/*--  C.4. Navigator
 	Details : http://www.reddit.com/r/mindashq/wiki/modules/navigator 
 	+ 	Add only when corresponding markup is added in sidebar
----- */
+----*/
 
 .side .md > blockquote:last-child {
 	display: none;
@@ -173,4 +173,4 @@ body.res-nightmode .side .md > blockquote:last-child {
 		box-shadow: 0 1px 6px 0 #000;
 	}
 
-/* --  C.4.end Navigator ---- */
+/*--  C.4.end Navigator ----*/
