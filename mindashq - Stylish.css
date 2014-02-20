@@ -45,7 +45,6 @@ body {
 
 a,
 .thing a.title {
-	color: #144ddd !important;
 }
 
 	.thing a.title,
@@ -59,7 +58,6 @@ a,
 			color: #5e5e5e !important;
 		}
 
-		a:hover,
 		.thing a.title:hover,
 		.thing a.title.loggedin:hover {
 			color: #353a3e !important;
@@ -788,7 +786,7 @@ p.tagline {
 	}
 
 .tagline a {
-	color: #888 !important;
+	color: #888;
 }
 
 .res .thing .tagline .author.submitter,
