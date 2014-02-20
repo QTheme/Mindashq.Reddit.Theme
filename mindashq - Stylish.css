@@ -96,7 +96,6 @@ div.comment .md p > a:visited {
 .md:not(.wiki) {
 	max-width: 60em !important;
 	color: #00000a !important;
-	/*font-size: 1.1em!important;*/
 	line-height: 1.4 !important;
 }
 
@@ -727,8 +726,7 @@ div.content {
 body.listing-page > div.content,
 body.single-page > div.content,
 body.search-page > div.content,
-body.messages-page > div.content,
-body.multi-page > div.content {
+body.messages-page > div.content {
 	padding: 0 !important;
 	border: 0 none !important;
 	background-color: transparent !important;
@@ -1368,7 +1366,6 @@ select {
 	padding: 0 10px !important;
 	background-color: transparent !important;
 	line-height: 1.3 !important;
-	/*font-size: 1em!important;*/
 	z-index: 10 !important;
 }
 
@@ -2460,6 +2457,10 @@ ul#image-preview-list {
 	border-color: #8ccbfc !important;
 }
 
+#reddit-field {
+	display: none !important;
+}
+
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
 .res-nightmode body {
@@ -2847,8 +2848,7 @@ ul#image-preview-list {
 .res-nightmode.listing-page > div.content,
 .res-nightmode.single-page > div.content,
 .res-nightmode.search-page > div.content,
-.res-nightmode.messages-page > div.content,
-.res-nightmode.multi-page > div.content {
+.res-nightmode.messages-page > div.content {
 	padding: 0 !important;
 	border: 0 none !important;
 	background-color: transparent !important;
@@ -3607,4 +3607,9 @@ body.with-listing-chooser .listing-chooser .grippy {
 	min-width: 10px !important;
 	border: 0 !important;
 	background: none transparent !important;
+}
+
+/* Stylish .The suggested reddit field is put back*/
+body.multi-page #reddit-field {
+	display: block !important;
 }

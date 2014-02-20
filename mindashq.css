@@ -98,7 +98,6 @@ div.comment .md p > a:visited {
 .md:not(.wiki) {
 	max-width: 60em;
 	color: #00000a;
-	/*font-size: 1.1em;*/
 	line-height: 1.4;
 }
 
@@ -729,8 +728,7 @@ div.content {
 body.listing-page > div.content,
 body.single-page > div.content,
 body.search-page > div.content,
-body.messages-page > div.content,
-body.multi-page > div.content {
+body.messages-page > div.content {
 	padding: 0;
 	border: 0 none;
 	background-color: transparent;
@@ -1370,7 +1368,6 @@ select {
 	padding: 0 10px;
 	background-color: transparent;
 	line-height: 1.3;
-	/*font-size: 1em;*/
 	z-index: 10;
 }
 
@@ -2462,6 +2459,10 @@ ul#image-preview-list {
 	border-color: #8ccbfc;
 }
 
+#reddit-field {
+	display: none;
+}
+
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
 .res-nightmode body {
@@ -2849,8 +2850,7 @@ ul#image-preview-list {
 .res-nightmode.listing-page > div.content,
 .res-nightmode.single-page > div.content,
 .res-nightmode.search-page > div.content,
-.res-nightmode.messages-page > div.content,
-.res-nightmode.multi-page > div.content {
+.res-nightmode.messages-page > div.content {
 	padding: 0;
 	border: 0 none;
 	background-color: transparent !important;
