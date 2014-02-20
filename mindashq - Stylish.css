@@ -2438,34 +2438,7 @@ span.linkflair {
 	padding: 3px 8px !important;
 }
 
-body.with-listing-chooser .linkflair-meta .title > .linkflairlabel {
-	left: 145px !important;
-	z-index: 100 !important;
-}
-
-/* ~~  A.14. Multireddit ~~~~~ */
-body.with-listing-chooser .listing-chooser .grippy {
-	background-color: #ececea !important;
-}
-
-	body.with-listing-chooser .listing-chooser .grippy:after {
-		border-right: 1px solid #ccc !important;
-		box-shadow: 3px 0 6px -2px #ccc !important;
-	}
-
-	body.with-listing-chooser .listing-chooser .grippy:hover:after {
-		background-color: #fff !important;
-	}
-
-.titlebox.multi-details button.cancel,
-.titlebox.multi-details .usertext span[class*='toggle'],
-.titlebox.multi-details a.reddiquette {
-	margin: 15px 0 !important;
-	padding: 0 5px !important;
-	font-size: 11px !important;
-}
-
-/* ~~  A.15. Other areas in Reddit - [WIP] ~~~~~ */
+/* ~~  A.14. Other areas in Reddit - [WIP] ~~~~~ */
 .upload li,
 #image-upload {
 	margin: 10px 0 !important;
@@ -3568,51 +3541,152 @@ ul#image-preview-list {
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
 
+/* ~~  A.14. Multireddit ~~~~~ */
 body.with-listing-chooser > .content,
 body.with-listing-chooser .footer-parent,
 body.with-listing-chooser > #savedLinksList {
 	margin-left: 155px !important;
 }
 
-.message.message-parent.recipient > .entry .head > a {
+body.with-listing-chooser .linkflair-meta .title > .linkflairlabel {
+	left: 145px !important;
+	z-index: 100 !important;
+}
+
+body.with-listing-chooser .listing-chooser .grippy {
+	background-color: #ececea !important;
+}
+
+	body.with-listing-chooser .listing-chooser .grippy:after {
+		border-right: 1px solid #ccc !important;
+		box-shadow: 3px 0 6px -2px #ccc !important;
+	}
+
+	body.with-listing-chooser .listing-chooser .grippy:hover:after {
+		background-color: #fff !important;
+	}
+
+.titlebox.multi-details button.cancel,
+.titlebox.multi-details .usertext span[class*='toggle'],
+.titlebox.multi-details a.reddiquette {
+	margin: 15px 0 !important;
+	padding: 0 5px !important;
 	font-size: 11px !important;
 }
 
-/* table for moderation matrix */
-table.generic-table.mod-matrix {
-	margin-top: 30px !important;
+/* ~~  B.14. Multireddit nightmode ~~~~~ */
+.res-nightmode.with-listing-chooser .listing-chooser {
+	background-color: #555 !important;
 }
 
-	table.generic-table.mod-matrix td {
-		padding: 2px 5px !important;
-		border: 1px solid #eee !important;
+	.res-nightmode.with-listing-chooser .listing-chooser .grippy {
+		border-color: #555 !important;
+		background-color: #222 !important;
 	}
 
-	table.generic-table.mod-matrix th {
-		vertical-align: text-bottom !important;
-		text-align: center !important;
-	}
-
-	table.generic-table.mod-matrix a.modactions {
-		margin-top: 120px !important;
-		vertical-align: bottom !important;
-	}
-
-		table.generic-table.mod-matrix a.modactions:before {
-			content: attr(title) !important;
-			position: relative !important;
-			bottom: 20px !important;
-			display: block !important;
-			font-size: 11px !important;
-			font-family: Verdana, monospace !important;
-			white-space: nowrap !important;
-			text-transform: capitalize !important;
-			-webkit-transform: rotate(-90.0deg) !important;
-			transform: rotate(-90.0deg) !important;
+		.res-nightmode.with-listing-chooser .listing-chooser .grippy:after {
+			border-color: #555 !important;
+			background-color: #444 !important;
+			box-shadow: 3px 0 6px -2px #000 !important;
 		}
 
-	table.generic-table.mod-matrix .modactions.setpermissions {
-		display: block !important;
-		width: 16px !important;
-		height: 16px !important;
+		.res-nightmode.with-listing-chooser .listing-chooser .grippy:hover:after {
+			background-color: #ccc !important;
+		}
+
+	.res-nightmode.with-listing-chooser .listing-chooser li {
+		border-color: #111 !important;
+		background-color: #444 !important;
 	}
+
+.res-nightmode.with-listing-chooser li a .description {
+	color: #ddd !important;
+}
+
+.res-nightmode.with-listing-chooser .create button {
+	border-color: #aaa !important;
+	background: #222 !important;
+	color: #fff !important;
+}
+
+.res-nightmode.with-listing-chooser .intro p {
+	color: #333 !important;
+}
+
+/* Message and misc formatting for mod areas */
+.profile-page div.thing {
+	margin: 0 0 5px !important;
+}
+
+.thing.message {
+	/*applies to mail mod and normal */
+}
+
+	.thing.message .midcol,
+	.thing.message .entry,
+	.thing.message .entry {
+		margin: 0 !important;
+		border-left: 0 none !important;
+	}
+
+	.thing.message.new > .entry {
+		outline: 1px solid #acd9fc !important;
+		border: 0 !important;
+		background-color: #f7f7f7 !important;
+	}
+
+	.thing.message .child .message {
+		margin: 1px 0 -1px !important;
+		padding: 2px 0 3px !important;
+	}
+
+.res-nightmode .thing.message.new > .entry {
+	outline: 1px solid #4d90fe !important;
+}
+
+	.res-nightmode .thing.message.new > .entry.RES-keyNav-activeElement {
+		background-color: #393939 !important;
+	}
+
+
+.message.recipient > .entry .collapsed,
+.message.recipient > .entry .collapsed {
+	font-size: 12px !important;
+	margin: 2px !important;
+	font-style: normal !important;
+}
+
+.message.recipient > .entry .head > a {
+	font-size: 12px !important;
+}
+
+.message .subject .correspondent {
+	border-color: #ddd !important;
+	background: #f5f5ff !important;
+}
+
+.listing div.thing {
+	/*same as .linklisting .thing*/
+	overflow: hidden !important;
+	margin: 0 !important;
+	padding: 2px 0 0 !important;
+	border: 1px solid #fff !important;
+	border-width: 1px 0 !important;
+	background-color: #fefefd !important;
+	box-shadow: 0 1px 3px 0 #ccb !important;
+}
+
+	.listing div.thing.message,
+	.linklisting div.thing.message {
+		/*same as .linklisting div.thing.comment*/
+		margin: 0 0 5px !important;
+		padding: 5px 0 5px 10px !important;
+		font-size: 11px !important;
+	}
+
+.modactions .button {
+	padding: 6px 0 6px 2em !important;
+	min-width: 10px !important;
+	border: 0 !important;
+	background: none transparent !important;
+}
