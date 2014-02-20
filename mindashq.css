@@ -45,12 +45,12 @@ body {
 
 a,
 .thing a.title {
-	color: #28e;
+	color: #144ddd;
 }
 
 	.thing a.title,
 	.thing a.title.loggedin {
-		color: #28e;
+		color: #144ddd;
 	}
 
 		.thing a.title:visited,
@@ -62,7 +62,7 @@ a,
 		a:hover,
 		.thing a.title:hover,
 		.thing a.title.loggedin:hover {
-			color: #5ba2fd;
+			color: #353a3e;
 			text-decoration: none;
 		}
 
@@ -389,7 +389,7 @@ a[href*='#btn'] {
 }
 
 .entry .flat-list li a.comments {
-	color: #28e;
+	color: #144ddd;
 }
 
 /* ~~  A.2. Header ~~~~~ */
@@ -988,7 +988,7 @@ ul.tabmenu.formtab {
 	margin: 0;
 }
 
-.linklisting div.thing.comment{
+.linklisting div.thing.comment {
 	margin: 0 0 5px !important;
 	padding: 5px 0 5px 10px !important;
 	font-size: 11px;
@@ -1255,7 +1255,6 @@ ul.tabmenu.formtab {
 	margin: -1px 0 0 25px !important;
 	padding: 5px 0px !important;
 	border: 1px solid #eee !important;
-	border-color: #eee #f3f3f3 !important;
 	border-right: 0 !important;
 	border-radius: 0 !important;
 }

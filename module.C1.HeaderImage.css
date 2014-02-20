@@ -28,13 +28,13 @@ body.res-nightmode #header {
 #header .pagename.redditname.hover,
 .footer .flat-vert.title,
 #header-img.default-header {
-	background-color: transparent; /*Tweak to match the image color, or keep transparent*/
+	background: transparent; /*Tweak to match the image color, or keep transparent*/
 	background-image: none;
 	color: #acd9fc; /*Tweak against background color*/
 }
 
 #header ul.tabmenu li.selected a {
-	background-color: #fff; /*Tweak to match the background image color*/
+	background: #fff; /*Tweak to match the background image color*/
 	background-image: none;
 	color: #ff4500; /*Tweak against background color*/
 }
@@ -53,17 +53,21 @@ body.res-nightmode #header ul.tabmenu li.selected a {
 	color: #def0fe;
 }
 
-#header-bottom-right:hover {
-	background-color: #285281;
+#header-bottom-right {
+	background: transparent;
 }
 
-	#header-bottom-right:hover a,
-	#header-bottom-right:hover span {
-		text-shadow: none;
+	#header-bottom-right:hover {
+		background: #285281;
 	}
 
+		#header-bottom-right:hover a,
+		#header-bottom-right:hover span {
+			text-shadow: none;
+		}
+
 #sr-header-area {
-	background-color: #fff; /*Tweak to match the image color*/
+	background: #fff; /*Tweak to match the image color*/
 }
 
 /*--  C.1.end Header Image ----*/

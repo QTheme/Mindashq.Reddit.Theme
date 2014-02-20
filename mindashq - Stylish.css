@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7d
+	v1.7e
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -10,7 +10,7 @@ body {
 	position: relative !important;
 	min-width: 800px !important;
 	background-color: #ececea !important;
-	color: #1d1212 !important;
+	color: #00000a !important;
 	font-weight: normal !important;
 	font-style: normal !important;
 	font-variant: normal !important;
@@ -45,24 +45,24 @@ body {
 
 a,
 .thing a.title {
+	color: #144ddd !important;
 }
 
 	.thing a.title,
 	.thing a.title.loggedin {
-		color: #357ae8 !important;
-		text-shadow: 0 1px 0 #ececec !important;
+		color: #144ddd !important;
 	}
 
 		.thing a.title:visited,
 		.thing a.title.loggedin.click:visited,
 		.thing a.title.loggedin:visited {
-			color: #888686 !important;
-			text-shadow: 0 1px 0 #777 !important;
+			color: #5e5e5e !important;
 		}
 
+		a:hover,
 		.thing a.title:hover,
 		.thing a.title.loggedin:hover {
-			color: #5ba2fd !important;
+			color: #353a3e !important;
 			text-decoration: none !important;
 		}
 
@@ -97,7 +97,7 @@ div.comment .md p > a:visited {
 
 .md:not(.wiki) {
 	max-width: 60em !important;
-	color: #1d1212 !important;
+	color: #00000a !important;
 	/*font-size: 1.1em!important;*/
 	line-height: 1.4 !important;
 }
@@ -375,7 +375,7 @@ a[href*='#btn'] {
 	.entry .flat-list li a,
 	.entry .flat-list li a:visited,
 	.entry .flat-list .redditSingleClick {
-		color: #eee !important;
+		color: #f2f2f2 !important;
 	}
 
 .entry:hover > .flat-list li a,
@@ -389,7 +389,7 @@ a[href*='#btn'] {
 }
 
 .entry .flat-list li a.comments {
-	color: #4d90fe !important;
+	color: #144ddd !important;
 }
 
 /* ~~  A.2. Header ~~~~~ */
@@ -521,6 +521,11 @@ div#RESSubredditGroupDropdown {
 	table#srList tr {
 		border-color: #acd9fc !important;
 	}
+
+.menuarea .drop-choices a.choice {
+	padding: 5px 10px !important;
+	font-size: 1.2em !important;
+}
 
 /*--  A.2.3. User Controls -- */
 #header-bottom-right {
@@ -768,6 +773,7 @@ body.multi-page > div.content {
 .messages-page .menuarea,
 .profile-page .menuarea {
 	margin: 20px 5px -6px !important;
+	padding: 5px 0 0 10px !important;
 	font-size: 14px !important;
 }
 
@@ -777,12 +783,12 @@ p.tagline {
 }
 
 	p.tagline span span {
-		margin-left: 2px !important;
 		margin-right: 2px !important;
+		margin-left: 2px !important;
 	}
 
 .tagline a {
-	color: #888;
+	color: #888 !important;
 }
 
 .res .thing .tagline .author.submitter,
@@ -982,8 +988,7 @@ ul.tabmenu.formtab {
 	margin: 0 !important;
 }
 
-.linklisting div.thing.comment,
-.linklisting div.thing.message {
+.linklisting div.thing.comment {
 	margin: 0 0 5px !important;
 	padding: 5px 0 5px 10px !important;
 	font-size: 11px !important;
@@ -1045,7 +1050,7 @@ ul.tabmenu.formtab {
 	margin: 0 .4em 2px 0 !important;
 	font-size: 125% !important;
 	line-height: 1.3 !important;
-	word-spacing: -1px !important;
+	overflow: visible !important;
 }
 
 .link.compressed .title {
@@ -1080,23 +1085,19 @@ ul.tabmenu.formtab {
 	content: '▼' !important;
 }
 
-.arrow.upmod,
-.arrow.up {
+
+.arrow.upmod:after {
+	color: #ff4900 !important;
 }
 
-	.arrow.upmod:after,
-	.arrow.up:hover:after {
-		color: #ff4900 !important;
-	}
-
-.arrow.downmod,
-.arrow.down {
+.arrow.downmod:after {
+	color: #9aa8f2 !important;
 }
 
-	.arrow.downmod:after,
-	.arrow.down:hover:after {
-		color: #9aa8f2 !important;
-	}
+.arrow.up:hover:after,
+.arrow.down:hover:after {
+	color: #333 !important;
+}
 
 .compressed .arrow:not(.prev):not(.next) {
 	margin: 1px 0 !important;
@@ -1130,7 +1131,7 @@ ul.tabmenu.formtab {
 	overflow: hidden !important;
 	margin: 0 0 3px !important;
 	border: 1px solid #e0e0e0 !important;
-	background-color: #fbfbfb !important;
+	background-color: #fcfcfb !important;
 }
 
 .comment {
@@ -1161,7 +1162,7 @@ ul.tabmenu.formtab {
 
 	.comment .child,
 	.comment .showreplies {
-		margin-left: 30px !important;
+		margin: 2px 0 0 30px !important;
 		border-color: #e6e6e6 !important;
 	}
 
@@ -1215,8 +1216,8 @@ ul.tabmenu.formtab {
 		display: inline-block !important;
 		margin: 0 !important;
 		padding: 5px 15px !important;
-		border: 1px solid #e0e0e0 !important;
-		background-color: #fbfbfb !important;
+		border: 1px solid #eee !important;
+		background-color: #fcfcfb !important;
 		background-image: none !important;
 		color: #777 !important;
 		text-shadow: 1px 1px 2px #eee !important;
@@ -1245,7 +1246,7 @@ ul.tabmenu.formtab {
 	margin: 0 0 5px !important;
 	padding: 5px 0px !important;
 	border: 1px solid #fafafa !important;
-	border-color: #e6e6e6 #e0e0e0 #e0e0e0 #e0e0e0 !important;
+	border-color: #f3f3f3 #eee #eee #eee !important;
 	background-color: #fbfbfb !important;
 	box-shadow: 1px 1px 3px -1px #ccc !important;
 }
@@ -1254,7 +1255,6 @@ ul.tabmenu.formtab {
 	margin: -1px 0 0 25px !important;
 	padding: 5px 0px !important;
 	border: 1px solid #eee !important;
-	border-color: #e0e0e0 #e6e6e6 !important;
 	border-right: 0 !important;
 	border-radius: 0 !important;
 }
@@ -1264,7 +1264,7 @@ ul.tabmenu.formtab {
 .res-commentBoxes .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-	background-color: #f9f9f6 !important;
+	background-color: #fafaf9 !important;
 }
 
 	.res-commentBoxes .comment .comment .comment,
@@ -1362,13 +1362,6 @@ select {
 	border: 1px solid #aaa !important;
 	border-radius: 0 !important;
 	background-color: #fffeed !important;
-}
-
-.modactions .button {
-	padding: 6px 0 6px 2em !important;
-	min-width: 10px !important;
-	border: 0 !important;
-	background: none transparent !important;
 }
 
 /* ~~  A.8. Sidebar ~~~~~ */
@@ -1823,11 +1816,11 @@ body .disabled .morelink:hover {
 
 /* ~~  A.9. Footer ~~~~~ */
 .footer-parent {
-	line-height: 15px !important;
-	text-align: left !important;
 	clear: both !important;
 	padding: 0 !important;
 	font-size: 12px !important;
+	line-height: 15px !important;
+	text-align: left !important;
 }
 
 .footer {
@@ -1872,10 +1865,10 @@ body .disabled .morelink:hover {
 
 .bottommenu {
 	margin: 0 0 0 25px !important;
-	color: #777 !important;
-	background: #fff !important;
 	margin: -5px 0px !important;
 	padding: 5px 25px !important;
+	background: #fff !important;
+	color: #777 !important;
 }
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
@@ -2468,32 +2461,6 @@ ul#image-preview-list {
 	padding: 15px !important;
 	border-color: #8ccbfc !important;
 }
-
-.profile-page div.thing {
-	margin: 0 0 5px !important;
-}
-
-.thing.message {
-	/*applies to mail mod and normal */
-}
-
-	.thing.message .midcol,
-	.thing.message .entry,
-	.thing.message .entry {
-		margin: 0 !important;
-		border-left: 0 none !important;
-	}
-
-	.thing.message.new > .entry {
-		outline: 1px solid #acd9fc !important;
-		border: 0 !important;
-		background-color: #f7f7f7 !important;
-	}
-
-	.thing.message .child .message {
-		margin: 1px 0 -1px !important;
-		padding: 2px 0 3px !important;
-	}
 
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
@@ -3486,69 +3453,22 @@ ul#image-preview-list {
 	color: #fff !important;
 }
 
-/* ~~  B.14. Multireddit ~~~~~ */
-.res-nightmode.with-listing-chooser .listing-chooser {
-	background-color: #555 !important;
-}
-
-	.res-nightmode.with-listing-chooser .listing-chooser .grippy {
-		border-color: #555 !important;
-		background-color: #222 !important;
-	}
-
-		.res-nightmode.with-listing-chooser .listing-chooser .grippy:after {
-			border-color: #555 !important;
-			background-color: #444 !important;
-			box-shadow: 3px 0 6px -2px #000 !important;
-		}
-
-		.res-nightmode.with-listing-chooser .listing-chooser .grippy:hover:after {
-			background-color: #ccc !important;
-		}
-
-	.res-nightmode.with-listing-chooser .listing-chooser li {
-		border-color: #111 !important;
-		background-color: #444 !important;
-	}
-
-.res-nightmode.with-listing-chooser li a .description {
-	color: #ddd !important;
-}
-
-.res-nightmode.with-listing-chooser .create button {
-	border-color: #aaa !important;
-	background: #222 !important;
-	color: #fff !important;
-}
-
-.res-nightmode.with-listing-chooser .intro p {
-	color: #333 !important;
-}
-
-/* ~~  B.15. Other areas in Reddit - [WIP] ~~~~~ */
+/* ~~  B.14. Other areas in Reddit - [WIP] ~~~~~ */
 .res-nightmode .tabpane-content {
 	border-color: #555 !important;
 }
 
-.res-nightmode .thing.message.new > .entry {
-	outline: 1px solid #4d90fe !important;
-}
-
-	.res-nightmode .thing.message.new > .entry.RES-keyNav-activeElement {
-		background-color: #393939 !important;
-	}
-
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
 
-/* ~~  A.14. Multireddit ~~~~~ */
-body.with-listing-chooser > .content,
-body.with-listing-chooser .footer-parent,
-body.with-listing-chooser > #savedLinksList {
+/* ~~  Stylish.14. Multireddit ~~~~~ */
+body.with-listing-chooser:not(.listing-chooser-collapsed) > .content,
+body.with-listing-chooser:not(.listing-chooser-collapsed) .footer-parent,
+body.with-listing-chooser:not(.listing-chooser-collapsed) > #savedLinksList {
 	margin-left: 155px !important;
 }
 
-body.with-listing-chooser .linkflair-meta .title > .linkflairlabel {
+body.with-listing-chooser:not(.listing-chooser-collapsed) .linkflair-meta .title > .linkflairlabel {
 	left: 145px !important;
 	z-index: 100 !important;
 }
@@ -3574,7 +3494,7 @@ body.with-listing-chooser .listing-chooser .grippy {
 	font-size: 11px !important;
 }
 
-/* ~~  B.14. Multireddit nightmode ~~~~~ */
+/* ~~  Stylish.14. Multireddit nightmode ~~~~~ */
 .res-nightmode.with-listing-chooser .listing-chooser {
 	background-color: #555 !important;
 }
@@ -3613,7 +3533,7 @@ body.with-listing-chooser .listing-chooser .grippy {
 	color: #333 !important;
 }
 
-/* Message and misc formatting for mod areas */
+/* Stylish .Message and misc formatting for mod areas */
 .profile-page div.thing {
 	margin: 0 0 5px !important;
 }
