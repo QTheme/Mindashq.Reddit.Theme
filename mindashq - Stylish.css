@@ -8,7 +8,7 @@
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
 	position: relative !important;
-	min-width: 800px !important;
+	min-width: 900px !important;
 	background-color: #ececea !important;
 	color: #00000a !important;
 	font-weight: normal !important;
@@ -508,6 +508,7 @@ div#RESSubredditGroupDropdown {
 		}
 
 			#sr-header-area a.choice:hover,
+			.drop-choices a.choice:hover,
 			table#srList a:hover,
 			table#srList tr:hover,
 			div#RESSubredditGroupDropdown li:hover {
@@ -584,7 +585,7 @@ div#RESSubredditGroupDropdown {
 		content: '' !important;
 		position: relative !important;
 		display: inline-block !important;
-		margin: 15px 0 0 310px !important;
+		margin: 15px 0 0 30px !important;
 		width: 1px !important;
 		height: 30px !important;
 	}
@@ -769,7 +770,7 @@ body.messages-page > div.content {
 .messages-page .menuarea,
 .profile-page .menuarea {
 	margin: 20px 5px -6px !important;
-	padding: 5px 0 0 10px !important;
+	padding: 5px 0 5px 10px !important;
 	font-size: 14px !important;
 }
 
@@ -1081,7 +1082,6 @@ ul.tabmenu.formtab {
 	content: '▼' !important;
 }
 
-
 .arrow.upmod:after {
 	color: #ff4900 !important;
 }
@@ -1156,15 +1156,21 @@ ul.tabmenu.formtab {
 		font-size: 130% !important;
 	}
 
-	.comment .child,
-	.comment .showreplies {
+	.comment .child {
 		margin: 2px 0 0 30px !important;
 		border-color: #e6e6e6 !important;
 	}
 
+	.comment .showreplies {
+		margin: 2px 0 10px 30px !important;
+		font-weight: bold !important;
+		border: 0 !important;
+	}
+
 .morechildren a.button,
 .morerecursion .deepthread,
-.nextprev a {
+.nextprev a,
+.showreplies {
 	display: inline-block !important;
 	margin: 0 !important;
 	padding: 0 !important;
@@ -1193,8 +1199,7 @@ ul.tabmenu.formtab {
 	margin: 5px -4px 5px 10px !important;
 }
 
-.res-commentBoxes .child,
-.res-commentBoxes .showreplies {
+.res-commentBoxes .child {
 	margin: 2px 0 -7px 5px !important;
 	padding: 0 0 1px !important;
 	border: 0 !important;
@@ -1232,7 +1237,6 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes .commentarea .nestedlisting {
-	padding: 0 !important;
 	border: 0 !important;
 	background-color: transparent !important;
 	box-shadow: none !important;
@@ -1358,6 +1362,7 @@ select {
 	border: 1px solid #aaa !important;
 	border-radius: 0 !important;
 	background-color: #fffeed !important;
+	vertical-align: middle !important;
 }
 
 /* ~~  A.8. Sidebar ~~~~~ */
@@ -2953,6 +2958,11 @@ ul#image-preview-list {
 	background: none transparent !important;
 }
 
+	.res-nightmode .arrow.up:hover:after,
+	.res-nightmode .arrow.down:hover:after {
+		color: #ddd !important;
+	}
+
 .res-nightmode .link .score {
 	color: #aaa !important;
 }
@@ -2977,8 +2987,7 @@ ul#image-preview-list {
 		color: #777 !important;
 	}
 
-.res-nightmode .comment .child,
-.res-nightmode .comment .showreplies {
+.res-nightmode .comment .child {
 	border-color: #2d2d2d !important;
 }
 

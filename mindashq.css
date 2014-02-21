@@ -8,7 +8,7 @@
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
 	position: relative;
-	min-width: 800px;
+	min-width: 900px;
 	background-color: #ececea;
 	color: #00000a;
 	font-weight: normal;
@@ -510,6 +510,7 @@ div#RESSubredditGroupDropdown {
 		}
 
 			#sr-header-area a.choice:hover,
+			.drop-choices a.choice:hover,
 			table#srList a:hover,
 			table#srList tr:hover,
 			div#RESSubredditGroupDropdown li:hover {
@@ -586,7 +587,7 @@ div#RESSubredditGroupDropdown {
 		content: '';
 		position: relative;
 		display: inline-block;
-		margin: 15px 0 0 310px;
+		margin: 15px 0 0 30px;
 		width: 1px;
 		height: 30px;
 	}
@@ -771,7 +772,7 @@ body.messages-page > div.content {
 .messages-page .menuarea,
 .profile-page .menuarea {
 	margin: 20px 5px -6px !important;
-	padding: 5px 0 0 10px;
+	padding: 5px 0 5px 10px;
 	font-size: 14px;
 }
 
@@ -1083,7 +1084,6 @@ ul.tabmenu.formtab {
 	content: '▼';
 }
 
-
 .arrow.upmod:after {
 	color: #ff4900;
 }
@@ -1158,15 +1158,21 @@ ul.tabmenu.formtab {
 		font-size: 130%;
 	}
 
-	.comment .child,
-	.comment .showreplies {
+	.comment .child {
 		margin: 2px 0 0 30px;
 		border-color: #e6e6e6;
 	}
 
+	.comment .showreplies {
+		margin: 2px 0 10px 30px;
+		font-weight: bold;
+		border: 0;
+	}
+
 .morechildren a.button,
 .morerecursion .deepthread,
-.nextprev a {
+.nextprev a,
+.showreplies {
 	display: inline-block;
 	margin: 0;
 	padding: 0 !important;
@@ -1195,8 +1201,7 @@ ul.tabmenu.formtab {
 	margin: 5px -4px 5px 10px;
 }
 
-.res-commentBoxes .child,
-.res-commentBoxes .showreplies {
+.res-commentBoxes .child {
 	margin: 2px 0 -7px 5px;
 	padding: 0 0 1px;
 	border: 0;
@@ -1234,7 +1239,6 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes .commentarea .nestedlisting {
-	padding: 0;
 	border: 0;
 	background-color: transparent;
 	box-shadow: none;
@@ -1360,6 +1364,7 @@ select {
 	border: 1px solid #aaa;
 	border-radius: 0;
 	background-color: #fffeed !important;
+	vertical-align: middle;
 }
 
 /* ~~  A.8. Sidebar ~~~~~ */
@@ -2955,6 +2960,11 @@ ul#image-preview-list {
 	background: none transparent !important;
 }
 
+	.res-nightmode .arrow.up:hover:after,
+	.res-nightmode .arrow.down:hover:after {
+		color: #ddd;
+	}
+
 .res-nightmode .link .score {
 	color: #aaa;
 }
@@ -2979,8 +2989,7 @@ ul#image-preview-list {
 		color: #777;
 	}
 
-.res-nightmode .comment .child,
-.res-nightmode .comment .showreplies {
+.res-nightmode .comment .child {
 	border-color: #2d2d2d;
 }
 
