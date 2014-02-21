@@ -7,7 +7,7 @@
  * This is of course by no means fool-proof, but it should work for the average user.
  */
 
-body:not(.subscriber) .arrow {
+body:not(.subscriber) .arrow,
 body:not(.subscriber) .arrow:after,
 body:not(.subscriber) .arrow:hover {
 	visibility: hidden !important;
@@ -43,9 +43,9 @@ body:not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
 }
 
 
-body:lang(np) > div.content > .linklisting .clearleft:after,
-body:lang(np) > div.content > .sitetable:after,
-body:lang(np) > div.content:after {
+body:lang(np):not(.subscriber) > div.content > .linklisting .clearleft:after,
+body:lang(np):not(.subscriber) > div.content > .sitetable:after,
+body:lang(np):not(.subscriber) > div.content:after {
 	content: "You are viewing a limited version of the subreddit.";
 	position: relative;
 	display: inline-block;
@@ -56,7 +56,7 @@ body:lang(np) > div.content:after {
 	letter-spacing: -1px;
 }
 
-body:lang(np) > div.content > .sitetable:after {
+body:lang(np):not(.subscriber) > div.content > .sitetable:after {
 	content: "Subscribe to this subreddit to see full-version of this subreddit";
 	margin: 35px 0 0;
 	padding: 10px 10px 0;
@@ -64,7 +64,7 @@ body:lang(np) > div.content > .sitetable:after {
 	font-size: 24px;
 }
 
-body:lang(np) > div.content > div.commentarea:before {
+body:lang(np):not(.subscriber) > div.content > div.commentarea:before {
 	content: "You are seeing this message because you've not subscribed yet.";
 	font-size: 12px;
 	margin: -10px 15px;
