@@ -1,0 +1,84 @@
+﻿/*--  C.14. No Participation Mode - Only subscribers-version ----*/
+/*
+ * by /u/KortoloB
+ * /r/NoParticipation
+ * 
+ * Subscribers will see the full page, only non-subscribers will see the read-only version.
+ * This is of course by no means fool-proof, but it should work for the average user.
+ */
+
+body:not(.subscriber) .arrow {
+body:not(.subscriber) .arrow:after,
+body:not(.subscriber) .arrow:hover {
+	visibility: hidden !important;
+}
+
+body:not(.subscriber) .usertext-edit,
+body:not(.subscriber) .sidebox.submit,
+body:not(.subscriber) .commentingAs,
+body:not(.subscriber) .markdownEditor,
+body:not(.subscriber) .report-button,
+body:not(.subscriber) a[onclick*="return reply(this)"],
+body:not(.subscriber) .helplink {
+	display: none !important;
+}
+
+body:not(.subscriber) #siteTable:before {
+	content: "You are not a member of this community. Please respect that by not voting.";
+	display: block;
+	overflow: hidden;
+	margin: -5px 0 5px 0;
+	padding: 5px 10px;
+	background-color: #fdf7dd;
+	color: #e00606;
+	font-weight: bold;
+	font-size: small;
+}
+
+body:not(.subscriber) .entry.likes:not(.reddit-entry):before,
+body:not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
+	content: "Please do not vote or comment if you are not a member of this community.";
+	color: #e00606;
+	font-weight: bold;
+}
+
+
+body:lang(np) > div.content > .linklisting .clearleft:after,
+body:lang(np) > div.content > .sitetable:after,
+body:lang(np) > div.content:after {
+	content: "You are viewing a limited version of the subreddit.";
+	position: relative;
+	display: inline-block;
+	margin: 10px 0;
+	padding: 10px 10px 0;
+	color: #bbb;
+	font-size: 20px;
+	letter-spacing: -1px;
+}
+
+body:lang(np) > div.content > .sitetable:after {
+	content: "Subscribe to this subreddit to see full-version of this subreddit";
+	margin: 35px 0 0;
+	padding: 10px 10px 0;
+	color: #999;
+	font-size: 24px;
+}
+
+body:lang(np) > div.content > div.commentarea:before {
+	content: "You are seeing this message because you've not subscribed yet.";
+	font-size: 12px;
+	margin: -10px 15px;
+	letter-spacing: 0px;
+	padding: 0px 2px;
+	color: #FFF;
+	background-color: #AAA;
+}
+
+/* Wiki protection */
+body.wiki-page:not(.subscriber) span.pageactions a.wikiaction-edit:not(.wikiaction-current),
+body.wiki-page:not(.subscriber) div.wiki-page-content form#editform label[for='reason'],
+body.wiki-page:not(.subscriber) div.wiki-page-content form#editform input#wiki_revision_reason,
+body.wiki-page:not(.subscriber) div.wiki-page-content form#editform input[type='submit'] {
+	display: none !important;
+}
+/*--  C.14.end No Participation mode - Only subscribers-version ----*/

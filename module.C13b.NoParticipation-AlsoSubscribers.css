@@ -1,0 +1,92 @@
+﻿/*--  C.14. No Participation Mode - Also subscribers-version ----*/
+/*
+ * by /u/KortoloB
+ * /r/NoParticipation
+ * 
+ * Link people to np.reddit.com/r/YourSubreddit to show them a read-only version.
+ * All users will see the read-only version when url has np.
+ * This is of course by no means fool-proof, but it should work for the average user.
+ */
+
+body:lang(np) .arrow,
+body:lang(np) .arrow:after,
+body:lang(np) .arrow:hover {
+	visibility: hidden !important;
+}
+
+body:lang(np) .usertext-edit,
+body:lang(np) .sidebox.submit,
+body:lang(np) .commentingAs,
+body:lang(np) .markdownEditor,
+body:lang(np) .report-button,
+body:lang(np) a[onclick*="return reply(this)"],
+body:lang(np) .subButtons,
+body:lang(np) .helplink,
+body:lang(np) .titlebox .fancy-toggle-button.toggle > .option.add,
+body:lang(np) a[href*='#btn'] {
+	display: none !important;
+}
+
+body:lang(np) #siteTable:before {
+	content: "You have been linked to a read-only version of this subreddit. Please respect the community by not voting.";
+	display: block;
+	overflow: hidden;
+	margin: -5px 0 5px 0;
+	padding: 5px 10px;
+	background-color: #fdf7dd;
+	color: #e00606;
+	font-weight: bold;
+	font-size: small;
+}
+
+body:lang(np).search-page #siteTable:before {
+	margin: 5px 333px 5px 0;
+}
+
+body:lang(np) .entry.likes:not(.reddit-entry):before,
+body:lang(np) .entry.dislikes:not(.reddit-entry):before {
+	content: "Please do not vote or comment when you come from external subreddits.";
+	color: #e00606;
+	font-weight: bold;
+}
+
+
+body:lang(np) > div.content > .linklisting .clearleft:after,
+body:lang(np) > div.content > .sitetable:after,
+body:lang(np) > div.content:after {
+	content: "You are viewing a limited version of the subreddit.";
+	position: relative;
+	display: inline-block;
+	margin: 10px 0;
+	padding: 10px 10px 0;
+	color: #bbb;
+	font-size: 20px;
+	letter-spacing: -1px;
+}
+
+body:lang(np) > div.content > .sitetable:after {
+	content: "Just read-only and No-participation - no comments, no voting";
+	margin: 35px 0 0;
+	padding: 10px 10px 0;
+	color: #999;
+	font-size: 24px;
+}
+
+body:lang(np) > div.content > div.commentarea:before {
+	content: "To revet to normal version, replace 'np.reddit.com' with 'www.reddit.com' in the url. Please respect the community when visiting from external urls";
+	font-size: 12px;
+	margin: -10px 15px;
+	letter-spacing: 0px;
+	padding: 0px 2px;
+	color: #FFF;
+	background-color: #AAA;
+}
+
+/* Wiki protection */
+body.wiki-page:lang(np) span.pageactions a.wikiaction-edit:not(.wikiaction-current),
+body.wiki-page:lang(np) div.wiki-page-content form#editform label[for='reason'],
+body.wiki-page:lang(np) div.wiki-page-content form#editform input#wiki_revision_reason,
+body.wiki-page:lang(np) div.wiki-page-content form#editform input[type='submit'] {
+	display: none !important;
+}
+/*--  C.14.end No Participation mode - Also subscribers-version----*/
