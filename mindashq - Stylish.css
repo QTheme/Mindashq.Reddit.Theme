@@ -1403,16 +1403,17 @@ select {
 div.sidebox.create {
 	position: absolute !important;
 	right: 30px !important;
-	bottom: 108px !important;
+	bottom: 110px !important;
 	display: block !important;
 	overflow: visible !important;
+	width: 230px !important;
 	border-width: 0 !important;
 	border-radius: 0 !important;
 	background: none transparent !important;
 }
 
 .mod-toolbox div.sidebox.create {
-	bottom: 132px !important;
+	bottom: 134px !important;
 }
 
 .sidebox.create .subtitle:last-child:after {
