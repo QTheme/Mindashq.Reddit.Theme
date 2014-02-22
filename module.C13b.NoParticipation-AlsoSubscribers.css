@@ -1,6 +1,5 @@
-﻿/*--  C.14. No Participation Mode - Also subscribers-version ----*/
-/*
- * by /u/KortoloB
+﻿/*--  C.13.b. No Participation Mode - Also subscribers-version ----*/
+/* by /u/KortoloB
  * /r/NoParticipation
  * 
  * Link people to np.reddit.com/r/YourSubreddit to show them a read-only version.
@@ -39,10 +38,6 @@ body:lang(np) #siteTable:before {
 	font-size: small;
 }
 
-body:lang(np).search-page #siteTable:before {
-	margin: 5px 333px 5px 0;
-}
-
 body:lang(np) .entry.likes:not(.reddit-entry):before,
 body:lang(np) .entry.dislikes:not(.reddit-entry):before {
 	content: "Please do not vote or comment when you come from external subreddits.";
@@ -50,8 +45,7 @@ body:lang(np) .entry.dislikes:not(.reddit-entry):before {
 	font-weight: bold;
 }
 
-
-body:lang(np) > div.content > .linklisting .clearleft:after,
+body.comments-page:lang(np) > div.content > .linklisting .clearleft:after,
 body:lang(np) > div.content > .sitetable:after,
 body:lang(np) > div.content:after {
 	content: "You are viewing a limited version of the subreddit.";
@@ -89,4 +83,4 @@ body.wiki-page:lang(np) div.wiki-page-content form#editform input#wiki_revision_
 body.wiki-page:lang(np) div.wiki-page-content form#editform input[type='submit'] {
 	display: none !important;
 }
-/*--  C.14.end No Participation mode - Also subscribers-version----*/
+/*--  C.13.b.end No Participation mode - Also subscribers-version----*/

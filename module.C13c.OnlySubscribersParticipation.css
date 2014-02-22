@@ -1,6 +1,5 @@
-﻿/*--  C.14. No Participation Mode - Only subscribers-version ----*/
-/*
- * by /u/KortoloB
+﻿/*--  C.13.c. Only subscribers-version of No Participation Mode - ----*/
+/* by /u/KortoloB
  * /r/NoParticipation
  * 
  * Subscribers will see the full page, only non-subscribers will see the read-only version.
@@ -42,8 +41,7 @@ body:not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
 	font-weight: bold;
 }
 
-
-body:lang(np):not(.subscriber) > div.content > .linklisting .clearleft:after,
+body.comments-page:lang(np):not(.subscriber) > div.content > .linklisting .clearleft:after,
 body:lang(np):not(.subscriber) > div.content > .sitetable:after,
 body:lang(np):not(.subscriber) > div.content:after {
 	content: "You are viewing a limited version of the subreddit.";
@@ -65,7 +63,7 @@ body:lang(np):not(.subscriber) > div.content > .sitetable:after {
 }
 
 body:lang(np):not(.subscriber) > div.content > div.commentarea:before {
-	content: "You are seeing this message because you've not subscribed yet.";
+	content: "You are seeing this message because you've not subscribed yet and you are in NP mode.";
 	font-size: 12px;
 	margin: -10px 15px;
 	letter-spacing: 0px;
@@ -81,4 +79,4 @@ body.wiki-page:not(.subscriber) div.wiki-page-content form#editform input#wiki_r
 body.wiki-page:not(.subscriber) div.wiki-page-content form#editform input[type='submit'] {
 	display: none !important;
 }
-/*--  C.14.end No Participation mode - Only subscribers-version ----*/
+/*--  C.13.c.end No Participation mode - Only subscribers-version ----*/

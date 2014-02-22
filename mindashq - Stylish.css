@@ -1717,7 +1717,7 @@ body:not(.listing-page) .morelink {
 	}
 
 body .morelink {
-	padding: 4px 10px !important;
+	padding: 2px 0 !important;
 	border-color: #357ae8 !important;
 	border-radius: 2px !important;
 	background: none #5ba2fd !important;
@@ -1738,7 +1738,7 @@ body .morelink {
 	body .morelink a {
 		color: #fff !important;
 		font-weight: bold !important;
-		font-size: 16px !important;
+		font-size: 14px !important;
 		text-shadow: 1px 1px 2px #2154a3 !important;
 	}
 
@@ -1828,7 +1828,7 @@ body .disabled .morelink:hover {
 	display: block !important;
 	overflow: hidden !important;
 	margin: 0 0 5px !important;
-	padding: 0 10px !important;
+	padding: 0 !important;
 	width: 100% !important;
 	border: 0 none !important;
 	background-color: #fff !important;
@@ -1850,6 +1850,7 @@ body .disabled .morelink:hover {
 
 	.footer .col {
 		border: 0 none !important;
+		margin: 10px !important;
 	}
 
 	.footer .flat-vert.title {
