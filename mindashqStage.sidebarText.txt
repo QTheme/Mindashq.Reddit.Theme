@@ -1,4 +1,4 @@
-﻿# Staging area for Mindashq Theme
+# Staging area for Mindashq Theme
 ## Running v1.7
 ### Some things may seem wonky at times.
 
@@ -9,20 +9,35 @@
 ---
 
 > # [About Mindashq](#icon-star)
-> This is a CSS theme to style subreddits. 
-> The general idea for this theme was to add a **min**imum **dash** of **q**uality to the standard Reddit appearance.
+> This is a custom Reddit CSS theme to make subreddits look attractive and easy to use. 
+
+> ---
+
+> Use Mindashq to add a **min**imum **dash** of **q**uality to the standard Reddit appearance and make any subreddit look clean modern and organized.
 
 > --- 
 
-> When the Reddit looks nice, its easier and more pleasant to browse the links and comments; making it a better experience for the reader!
+> This theme is [organized](/r/mindashq/wiki/mindashqcss) in separate [modules](/r/mindashq/wiki/modules) - easy to copy-paste, and replace as required. And with a [wiki](/r/mindashq/wiki) to help out with common design considerations.
 
 > --- 
 
-> This theme does not introduce any additional images, or, inserts text via styles that may affect the language changes or translations.
+> The standard module (base theme) does not introduce any additional images, or, inserts text via styles that may affect the language changes or translations.
 
 > --- 
 
-> This theme (re)uses most of the default font sizes, colors, sprites and the features of Reddit - and adds flavor via opt-in modules.
+> The 7+ pre configured [modules](/r/mindashq/wiki/modules) add flavor with images and text for additional customization - and are optional.
+
+> --- 
+
+> The base theme, and the opt-in modules can be used with any subreddit base theme.
+
+> --- 
+
+> The /r/mindashq team is thankful for 200+ subscribers and innumerable messages of help, feedback and encouragement that has made a "text-only" theme revamp your Reddit experience and take it to next level.
+
+
+---
+
 
 
 ##### [](#h5-yellow)
