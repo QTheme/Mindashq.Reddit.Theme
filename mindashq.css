@@ -1719,7 +1719,7 @@ body:not(.listing-page) .morelink {
 	}
 
 body .morelink {
-	padding: 4px 10px;
+	padding: 2px 0;
 	border-color: #357ae8 !important;
 	border-radius: 2px !important;
 	background: none #5ba2fd !important;
@@ -1740,7 +1740,7 @@ body .morelink {
 	body .morelink a {
 		color: #fff !important;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 14px;
 		text-shadow: 1px 1px 2px #2154a3;
 	}
 
@@ -1830,7 +1830,7 @@ body .disabled .morelink:hover {
 	display: block;
 	overflow: hidden;
 	margin: 0 0 5px;
-	padding: 0 10px;
+	padding: 0;
 	width: 100%;
 	border: 0 none;
 	background-color: #fff;
@@ -1852,6 +1852,7 @@ body .disabled .morelink:hover {
 
 	.footer .col {
 		border: 0 none;
+		margin: 10px;
 	}
 
 	.footer .flat-vert.title {
