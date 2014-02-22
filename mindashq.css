@@ -1405,16 +1405,17 @@ select {
 div.sidebox.create {
 	position: absolute;
 	right: 30px;
-	bottom: 108px;
+	bottom: 110px;
 	display: block;
 	overflow: visible;
+	width: 230px;
 	border-width: 0 !important;
 	border-radius: 0;
 	background: none transparent !important;
 }
 
 .mod-toolbox div.sidebox.create {
-	bottom: 132px;
+	bottom: 134px;
 }
 
 .sidebox.create .subtitle:last-child:after {
