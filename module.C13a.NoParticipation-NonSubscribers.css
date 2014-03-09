@@ -59,7 +59,7 @@ body:lang(np):not(.subscriber) > div.content:after {
 }
 
 body:lang(np):not(.subscriber) > div.content > .sitetable:after {
-	content: "Just read-only and No-participation - no comments, no voting";
+	content: "No-participation - just read-only, no comments, no voting";
 	margin: 35px 0 0;
 	padding: 10px 10px 0;
 	color: #999;
@@ -72,8 +72,8 @@ body:lang(np):not(.subscriber) > div.content > div.commentarea:before {
 	margin: -10px 15px;
 	letter-spacing: 0px;
 	padding: 0px 2px;
-	color: #FFF;
-	background-color: #AAA;
+	color: #fff;
+	background-color: #aaa;
 }
 
 /* Wiki protection */

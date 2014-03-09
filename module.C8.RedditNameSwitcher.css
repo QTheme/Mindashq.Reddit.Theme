@@ -1,5 +1,4 @@
 /*--  C.8. Reddit Name Switcher ----*/
-
 .pagename a:after,
 .titlebox .redditname a:after {
 	content: "Stage Mindashq"; /*Type the custom name here*/
@@ -8,12 +7,10 @@
 .pagename a,
 .titlebox .redditname a {
 	font-size: 0 !important;
-	text-shadow: none;
 }
 
 	.pagename a:after {
-		font-size: 18px;
-		vertical-align: bottom;
+		font-size: 16px;
 	}
 
 

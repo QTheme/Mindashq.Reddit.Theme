@@ -4,16 +4,17 @@
 ----*/
 
 #header,
-body.res-nightmode #header {
+.res-nightmode #header {
 	min-height: 150px; /*Tweak to give a nice height for image to be seen, be conservative*/
 	background: #101213 url('%%headerImage%%') no-repeat scroll 0px 80% !important; /*Tweak as per requirements*/
 }
 
 	#header:after,
 	#header-bottom-left:before,
-	.footer-parent:after {
-		background-color: #2a5484; /*Tweak to match the image color*/
-		background-image: none;
+	.bottommenu:before {
+		border-color: #0c2a4d; /*Tweak to match the image color*/
+		background-color: #284261; /*Tweak to match the image color*/
+		background-image: linear-gradient(#284261,#072141);
 		opacity: 0.7; /*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
@@ -39,8 +40,8 @@ body.res-nightmode #header {
 	color: #ff4500; /*Tweak against background color*/
 }
 
-body.res-nightmode #header ul.tabmenu li.selected a {
-	background-color: #040406;
+.res-nightmode #header ul.tabmenu li.selected a {
+	background: #040406;
 	color: #e06935;
 }
 
@@ -69,5 +70,4 @@ body.res-nightmode #header ul.tabmenu li.selected a {
 #sr-header-area {
 	background: #fff; /*Tweak to match the image color*/
 }
-
 /*--  C.1.end Header Image ----*/

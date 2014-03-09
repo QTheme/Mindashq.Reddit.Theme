@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7e
+	v1.7f
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -257,7 +257,7 @@ a[href='/s'] {
 	border: 1px solid #e6e6e6;
 	border-radius: 2px;
 	background-color: #fafafa;
-	color: #4d90fe !important;
+	color: #4d90fe;
 	font-size: 11px;
 	text-decoration: none;
 	text-shadow: none;
@@ -278,6 +278,7 @@ button.save,
 button.blueButton,
 .BEFoot button,
 input[type='submit'],
+button[type='submit'],
 a[href*='#btn'] {
 	margin: 1px 5px 2px 0;
 	padding: 6px 10px !important;
@@ -304,13 +305,14 @@ a[href*='#btn'] {
 	button.blueButton:hover,
 	.BEFoot button:hover,
 	input[type='submit']:hover,
+	button[type='submit']:hover,
 	a[href*='#btn']:hover,
 	.res a[href*='#btn']:hover,
 	.entry ul.flat-list li a[onclick*='reply']:hover {
 		border-color: #08c;
 		background-color: #357ae8;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
-		color: #fff !important;
+		color: #fff;
 	}
 
 	.btn.right,
@@ -412,13 +414,8 @@ a[href*='#btn'] {
 	}
 
 	#header:after,
-	.footer:after {
+	.bottommenu:before {
 		border-color: #8ccbfc;
-	}
-
-	#header:after,
-	#header-bottom-left:before,
-	.footer:after {
 		background-color: #acd9fc;
 		background-image: linear-gradient(#acd9fc,#8ccbfc);
 	}
@@ -458,7 +455,7 @@ a[href*='#btn'] {
 
 	#sr-header-area a,
 	#sr-header-area span {
-		color: #555;
+		color: inherit;
 	}
 
 		#sr-header-area a:hover {
@@ -467,6 +464,7 @@ a[href*='#btn'] {
 
 div#RESShortcutsEditContainer {
 	background: none #fff;
+	color: inherit;
 	font-family: Consolas,Monaco,'Courier New',monospace;
 }
 
@@ -480,6 +478,7 @@ div#RESShortcutsEditContainer {
 #header #RESShortcutsTrash,
 #srDropdown {
 	background: none transparent !important;
+	color: inherit;
 }
 
 #sr-more-link {
@@ -530,8 +529,8 @@ div#RESSubredditGroupDropdown {
 /*--  A.2.3. User Controls -- */
 #header-bottom-right {
 	top: auto !important;
-	bottom: -1px !important;
-	padding: 8px 10px 4px !important;
+	bottom: 0 !important;
+	padding: 7px 10px 3px !important;
 	height: 20px !important;
 	border-radius: 0 !important;
 	background-color: #acd9fc;
@@ -567,30 +566,9 @@ div#RESSubredditGroupDropdown {
 	position: relative;
 	bottom: 0;
 	display: inline-block;
-	margin: 0 10px 0 0;
+	margin: 0;
 	background-color: transparent;
 }
-
-	#header-bottom-left:before {
-		content: " ";
-		position: absolute;
-		top: 25px;
-		left: -10px;
-		display: block;
-		padding: 0 10px;
-		width: 100%;
-		height: 30px;
-		z-index: -1;
-	}
-
-	#header-bottom-left:after {
-		content: '';
-		position: relative;
-		display: inline-block;
-		margin: 15px 0 0 30px;
-		width: 1px;
-		height: 30px;
-	}
 
 /*--  A.2.5. The Reddit Name, applies to all pages -- */
 .pagename {
@@ -600,24 +578,21 @@ div#RESSubredditGroupDropdown {
 	color: #2154a3;
 	font-weight: bold;
 	font-variant: normal;
-	font-size: 18px;
-	line-height: 30px;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 	.pagename a,
 	.pagename.selected {
 		display: inline-block;
-		margin: 0 0 -10px 0;
-		padding: 10px 20px;
+		margin: 0 0 -5px 0;
+		padding: 9px 15px;
 		border-color: #357ae8;
 		border-radius: 2px;
 		background-color: #5ba2fd;
 		background-image: linear-gradient(#5ba2fd,#4b8adb);
 		box-shadow: -2px 4px 4px -2px #bbb;
 		color: #fff;
-		font-size: 18px !important;
-		line-height: 30px;
+		font-size: 16px !important;
 		text-shadow: 0 1px 0 #333;
 	}
 
@@ -649,26 +624,24 @@ div#RESSubredditGroupDropdown {
 
 #header-img-a {
 	display: inline-block;
-	margin: 15px -3px -10px 35px;
+	margin: 15px -3px -5px 35px;
 	padding: 0;
-	height: 50px;
+	height: 40px;
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 2px;
 	background-color: #acd9fc;
 	box-shadow: 2px 4px 4px -2px #bbb;
-	line-height: 50px;
 	vertical-align: bottom;
 }
 
 	#header-img-a img {
-		margin: -1px 0 0;
+		margin: 0;
 		padding: 0;
-		max-height: 50px;
+		max-height: 40px;
 		width: auto !important;
 		height: auto !important;
 		border-top-left-radius: 2px;
 		border-bottom-left-radius: 2px;
-		vertical-align: middle;
 	}
 
 	#header-img-a + .pagename a,
@@ -712,7 +685,6 @@ ul.tabmenu {
 				border-radius: 2px;
 				background-color: #f9f9f7;
 				background-image: none;
-				box-shadow: 0 5px 4px -4px #8ccbfc;
 				color: #ff910b;
 			}
 
@@ -749,7 +721,7 @@ body.messages-page > div.content {
 .panestack-title {
 	overflow: hidden;
 	margin: 10px 5px 0;
-	padding: 5px 0;
+	padding: 5px 20px 0;
 	padding-bottom: 3px;
 	border-bottom-color: #ccc;
 	font-size: larger;
@@ -761,7 +733,7 @@ body.messages-page > div.content {
 
 .commentarea .menuarea {
 	margin: 0 0 10px;
-	padding: 5px;
+	padding: 5px 25px 0;
 	border-bottom-color: #d2d2d2;
 	background-color: transparent;
 	font-size: 12px;
@@ -929,11 +901,15 @@ ul.tabmenu.formtab {
 
 /* ~~  A.4. Links and Posts ~~~~~ */
 /*--  A.4.1. specials - stickied, promoted and sponsored links  -- */
+#siteTable_organic {
+	margin: 0 5px;
+}
+
 .organic-listing,
 .thing.link.stickied,
 .thing.link.promoted {
 	overflow: hidden;
-	border-color: #d2d2d2;
+	border-color: #fff;
 	background: none #edf5ff;
 	box-shadow: 0 1px 3px 0 #ccb;
 }
@@ -1042,14 +1018,14 @@ ul.tabmenu.formtab {
 }
 
 .compressed .entry {
-	padding: 2px 3px 2px 2px;
+	padding: 2px 5px 2px 2px;
 }
 
 .link .title {
+	overflow: visible;
 	margin: 0 .4em 2px 0;
 	font-size: 125%;
 	line-height: 1.3;
-	overflow: visible;
 }
 
 .link.compressed .title {
@@ -1165,8 +1141,8 @@ ul.tabmenu.formtab {
 
 	.comment .showreplies {
 		margin: 2px 0 10px 30px;
-		font-weight: bold;
 		border: 0;
+		font-weight: bold;
 	}
 
 .morechildren a.button,
@@ -1247,10 +1223,9 @@ ul.tabmenu.formtab {
 .res-commentBoxes .nestedlisting > div.comment {
 	margin: 0 0 5px !important;
 	padding: 5px 0px;
-	border: 1px solid #fafafa !important;
-	border-color: #f3f3f3 #eee #eee #eee !important;
+	border: 1px solid #fff !important;
 	background-color: #fbfbfb;
-	box-shadow: 1px 1px 3px -1px #ccc;
+	box-shadow: 0 1px 3px 0 #ccb;
 }
 
 .res-commentBoxes div.comment {
@@ -1412,6 +1387,7 @@ div.sidebox.create {
 	border-width: 0 !important;
 	border-radius: 0;
 	background: none transparent !important;
+	z-index: 1;
 }
 
 .mod-toolbox div.sidebox.create {
@@ -1819,8 +1795,10 @@ body .disabled .morelink:hover {
 
 /* ~~  A.9. Footer ~~~~~ */
 .footer-parent {
+	position: relative;
 	clear: both;
 	padding: 0;
+	background: #fff;
 	font-size: 12px;
 	line-height: 15px;
 	text-align: left;
@@ -1834,26 +1812,12 @@ body .disabled .morelink:hover {
 	padding: 0;
 	width: 100%;
 	border: 0 none;
-	background-color: #fff;
-	z-index: -1;
+	z-index: 1;
 }
 
-	.footer:after {
-		content: " ";
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: block;
-		width: 100%;
-		height: 30px;
-		border-width: 1px 0;
-		border-style: solid;
-		z-index: -1;
-	}
-
 	.footer .col {
-		border: 0 none;
 		margin: 10px;
+		border: 0 none;
 	}
 
 	.footer .flat-vert.title {
@@ -1871,9 +1835,20 @@ body .disabled .morelink:hover {
 	margin: 0 0 0 25px;
 	margin: -5px 0px;
 	padding: 5px 25px;
-	background: #fff;
 	color: #777;
 }
+
+	.bottommenu:before {
+		content: " ";
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 30px;
+		border-width: 1px 0;
+		border-style: solid;
+	}
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
 body.wiki-page h1.wikititle {
@@ -2055,7 +2030,7 @@ div#NERFail,
 	.side .md blockquote > h1,
 	.side .md blockquote > h2,
 	.side .md blockquote > h3 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.side .md blockquote > blockquote {
@@ -2229,13 +2204,13 @@ div#NERFail,
 
 	.side a[href*='#icon-']:before {
 		float: left;
-		margin: -15px 10px 5px 0;
-		padding: 5px 5px 0;
+		margin: -5px 10px 5px -15px;
+		padding: 5px;
 		width: 30px;
 		background-position: 0 0;
 		font-weight: bold;
 		font-size: 25px;
-		line-height: 45px;
+		line-height: 25px;
 		text-align: center;
 	}
 
@@ -2318,7 +2293,8 @@ span.linkflair {
 	border: 1px solid #ddd;
 	border-radius: 2px;
 	background: #f5f5f5;
-	color: #555;
+	color: #2154a3;
+	font-weight: bold;
 	font-size: x-small;
 	text-shadow: none;
 }
@@ -2424,7 +2400,7 @@ span.linkflair {
 	margin: 25px 10px 0 0;
 	padding: 5px 10px;
 	background-color: #fff;
-	box-shadow: 0 1px 10px 0 #ccf;
+	box-shadow: 0 1px 10px 0 #d1d1d1;
 	font-weight: bold;
 	font-size: 12px;
 	vertical-align: text-bottom;
@@ -2704,13 +2680,8 @@ ul#image-preview-list {
 }
 
 .res-nightmode #header:after,
-.res-nightmode .footer:after {
+.res-nightmode .bottommenu:before {
 	border-color: #494848;
-}
-
-.res-nightmode #header:after,
-.res-nightmode #header-bottom-left:before,
-.res-nightmode .footer:after {
 	background-color: #414141;
 	background-image: linear-gradient(#696969,#414141);
 }
@@ -2838,7 +2809,6 @@ ul#image-preview-list {
 		border-color: #223f4f !important;
 		background-color: #1d1c27;
 		background-image: none;
-		box-shadow: 0 5px 4px -4px #223f4f;
 	}
 
 		.res-nightmode ul.tabmenu li a:hover,
@@ -3249,12 +3219,10 @@ ul#image-preview-list {
 
 /* ~~  B.9. Footer ~~~~~ */
 .res-nightmode .footer-parent {
+	background: #393939;
 }
 
 .res-nightmode .footer {
-	border: 0 none;
-	background: #393939;
-	box-shadow: 0 -3px 9px -2px #222;
 }
 
 	.res-nightmode .footer .flat-vert.title {
@@ -3263,8 +3231,8 @@ ul#image-preview-list {
 
 /*--  B.9.1. Reddit Copyright Text -- */
 .res-nightmode .bottommenu {
-	color: #fac8b1;
 	background: #393939;
+	color: #fac8b1;
 }
 
 /* ~~   B.10. Wiki Pages ~~~~~ */
