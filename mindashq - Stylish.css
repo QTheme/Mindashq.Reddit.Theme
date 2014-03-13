@@ -1388,7 +1388,7 @@ div.sidebox.create {
 	border-width: 0 !important;
 	border-radius: 0 !important;
 	background: none transparent !important;
-	z-index: 1 !important;
+	z-index: 10 !important;
 }
 
 .mod-toolbox div.sidebox.create {
