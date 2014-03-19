@@ -1,4 +1,4 @@
-﻿/*--  C.13. User Notices - inform submitters about reporting buttons and downvotes ----*/
+/*--  C.14. User Notices - inform submitters about reporting buttons and downvotes ----*/
 /* Emphasising reporting buttons */
 .entry .flat-list li form.report-button .main a,
 .entry .flat-list li form.remove-button .main a {
@@ -26,7 +26,6 @@
 	color: #f6f6f6;
 	font-size: 11px;
 	white-space: normal;
-	text-align: center;
 	z-index: 1000;
 }
 
@@ -35,15 +34,16 @@
 	content: "Use only to discourage non-related content. A downvote should not be used for simply a disagreement. ";
 	position: absolute;
 	display: block;
-	margin-top: 15px;
-	margin-left: 15px;
+	margin-top: -55px;
+	margin-left: -25px;
 	padding: 5px;
-	width: 200px;
+	width: 220px;
 	border: 1px solid #333;
 	background: #1d1212;
 	color: #f6f6f6;
 	font-size: 11px;
-	text-align: center;
+	font-family: sans-serif;
+	text-align: left;
 	z-index: 1000;
 }
-/*--  C.13.end User Notices ----*/
+/*--  C.14.end User Notices ----*/
