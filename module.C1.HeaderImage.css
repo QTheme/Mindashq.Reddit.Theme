@@ -13,8 +13,8 @@
 	#header-bottom-left:before,
 	.bottommenu:before {
 		border-color: #0c2a4d; /*Tweak to match the image color*/
-		background-color: #284261; /*Tweak to match the image color*/
-		background-image: linear-gradient(#284261,#072141);
+		background-color: #091c2b; /*Tweak to match the image color*/
+		background-image: linear-gradient(#091c2b,#020c19);
 		opacity: 0.7; /*be creative with usage of shadows, opacity, background color, and even additional background images here*/
 	}
 
@@ -55,7 +55,7 @@
 }
 
 #header-bottom-right {
-	background: transparent;
+	background: #091c2b;
 }
 
 	#header-bottom-right:hover {

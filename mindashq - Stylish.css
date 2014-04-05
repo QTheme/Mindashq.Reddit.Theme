@@ -361,7 +361,7 @@ a[href*='#btn'] {
 	text-align: center !important;
 }
 
-.thing a[href*="#btn"] {
+.thing a[href*='#btn'] {
 	display: inline-block !important;
 	margin: 0 !important;
 }
@@ -576,8 +576,6 @@ div#RESSubredditGroupDropdown {
 	color: #2154a3 !important;
 	font-weight: bold !important;
 	font-variant: normal !important;
-	/*font-size: 18px!important;
-	line-height: 30px!important;*/
 	vertical-align: middle !important;
 }
 
@@ -585,15 +583,14 @@ div#RESSubredditGroupDropdown {
 	.pagename.selected {
 		display: inline-block !important;
 		margin: 0 0 -5px 0 !important;
-		padding: 6px 15px !important;
+		padding: 9px 15px !important;
 		border-color: #357ae8 !important;
 		border-radius: 2px !important;
 		background-color: #5ba2fd !important;
 		background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 		box-shadow: -2px 4px 4px -2px #bbb !important;
 		color: #fff !important;
-		font-size: 20px !important;
-		/*line-height: 30px!important;*/
+		font-size: 16px !important;
 		text-shadow: 0 1px 0 #333 !important;
 	}
 
@@ -2031,7 +2028,7 @@ div#NERFail,
 	.side .md blockquote > h1,
 	.side .md blockquote > h2,
 	.side .md blockquote > h3 {
-		font-size: 18px !important;
+		font-size: 16px !important;
 	}
 
 	.side .md blockquote > blockquote {
@@ -2205,17 +2202,17 @@ div#NERFail,
 
 	.side a[href*='#icon-']:before {
 		float: left !important;
-		margin: -15px 10px 5px 0 !important;
-		padding: 5px 5px 0 !important;
+		margin: -5px 10px 5px -15px !important;
+		padding: 5px !important;
 		width: 30px !important;
 		background-position: 0 0 !important;
 		font-weight: bold !important;
 		font-size: 25px !important;
-		line-height: 45px !important;
+		line-height: 25px !important;
 		text-align: center !important;
 	}
 
-	.side a[href*="#icon-"]:after {
+	.side a[href*='#icon-']:after {
 		content: '' !important;
 		display: table !important;
 		clear: both !important;
@@ -2300,10 +2297,10 @@ span.linkflair {
 	text-shadow: none !important;
 }
 
-.linkflair[class*="-m-"] {
+.linkflair[class*='-m-'] {
 }
 
-	.linkflair[class*="-m-"] .linkflairlabel {
+	.linkflair[class*='-m-'] .linkflairlabel {
 		padding: 1px 5px 2px !important;
 		border: 0 none !important;
 		font-weight: bold !important;
@@ -2311,7 +2308,7 @@ span.linkflair {
 		text-align: center !important;
 	}
 
-	.linkflair[class*="-m-"]:hover .linkflairlabel {
+	.linkflair[class*='-m-']:hover .linkflairlabel {
 	}
 
 .linkflair-m-vt .linkflairlabel,
@@ -2487,7 +2484,7 @@ ul#image-preview-list {
 
 .res-nightmode .content .md a:visited,
 .res-nightmode div.comment .md p > a:visited {
-	color: #bbb !important;
+	color: #72aaca !important;
 }
 
 .res-nightmode .roundfield,
@@ -2617,8 +2614,8 @@ ul#image-preview-list {
 .res-nightmode button.save,
 .res-nightmode button.blueButton,
 .res-nightmode .BEFoot button,
-.res-nightmode input[type="submit"],
-.res-nightmode a[href*="#btn"] {
+.res-nightmode input[type='submit'],
+.res-nightmode a[href*='#btn'] {
 	text-shadow: 1px 1px 2px #000 !important;
 }
 
@@ -3596,6 +3593,32 @@ body.with-listing-chooser .listing-chooser .grippy {
 	border: 0 !important;
 	background: none transparent !important;
 }
+
+/*Force text link when image is displayed */
+#header-img-a {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+	#header-img-a:after {
+		content: "reddit.com" !important;
+		padding: 9px 10px !important;
+		color: #2154a3 !important;
+		font-weight: bold !important;
+		line-height: 41px !important;
+		vertical-align: bottom !important;
+	}
+
+	#header-img-a:hover:after {
+		background-color: #eaf4fc !important;
+		color: #1d1212 !important;
+		text-shadow: none !important;
+	}
+
+img#header-img {
+	display: none !important;
+}
+/*End Force text link when image is displayed */
 
 /* Stylish .The suggested reddit field is put back*/
 body.multi-page #reddit-field {
