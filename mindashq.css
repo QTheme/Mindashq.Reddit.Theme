@@ -363,7 +363,7 @@ a[href*='#btn'] {
 	text-align: center;
 }
 
-.thing a[href*="#btn"] {
+.thing a[href*='#btn'] {
 	display: inline-block;
 	margin: 0;
 }
@@ -2214,7 +2214,7 @@ div#NERFail,
 		text-align: center;
 	}
 
-	.side a[href*="#icon-"]:after {
+	.side a[href*='#icon-']:after {
 		content: '';
 		display: table;
 		clear: both;
@@ -2299,10 +2299,10 @@ span.linkflair {
 	text-shadow: none;
 }
 
-.linkflair[class*="-m-"] {
+.linkflair[class*='-m-'] {
 }
 
-	.linkflair[class*="-m-"] .linkflairlabel {
+	.linkflair[class*='-m-'] .linkflairlabel {
 		padding: 1px 5px 2px;
 		border: 0 none;
 		font-weight: bold;
@@ -2310,7 +2310,7 @@ span.linkflair {
 		text-align: center;
 	}
 
-	.linkflair[class*="-m-"]:hover .linkflairlabel {
+	.linkflair[class*='-m-']:hover .linkflairlabel {
 	}
 
 .linkflair-m-vt .linkflairlabel,
@@ -2486,7 +2486,7 @@ ul#image-preview-list {
 
 .res-nightmode .content .md a:visited,
 .res-nightmode div.comment .md p > a:visited {
-	color: #bbb !important;
+	color: #72aaca !important;
 }
 
 .res-nightmode .roundfield,
@@ -2616,8 +2616,8 @@ ul#image-preview-list {
 .res-nightmode button.save,
 .res-nightmode button.blueButton,
 .res-nightmode .BEFoot button,
-.res-nightmode input[type="submit"],
-.res-nightmode a[href*="#btn"] {
+.res-nightmode input[type='submit'],
+.res-nightmode a[href*='#btn'] {
 	text-shadow: 1px 1px 2px #000;
 }
 
@@ -2771,8 +2771,8 @@ ul#image-preview-list {
 	.res-nightmode .pagename a,
 	.res-nightmode .pagename.selected {
 		border-width: 0 0 1px 0;
-		background-color: #223f4f;
-		background-image: linear-gradient(#223f4f, #181817);
+		background-color: #313131;
+		background-image: linear-gradient(#313131, #181817);
 		box-shadow: 0 4px 6px #111;
 		color: #fff;
 		text-shadow: 0 1px 0 #111;
@@ -2806,7 +2806,7 @@ ul#image-preview-list {
 	.res-nightmode ul.tabmenu li.selected a,
 	.res-nightmode ul.tabmenu li.selected a:visited {
 		padding-bottom: 10px !important;
-		border-color: #223f4f !important;
+		border-color: #313131 !important;
 		background-color: #1d1c27;
 		background-image: none;
 	}
