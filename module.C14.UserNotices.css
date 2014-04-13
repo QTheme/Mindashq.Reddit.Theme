@@ -34,10 +34,10 @@
 	content: "Use only to discourage non-related content. A downvote should not be used for simply a disagreement. ";
 	position: absolute;
 	display: block;
-	margin-top: -55px;
-	margin-left: -25px;
+	margin-top: -30px;
+	margin-left: 20px;
 	padding: 5px;
-	width: 220px;
+	width: 270px;
 	border: 1px solid #333;
 	background: #1d1212;
 	color: #f6f6f6;
