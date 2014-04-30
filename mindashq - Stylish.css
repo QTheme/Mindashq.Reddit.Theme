@@ -1,6 +1,6 @@
-/* ~~ Mindashq.Reddit.Theme
-	v1.7f
-	http://www.reddit.com/r/mindashq/wiki
+/* ~~ Mindashq.Reddit.Theme for Stylish (Admin areas only)
+	v1.7g
+	http://www.reddit.com/r/mindashq/wiki/stylish
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -430,8 +430,6 @@ a[href*='#btn'] {
 	font-size: 11px !important;
 	line-height: 20px !important;
 	opacity: 0.4 !important;
-	-ms-filter: Alpha(Opacity=40) !important;
-	filter: Alpha(Opacity=40) !important;
 }
 
 	#sr-header-area .separator {
@@ -447,8 +445,6 @@ a[href*='#btn'] {
 
 	#sr-header-area:hover {
 		opacity: 1 !important;
-		-ms-filter: Alpha(Opacity=100) !important;
-		filter: Alpha(Opacity=100) !important;
 	}
 
 	#sr-header-area a,

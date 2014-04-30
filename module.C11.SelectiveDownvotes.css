@@ -14,8 +14,8 @@
  uncomment above line to enable, and delete both the abvoe rules */
 
 .linkinfo .score {
-	float: none;
 	display: block;
+	float: none;
 	margin: -1px;
 	width: auto;
 	height: auto;
