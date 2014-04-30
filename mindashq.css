@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7f
+	v1.7g
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -398,7 +398,7 @@ a[href*='#btn'] {
 	margin: 0 0 30px;
 	height: auto;
 	background-color: #fff;
-	box-shadow: 0 -3px 9px 5px #ddd;
+	box-shadow: 0 3px 3px -1px #ddd;
 }
 
 	#header:after {
@@ -432,8 +432,6 @@ a[href*='#btn'] {
 	font-size: 11px;
 	line-height: 20px;
 	opacity: 0.4;
-	-ms-filter: Alpha(Opacity=40);
-	filter: Alpha(Opacity=40);
 }
 
 	#sr-header-area .separator {
@@ -449,8 +447,6 @@ a[href*='#btn'] {
 
 	#sr-header-area:hover {
 		opacity: 1;
-		-ms-filter: Alpha(Opacity=100);
-		filter: Alpha(Opacity=100);
 	}
 
 	#sr-header-area a,
