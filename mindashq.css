@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7g
+	v1.7h
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -8,7 +8,6 @@
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
 	position: relative;
-	min-width: 900px;
 	background-color: #ececea;
 	color: #00000a;
 	font-weight: normal;
@@ -225,12 +224,12 @@ a[href='/s'] {
 
 	a[href='#s']:after,
 	a[href='/s']:after {
-		content: attr(title);
 		visibility: visible;
 		margin-left: 5px;
 		padding: 2px 3px;
 		background-color: #5ba2fd;
 		color: #5ba2fd;
+		content: attr(title);
 		font-size: small;
 	}
 
@@ -239,8 +238,8 @@ a[href='/s'] {
 	a[href='/s']:hover:after,
 	a[href='/s']:active:after {
 		color: #fff;
-		font-size: small;
 		text-decoration: none;
+		font-size: small;
 	}
 
 /*--  A.1.5. Common Button Style -- */
@@ -258,9 +257,9 @@ a[href='/s'] {
 	border-radius: 2px;
 	background-color: #fafafa;
 	color: #4d90fe;
-	font-size: 11px;
 	text-decoration: none;
 	text-shadow: none;
+	font-size: 11px;
 	cursor: pointer;
 }
 
@@ -277,21 +276,23 @@ a[href='/s'] {
 button.save,
 button.blueButton,
 .BEFoot button,
-input[type='submit'],
+input[type='submit'] :not(#search),
 button[type='submit'],
-a[href*='#btn'] {
+a[href*='#btn'],
+.res #searchexpando > .searchexpando-submit > input[type='submit'] {
 	margin: 1px 5px 2px 0;
 	padding: 6px 10px !important;
 	min-width: 70px;
+	height: auto !important;
 	border: 1px solid #357ae8 !important;
 	border-radius: 2px;
 	background-color: #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 	color: #fff;
-	font-weight: bold;
-	font-size: 13px;
 	text-decoration: none;
 	text-shadow: 1px 1px 2px #2154a3;
+	font-weight: bold;
+	font-size: 13px;
 	cursor: pointer;
 }
 
@@ -304,11 +305,12 @@ a[href*='#btn'] {
 	button.save:hover,
 	button.blueButton:hover,
 	.BEFoot button:hover,
-	input[type='submit']:hover,
+	input[type='submit']:hover :not(#search),
 	button[type='submit']:hover,
 	a[href*='#btn']:hover,
 	.res a[href*='#btn']:hover,
-	.entry ul.flat-list li a[onclick*='reply']:hover {
+	.entry ul.flat-list li a[onclick*='reply']:hover,
+	.res #searchexpando > .searchexpando-submit > input[type='submit']:hover {
 		border-color: #08c;
 		background-color: #357ae8;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
@@ -336,9 +338,9 @@ a[href*='#btn'] {
 			background-color: transparent !important;
 			box-shadow: none;
 			color: #888;
-			font-weight: bold;
 			text-decoration: underline;
 			text-shadow: none;
+			font-weight: bold;
 		}
 
 			.btn.right a:hover,
@@ -357,10 +359,10 @@ a[href*='#btn'] {
 	margin: 10px 0;
 	width: auto;
 	color: #fff !important;
+	text-align: center;
+	letter-spacing: 0;
 	font-size: 12px;
 	line-height: 29px;
-	letter-spacing: 0;
-	text-align: center;
 }
 
 .thing a[href*='#btn'] {
@@ -402,15 +404,15 @@ a[href*='#btn'] {
 }
 
 	#header:after {
-		content: " ";
 		position: absolute;
 		bottom: -1px;
+		z-index: -1;
 		display: block;
 		width: 100%;
 		height: 30px;
 		border: 1px solid;
 		border-width: 1px 0;
-		z-index: -1;
+		content: ' ';
 	}
 
 	#header:after,
@@ -431,7 +433,7 @@ a[href*='#btn'] {
 	font-weight: 500;
 	font-size: 11px;
 	line-height: 20px;
-	opacity: 0.4;
+	opacity: .4;
 }
 
 	#sr-header-area .separator {
@@ -500,7 +502,7 @@ div#RESSubredditGroupDropdown {
 		#sr-header-area a.choice,
 		table#srList a,
 		div#RESSubredditGroupDropdown li a {
-			padding: 2px 10px;
+			padding: 2px;
 			color: #2154a3;
 		}
 
@@ -572,9 +574,9 @@ div#RESSubredditGroupDropdown {
 	display: inline-block;
 	margin: 0;
 	color: #2154a3;
+	vertical-align: middle;
 	font-weight: bold;
 	font-variant: normal;
-	vertical-align: middle;
 }
 
 	.pagename a,
@@ -588,8 +590,8 @@ div#RESSubredditGroupDropdown {
 		background-image: linear-gradient(#5ba2fd,#4b8adb);
 		box-shadow: -2px 4px 4px -2px #bbb;
 		color: #fff;
-		font-size: 16px !important;
 		text-shadow: 0 1px 0 #333;
+		font-size: 16px !important;
 	}
 
 		.pagename a:hover {
@@ -606,12 +608,12 @@ div#RESSubredditGroupDropdown {
 	width: auto;
 	background-position: -10000px -2058px;
 	color: #2154a3;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 50px;
 	vertical-align: bottom;
 	text-align: right;
 	text-indent: 0;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 50px;
 }
 
 .with-listing-chooser #header-img.default-header {
@@ -829,7 +831,7 @@ ul.tabmenu.formtab {
 .thing div.expando-button.collapsed,
 .thing .expando-button.image {
 	margin: 0 25px 0 0 !important;
-	padding: 0px !important;
+	padding: 0 !important;
 	width: 0 !important;
 	height: 15px !important;
 	background: none transparent !important;
@@ -847,10 +849,10 @@ ul.tabmenu.formtab {
 		border-radius: 3px;
 		background-color: #efefe8;
 		color: #997;
-		font-size: 11px;
 		vertical-align: top;
 		text-align: center;
 		text-shadow: 0 0 3px #f1f1f1;
+		font-size: 11px;
 		cursor: pointer;
 	}
 
@@ -979,8 +981,8 @@ ul.tabmenu.formtab {
 	padding: 10px 5px 0;
 	background-color: transparent;
 	color: #ccb;
-	font-size: small;
 	text-align: right;
+	font-size: small;
 }
 
 .link.compressed .rank {
@@ -1004,7 +1006,7 @@ ul.tabmenu.formtab {
 		display: none;
 	}
 
-.listing-page .thumbnail {
+.listing-page .thumbnail:not(.nsfw) {
 	max-height: 55px;
 }
 
@@ -1039,11 +1041,11 @@ ul.tabmenu.formtab {
 .arrow:not(.prev):not(.next) {
 	background: none transparent !important;
 	color: #aaa;
+	text-align: center;
 	font-weight: normal;
 	font-size: 120%;
 	font-family: Consolas,Monaco,'Courier New',monospace;
 	line-height: 12px;
-	text-align: center;
 }
 
 .arrow.up:after,
@@ -1109,7 +1111,7 @@ ul.tabmenu.formtab {
 }
 
 	.comment .collapsed {
-		padding: 2px 0 0 25px;
+		padding: 2px 0 0;
 		font-style: normal;
 		font-size: 11px;
 		/*for the collapsed line of text, and expando collapsed state*/
@@ -1151,8 +1153,8 @@ ul.tabmenu.formtab {
 	border-width: 0 !important;
 	background: none transparent !important;
 	color: #4d90fe !important;
-	font-weight: bold;
 	text-shadow: 1px 1px 2px #eee;
+	font-weight: bold;
 }
 
 .new-comment .usertext-body {
@@ -1207,7 +1209,7 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes.res-commentBoxes-rounded div.comment {
-	border-radius: 0px !important;
+	border-radius: 0 !important;
 }
 
 .res-commentBoxes .commentarea .nestedlisting {
@@ -1218,7 +1220,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes .nestedlisting > div.comment {
 	margin: 0 0 5px !important;
-	padding: 5px 0px;
+	padding: 5px 0;
 	border: 1px solid #fff !important;
 	background-color: #fbfbfb;
 	box-shadow: 0 1px 3px 0 #ccb;
@@ -1226,7 +1228,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes div.comment {
 	margin: -1px 0 0 25px !important;
-	padding: 5px 0px !important;
+	padding: 5px 0 !important;
 	border: 1px solid #eee !important;
 	border-right: 0 !important;
 	border-radius: 0 !important;
@@ -1248,17 +1250,8 @@ ul.tabmenu.formtab {
 	}
 
 /*--  A.6.3. Compact deleted messages/comments -- */
-.deleted.comment > .entry {
-	padding: 0;
-}
-
-	.deleted.comment > .entry > * {
-		margin: 0;
-		padding: 2px 0 0 31px;
-	}
-
-.usertext.grayed,
-.usertext.grayed + ul {
+.deleted.comment .usertext,
+.deleted.comment ul.buttons {
 	display: none;
 }
 
@@ -1295,8 +1288,8 @@ a.pretty-button,
 	background-color: #fff6ea;
 	box-shadow: 1px 1px 1px 0 #ccc;
 	color: #1d1212;
-	font-weight: bold;
 	text-shadow: 1px 1px 2px #000;
+	font-weight: bold;
 }
 
 .pretty-button.inoffensive {
@@ -1340,11 +1333,11 @@ select {
 
 /* ~~  A.8. Sidebar ~~~~~ */
 .side {
+	z-index: 10;
 	margin: 0 20px;
 	padding: 0 10px;
 	background-color: transparent;
 	line-height: 1.3;
-	z-index: 10;
 }
 
 	.side .spacer {
@@ -1364,9 +1357,9 @@ select {
 
 	.side h1.redditname {
 		margin: 1.2em 0 .2em 0;
-		font-size: 26px;
+		text-shadow: 0 0 1px #aaa;
 		letter-spacing: -1px;
-		text-shadow: 0px 0px 1px #aaa;
+		font-size: 26px;
 	}
 
 		.side h1.redditname a {
@@ -1377,13 +1370,13 @@ div.sidebox.create {
 	position: absolute;
 	right: 30px;
 	bottom: 110px;
+	z-index: 10;
 	display: block;
 	overflow: visible;
 	width: 230px;
 	border-width: 0 !important;
 	border-radius: 0;
 	background: none transparent !important;
-	z-index: 10;
 }
 
 .mod-toolbox div.sidebox.create {
@@ -1391,8 +1384,8 @@ div.sidebox.create {
 }
 
 .sidebox.create .subtitle:last-child:after {
-	content: "...with theme /r/Mindashq.";
 	display: block;
+	content: '...with theme /r/Mindashq.';
 }
 
 .side h1,
@@ -1437,9 +1430,8 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 #search input[type='text'] {
-	margin: 0 0 -6px;
+	margin: 0;
 	padding: 10px;
-	width: 278px;
 	border: 1px solid #e3e3e3;
 	font-size: 14px;
 }
@@ -1452,6 +1444,10 @@ body:not(.profile-page) .side .titlebox .bottom {
 	font-size: 12px;
 }
 
+.searchpane-toggle-hide {
+	margin: -1em 1em;
+}
+
 .searchfacets {
 	margin: -1px 5px;
 	border-color: #ccb;
@@ -1459,15 +1455,14 @@ body:not(.profile-page) .side .titlebox .bottom {
 	box-shadow: none;
 }
 
-#search input[type='submit'] {
-	padding: 10px 15px;
-}
-
 #searchexpando {
-	margin: 6px 1px 0;
+	margin: 0 1px;
 	border-radius: 0;
 }
 
+.res #searchexpando p {
+	margin: 10px 0;
+}
 /*--  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
 	overflow: hidden;
@@ -1491,51 +1486,35 @@ body:not(.profile-page) .side .titlebox .bottom {
 	}
 
 	.linkinfo .score {
-		display: inline-block;
-		float: left;
-		margin: 0 0 0 -1px;
+		margin: -1px;
 		padding: 10px 0;
-		width: 130px;
-		height: 61px;
 		border: 1px solid #e3e3e3;
 		background: #f3f3f3;
 	}
 
 		.linkinfo .score .number {
-			font-size: 20px;
+			font-size: 30px;
 		}
 
 		.linkinfo .score .word {
-			display: block;
 			font-weight: 300;
 		}
 
-	.linkinfo .upvotes,
-	.linkinfo .downvotes {
+	.linkinfo .totalvotes {
 		display: block;
-		margin: 0 -1px 0 130px !important;
-		padding: 10px;
-		height: 20px;
+		margin: -1px !important;
+		padding: 5px;
 		border: 1px solid #e3e3e3;
 		background: #f3f3f3;
-		text-align: left;
+		text-align: center;
 	}
 
-	.linkinfo .downvotes {
+	.linkinfo .totalvotes {
 		margin-top: -1px !important;
 	}
 
-		.linkinfo .upvotes .number,
-		.linkinfo .downvotes .number {
-			float: right;
-			font-size: 20px;
-			text-align: right;
-		}
-
-		.linkinfo .upvotes .word,
-		.linkinfo .downvotes .word {
-			float: left;
-			margin: 5px 10px 0 0;
+		.linkinfo .totalvotes .number,
+		.linkinfo .totalvotes .word {
 			font-size: 12px;
 		}
 
@@ -1575,7 +1554,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 /*--  A.8.5. Flair Setting area -- */
 .titlebox form.flairtoggle {
 	position: relative;
-	margin-top: 5px;
+	margin: 5px 2px 0 0;
 	padding: 5px 5px 5px 35px;
 	border: 1px solid #e3e3e3;
 	border-width: 1px 1px 0;
@@ -1584,11 +1563,11 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 	.titlebox form.flairtoggle input {
 		float: left;
-		margin: 10px 10px 0px -25px;
+		margin: 10px 10px 0 -25px;
 	}
 
 .titlebox .tagline {
-	margin: 0 0 10px 0;
+	margin: 0 2px 10px 0;
 	padding: 0 5px 5px 35px;
 	border: 1px solid #e3e3e3;
 	border-width: 0 1px 1px;
@@ -1597,8 +1576,12 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 .titlebox .fancy-toggle-button {
+	display: block;
+	margin: 10px 0 0;
+}
+
+.res .titlebox .fancy-toggle-button {
 	display: inline-block;
-	margin: 0;
 }
 
 .subscription-box ul > a[count] {
@@ -1630,17 +1613,17 @@ body:not(.profile-page) .side .titlebox .bottom {
 a.blueButton,
 div.blueButton {
 	display: inline-block !important;
-	margin: 5px -6px 10px 0 !important;
+	margin: 5px -6px 0 0 !important;
 	padding: 3px 7px !important;
 	min-width: 80px;
 	height: auto !important;
 	outline: none;
 	border-color: #e3e3e3 !important;
 	border-radius: 0 !important;
+	text-align: center;
 	font-weight: bold;
 	font-size: 11px !important;
 	line-height: 14px !important;
-	text-align: center;
 }
 
 .fancy-toggle-button .add {
@@ -1669,9 +1652,46 @@ div.blueButton {
 		color: #aaa !important;
 	}
 
-.subscribers {
-	display: block;
+.subscribers,
+.users-online {
+	position: relative;
+	display: inline-block;
+	margin: -1px;
+	padding: 10px 20px 5px;
+	width: 109px;
+	vertical-align: top;
+	text-align: left;
+	white-space: nowrap;
 }
+
+.users-online {
+	margin-bottom: .25em;
+	padding: 10px 0 5px 20px;
+	width: 130px;
+	border: 1px solid #e3e3e3;
+	background: #f3f3f3;
+}
+
+	.subscribers .number,
+	.users-online .number {
+		display: block;
+		font-size: 18px;
+		line-height: 1;
+	}
+
+	.users-online:after {
+		position: absolute;
+		top: -1px;
+		right: -1px;
+		width: 295px;
+		height: 100%;
+		border: 1px solid #e3e3e3;
+		content: '';
+	}
+
+	.users-online + form.flairtoggle {
+		margin-top: -4px;
+	}
 
 /*--  A.8.6. Submit Button -- */
 .sidebox.submit {
@@ -1698,8 +1718,8 @@ body .morelink {
 	background: none #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 	color: #fff;
-	font-weight: normal;
 	letter-spacing: 0;
+	font-weight: normal;
 }
 
 	body .morelink:hover,
@@ -1712,9 +1732,9 @@ body .morelink {
 
 	body .morelink a {
 		color: #fff !important;
+		text-shadow: 1px 1px 2px #2154a3;
 		font-weight: bold;
 		font-size: 14px;
-		text-shadow: 1px 1px 2px #2154a3;
 	}
 
 		body .morelink a:hover,
@@ -1795,20 +1815,20 @@ body .disabled .morelink:hover {
 	clear: both;
 	padding: 0;
 	background: #fff;
+	text-align: left;
 	font-size: 12px;
 	line-height: 15px;
-	text-align: left;
 }
 
 .footer {
 	position: relative;
+	z-index: 1;
 	display: block;
 	overflow: hidden;
 	margin: 0 0 5px;
 	padding: 0;
 	width: 100%;
 	border: 0 none;
-	z-index: 1;
 }
 
 	.footer .col {
@@ -1829,13 +1849,12 @@ body .disabled .morelink:hover {
 
 .bottommenu {
 	margin: 0 0 0 25px;
-	margin: -5px 0px;
+	margin: -5px 0;
 	padding: 5px 25px;
 	color: #777;
 }
 
 	.bottommenu:before {
-		content: " ";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -1844,6 +1863,7 @@ body .disabled .morelink:hover {
 		height: 30px;
 		border-width: 1px 0;
 		border-style: solid;
+		content: ' ';
 	}
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
@@ -1851,8 +1871,8 @@ body.wiki-page h1.wikititle {
 	display: inline-block;
 	margin: 10px 15px 5px;
 	color: #5ba2fd;
-	font-size: 1em;
 	letter-spacing: 0;
+	font-size: 1em;
 }
 
 body.wiki-page .pageactions {
@@ -1872,13 +1892,13 @@ body.wiki-page .wiki-page-content {
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
-		font-size: 2.4em;
 		letter-spacing: -1px;
+		font-size: 2.4em;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h2 {
-		font-size: 1.8em;
 		letter-spacing: -1px;
+		font-size: 1.8em;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h3 {
@@ -1922,9 +1942,9 @@ div#userbarToggle.userbarShow {
 	border-radius: 10px;
 	background-color: #eaf4fc !important;
 	color: #2154a3;
-	font-weight: bold;
-	line-height: 0.7;
 	text-align: center;
+	font-weight: bold;
+	line-height: .7;
 }
 
 /*--  A.11.1. Pin Sub-bar -- */
@@ -1998,18 +2018,18 @@ div#NERFail,
 	border-width: 0;
 	border-radius: 0;
 	background-color: transparent !important;
+	text-align: left;
+	letter-spacing: -1px;
 	font-weight: bold;
 	font-size: 20px;
-	letter-spacing: -1px;
-	text-align: left;
 }
 
 #progressIndicator.neverEndingReddit,
 div#NERFail,
 #endOfReddit {
 	color: #a90404;
-	font-size: 12px;
 	letter-spacing: 0;
+	font-size: 12px;
 }
 
 /* ~~  A.12. Sidebar Boxes ~~~~~ */
@@ -2204,16 +2224,16 @@ div#NERFail,
 		padding: 5px;
 		width: 30px;
 		background-position: 0 0;
+		text-align: center;
 		font-weight: bold;
 		font-size: 25px;
 		line-height: 25px;
-		text-align: center;
 	}
 
 	.side a[href*='#icon-']:after {
-		content: '';
 		display: table;
 		clear: both;
+		content: '';
 	}
 
 .side a[href*='#icon-exclamation']:before {
@@ -2290,9 +2310,9 @@ span.linkflair {
 	border-radius: 2px;
 	background: #f5f5f5;
 	color: #2154a3;
+	text-shadow: none;
 	font-weight: bold;
 	font-size: x-small;
-	text-shadow: none;
 }
 
 .linkflair[class*='-m-'] {
@@ -2301,9 +2321,9 @@ span.linkflair {
 	.linkflair[class*='-m-'] .linkflairlabel {
 		padding: 1px 5px 2px;
 		border: 0 none;
-		font-weight: bold;
 		vertical-align: text-bottom;
 		text-align: center;
+		font-weight: bold;
 	}
 
 	.linkflair[class*='-m-']:hover .linkflairlabel {
@@ -2397,9 +2417,9 @@ span.linkflair {
 	padding: 5px 10px;
 	background-color: #fff;
 	box-shadow: 0 1px 10px 0 #d1d1d1;
+	vertical-align: text-bottom;
 	font-weight: bold;
 	font-size: 12px;
-	vertical-align: text-bottom;
 }
 
 .linkflair-meta.compressed .title > .linkflairlabel {
@@ -2891,7 +2911,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode div.thing.link.stickied {
-	background: none #050C02 !important;
+	background: none #050c02 !important;
 }
 
 /*--  B.4.2. Rest of Links (Posts) -- */
@@ -3112,8 +3132,7 @@ ul#image-preview-list {
 }
 
 	.res-nightmode .linkinfo .score,
-	.res-nightmode .linkinfo .upvotes,
-	.res-nightmode .linkinfo .downvotes {
+	.res-nightmode .linkinfo .totalvotes {
 		border-color: #333;
 		background: #111;
 	}
@@ -3184,6 +3203,14 @@ ul#image-preview-list {
 		color: #777 !important;
 	}
 
+.res-nightmode .users-online {
+	border-color: #333;
+	background: #111;
+}
+
+	.res-nightmode .users-online:after {
+		border-color: #333;
+	}
 /*--  B.8.6. Submit Button -- */
 .res-nightmode div.spacer > .submit {
 	overflow: visible !important;
