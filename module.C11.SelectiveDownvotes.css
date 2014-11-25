@@ -12,45 +12,4 @@
 /* To hide downvotes everywhere */
 /* .down { display: none }
  uncomment above line to enable, and delete both the abvoe rules */
-
-.linkinfo .score {
-	display: block;
-	float: none;
-	margin: -1px;
-	width: auto;
-	height: auto;
-}
-
-	.linkinfo .score .word {
-		display: inline;
-		margin: 5px;
-	}
-
-.linkinfo .upvotes,
-.linkinfo .downvotes {
-	display: block;
-	margin: 0 -1px !important;
-	padding: 10px;
-	height: auto;
-	border: 1px solid #e3e3e3;
-	text-align: center;
-}
-
-.linkinfo .downvotes {
-	display: none;
-}
-
-	.linkinfo .upvotes .number,
-	.linkinfo .downvotes .number {
-		float: none;
-		font-size: 20px;
-		text-align: center;
-	}
-
-	.linkinfo .upvotes .word,
-	.linkinfo .downvotes .word {
-		float: none;
-		margin: 5px 10px 0 0;
-		font-size: 12px;
-	}
 /*--  C.11.end Selective Downvotes ----*/

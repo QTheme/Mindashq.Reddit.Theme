@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7h
+	v1.7f
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -8,6 +8,7 @@
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
 	position: relative;
+	min-width: 900px;
 	background-color: #ececea;
 	color: #00000a;
 	font-weight: normal;
@@ -217,19 +218,19 @@ a[href='#s'],
 a[href='/s'] {
 	display: inline-block;
 	padding: 0 4px;
-	background-color: #acd9fc;
+	background-color: #fafaf6;
 	color: #2154a3;
 	cursor: default;
 }
 
 	a[href='#s']:after,
 	a[href='/s']:after {
+		content: attr(title);
 		visibility: visible;
 		margin-left: 5px;
 		padding: 2px 3px;
 		background-color: #5ba2fd;
 		color: #5ba2fd;
-		content: attr(title);
 		font-size: small;
 	}
 
@@ -238,8 +239,8 @@ a[href='/s'] {
 	a[href='/s']:hover:after,
 	a[href='/s']:active:after {
 		color: #fff;
-		text-decoration: none;
 		font-size: small;
+		text-decoration: none;
 	}
 
 /*--  A.1.5. Common Button Style -- */
@@ -257,9 +258,9 @@ a[href='/s'] {
 	border-radius: 2px;
 	background-color: #fafafa;
 	color: #4d90fe;
+	font-size: 11px;
 	text-decoration: none;
 	text-shadow: none;
-	font-size: 11px;
 	cursor: pointer;
 }
 
@@ -276,23 +277,21 @@ a[href='/s'] {
 button.save,
 button.blueButton,
 .BEFoot button,
-input[type='submit'] :not(#search),
+input[type='submit'],
 button[type='submit'],
-a[href*='#btn'],
-.res #searchexpando > .searchexpando-submit > input[type='submit'] {
+a[href*='#btn'] {
 	margin: 1px 5px 2px 0;
 	padding: 6px 10px !important;
 	min-width: 70px;
-	height: auto !important;
 	border: 1px solid #357ae8 !important;
 	border-radius: 2px;
 	background-color: #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 	color: #fff;
-	text-decoration: none;
-	text-shadow: 1px 1px 2px #2154a3;
 	font-weight: bold;
 	font-size: 13px;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #2154a3;
 	cursor: pointer;
 }
 
@@ -305,12 +304,11 @@ a[href*='#btn'],
 	button.save:hover,
 	button.blueButton:hover,
 	.BEFoot button:hover,
-	input[type='submit']:hover :not(#search),
+	input[type='submit']:hover,
 	button[type='submit']:hover,
 	a[href*='#btn']:hover,
 	.res a[href*='#btn']:hover,
-	.entry ul.flat-list li a[onclick*='reply']:hover,
-	.res #searchexpando > .searchexpando-submit > input[type='submit']:hover {
+	.entry ul.flat-list li a[onclick*='reply']:hover {
 		border-color: #08c;
 		background-color: #357ae8;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
@@ -338,9 +336,9 @@ a[href*='#btn'],
 			background-color: transparent !important;
 			box-shadow: none;
 			color: #888;
+			font-weight: bold;
 			text-decoration: underline;
 			text-shadow: none;
-			font-weight: bold;
 		}
 
 			.btn.right a:hover,
@@ -359,10 +357,10 @@ a[href*='#btn'] {
 	margin: 10px 0;
 	width: auto;
 	color: #fff !important;
-	text-align: center;
-	letter-spacing: 0;
 	font-size: 12px;
 	line-height: 29px;
+	letter-spacing: 0;
+	text-align: center;
 }
 
 .thing a[href*='#btn'] {
@@ -397,43 +395,46 @@ a[href*='#btn'] {
 
 /* ~~  A.2. Header ~~~~~ */
 #header {
-	margin: 0 0 30px;
+	margin: 0 25px 20px;
 	height: auto;
-	background-color: #fff;
-	box-shadow: 0 3px 3px -1px #ddd;
+	background-color: transparent;
+	min-height: 100px;
 }
 
 	#header:after {
+		content: " ";
 		position: absolute;
 		bottom: -1px;
-		z-index: -1;
 		display: block;
 		width: 100%;
-		height: 30px;
-		border: 1px solid;
-		border-width: 1px 0;
-		content: ' ';
+		height: 35px;
+		border: 1px solid #fff;
+		z-index: -1;
 	}
 
 	#header:after,
 	.bottommenu:before {
-		border-color: #8ccbfc;
-		background-color: #acd9fc;
-		background-image: linear-gradient(#acd9fc,#8ccbfc);
+		border-color: #fff;
+		background-color: #fafaf6;
+		background-image: linear-gradient(#fafaf6,#fafaf4);
+		box-shadow: 0 1px 3px 0 #ccb;
 	}
 
 /*--  A.2.1. Top Sr-Bar -- */
 #sr-header-area {
 	padding: 0 0 0 5px;
+	margin: 0 -25px;
 	height: 20px;
 	border-color: #fff;
 	background-color: #fff;
-	color: #acd9fc;
+	color: #fafaf6;
 	color: #555;
 	font-weight: 500;
 	font-size: 11px;
 	line-height: 20px;
-	opacity: .4;
+	opacity: 0.4;
+	-ms-filter: Alpha(Opacity=40);
+	filter: Alpha(Opacity=40);
 }
 
 	#sr-header-area .separator {
@@ -449,6 +450,8 @@ a[href*='#btn'] {
 
 	#sr-header-area:hover {
 		opacity: 1;
+		-ms-filter: Alpha(Opacity=100);
+		filter: Alpha(Opacity=100);
 	}
 
 	#sr-header-area a,
@@ -489,7 +492,7 @@ div#RESShortcutsEditContainer {
 table#srList,
 div#RESSubredditGroupDropdown {
 	padding: 0;
-	border: 1px solid #acd9fc;
+	border: 1px solid #fafaf6;
 	background-color: #eaf4fc;
 	color: #2154a3;
 	font-size: 12px;
@@ -502,7 +505,7 @@ div#RESSubredditGroupDropdown {
 		#sr-header-area a.choice,
 		table#srList a,
 		div#RESSubredditGroupDropdown li a {
-			padding: 2px;
+			padding: 2px 10px;
 			color: #2154a3;
 		}
 
@@ -511,12 +514,12 @@ div#RESSubredditGroupDropdown {
 			table#srList a:hover,
 			table#srList tr:hover,
 			div#RESSubredditGroupDropdown li:hover {
-				background-color: #acd9fc;
+				background-color: #fafaf6;
 			}
 
 	.srdrop .choice.bottom-option,
 	table#srList tr {
-		border-color: #acd9fc;
+		border-color: #fafaf6;
 	}
 
 .menuarea .drop-choices a.choice {
@@ -527,12 +530,13 @@ div#RESSubredditGroupDropdown {
 /*--  A.2.3. User Controls -- */
 #header-bottom-right {
 	top: auto !important;
-	bottom: 0 !important;
+	bottom: 35px !important;
 	padding: 7px 10px 3px !important;
 	height: 20px !important;
-	border-radius: 0 !important;
-	background-color: #acd9fc;
-	background-image: linear-gradient(#acd9fc,#8ccbfc);
+	border-color: #5ba2fd !important;
+	border-radius: 2px !important;
+	background: none #acd9fc !important;
+	background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
 }
 
 	#header-bottom-right a,
@@ -541,12 +545,14 @@ div#RESSubredditGroupDropdown {
 	}
 
 	#header-bottom-right:hover {
-		background-color: #eaf4fc;
-		background-image: linear-gradient(#eaf4fc,#eaf4fc);
+		border-color: #08c;
+		background: none #4d90fe !important;
+		background-image: linear-gradient(#4d90fe,#357ae8) !important;
 	}
 
 		#header-bottom-right:hover a,
 		#header-bottom-right:hover span {
+			color: #fff;
 			text-shadow: 0 -1px 0 #eee,0 1px 0 #fff;
 		}
 
@@ -561,9 +567,8 @@ div#RESSubredditGroupDropdown {
 
 /*--  A.2.4. Banner Image -- */
 #header-bottom-left {
-	position: relative;
+	position: absolute;
 	bottom: 0;
-	display: inline-block;
 	margin: 0;
 	background-color: transparent;
 }
@@ -574,24 +579,27 @@ div#RESSubredditGroupDropdown {
 	display: inline-block;
 	margin: 0;
 	color: #2154a3;
-	vertical-align: middle;
 	font-weight: bold;
 	font-variant: normal;
+	vertical-align: middle;
+	top: auto;
+	bottom: 35px;
+	left: 0;
 }
 
 	.pagename a,
 	.pagename.selected {
 		display: inline-block;
-		margin: 0 0 -5px 0;
-		padding: 9px 15px;
+		margin: 0;
+		padding: 5px 15px;
 		border-color: #357ae8;
 		border-radius: 2px;
 		background-color: #5ba2fd;
 		background-image: linear-gradient(#5ba2fd,#4b8adb);
-		box-shadow: -2px 4px 4px -2px #bbb;
+		/*box-shadow: -2px 4px 4px -2px #bbb;*/
 		color: #fff;
+		font-size: 18px !important;
 		text-shadow: 0 1px 0 #333;
-		font-size: 16px !important;
 	}
 
 		.pagename a:hover {
@@ -603,17 +611,17 @@ div#RESSubredditGroupDropdown {
 
 /*--  A.2.6. Reddit Image and Text -- */
 #header-img.default-header {
-	margin: 15px 15px 0 25px;
-	min-width: 75px;
+	margin: -25px 15px 0 0;
+	min-width: 65px;
 	width: auto;
 	background-position: -10000px -2058px;
 	color: #2154a3;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 5.5;
 	vertical-align: bottom;
 	text-align: right;
 	text-indent: 0;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 50px;
 }
 
 .with-listing-chooser #header-img.default-header {
@@ -622,13 +630,9 @@ div#RESSubredditGroupDropdown {
 
 #header-img-a {
 	display: inline-block;
-	margin: 15px -3px -5px 35px;
+	margin: 0 15px 0 0;
 	padding: 0;
 	height: 40px;
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-	background-color: #acd9fc;
-	box-shadow: 2px 4px 4px -2px #bbb;
 	vertical-align: bottom;
 }
 
@@ -650,8 +654,8 @@ div#RESSubredditGroupDropdown {
 
 /*--  A.2.7. Header Nav -- */
 ul.tabmenu {
-	margin: 15px 10px -17px 35px;
-	height: 50px;
+	margin: 0 10px 0 0px;
+	display: block;
 	border: 0 none;
 }
 
@@ -679,7 +683,7 @@ ul.tabmenu {
 			ul.tabmenu li.selected a:hover,
 			ul.tabmenu li.selected a:visited {
 				padding: 9px 15px;
-				border: 1px solid #8ccbfc;
+				border: 1px solid #fafaf4;
 				border-radius: 2px;
 				background-color: #f9f9f7;
 				background-image: none;
@@ -689,7 +693,7 @@ ul.tabmenu {
 /* ~~  A.3. Content box and common parts ~~~~~ */
 div.content {
 	overflow: hidden;
-	margin: 0 20px 10px 25px;
+	margin: 0 25px 10px;
 	padding: 10px 20px;
 	border: 1px solid #fbfbfb;
 	background-color: #fefefd;
@@ -700,6 +704,7 @@ body.listing-page > div.content,
 body.single-page > div.content,
 body.search-page > div.content,
 body.messages-page > div.content {
+	margin: 0 25px 10px 20px;
 	padding: 0;
 	border: 0 none;
 	background-color: transparent;
@@ -809,7 +814,7 @@ ul.tabmenu.formtab {
 			margin: 0 1px 1px;
 			padding: 5px 15px;
 			border-width: 0;
-			background-color: #acd9fc;
+			background-color: #fafaf6;
 		}
 
 		ul.tabmenu.formtab li.selected a,
@@ -831,7 +836,7 @@ ul.tabmenu.formtab {
 .thing div.expando-button.collapsed,
 .thing .expando-button.image {
 	margin: 0 25px 0 0 !important;
-	padding: 0 !important;
+	padding: 0px !important;
 	width: 0 !important;
 	height: 15px !important;
 	background: none transparent !important;
@@ -849,10 +854,10 @@ ul.tabmenu.formtab {
 		border-radius: 3px;
 		background-color: #efefe8;
 		color: #997;
+		font-size: 11px;
 		vertical-align: top;
 		text-align: center;
 		text-shadow: 0 0 3px #f1f1f1;
-		font-size: 11px;
 		cursor: pointer;
 	}
 
@@ -981,8 +986,8 @@ ul.tabmenu.formtab {
 	padding: 10px 5px 0;
 	background-color: transparent;
 	color: #ccb;
-	text-align: right;
 	font-size: small;
+	text-align: right;
 }
 
 .link.compressed .rank {
@@ -1006,7 +1011,7 @@ ul.tabmenu.formtab {
 		display: none;
 	}
 
-.listing-page .thumbnail:not(.nsfw) {
+.listing-page .thumbnail {
 	max-height: 55px;
 }
 
@@ -1041,11 +1046,11 @@ ul.tabmenu.formtab {
 .arrow:not(.prev):not(.next) {
 	background: none transparent !important;
 	color: #aaa;
-	text-align: center;
 	font-weight: normal;
 	font-size: 120%;
 	font-family: Consolas,Monaco,'Courier New',monospace;
 	line-height: 12px;
+	text-align: center;
 }
 
 .arrow.up:after,
@@ -1111,7 +1116,7 @@ ul.tabmenu.formtab {
 }
 
 	.comment .collapsed {
-		padding: 2px 0 0;
+		padding: 2px 0 0 25px;
 		font-style: normal;
 		font-size: 11px;
 		/*for the collapsed line of text, and expando collapsed state*/
@@ -1153,8 +1158,8 @@ ul.tabmenu.formtab {
 	border-width: 0 !important;
 	background: none transparent !important;
 	color: #4d90fe !important;
-	text-shadow: 1px 1px 2px #eee;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px #eee;
 }
 
 .new-comment .usertext-body {
@@ -1209,7 +1214,7 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes.res-commentBoxes-rounded div.comment {
-	border-radius: 0 !important;
+	border-radius: 0px !important;
 }
 
 .res-commentBoxes .commentarea .nestedlisting {
@@ -1220,7 +1225,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes .nestedlisting > div.comment {
 	margin: 0 0 5px !important;
-	padding: 5px 0;
+	padding: 5px 0px;
 	border: 1px solid #fff !important;
 	background-color: #fbfbfb;
 	box-shadow: 0 1px 3px 0 #ccb;
@@ -1228,7 +1233,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes div.comment {
 	margin: -1px 0 0 25px !important;
-	padding: 5px 0 !important;
+	padding: 5px 0px !important;
 	border: 1px solid #eee !important;
 	border-right: 0 !important;
 	border-radius: 0 !important;
@@ -1250,8 +1255,17 @@ ul.tabmenu.formtab {
 	}
 
 /*--  A.6.3. Compact deleted messages/comments -- */
-.deleted.comment .usertext,
-.deleted.comment ul.buttons {
+.deleted.comment > .entry {
+	padding: 0;
+}
+
+	.deleted.comment > .entry > * {
+		margin: 0;
+		padding: 2px 0 0 31px;
+	}
+
+.usertext.grayed,
+.usertext.grayed + ul {
 	display: none;
 }
 
@@ -1288,8 +1302,8 @@ a.pretty-button,
 	background-color: #fff6ea;
 	box-shadow: 1px 1px 1px 0 #ccc;
 	color: #1d1212;
-	text-shadow: 1px 1px 2px #000;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
 }
 
 .pretty-button.inoffensive {
@@ -1333,11 +1347,11 @@ select {
 
 /* ~~  A.8. Sidebar ~~~~~ */
 .side {
-	z-index: 10;
-	margin: 0 20px;
-	padding: 0 10px;
+	margin: 0 25px 0 5px;
+	padding: 0 0 0 15px;
 	background-color: transparent;
 	line-height: 1.3;
+	z-index: 10;
 }
 
 	.side .spacer {
@@ -1357,9 +1371,9 @@ select {
 
 	.side h1.redditname {
 		margin: 1.2em 0 .2em 0;
-		text-shadow: 0 0 1px #aaa;
-		letter-spacing: -1px;
 		font-size: 26px;
+		letter-spacing: -1px;
+		text-shadow: 0px 0px 1px #aaa;
 	}
 
 		.side h1.redditname a {
@@ -1368,24 +1382,24 @@ select {
 
 div.sidebox.create {
 	position: absolute;
-	right: 30px;
-	bottom: 110px;
-	z-index: 10;
+	right: 26px;
+	bottom: 107px;
 	display: block;
 	overflow: visible;
 	width: 230px;
 	border-width: 0 !important;
 	border-radius: 0;
 	background: none transparent !important;
+	z-index: 10;
 }
 
 .mod-toolbox div.sidebox.create {
-	bottom: 134px;
+	bottom: 131px;
 }
 
 .sidebox.create .subtitle:last-child:after {
+	content: "...with theme /r/Mindashq.";
 	display: block;
-	content: '...with theme /r/Mindashq.';
 }
 
 .side h1,
@@ -1430,8 +1444,9 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 #search input[type='text'] {
-	margin: 0;
+	margin: 0 0 -6px;
 	padding: 10px;
+	width: 278px;
 	border: 1px solid #e3e3e3;
 	font-size: 14px;
 }
@@ -1444,10 +1459,6 @@ body:not(.profile-page) .side .titlebox .bottom {
 	font-size: 12px;
 }
 
-.searchpane-toggle-hide {
-	margin: -1em 1em;
-}
-
 .searchfacets {
 	margin: -1px 5px;
 	border-color: #ccb;
@@ -1455,19 +1466,20 @@ body:not(.profile-page) .side .titlebox .bottom {
 	box-shadow: none;
 }
 
+#search input[type='submit'] {
+	padding: 10px 15px;
+}
+
 #searchexpando {
-	margin: 0 1px;
+	margin: 6px 1px 0;
 	border-radius: 0;
 }
 
-.res #searchexpando p {
-	margin: 10px 0;
-}
 /*--  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
 	overflow: hidden;
 	margin: 0 5px 10px;
-	border-color: #acd9fc;
+	border-color: #fafaf6;
 	background-color: #eaf4fc;
 	color: #2154a3;
 }
@@ -1486,35 +1498,51 @@ body:not(.profile-page) .side .titlebox .bottom {
 	}
 
 	.linkinfo .score {
-		margin: -1px;
+		display: inline-block;
+		float: left;
+		margin: 0 0 0 -1px;
 		padding: 10px 0;
+		width: 130px;
+		height: 61px;
 		border: 1px solid #e3e3e3;
 		background: #f3f3f3;
 	}
 
 		.linkinfo .score .number {
-			font-size: 30px;
+			font-size: 20px;
 		}
 
 		.linkinfo .score .word {
+			display: block;
 			font-weight: 300;
 		}
 
-	.linkinfo .totalvotes {
+	.linkinfo .upvotes,
+	.linkinfo .downvotes {
 		display: block;
-		margin: -1px !important;
-		padding: 5px;
+		margin: 0 -1px 0 130px !important;
+		padding: 10px;
+		height: 20px;
 		border: 1px solid #e3e3e3;
 		background: #f3f3f3;
-		text-align: center;
+		text-align: left;
 	}
 
-	.linkinfo .totalvotes {
+	.linkinfo .downvotes {
 		margin-top: -1px !important;
 	}
 
-		.linkinfo .totalvotes .number,
-		.linkinfo .totalvotes .word {
+		.linkinfo .upvotes .number,
+		.linkinfo .downvotes .number {
+			float: right;
+			font-size: 20px;
+			text-align: right;
+		}
+
+		.linkinfo .upvotes .word,
+		.linkinfo .downvotes .word {
+			float: left;
+			margin: 5px 10px 0 0;
 			font-size: 12px;
 		}
 
@@ -1554,7 +1582,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 /*--  A.8.5. Flair Setting area -- */
 .titlebox form.flairtoggle {
 	position: relative;
-	margin: 5px 2px 0 0;
+	margin-top: 5px;
 	padding: 5px 5px 5px 35px;
 	border: 1px solid #e3e3e3;
 	border-width: 1px 1px 0;
@@ -1563,11 +1591,11 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 	.titlebox form.flairtoggle input {
 		float: left;
-		margin: 10px 10px 0 -25px;
+		margin: 10px 10px 0px -25px;
 	}
 
 .titlebox .tagline {
-	margin: 0 2px 10px 0;
+	margin: 0 0 10px 0;
 	padding: 0 5px 5px 35px;
 	border: 1px solid #e3e3e3;
 	border-width: 0 1px 1px;
@@ -1576,12 +1604,8 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 .titlebox .fancy-toggle-button {
-	display: block;
-	margin: 10px 0 0;
-}
-
-.res .titlebox .fancy-toggle-button {
 	display: inline-block;
+	margin: 0;
 }
 
 .subscription-box ul > a[count] {
@@ -1613,17 +1637,17 @@ body:not(.profile-page) .side .titlebox .bottom {
 a.blueButton,
 div.blueButton {
 	display: inline-block !important;
-	margin: 5px -6px 0 0 !important;
+	margin: 5px -6px 10px 0 !important;
 	padding: 3px 7px !important;
 	min-width: 80px;
 	height: auto !important;
 	outline: none;
 	border-color: #e3e3e3 !important;
 	border-radius: 0 !important;
-	text-align: center;
 	font-weight: bold;
 	font-size: 11px !important;
 	line-height: 14px !important;
+	text-align: center;
 }
 
 .fancy-toggle-button .add {
@@ -1652,64 +1676,14 @@ div.blueButton {
 		color: #aaa !important;
 	}
 
-.subscribers,
-.users-online {
-	position: relative;
-	display: inline-block;
-	margin: -1px;
-	padding: 10px 20px 5px;
-	width: 109px;
-	vertical-align: top;
-	text-align: left;
-	white-space: nowrap;
+.subscribers {
+	display: block;
 }
-
-.users-online {
-	margin-bottom: .25em;
-	padding: 10px 0 5px 20px;
-	width: 130px;
-	border: 1px solid #e3e3e3;
-	background: #f3f3f3;
-}
-
-	.subscribers .number,
-	.users-online .number {
-		display: block;
-		font-size: 18px;
-		line-height: 1;
-	}
-
-	.users-online:after {
-		position: absolute;
-		top: -1px;
-		right: -1px;
-		width: 295px;
-		height: 100%;
-		border: 1px solid #e3e3e3;
-		content: '';
-	}
-
-	.users-online + form.flairtoggle {
-		margin-top: -4px;
-	}
 
 /*--  A.8.6. Submit Button -- */
 .sidebox.submit {
 	width: 300px;
 }
-
-body:not(.listing-page) .morelink {
-	border-color: #5ba2fd !important;
-	border-radius: 2px !important;
-	background: none #acd9fc !important;
-	background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
-	color: #2154a3;
-}
-
-	body:not(.listing-page) .morelink a {
-		color: #2154a3 !important;
-		text-shadow: 1px 1px 2px #eaf4fc;
-	}
 
 body .morelink {
 	padding: 2px 0;
@@ -1718,38 +1692,36 @@ body .morelink {
 	background: none #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 	color: #fff;
-	letter-spacing: 0;
 	font-weight: normal;
+	letter-spacing: 0;
 }
 
-	body .morelink:hover,
-	body:not(.listing-page) .morelink:hover {
+	body .morelink a {
+		color: #fff !important;
+		font-weight: bold;
+		font-size: 14px;
+		text-shadow: 1px 1px 2px #2154a3;
+	}
+
+	body .morelink:hover {
 		border-color: #08c;
 		background: none #4d90fe !important;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
 		color: #fff;
 	}
 
-	body .morelink a {
-		color: #fff !important;
-		text-shadow: 1px 1px 2px #2154a3;
-		font-weight: bold;
-		font-size: 14px;
-	}
-
 		body .morelink a:hover,
-		body:not(.listing-page) .morelink:hover a,
-		body:not(.listing-page) .morelink a:hover {
+		body .morelink:hover a {
 			color: #fff !important;
 			text-shadow: 1px 1px 2px #2154a3;
 		}
 
-	body .morelink .nub,
-	body .morelink:hover .nub,
-	body .disabled .morelink .nub,
-	body .disabled .morelink:hover .nub {
-		background: none transparent !important;
-	}
+		body .morelink .nub,
+		body .morelink:hover .nub,
+		body .disabled .morelink .nub,
+		body .disabled .morelink:hover .nub {
+			background: none transparent !important;
+		}
 
 body .disabled .morelink,
 body .disabled .morelink:hover {
@@ -1814,21 +1786,23 @@ body .disabled .morelink:hover {
 	position: relative;
 	clear: both;
 	padding: 0;
-	background: #fff;
-	text-align: left;
+	margin: 0 25px;
+	background: #fafaf6;
 	font-size: 12px;
 	line-height: 15px;
+	text-align: left;
+	box-shadow: 0 1px 3px 0 #ccb;
 }
 
 .footer {
 	position: relative;
-	z-index: 1;
 	display: block;
 	overflow: hidden;
 	margin: 0 0 5px;
 	padding: 0;
 	width: 100%;
 	border: 0 none;
+	z-index: 1;
 }
 
 	.footer .col {
@@ -1837,7 +1811,7 @@ body .disabled .morelink:hover {
 	}
 
 	.footer .flat-vert.title {
-		margin: 0 0 15px;
+		margin: 0 0 20px;
 		color: #2154a3;
 	}
 
@@ -1849,21 +1823,21 @@ body .disabled .morelink:hover {
 
 .bottommenu {
 	margin: 0 0 0 25px;
-	margin: -5px 0;
+	margin: -5px 0px;
 	padding: 5px 25px;
 	color: #777;
 }
 
 	.bottommenu:before {
+		content: " ";
 		position: absolute;
 		top: 0;
 		left: 0;
 		display: block;
 		width: 100%;
-		height: 30px;
+		height: 35px;
 		border-width: 1px 0;
 		border-style: solid;
-		content: ' ';
 	}
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
@@ -1871,8 +1845,8 @@ body.wiki-page h1.wikititle {
 	display: inline-block;
 	margin: 10px 15px 5px;
 	color: #5ba2fd;
-	letter-spacing: 0;
 	font-size: 1em;
+	letter-spacing: 0;
 }
 
 body.wiki-page .pageactions {
@@ -1892,13 +1866,13 @@ body.wiki-page .wiki-page-content {
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
-		letter-spacing: -1px;
 		font-size: 2.4em;
+		letter-spacing: -1px;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h2 {
-		letter-spacing: -1px;
 		font-size: 1.8em;
+		letter-spacing: -1px;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h3 {
@@ -1942,9 +1916,9 @@ div#userbarToggle.userbarShow {
 	border-radius: 10px;
 	background-color: #eaf4fc !important;
 	color: #2154a3;
-	text-align: center;
 	font-weight: bold;
-	line-height: .7;
+	line-height: 0.7;
+	text-align: center;
 }
 
 /*--  A.11.1. Pin Sub-bar -- */
@@ -1964,14 +1938,18 @@ div#userbarToggle.userbarShow {
 /*--  A.11.2. Pin Sub-Bar User Bar -- */
 body.pinHeader-userbar #header-bottom-right,
 body.pinHeader-subanduser #header-bottom-right {
-	top: 15px !important;
+	top: 30px !important;
+	right: 20px !important;
 	bottom: auto !important;
-	background-color: #fff;
 }
 
 /*--  A.11.3. Pin Full Header -- */
+.res.pinHeader-header #header {
+	background-color: #ececea;
+}
+
 #RESPinnedHeaderSpacer {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 /*--  A.11.4. Handling the keynav -- */
@@ -2018,18 +1996,18 @@ div#NERFail,
 	border-width: 0;
 	border-radius: 0;
 	background-color: transparent !important;
-	text-align: left;
-	letter-spacing: -1px;
 	font-weight: bold;
 	font-size: 20px;
+	letter-spacing: -1px;
+	text-align: left;
 }
 
 #progressIndicator.neverEndingReddit,
 div#NERFail,
 #endOfReddit {
 	color: #a90404;
-	letter-spacing: 0;
 	font-size: 12px;
+	letter-spacing: 0;
 }
 
 /* ~~  A.12. Sidebar Boxes ~~~~~ */
@@ -2047,6 +2025,7 @@ div#NERFail,
 	.side .md blockquote > h2,
 	.side .md blockquote > h3 {
 		font-size: 16px;
+		margin: 5px 10px;
 	}
 
 	.side .md blockquote > blockquote {
@@ -2220,20 +2199,20 @@ div#NERFail,
 
 	.side a[href*='#icon-']:before {
 		float: left;
-		margin: -5px 10px 5px -15px;
+		margin: -5px 10px 5px -20px;
 		padding: 5px;
 		width: 30px;
 		background-position: 0 0;
-		text-align: center;
 		font-weight: bold;
 		font-size: 25px;
 		line-height: 25px;
+		text-align: center;
 	}
 
 	.side a[href*='#icon-']:after {
+		content: '';
 		display: table;
 		clear: both;
-		content: '';
 	}
 
 .side a[href*='#icon-exclamation']:before {
@@ -2310,9 +2289,9 @@ span.linkflair {
 	border-radius: 2px;
 	background: #f5f5f5;
 	color: #2154a3;
-	text-shadow: none;
 	font-weight: bold;
 	font-size: x-small;
+	text-shadow: none;
 }
 
 .linkflair[class*='-m-'] {
@@ -2321,9 +2300,9 @@ span.linkflair {
 	.linkflair[class*='-m-'] .linkflairlabel {
 		padding: 1px 5px 2px;
 		border: 0 none;
+		font-weight: bold;
 		vertical-align: text-bottom;
 		text-align: center;
-		font-weight: bold;
 	}
 
 	.linkflair[class*='-m-']:hover .linkflairlabel {
@@ -2417,9 +2396,9 @@ span.linkflair {
 	padding: 5px 10px;
 	background-color: #fff;
 	box-shadow: 0 1px 10px 0 #d1d1d1;
-	vertical-align: text-bottom;
 	font-weight: bold;
 	font-size: 12px;
+	vertical-align: text-bottom;
 }
 
 .linkflair-meta.compressed .title > .linkflairlabel {
@@ -2455,7 +2434,7 @@ ul#image-preview-list {
 
 .tabpane-content {
 	padding: 15px;
-	border-color: #8ccbfc;
+	border-color: #fafaf4;
 }
 
 #reddit-field {
@@ -2478,7 +2457,7 @@ ul#image-preview-list {
 
 .res-nightmode a,
 .res-nightmode .thing a.title {
-	color: #acd9fc;
+	color: #fafaf6;
 }
 
 	.res-nightmode .thing a.title,
@@ -2766,7 +2745,7 @@ ul#image-preview-list {
 
 .res-nightmode #header-bottom-right a,
 .res-nightmode #header-bottom-right span {
-	color: #acd9fc;
+	color: #fafaf6;
 }
 
 .res-nightmode #header-bottom-right:hover a,
@@ -2781,7 +2760,7 @@ ul#image-preview-list {
 
 /*--  B.2.5. The Reddit Name, applies to all pages -- */
 .res-nightmode .pagename {
-	color: #acd9fc;
+	color: #fafaf6;
 }
 
 	.res-nightmode .pagename a,
@@ -2801,7 +2780,7 @@ ul#image-preview-list {
 
 /*--  B.2.6. Reddit Image and Text -- */
 .res-nightmode #header-img.default-header {
-	color: #acd9fc;
+	color: #fafaf6;
 }
 
 .res-nightmode #header-img-a {
@@ -2816,7 +2795,7 @@ ul#image-preview-list {
 .res-nightmode ul.tabmenu li a:visited,
 .res-nightmode ul.tabmenu li.selected a {
 	background-color: transparent;
-	color: #acd9fc;
+	color: #fafaf6;
 }
 
 	.res-nightmode ul.tabmenu li.selected a,
@@ -2911,7 +2890,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode div.thing.link.stickied {
-	background: none #050c02 !important;
+	background: none #050C02 !important;
 }
 
 /*--  B.4.2. Rest of Links (Posts) -- */
@@ -3132,7 +3111,8 @@ ul#image-preview-list {
 }
 
 	.res-nightmode .linkinfo .score,
-	.res-nightmode .linkinfo .totalvotes {
+	.res-nightmode .linkinfo .upvotes,
+	.res-nightmode .linkinfo .downvotes {
 		border-color: #333;
 		background: #111;
 	}
@@ -3203,14 +3183,6 @@ ul#image-preview-list {
 		color: #777 !important;
 	}
 
-.res-nightmode .users-online {
-	border-color: #333;
-	background: #111;
-}
-
-	.res-nightmode .users-online:after {
-		border-color: #333;
-	}
 /*--  B.8.6. Submit Button -- */
 .res-nightmode div.spacer > .submit {
 	overflow: visible !important;
@@ -3249,7 +3221,7 @@ ul#image-preview-list {
 }
 
 	.res-nightmode .footer .flat-vert.title {
-		color: #acd9fc;
+		color: #fafaf6;
 	}
 
 /*--  B.9.1. Reddit Copyright Text -- */
@@ -3283,7 +3255,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode.wiki-page .pageactions .wikiaction:hover {
-	background-color: #acd9fc;
+	background-color: #fafaf6;
 }
 
 .res-nightmode.wiki-page .pageactions .wikiaction-current {
@@ -3294,7 +3266,7 @@ ul#image-preview-list {
 /* ~~  B.11. RES Optimisation ~~~~~ */
 .res-nightmode div#userbarToggle {
 	background-color: #333 !important;
-	color: #acd9fc;
+	color: #fafaf6;
 }
 
 .res-nightmode .entry.RES-keyNav-activeElement div.md,
@@ -3316,7 +3288,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode.messages-page a {
-	color: #acd9fc;
+	color: #fafaf6;
 }
 
 /*--  B.11.1. Progress Indicator and Page marker for RES mode -- */

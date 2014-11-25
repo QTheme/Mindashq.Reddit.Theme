@@ -1,14 +1,13 @@
-/* ~~ Mindashq.Reddit.Theme for Stylish (Admin areas only)
-	v1.7g
-	http://www.reddit.com/r/mindashq/wiki/stylish
-	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ~~ Mindashq.Reddit.Theme
+		v1.7h
+		http://www.reddit.com/r/mindashq/wiki
+		To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* [ A ]. Normal Theme............ */
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
 	position: relative !important;
-	min-width: 900px !important;
 	background-color: #ececea !important;
 	color: #00000a !important;
 	font-weight: normal !important;
@@ -223,12 +222,12 @@ a[href='/s'] {
 
 	a[href='#s']:after,
 	a[href='/s']:after {
-		content: attr(title) !important;
 		visibility: visible !important;
 		margin-left: 5px !important;
 		padding: 2px 3px !important;
 		background-color: #5ba2fd !important;
 		color: #5ba2fd !important;
+		content: attr(title) !important;
 		font-size: small !important;
 	}
 
@@ -237,8 +236,8 @@ a[href='/s'] {
 	a[href='/s']:hover:after,
 	a[href='/s']:active:after {
 		color: #fff !important;
-		font-size: small !important;
 		text-decoration: none !important;
+		font-size: small !important;
 	}
 
 /*--  A.1.5. Common Button Style -- */
@@ -256,9 +255,9 @@ a[href='/s'] {
 	border-radius: 2px !important;
 	background-color: #fafafa !important;
 	color: #4d90fe !important;
-	font-size: 11px !important;
 	text-decoration: none !important;
 	text-shadow: none !important;
+	font-size: 11px !important;
 	cursor: pointer !important;
 }
 
@@ -275,21 +274,23 @@ a[href='/s'] {
 button.save,
 button.blueButton,
 .BEFoot button,
-input[type='submit'],
+input[type='submit'] :not(#search),
 button[type='submit'],
-a[href*='#btn'] {
+a[href*='#btn'],
+.res #searchexpando > .searchexpando-submit > input[type='submit'] {
 	margin: 1px 5px 2px 0 !important;
 	padding: 6px 10px !important;
 	min-width: 70px !important;
+	height: auto !important;
 	border: 1px solid #357ae8 !important;
 	border-radius: 2px !important;
 	background-color: #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 	color: #fff !important;
-	font-weight: bold !important;
-	font-size: 13px !important;
 	text-decoration: none !important;
 	text-shadow: 1px 1px 2px #2154a3 !important;
+	font-weight: bold !important;
+	font-size: 13px !important;
 	cursor: pointer !important;
 }
 
@@ -302,11 +303,12 @@ a[href*='#btn'] {
 	button.save:hover,
 	button.blueButton:hover,
 	.BEFoot button:hover,
-	input[type='submit']:hover,
+	input[type='submit']:hover :not(#search),
 	button[type='submit']:hover,
 	a[href*='#btn']:hover,
 	.res a[href*='#btn']:hover,
-	.entry ul.flat-list li a[onclick*='reply']:hover {
+	.entry ul.flat-list li a[onclick*='reply']:hover,
+	.res #searchexpando > .searchexpando-submit > input[type='submit']:hover {
 		border-color: #08c !important;
 		background-color: #357ae8 !important;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
@@ -334,9 +336,9 @@ a[href*='#btn'] {
 			background-color: transparent !important;
 			box-shadow: none !important;
 			color: #888 !important;
-			font-weight: bold !important;
 			text-decoration: underline !important;
 			text-shadow: none !important;
+			font-weight: bold !important;
 		}
 
 			.btn.right a:hover,
@@ -355,10 +357,10 @@ a[href*='#btn'] {
 	margin: 10px 0 !important;
 	width: auto !important;
 	color: #fff !important;
+	text-align: center !important;
+	letter-spacing: 0 !important;
 	font-size: 12px !important;
 	line-height: 29px !important;
-	letter-spacing: 0 !important;
-	text-align: center !important;
 }
 
 .thing a[href*='#btn'] {
@@ -396,19 +398,19 @@ a[href*='#btn'] {
 	margin: 0 0 30px !important;
 	height: auto !important;
 	background-color: #fff !important;
-	box-shadow: 0 -3px 9px 5px #ddd !important;
+	box-shadow: 0 3px 3px -1px #ddd !important;
 }
 
 	#header:after {
-		content: " " !important;
 		position: absolute !important;
 		bottom: -1px !important;
+		z-index: -1 !important;
 		display: block !important;
 		width: 100% !important;
 		height: 30px !important;
 		border: 1px solid !important;
 		border-width: 1px 0 !important;
-		z-index: -1 !important;
+		content: ' ' !important;
 	}
 
 	#header:after,
@@ -429,7 +431,7 @@ a[href*='#btn'] {
 	font-weight: 500 !important;
 	font-size: 11px !important;
 	line-height: 20px !important;
-	opacity: 0.4 !important;
+	opacity: .4 !important;
 }
 
 	#sr-header-area .separator {
@@ -498,7 +500,7 @@ div#RESSubredditGroupDropdown {
 		#sr-header-area a.choice,
 		table#srList a,
 		div#RESSubredditGroupDropdown li a {
-			padding: 2px 10px !important;
+			padding: 2px !important;
 			color: #2154a3 !important;
 		}
 
@@ -570,9 +572,9 @@ div#RESSubredditGroupDropdown {
 	display: inline-block !important;
 	margin: 0 !important;
 	color: #2154a3 !important;
+	vertical-align: middle !important;
 	font-weight: bold !important;
 	font-variant: normal !important;
-	vertical-align: middle !important;
 }
 
 	.pagename a,
@@ -586,8 +588,8 @@ div#RESSubredditGroupDropdown {
 		background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 		box-shadow: -2px 4px 4px -2px #bbb !important;
 		color: #fff !important;
-		font-size: 16px !important;
 		text-shadow: 0 1px 0 #333 !important;
+		font-size: 16px !important;
 	}
 
 		.pagename a:hover {
@@ -604,12 +606,12 @@ div#RESSubredditGroupDropdown {
 	width: auto !important;
 	background-position: -10000px -2058px !important;
 	color: #2154a3 !important;
-	font-weight: bold !important;
-	font-size: 12px !important;
-	line-height: 50px !important;
 	vertical-align: bottom !important;
 	text-align: right !important;
 	text-indent: 0 !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
+	line-height: 50px !important;
 }
 
 .with-listing-chooser #header-img.default-header {
@@ -827,7 +829,7 @@ ul.tabmenu.formtab {
 .thing div.expando-button.collapsed,
 .thing .expando-button.image {
 	margin: 0 25px 0 0 !important;
-	padding: 0px !important;
+	padding: 0 !important;
 	width: 0 !important;
 	height: 15px !important;
 	background: none transparent !important;
@@ -845,10 +847,10 @@ ul.tabmenu.formtab {
 		border-radius: 3px !important;
 		background-color: #efefe8 !important;
 		color: #997 !important;
-		font-size: 11px !important;
 		vertical-align: top !important;
 		text-align: center !important;
 		text-shadow: 0 0 3px #f1f1f1 !important;
+		font-size: 11px !important;
 		cursor: pointer !important;
 	}
 
@@ -977,8 +979,8 @@ ul.tabmenu.formtab {
 	padding: 10px 5px 0 !important;
 	background-color: transparent !important;
 	color: #ccb !important;
-	font-size: small !important;
 	text-align: right !important;
+	font-size: small !important;
 }
 
 .link.compressed .rank {
@@ -1002,7 +1004,7 @@ ul.tabmenu.formtab {
 		display: none !important;
 	}
 
-.listing-page .thumbnail {
+.listing-page .thumbnail:not(.nsfw) {
 	max-height: 55px !important;
 }
 
@@ -1037,11 +1039,11 @@ ul.tabmenu.formtab {
 .arrow:not(.prev):not(.next) {
 	background: none transparent !important;
 	color: #aaa !important;
+	text-align: center !important;
 	font-weight: normal !important;
 	font-size: 120% !important;
 	font-family: Consolas,Monaco,'Courier New',monospace !important;
 	line-height: 12px !important;
-	text-align: center !important;
 }
 
 .arrow.up:after,
@@ -1107,7 +1109,7 @@ ul.tabmenu.formtab {
 }
 
 	.comment .collapsed {
-		padding: 2px 0 0 25px !important;
+		padding: 2px 0 0 !important;
 		font-style: normal !important;
 		font-size: 11px !important;
 		/*for the collapsed line of text, and expando collapsed state*/
@@ -1149,8 +1151,8 @@ ul.tabmenu.formtab {
 	border-width: 0 !important;
 	background: none transparent !important;
 	color: #4d90fe !important;
-	font-weight: bold !important;
 	text-shadow: 1px 1px 2px #eee !important;
+	font-weight: bold !important;
 }
 
 .new-comment .usertext-body {
@@ -1205,7 +1207,7 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes.res-commentBoxes-rounded div.comment {
-	border-radius: 0px !important;
+	border-radius: 0 !important;
 }
 
 .res-commentBoxes .commentarea .nestedlisting {
@@ -1216,7 +1218,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes .nestedlisting > div.comment {
 	margin: 0 0 5px !important;
-	padding: 5px 0px !important;
+	padding: 5px 0 !important;
 	border: 1px solid #fff !important;
 	background-color: #fbfbfb !important;
 	box-shadow: 0 1px 3px 0 #ccb !important;
@@ -1224,7 +1226,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes div.comment {
 	margin: -1px 0 0 25px !important;
-	padding: 5px 0px !important;
+	padding: 5px 0 !important;
 	border: 1px solid #eee !important;
 	border-right: 0 !important;
 	border-radius: 0 !important;
@@ -1246,17 +1248,8 @@ ul.tabmenu.formtab {
 	}
 
 /*--  A.6.3. Compact deleted messages/comments -- */
-.deleted.comment > .entry {
-	padding: 0 !important;
-}
-
-	.deleted.comment > .entry > * {
-		margin: 0 !important;
-		padding: 2px 0 0 31px !important;
-	}
-
-.usertext.grayed,
-.usertext.grayed + ul {
+.deleted.comment .usertext,
+.deleted.comment ul.buttons {
 	display: none !important;
 }
 
@@ -1293,8 +1286,8 @@ a.pretty-button,
 	background-color: #fff6ea !important;
 	box-shadow: 1px 1px 1px 0 #ccc !important;
 	color: #1d1212 !important;
-	font-weight: bold !important;
 	text-shadow: 1px 1px 2px #000 !important;
+	font-weight: bold !important;
 }
 
 .pretty-button.inoffensive {
@@ -1338,11 +1331,11 @@ select {
 
 /* ~~  A.8. Sidebar ~~~~~ */
 .side {
+	z-index: 10 !important;
 	margin: 0 20px !important;
 	padding: 0 10px !important;
 	background-color: transparent !important;
 	line-height: 1.3 !important;
-	z-index: 10 !important;
 }
 
 	.side .spacer {
@@ -1362,9 +1355,9 @@ select {
 
 	.side h1.redditname {
 		margin: 1.2em 0 .2em 0 !important;
-		font-size: 26px !important;
+		text-shadow: 0 0 1px #aaa !important;
 		letter-spacing: -1px !important;
-		text-shadow: 0px 0px 1px #aaa !important;
+		font-size: 26px !important;
 	}
 
 		.side h1.redditname a {
@@ -1375,13 +1368,13 @@ div.sidebox.create {
 	position: absolute !important;
 	right: 30px !important;
 	bottom: 110px !important;
+	z-index: 10 !important;
 	display: block !important;
 	overflow: visible !important;
 	width: 230px !important;
 	border-width: 0 !important;
 	border-radius: 0 !important;
 	background: none transparent !important;
-	z-index: 10 !important;
 }
 
 .mod-toolbox div.sidebox.create {
@@ -1389,8 +1382,8 @@ div.sidebox.create {
 }
 
 .sidebox.create .subtitle:last-child:after {
-	content: "...with theme /r/Mindashq." !important;
 	display: block !important;
+	content: '...with theme /r/Mindashq.' !important;
 }
 
 .side h1,
@@ -1435,9 +1428,8 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 #search input[type='text'] {
-	margin: 0 0 -6px !important;
+	margin: 0 !important;
 	padding: 10px !important;
-	width: 278px !important;
 	border: 1px solid #e3e3e3 !important;
 	font-size: 14px !important;
 }
@@ -1450,6 +1442,10 @@ body:not(.profile-page) .side .titlebox .bottom {
 	font-size: 12px !important;
 }
 
+.searchpane-toggle-hide {
+	margin: -1em 1em !important;
+}
+
 .searchfacets {
 	margin: -1px 5px !important;
 	border-color: #ccb !important;
@@ -1457,15 +1453,14 @@ body:not(.profile-page) .side .titlebox .bottom {
 	box-shadow: none !important;
 }
 
-#search input[type='submit'] {
-	padding: 10px 15px !important;
-}
-
 #searchexpando {
-	margin: 6px 1px 0 !important;
+	margin: 0 1px !important;
 	border-radius: 0 !important;
 }
 
+.res #searchexpando p {
+	margin: 10px 0 !important;
+}
 /*--  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
 	overflow: hidden !important;
@@ -1489,51 +1484,35 @@ body:not(.profile-page) .side .titlebox .bottom {
 	}
 
 	.linkinfo .score {
-		display: inline-block !important;
-		float: left !important;
-		margin: 0 0 0 -1px !important;
+		margin: -1px !important;
 		padding: 10px 0 !important;
-		width: 130px !important;
-		height: 61px !important;
 		border: 1px solid #e3e3e3 !important;
 		background: #f3f3f3 !important;
 	}
 
 		.linkinfo .score .number {
-			font-size: 20px !important;
+			font-size: 30px !important;
 		}
 
 		.linkinfo .score .word {
-			display: block !important;
 			font-weight: 300 !important;
 		}
 
-	.linkinfo .upvotes,
-	.linkinfo .downvotes {
+	.linkinfo .totalvotes {
 		display: block !important;
-		margin: 0 -1px 0 130px !important;
-		padding: 10px !important;
-		height: 20px !important;
+		margin: -1px !important;
+		padding: 5px !important;
 		border: 1px solid #e3e3e3 !important;
 		background: #f3f3f3 !important;
-		text-align: left !important;
+		text-align: center !important;
 	}
 
-	.linkinfo .downvotes {
+	.linkinfo .totalvotes {
 		margin-top: -1px !important;
 	}
 
-		.linkinfo .upvotes .number,
-		.linkinfo .downvotes .number {
-			float: right !important;
-			font-size: 20px !important;
-			text-align: right !important;
-		}
-
-		.linkinfo .upvotes .word,
-		.linkinfo .downvotes .word {
-			float: left !important;
-			margin: 5px 10px 0 0 !important;
+		.linkinfo .totalvotes .number,
+		.linkinfo .totalvotes .word {
 			font-size: 12px !important;
 		}
 
@@ -1573,7 +1552,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 /*--  A.8.5. Flair Setting area -- */
 .titlebox form.flairtoggle {
 	position: relative !important;
-	margin-top: 5px !important;
+	margin: 5px 2px 0 0 !important;
 	padding: 5px 5px 5px 35px !important;
 	border: 1px solid #e3e3e3 !important;
 	border-width: 1px 1px 0 !important;
@@ -1582,11 +1561,11 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 	.titlebox form.flairtoggle input {
 		float: left !important;
-		margin: 10px 10px 0px -25px !important;
+		margin: 10px 10px 0 -25px !important;
 	}
 
 .titlebox .tagline {
-	margin: 0 0 10px 0 !important;
+	margin: 0 2px 10px 0 !important;
 	padding: 0 5px 5px 35px !important;
 	border: 1px solid #e3e3e3 !important;
 	border-width: 0 1px 1px !important;
@@ -1595,8 +1574,12 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 .titlebox .fancy-toggle-button {
+	display: block !important;
+	margin: 10px 0 0 !important;
+}
+
+.res .titlebox .fancy-toggle-button {
 	display: inline-block !important;
-	margin: 0 !important;
 }
 
 .subscription-box ul > a[count] {
@@ -1628,17 +1611,17 @@ body:not(.profile-page) .side .titlebox .bottom {
 a.blueButton,
 div.blueButton {
 	display: inline-block !important;
-	margin: 5px -6px 10px 0 !important;
+	margin: 5px -6px 0 0 !important;
 	padding: 3px 7px !important;
 	min-width: 80px !important;
 	height: auto !important;
 	outline: none !important;
 	border-color: #e3e3e3 !important;
 	border-radius: 0 !important;
+	text-align: center !important;
 	font-weight: bold !important;
 	font-size: 11px !important;
 	line-height: 14px !important;
-	text-align: center !important;
 }
 
 .fancy-toggle-button .add {
@@ -1667,9 +1650,46 @@ div.blueButton {
 		color: #aaa !important;
 	}
 
-.subscribers {
-	display: block !important;
+.subscribers,
+.users-online {
+	position: relative !important;
+	display: inline-block !important;
+	margin: -1px !important;
+	padding: 10px 20px 5px !important;
+	width: 109px !important;
+	vertical-align: top !important;
+	text-align: left !important;
+	white-space: nowrap !important;
 }
+
+.users-online {
+	margin-bottom: .25em !important;
+	padding: 10px 0 5px 20px !important;
+	width: 130px !important;
+	border: 1px solid #e3e3e3 !important;
+	background: #f3f3f3 !important;
+}
+
+	.subscribers .number,
+	.users-online .number {
+		display: block !important;
+		font-size: 18px !important;
+		line-height: 1 !important;
+	}
+
+	.users-online:after {
+		position: absolute !important;
+		top: -1px !important;
+		right: -1px !important;
+		width: 295px !important;
+		height: 100% !important;
+		border: 1px solid #e3e3e3 !important;
+		content: '' !important;
+	}
+
+	.users-online + form.flairtoggle {
+		margin-top: -4px !important;
+	}
 
 /*--  A.8.6. Submit Button -- */
 .sidebox.submit {
@@ -1696,8 +1716,8 @@ body .morelink {
 	background: none #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 	color: #fff !important;
-	font-weight: normal !important;
 	letter-spacing: 0 !important;
+	font-weight: normal !important;
 }
 
 	body .morelink:hover,
@@ -1710,9 +1730,9 @@ body .morelink {
 
 	body .morelink a {
 		color: #fff !important;
+		text-shadow: 1px 1px 2px #2154a3 !important;
 		font-weight: bold !important;
 		font-size: 14px !important;
-		text-shadow: 1px 1px 2px #2154a3 !important;
 	}
 
 		body .morelink a:hover,
@@ -1793,20 +1813,20 @@ body .disabled .morelink:hover {
 	clear: both !important;
 	padding: 0 !important;
 	background: #fff !important;
+	text-align: left !important;
 	font-size: 12px !important;
 	line-height: 15px !important;
-	text-align: left !important;
 }
 
 .footer {
 	position: relative !important;
+	z-index: 1 !important;
 	display: block !important;
 	overflow: hidden !important;
 	margin: 0 0 5px !important;
 	padding: 0 !important;
 	width: 100% !important;
 	border: 0 none !important;
-	z-index: 1 !important;
 }
 
 	.footer .col {
@@ -1827,13 +1847,12 @@ body .disabled .morelink:hover {
 
 .bottommenu {
 	margin: 0 0 0 25px !important;
-	margin: -5px 0px !important;
+	margin: -5px 0 !important;
 	padding: 5px 25px !important;
 	color: #777 !important;
 }
 
 	.bottommenu:before {
-		content: " " !important;
 		position: absolute !important;
 		top: 0 !important;
 		left: 0 !important;
@@ -1842,6 +1861,7 @@ body .disabled .morelink:hover {
 		height: 30px !important;
 		border-width: 1px 0 !important;
 		border-style: solid !important;
+		content: ' ' !important;
 	}
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
@@ -1849,8 +1869,8 @@ body.wiki-page h1.wikititle {
 	display: inline-block !important;
 	margin: 10px 15px 5px !important;
 	color: #5ba2fd !important;
-	font-size: 1em !important;
 	letter-spacing: 0 !important;
+	font-size: 1em !important;
 }
 
 body.wiki-page .pageactions {
@@ -1870,13 +1890,13 @@ body.wiki-page .wiki-page-content {
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
-		font-size: 2.4em !important;
 		letter-spacing: -1px !important;
+		font-size: 2.4em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h2 {
-		font-size: 1.8em !important;
 		letter-spacing: -1px !important;
+		font-size: 1.8em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h3 {
@@ -1920,9 +1940,9 @@ div#userbarToggle.userbarShow {
 	border-radius: 10px !important;
 	background-color: #eaf4fc !important;
 	color: #2154a3 !important;
-	font-weight: bold !important;
-	line-height: 0.7 !important;
 	text-align: center !important;
+	font-weight: bold !important;
+	line-height: .7 !important;
 }
 
 /*--  A.11.1. Pin Sub-bar -- */
@@ -1996,18 +2016,18 @@ div#NERFail,
 	border-width: 0 !important;
 	border-radius: 0 !important;
 	background-color: transparent !important;
+	text-align: left !important;
+	letter-spacing: -1px !important;
 	font-weight: bold !important;
 	font-size: 20px !important;
-	letter-spacing: -1px !important;
-	text-align: left !important;
 }
 
 #progressIndicator.neverEndingReddit,
 div#NERFail,
 #endOfReddit {
 	color: #a90404 !important;
-	font-size: 12px !important;
 	letter-spacing: 0 !important;
+	font-size: 12px !important;
 }
 
 /* ~~  A.12. Sidebar Boxes ~~~~~ */
@@ -2202,16 +2222,16 @@ div#NERFail,
 		padding: 5px !important;
 		width: 30px !important;
 		background-position: 0 0 !important;
+		text-align: center !important;
 		font-weight: bold !important;
 		font-size: 25px !important;
 		line-height: 25px !important;
-		text-align: center !important;
 	}
 
 	.side a[href*='#icon-']:after {
-		content: '' !important;
 		display: table !important;
 		clear: both !important;
+		content: '' !important;
 	}
 
 .side a[href*='#icon-exclamation']:before {
@@ -2288,9 +2308,9 @@ span.linkflair {
 	border-radius: 2px !important;
 	background: #f5f5f5 !important;
 	color: #2154a3 !important;
+	text-shadow: none !important;
 	font-weight: bold !important;
 	font-size: x-small !important;
-	text-shadow: none !important;
 }
 
 .linkflair[class*='-m-'] {
@@ -2299,9 +2319,9 @@ span.linkflair {
 	.linkflair[class*='-m-'] .linkflairlabel {
 		padding: 1px 5px 2px !important;
 		border: 0 none !important;
-		font-weight: bold !important;
 		vertical-align: text-bottom !important;
 		text-align: center !important;
+		font-weight: bold !important;
 	}
 
 	.linkflair[class*='-m-']:hover .linkflairlabel {
@@ -2395,9 +2415,9 @@ span.linkflair {
 	padding: 5px 10px !important;
 	background-color: #fff !important;
 	box-shadow: 0 1px 10px 0 #d1d1d1 !important;
+	vertical-align: text-bottom !important;
 	font-weight: bold !important;
 	font-size: 12px !important;
-	vertical-align: text-bottom !important;
 }
 
 .linkflair-meta.compressed .title > .linkflairlabel {
@@ -2765,8 +2785,8 @@ ul#image-preview-list {
 	.res-nightmode .pagename a,
 	.res-nightmode .pagename.selected {
 		border-width: 0 0 1px 0 !important;
-		background-color: #223f4f !important;
-		background-image: linear-gradient(#223f4f, #181817) !important;
+		background-color: #313131 !important;
+		background-image: linear-gradient(#313131, #181817) !important;
 		box-shadow: 0 4px 6px #111 !important;
 		color: #fff !important;
 		text-shadow: 0 1px 0 #111 !important;
@@ -2800,7 +2820,7 @@ ul#image-preview-list {
 	.res-nightmode ul.tabmenu li.selected a,
 	.res-nightmode ul.tabmenu li.selected a:visited {
 		padding-bottom: 10px !important;
-		border-color: #223f4f !important;
+		border-color: #313131 !important;
 		background-color: #1d1c27 !important;
 		background-image: none !important;
 	}
@@ -2889,7 +2909,7 @@ ul#image-preview-list {
 }
 
 .res-nightmode div.thing.link.stickied {
-	background: none #050C02 !important;
+	background: none #050c02 !important;
 }
 
 /*--  B.4.2. Rest of Links (Posts) -- */
@@ -3110,8 +3130,7 @@ ul#image-preview-list {
 }
 
 	.res-nightmode .linkinfo .score,
-	.res-nightmode .linkinfo .upvotes,
-	.res-nightmode .linkinfo .downvotes {
+	.res-nightmode .linkinfo .totalvotes {
 		border-color: #333 !important;
 		background: #111 !important;
 	}
@@ -3182,6 +3201,14 @@ ul#image-preview-list {
 		color: #777 !important;
 	}
 
+.res-nightmode .users-online {
+	border-color: #333 !important;
+	background: #111 !important;
+}
+
+	.res-nightmode .users-online:after {
+		border-color: #333 !important;
+	}
 /*--  B.8.6. Submit Button -- */
 .res-nightmode div.spacer > .submit {
 	overflow: visible !important;
@@ -3433,7 +3460,6 @@ ul#image-preview-list {
 
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
-
 
 /* ~~  Stylish.14. Multireddit ~~~~~ */
 body.with-listing-chooser:not(.listing-chooser-collapsed) > .content,
