@@ -109,7 +109,7 @@ div.comment .md p > a:visited {
 	border-width: 0 0 0 2px;
 }
 
-hr {
+.md hr {
 	height: 1px;
 	border: 0 none;
 	background-color: #d2d2d2;
@@ -167,6 +167,7 @@ hr {
 	.md ol li {
 		margin: 1px 10px 0 0;
 		padding: 2px 0;
+		font-size: 100%;
 		line-height: 1.3;
 	}
 
@@ -192,24 +193,23 @@ hr {
 
 .usertext-body pre,
 .md.wiki pre,
-p > code,
-li > code {
+.md p > code,
+.md li > code {
 	overflow: auto;
 	border: 1px solid #ccc;
 	background-color: #fbf9f4;
 	color: #222 !important;
-	font-size: 11px;
+	font-size: .9em;
+	font-family: Consolas,Monaco,'Courier New',monospace;
 }
 
-code {
+.md code {
 	line-height: 1.5em;
 }
 
-p > code,
-li > code {
-	padding: 0 3px;
-	color: #222 !important;
-	font-family: Consolas,Monaco,'Courier New',monospace;
+.md p > code,
+.md li > code {
+	padding: 2px 3px;
 }
 
 /*--  A.1.4. Spoilers -- */
@@ -852,7 +852,7 @@ ul.tabmenu.formtab {
 		vertical-align: top;
 		text-align: center;
 		text-shadow: 0 0 3px #f1f1f1;
-		font-size: 11px;
+		font-size: .9em;
 		cursor: pointer;
 	}
 
@@ -895,6 +895,8 @@ ul.tabmenu.formtab {
 .res .parent .expando-button.image {
 	margin: 0 5px !important;
 	width: 20px !important;
+	font-size: .9em;
+	line-height: 1.1;
 }
 
 /* ~~  A.4. Links and Posts ~~~~~ */
@@ -1918,7 +1920,6 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
 		color: #1d1212;
-		text-shadow: 0 0 1px #555;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
@@ -2210,6 +2211,8 @@ div#NERFail,
 
 /*--  A.12.2. Sidebar Icons -- */
 .side a[href*='#icon-'] {
+	display: block;
+	margin: 5px 0 -5px;
 	color: #1d1212;
 	cursor: default;
 }
@@ -3462,4 +3465,3 @@ ul#image-preview-list {
 
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
-}
