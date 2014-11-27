@@ -6,10 +6,14 @@
 
 .titlebox .subscribers .number:after {
 	content: " Watchers"; /*This is replacement for readers*/
+	display:block;
+	font-size:.7em;
 }
 
 .titlebox .users-online .number:after {
 	content: " Themers here now"; /*This is replacement for users online*/
+	display:block;
+	font-size:.7em;
 }
 
 /*--  C.9.end Subscriber Info Switcher ----*/
