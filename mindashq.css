@@ -1613,9 +1613,9 @@ body:not(.profile-page) .side .titlebox .bottom {
 a.blueButton,
 div.blueButton {
 	display: inline-block !important;
-	margin: 5px -6px 0 0 !important;
+	margin: 5px -3px 0 0 !important;
 	padding: 3px 7px !important;
-	min-width: 80px;
+	min-width: 85px;
 	height: auto !important;
 	outline: none;
 	border-color: #e3e3e3 !important;
@@ -1627,7 +1627,7 @@ div.blueButton {
 }
 
 .fancy-toggle-button .add {
-	border-color: #27b307 !important;
+	border-color: #1a8b00 !important;
 	background: none #1a8b00 !important;
 	color: #fff;
 }
@@ -1683,7 +1683,7 @@ div.blueButton {
 		position: absolute;
 		top: -1px;
 		right: -1px;
-		width: 295px;
+		width: 296px;
 		height: 100%;
 		border: 1px solid #e3e3e3;
 		content: '';
@@ -3462,3 +3462,4 @@ ul#image-preview-list {
 
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
+}
