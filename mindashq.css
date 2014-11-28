@@ -20,26 +20,37 @@ body {
 .md h1,
 .md h2 {
 	margin-bottom: 6px;
-	color: #2154a3;
 }
 
 .md h3,
 .md h4 {
 	margin-bottom: 3px;
-	color: #2154a3;
-}
-
-.md h1,
-.md h2,
-.md h3,
-.md h4 {
-	border-color: #d2d2d2;
-	font-weight: bold;
-	font-size: 115%;
 }
 
 .md h1 {
-	font-size: 120%;
+	font-weight: normal;
+	font-size: 1.8em;
+}
+
+.md h2 {
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+.md h3 {
+	font-weight: normal;
+	font-size: 1.4em;
+}
+
+.md h4 {
+	font-weight: normal;
+	font-size: 1.3em;
+}
+
+.md h5,
+.md h6 {
+	font-weight: normal;
+	font-size: 1.2em;
 }
 
 a,
@@ -106,7 +117,7 @@ div.comment .md p > a:visited {
 	padding: 1px 1px 1px 15px;
 	max-width: 60em;
 	border: 1px solid #ccc;
-	border-width: 0 0 0 2px;
+	border-width: 0 0 0 1px;
 }
 
 .md hr {
@@ -1174,7 +1185,7 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes .comment .midcol {
-	margin: 5px -4px 5px 10px;
+	margin: 5px 0 5px 10px;
 }
 
 .res-commentBoxes .child {
@@ -1920,11 +1931,14 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
 		color: #1d1212;
+		font-weight: normal;
+		font-style: normal;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
 	body.wiki-page .wiki-page-content .md.wiki h6 {
 		color: #181818;
+		text-decoration: none;
 	}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
@@ -2047,7 +2061,7 @@ div#NERFail,
 	.side .md blockquote > h1,
 	.side .md blockquote > h2,
 	.side .md blockquote > h3 {
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.side .md blockquote > blockquote {
