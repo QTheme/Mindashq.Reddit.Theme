@@ -7,79 +7,88 @@
 /* [ A ]. Normal Theme............ */
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
-	position: relative;
-	background-color: #ececea;
-	color: #00000a;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: sans-serif;
-	line-height: 1.4;
+	position: relative !important;
+	background-color: #ececea !important;
+	color: #00000a !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	font-family: sans-serif !important;
+	line-height: 1.4 !important;
 }
 
 .md h1,
 .md h2 {
-	margin-bottom: 6px;
-	color: #2154a3;
+	margin-bottom: 6px !important;
 }
 
 .md h3,
 .md h4 {
-	margin-bottom: 3px;
-	color: #2154a3;
-}
-
-.md h1,
-.md h2,
-.md h3,
-.md h4 {
-	border-color: #d2d2d2;
-	font-weight: bold;
-	font-size: 115%;
+	margin-bottom: 3px !important;
 }
 
 .md h1 {
-	font-size: 120%;
+	font-weight: normal !important;
+	font-size: 1.8em !important;
+}
+
+.md h2 {
+	font-weight: normal !important;
+	font-size: 1.6em !important;
+}
+
+.md h3 {
+	font-weight: normal !important;
+	font-size: 1.4em !important;
+}
+
+.md h4 {
+	font-weight: normal !important;
+	font-size: 1.3em !important;
+}
+
+.md h5,
+.md h6 {
+	font-weight: normal !important;
+	font-size: 1.2em !important;
 }
 
 a,
 .thing a.title {
-	color: #144ddd;
 }
 
 	.thing a.title,
 	.thing a.title.loggedin {
-		color: #144ddd;
+		color: #144ddd !important;
 	}
 
 		.thing a.title:visited,
 		.thing a.title.loggedin.click:visited,
 		.thing a.title.loggedin:visited {
-			color: #5e5e5e;
+			color: #5e5e5e !important;
 		}
 
-		a:hover,
 		.thing a.title:hover,
 		.thing a.title.loggedin:hover {
-			color: #353a3e;
-			text-decoration: none;
+			color: #353a3e !important;
+			text-decoration: none !important;
 		}
 
 .content .md a:visited,
 div.comment .md p > a:visited {
-	color: #a409aa;
+	color: #a409aa !important;
 }
 
 .rounded {
-	border-radius: 2px;
+	border-radius: 2px !important;
 }
 
 .roundfield,
 .linefield,
 .content.submit .roundfield.info-notice {
-	border-radius: 0;
-	background-color: #eee;
-	box-shadow: 0 0 1px 1px #ddd;
+	border-radius: 0 !important;
+	background-color: #eee !important;
+	box-shadow: 0 0 1px 1px #ddd !important;
 }
 
 	.roundfield textarea,
@@ -90,104 +99,104 @@ div.comment .md p > a:visited {
 	.linefield textarea,
 	.linefield input[type=text],
 	.linefield input[type=password] {
-		border-color: #ccc;
-		box-shadow: 0 1px 4px 1px #ddd;
+		border-color: #ccc !important;
+		box-shadow: 0 1px 4px 1px #ddd !important;
 	}
 
 .md:not(.wiki) {
-	max-width: 60em;
-	color: #00000a;
-	line-height: 1.4;
+	max-width: 60em !important;
+	color: #00000a !important;
+	line-height: 1.4 !important;
 }
 
 .md blockquote,
 .help blockquote {
-	margin-left: 5px;
-	padding: 1px 1px 1px 15px;
-	max-width: 60em;
-	border: 1px solid #ccc;
-	border-width: 0 0 0 2px;
+	margin-left: 5px !important;
+	padding: 1px 1px 1px 15px !important;
+	max-width: 60em !important;
+	border: 1px solid #ccc !important;
+	border-width: 0 0 0 1px !important;
 }
 
 .md hr {
-	height: 1px;
-	border: 0 none;
-	background-color: #d2d2d2;
-	color: #ccc;
+	height: 1px !important;
+	border: 0 none !important;
+	background-color: #d2d2d2 !important;
+	color: #ccc !important;
 }
 
 /*--  A.1.1. Tables -- */
 .md table {
-	margin: 10px 0;
-	border: 1px solid #ccc;
-	border-width: 1px 0 1px 1px;
+	margin: 10px 0 !important;
+	border: 1px solid #ccc !important;
+	border-width: 1px 0 1px 1px !important;
 }
 
 	.md table * {
-		border: 0;
+		border: 0 !important;
 	}
 
 	.md table th {
-		text-align: center;
+		text-align: center !important;
 	}
 
 	.md table thead {
-		border-bottom: 1px solid #ccc;
-		background-color: #f3f3f3;
+		border-bottom: 1px solid #ccc !important;
+		background-color: #f3f3f3 !important;
 	}
 
 	.md table tbody tr:nth-child(odd) {
-		background-color: #f9f9f7;
+		background-color: #f9f9f7 !important;
 	}
 
 	.md table tbody tr:nth-child(even) {
-		background-color: #f6f6f6;
+		background-color: #f6f6f6 !important;
 	}
 
 	.md table td,
 	.md table th {
-		padding: 4px 8px;
-		border-right: 1px solid #ccc;
+		padding: 4px 8px !important;
+		border-right: 1px solid #ccc !important;
 	}
 
 /*--  A.1.2. Lists -- */
 .md ul,
 .md ol {
-	margin: 5px 0 5px 20px;
-	padding: 0 0 0 10px;
-	max-width: 60em;
-	background-color: transparent;
+	margin: 5px 0 5px 20px !important;
+	padding: 0 0 0 10px !important;
+	max-width: 60em !important;
+	background-color: transparent !important;
 }
 
 .md ul {
-	list-style: disc outside;
+	list-style: disc outside !important;
 }
 
 	.md ul li,
 	.md ol li {
-		margin: 1px 10px 0 0;
-		padding: 2px 0;
-		font-size: 100%;
-		line-height: 1.3;
+		margin: 1px 10px 0 0 !important;
+		padding: 2px 0 !important;
+		font-size: 100% !important;
+		line-height: 1.3 !important;
 	}
 
 		.md ul li ul,
 		.md ol li ol {
-			margin: 5px 0 5px 10px;
+			margin: 5px 0 5px 10px !important;
 		}
 
 		.md ul li p,
 		.md ol li p,
 		.wiki-page .wiki-page-content .md.wiki ul li p,
 		.wiki-page .wiki-page-content .md.wiki ol li p {
-			margin: 2px;
+			margin: 2px !important;
 		}
 
 /*--  A.1.3. Code Style -- */
 .usertext-body pre,
 .md.wiki pre {
-	margin: 10px 0;
-	padding: 10px;
+	margin: 10px 0 !important;
+	padding: 10px !important;
 	color: #222 !important;
 }
 
@@ -195,78 +204,78 @@ div.comment .md p > a:visited {
 .md.wiki pre,
 .md p > code,
 .md li > code {
-	overflow: auto;
-	border: 1px solid #ccc;
-	background-color: #fbf9f4;
+	overflow: auto !important;
+	border: 1px solid #ccc !important;
+	background-color: #fbf9f4 !important;
 	color: #222 !important;
-	font-size: .9em;
-	font-family: Consolas,Monaco,'Courier New',monospace;
+	font-size: .9em !important;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
 }
 
 .md code {
-	line-height: 1.5em;
+	line-height: 1.5em !important;
 }
 
 .md p > code,
 .md li > code {
-	padding: 2px 3px;
+	padding: 2px 3px !important;
 }
 
 /*--  A.1.4. Spoilers -- */
 a[href='#s'],
 a[href='/s'] {
-	display: inline-block;
-	padding: 0 4px;
-	background-color: #acd9fc;
-	color: #2154a3;
-	cursor: default;
+	display: inline-block !important;
+	padding: 0 4px !important;
+	background-color: #acd9fc !important;
+	color: #2154a3 !important;
+	cursor: default !important;
 }
 
 	a[href='#s']:after,
 	a[href='/s']:after {
-		visibility: visible;
-		margin-left: 5px;
-		padding: 2px 3px;
-		background-color: #5ba2fd;
-		color: #5ba2fd;
-		content: attr(title);
-		font-size: small;
+		visibility: visible !important;
+		margin-left: 5px !important;
+		padding: 2px 3px !important;
+		background-color: #5ba2fd !important;
+		color: #5ba2fd !important;
+		content: attr(title) !important;
+		font-size: small !important;
 	}
 
 	a[href='#s']:hover:after,
 	a[href='#s']:active:after,
 	a[href='/s']:hover:after,
 	a[href='/s']:active:after {
-		color: #fff;
-		text-decoration: none;
-		font-size: small;
+		color: #fff !important;
+		text-decoration: none !important;
+		font-size: small !important;
 	}
 
 /*--  A.1.5. Common Button Style -- */
 .btn button,
 .btn .button {
-	margin: 0 0 0 20px;
+	margin: 0 0 0 20px !important;
 }
 
 .entry .flat-list li a[onclick*='reply'] {
-	display: inline-block;
-	margin: -5px 5px 0 0;
-	padding: 2px 10px 3px;
-	min-width: 30px;
-	border: 1px solid #e6e6e6;
-	border-radius: 2px;
-	background-color: #fafafa;
-	color: #4d90fe;
-	text-decoration: none;
-	text-shadow: none;
-	font-size: 11px;
-	cursor: pointer;
+	display: inline-block !important;
+	margin: -5px 5px 0 0 !important;
+	padding: 2px 10px 3px !important;
+	min-width: 30px !important;
+	border: 1px solid #e6e6e6 !important;
+	border-radius: 2px !important;
+	background-color: #fafafa !important;
+	color: #4d90fe !important;
+	text-decoration: none !important;
+	text-shadow: none !important;
+	font-size: 11px !important;
+	cursor: pointer !important;
 }
 
 .entry:hover ul.flat-list li a[onclick*='reply'],
 .entry.RES-keyNav-activeElement ul.flat-list li a[onclick*='reply'] {
 	border-color: #357ae8 !important;
-	background-color: #5ba2fd;
+	background-color: #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
 	color: #fff !important;
 }
@@ -280,24 +289,24 @@ input[type='submit'] :not(#search),
 button[type='submit'],
 a[href*='#btn'],
 .res #searchexpando > .searchexpando-submit > input[type='submit'] {
-	margin: 1px 5px 2px 0;
+	margin: 1px 5px 2px 0 !important;
 	padding: 6px 10px !important;
-	min-width: 70px;
+	min-width: 70px !important;
 	height: auto !important;
 	border: 1px solid #357ae8 !important;
-	border-radius: 2px;
+	border-radius: 2px !important;
 	background-color: #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
-	color: #fff;
-	text-decoration: none;
-	text-shadow: 1px 1px 2px #2154a3;
-	font-weight: bold;
-	font-size: 13px;
-	cursor: pointer;
+	color: #fff !important;
+	text-decoration: none !important;
+	text-shadow: 1px 1px 2px #2154a3 !important;
+	font-weight: bold !important;
+	font-size: 13px !important;
+	cursor: pointer !important;
 }
 
 	.btn a {
-		color: #fff;
+		color: #fff !important;
 	}
 
 	.btn:hover,
@@ -311,17 +320,17 @@ a[href*='#btn'],
 	.res a[href*='#btn']:hover,
 	.entry ul.flat-list li a[onclick*='reply']:hover,
 	.res #searchexpando > .searchexpando-submit > input[type='submit']:hover {
-		border-color: #08c;
-		background-color: #357ae8;
+		border-color: #08c !important;
+		background-color: #357ae8 !important;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
-		color: #fff;
+		color: #fff !important;
 	}
 
 	.btn.right,
 	button.cancel,
 	.usertext span[class*='toggle'],
 	a.reddiquette {
-		padding: 2px 5px;
+		padding: 2px 5px !important;
 		border-width: 0 !important;
 		background: none transparent !important;
 		font-size: small !important;
@@ -336,11 +345,11 @@ a[href*='#btn'],
 		span.RESSubscriptionButton {
 			border: 0 !important;
 			background-color: transparent !important;
-			box-shadow: none;
-			color: #888;
-			text-decoration: underline;
-			text-shadow: none;
-			font-weight: bold;
+			box-shadow: none !important;
+			color: #888 !important;
+			text-decoration: underline !important;
+			text-shadow: none !important;
+			font-weight: bold !important;
 		}
 
 			.btn.right a:hover,
@@ -351,34 +360,34 @@ a[href*='#btn'],
 			.content button.RESBigEditorPop:hover,
 			span.RESSubscriptionButton:hover {
 				background-color: transparent !important;
-				color: #5ba2fd;
+				color: #5ba2fd !important;
 			}
 
 a[href*='#btn'] {
-	display: block;
-	margin: 10px 0;
-	width: auto;
+	display: block !important;
+	margin: 10px 0 !important;
+	width: auto !important;
 	color: #fff !important;
-	text-align: center;
-	letter-spacing: 0;
-	font-size: 12px;
-	line-height: 29px;
+	text-align: center !important;
+	letter-spacing: 0 !important;
+	font-size: 12px !important;
+	line-height: 29px !important;
 }
 
 .thing a[href*='#btn'] {
-	display: inline-block;
-	margin: 0;
+	display: inline-block !important;
+	margin: 0 !important;
 }
 
 .entry .flat-list {
-	display: inline-block;
-	/*font-size: 11px;*/
+	display: inline-block !important;
+	/*font-size: 11px !important;*/
 }
 
 	.entry .flat-list li a,
 	.entry .flat-list li a:visited,
 	.entry .flat-list .redditSingleClick {
-		color: #f2f2f2;
+		color: #f2f2f2 !important;
 	}
 
 .entry:hover > .flat-list li a,
@@ -388,82 +397,82 @@ a[href*='#btn'] {
 .entry.RES-keyNav-activeElement .flat-list li a,
 .entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
 .noncollapsed:hover > .flat-list li a {
-	color: #777;
+	color: #777 !important;
 }
 
 .entry .flat-list li a.comments {
-	color: #144ddd;
+	color: #144ddd !important;
 }
 
 /* ~~  A.2. Header ~~~~~ */
 #header {
-	margin: 0 0 30px;
-	height: auto;
-	background-color: #fff;
-	box-shadow: 0 3px 3px -1px #ddd;
+	margin: 0 0 30px !important;
+	height: auto !important;
+	background-color: #fff !important;
+	box-shadow: 0 3px 3px -1px #ddd !important;
 }
 
 	#header:after {
-		position: absolute;
-		bottom: -1px;
-		z-index: -1;
-		display: block;
-		width: 100%;
-		height: 30px;
-		border: 1px solid;
-		border-width: 1px 0;
-		content: ' ';
+		position: absolute !important;
+		bottom: -1px !important;
+		z-index: -1 !important;
+		display: block !important;
+		width: 100% !important;
+		height: 30px !important;
+		border: 1px solid !important;
+		border-width: 1px 0 !important;
+		content: ' ' !important;
 	}
 
 	#header:after,
 	.bottommenu:before {
-		border-color: #8ccbfc;
-		background-color: #acd9fc;
-		background-image: linear-gradient(#acd9fc,#8ccbfc);
+		border-color: #8ccbfc !important;
+		background-color: #acd9fc !important;
+		background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
 	}
 
 /*--  A.2.1. Top Sr-Bar -- */
 #sr-header-area {
-	padding: 0 0 0 5px;
-	height: 20px;
-	border-color: #fff;
-	background-color: #fff;
-	color: #acd9fc;
-	color: #555;
-	font-weight: 500;
-	font-size: 11px;
-	line-height: 20px;
-	opacity: .4;
+	padding: 0 0 0 5px !important;
+	height: 20px !important;
+	border-color: #fff !important;
+	background-color: #fff !important;
+	color: #acd9fc !important;
+	color: #555 !important;
+	font-weight: 500 !important;
+	font-size: 11px !important;
+	line-height: 20px !important;
+	opacity: .4 !important;
 }
 
 	#sr-header-area .separator {
-		display: inline-block;
-		margin: 0;
-		width: 8px;
-		text-align: center;
+		display: inline-block !important;
+		margin: 0 !important;
+		width: 8px !important;
+		text-align: center !important;
 	}
 
 	#sr-header-area > .separator {
-		margin: 0 7px 0 2px;
+		margin: 0 7px 0 2px !important;
 	}
 
 	#sr-header-area:hover {
-		opacity: 1;
+		opacity: 1 !important;
 	}
 
 	#sr-header-area a,
 	#sr-header-area span {
-		color: inherit;
+		color: inherit !important;
 	}
 
 		#sr-header-area a:hover {
-			color: #357ae8;
+			color: #357ae8 !important;
 		}
 
 div#RESShortcutsEditContainer {
-	background: none #fff;
-	color: inherit;
-	font-family: Consolas,Monaco,'Courier New',monospace;
+	background: none #fff !important;
+	color: inherit !important;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
 }
 
 #header #srLeftContainer,
@@ -476,34 +485,34 @@ div#RESShortcutsEditContainer {
 #header #RESShortcutsTrash,
 #srDropdown {
 	background: none transparent !important;
-	color: inherit;
+	color: inherit !important;
 }
 
 #sr-more-link {
-	background-color: #f9f9f7;
-	color: #1d1212;
+	background-color: #f9f9f7 !important;
+	color: #1d1212 !important;
 }
 
 /*--  A.2.2. Dropdown Subreddits Bar -- */
 .drop-choices,
 table#srList,
 div#RESSubredditGroupDropdown {
-	padding: 0;
-	border: 1px solid #acd9fc;
-	background-color: #eaf4fc;
-	color: #2154a3;
-	font-size: 12px;
+	padding: 0 !important;
+	border: 1px solid #acd9fc !important;
+	background-color: #eaf4fc !important;
+	color: #2154a3 !important;
+	font-size: 12px !important;
 }
 
 	div#RESSubredditGroupDropdown li {
-		padding: 5px 0;
+		padding: 5px 0 !important;
 	}
 
 		#sr-header-area a.choice,
 		table#srList a,
 		div#RESSubredditGroupDropdown li a {
-			padding: 2px;
-			color: #2154a3;
+			padding: 2px !important;
+			color: #2154a3 !important;
 		}
 
 			#sr-header-area a.choice:hover,
@@ -511,17 +520,17 @@ div#RESSubredditGroupDropdown {
 			table#srList a:hover,
 			table#srList tr:hover,
 			div#RESSubredditGroupDropdown li:hover {
-				background-color: #acd9fc;
+				background-color: #acd9fc !important;
 			}
 
 	.srdrop .choice.bottom-option,
 	table#srList tr {
-		border-color: #acd9fc;
+		border-color: #acd9fc !important;
 	}
 
 .menuarea .drop-choices a.choice {
-	padding: 5px 10px;
-	font-size: 1.2em;
+	padding: 5px 10px !important;
+	font-size: 1.2em !important;
 }
 
 /*--  A.2.3. User Controls -- */
@@ -531,210 +540,210 @@ div#RESSubredditGroupDropdown {
 	padding: 7px 10px 3px !important;
 	height: 20px !important;
 	border-radius: 0 !important;
-	background-color: #acd9fc;
-	background-image: linear-gradient(#acd9fc,#8ccbfc);
+	background-color: #acd9fc !important;
+	background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
 }
 
 	#header-bottom-right a,
 	#header-bottom-right span {
-		color: #2154a3;
+		color: #2154a3 !important;
 	}
 
 	#header-bottom-right:hover {
-		background-color: #eaf4fc;
-		background-image: linear-gradient(#eaf4fc,#eaf4fc);
+		background-color: #eaf4fc !important;
+		background-image: linear-gradient(#eaf4fc,#eaf4fc) !important;
 	}
 
 		#header-bottom-right:hover a,
 		#header-bottom-right:hover span {
-			text-shadow: 0 -1px 0 #eee,0 1px 0 #fff;
+			text-shadow: 0 -1px 0 #eee,0 1px 0 #fff !important;
 		}
 
 	#header-bottom-right .user,
 	#header-bottom-right .logout {
-		font-weight: bold;
+		font-weight: bold !important;
 	}
 
 #RESSettingsButton {
-	vertical-align: middle;
+	vertical-align: middle !important;
 }
 
 /*--  A.2.4. Banner Image -- */
 #header-bottom-left {
-	position: relative;
-	bottom: 0;
-	display: inline-block;
-	margin: 0;
-	background-color: transparent;
+	position: relative !important;
+	bottom: 0 !important;
+	display: inline-block !important;
+	margin: 0 !important;
+	background-color: transparent !important;
 }
 
 /*--  A.2.5. The Reddit Name, applies to all pages -- */
 .pagename {
 	position: static !important;
-	display: inline-block;
-	margin: 0;
-	color: #2154a3;
-	vertical-align: middle;
-	font-weight: bold;
-	font-variant: normal;
+	display: inline-block !important;
+	margin: 0 !important;
+	color: #2154a3 !important;
+	vertical-align: middle !important;
+	font-weight: bold !important;
+	font-variant: normal !important;
 }
 
 	.pagename a,
 	.pagename.selected {
-		display: inline-block;
-		margin: 0 0 -5px 0;
-		padding: 9px 15px;
-		border-color: #357ae8;
-		border-radius: 2px;
-		background-color: #5ba2fd;
-		background-image: linear-gradient(#5ba2fd,#4b8adb);
-		box-shadow: -2px 4px 4px -2px #bbb;
-		color: #fff;
-		text-shadow: 0 1px 0 #333;
+		display: inline-block !important;
+		margin: 0 0 -5px 0 !important;
+		padding: 9px 15px !important;
+		border-color: #357ae8 !important;
+		border-radius: 2px !important;
+		background-color: #5ba2fd !important;
+		background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
+		box-shadow: -2px 4px 4px -2px #bbb !important;
+		color: #fff !important;
+		text-shadow: 0 1px 0 #333 !important;
 		font-size: 16px !important;
 	}
 
 		.pagename a:hover {
-			border-color: #08c;
-			background: none #357ae8;
-			background-image: linear-gradient(#4d90fe,#357ae8);
-			text-decoration: none;
+			border-color: #08c !important;
+			background: none #357ae8 !important;
+			background-image: linear-gradient(#4d90fe,#357ae8) !important;
+			text-decoration: none !important;
 		}
 
 /*--  A.2.6. Reddit Image and Text -- */
 #header-img.default-header {
-	margin: 15px 15px 0 25px;
-	min-width: 75px;
-	width: auto;
-	background-position: -10000px -2058px;
-	color: #2154a3;
-	vertical-align: bottom;
-	text-align: right;
-	text-indent: 0;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 50px;
+	margin: 15px 15px 0 25px !important;
+	min-width: 75px !important;
+	width: auto !important;
+	background-position: -10000px -2058px !important;
+	color: #2154a3 !important;
+	vertical-align: bottom !important;
+	text-align: right !important;
+	text-indent: 0 !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
+	line-height: 50px !important;
 }
 
 .with-listing-chooser #header-img.default-header {
-	min-width: 110px;
+	min-width: 110px !important;
 }
 
 #header-img-a {
-	display: inline-block;
-	margin: 15px -3px -5px 35px;
-	padding: 0;
-	height: 40px;
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-	background-color: #acd9fc;
-	box-shadow: 2px 4px 4px -2px #bbb;
-	vertical-align: bottom;
+	display: inline-block !important;
+	margin: 15px -3px -5px 35px !important;
+	padding: 0 !important;
+	height: 40px !important;
+	border-top-left-radius: 2px !important;
+	border-bottom-left-radius: 2px !important;
+	background-color: #acd9fc !important;
+	box-shadow: 2px 4px 4px -2px #bbb !important;
+	vertical-align: bottom !important;
 }
 
 	#header-img-a img {
-		margin: 0;
-		padding: 0;
-		max-height: 40px;
+		margin: 0 !important;
+		padding: 0 !important;
+		max-height: 40px !important;
 		width: auto !important;
 		height: auto !important;
-		border-top-left-radius: 2px;
-		border-bottom-left-radius: 2px;
+		border-top-left-radius: 2px !important;
+		border-bottom-left-radius: 2px !important;
 	}
 
 	#header-img-a + .pagename a,
 	#header-img-a + .pagename.selected {
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
+		border-top-left-radius: 0 !important;
+		border-bottom-left-radius: 0 !important;
 	}
 
 /*--  A.2.7. Header Nav -- */
 ul.tabmenu {
-	margin: 15px 10px -17px 35px;
-	height: 50px;
-	border: 0 none;
+	margin: 15px 10px -17px 35px !important;
+	height: 50px !important;
+	border: 0 none !important;
 }
 
 	ul.tabmenu li {
-		margin: auto;
+		margin: auto !important;
 	}
 
 		ul.tabmenu li a,
 		ul.tabmenu li a:visited,
 		ul.tabmenu li.selected a {
-			display: inline-block;
-			padding: 8px;
-			background: none transparent;
-			color: #2154a3;
+			display: inline-block !important;
+			padding: 8px !important;
+			background: none transparent !important;
+			color: #2154a3 !important;
 		}
 
 			ul.tabmenu li a:hover,
 			ul.tabmenu li.selected a:hover {
-				background-color: #eaf4fc;
-				color: #1d1212;
-				text-shadow: none;
+				background-color: #eaf4fc !important;
+				color: #1d1212 !important;
+				text-shadow: none !important;
 			}
 
 			ul.tabmenu li.selected a,
 			ul.tabmenu li.selected a:hover,
 			ul.tabmenu li.selected a:visited {
-				padding: 9px 15px;
-				border: 1px solid #8ccbfc;
-				border-radius: 2px;
-				background-color: #f9f9f7;
-				background-image: none;
-				color: #ff910b;
+				padding: 9px 15px !important;
+				border: 1px solid #8ccbfc !important;
+				border-radius: 2px !important;
+				background-color: #f9f9f7 !important;
+				background-image: none !important;
+				color: #ff910b !important;
 			}
 
 /* ~~  A.3. Content box and common parts ~~~~~ */
 div.content {
-	overflow: hidden;
-	margin: 0 20px 10px 25px;
-	padding: 10px 20px;
-	border: 1px solid #fbfbfb;
-	background-color: #fefefd;
-	box-shadow: 0 1px 3px 1px #ccc;
+	overflow: hidden !important;
+	margin: 0 20px 10px 25px !important;
+	padding: 10px 20px !important;
+	border: 1px solid #fbfbfb !important;
+	background-color: #fefefd !important;
+	box-shadow: 0 1px 3px 1px #ccc !important;
 }
 
 body.listing-page > div.content,
 body.single-page > div.content,
 body.search-page > div.content,
 body.messages-page > div.content {
-	padding: 0;
-	border: 0 none;
-	background-color: transparent;
-	box-shadow: none;
+	padding: 0 !important;
+	border: 0 none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 	body.single-page > div.content > .linklisting .link {
-		padding: 5px 0 5px 10px;
-		background: none #fff;
+		padding: 5px 0 5px 10px !important;
+		background: none #fff !important;
 	}
 
 		body.single-page > div.content > .linklisting .link .rank {
-			display: none;
+			display: none !important;
 		}
 
 /*--  A.3.1. Common areas -- */
 .panestack-title {
-	overflow: hidden;
-	margin: 10px 5px 0;
-	padding: 5px 20px 0;
-	padding-bottom: 3px;
-	border-bottom-color: #ccc;
-	font-size: larger;
+	overflow: hidden !important;
+	margin: 10px 5px 0 !important;
+	padding: 5px 20px 0 !important;
+	padding-bottom: 3px !important;
+	border-bottom-color: #ccc !important;
+	font-size: larger !important;
 }
 
 	.panestack-title .title {
-		color: #888;
+		color: #888 !important;
 	}
 
 .commentarea .menuarea {
-	margin: 0 0 10px;
-	padding: 5px 25px 0;
-	border-bottom-color: #d2d2d2;
-	background-color: transparent;
-	font-size: 12px;
+	margin: 0 0 10px !important;
+	padding: 5px 25px 0 !important;
+	border-bottom-color: #d2d2d2 !important;
+	background-color: transparent !important;
+	font-size: 12px !important;
 }
 
 .related-page .panestack-title,
@@ -742,18 +751,18 @@ body.messages-page > div.content {
 .messages-page .menuarea,
 .profile-page .menuarea {
 	margin: 20px 5px -6px !important;
-	padding: 5px 0 5px 10px;
-	font-size: 14px;
+	padding: 5px 0 5px 10px !important;
+	font-size: 14px !important;
 }
 
 p.tagline {
-	margin: 2px;
-	font-size: 115%;
+	margin: 2px !important;
+	font-size: 115% !important;
 }
 
 	p.tagline span span {
-		margin-right: 2px;
-		margin-left: 2px;
+		margin-right: 2px !important;
+		margin-left: 2px !important;
 	}
 
 .tagline a {
@@ -763,66 +772,66 @@ p.tagline {
 .res .thing .tagline .author.submitter,
 .res .thing .tagline .author.moderator,
 .res .thing .tagline .author.friend {
-	padding: 2px 5px;
-	font-size: 11px;
+	padding: 2px 5px !important;
+	font-size: 11px !important;
 }
 
 #noresults {
-	margin-right: 310px;
-	padding: 5px 10px;
-	font-weight: bold;
+	margin-right: 310px !important;
+	padding: 5px 10px !important;
+	font-weight: bold !important;
 }
 
 .nav-buttons {
-	margin: 10px 0;
+	margin: 10px 0 !important;
 }
 
 /*--  A.3.2. Comment submission Usertext-edit textarea -- */
 .usertext.cloneable {
-	margin: 10px 0 20px 25px;
+	margin: 10px 0 20px 25px !important;
 }
 
 div.usertext-edit textarea {
-	padding: 5px;
-	border: 1px solid #ccc;
+	padding: 5px !important;
+	border: 1px solid #ccc !important;
 }
 
 /*--  A.3.3. Link submission form -- */
 .formtabs-content {
-	padding: 0;
+	padding: 0 !important;
 	border-color: #5ba2fd !important;
 }
 
 	.formtabs-content .infobar {
-		padding: 10px;
+		padding: 10px !important;
 	}
 
 ul.tabmenu.formtab {
-	margin: 15px 0 0;
-	height: auto;
+	margin: 15px 0 0 !important;
+	height: auto !important;
 }
 
 	ul.tabmenu.formtab li {
 	}
 
 		ul.tabmenu.formtab li a {
-			margin: 0 1px 1px;
-			padding: 5px 15px;
-			border-width: 0;
-			background-color: #acd9fc;
+			margin: 0 1px 1px !important;
+			padding: 5px 15px !important;
+			border-width: 0 !important;
+			background-color: #acd9fc !important;
 		}
 
 		ul.tabmenu.formtab li.selected a,
 		ul.tabmenu.formtab li.selected a:hover {
-			margin: 0;
-			padding: 5px 20px;
-			border: 0;
-			border-bottom-right-radius: 0;
-			border-bottom-left-radius: 0;
+			margin: 0 !important;
+			padding: 5px 20px !important;
+			border: 0 !important;
+			border-bottom-right-radius: 0 !important;
+			border-bottom-left-radius: 0 !important;
 			background-color: #5ba2fd !important;
-			box-shadow: none;
-			color: #eaf4fc;
-			font-weight: bold;
+			box-shadow: none !important;
+			color: #eaf4fc !important;
+			font-weight: bold !important;
 		}
 
 /*--  A.3.4. Expando Buttons -- */
@@ -835,371 +844,371 @@ ul.tabmenu.formtab {
 	width: 0 !important;
 	height: 15px !important;
 	background: none transparent !important;
-	cursor: pointer;
+	cursor: pointer !important;
 }
 
 	.expando-button:before {
-		position: absolute;
-		display: block;
+		position: absolute !important;
+		display: block !important;
 		margin: 0 5px 0 0 !important;
-		padding: 1px 5px;
+		padding: 1px 5px !important;
 		width: 8px !important;
 		height: 14px !important;
-		border: 1px solid #ddb;
-		border-radius: 3px;
-		background-color: #efefe8;
-		color: #997;
-		vertical-align: top;
-		text-align: center;
-		text-shadow: 0 0 3px #f1f1f1;
-		font-size: .9em;
-		cursor: pointer;
+		border: 1px solid #ddb !important;
+		border-radius: 3px !important;
+		background-color: #efefe8 !important;
+		color: #997 !important;
+		vertical-align: top !important;
+		text-align: center !important;
+		text-shadow: 0 0 3px #f1f1f1 !important;
+		font-size: .9em !important;
+		cursor: pointer !important;
 	}
 
 	.expando-button.selftext.collapsed:before {
-		content: '✚';
+		content: '✚' !important;
 	}
 
 	.expando-button.selftext.expanded:before {
-		content: '▪▪';
+		content: '▪▪' !important;
 	}
 
 	.expando-button.video.collapsed:before {
-		content: '▶';
+		content: '▶' !important;
 	}
 
 	.expando-button.video.expanded:before {
-		content: '●';
+		content: '●' !important;
 	}
 
 	.expando-button.image.collapsedExpando:before {
-		content: '❏';
+		content: '❏' !important;
 	}
 
 	.expando-button.image.expanded:before {
-		content: '❐';
+		content: '❐' !important;
 	}
 
 	.expando-button:hover:before {
-		border-color: #555;
-		background-color: #555;
-		box-shadow: 0 0 4px -2px #333;
-		color: #eee;
+		border-color: #555 !important;
+		background-color: #555 !important;
+		box-shadow: 0 0 4px -2px #333 !important;
+		color: #eee !important;
 	}
 
 	.expando-button.expanded:before {
-		border-radius: 15px;
+		border-radius: 15px !important;
 	}
 
 .res .md .expando-button.image,
 .res .parent .expando-button.image {
 	margin: 0 5px !important;
 	width: 20px !important;
-	font-size: .9em;
-	line-height: 1.1;
+	font-size: .9em !important;
+	line-height: 1.1 !important;
 }
 
 /* ~~  A.4. Links and Posts ~~~~~ */
 /*--  A.4.1. specials - stickied, promoted and sponsored links  -- */
 #siteTable_organic {
-	margin: 0 5px;
+	margin: 0 5px !important;
 }
 
 .organic-listing,
 .thing.link.stickied,
 .thing.link.promoted {
-	overflow: hidden;
-	border-color: #fff;
-	background: none #edf5ff;
-	box-shadow: 0 1px 3px 0 #ccb;
+	overflow: hidden !important;
+	border-color: #fff !important;
+	background: none #edf5ff !important;
+	box-shadow: 0 1px 3px 0 #ccb !important;
 }
 
 .thing.link.stickied {
-	background: none #fffeed;
+	background: none #fffeed !important;
 }
 
 	.thing.link.stickied a.title {
-		color: #50722b;
+		color: #50722b !important;
 	}
 
 .listing-page .link:first-child.stickied {
 	margin: 0 0 10px !important;
-	border-width: 1px 0 1px 1px;
+	border-width: 1px 0 1px 1px !important;
 }
 
 /*--  A.4.2. Rest of Links (Posts) -- */
 .linklisting .thing {
-	overflow: hidden;
-	margin: 0;
-	padding: 2px 0 0;
-	border: 1px solid #fff;
-	border-width: 1px 0;
-	background-color: #fefefd;
-	box-shadow: 0 1px 3px 0 #ccb;
+	overflow: hidden !important;
+	margin: 0 !important;
+	padding: 2px 0 0 !important;
+	border: 1px solid #fff !important;
+	border-width: 1px 0 !important;
+	background-color: #fefefd !important;
+	box-shadow: 0 1px 3px 0 #ccb !important;
 }
 
 .linklisting .compressed.thing {
-	padding: 3px 0 0;
+	padding: 3px 0 0 !important;
 }
 
 .linklisting .odd {
-	/*background-color: #fbfbfb;*/
+	/*background-color: #fbfbfb !important;*/
 }
 
 .linklisting .even {
-	/*background-color: #f8f8f8;*/
+	/*background-color: #f8f8f8 !important;*/
 }
 
 .link.last-clicked {
-	background-color: #f5f5f5;
-	background-image: linear-gradient(#f8f8f8,#f5f5f5);
+	background-color: #f5f5f5 !important;
+	background-image: linear-gradient(#f8f8f8,#f5f5f5) !important;
 }
 
 .linklisting .link.self .domain {
-	display: none; /*hides self posts*/
+	display: none !important; /*hides self posts*/
 }
 
 .link .expando {
-	margin: 0;
+	margin: 0 !important;
 }
 
 .linklisting div.thing.comment {
 	margin: 0 0 5px !important;
 	padding: 5px 0 5px 10px !important;
-	font-size: 11px;
+	font-size: 11px !important;
 }
 
 /*--  A.4.3. Links sub-parts -- */
 .sitetable {
-	padding: 5px;
+	padding: 5px !important;
 }
 
 	.sitetable .sitetable {
-		padding: 0;
+		padding: 0 !important;
 	}
 
 .link .rank {
-	margin: 14px 0 0 5px;
-	padding: 10px 5px 0;
-	background-color: transparent;
-	color: #ccb;
-	text-align: right;
-	font-size: small;
+	margin: 14px 0 0 5px !important;
+	padding: 10px 5px 0 !important;
+	background-color: transparent !important;
+	color: #ccb !important;
+	text-align: right !important;
+	font-size: small !important;
 }
 
 .link.compressed .rank {
-	margin-top: 5px;
+	margin-top: 5px !important;
 }
 
 .link .midcol {
-	margin: 5px 10px;
+	margin: 5px 10px !important;
 }
 
 .link.compressed .midcol {
-	margin: 5px;
+	margin: 5px !important;
 }
 
 .thumbnail {
-	margin: 5px 10px 5px 0;
+	margin: 5px 10px 5px 0 !important;
 }
 
 	.thumbnail.self,
 	.thumbnail.default {
-		display: none;
+		display: none !important;
 	}
 
 .listing-page .thumbnail:not(.nsfw) {
-	max-height: 55px;
+	max-height: 55px !important;
 }
 
 .entry {
-	margin: 0;
-	padding: 3px 5px;
+	margin: 0 !important;
+	padding: 3px 5px !important;
 }
 
 .compressed .entry {
-	padding: 2px 5px 2px 2px;
+	padding: 2px 5px 2px 2px !important;
 }
 
 .link .title {
-	overflow: visible;
-	margin: 0 .4em 2px 0;
-	font-size: 125%;
-	line-height: 1.3;
+	overflow: visible !important;
+	margin: 0 .4em 2px 0 !important;
+	font-size: 125% !important;
+	line-height: 1.3 !important;
 }
 
 .link.compressed .title {
-	margin: -1px .4em 1px 0;
-	font-size: 123%;
+	margin: -1px .4em 1px 0 !important;
+	font-size: 123% !important;
 }
 
 .link .usertext .md {
-	padding-right: 15px;
-	border: 0;
-	background: transparent;
+	padding-right: 15px !important;
+	border: 0 !important;
+	background: transparent !important;
 }
 
 /* ~~  A.5. Custom Upvote/Downvote Arrows ~~~~~ */
 .arrow:not(.prev):not(.next) {
 	background: none transparent !important;
-	color: #aaa;
-	text-align: center;
-	font-weight: normal;
-	font-size: 120%;
-	font-family: Consolas,Monaco,'Courier New',monospace;
-	line-height: 12px;
+	color: #aaa !important;
+	text-align: center !important;
+	font-weight: normal !important;
+	font-size: 120% !important;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
+	line-height: 12px !important;
 }
 
 .arrow.up:after,
 .arrow.upmod:after {
-	content: '▲';
+	content: '▲' !important;
 }
 
 .arrow.down:after,
 .arrow.downmod:after {
-	content: '▼';
+	content: '▼' !important;
 }
 
 .arrow.upmod:after {
-	color: #ff4900;
+	color: #ff4900 !important;
 }
 
 .arrow.downmod:after {
-	color: #9aa8f2;
+	color: #9aa8f2 !important;
 }
 
 .arrow.up:hover:after,
 .arrow.down:hover:after {
-	color: #333;
+	color: #333 !important;
 }
 
 .compressed .arrow:not(.prev):not(.next) {
-	margin: 1px 0;
+	margin: 1px 0 !important;
 }
 
 .link .score {
-	color: #555;
+	color: #555 !important;
 }
 
 	.link .score.likes {
-		color: #ff4900;
+		color: #ff4900 !important;
 	}
 
 	.link .score.dislikes {
-		color: #9aa8f2;
+		color: #9aa8f2 !important;
 	}
 
 /* ~~  A.6. Comments ~~~~~ */
 /*--  A.6.1. Default Comments -- */
 .commentarea {
-	margin-top: 15px;
+	margin-top: 15px !important;
 }
 
 	.commentarea p.tagline,
 	.comment .score {
-		margin-left: -1px;
-		font-size: 11px;
+		margin-left: -1px !important;
+		font-size: 11px !important;
 	}
 
 .nestedlisting > div.comment {
-	overflow: hidden;
-	margin: 0 0 3px;
-	border: 1px solid #e0e0e0;
-	background-color: #fcfcfb;
+	overflow: hidden !important;
+	margin: 0 0 3px !important;
+	border: 1px solid #e0e0e0 !important;
+	background-color: #fcfcfb !important;
 }
 
 .comment {
-	margin-left: 0;
+	margin-left: 0 !important;
 }
 
 	.comment .collapsed {
-		padding: 2px 0 0;
-		font-style: normal;
-		font-size: 11px;
+		padding: 2px 0 0 !important;
+		font-style: normal !important;
+		font-size: 11px !important;
 		/*for the collapsed line of text, and expando collapsed state*/
 	}
 
 	.comment a.expand {
-		padding: 1px 2px 2px;
-		color: #888;
+		padding: 1px 2px 2px !important;
+		color: #888 !important;
 	}
 
 		.comment a.expand:hover {
-			background-color: #bbb;
+			background-color: #bbb !important;
 		}
 
 	.comment .midcol {
-		margin: 5px;
+		margin: 5px !important;
 		width: 15px !important;
-		font-size: 130%;
+		font-size: 130% !important;
 	}
 
 	.comment .child {
-		margin: 2px 0 0 30px;
-		border-color: #e6e6e6;
+		margin: 2px 0 0 30px !important;
+		border-color: #e6e6e6 !important;
 	}
 
 	.comment .showreplies {
-		margin: 2px 0 10px 30px;
-		border: 0;
-		font-weight: bold;
+		margin: 2px 0 10px 30px !important;
+		border: 0 !important;
+		font-weight: bold !important;
 	}
 
 .morechildren a.button,
 .morerecursion .deepthread,
 .nextprev a,
 .showreplies {
-	display: inline-block;
-	margin: 0;
+	display: inline-block !important;
+	margin: 0 !important;
 	padding: 0 !important;
 	border-width: 0 !important;
 	background: none transparent !important;
 	color: #4d90fe !important;
-	text-shadow: 1px 1px 2px #eee;
-	font-weight: bold;
+	text-shadow: 1px 1px 2px #eee !important;
+	font-weight: bold !important;
 }
 
 .new-comment .usertext-body {
-	margin: 0 0 5px;
-	padding: 0 10px;
+	margin: 0 0 5px !important;
+	padding: 0 10px !important;
 }
 
 /*--  A.6.2. Comments with RES comment box enabled -- */
 .res-commentBoxes div.collapsed {
-	font-size: 11px;
+	font-size: 11px !important;
 }
 
 .res-commentBoxes div.noncollapsed {
-	padding: 0 5px;
+	padding: 0 5px !important;
 }
 
 .res-commentBoxes .comment .midcol {
-	margin: 5px -4px 5px 10px;
+	margin: 5px 0 5px 10px !important;
 }
 
 .res-commentBoxes .child {
-	margin: 2px 0 -7px 5px;
-	padding: 0 0 1px;
-	border: 0;
+	margin: 2px 0 -7px 5px !important;
+	padding: 0 0 1px !important;
+	border: 0 !important;
 	background: none transparent !important;
 }
 
 .res-commentBoxes .morechildren,
 .res-commentBoxes .morerecursion {
-	margin: 0 0 -5px -20px;
+	margin: 0 0 -5px -20px !important;
 }
 
 	.res-commentBoxes .morechildren a.button,
 	.res-commentBoxes .morerecursion .deepthread,
 	.nextprev a {
-		display: inline-block;
-		margin: 0;
+		display: inline-block !important;
+		margin: 0 !important;
 		padding: 5px 15px !important;
 		border: 1px solid #eee !important;
 		background-color: #fcfcfb !important;
 		background-image: none !important;
 		color: #777 !important;
-		text-shadow: 1px 1px 2px #eee;
+		text-shadow: 1px 1px 2px #eee !important;
 	}
 
 	.res-commentBoxes .morerecursion .deepthread {
@@ -1207,7 +1216,7 @@ ul.tabmenu.formtab {
 	}
 
 .res-commentBoxes .nestedlisting > .morechildren {
-	margin-left: -10px;
+	margin-left: -10px !important;
 }
 
 .res-commentBoxes.res-commentBoxes-rounded div.comment {
@@ -1215,17 +1224,17 @@ ul.tabmenu.formtab {
 }
 
 .res-commentBoxes .commentarea .nestedlisting {
-	border: 0;
-	background-color: transparent;
-	box-shadow: none;
+	border: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 .res-commentBoxes .nestedlisting > div.comment {
 	margin: 0 0 5px !important;
-	padding: 5px 0;
+	padding: 5px 0 !important;
 	border: 1px solid #fff !important;
-	background-color: #fbfbfb;
-	box-shadow: 0 1px 3px 0 #ccb;
+	background-color: #fbfbfb !important;
+	box-shadow: 0 1px 3px 0 #ccb !important;
 }
 
 .res-commentBoxes div.comment {
@@ -1254,7 +1263,7 @@ ul.tabmenu.formtab {
 /*--  A.6.3. Compact deleted messages/comments -- */
 .deleted.comment .usertext,
 .deleted.comment ul.buttons {
-	display: none;
+	display: none !important;
 }
 
 /* ~~  A.7. Spam highlighting ~~~~~ */
@@ -1264,7 +1273,7 @@ div.thing.suspicious {
 
 div.thing.spam,
 div.thing.reported {
-	margin: 0 0 5px;
+	margin: 0 0 5px !important;
 	outline: 1px solid #fbb !important;
 	background-color: #ffe5e2 !important;
 	background-image: linear-gradient(#ffe5e2,#ffdfdb) !important;
@@ -1285,230 +1294,230 @@ div.thing.reported {
 
 a.pretty-button,
 .pretty-button.inoffensive {
-	padding: 1px 10px 5px;
-	border: 1px solid #e4dbd0;
-	background-color: #fff6ea;
-	box-shadow: 1px 1px 1px 0 #ccc;
-	color: #1d1212;
-	text-shadow: 1px 1px 2px #000;
-	font-weight: bold;
+	padding: 1px 10px 5px !important;
+	border: 1px solid #e4dbd0 !important;
+	background-color: #fff6ea !important;
+	box-shadow: 1px 1px 1px 0 #ccc !important;
+	color: #1d1212 !important;
+	text-shadow: 1px 1px 2px #000 !important;
+	font-weight: bold !important;
 }
 
 .pretty-button.inoffensive {
-	text-shadow: none;
+	text-shadow: none !important;
 }
 
 a.pretty-button.negative {
-	border-color: #c25656;
-	background: none #ff6e6e;
-	color: #fff;
+	border-color: #c25656 !important;
+	background: none #ff6e6e !important;
+	color: #fff !important;
 }
 
 a.pretty-button.neutral {
-	border-color: #555;
-	background: none #888;
-	color: #fff;
+	border-color: #555 !important;
+	background: none #888 !important;
+	color: #fff !important;
 }
 
 a.pretty-button.positive {
-	border-color: #148614;
-	background: none #5ad15a;
-	color: #fff;
+	border-color: #148614 !important;
+	background: none #5ad15a !important;
+	color: #fff !important;
 }
 
 .entry .buttons li.reported-stamp {
-	padding: 3px 5px;
+	padding: 3px 5px !important;
 	border: 1px solid #d5b97e !important;
-	background-color: #ffdc91;
-	background-image: none;
-	color: #a90404;
-	font-weight: bold;
+	background-color: #ffdc91 !important;
+	background-image: none !important;
+	color: #a90404 !important;
+	font-weight: bold !important;
 }
 
 select {
-	padding: 1px;
-	border: 1px solid #aaa;
-	border-radius: 0;
+	padding: 1px !important;
+	border: 1px solid #aaa !important;
+	border-radius: 0 !important;
 	background-color: #fffeed !important;
-	vertical-align: middle;
+	vertical-align: middle !important;
 }
 
 /* ~~  A.8. Sidebar ~~~~~ */
 .side {
-	z-index: 10;
-	margin: 0 20px;
-	padding: 0 10px;
-	background-color: transparent;
-	line-height: 1.3;
+	z-index: 10 !important;
+	margin: 0 20px !important;
+	padding: 0 10px !important;
+	background-color: transparent !important;
+	line-height: 1.3 !important;
 }
 
 	.side .spacer {
-		margin: 5px 0 5px 0;
-		background-color: transparent;
+		margin: 5px 0 5px 0 !important;
+		background-color: transparent !important;
 	}
 
 	.side .md {
-		overflow: visible;
-		max-width: 100%;
-		font-size: .9em;
+		overflow: visible !important;
+		max-width: 100% !important;
+		font-size: .9em !important;
 	}
 
 	.side .titlebox {
-		padding: 0;
+		padding: 0 !important;
 	}
 
 	.side h1.redditname {
-		margin: 1.2em 0 .2em 0;
-		text-shadow: 0 0 1px #aaa;
-		letter-spacing: -1px;
-		font-size: 26px;
+		margin: 1.2em 0 .2em 0 !important;
+		text-shadow: 0 0 1px #aaa !important;
+		letter-spacing: -1px !important;
+		font-size: 26px !important;
 	}
 
 		.side h1.redditname a {
-			color: #222;
+			color: #222 !important;
 		}
 
 div.sidebox.create {
-	position: absolute;
-	right: 30px;
-	bottom: 110px;
-	z-index: 10;
-	display: block;
-	overflow: visible;
-	width: 230px;
+	position: absolute !important;
+	right: 30px !important;
+	bottom: 110px !important;
+	z-index: 10 !important;
+	display: block !important;
+	overflow: visible !important;
+	width: 230px !important;
 	border-width: 0 !important;
-	border-radius: 0;
+	border-radius: 0 !important;
 	background: none transparent !important;
 }
 
 .mod-toolbox div.sidebox.create {
-	bottom: 134px;
+	bottom: 134px !important;
 }
 
 .sidebox.create .subtitle:last-child:after {
-	display: block;
-	content: '...with theme /r/Mindashq.';
+	display: block !important;
+	content: '...with theme /r/Mindashq.' !important;
 }
 
 .side h1,
 .side h2,
 .side h3 {
-	margin: 5px;
-	background: none transparent;
-	color: #222;
-	text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff;
+	margin: 5px !important;
+	background: none transparent !important;
+	color: #222 !important;
+	text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff !important;
 }
 
 .side h1 {
-	font-size: 19px;
+	font-size: 19px !important;
 }
 
 .side h2 {
-	font-size: 16px;
+	font-size: 16px !important;
 }
 
 .side h3 {
-	font-size: 14px;
+	font-size: 14px !important;
 }
 
 .side .md p {
-	margin: 5px 10px;
+	margin: 5px 10px !important;
 }
 
 .side .md li p,
 .side .md ol p {
-	margin: 0;
+	margin: 0 !important;
 }
 
 body:not(.profile-page) .side .titlebox .bottom {
-	display: none;
-	border-color: #d2d2d2;
+	display: none !important;
+	border-color: #d2d2d2 !important;
 }
 
 /*--  A.8.1. Search -- */
 .side .spacer #search {
-	margin: 0 0 15px 0;
-	padding: 0;
+	margin: 0 0 15px 0 !important;
+	padding: 0 !important;
 }
 
 #search input[type='text'] {
-	margin: 0;
-	padding: 10px;
-	border: 1px solid #e3e3e3;
-	font-size: 14px;
+	margin: 0 !important;
+	padding: 10px !important;
+	border: 1px solid #e3e3e3 !important;
+	font-size: 14px !important;
 }
 
 .searchpane {
-	margin: 0;
-	padding: 10px 0 20px 96px;
-	border-color: #ccb;
-	background-color: #fbfbfb;
-	font-size: 12px;
+	margin: 0 !important;
+	padding: 10px 0 20px 96px !important;
+	border-color: #ccb !important;
+	background-color: #fbfbfb !important;
+	font-size: 12px !important;
 }
 
 .searchpane-toggle-hide {
-	margin: -1em 1em;
+	margin: -1em 1em !important;
 }
 
 .searchfacets {
-	margin: -1px 5px;
-	border-color: #ccb;
-	background-color: transparent;
-	box-shadow: none;
+	margin: -1px 5px !important;
+	border-color: #ccb !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 #searchexpando {
-	margin: 0 1px;
-	border-radius: 0;
+	margin: 0 1px !important;
+	border-radius: 0 !important;
 }
 
 .res #searchexpando p {
-	margin: 10px 0;
+	margin: 10px 0 !important;
 }
 /*--  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
-	overflow: hidden;
-	margin: 0 5px 10px;
-	border-color: #acd9fc;
-	background-color: #eaf4fc;
-	color: #2154a3;
+	overflow: hidden !important;
+	margin: 0 5px 10px !important;
+	border-color: #acd9fc !important;
+	background-color: #eaf4fc !important;
+	color: #2154a3 !important;
 }
 
 .linkinfo {
-	margin: 0 0 10px;
-	padding: 5px 0;
-	border: 1px solid #e3e3e3;
+	margin: 0 0 10px !important;
+	padding: 5px 0 !important;
+	border: 1px solid #e3e3e3 !important;
 	border-radius: 0 !important;
-	background: transparent;
-	text-align: center;
+	background: transparent !important;
+	text-align: center !important;
 }
 
 	.linkinfo .date {
-		padding: 5px 0;
+		padding: 5px 0 !important;
 	}
 
 	.linkinfo .score {
-		margin: -1px;
-		padding: 10px 0;
-		border: 1px solid #e3e3e3;
-		background: #f3f3f3;
+		margin: -1px !important;
+		padding: 10px 0 !important;
+		border: 1px solid #e3e3e3 !important;
+		background: #f3f3f3 !important;
 	}
 
 		.linkinfo .score .number {
-			font-size: 30px;
+			font-size: 30px !important;
 		}
 
 		.linkinfo .score .word {
-			font-weight: 300;
+			font-weight: 300 !important;
 		}
 
 	.linkinfo .totalvotes {
-		display: block;
+		display: block !important;
 		margin: -1px !important;
-		padding: 5px;
-		border: 1px solid #e3e3e3;
-		background: #f3f3f3;
-		text-align: center;
+		padding: 5px !important;
+		border: 1px solid #e3e3e3 !important;
+		background: #f3f3f3 !important;
+		text-align: center !important;
 	}
 
 	.linkinfo .totalvotes {
@@ -1517,18 +1526,18 @@ body:not(.profile-page) .side .titlebox .bottom {
 
 		.linkinfo .totalvotes .number,
 		.linkinfo .totalvotes .word {
-			font-size: 12px;
+			font-size: 12px !important;
 		}
 
 	.linkinfo .shortlink {
-		clear: both;
+		clear: both !important;
 	}
 
 	.linkinfo input#shortlink-text {
-		margin-top: 5px;
+		margin-top: 5px !important;
 		border: 0 !important;
-		background-color: transparent;
-		font-size: 12px;
+		background-color: transparent !important;
+		font-size: 12px !important;
 	}
 
 /*--  A.8.3. Contributor and Moderator Buttons -- */
@@ -1536,71 +1545,71 @@ body:not(.profile-page) .side .titlebox .bottom {
 .leavemoderator,
 .leavemoderator-button,
 .leavecontributor-button {
-	background: none transparent;
-	font-size: 12px;
+	background: none transparent !important;
+	font-size: 12px !important;
 }
 
 /*--  A.8.4. Login Form -- */
 .login-form-side {
-	margin: 0 0 10px;
-	padding: 10px 0 0;
-	border: 1px solid #eee;
-	border-width: 1px 0;
+	margin: 0 0 10px !important;
+	padding: 10px 0 0 !important;
+	border: 1px solid #eee !important;
+	border-width: 1px 0 !important;
 }
 
 	.login-form-side input[type=text],
 	.login-form-side input[type=password] {
-		border-color: #d2d2d2;
+		border-color: #d2d2d2 !important;
 	}
 
 /*--  A.8.5. Flair Setting area -- */
 .titlebox form.flairtoggle {
-	position: relative;
-	margin: 5px 2px 0 0;
-	padding: 5px 5px 5px 35px;
-	border: 1px solid #e3e3e3;
-	border-width: 1px 1px 0;
-	background: #f3f3f3;
+	position: relative !important;
+	margin: 5px 2px 0 0 !important;
+	padding: 5px 5px 5px 35px !important;
+	border: 1px solid #e3e3e3 !important;
+	border-width: 1px 1px 0 !important;
+	background: #f3f3f3 !important;
 }
 
 	.titlebox form.flairtoggle input {
-		float: left;
-		margin: 10px 10px 0 -25px;
+		float: left !important;
+		margin: 10px 10px 0 -25px !important;
 	}
 
 .titlebox .tagline {
-	margin: 0 2px 10px 0;
-	padding: 0 5px 5px 35px;
-	border: 1px solid #e3e3e3;
-	border-width: 0 1px 1px;
-	background: #f3f3f3;
-	font-size: 12px;
+	margin: 0 2px 10px 0 !important;
+	padding: 0 5px 5px 35px !important;
+	border: 1px solid #e3e3e3 !important;
+	border-width: 0 1px 1px !important;
+	background: #f3f3f3 !important;
+	font-size: 12px !important;
 }
 
 .titlebox .fancy-toggle-button {
-	display: block;
-	margin: 10px 0 0;
+	display: block !important;
+	margin: 10px 0 0 !important;
 }
 
 .res .titlebox .fancy-toggle-button {
-	display: inline-block;
+	display: inline-block !important;
 }
 
 .subscription-box ul > a[count] {
-	display: block;
-	margin: 10px -10px -10px;
-	padding: 10px;
-	background-color: #ddd;
+	display: block !important;
+	margin: 10px -10px -10px !important;
+	padding: 10px !important;
+	background-color: #ddd !important;
 }
 
 .subscription-box .fancy-toggle-button .active {
 	margin: 0 !important;
-	min-width: 70px;
+	min-width: 70px !important;
 }
 
 .subscription-box .subButtons + a:last-child {
-	float: right;
-	margin: -60px 10px;
+	float: right !important;
+	margin: -60px 10px !important;
 }
 
 .subscription-box .subButtons .RESshortcutside,
@@ -1617,13 +1626,13 @@ div.blueButton {
 	display: inline-block !important;
 	margin: 5px -3px 0 0 !important;
 	padding: 3px 7px !important;
-	min-width: 85px;
+	min-width: 85px !important;
 	height: auto !important;
-	outline: none;
+	outline: none !important;
 	border-color: #e3e3e3 !important;
 	border-radius: 0 !important;
-	text-align: center;
-	font-weight: bold;
+	text-align: center !important;
+	font-weight: bold !important;
 	font-size: 11px !important;
 	line-height: 14px !important;
 }
@@ -1631,12 +1640,12 @@ div.blueButton {
 .fancy-toggle-button .add {
 	border-color: #1a8b00 !important;
 	background: none #1a8b00 !important;
-	color: #fff;
+	color: #fff !important;
 }
 
 .fancy-toggle-button .remove {
 	background: none #f3f3f3 !important;
-	color: #aaa;
+	color: #aaa !important;
 }
 
 .RESshortcutside,
@@ -1656,48 +1665,48 @@ div.blueButton {
 
 .subscribers,
 .users-online {
-	position: relative;
-	display: inline-block;
-	margin: -1px;
-	padding: 10px 20px 5px;
-	width: 109px;
-	vertical-align: top;
-	text-align: left;
-	white-space: nowrap;
+	position: relative !important;
+	display: inline-block !important;
+	margin: -1px !important;
+	padding: 10px 20px 5px !important;
+	width: 109px !important;
+	vertical-align: top !important;
+	text-align: left !important;
+	white-space: nowrap !important;
 }
 
 .users-online {
-	margin-bottom: .25em;
-	padding: 10px 0 5px 20px;
-	width: 130px;
-	border: 1px solid #e3e3e3;
-	background: #f3f3f3;
+	margin-bottom: .25em !important;
+	padding: 10px 0 5px 20px !important;
+	width: 130px !important;
+	border: 1px solid #e3e3e3 !important;
+	background: #f3f3f3 !important;
 }
 
 	.subscribers .number,
 	.users-online .number {
-		display: block;
-		font-size: 18px;
-		line-height: 1;
+		display: block !important;
+		font-size: 18px !important;
+		line-height: 1 !important;
 	}
 
 	.users-online:after {
-		position: absolute;
-		top: -1px;
-		right: -1px;
-		width: 296px;
-		height: 100%;
-		border: 1px solid #e3e3e3;
-		content: '';
+		position: absolute !important;
+		top: -1px !important;
+		right: -1px !important;
+		width: 296px !important;
+		height: 100% !important;
+		border: 1px solid #e3e3e3 !important;
+		content: '' !important;
 	}
 
 	.users-online + form.flairtoggle {
-		margin-top: -4px;
+		margin-top: -4px !important;
 	}
 
 /*--  A.8.6. Submit Button -- */
 .sidebox.submit {
-	width: 300px;
+	width: 300px !important;
 }
 
 body:not(.listing-page) .morelink {
@@ -1705,45 +1714,45 @@ body:not(.listing-page) .morelink {
 	border-radius: 2px !important;
 	background: none #acd9fc !important;
 	background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
-	color: #2154a3;
+	color: #2154a3 !important;
 }
 
 	body:not(.listing-page) .morelink a {
 		color: #2154a3 !important;
-		text-shadow: 1px 1px 2px #eaf4fc;
+		text-shadow: 1px 1px 2px #eaf4fc !important;
 	}
 
 body .morelink {
-	padding: 2px 0;
+	padding: 2px 0 !important;
 	border-color: #357ae8 !important;
 	border-radius: 2px !important;
 	background: none #5ba2fd !important;
 	background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
-	color: #fff;
-	letter-spacing: 0;
-	font-weight: normal;
+	color: #fff !important;
+	letter-spacing: 0 !important;
+	font-weight: normal !important;
 }
 
 	body .morelink:hover,
 	body:not(.listing-page) .morelink:hover {
-		border-color: #08c;
+		border-color: #08c !important;
 		background: none #4d90fe !important;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
-		color: #fff;
+		color: #fff !important;
 	}
 
 	body .morelink a {
 		color: #fff !important;
-		text-shadow: 1px 1px 2px #2154a3;
-		font-weight: bold;
-		font-size: 14px;
+		text-shadow: 1px 1px 2px #2154a3 !important;
+		font-weight: bold !important;
+		font-size: 14px !important;
 	}
 
 		body .morelink a:hover,
 		body:not(.listing-page) .morelink:hover a,
 		body:not(.listing-page) .morelink a:hover {
 			color: #fff !important;
-			text-shadow: 1px 1px 2px #2154a3;
+			text-shadow: 1px 1px 2px #2154a3 !important;
 		}
 
 	body .morelink .nub,
@@ -1761,36 +1770,36 @@ body .disabled .morelink:hover {
 
 	body .disabled .morelink a,
 	body .disabled .morelink a:hover {
-		text-shadow: none;
-		cursor: default;
+		text-shadow: none !important;
+		cursor: default !important;
 	}
 
 /*--  A.8.7. Moderators Area -- */
 .sidecontentbox {
-	padding: 5px 0 5px;
+	padding: 5px 0 5px !important;
 	background-color: transparent !important;
-	line-height: 1.3;
+	line-height: 1.3 !important;
 }
 
 	.sidecontentbox a.helplink {
-		font-size: 12px;
+		font-size: 12px !important;
 	}
 
 	.sidecontentbox .title h1 {
-		color: #888;
-		letter-spacing: 0;
+		color: #888 !important;
+		letter-spacing: 0 !important;
 	}
 
 .spacer .sidecontentbox .content {
 	margin: 0 !important;
 	margin-top: 5px !important;
-	padding: 10px;
-	border: 1px solid #ccc;
-	background-color: #f5f5f5;
+	padding: 10px !important;
+	border: 1px solid #ccc !important;
+	background-color: #f5f5f5 !important;
 }
 
 .side .icon-menu li {
-	margin: 0 0 5px;
+	margin: 0 0 5px !important;
 }
 
 .side .icon-menu a {
@@ -1799,153 +1808,156 @@ body .disabled .morelink:hover {
 
 /*--  A.8.8. Account Activity area at Bottom of Sidebar -- */
 .account-activity-box {
-	padding: 0;
-	height: 60px;
+	padding: 0 !important;
+	height: 60px !important;
 	border-radius: 2px !important;
-	background-color: transparent;
-	background-position: center bottom;
+	background-color: transparent !important;
+	background-position: center bottom !important;
 }
 
 	.account-activity-box a {
-		margin: 20px 0 0 0;
-		padding: 20px 0 0 0;
+		margin: 20px 0 0 0 !important;
+		padding: 20px 0 0 0 !important;
 	}
 
 /* ~~  A.9. Footer ~~~~~ */
 .footer-parent {
-	position: relative;
-	clear: both;
-	padding: 0;
-	background: #fff;
-	text-align: left;
-	font-size: 12px;
-	line-height: 15px;
+	position: relative !important;
+	clear: both !important;
+	padding: 0 !important;
+	background: #fff !important;
+	text-align: left !important;
+	font-size: 12px !important;
+	line-height: 15px !important;
 }
 
 .footer {
-	position: relative;
-	z-index: 1;
-	display: block;
-	overflow: hidden;
-	margin: 0 0 5px;
-	padding: 0;
-	width: 100%;
-	border: 0 none;
+	position: relative !important;
+	z-index: 1 !important;
+	display: block !important;
+	overflow: hidden !important;
+	margin: 0 0 5px !important;
+	padding: 0 !important;
+	width: 100% !important;
+	border: 0 none !important;
 }
 
 	.footer .col {
-		margin: 10px;
-		border: 0 none;
+		margin: 10px !important;
+		border: 0 none !important;
 	}
 
 	.footer .flat-vert.title {
-		margin: 0 0 15px;
-		color: #2154a3;
+		margin: 0 0 15px !important;
+		color: #2154a3 !important;
 	}
 
 /*--  A.9.1. Reddit Copyright Text -- */
 .bottommenu,
 .bottommenu a {
-	font-size: 10px;
+	font-size: 10px !important;
 }
 
 .bottommenu {
-	margin: 0 0 0 25px;
-	margin: -5px 0;
-	padding: 5px 25px;
-	color: #777;
+	margin: 0 0 0 25px !important;
+	margin: -5px 0 !important;
+	padding: 5px 25px !important;
+	color: #777 !important;
 }
 
 	.bottommenu:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		display: block;
-		width: 100%;
-		height: 30px;
-		border-width: 1px 0;
-		border-style: solid;
-		content: ' ';
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		display: block !important;
+		width: 100% !important;
+		height: 30px !important;
+		border-width: 1px 0 !important;
+		border-style: solid !important;
+		content: ' ' !important;
 	}
 
 /* ~~   A.10. Wiki Pages ~~~~~ */
 body.wiki-page h1.wikititle {
-	display: inline-block;
-	margin: 10px 15px 5px;
-	color: #5ba2fd;
-	letter-spacing: 0;
-	font-size: 1em;
+	display: inline-block !important;
+	margin: 10px 15px 5px !important;
+	color: #5ba2fd !important;
+	letter-spacing: 0 !important;
+	font-size: 1em !important;
 }
 
 body.wiki-page .pageactions {
-	float: right;
-	border: 0 none;
+	float: right !important;
+	border: 0 none !important;
 }
 
 body.wiki-page .wiki-page-content {
-	margin: 0 15px 15px;
-	border-top: 1px dotted #d2d2d2;
+	margin: 0 15px 15px !important;
+	border-top: 1px dotted #d2d2d2 !important;
 }
 
 	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
-		border-color: #eee;
-		background-color: #f9f9f7;
-		list-style: none;
+		border-color: #eee !important;
+		background-color: #f9f9f7 !important;
+		list-style: none !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
-		letter-spacing: -1px;
-		font-size: 2.4em;
+		letter-spacing: -1px !important;
+		font-size: 2.4em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h2 {
-		letter-spacing: -1px;
-		font-size: 1.8em;
+		letter-spacing: -1px !important;
+		font-size: 1.8em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h3 {
-		font-size: 1.4em;
+		font-size: 1.4em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h4 {
-		font-size: 1.2em;
+		font-size: 1.2em !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki img {
-		max-width: 100%;
+		max-width: 100% !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1,
 	body.wiki-page .wiki-page-content .md.wiki h2,
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
-		color: #1d1212;
+		color: #1d1212 !important;
+		font-weight: normal !important;
+		font-style: normal !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
 	body.wiki-page .wiki-page-content .md.wiki h6 {
-		color: #181818;
+		color: #181818 !important;
+		text-decoration: none !important;
 	}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
 .tagline .RESUserTag {
-	margin: 0 0 0 -4px;
+	margin: 0 0 0 -4px !important;
 }
 
 div#userbarToggle,
 div#userbarToggle.userbarShow {
 	top: 28% !important;
 	bottom: 28% !important;
-	padding: 2px;
-	min-height: 10px;
-	height: 10px;
+	padding: 2px !important;
+	min-height: 10px !important;
+	height: 10px !important;
 	border: 0 !important;
-	border-radius: 10px;
+	border-radius: 10px !important;
 	background-color: #eaf4fc !important;
-	color: #2154a3;
-	text-align: center;
-	font-weight: bold;
-	line-height: .7;
+	color: #2154a3 !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	line-height: .7 !important;
 }
 
 /*--  A.11.1. Pin Sub-bar -- */
@@ -1959,7 +1971,7 @@ div#userbarToggle.userbarShow {
 .res.pinHeader-subanduser #RESShortcutsLeft,
 .res.pinHeader-subanduser #RESShortcutsAdd,
 .res.pinHeader-subanduser #RESShortcutsTrash {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 /*--  A.11.2. Pin Sub-Bar User Bar -- */
@@ -1967,19 +1979,19 @@ body.pinHeader-userbar #header-bottom-right,
 body.pinHeader-subanduser #header-bottom-right {
 	top: 15px !important;
 	bottom: auto !important;
-	background-color: #fff;
+	background-color: #fff !important;
 }
 
 /*--  A.11.3. Pin Full Header -- */
 #RESPinnedHeaderSpacer {
-	margin-bottom: 30px;
+	margin-bottom: 30px !important;
 }
 
 /*--  A.11.4. Handling the keynav -- */
 .entry.RES-keyNav-activeElement,
 .entry:hover {
-	padding-right: 2px;
-	outline: 0;
+	padding-right: 2px !important;
+	outline: 0 !important;
 	border: 0 !important;
 	border-right: 3px solid #4d90fe !important;
 }
@@ -2000,12 +2012,12 @@ body.pinHeader-subanduser #header-bottom-right {
 	}
 
 .keyNavAnnotation {
-	color: #888;
+	color: #888 !important;
 }
 
 button.RESBigEditorPop.blueButton {
-	margin: 7px 0 0 12px;
-	padding: 5px;
+	margin: 7px 0 0 12px !important;
+	padding: 5px !important;
 }
 
 /*--  A.11.5. Progress Indicator and Page marker for RES mode -- */
@@ -2013,55 +2025,55 @@ button.RESBigEditorPop.blueButton {
 div.NERPageMarker,
 div#NERFail,
 #endOfReddit {
-	margin: 0;
-	padding: 10px 0;
-	width: auto;
-	border-width: 0;
-	border-radius: 0;
+	margin: 0 !important;
+	padding: 10px 0 !important;
+	width: auto !important;
+	border-width: 0 !important;
+	border-radius: 0 !important;
 	background-color: transparent !important;
-	text-align: left;
-	letter-spacing: -1px;
-	font-weight: bold;
-	font-size: 20px;
+	text-align: left !important;
+	letter-spacing: -1px !important;
+	font-weight: bold !important;
+	font-size: 20px !important;
 }
 
 #progressIndicator.neverEndingReddit,
 div#NERFail,
 #endOfReddit {
-	color: #a90404;
-	letter-spacing: 0;
-	font-size: 12px;
+	color: #a90404 !important;
+	letter-spacing: 0 !important;
+	font-size: 12px !important;
 }
 
 /* ~~  A.12. Sidebar Boxes ~~~~~ */
 .side .md blockquote {
-	position: relative;
-	margin: 5px 0 10px;
-	padding: 5px 10px 10px 5px;
-	max-width: 100%;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-	background-color: #f5f5f5;
+	position: relative !important;
+	margin: 5px 0 10px !important;
+	padding: 5px 10px 10px 5px !important;
+	max-width: 100% !important;
+	border: 1px solid #ccc !important;
+	border-radius: 2px !important;
+	background-color: #f5f5f5 !important;
 }
 
 	.side .md blockquote > h1,
 	.side .md blockquote > h2,
 	.side .md blockquote > h3 {
-		font-size: 16px;
+		font-size: 20px !important;
 	}
 
 	.side .md blockquote > blockquote {
-		margin: 5px 0 0 5px;
+		margin: 5px 0 0 5px !important;
 	}
 
 	.side .md blockquote table {
-		margin: 5px -11px 5px -6px;
-		min-width: 299px;
-		max-width: 300px;
+		margin: 5px -11px 5px -6px !important;
+		min-width: 299px !important;
+		max-width: 300px !important;
 	}
 
 		.side .md blockquote table:last-child {
-			margin-bottom: -11px;
+			margin-bottom: -11px !important;
 		}
 
 	.side .md blockquote + hr,
@@ -2069,21 +2081,21 @@ div#NERFail,
 	.side .md blockquote + h4,
 	.side .md blockquote + h5,
 	.side .md blockquote + h6 {
-		margin: 0 0 5px 0;
-		width: 0;
-		height: 1px;
+		margin: 0 0 5px 0 !important;
+		width: 0 !important;
+		height: 1px !important;
 	}
 
 	.side .md blockquote h1 ~ p {
-		margin-left: 10px;
+		margin-left: 10px !important;
 	}
 
 .side .md h3 + blockquote p,
 .side .md h4 + blockquote p,
 .side .md h5 + blockquote p,
 .side .md h6 + blockquote p {
-	margin: 2px 10px;
-	color: #1d1212;
+	margin: 2px 10px !important;
+	color: #1d1212 !important;
 }
 
 .side .md blockquote + p,
@@ -2092,114 +2104,114 @@ div#NERFail,
 .side .md p + h4,
 .side .md p + h5,
 .side .md p + h6 {
-	margin-top: 12px;
+	margin-top: 12px !important;
 }
 
 .side .md > hr {
-	width: 0;
+	width: 0 !important;
 }
 
 	.side .md > hr + hr {
-		margin: 5px 0 15px;
-		width: auto;
+		margin: 5px 0 15px !important;
+		width: auto !important;
 	}
 
 /*--  A.12.1. Colored Boxes -- */
 /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
 .side .md blockquote a[href*='#icon-']:before {
-	border-radius: 3px;
-	background-color: #555;
-	background-image: linear-gradient(#555,#4d4d4d);
-	color: #eee;
-	text-shadow: none;
+	border-radius: 3px !important;
+	background-color: #555 !important;
+	background-image: linear-gradient(#555,#4d4d4d) !important;
+	color: #eee !important;
+	text-shadow: none !important;
 }
 
 /*Blue*/
 .side .md h3 + blockquote {
-	border-color: #aacdf1;
-	background-color: #d4ecfe;
+	border-color: #aacdf1 !important;
+	background-color: #d4ecfe !important;
 }
 
 	.side .md h3 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='blue']:before {
-		background-color: #50a3fd;
-		background-image: linear-gradient(#50a3fd,#1c89d1);
-		color: #d4ecfe;
+		background-color: #50a3fd !important;
+		background-image: linear-gradient(#50a3fd,#1c89d1) !important;
+		color: #d4ecfe !important;
 	}
 
 	.side .md h3 + blockquote hr {
-		background-color: #aacdf1;
-		color: #aacdf1;
+		background-color: #aacdf1 !important;
+		color: #aacdf1 !important;
 	}
 
 	.side .md h3 + blockquote * {
-		border-color: #aacdf1;
+		border-color: #aacdf1 !important;
 	}
 
 /*Green*/
 .side .md h4 + blockquote {
-	border-color: #45e745;
-	background-color: #e9ffe6;
+	border-color: #45e745 !important;
+	background-color: #e9ffe6 !important;
 }
 
 	.side .md h4 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='green']:before {
-		background-color: #39c739;
-		background-image: linear-gradient(#6de46d,#39c739);
-		color: #e9ffe6;
+		background-color: #39c739 !important;
+		background-image: linear-gradient(#6de46d,#39c739) !important;
+		color: #e9ffe6 !important;
 	}
 
 	.side .md h4 + blockquote hr {
-		background-color: #45e745;
-		color: #45e745;
+		background-color: #45e745 !important;
+		color: #45e745 !important;
 	}
 
 	.side .md h4 + blockquote * {
-		border-color: #45e745;
+		border-color: #45e745 !important;
 	}
 
 /*Yellow*/
 .side .md h5 + blockquote {
-	border-color: #fae296;
-	background-color: #fffde6;
+	border-color: #fae296 !important;
+	background-color: #fffde6 !important;
 }
 
 	.side .md h5 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='yellow']:before {
-		background-color: #ffce36;
-		background-image: linear-gradient(#fde000,#ffce36);
-		color: #ffffe6;
+		background-color: #ffce36 !important;
+		background-image: linear-gradient(#fde000,#ffce36) !important;
+		color: #ffffe6 !important;
 	}
 
 	.side .md h5 + blockquote hr {
-		background-color: #fae296;
-		color: #fae296;
+		background-color: #fae296 !important;
+		color: #fae296 !important;
 	}
 
 	.side .md h5 + blockquote * {
-		border-color: #fae296;
+		border-color: #fae296 !important;
 	}
 
 /*Red*/
 .side .md h6 + blockquote {
-	border-color: #ff9185;
-	background-color: #fef0f0;
+	border-color: #ff9185 !important;
+	background-color: #fef0f0 !important;
 }
 
 	.side .md h6 + blockquote a[href*='#icon-']:before,
 	.side .md blockquote a[href$='red']:before {
-		background-color: #dd4814;
-		background-image: linear-gradient(#ef784e,#dd4814);
-		color: #fef0f0;
+		background-color: #dd4814 !important;
+		background-image: linear-gradient(#ef784e,#dd4814) !important;
+		color: #fef0f0 !important;
 	}
 
 	.side .md h6 + blockquote hr {
-		background-color: #ff9185;
-		color: #ff9185;
+		background-color: #ff9185 !important;
+		color: #ff9185 !important;
 	}
 
 	.side .md h6 + blockquote * {
-		border-color: #ff9185;
+		border-color: #ff9185 !important;
 	}
 
 	.side .md h6 + blockquote table,
@@ -2211,122 +2223,122 @@ div#NERFail,
 
 /*--  A.12.2. Sidebar Icons -- */
 .side a[href*='#icon-'] {
-	display: block;
-	margin: 5px 0 -5px;
-	color: #1d1212;
-	cursor: default;
+	display: block !important;
+	margin: 5px 0 -5px !important;
+	color: #1d1212 !important;
+	cursor: default !important;
 }
 
 	.side a[href*='#icon-']:hover {
-		text-decoration: none;
+		text-decoration: none !important;
 	}
 
 	.side a[href*='#icon-']:before {
-		float: left;
-		margin: -5px 10px 5px -15px;
-		padding: 5px;
-		width: 30px;
-		background-position: 0 0;
-		text-align: center;
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 25px;
+		float: left !important;
+		margin: -5px 10px 5px -15px !important;
+		padding: 5px !important;
+		width: 30px !important;
+		background-position: 0 0 !important;
+		text-align: center !important;
+		font-weight: bold !important;
+		font-size: 25px !important;
+		line-height: 25px !important;
 	}
 
 	.side a[href*='#icon-']:after {
-		display: table;
-		clear: both;
-		content: '';
+		display: table !important;
+		clear: both !important;
+		content: '' !important;
 	}
 
 .side a[href*='#icon-exclamation']:before {
-	content: '♔';
+	content: '♔' !important;
 }
 
 .side a[href*='#icon-information']:before {
-	content: 'ⓘ';
+	content: 'ⓘ' !important;
 }
 
 .side a[href*='#icon-lightbulb']:before {
-	content: '☼';
+	content: '☼' !important;
 }
 
 .side a[href*='#icon-comments']:before {
-	content: '❝';
+	content: '❝' !important;
 }
 
 .side a[href*='#icon-unhappy']:before {
-	content: '☹';
+	content: '☹' !important;
 }
 
 .side a[href*='#icon-check']:before {
-	content: '✓';
+	content: '✓' !important;
 }
 
 .side a[href*='#icon-clock']:before {
-	content: '◔';
+	content: '◔' !important;
 }
 
 .side a[href*='#icon-cross']:before {
-	content: '⊘';
+	content: '⊘' !important;
 }
 
 .side a[href*='#icon-smile']:before {
-	content: '☺';
+	content: '☺' !important;
 }
 
 .side a[href*='#icon-error']:before {
-	content: '☢';
+	content: '☢' !important;
 }
 
 .side a[href*='#icon-note']:before {
-	content: '✑';
+	content: '✑' !important;
 }
 
 .side a[href*='#icon-star']:before {
-	content: '✰';
+	content: '✰' !important;
 }
 
 .side a[href*='#icon-help']:before {
-	content: '✍';
+	content: '✍' !important;
 }
 
 .side a[href*='#icon-time']:before {
-	content: '⌚';
+	content: '⌚' !important;
 }
 
 .side a[href*='#icon-bell']:before {
-	content: '❂';
+	content: '❂' !important;
 }
 
 .side a[href*='#icon-eye']:before {
-	content: '✿';
+	content: '✿' !important;
 }
 
 /* ~~  A.13. Vibgyor Flairs ~~~~~ */
 .flair,
 .linkflairlabel,
 span.linkflair {
-	display: inline-block;
-	padding: 1px 5px;
-	border: 1px solid #ddd;
-	border-radius: 2px;
-	background: #f5f5f5;
-	color: #2154a3;
-	text-shadow: none;
-	font-weight: bold;
-	font-size: x-small;
+	display: inline-block !important;
+	padding: 1px 5px !important;
+	border: 1px solid #ddd !important;
+	border-radius: 2px !important;
+	background: #f5f5f5 !important;
+	color: #2154a3 !important;
+	text-shadow: none !important;
+	font-weight: bold !important;
+	font-size: x-small !important;
 }
 
 .linkflair[class*='-m-'] {
 }
 
 	.linkflair[class*='-m-'] .linkflairlabel {
-		padding: 1px 5px 2px;
-		border: 0 none;
-		vertical-align: text-bottom;
-		text-align: center;
-		font-weight: bold;
+		padding: 1px 5px 2px !important;
+		border: 0 none !important;
+		vertical-align: text-bottom !important;
+		text-align: center !important;
+		font-weight: bold !important;
 	}
 
 	.linkflair[class*='-m-']:hover .linkflairlabel {
@@ -2334,60 +2346,60 @@ span.linkflair {
 
 .linkflair-m-vt .linkflairlabel,
 .flairoptionpane .linkflair-m-vt .linkflairlabel {
-	background: #c566c5;
-	color: #fff;
+	background: #c566c5 !important;
+	color: #fff !important;
 }
 
 .linkflair-m-io .linkflairlabel,
 .flairoptionpane .linkflair-m-io .linkflairlabel {
-	background: #5f8bc4;
-	color: #fff;
+	background: #5f8bc4 !important;
+	color: #fff !important;
 }
 
 .linkflair-m-be .linkflairlabel,
 .flairoptionpane .linkflair-m-be .linkflairlabel {
-	background: #84cbff;
-	color: #fff;
+	background: #84cbff !important;
+	color: #fff !important;
 }
 
 .linkflair-m-gn .linkflairlabel,
 .flairoptionpane .linkflair-m-gn .linkflairlabel {
-	background: #5fd35d;
-	color: #fff;
+	background: #5fd35d !important;
+	color: #fff !important;
 }
 
 .linkflair-m-yw .linkflairlabel,
 .flairoptionpane .linkflair-m-yw .linkflairlabel {
-	background: #fde950;
-	color: #a77d19;
+	background: #fde950 !important;
+	color: #a77d19 !important;
 }
 
 .linkflair-m-oe .linkflairlabel,
 .flairoptionpane .linkflair-m-oe .linkflairlabel {
-	background: #ffac30;
-	color: #fffbcb;
+	background: #ffac30 !important;
+	color: #fffbcb !important;
 }
 
 .linkflair-m-rd .linkflairlabel,
 .flairoptionpane .linkflair-m-rd .linkflairlabel {
-	background: #f00;
-	color: #fff;
+	background: #f00 !important;
+	color: #fff !important;
 }
 
 .linkflair-m-gy .linkflairlabel,
 .flairoptionpane .linkflair-m-gy .linkflairlabel {
-	background: #eaeaed;
-	color: #555;
+	background: #eaeaed !important;
+	color: #555 !important;
 }
 
 .linkflair-m-it .linkflairlabel,
 .flairoptionpane .linkflair-m-it .linkflairlabel {
-	background: #555;
-	color: #fff;
+	background: #555 !important;
+	color: #fff !important;
 }
 
 .linkflair-meta a.title {
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 .linkflair-meta .rank,
@@ -2401,75 +2413,75 @@ span.linkflair {
 }
 
 .linkflair-meta.compressed .midcol {
-	margin: 2px 3px 0;
+	margin: 2px 3px 0 !important;
 	width: 50px !important;
 }
 
 .linkflair-meta .arrow {
 	display: inline-block !important;
-	margin: 0 3px;
-	padding: 0;
-	font-size: 16px;
+	margin: 0 3px !important;
+	padding: 0 !important;
+	font-size: 16px !important;
 }
 
 .linkflair-meta .title > .linkflairlabel {
-	position: absolute;
-	left: 20px;
-	display: inline-block;
-	margin: 25px 10px 0 0;
-	padding: 5px 10px;
-	background-color: #fff;
-	box-shadow: 0 1px 10px 0 #d1d1d1;
-	vertical-align: text-bottom;
-	font-weight: bold;
-	font-size: 12px;
+	position: absolute !important;
+	left: 20px !important;
+	display: inline-block !important;
+	margin: 25px 10px 0 0 !important;
+	padding: 5px 10px !important;
+	background-color: #fff !important;
+	box-shadow: 0 1px 10px 0 #d1d1d1 !important;
+	vertical-align: text-bottom !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
 }
 
 .linkflair-meta.compressed .title > .linkflairlabel {
-	margin: 18px 10px 0 0;
-	padding: 3px 8px;
+	margin: 18px 10px 0 0 !important;
+	padding: 3px 8px !important;
 }
 
 /* ~~  A.14. Other areas in Reddit - [WIP] ~~~~~ */
 .upload li,
 #image-upload {
-	margin: 10px 0;
-	font-size: larger;
+	margin: 10px 0 !important;
+	font-size: larger !important;
 }
 
 	#image-upload label {
-		font-size: 12px;
+		font-size: 12px !important;
 	}
 
 ul#image-preview-list {
-	overflow: hidden;
-	margin: 20px 0 20px 20px;
-	font-size: larger;
+	overflow: hidden !important;
+	margin: 20px 0 20px 20px !important;
+	font-size: larger !important;
 }
 
 #newlink {
-	margin-left: 20px;
-	background: none transparent;
+	margin-left: 20px !important;
+	background: none transparent !important;
 }
 
 .sheets {
-	margin: 0;
+	margin: 0 !important;
 }
 
 .tabpane-content {
-	padding: 15px;
-	border-color: #8ccbfc;
+	padding: 15px !important;
+	border-color: #8ccbfc !important;
 }
 
 #reddit-field {
-	display: none;
+	display: none !important;
 }
 
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
 .res-nightmode body {
-	background-color: #222;
-	color: #ccc;
+	background-color: #222 !important;
+	color: #ccc !important;
 }
 
 .res-nightmode .md h1,
@@ -2481,7 +2493,7 @@ ul#image-preview-list {
 
 .res-nightmode a,
 .res-nightmode .thing a.title {
-	color: #acd9fc;
+	color: #acd9fc !important;
 }
 
 	.res-nightmode .thing a.title,
@@ -2511,10 +2523,10 @@ ul#image-preview-list {
 .res-nightmode .roundfield,
 .res-nightmode .linefield,
 .res-nightmode .content.submit .roundfield.info-notice {
-	border-color: #582b2b;
-	border-radius: 2px;
+	border-color: #582b2b !important;
+	border-radius: 2px !important;
 	background-color: #000 !important;
-	box-shadow: 0 0 1px 1px #333;
+	box-shadow: 0 0 1px 1px #333 !important;
 }
 
 	.res-nightmode .roundfield textarea,
@@ -2525,47 +2537,47 @@ ul#image-preview-list {
 	.res-nightmode .linefield textarea,
 	.res-nightmode .linefield input[type=text],
 	.res-nightmode .linefield input[type=password] {
-		border-color: #9b9999;
-		border-radius: 2px;
-		box-shadow: 0 1px 4px 1px #4b4949;
+		border-color: #9b9999 !important;
+		border-radius: 2px !important;
+		box-shadow: 0 1px 4px 1px #4b4949 !important;
 	}
 
 .res-nightmode .md:not(.wiki) {
-	color: #ccc;
+	color: #ccc !important;
 }
 
 .res-nightmode hr {
-	background-color: #414141;
-	color: #373737;
+	background-color: #414141 !important;
+	color: #373737 !important;
 }
 
 .res-nightmode .md blockquote,
 .res-nightmode .help blockquote {
-	border-color: #d2d2d2;
-	border-left-color: #5ba2fd;
+	border-color: #d2d2d2 !important;
+	border-left-color: #5ba2fd !important;
 }
 
 /*--  B.1.1. Tables -- */
 .res-nightmode .md table {
-	border-color: #444;
+	border-color: #444 !important;
 }
 
 	.res-nightmode .md table thead {
-		border-bottom: 1px solid #444;
-		background-color: #090909;
+		border-bottom: 1px solid #444 !important;
+		background-color: #090909 !important;
 	}
 
 	.res-nightmode .md table tr:nth-child(odd) {
-		background-color: #292929;
+		background-color: #292929 !important;
 	}
 
 	.res-nightmode .md table tr:nth-child(even) {
-		background-color: #222;
+		background-color: #222 !important;
 	}
 
 	.res-nightmode .md table td,
 	.res-nightmode .md table th {
-		border-right: 1px solid #444;
+		border-right: 1px solid #444 !important;
 	}
 
 /*--  B.1.2. Lists -- */
@@ -2584,16 +2596,16 @@ ul#image-preview-list {
 .res-nightmode .md.wiki pre,
 .res-nightmode p > code,
 .res-nightmode li > code {
-	border: 1px solid #333;
-	border-radius: 2px;
-	background-color: #080808;
+	border: 1px solid #333 !important;
+	border-radius: 2px !important;
+	background-color: #080808 !important;
 	color: #ddd !important;
-	font-size: 11px;
+	font-size: 11px !important;
 }
 
 .res-nightmode code {
 	color: #ddd !important;
-	font-family: Consolas,Monaco,'Courier New',monospace;
+	font-family: Consolas,Monaco,'Courier New',monospace !important;
 }
 
 .res-nightmode p > code,
@@ -2604,29 +2616,29 @@ ul#image-preview-list {
 /*--  B.1.4. Spoilers -- */
 .res-nightmode a[href='#s'],
 .res-nightmode a[href='/s'] {
-	background-color: #3d3d3d;
-	color: #fbf9f4;
+	background-color: #3d3d3d !important;
+	color: #fbf9f4 !important;
 }
 
 	.res-nightmode a[href='#s']:after,
 	.res-nightmode a[href='/s']:after {
-		background-color: #555;
-		color: #555;
+		background-color: #555 !important;
+		color: #555 !important;
 	}
 
 	.res-nightmode a[href='#s']:hover:after,
 	.res-nightmode a[href='#s']:active:after,
 	.res-nightmode a[href='/s']:hover:after,
 	.res-nightmode a[href='/s']:active:after {
-		color: #fff;
-		font-size: small;
+		color: #fff !important;
+		font-size: small !important;
 	}
 
 /*--  B.1.5. Common Button Style -- */
 .res-nightmode .entry .flat-list li a[onclick*='reply'] {
-	border-color: #302f2f;
-	border-radius: 2px;
-	background-color: #222;
+	border-color: #302f2f !important;
+	border-radius: 2px !important;
+	background-color: #222 !important;
 	color: #eee !important;
 }
 
@@ -2637,11 +2649,11 @@ ul#image-preview-list {
 .res-nightmode .BEFoot button,
 .res-nightmode input[type='submit'],
 .res-nightmode a[href*='#btn'] {
-	text-shadow: 1px 1px 2px #000;
+	text-shadow: 1px 1px 2px #000 !important;
 }
 
 	.res-nightmode .btn a {
-		color: #000;
+		color: #000 !important;
 	}
 
 	.res-nightmode .btn.right,
@@ -2658,8 +2670,8 @@ ul#image-preview-list {
 		.res-nightmode #url-field button,
 		.res-nightmode .content button.RESBigEditorPop,
 		.res-nightmode span.RESSubscriptionButton {
-			color: #777;
-			text-shadow: 1px 1px 2px #222;
+			color: #777 !important;
+			text-shadow: 1px 1px 2px #222 !important;
 		}
 
 			.res-nightmode .btn.right a:hover,
@@ -2669,7 +2681,7 @@ ul#image-preview-list {
 			.res-nightmode a.reddiquette:hover,
 			.res-nightmode .content button.RESBigEditorPop:hover,
 			.res-nightmode span.RESSubscriptionButton:hover {
-				color: #a95908;
+				color: #a95908 !important;
 			}
 
 .res-nightmode .entry .flat-list li a,
@@ -2695,71 +2707,71 @@ ul#image-preview-list {
 /* ~~  B.2. Header ~~~~~ */
 .res-nightmode div#header {
 	background-color: #000 !important;
-	box-shadow: 0 -3px 9px 5px #000;
+	box-shadow: 0 -3px 9px 5px #000 !important;
 }
 
 .res-nightmode #header:after,
 .res-nightmode .bottommenu:before {
-	border-color: #494848;
-	background-color: #414141;
-	background-image: linear-gradient(#696969,#414141);
+	border-color: #494848 !important;
+	background-color: #414141 !important;
+	background-image: linear-gradient(#696969,#414141) !important;
 }
 
 /*--  B.2.1. Top Sr-Bar -- */
 .res-nightmode #sr-header-area {
-	border-bottom-color: #000;
+	border-bottom-color: #000 !important;
 	background-color: #000 !important;
-	box-shadow: 0 1px 8px 1px #000;
+	box-shadow: 0 1px 8px 1px #000 !important;
 }
 
 	.res-nightmode #sr-header-area .separator {
-		color: #d2d2d2;
+		color: #d2d2d2 !important;
 	}
 
 	.res-nightmode #sr-header-area a {
-		color: #aaa;
+		color: #aaa !important;
 	}
 
 .res-nightmode div#RESShortcutsEditContainer {
-	background: none #000;
+	background: none #000 !important;
 }
 
 .res-nightmode #sr-more-link {
 	background-color: #040406 !important;
-	color: #000;
+	color: #000 !important;
 }
 
 /*--  B.2.2. Dropdown Subreddits Bar -- */
 .res-nightmode .drop-choices,
 .res-nightmode table#srList,
 .res-nightmode #RESSubredditGroupDropdown {
-	border-color: #555;
+	border-color: #555 !important;
 	background-color: #444 !important;
-	color: #ff910b;
+	color: #ff910b !important;
 }
 
 	.res-nightmode .drop-choices a.choice,
 	.res-nightmode table#srList a,
 	.res-nightmode div#RESSubredditGroupDropdown li a {
-		color: #ff910b;
+		color: #ff910b !important;
 	}
 
 		.res-nightmode .drop-choices a.choice:hover,
 		.res-nightmode table#srList a:hover,
 		.res-nightmode table#srList tr:hover,
 		.res-nightmode div#RESSubredditGroupDropdown li:hover {
-			background-color: #696969;
+			background-color: #696969 !important;
 		}
 
 	.res-nightmode .srdrop .choice.bottom-option,
 	.res-nightmode table#srList tr {
-		border-color: #696969;
+		border-color: #696969 !important;
 	}
 
 /*--  B.2.3. User Controls -- */
 .res-nightmode div#header-bottom-right {
 	border-radius: 0 !important;
-	background-image: linear-gradient(#696969,#414141);
+	background-image: linear-gradient(#696969,#414141) !important;
 }
 
 .res-nightmode #header-bottom-right:hover {
@@ -2769,12 +2781,12 @@ ul#image-preview-list {
 
 .res-nightmode #header-bottom-right a,
 .res-nightmode #header-bottom-right span {
-	color: #acd9fc;
+	color: #acd9fc !important;
 }
 
 .res-nightmode #header-bottom-right:hover a,
 .res-nightmode #header-bottom-right:hover span {
-	text-shadow: none;
+	text-shadow: none !important;
 }
 
 /*--  B.2.4. Banner Image -- */
@@ -2784,91 +2796,91 @@ ul#image-preview-list {
 
 /*--  B.2.5. The Reddit Name, applies to all pages -- */
 .res-nightmode .pagename {
-	color: #acd9fc;
+	color: #acd9fc !important;
 }
 
 	.res-nightmode .pagename a,
 	.res-nightmode .pagename.selected {
-		border-width: 0 0 1px 0;
-		background-color: #313131;
-		background-image: linear-gradient(#313131, #181817);
-		box-shadow: 0 4px 6px #111;
-		color: #fff;
-		text-shadow: 0 1px 0 #111;
+		border-width: 0 0 1px 0 !important;
+		background-color: #313131 !important;
+		background-image: linear-gradient(#313131, #181817) !important;
+		box-shadow: 0 4px 6px #111 !important;
+		color: #fff !important;
+		text-shadow: 0 1px 0 #111 !important;
 	}
 
 		.res-nightmode .pagename a:hover {
-			background-color: #333;
-			background-image: linear-gradient(#555,#222);
+			background-color: #333 !important;
+			background-image: linear-gradient(#555,#222) !important;
 		}
 
 /*--  B.2.6. Reddit Image and Text -- */
 .res-nightmode #header-img.default-header {
-	color: #acd9fc;
+	color: #acd9fc !important;
 }
 
 .res-nightmode #header-img-a {
-	border-width: 1px 0 1px 1px;
-	border-color: #1c1c1c;
-	background-color: #414141;
-	box-shadow: 0 4px 6px #000;
+	border-width: 1px 0 1px 1px !important;
+	border-color: #1c1c1c !important;
+	background-color: #414141 !important;
+	box-shadow: 0 4px 6px #000 !important;
 }
 
 /*--  B.2.7. Header Nav -- */
 .res-nightmode ul.tabmenu li a,
 .res-nightmode ul.tabmenu li a:visited,
 .res-nightmode ul.tabmenu li.selected a {
-	background-color: transparent;
-	color: #acd9fc;
+	background-color: transparent !important;
+	color: #acd9fc !important;
 }
 
 	.res-nightmode ul.tabmenu li.selected a,
 	.res-nightmode ul.tabmenu li.selected a:visited {
 		padding-bottom: 10px !important;
 		border-color: #313131 !important;
-		background-color: #1d1c27;
-		background-image: none;
+		background-color: #1d1c27 !important;
+		background-image: none !important;
 	}
 
 		.res-nightmode ul.tabmenu li a:hover,
 		.res-nightmode ul.tabmenu li.selected a:hover {
-			background-color: #333;
-			color: #e06935;
+			background-color: #333 !important;
+			color: #e06935 !important;
 		}
 
 /* ~~  B.3. Content box and common parts ~~~~~ */
 .res-nightmode div.content {
-	border-color: #202020;
+	border-color: #202020 !important;
 	background-color: #1b1b1b !important;
-	box-shadow: 0 1px 4px 3px #000;
+	box-shadow: 0 1px 4px 3px #000 !important;
 }
 
 .res-nightmode.listing-page > div.content,
 .res-nightmode.single-page > div.content,
 .res-nightmode.search-page > div.content,
 .res-nightmode.messages-page > div.content {
-	padding: 0;
-	border: 0 none;
+	padding: 0 !important;
+	border: 0 none !important;
 	background-color: transparent !important;
-	box-shadow: none;
+	box-shadow: none !important;
 }
 
 	.res-nightmode.single-page > div.content > .linklisting .link {
-		border-radius: 0;
-		background-color: #040404;
+		border-radius: 0 !important;
+		background-color: #040404 !important;
 	}
 
 /*--  B.3.1. Common Areas -- */
 .res-nightmode .panestack-title {
-	border-color: #444;
+	border-color: #444 !important;
 }
 
 	.res-nightmode .panestack-title .title {
-		color: #777;
+		color: #777 !important;
 	}
 
 .res-nightmode .menuarea {
-	border-color: #444;
+	border-color: #444 !important;
 }
 
 .res-nightmode p.tagline {
@@ -2876,30 +2888,30 @@ ul#image-preview-list {
 
 /*--  B.3.3. Link submission form -- */
 .res-nightmode .formtabs-content .infobar {
-	text-shadow: none;
+	text-shadow: none !important;
 }
 
 .res-nightmode ul.tabmenu.formtab li.selected a,
 .res-nightmode ul.tabmenu.formtab li.selected a:hover {
 	padding: 5px 20px !important;
 	border: 0 !important;
-	box-shadow: none;
-	color: #fff;
+	box-shadow: none !important;
+	color: #fff !important;
 }
 
 /*--  B.3.4. Expando Buttons -- */
 .res-nightmode .expando-button:before {
-	border: 1px solid #555;
-	background-color: #555;
-	color: #eee;
-	text-shadow: 0 0 3px #222;
+	border: 1px solid #555 !important;
+	background-color: #555 !important;
+	color: #eee !important;
+	text-shadow: 0 0 3px #222 !important;
 }
 
 .res-nightmode .expando-button:hover:before {
-	border-color: #444;
-	background-color: #444;
-	box-shadow: 0 4px 7px -3px #aaa;
-	color: #aaa;
+	border-color: #444 !important;
+	background-color: #444 !important;
+	box-shadow: 0 4px 7px -3px #aaa !important;
+	color: #aaa !important;
 }
 
 /* ~~  B.4. Links and Posts ~~~~~ */
@@ -2907,10 +2919,10 @@ ul#image-preview-list {
 .res-nightmode div.organic-listing,
 .res-nightmode div.thing.link.stickied,
 .res-nightmode div.thing.link.promoted {
-	overflow: hidden;
-	border-color: #111;
-	background: none #00121f;
-	box-shadow: 0 1px 6px -1px #000;
+	overflow: hidden !important;
+	border-color: #111 !important;
+	background: none #00121f !important;
+	box-shadow: 0 1px 6px -1px #000 !important;
 }
 
 .res-nightmode div.thing.link.stickied {
@@ -2919,19 +2931,19 @@ ul#image-preview-list {
 
 /*--  B.4.2. Rest of Links (Posts) -- */
 .res-nightmode .linklisting div.thing {
-	margin: 0;
+	margin: 0 !important;
 	border-color: #292929 !important;
-	background-color: #1e1e1e;
-	box-shadow: 0 0 5px 0 #111;
+	background-color: #1e1e1e !important;
+	box-shadow: 0 0 5px 0 #111 !important;
 }
 
 .res-nightmode .linklisting .odd {
-	background-image: linear-gradient(#222,#1e1e1e);
+	background-image: linear-gradient(#222,#1e1e1e) !important;
 }
 
 .res-nightmode .linklisting .even {
-	background-color: #262626;
-	background-image: linear-gradient(#222,#262626);
+	background-color: #262626 !important;
+	background-image: linear-gradient(#222,#262626) !important;
 }
 
 .res-nightmode .link.last-clicked {
@@ -2941,7 +2953,7 @@ ul#image-preview-list {
 /* ~~  B.5. Custom Upvote/Downvote Arrows ~~~~~ */
 .res-nightmode .arrow:not(.prev):not(.next) {
 	background: none transparent !important;
-	color: #555;
+	color: #555 !important;
 }
 
 .res-nightmode .arrow.upmod,
@@ -2953,54 +2965,54 @@ ul#image-preview-list {
 
 	.res-nightmode .arrow.up:hover:after,
 	.res-nightmode .arrow.down:hover:after {
-		color: #ddd;
+		color: #ddd !important;
 	}
 
 .res-nightmode .link .score {
-	color: #aaa;
+	color: #aaa !important;
 }
 
 /* ~~  B.6. Comments ~~~~~ */
 /*--  B.6.1. Default Comments -- */
 .res-nightmode .nestedlisting > div.comment {
-	border: 1px solid #2d2d2d;
-	background-color: #1b1b1b;
-	box-shadow: 1px 1px 3px -1px #000;
+	border: 1px solid #2d2d2d !important;
+	background-color: #1b1b1b !important;
+	box-shadow: 1px 1px 3px -1px #000 !important;
 }
 
 .res-nightmode .comment a.expand {
-	color: #777;
+	color: #777 !important;
 }
 
 	.res-nightmode .comment a.expand:hover {
-		background-color: #444;
+		background-color: #444 !important;
 	}
 
 	.res-nightmode .comment a.expand:visited {
-		color: #777;
+		color: #777 !important;
 	}
 
 .res-nightmode .comment .child {
-	border-color: #2d2d2d;
+	border-color: #2d2d2d !important;
 }
 
 .res-nightmode .morechildren a.button,
 .res-nightmode .morerecursion .deepthread,
 .res-nightmode .nextprev a {
 	color: #888 !important;
-	text-shadow: none;
+	text-shadow: none !important;
 }
 
 /*--  B.6.2. Comments with RES comment box enabled -- */
 .res-nightmode div.content > form > div .commentarea .even {
-	border-top: 1px solid #111;
-	background-color: transparent;
+	border-top: 1px solid #111 !important;
+	background-color: transparent !important;
 }
 
 .res-nightmode.res-commentBoxes .commentarea .nestedlisting {
-	border: 0;
-	background-color: transparent;
-	box-shadow: none;
+	border: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 .res-nightmode.res-commentBoxes .morechildren a.button,
@@ -3009,14 +3021,14 @@ ul#image-preview-list {
 	border-color: #222 !important;
 	background-color: #1b1b1b !important;
 	color: #888 !important;
-	text-shadow: none;
+	text-shadow: none !important;
 }
 
 .res-nightmode.res-commentBoxes .nestedlisting > div.comment {
 	border: 1px solid #111 !important;
 	border-color: #2d2d2d !important;
 	background-color: #1b1b1b !important;
-	box-shadow: 1px 1px 3px -1px #000;
+	box-shadow: 1px 1px 3px -1px #000 !important;
 }
 
 .res-nightmode.res-commentBoxes div.comment {
@@ -3048,10 +3060,10 @@ ul#image-preview-list {
 
 .res-nightmode div.thing.spam,
 .res-nightmode div.thing.reported {
-	margin: 0 0 5px;
+	margin: 0 0 5px !important;
 	outline: 1px solid #8f0606 !important;
 	background-color: #771207 !important;
-	background-image: linear-gradient(#771207,#711107);
+	background-image: linear-gradient(#771207,#711107) !important;
 	box-shadow: none !important;
 }
 
@@ -3069,18 +3081,18 @@ ul#image-preview-list {
 		}
 
 .res-nightmode a.pretty-button {
-	box-shadow: 1px 1px 1px 0 #222;
+	box-shadow: 1px 1px 1px 0 #222 !important;
 	color: #fff9e0 !important;
 }
 
 	.res-nightmode a.pretty-button.inoffensive {
-		border-color: #444;
-		background: none #313131;
+		border-color: #444 !important;
+		background: none #313131 !important;
 	}
 
 /* ~~  B.8. Sidebar ~~~~~ */
 .res-nightmode .side {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 	.res-nightmode .side .titlebox {
@@ -3088,45 +3100,45 @@ ul#image-preview-list {
 	}
 
 		.res-nightmode .side .titlebox > h1 {
-			text-shadow: 1px 1px 1px #000,2px 2px 3px #555,-1px -1px 1px #111;
+			text-shadow: 1px 1px 1px #000,2px 2px 3px #555,-1px -1px 1px #111 !important;
 		}
 
 	.res-nightmode .side h1,
 	.res-nightmode .side h2,
 	.res-nightmode .side h3 {
-		color: #ddd;
-		text-shadow: 0 -1px 0 #444, 0 1px 0 #0f0000;
+		color: #ddd !important;
+		text-shadow: 0 -1px 0 #444, 0 1px 0 #0f0000 !important;
 	}
 
 .res-nightmode body:not(.profile-page) .side .titlebox .bottom {
-	border-color: #555;
+	border-color: #555 !important;
 }
 
 /*--  B.8.1. Search -- */
 .res-nightmode #search input[type='text'] {
-	border-color: #1c1c1c;
+	border-color: #1c1c1c !important;
 	color: #fff !important;
 }
 
 .res-nightmode .searchpane {
 	border-width: 0 !important;
-	border-color: #333;
+	border-color: #333 !important;
 	border-radius: 0 !important;
-	background-color: #111;
-	box-shadow: none;
+	background-color: #111 !important;
+	box-shadow: none !important;
 }
 
 .res-nightmode .searchfacets {
-	border-color: #333;
+	border-color: #333 !important;
 	background-color: transparent !important;
-	box-shadow: none;
+	box-shadow: none !important;
 }
 
 /*--  B.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .res-nightmode .infobar {
-	border-color: #083e4c;
-	background-color: #546477;
-	background-image: none;
+	border-color: #083e4c !important;
+	background-color: #546477 !important;
+	background-image: none !important;
 }
 
 .res-nightmode .linkinfo {
@@ -3136,14 +3148,14 @@ ul#image-preview-list {
 
 	.res-nightmode .linkinfo .score,
 	.res-nightmode .linkinfo .totalvotes {
-		border-color: #333;
-		background: #111;
+		border-color: #333 !important;
+		background: #111 !important;
 	}
 
 	.res-nightmode .linkinfo input#shortlink-text {
 		border: 0 !important;
 		background-color: transparent !important;
-		color: #f5f5f5;
+		color: #f5f5f5 !important;
 	}
 
 /*--  B.8.4. Login Form -- */
@@ -3159,17 +3171,17 @@ ul#image-preview-list {
 
 /*--  B.8.5. Flair Setting area -- */
 .res-nightmode .titlebox form.flairtoggle {
-	border-color: #333;
+	border-color: #333 !important;
 	background: #111 !important;
 }
 
 .res-nightmode .titlebox .tagline {
-	border-color: #333;
-	background: #111;
+	border-color: #333 !important;
+	background: #111 !important;
 }
 
 .res-nightmode .subscription-box ul > a[count] {
-	background-color: #111;
+	background-color: #111 !important;
 }
 
 .res-nightmode .fancy-toggle-button .active,
@@ -3188,7 +3200,7 @@ ul#image-preview-list {
 
 .res-nightmode .fancy-toggle-button .remove {
 	background: none #0f0000 !important;
-	color: #777;
+	color: #777 !important;
 }
 
 .res-nightmode .RESshortcutside,
@@ -3207,12 +3219,12 @@ ul#image-preview-list {
 	}
 
 .res-nightmode .users-online {
-	border-color: #333;
-	background: #111;
+	border-color: #333 !important;
+	background: #111 !important;
 }
 
 	.res-nightmode .users-online:after {
-		border-color: #333;
+		border-color: #333 !important;
 	}
 /*--  B.8.6. Submit Button -- */
 .res-nightmode div.spacer > .submit {
@@ -3225,7 +3237,7 @@ ul#image-preview-list {
 }
 
 	.res-nightmode .sidecontentbox .title h1 {
-		color: #d2d2d2;
+		color: #d2d2d2 !important;
 	}
 
 	.res-nightmode .sidecontentbox .thing {
@@ -3233,47 +3245,47 @@ ul#image-preview-list {
 	}
 
 .res-nightmode .spacer .sidecontentbox .content {
-	border-color: #333;
-	background-color: #222;
+	border-color: #333 !important;
+	background-color: #222 !important;
 }
 
 /*--  B.8.8. Account Activity area at Bottom of Sidebar -- */
 .res-nightmode .account-activity-box {
-	border-radius: 0 3px;
-	background-color: transparent;
+	border-radius: 0 3px !important;
+	background-color: transparent !important;
 }
 
 /* ~~  B.9. Footer ~~~~~ */
 .res-nightmode .footer-parent {
-	background: #393939;
+	background: #393939 !important;
 }
 
 .res-nightmode .footer {
 }
 
 	.res-nightmode .footer .flat-vert.title {
-		color: #acd9fc;
+		color: #acd9fc !important;
 	}
 
 /*--  B.9.1. Reddit Copyright Text -- */
 .res-nightmode .bottommenu {
-	background: #393939;
-	color: #fac8b1;
+	background: #393939 !important;
+	color: #fac8b1 !important;
 }
 
 /* ~~   B.10. Wiki Pages ~~~~~ */
 .res-nightmode.wiki-page .wiki-page-content {
-	border-top: 1px dotted #414141;
+	border-top: 1px dotted #414141 !important;
 }
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki > .toc > ul {
-		border-color: #111;
-		background: #040406;
+		border-color: #111 !important;
+		background: #040406 !important;
 	}
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h1,
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h2 {
-		text-shadow: 0 0 2px #ccc,1px 1px 3px #111;
+		text-shadow: 0 0 2px #ccc,1px 1px 3px #111 !important;
 	}
 
 	.res-nightmode.wiki-page .wiki-page-content .md.wiki h5,
@@ -3282,22 +3294,22 @@ ul#image-preview-list {
 	}
 
 .res-nightmode.wiki-page .pageactions .wikiaction-current:hover {
-	background-color: #ff910b;
+	background-color: #ff910b !important;
 }
 
 .res-nightmode.wiki-page .pageactions .wikiaction:hover {
-	background-color: #acd9fc;
+	background-color: #acd9fc !important;
 }
 
 .res-nightmode.wiki-page .pageactions .wikiaction-current {
-	background-color: #686868;
-	color: #fff;
+	background-color: #686868 !important;
+	color: #fff !important;
 }
 
 /* ~~  B.11. RES Optimisation ~~~~~ */
 .res-nightmode div#userbarToggle {
 	background-color: #333 !important;
-	color: #acd9fc;
+	color: #acd9fc !important;
 }
 
 .res-nightmode .entry.RES-keyNav-activeElement div.md,
@@ -3315,11 +3327,11 @@ ul#image-preview-list {
 }
 
 .res-nightmode .keyNavAnnotation {
-	color: #777;
+	color: #777 !important;
 }
 
 .res-nightmode.messages-page a {
-	color: #acd9fc;
+	color: #acd9fc !important;
 }
 
 /*--  B.11.1. Progress Indicator and Page marker for RES mode -- */
@@ -3327,7 +3339,7 @@ ul#image-preview-list {
 .res-nightmode div.NERPageMarker,
 .res-nightmode div#NERFail,
 .res-nightmode #endOfReddit {
-	color: #ff4900;
+	color: #ff4900 !important;
 }
 
 /* ~~  B.12. Sidebar Boxes ~~~~~ */
@@ -3338,13 +3350,13 @@ ul#image-preview-list {
 }
 
 .res-nightmode .side .md blockquote {
-	border: 1px solid #444;
-	border-radius: 2px;
-	background-color: #111;
+	border: 1px solid #444 !important;
+	border-radius: 2px !important;
+	background-color: #111 !important;
 }
 
 	.res-nightmode .side .md blockquote h1 {
-		background-color: transparent;
+		background-color: transparent !important;
 	}
 
 	.res-nightmode .side .md blockquote pre,
@@ -3355,116 +3367,117 @@ ul#image-preview-list {
 .res-nightmode .side .md h6 + blockquote p,
 .res-nightmode .side .md h5 + blockquote p,
 .res-nightmode .side .md h4 + blockquote p {
-	color: #fff;
+	color: #fff !important;
 }
 
 /*--  B.12.1. Colored Boxes -- */
 .res-nightmode .side .md blockquote a[href*='#icon-']:before {
-	color: #111;
+	color: #111 !important;
 }
 
 .res-nightmode .side .md h4 + blockquote {
-	border: 1px solid #046f04;
-	background-color: #031401;
+	border: 1px solid #046f04 !important;
+	background-color: #031401 !important;
 }
 
 	.res-nightmode .side .md h4 + blockquote a[href*='#icon-']:before {
-		color: #160019;
+		color: #160019 !important;
 	}
 
 .res-nightmode .side .md h5 + blockquote {
-	border: 1px solid #745800;
-	background-color: #120e01;
+	border: 1px solid #745800 !important;
+	background-color: #120e01 !important;
 }
 
 	.res-nightmode .side .md h5 + blockquote a[href*='#icon-']:before {
-		color: #000019;
+		color: #000019 !important;
 	}
 
 .res-nightmode .side .md h6 + blockquote {
-	border: 1px solid #77150b;
-	background-color: #100000;
+	border: 1px solid #77150b !important;
+	background-color: #100000 !important;
 }
 
 	.res-nightmode .side .md h6 + blockquote a[href*='#icon-']:before {
-		color: #010f0f;
+		color: #010f0f !important;
 	}
 
 /*--  B.12.2. Sidebar Icons -- */
 .res-nightmode .side a[href*='#icon-'] {
-	color: #ccc;
+	color: #ccc !important;
 }
 
 /* ~~  B.13. Vibgyor Flairs ~~~~~ */
 .res-nightmode .flair,
 .res-nightmode .linkflairlabel,
 .res-nightmode span.linkflair {
-	border-color: #585757;
-	border-radius: 2px;
-	background-color: #3c3b3b;
-	background-image: none;
-	color: #d2d2d2;
+	border-color: #585757 !important;
+	border-radius: 2px !important;
+	background-color: #3c3b3b !important;
+	background-image: none !important;
+	color: #d2d2d2 !important;
 }
 
 .res-nightmode .linkflair-m-vt .linkflairlabel {
-	background: #8f2a8f;
-	color: #ddd;
+	background: #8f2a8f !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-io .linkflairlabel {
-	background: #325a8d;
-	color: #ddd;
+	background: #325a8d !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-be .linkflairlabel {
-	background: #026fbe;
-	color: #ddd;
+	background: #026fbe !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-gn .linkflairlabel {
-	background: #2e742d;
-	color: #ddd;
+	background: #2e742d !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-yw .linkflairlabel {
-	background: #f8f87e;
-	color: #333;
+	background: #f8f87e !important;
+	color: #333 !important;
 }
 
 .res-nightmode .linkflair-m-oe .linkflairlabel {
-	background: #ffa51d;
-	color: #333;
+	background: #ffa51d !important;
+	color: #333 !important;
 }
 
 .res-nightmode .linkflair-m-rd .linkflairlabel {
-	background: #d53838;
-	color: #ddd;
+	background: #d53838 !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-gy .linkflairlabel {
-	background: #4e4e4e;
-	color: #ddd;
+	background: #4e4e4e !important;
+	color: #ddd !important;
 }
 
 .res-nightmode .linkflair-m-it .linkflairlabel {
-	background: #fff;
-	color: #000;
+	background: #fff !important;
+	color: #000 !important;
 }
 
 .res-nightmode .linkflair-meta .title > .linkflairlabel {
-	border-color: #333;
-	background-color: #000;
-	box-shadow: 0 1px 10px 0 #000;
-	color: #fff;
+	border-color: #333 !important;
+	background-color: #000 !important;
+	box-shadow: 0 1px 10px 0 #000 !important;
+	color: #fff !important;
 }
 
 /* ~~  B.14. Other areas in Reddit - [WIP] ~~~~~ */
 .res-nightmode .tabpane-content {
-	border-color: #555;
+	border-color: #555 !important;
 }
 
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
+
 
 /* ~~  Stylish.14. Multireddit ~~~~~ */
 body.with-listing-chooser:not(.listing-chooser-collapsed) > .content,
