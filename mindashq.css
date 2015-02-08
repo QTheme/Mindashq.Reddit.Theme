@@ -1901,7 +1901,8 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
 		border-color: #eee;
 		background-color: #f9f9f7;
-		list-style: none;
+		list-style: none!!important;
+		max-width: 40%!important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
