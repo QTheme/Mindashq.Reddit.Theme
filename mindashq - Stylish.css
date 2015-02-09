@@ -108,7 +108,6 @@ div.comment .md p > a:visited {
 .md:not(.wiki) {
 	max-width: 60em;
 	color: #00000a;
-	line-height: 1.4;
 }
 
 .md blockquote,
@@ -496,12 +495,21 @@ div#RESShortcutsEditContainer {
 .drop-choices,
 table#srList,
 div#RESSubredditGroupDropdown {
-	padding: 0;
-	border: 1px solid #acd9fc;
+	padding: 0 !important;
+	border: 1px solid #acd9fc !important;
 	background-color: #eaf4fc;
 	color: #2154a3;
 	font-size: 12px;
 }
+
+	.drop-choices h2 {
+		margin: 0 0 5px !important;
+		padding: 5px 0;
+		background: #acd9fc !important;
+		color: #369 !important;
+		text-shadow: none !important;
+		font-size: 14px !important;
+	}
 
 	div#RESSubredditGroupDropdown li {
 		padding: 5px 0;
@@ -532,6 +540,16 @@ div#RESSubredditGroupDropdown {
 	font-size: 1.2em;
 }
 
+.flairselector form {
+	padding: 2px 0 5px;
+	border-color: #acd9fc;
+}
+
+.flairoptionpane,
+.flairselector li {
+	margin: 5px 0;
+	border: 0;
+}
 /*--  A.2.3. User Controls -- */
 #header-bottom-right {
 	top: auto !important;
@@ -1166,7 +1184,7 @@ ul.tabmenu.formtab {
 		}
 
 	.comment .midcol {
-		margin: 5px;
+		margin: 10px 5px;
 		width: 15px !important;
 		font-size: 130%;
 	}
@@ -1202,18 +1220,6 @@ ul.tabmenu.formtab {
 }
 
 /*--  A.6.2. Comments with RES comment box enabled -- */
-.res-commentBoxes div.collapsed {
-	font-size: 11px;
-}
-
-.res-commentBoxes div.noncollapsed {
-	padding: 0;
-}
-
-.res-commentBoxes .comment .midcol {
-	margin: 10px 5px;
-}
-
 .res-commentBoxes .child {
 	margin: 1px 0 -1px 5px;
 	padding: 0;
@@ -1374,7 +1380,6 @@ select {
 	margin: 0 20px;
 	padding: 0 10px;
 	background-color: transparent;
-	line-height: 1.3;
 }
 
 	.side .spacer {
@@ -1385,7 +1390,6 @@ select {
 	.side .md {
 		overflow: visible;
 		max-width: 100%;
-		font-size: .9em;
 	}
 
 	.side .titlebox {
@@ -1406,7 +1410,7 @@ select {
 div.sidebox.create {
 	position: absolute;
 	right: 30px;
-	bottom: 106px;
+	bottom: 104px;
 	z-index: 10;
 	display: block;
 	overflow: visible;
@@ -1448,6 +1452,8 @@ div.sidebox.create {
 
 .side .md p {
 	margin: 5px 10px;
+	font-size: 13px;
+	line-height: 1.4;
 }
 
 .side .md li p,
@@ -1621,28 +1627,6 @@ body:not(.profile-page) .side .titlebox .bottom {
 	display: inline-block;
 }
 
-.subscription-box ul > a[count] {
-	display: block;
-	margin: 10px -10px -10px;
-	padding: 10px;
-	background-color: #ddd;
-}
-
-.subscription-box .fancy-toggle-button .active {
-	margin: 0 !important;
-	min-width: 70px;
-}
-
-.subscription-box .subButtons + a:last-child {
-	float: right;
-	margin: -60px 10px;
-}
-
-.subscription-box .subButtons .RESshortcutside,
-.subscription-box .subButtons .RESDashboardToggle {
-	margin: 0 0 20px -5px !important;
-}
-
 .fancy-toggle-button .active,
 .RESshortcutside,
 .RESDashboardToggle,
@@ -1735,19 +1719,6 @@ div.blueButton {
 	width: 300px;
 }
 
-body:not(.listing-page) .morelink {
-	border-color: #5ba2fd !important;
-	border-radius: 2px !important;
-	background: none #acd9fc !important;
-	background-image: linear-gradient(#acd9fc,#8ccbfc) !important;
-	color: #2154a3;
-}
-
-	body:not(.listing-page) .morelink a {
-		color: #2154a3 !important;
-		text-shadow: 1px 1px 2px #eaf4fc;
-	}
-
 body .morelink {
 	padding: 2px 0;
 	border-color: #357ae8 !important;
@@ -1759,8 +1730,7 @@ body .morelink {
 	font-weight: normal;
 }
 
-	body .morelink:hover,
-	body:not(.listing-page) .morelink:hover {
+	body .morelink:hover {
 		border-color: #08c;
 		background: none #4d90fe !important;
 		background-image: linear-gradient(#4d90fe,#357ae8) !important;
@@ -1774,9 +1744,7 @@ body .morelink {
 		font-size: 14px;
 	}
 
-		body .morelink a:hover,
-		body:not(.listing-page) .morelink:hover a,
-		body:not(.listing-page) .morelink a:hover {
+		body .morelink a:hover {
 			color: #fff !important;
 			text-shadow: 1px 1px 2px #2154a3;
 		}
@@ -1813,24 +1781,33 @@ body .disabled .morelink:hover {
 
 	.sidecontentbox .title h1 {
 		color: #888;
-		letter-spacing: 0;
 	}
 
-.spacer .sidecontentbox .content {
-	margin-top: 5px !important;
-	padding: 10px;
-	border: 1px solid #ccc;
-	background-color: #f5f5f5;
-}
+	.sidecontentbox .content {
+		padding: 5px 10px;
+		border: 1px solid #ccc;
+		background-color: #f5f5f5;
+	}
+
+		.sidecontentbox .content .flair,
+		.sidecontentbox .content .linkflairlabel {
+			margin: 0 5px;
+		}
 
 .side .icon-menu li {
-	margin: 0 0 5px;
 }
 
 .side .icon-menu a {
 	background-color: transparent !important;
 }
 
+.gadget .midcol {
+	margin: 5px 0;
+}
+
+.gadget .entry {
+	padding: 0 5px 2px;
+}
 /*--  A.8.8. Account Activity area at Bottom of Sidebar -- */
 .account-activity-box {
 	padding: 0;
@@ -2350,7 +2327,7 @@ span.linkflair {
 	border-radius: 2px;
 	background: #f5f5f5;
 	color: #2154a3;
-	vertical-align: text-bottom;
+	vertical-align: middle;
 	text-shadow: none;
 	font-weight: bold;
 }
@@ -2360,6 +2337,7 @@ span.linkflair {
 
 	.linkflair[class*='-m-'] .linkflairlabel {
 		border: 0 none;
+		vertical-align: text-bottom;
 	}
 
 	.linkflair[class*='-m-']:hover .linkflairlabel {
@@ -2903,9 +2881,6 @@ button:focus {
 
 /*--  B.3.1. Common Areas -- */
 .res-nightmode .panestack-title {
-	border-color: #292929 !important;
-	background-color: #1e1e1e;
-	box-shadow: 0 0 5px 0 #111;
 }
 
 	.res-nightmode .panestack-title .title {
@@ -2915,14 +2890,15 @@ button:focus {
 .res-nightmode .menuarea {
 }
 
+.res-nightmode .panestack-title,
 .res-nightmode .commentarea .menuarea,
 .res-nightmode .related-page .panestack-title,
 .res-nightmode .search-page .menuarea,
 .res-nightmode .messages-page .menuarea,
 .res-nightmode .profile-page .menuarea {
 	border: 1px solid #292929 !important;
-	background-color: #1e1e1e;
-	box-shadow: 0 0 5px 0 #111;
+	background-color: #292929;
+	box-shadow: 0 0 5px 0 #1e1e1e;
 }
 /*--  B.3.2. Comment submission Usertext-edit textarea -- */
 .res-nightmode .usertext.cloneable {
@@ -2932,8 +2908,8 @@ button:focus {
 
 .res-nightmode .commentarea > .usertext.cloneable {
 	border-color: #292929 !important;
-	background-color: #1e1e1e;
-	box-shadow: 0 0 5px 0 #111;
+	background-color: #292929;
+	box-shadow: 0 0 5px 0 #1e1e1e;
 }
 
 div.usertext-edit textarea {
@@ -3235,10 +3211,6 @@ div.usertext-edit textarea {
 	background: #111;
 }
 
-.res-nightmode .subscription-box ul > a[count] {
-	background-color: #111;
-}
-
 .res-nightmode .fancy-toggle-button .active,
 .res-nightmode .RESshortcutside,
 .res-nightmode .RESDashboardToggle,
@@ -3316,17 +3288,12 @@ div.usertext-edit textarea {
 }
 
 .res-nightmode .footer {
+	background: transparent !important;
 }
 
 	.res-nightmode .footer .flat-vert.title {
 		color: #acd9fc;
 	}
-
-/*--  B.9.1. Reddit Copyright Text -- */
-.res-nightmode .bottommenu {
-	background: #393939;
-	color: #fac8b1;
-}
 
 /* ~~   B.10. Wiki Pages ~~~~~ */
 .res-nightmode.wiki-page .wiki-page-content {
@@ -3417,6 +3384,10 @@ div.usertext-edit textarea {
 	.res-nightmode .side .md blockquote pre,
 	.res-nightmode .side .md blockquote code {
 		color: #ddd !important;
+	}
+
+	.res-nightmode .side .md blockquote * {
+		border-color: #444;
 	}
 
 .res-nightmode .side .md h6 + blockquote p,
@@ -3562,11 +3533,6 @@ div.usertext-edit textarea {
 	outline: 1px solid #0e0e0e;
 	box-shadow: 3px 3px 7px -2px rgba(0, 0, 0, .9);
 }
-
-.res-nightmode a:focus,
-.res-nightmode button:focus {
-	outline: none;
-}
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
 
@@ -3643,6 +3609,36 @@ body.with-listing-chooser .listing-chooser .grippy {
 }
 
 /* Stylish .Message and misc formatting for mod areas */
+.subscription-box ul > a[count] {
+	display: block;
+	margin: 10px -10px -10px;
+	padding: 10px;
+	background-color: #ddd;
+}
+
+.subscription-box .fancy-toggle-button {
+	margin: 0 !important;
+}
+
+	.subscription-box .fancy-toggle-button .active {
+		margin: 0 !important;
+		min-width: 70px;
+	}
+
+.subscription-box .subButtons + a:last-child {
+	float: right;
+	margin: -60px 10px;
+}
+
+.subscription-box .subButtons .RESshortcutside,
+.subscription-box .subButtons .RESDashboardToggle {
+	margin: 0 0 20px -5px !important;
+}
+
+.res-nightmode .subscription-box ul > a[count] {
+	background-color: #111;
+}
+
 .profile-page div.thing {
 	margin: 0 0 5px !important;
 }
