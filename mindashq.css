@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.7h
+	v1.8
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -8,38 +8,49 @@
 /* ~~  A.1. Common Tags ~~~~~ */
 body {
 	position: relative;
-	background-color: #ececea;
+	background-color: #eeeeec;
 	color: #00000a;
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
-	font-family: sans-serif;
+	font-family: Helvetica,Arial,sans-serif;
 	line-height: 1.4;
 }
 
 .md h1,
 .md h2 {
 	margin-bottom: 6px;
-	color: #2154a3;
 }
 
 .md h3,
 .md h4 {
 	margin-bottom: 3px;
-	color: #2154a3;
-}
-
-.md h1,
-.md h2,
-.md h3,
-.md h4 {
-	border-color: #d2d2d2;
-	font-weight: bold;
-	font-size: 115%;
 }
 
 .md h1 {
-	font-size: 120%;
+	font-weight: normal;
+	font-size: 1.8em;
+}
+
+.md h2 {
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+.md h3 {
+	font-weight: normal;
+	font-size: 1.4em;
+}
+
+.md h4 {
+	font-weight: normal;
+	font-size: 1.3em;
+}
+
+.md h5,
+.md h6 {
+	font-weight: normal;
+	font-size: 1.2em;
 }
 
 a,
@@ -106,10 +117,10 @@ div.comment .md p > a:visited {
 	padding: 1px 1px 1px 15px;
 	max-width: 60em;
 	border: 1px solid #ccc;
-	border-width: 0 0 0 2px;
+	border-width: 0 0 0 1px;
 }
 
-hr {
+.md hr {
 	height: 1px;
 	border: 0 none;
 	background-color: #d2d2d2;
@@ -167,6 +178,7 @@ hr {
 	.md ol li {
 		margin: 1px 10px 0 0;
 		padding: 2px 0;
+		font-size: 100%;
 		line-height: 1.3;
 	}
 
@@ -183,35 +195,29 @@ hr {
 		}
 
 /*--  A.1.3. Code Style -- */
-.usertext-body pre,
-.md.wiki pre {
+.md pre {
+	overflow: auto;
 	margin: 10px 0;
 	padding: 10px;
-	color: #222 !important;
+	border: 1px solid #ccc;
+	background: #fbf9f4 !important;
 }
 
-.usertext-body pre,
-.md.wiki pre,
-p > code,
-li > code {
-	overflow: auto;
+	.md pre code {
+		padding: 0;
+		border: 0 none;
+		background: transparent;
+		font-size: .8em;
+	}
+
+.md code {
+	padding: 2px 3px;
 	border: 1px solid #ccc;
 	background-color: #fbf9f4;
-	color: #222 !important;
-	font-size: 11px;
-}
-
-code {
-	line-height: 1.5em;
-}
-
-p > code,
-li > code {
-	padding: 0 3px;
-	color: #222 !important;
+	color: #222;
+	font-size: .8em;
 	font-family: Consolas,Monaco,'Courier New',monospace;
 }
-
 /*--  A.1.4. Spoilers -- */
 a[href='#s'],
 a[href='/s'] {
@@ -251,15 +257,17 @@ a[href='/s'] {
 .entry .flat-list li a[onclick*='reply'] {
 	display: inline-block;
 	margin: -5px 5px 0 0;
-	padding: 2px 10px 3px;
+	padding: 2px 5px 1px;
 	min-width: 30px;
 	border: 1px solid #e6e6e6;
 	border-radius: 2px;
 	background-color: #fafafa;
 	color: #4d90fe;
+	text-align: center;
 	text-decoration: none;
 	text-shadow: none;
 	font-size: 11px;
+	line-height: 1.4;
 	cursor: pointer;
 }
 
@@ -372,7 +380,6 @@ a[href*='#btn'] {
 
 .entry .flat-list {
 	display: inline-block;
-	/*font-size: 11px;*/
 }
 
 	.entry .flat-list li a,
@@ -397,6 +404,7 @@ a[href*='#btn'] {
 
 /* ~~  A.2. Header ~~~~~ */
 #header {
+	z-index: 99;
 	margin: 0 0 30px;
 	height: auto;
 	background-color: #fff;
@@ -719,9 +727,10 @@ body.messages-page > div.content {
 .panestack-title {
 	overflow: hidden;
 	margin: 10px 5px 0;
-	padding: 5px 20px 0;
-	padding-bottom: 3px;
-	border-bottom-color: #ccc;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	background-color: #f9f9f9;
+	box-shadow: 0 1px 3px 0 #cdcdcd;
 	font-size: larger;
 }
 
@@ -729,12 +738,14 @@ body.messages-page > div.content {
 		color: #888;
 	}
 
+.menuarea {
+}
+
 .commentarea .menuarea {
-	margin: 0 0 10px;
-	padding: 5px 25px 0;
-	border-bottom-color: #d2d2d2;
-	background-color: transparent;
-	font-size: 12px;
+	margin: 1px 5px !important;
+	padding: 10px 25px;
+	background-color: #f9f9f9;
+	box-shadow: 0 1px 3px 0 #cdcdcd;
 }
 
 .related-page .panestack-title,
@@ -742,13 +753,15 @@ body.messages-page > div.content {
 .messages-page .menuarea,
 .profile-page .menuarea {
 	margin: 20px 5px -6px !important;
-	padding: 5px 0 5px 10px;
+	padding: 10px 10px 10px 15px;
+	background-color: #f9f9f9;
+	box-shadow: 0 1px 3px 0 #cdcdcd;
 	font-size: 14px;
 }
 
 p.tagline {
 	margin: 2px;
-	font-size: 115%;
+	font-size: 11px;
 }
 
 	p.tagline span span {
@@ -757,14 +770,18 @@ p.tagline {
 	}
 
 .tagline a {
-	color: #888;
+	color: #555;
 }
+
+	.tagline a:hover {
+		color: #4d90fe;
+		text-decoration: none;
+	}
 
 .res .thing .tagline .author.submitter,
 .res .thing .tagline .author.moderator,
 .res .thing .tagline .author.friend {
-	padding: 2px 5px;
-	font-size: 11px;
+	padding: 3px 5px 1px;
 }
 
 #noresults {
@@ -779,7 +796,17 @@ p.tagline {
 
 /*--  A.3.2. Comment submission Usertext-edit textarea -- */
 .usertext.cloneable {
-	margin: 10px 0 20px 25px;
+	margin: 0 -6px 1px;
+	padding: 20px;
+	border: 1px solid #fff;
+	background: #eeeeec;
+}
+
+.commentarea > .usertext.cloneable {
+	margin: 0 5px 20px 5px;
+	border-width: 0 1px 1px;
+	background-color: #f9f9f9;
+	box-shadow: 0 2px 3px 0 #cdcdcd;
 }
 
 div.usertext-edit textarea {
@@ -842,17 +869,15 @@ ul.tabmenu.formtab {
 		position: absolute;
 		display: block;
 		margin: 0 5px 0 0 !important;
-		padding: 1px 5px;
-		width: 8px !important;
-		height: 14px !important;
-		border: 1px solid #ddb;
-		border-radius: 3px;
+		padding: 1px 4px 3px;
+		width: 10px !important;
+		height: 10px !important;
+		border: 1px solid #ddd;
+		border-radius: 2px;
 		background-color: #efefe8;
-		color: #997;
+		color: #999;
 		vertical-align: top;
 		text-align: center;
-		text-shadow: 0 0 3px #f1f1f1;
-		font-size: 11px;
 		cursor: pointer;
 	}
 
@@ -864,11 +889,13 @@ ul.tabmenu.formtab {
 		content: '▪▪';
 	}
 
-	.expando-button.video.collapsed:before {
+	.expando-button.video.collapsed:before,
+	.expando-button.video-muted.collapsed:before {
 		content: '▶';
 	}
 
-	.expando-button.video.expanded:before {
+	.expando-button.video.expanded:before,
+	.expando-button.video-muted.expanded::before {
 		content: '●';
 	}
 
@@ -888,25 +915,34 @@ ul.tabmenu.formtab {
 	}
 
 	.expando-button.expanded:before {
-		border-radius: 15px;
+		border: 0;
+		background: #8fcbfc;
+		color: #fff;
 	}
 
 .res .md .expando-button.image,
 .res .parent .expando-button.image {
 	margin: 0 5px !important;
 	width: 20px !important;
+	font-size: .9em;
+	line-height: 1.1;
 }
 
 /* ~~  A.4. Links and Posts ~~~~~ */
 /*--  A.4.1. specials - stickied, promoted and sponsored links  -- */
-#siteTable_organic {
+.organic-listing {
 	margin: 0 5px;
 }
+
+	.organic-listing .entry:hover {
+		border: 0 !important;
+	}
 
 .organic-listing,
 .thing.link.stickied,
 .thing.link.promoted {
 	overflow: hidden;
+	padding: 0;
 	border-color: #fff;
 	background: none #edf5ff;
 	box-shadow: 0 1px 3px 0 #ccb;
@@ -929,11 +965,11 @@ ul.tabmenu.formtab {
 .linklisting .thing {
 	overflow: hidden;
 	margin: 0;
-	padding: 2px 0 0;
+	padding: 0;
 	border: 1px solid #fff;
 	border-width: 1px 0;
 	background-color: #fefefd;
-	box-shadow: 0 1px 3px 0 #ccb;
+	box-shadow: 0 1px 3px 0 #cdcdcd;
 }
 
 .linklisting .compressed.thing {
@@ -954,7 +990,7 @@ ul.tabmenu.formtab {
 }
 
 .linklisting .link.self .domain {
-	display: none; /*hides self posts*/
+	/* display: none; */ /*hides self posts*/
 }
 
 .link .expando {
@@ -990,7 +1026,7 @@ ul.tabmenu.formtab {
 }
 
 .link .midcol {
-	margin: 5px 10px;
+	margin: 10px 10px 0;
 }
 
 .link.compressed .midcol {
@@ -998,7 +1034,7 @@ ul.tabmenu.formtab {
 }
 
 .thumbnail {
-	margin: 5px 10px 5px 0;
+	margin: 6px 10px 5px 0;
 }
 
 	.thumbnail.self,
@@ -1007,21 +1043,25 @@ ul.tabmenu.formtab {
 	}
 
 .listing-page .thumbnail:not(.nsfw) {
-	max-height: 55px;
+	max-height: 60px;
 }
 
 .entry {
 	margin: 0;
-	padding: 3px 5px;
+	padding: 8px 5px 2px;
 }
 
 .compressed .entry {
 	padding: 2px 5px 2px 2px;
 }
 
+.comment.collapsed .entry {
+	padding: 8px 5px 6px;
+}
+
 .link .title {
 	overflow: visible;
-	margin: 0 .4em 2px 0;
+	margin: 0 5px 5px 0;
 	font-size: 125%;
 	line-height: 1.3;
 }
@@ -1044,8 +1084,7 @@ ul.tabmenu.formtab {
 	text-align: center;
 	font-weight: normal;
 	font-size: 120%;
-	font-family: Consolas,Monaco,'Courier New',monospace;
-	line-height: 12px;
+	line-height: .8;
 }
 
 .arrow.up:after,
@@ -1068,7 +1107,7 @@ ul.tabmenu.formtab {
 
 .arrow.up:hover:after,
 .arrow.down:hover:after {
-	color: #333;
+	color: #4d90fe;
 }
 
 .compressed .arrow:not(.prev):not(.next) {
@@ -1095,7 +1134,7 @@ ul.tabmenu.formtab {
 
 	.commentarea p.tagline,
 	.comment .score {
-		margin-left: -1px;
+		margin-left: -2px;
 		font-size: 11px;
 	}
 
@@ -1118,16 +1157,16 @@ ul.tabmenu.formtab {
 	}
 
 	.comment a.expand {
-		padding: 1px 2px 2px;
-		color: #888;
+		padding: 2px;
 	}
 
 		.comment a.expand:hover {
-			background-color: #bbb;
+			color: #4d90fe;
+			text-decoration: none;
 		}
 
 	.comment .midcol {
-		margin: 5px;
+		margin: 10px 5px;
 		width: 15px !important;
 		font-size: 130%;
 	}
@@ -1163,35 +1202,23 @@ ul.tabmenu.formtab {
 }
 
 /*--  A.6.2. Comments with RES comment box enabled -- */
-.res-commentBoxes div.collapsed {
-	font-size: 11px;
-}
-
-.res-commentBoxes div.noncollapsed {
-	padding: 0 5px;
-}
-
-.res-commentBoxes .comment .midcol {
-	margin: 5px -4px 5px 10px;
-}
-
 .res-commentBoxes .child {
-	margin: 2px 0 -7px 5px;
-	padding: 0 0 1px;
+	margin: 1px 0 -1px 5px;
+	padding: 0;
 	border: 0;
 	background: none transparent !important;
 }
 
 .res-commentBoxes .morechildren,
 .res-commentBoxes .morerecursion {
-	margin: 0 0 -5px -20px;
+	margin: -9px 0 -4px -20px;
 }
 
 	.res-commentBoxes .morechildren a.button,
 	.res-commentBoxes .morerecursion .deepthread,
 	.nextprev a {
 		display: inline-block;
-		margin: 0;
+		margin: 0 5px;
 		padding: 5px 15px !important;
 		border: 1px solid #eee !important;
 		background-color: #fcfcfb !important;
@@ -1220,7 +1247,6 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes .nestedlisting > div.comment {
 	margin: 0 0 5px !important;
-	padding: 5px 0;
 	border: 1px solid #fff !important;
 	background-color: #fbfbfb;
 	box-shadow: 0 1px 3px 0 #ccb;
@@ -1228,7 +1254,7 @@ ul.tabmenu.formtab {
 
 .res-commentBoxes div.comment {
 	margin: -1px 0 0 25px !important;
-	padding: 5px 0 !important;
+	padding: 0 !important;
 	border: 1px solid #eee !important;
 	border-right: 0 !important;
 	border-radius: 0 !important;
@@ -1262,7 +1288,6 @@ div.thing.suspicious {
 
 div.thing.spam,
 div.thing.reported {
-	margin: 0 0 5px;
 	outline: 1px solid #fbb !important;
 	background-color: #ffe5e2 !important;
 	background-image: linear-gradient(#ffe5e2,#ffdfdb) !important;
@@ -1369,7 +1394,7 @@ select {
 div.sidebox.create {
 	position: absolute;
 	right: 30px;
-	bottom: 110px;
+	bottom: 106px;
 	z-index: 10;
 	display: block;
 	overflow: visible;
@@ -1466,7 +1491,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 /*--  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .infobar {
 	overflow: hidden;
-	margin: 0 5px 10px;
+	margin: 0 5px 10px !important;
 	border-color: #acd9fc;
 	background-color: #eaf4fc;
 	color: #2154a3;
@@ -1613,9 +1638,9 @@ body:not(.profile-page) .side .titlebox .bottom {
 a.blueButton,
 div.blueButton {
 	display: inline-block !important;
-	margin: 5px -6px 0 0 !important;
+	margin: 5px -3px 0 0 !important;
 	padding: 3px 7px !important;
-	min-width: 80px;
+	min-width: 85px;
 	height: auto !important;
 	outline: none;
 	border-color: #e3e3e3 !important;
@@ -1627,7 +1652,7 @@ div.blueButton {
 }
 
 .fancy-toggle-button .add {
-	border-color: #27b307 !important;
+	border-color: #1a8b00 !important;
 	background: none #1a8b00 !important;
 	color: #fff;
 }
@@ -1683,7 +1708,7 @@ div.blueButton {
 		position: absolute;
 		top: -1px;
 		right: -1px;
-		width: 295px;
+		width: 296px;
 		height: 100%;
 		border: 1px solid #e3e3e3;
 		content: '';
@@ -1780,7 +1805,6 @@ body .disabled .morelink:hover {
 	}
 
 .spacer .sidecontentbox .content {
-	margin: 0 !important;
 	margin-top: 5px !important;
 	padding: 10px;
 	border: 1px solid #ccc;
@@ -1812,7 +1836,7 @@ body .disabled .morelink:hover {
 /* ~~  A.9. Footer ~~~~~ */
 .footer-parent {
 	position: relative;
-	clear: both;
+	overflow: hidden;
 	padding: 0;
 	background: #fff;
 	text-align: left;
@@ -1825,7 +1849,7 @@ body .disabled .morelink:hover {
 	z-index: 1;
 	display: block;
 	overflow: hidden;
-	margin: 0 0 5px;
+	margin: 0 0 5px 25px;
 	padding: 0;
 	width: 100%;
 	border: 0 none;
@@ -1850,7 +1874,7 @@ body .disabled .morelink:hover {
 .bottommenu {
 	margin: 0 0 0 25px;
 	margin: -5px 0;
-	padding: 5px 25px;
+	padding: 5px 50px;
 	color: #777;
 }
 
@@ -1886,9 +1910,10 @@ body.wiki-page .wiki-page-content {
 }
 
 	body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
+		max-width: 40% !important;
 		border-color: #eee;
 		background-color: #f9f9f7;
-		list-style: none;
+		list-style: none !important;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h1 {
@@ -1918,17 +1943,19 @@ body.wiki-page .wiki-page-content {
 	body.wiki-page .wiki-page-content .md.wiki h3,
 	body.wiki-page .wiki-page-content .md.wiki h4 {
 		color: #1d1212;
-		text-shadow: 0 0 1px #555;
+		font-weight: normal;
+		font-style: normal;
 	}
 
 	body.wiki-page .wiki-page-content .md.wiki h5,
 	body.wiki-page .wiki-page-content .md.wiki h6 {
 		color: #181818;
+		text-decoration: none;
 	}
 
 /* ~~  A.11. RES Optimisation ~~~~~ */
 .tagline .RESUserTag {
-	margin: 0 0 0 -4px;
+	margin: 0 5px 0 -4px;
 }
 
 div#userbarToggle,
@@ -2046,7 +2073,7 @@ div#NERFail,
 	.side .md blockquote > h1,
 	.side .md blockquote > h2,
 	.side .md blockquote > h3 {
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.side .md blockquote > blockquote {
@@ -2210,6 +2237,8 @@ div#NERFail,
 
 /*--  A.12.2. Sidebar Icons -- */
 .side a[href*='#icon-'] {
+	display: block;
+	margin: 5px 0 -5px;
 	color: #1d1212;
 	cursor: default;
 }
@@ -2304,26 +2333,21 @@ div#NERFail,
 .flair,
 .linkflairlabel,
 span.linkflair {
-	display: inline-block;
-	padding: 1px 5px;
+	padding: 2px 5px 0;
 	border: 1px solid #ddd;
 	border-radius: 2px;
 	background: #f5f5f5;
 	color: #2154a3;
+	vertical-align: text-bottom;
 	text-shadow: none;
 	font-weight: bold;
-	font-size: x-small;
 }
 
 .linkflair[class*='-m-'] {
 }
 
 	.linkflair[class*='-m-'] .linkflairlabel {
-		padding: 1px 5px 2px;
 		border: 0 none;
-		vertical-align: text-bottom;
-		text-align: center;
-		font-weight: bold;
 	}
 
 	.linkflair[class*='-m-']:hover .linkflairlabel {
@@ -2462,6 +2486,16 @@ ul#image-preview-list {
 	display: none;
 }
 
+input:focus,
+textarea:focus {
+	outline: 1px solid #5ba2fd;
+	box-shadow: 3px 3px 7px -2px rgba(0, 0, 0, .2);
+}
+
+a:focus,
+button:focus {
+	outline: none;
+}
 /* [ B ]. Night Mode ............ */
 /* ~~  B.1. Common Tags ~~~~~ */
 .res-nightmode body {
@@ -2857,7 +2891,6 @@ ul#image-preview-list {
 
 /*--  B.3.1. Common Areas -- */
 .res-nightmode .panestack-title {
-	border-color: #444;
 }
 
 	.res-nightmode .panestack-title .title {
@@ -2865,10 +2898,33 @@ ul#image-preview-list {
 	}
 
 .res-nightmode .menuarea {
-	border-color: #444;
 }
 
-.res-nightmode p.tagline {
+.res-nightmode .panestack-title,
+.res-nightmode .commentarea .menuarea,
+.res-nightmode .related-page .panestack-title,
+.res-nightmode .search-page .menuarea,
+.res-nightmode .messages-page .menuarea,
+.res-nightmode .profile-page .menuarea {
+	border: 1px solid #292929 !important;
+	background-color: #292929;
+	box-shadow: 0 0 5px 0 #1e1e1e;
+}
+/*--  B.3.2. Comment submission Usertext-edit textarea -- */
+.res-nightmode .usertext.cloneable {
+	border-color: #292929 !important;
+	background-color: #222;
+}
+
+.res-nightmode .commentarea > .usertext.cloneable {
+	border-color: #292929 !important;
+	background-color: #292929;
+	box-shadow: 0 0 5px 0 #1e1e1e;
+}
+
+div.usertext-edit textarea {
+	padding: 5px;
+	border: 1px solid #ccc;
 }
 
 /*--  B.3.3. Link submission form -- */
@@ -3121,8 +3177,8 @@ ul#image-preview-list {
 
 /*--  B.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
 .res-nightmode .infobar {
-	border-color: #083e4c;
-	background-color: #546477;
+	border-color: #0e0e0e;
+	background-color: #414141;
 	background-image: none;
 }
 
@@ -3156,7 +3212,7 @@ ul#image-preview-list {
 
 /*--  B.8.5. Flair Setting area -- */
 .res-nightmode .titlebox form.flairtoggle {
-	border-color: #333;
+	border-color: #333 !important;
 	background: #111 !important;
 }
 
@@ -3369,6 +3425,15 @@ ul#image-preview-list {
 		color: #160019;
 	}
 
+	.res-nightmode .side .md h4 + blockquote hr {
+		background-color: #046f04;
+		color: #046f04;
+	}
+
+	.res-nightmode .side .md h4 + blockquote * {
+		border-color: #046f04;
+	}
+
 .res-nightmode .side .md h5 + blockquote {
 	border: 1px solid #745800;
 	background-color: #120e01;
@@ -3378,6 +3443,15 @@ ul#image-preview-list {
 		color: #000019;
 	}
 
+	.res-nightmode .side .md h5 + blockquote hr {
+		background-color: #745800;
+		color: #745800;
+	}
+
+	.res-nightmode .side .md h5 + blockquote * {
+		border-color: #745800;
+	}
+
 .res-nightmode .side .md h6 + blockquote {
 	border: 1px solid #77150b;
 	background-color: #100000;
@@ -3385,6 +3459,15 @@ ul#image-preview-list {
 
 	.res-nightmode .side .md h6 + blockquote a[href*='#icon-']:before {
 		color: #010f0f;
+	}
+
+	.res-nightmode .side .md h6 + blockquote hr {
+		background-color: #77150b;
+		color: #77150b;
+	}
+
+	.res-nightmode .side .md h6 + blockquote * {
+		border-color: #77150b;
 	}
 
 /*--  B.12.2. Sidebar Icons -- */
@@ -3460,5 +3543,15 @@ ul#image-preview-list {
 	border-color: #555;
 }
 
+.res-nightmode input:focus,
+.res-nightmode textarea:focus {
+	outline: 1px solid #0e0e0e;
+	box-shadow: 3px 3px 7px -2px rgba(0, 0, 0, .9);
+}
+
+.res-nightmode a:focus,
+.res-nightmode button:focus {
+	outline: none;
+}
 /* [ C ]. Modules for specific customization ............ */
 /*  visit http://www.reddit.com/r/mindashq/wiki/modules for ready to use add-on modules  */
