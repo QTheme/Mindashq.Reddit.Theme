@@ -1623,7 +1623,7 @@ body:not(.profile-page) .side .titlebox .bottom {
 	margin: 10px 0 0;
 }
 
-.res .titlebox .fancy-toggle-button {
+.subButtons .fancy-toggle-button {
 	display: inline-block;
 }
 
