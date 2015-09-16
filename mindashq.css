@@ -974,7 +974,7 @@ ul.tabmenu.formtab {
 		color: #50722b;
 	}
 
-.listing-page .link:first-child.stickied {
+.listing-page .link.stickied {
 	margin: 0 0 10px !important;
 	border-width: 1px 0 1px 1px;
 }
