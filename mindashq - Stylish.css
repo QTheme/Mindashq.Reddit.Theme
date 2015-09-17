@@ -1,5 +1,5 @@
 /* ~~ Mindashq.Reddit.Theme
-	v1.8
+	v1.8.1
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -974,13 +974,14 @@ ul.tabmenu.formtab {
 		color: #50722b;
 	}
 
-.listing-page .link:first-child.stickied {
+.listing-page .link.stickied {
 	margin: 0 0 10px !important;
 	border-width: 1px 0 1px 1px;
 }
 
 /*--  A.4.2. Rest of Links (Posts) -- */
-.linklisting .thing {
+.linklisting .thing,
+.search-result {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
@@ -1094,7 +1095,36 @@ ul.tabmenu.formtab {
 	border: 0;
 	background: transparent;
 }
+/*--  A.4.4.Search Page Customizations -- */
+.combined-search-page #search input[type=text] {
+	border: 1px solid #e3e3e3;
+	font-size: 1.5em;
+}
 
+.combined-search-page .search-result-group {
+	padding: 0 10px;
+	max-width: none;
+}
+
+	.combined-search-page .search-result-group .search-result-group-header {
+		margin: 20px 0 0;
+	}
+
+.combined-search-page .search-result {
+	margin: 0;
+	padding: 5px 10px 5px 20px;
+}
+
+	.combined-search-page .search-result .search-result-header,
+	.combined-search-page .search-result .search-result-body {
+		margin: 10px 0 0;
+	}
+
+.combined-search-page .searchfacets {
+	margin: 15px;
+	max-width: none;
+	border: 0;
+}
 /* ~~  A.5. Custom Upvote/Downvote Arrows ~~~~~ */
 .arrow:not(.prev):not(.next) {
 	background: none transparent !important;
@@ -1410,7 +1440,7 @@ select {
 div.sidebox.create {
 	position: absolute;
 	right: 30px;
-	bottom: 104px;
+	bottom: 140px;
 	z-index: 10;
 	display: block;
 	overflow: visible;
@@ -1421,7 +1451,7 @@ div.sidebox.create {
 }
 
 .mod-toolbox div.sidebox.create {
-	bottom: 134px;
+	bottom: 165px;
 }
 
 .sidebox.create .subtitle:last-child:after {
@@ -1477,25 +1507,6 @@ body:not(.profile-page) .side .titlebox .bottom {
 	padding: 10px;
 	border: 1px solid #e3e3e3;
 	font-size: 14px;
-}
-
-.searchpane {
-	margin: 0;
-	padding: 10px 0 20px 96px;
-	border-color: #ccb;
-	background-color: #fbfbfb;
-	font-size: 12px;
-}
-
-.searchpane-toggle-hide {
-	margin: -1em 1em;
-}
-
-.searchfacets {
-	margin: -1px 5px;
-	border-color: #ccb;
-	background-color: transparent;
-	box-shadow: none;
 }
 
 #searchexpando {
@@ -1618,6 +1629,10 @@ body:not(.profile-page) .side .titlebox .bottom {
 	font-size: 12px;
 }
 
+.titlebox .subButtons {
+	display: block !important;
+}
+
 .titlebox .fancy-toggle-button {
 	display: block;
 	margin: 10px 0 0;
@@ -1654,7 +1669,7 @@ div.blueButton {
 }
 
 .fancy-toggle-button .remove {
-	background: none #f3f3f3 !important;
+	background: none #f3f3f3;
 	color: #aaa;
 }
 
@@ -2961,7 +2976,8 @@ div.usertext-edit textarea {
 }
 
 /*--  B.4.2. Rest of Links (Posts) -- */
-.res-nightmode .linklisting div.thing {
+.res-nightmode .linklisting div.thing,
+.res-nightmode .search-result {
 	margin: 0;
 	border-color: #292929 !important;
 	background-color: #1e1e1e;
@@ -3226,7 +3242,7 @@ div.usertext-edit textarea {
 }
 
 .res-nightmode .fancy-toggle-button .remove {
-	background: none #0f0000 !important;
+	background: none #0f0000;
 	color: #777;
 }
 
@@ -3643,35 +3659,35 @@ body.with-listing-chooser .listing-chooser .grippy {
 	margin: 0 0 5px !important;
 }
 
-.thing.message {
+.messages-page .thing.message {
 	/*applies to mail mod and normal */
 }
 
-	.thing.message .midcol,
-	.thing.message .entry,
-	.thing.message .entry {
+	.messages-page .thing.message .midcol,
+	.messages-page .thing.message .entry,
+	.messages-page .thing.message .entry {
 		margin: 0 !important;
 		border-left: 0 none !important;
 	}
 
-	.thing.message.new > .entry {
+	.messages-page .thing.message.new > .entry {
 		outline: 1px solid #acd9fc !important;
 		border: 0 !important;
 		background-color: rgba(115, 167, 207, .15) !important;
 	}
 
-	.thing.message .child .message {
+	.messages-page .thing.message .child .message {
 		margin: 0 !important;
 		padding: 0 !important;
 	}
 
-.res-nightmode .thing.message.new > .entry {
+.res-nightmode.messages-page .thing.message.new > .entry {
 	outline: 1px solid #4d90fe !important;
 }
 
-	.res-nightmode .thing.message.new > .entry.RES-keyNav-activeElement {
-		background-color: #393939 !important;
-	}
+.res-nightmode.thing.message.new > .entry.RES-keyNav-activeElement {
+	background-color: #393939 !important;
+}
 
 
 .message.recipient > .entry .collapsed,
@@ -3695,12 +3711,12 @@ body.with-listing-chooser .listing-chooser .grippy {
 	background: #555 !important;
 }
 
-.listing div.thing {
+.messages-page .listing div.thing {
 }
 
-	.listing div.thing.message,
-	.linklisting div.thing.message,
-	.linklisting div.thing.link {
+	.messages-page .listing div.thing.message,
+	.messages-page .linklisting div.thing.message,
+	.messages-page .linklisting div.thing.link {
 		/*same as .linklisting div.thing.comment*/
 		margin: 0 0 5px !important;
 		padding: 5px 0 5px 10px !important;
