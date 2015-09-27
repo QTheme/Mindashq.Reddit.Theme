@@ -1,8 +1,8 @@
-# Mindashq.Reddit.Theme
+# Mindashq.Reddit Theme
 
-Reddit Enhancement for better user experience.
+Reddit Theme with minimal changes for better user experience.
 
-Mindashq is a CSS Theme designed to be used on any subreddit with minimal modifications. 
+Mindashq is a CSS Theme designed to be used on any subreddit with minimal modifications, and is compatible wth Reddit Featured Theme (Gold users, via user preferences), As a stylish add-on and as single reddit custom theme.
 
 It takes just <a href="http://www.reddit.com/r/mindashq/wiki/index#wiki_two_step_setup"> two steps</a> to have a well designed reddit experience with Mindashq.
 
