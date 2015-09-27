@@ -4,10 +4,10 @@
 ----*/
 
 .side .usertext-body:before {
-	content: url('%%SidebarImage%%');
 	display: block;
 	overflow: hidden;
-	margin: 10px 0px;
+	margin: 10px 0;
+	content: url('%%SidebarImage%%');
 	text-align: center;
 }
 /*--  C.6.end Sidebar Image ----*/

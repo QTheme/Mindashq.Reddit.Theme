@@ -11,7 +11,7 @@
 .side .usertext a[href$='#view'] {
 	position: static;
 	display: block;
-	margin: 0px -10px 15px -15px;
+	margin: 0 -10px 15px -15px;
 	min-width: 300px;
 	min-height: 70px;
 	max-width: 310px;
@@ -19,7 +19,7 @@
 	width: auto;
 	height: 100px; /*Tweak according to desired image height*/
 	background: transparent url('%%SidebarImage%%') no-repeat 0 0;
-	font-size: 0px;
+	font-size: 0;
 }
 
 	.side .usertext a[href$='png']:hover:after,
@@ -27,21 +27,21 @@
 	.side .usertext a[href$='jpeg']:hover:after,
 	.side .usertext a[href$='gif']:hover:after,
 	.side .usertext a[href$='#view']:hover:after {
-		content: attr(title) " ⇨ ";
 		position: relative;
 		top: auto;
 		bottom: -20px;
 		left: 50%;
 		display: block;
-		margin: 0px -105px;
+		margin: 0 -105px;
 		padding: 10px 5px;
 		max-width: 200px;
 		border: 1px solid #d2d2d2;
 		border-radius: 2px;
 		background: #fbfbfb;
+		content: attr(title) ' ⇨ ';
+		text-align: center;
 		font-weight: bold;
 		font-size: 12px;
-		text-align: center;
 		opacity: .8;
 	}
 /*--  C.6.end Sidebar Image ----*/

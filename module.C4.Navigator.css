@@ -10,28 +10,28 @@
 .side .md > blockquote:last-child {
 	position: absolute;
 	top: 69px; /*Tweak this as per the header height (esp when C1 HeaderImages is used)*/
-	left: 0px; /*Tweak depending on subreddit name length; Set for stage*/
+	left: 0; /*Tweak depending on subreddit name length; Set for stage*/
+	z-index: 99;
 	display: block;
 	margin: 0;
 	padding: 0;
 	border: 0 none;
 	background-color: transparent;
-	z-index: 99;
 }
 
 	.side .md > blockquote:last-child > h1 {
 		overflow: hidden;
-		margin: -24px 0px 0px;
+		margin: -24px 0 0;
 		padding: 2px;
 		width: 25px;
 		background-color: #acd9fc;
 		color: #357ae8;
-		font-weight: bold;
-		font-size: 20px;
-		line-height: 28px;
 		vertical-align: middle;
 		text-align: center;
 		text-shadow: -1px -1px 0 #d8eeff,1px 1px 0 #075e85;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
 	}
 
 		.side .md > blockquote:last-child > h1 a {
@@ -48,10 +48,10 @@
 		overflow: visible;
 		margin: 0;
 		padding: 0;
-		white-space: normal;
-		vertical-align: top;
 		list-style: none outside;
 		list-style-image: none;
+		vertical-align: top;
+		white-space: normal;
 	}
 
 	.side .md > blockquote:last-child:hover > h1,
@@ -85,9 +85,9 @@
 		border-width: 0 1px 1px 1px;
 		background-color: #eee;
 		box-shadow: 0 1px 3px 0 #bbb;
-		line-height: 30px;
-		white-space: normal;
 		text-shadow: 0 1px 0 #ddd;
+		white-space: normal;
+		line-height: 30px;
 	}
 
 		.side .md > blockquote:last-child li:first-child {

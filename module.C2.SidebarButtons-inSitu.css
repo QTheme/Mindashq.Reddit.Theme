@@ -26,14 +26,14 @@
 .sidebox.submit-link {
 	position: relative;
 	display: block;
-	margin-left: 0px;
-	text-indent: 0px;
+	margin-left: 0;
+	text-indent: 0;
 }
 
 	.sidebox.submit-link .morelink .nub:before {
-		content: 'OR';
 		position: relative;
 		top: 2px;
+		z-index: 1;
 		margin-left: 13px;
 		padding: 5px;
 		height: auto;
@@ -41,10 +41,10 @@
 		border-radius: 50%;
 		background-color: #fbfbf9 !important;
 		color: #242527;
+		content: 'OR';
+		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
 		font-weight: bold;
 		font-size: 10px;
-		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
-		z-index: 1;
 	}
 
 .sidebox.submit-text {

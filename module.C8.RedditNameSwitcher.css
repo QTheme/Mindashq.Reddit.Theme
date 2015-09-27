@@ -1,7 +1,7 @@
 /*--  C.8. Reddit Name Switcher ----*/
 .pagename a:after,
 .titlebox .redditname a:after {
-	content: "Stage Mindashq"; /*Type the custom name here*/
+	content: 'Stage Mindashq'; /*Type the custom name here*/
 }
 
 .pagename a,
@@ -13,13 +13,12 @@
 		font-size: 16px;
 	}
 
-
 	.titlebox .redditname a:after {
+		text-shadow: 0 0 1px #aaa;
 		font-size: 30px;
-		text-shadow: 0px 0px 1px #aaa;
 	}
 
 .res-nightmode .titlebox .redditname a:after {
-	text-shadow: 0px 0px 1px #555;
+	text-shadow: 0 0 1px #555;
 }
 /*--  C.8.end Reddit Name Switcher ----*/
