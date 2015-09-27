@@ -24,13 +24,13 @@
 
 .sidebox.submit-link {
 	display: block;
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 	.sidebox.submit-link .morelink .nub:before {
-		content: 'OR';
 		position: relative;
 		top: 2px;
+		z-index: 1;
 		margin-left: 13px;
 		padding: 5px;
 		height: auto;
@@ -38,10 +38,10 @@
 		border-radius: 50%;
 		background-color: #fbfbf9 !important;
 		color: #242527;
+		content: 'OR';
+		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
 		font-weight: bold;
 		font-size: 10px;
-		text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
-		z-index: 1;
 	}
 
 .sidebox.submit-text {
@@ -54,8 +54,8 @@ body.res-nightmode .sidebox.submit-link .morelink .nub {
 }
 
 	body.res-nightmode .sidebox.submit-link .morelink .nub:before {
-		border: 1px solid #222222;
-		background-color: #222222 !important;
+		border: 1px solid #222;
+		background-color: #222 !important;
 		color: #eee;
 		text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
 	}
@@ -75,15 +75,15 @@ body.res-nightmode .sidebox.submit-link .morelink .nub {
 }
 
 	.sidecontentbox a.helplink:before {
-		content: 'Or';
-		margin: 0px .3em 0px 1.5em;
+		margin: 0 .3em 0 1.5em;
 		color: #808080;
+		content: 'Or';
 	}
 
 	.sidecontentbox a.helplink:after {
-		content: 'with your questions'; /*Tweak this for message after the link*/
-		margin: 0px 0px 0px .3em;
+		margin: 0 0 0 .3em;
 		color: #808080;
+		content: 'with your questions'; /*Tweak this for message after the link*/
 	}
 
 .side .spacer #search,
@@ -97,7 +97,7 @@ body.submit-page .sidecontentbox a.helplink {
 }
 
 body.submit-page .side .spacer #search {
-	margin-top: 0px;
+	margin-top: 0;
 }
 /*-- C.2.3.end Top Positioning with message to moderator text --*/
 

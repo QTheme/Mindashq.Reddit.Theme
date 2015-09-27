@@ -1,5 +1,5 @@
 # Staging area for Mindashq Theme
-## Running v1.7
+## Running v1.8.2
 ### Some things may seem wonky at times.
 
 ---
@@ -65,8 +65,8 @@
 
 [Preview Image](http://d.thumbs.redditmedia.com/pE_aUUK8Tl8aTNAE.png)
 
-> ##[Modules in Mindashq!](#icon-note)
-> \# | Module | Status on Stage | Type
+> ##[Add-on Modules in Mindashq!](#icon-note)
+> \# | Add-on Module | Status on Stage | Type
 > :-: | :- | :-: | :-
 > C1 | [Header Images](/r/mindashq/wiki/modules/headerimages) | Active | Opt-in
 > C2 | [Sidebar Buttons](/r/mindashq/wiki/modules/sidebarbuttons) - in situ | Inactive | Opt-in
@@ -87,7 +87,7 @@
 
 ---
 
-Theme based on [Mindashq 1.7](/r/mindashq)
+Theme based on [Mindashq 1.8.2](/r/mindashq)
 
 ---
 

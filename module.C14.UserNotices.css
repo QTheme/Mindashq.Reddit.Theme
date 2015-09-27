@@ -14,8 +14,8 @@
 
 /* Notice for Report button */
 .report-button a.yes:hover:after {
-	content: "Please send a message to moderators with the link for this item citing the reason for reporting. Thank you for your help. ";
 	position: absolute;
+	z-index: 1000;
 	display: block;
 	margin-top: -80px;
 	margin-left: -40px;
@@ -24,15 +24,15 @@
 	border: 1px solid #333;
 	background: #1d1212;
 	color: #f6f6f6;
-	font-size: 11px;
+	content: 'Please send a message to moderators with the link for this item citing the reason for reporting. Thank you for your help. ';
 	white-space: normal;
-	z-index: 1000;
+	font-size: 11px;
 }
 
 /* Notice for downvote */
 .arrow.down:hover:before {
-	content: "Use only to discourage non-related content. A downvote should not be used for simply a disagreement. ";
 	position: absolute;
+	z-index: 1000;
 	display: block;
 	margin-top: -30px;
 	margin-left: 20px;
@@ -41,9 +41,9 @@
 	border: 1px solid #333;
 	background: #1d1212;
 	color: #f6f6f6;
+	content: 'Use only to discourage non-related content. A downvote should not be used for simply a disagreement. ';
+	text-align: left;
 	font-size: 11px;
 	font-family: sans-serif;
-	text-align: left;
-	z-index: 1000;
 }
 /*--  C.14.end User Notices ----*/

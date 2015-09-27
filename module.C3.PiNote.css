@@ -8,9 +8,9 @@
 	top: 175px; /*Tweak this as per the header height (esp when C1 HeaderImages is used)*/
 	right: 360px;
 	left: 5px;
+	z-index: 10;
 	border: 0 !important;
 	background-color: transparent !important;
-	z-index: 10;
 }
 
 	.side .md > blockquote:nth-of-type(1) > h1 {
@@ -18,15 +18,15 @@
 
 		.side .md > blockquote:nth-of-type(1) > h1 > a {
 			float: right;
-			margin: -3px -5px -5px 0px;
+			margin: -3px -5px -5px 0;
 			padding: 10px 5px;
 			max-width: 120px;
-			font-size: 12px;
-			letter-spacing: 0;
 			text-align: right;
 			text-align: center;
 			text-decoration: underline;
 			text-shadow: 1px 1px 1px #fdfdfe;
+			letter-spacing: 0;
+			font-size: 12px;
 		}
 
 			.side .md > blockquote:nth-of-type(1) > h1 > a[href*='#icon-']:before {
@@ -37,7 +37,7 @@
 
 a[name='content'] {
 	display: block;
-	margin: 0px 365px 15px 30px;
+	margin: 0 365px 15px 30px;
 	min-height: 65px;
 	border: 1px solid #ccc;
 	border-radius: 2px;
@@ -45,11 +45,11 @@ a[name='content'] {
 }
 
 	a[name='content']:before {
-		content: 'This is staging area for /r/mindashq with preview of opt-in modules. To know more, and for feedback, discussions and enhancments : click the link.';
 		position: relative;
 		display: block;
 		margin: 15px 150px 15px 40px;
 		color: #222;
+		content: 'This is staging area for /r/mindashq with preview of opt-in modules. To know more, and for feedback, discussions and enhancments : click the link.';
 		font-weight: bold;
 		font-size: 12px;
 	}
