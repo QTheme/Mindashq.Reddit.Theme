@@ -200,6 +200,7 @@ div.comment .md p > a:visited {
 	padding: 10px;
 	border: 1px solid #ccc;
 	background: #fbf9f4 !important;
+	color: #222 !important;
 }
 
 	.md pre code {
@@ -996,6 +997,10 @@ ul.tabmenu.formtab {
 	background-image: linear-gradient(#f8f8f8,#f5f5f5);
 }
 
+.linklisting .link.self .domain {
+	display: none; /*hides self posts*/
+}
+
 .link .expando {
 	margin: 0;
 }
@@ -1509,6 +1514,10 @@ body:not(.profile-page) .side .titlebox .bottom {
 }
 
 /*--  A.8.2. Infobar, MoreInfo and MoreSearch Divs -- */
+.reddit-infobar {
+	margin: 5px 5px 10px;
+}
+
 .infobar {
 	overflow: hidden;
 	margin: 0 5px 10px !important;
@@ -2981,10 +2990,12 @@ div.usertext-edit textarea {
 .res-nightmode .link.last-clicked {
 	background: #111 !important;
 }
+
 /*--  B.4.4.Search Page Customizations -- */
 .res-nightmode .combined-search-page #search input[type=text] {
 	border: 1px solid #292929;
 }
+
 /* ~~  B.5. Custom Upvote/Downvote Arrows ~~~~~ */
 .res-nightmode .arrow:not(.prev):not(.next) {
 	background: none transparent !important;
