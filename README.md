@@ -1,4 +1,4 @@
-# Mindashq.Reddit Theme
+# Mindashq Reddit Theme
 
 Reddit Theme with minimal changes for better user experience.
 
