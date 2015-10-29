@@ -1319,8 +1319,7 @@ ul.tabmenu.formtab {
 	}
 
 /*--  A.6.3. Compact deleted messages/comments -- */
-.deleted.comment .usertext,
-.deleted.comment ul.buttons {
+.deleted.comment .usertext.grayed {
 	display: none;
 }
 
