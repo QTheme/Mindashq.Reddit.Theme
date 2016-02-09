@@ -1,5 +1,5 @@
 /*! ~~ Mindashq.Reddit.Theme
-	v1.8.2
+	v1.8.3
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -880,7 +880,8 @@ ul.tabmenu.formtab {
 	cursor: pointer;
 }
 
-	.expando-button:before {
+	.expando-button:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button:before {
 		position: absolute;
 		display: block;
 		margin: 0 5px 0 0 !important;
@@ -894,42 +895,53 @@ ul.tabmenu.formtab {
 		vertical-align: top;
 		text-align: center;
 		cursor: pointer;
+		pointer-events: all;
 	}
 
-	.expando-button.selftext.collapsed:before {
+	.expando-button.selftext.collapsed:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.selftext.collapsed:before {
 		content: '✚';
 	}
 
-	.expando-button.selftext.expanded:before {
+	.expando-button.selftext.expanded:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.selftext.expanded:before {
 		content: '▪▪';
 	}
 
 	.expando-button.video-muted.collapsed:before,
-	.expando-button.video.collapsed:before {
+	.expando-button.video.collapsed:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.video-muted.collapsed:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.video.collapsed:before {
 		content: '▶';
 	}
 
-	.expando-button.video-muted.expanded::before,
-	.expando-button.video.expanded:before {
+	.expando-button.video-muted.expanded:before,
+	.expando-button.video.expanded:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.video-muted.expanded:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.video.expanded:before {
 		content: '●';
 	}
 
-	.expando-button.image.collapsedExpando:before {
+	.expando-button.image.collapsedExpando:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.image.collapsedExpando:before {
 		content: '❏';
 	}
 
-	.expando-button.image.expanded:before {
+	.expando-button.image.expanded:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.image.expanded:before {
 		content: '❐';
 	}
 
-	.expando-button:hover:before {
+	.expando-button:hover:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button:hover:before {
 		border-color: #555;
 		background-color: #555;
 		box-shadow: 0 0 4px -2px #333;
 		color: #eee;
 	}
 
-	.expando-button.expanded:before {
+	.expando-button.expanded:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.expanded:before {
 		border: 0;
 		background: #8fcbfc;
 		color: #fff;
