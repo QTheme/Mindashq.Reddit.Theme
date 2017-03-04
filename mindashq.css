@@ -799,7 +799,7 @@ p.tagline {
 .res .thing .tagline .author.friend,
 .res .thing .tagline .author.moderator,
 .res .thing .tagline .author.submitter {
-	padding: 3px 5px 1px;
+	padding: 3px 5px 2px;
 }
 
 #noresults {
@@ -2344,7 +2344,7 @@ div#NERFail {
 .flair,
 .linkflairlabel,
 span.linkflair {
-	padding: 2px 5px 0;
+	padding: 2px 5px 1px;
 	border: 1px solid #ddd;
 	border-radius: 2px;
 	background: #f5f5f5;
