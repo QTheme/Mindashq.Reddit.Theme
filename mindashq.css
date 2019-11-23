@@ -1,5 +1,5 @@
 /*! ~~ Mindashq.Reddit.Theme
-	v1.8.3
+	v1.8.4
 	http://www.reddit.com/r/mindashq/wiki
 	To copy and reuse, use the information from http://www.reddit.com/r/mindashq/wiki/usage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -922,8 +922,8 @@ ul.tabmenu.formtab {
 		content: '●';
 	}
 
-	.expando-button.image.collapsedExpando:before,
-	.res-highlight-nsfw-expando .thing.over18 .expando-button.image.collapsedExpando:before {
+	.expando-button.image.collapsed:before,
+	.res-highlight-nsfw-expando .thing.over18 .expando-button.image.collapsed:before {
 		content: '❏';
 	}
 
